@@ -1,0 +1,575 @@
+@font-face {
+	font-family: "Halyard Text";
+	font-display: swap;
+	src: url("https://db.onlinewebfonts.com/t/89248b0583721153668df86453b579de.eot");
+	src: url("https://db.onlinewebfonts.com/t/89248b0583721153668df86453b579de.eot?#iefix")format("embedded-opentype"),
+		url("https://db.onlinewebfonts.com/t/89248b0583721153668df86453b579de.woff2")format("woff2"),
+		url("https://db.onlinewebfonts.com/t/89248b0583721153668df86453b579de.woff")format("woff"),
+		url("https://db.onlinewebfonts.com/t/89248b0583721153668df86453b579de.ttf")format("truetype"),
+		url("https://db.onlinewebfonts.com/t/89248b0583721153668df86453b579de.svg#Halyard Text Regular")format("svg");
+	font-weight: normal;
+}
+@font-face {
+	font-family: "Halyard Display";
+	font-display: swap;
+	src: url("https://db.onlinewebfonts.com/t/c4d8819fda4c3fd79e36cedcc8d422bb.eot");
+	src: url("https://db.onlinewebfonts.com/t/c4d8819fda4c3fd79e36cedcc8d422bb.eot?#iefix")format("embedded-opentype"),
+		url("https://db.onlinewebfonts.com/t/c4d8819fda4c3fd79e36cedcc8d422bb.woff2")format("woff2"),
+		url("https://db.onlinewebfonts.com/t/c4d8819fda4c3fd79e36cedcc8d422bb.woff")format("woff"),
+		url("https://db.onlinewebfonts.com/t/c4d8819fda4c3fd79e36cedcc8d422bb.ttf")format("truetype"),
+		url("https://db.onlinewebfonts.com/t/c4d8819fda4c3fd79e36cedcc8d422bb.svg#Halyard Display")format("svg");
+	font-weight: 500, 600;
+}
+
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-family: "Halyard Text", sans-serif;
+	line-height: 1;
+	font-size: 18px;
+	font-weight: normal;
+	color: #455880;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+.page{
+	min-width: 100%;
+}
+
+.__container{
+	max-width: 1185px;
+	margin: 0 auto;
+}
+
+header,
+section,
+footer{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.button{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 16px;
+}
+
+.button-blue{
+	background-color: #3751FF;
+	color: #ffffff;
+}
+
+.__title {
+	font-family: "Halyard Display";
+	font-weight: 500;
+	font-size: 48px;
+	line-height: 60px;
+	color: #1E266D;
+	text-align: center;
+}
+
+/*--------------------------Header----------------------------*/
+.header {
+	height: 82px;
+}
+
+.header-container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: #1E266D;
+}
+
+.logo-menu {
+	width: 81px;
+	height: 28px;
+}
+
+.menu-list {
+	display: flex;
+}
+
+.menu-item {
+	margin: 0 50px 0 0;
+}
+
+.menu-link {
+	color: #1E266D;
+	font-size: 16px;
+	line-height: 80px;
+}
+.menu-item:nth-child(3) .menu-link::after {
+	content: url('/img/arrow_drop_down.svg');
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	transform: translate(5px, 5px);
+}
+
+.menu-item:hover {
+	text-decoration: underline;
+}
+
+.header-contact {
+	display: flex;
+	align-items: center;
+}
+
+.num-tel {
+	margin: 0 34px 0 0;
+}
+
+.btn-tel {
+	width: 113px;
+	height: 40px;
+	border-radius: 100px;
+}
+
+/*--------------------------Experience----------------------------*/
+.experience {
+	height: 878px;
+	align-items: flex-start;
+	background: linear-gradient(#F2F9FF 12%, #F2F9FF);
+}
+
+.experience-container {
+	width: 100%;
+	height: 251px;
+	margin: 144px 0 0 0;
+	text-align: center;
+}
+
+.experience-title {
+	width: 500px;
+	font-size: 56px;
+	margin: 0 auto;
+}
+
+
+
+.experience-text {
+	line-height: 150%;
+	text-align: center;
+	color: #455880;
+	margin: 27px 0 29px 0;
+}
+
+.experience-buttons {
+	width: 370px;
+	margin: 0 auto;
+	display: flex;
+	gap: 22.47px;
+}
+
+.experience-btn__1 {
+	width: 148px;
+	height: 50px;
+	border-radius: 100px;
+}
+
+.experience-btn__2 {
+	width: 199px;
+	height: 50px;
+	border-radius: 100px;
+	background-color: #ffffff;
+	color: #455880;
+}
+
+.experience-img{
+	width: 977px;
+	height: 585px;
+	margin: 35px 0 0 0;
+}
+
+/*--------------------------Trusted----------------------------*/
+.trusted {
+	height: 417px;
+}
+
+.trusted-container {
+	width: 100%;
+	height: 117px;
+}
+
+.trusted-title {
+	font-size: 16px;
+	line-height: 27px;
+	text-align: center;
+}
+
+.trusted-items {
+	width: 100%;
+	height: 36px;
+	margin: 51px 0 0 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.trusted-item {
+	height: 100%;
+}
+
+/*--------------------------Help----------------------------*/
+.help {
+	height: 1080px;
+	align-items: flex-start;
+}
+
+.help-container {
+	width: 100%;
+	height: 932px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.help-title {
+	width: 500px;
+}
+
+.help-body {
+	width: 100%;
+	height: 641px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	padding: 0 35px 0 0;
+}
+
+.help-img {
+	display: inline-block;
+	width: 611px;
+	height: 932px;
+}
+
+.help-body-items {
+	width: 405px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.help-body-item {
+	height: 193px;
+}
+
+.help-item-card {
+	display: flex;
+}
+
+.help-item-icon {
+	width: 58px;
+	height: 58px;
+}
+
+.help-item-description {
+	margin: 0 0 0 47px;
+}
+
+.help-item-title {
+	font-size: 22px;
+	line-height: 125%;
+	text-align: left;
+}
+
+.help-item-text {
+	margin: 37px 0;
+	line-height: 27px;
+
+}
+
+.help-item-separator {
+	width: 100%;
+	height: 1px;
+	background-color: #455880;
+	opacity: 20%;
+}
+
+/*--------------------------Simplicity----------------------------*/
+.simplicity{
+	height: 1001px;
+	background-color: #FFF9EA;
+	background-image: url('/img/image-3.png');
+	background-size: 100% 50%;
+	background-position: bottom;
+	background-repeat: no-repeat;
+	align-items: flex-start;
+}
+
+.simplicity-container {
+	margin: 139px 0 0 0;
+}
+
+.simplicity-text {
+	font-size: 21px;
+	line-height: 150%;
+	text-align: center;
+	margin: 40px 0;
+}
+
+.simplicity-btn {
+	width: 148px;
+	height: 50px;
+	border-radius: 100px;
+	margin: 0 auto;
+	font-size: 16px;
+	line-height: 100%;
+}
+
+/*--------------------------Saying----------------------------*/
+.saying {
+	height: 883px;
+}
+
+.saying-container {
+	width: 100%;
+	height: 583px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+.saying-items {
+	width: 100%;
+	height: 467px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.saying-item {
+	width: 372.89px;
+	padding: 38px 43px;
+	border: 1px solid #45588033;
+	border-radius: 1px;
+}
+
+.saying-item-text {
+	line-height: 180%;
+}
+
+.saying-item-autor,
+.saying-item{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+.saying-item-img {
+	width: 64px;
+	height: 64px;
+}
+
+.saying-item-name {
+	font-size: 22px;
+	line-height: 125%;
+	text-align: center;
+	margin: 23px 0 0 0;
+}
+
+.saying-item-website {
+	line-height: 180%;
+	text-align: center;
+}
+
+/*--------------------------Get----------------------------*/
+.get {
+	height: 323px;
+	color: #ffffff;
+	background-color: #3751FF;
+}
+
+.get-container {
+	width: 100%;
+	height: 120px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+}
+
+.get-title {
+	width: 400px;
+	color: #ffffff;
+	text-align: left;
+}
+
+.get-btn {
+	width: 245px;
+	height: 56px;
+	border-radius: 100px;
+	background-color: #ffffff;
+	gap: 15px;
+	margin: 0 0 19px 50px;
+}
+.get-btn img{
+	display: inline-block;
+	width: 29px;
+	height: 29px;
+}
+.get-btn-text{
+	line-height: 110px;
+	font-size: 18px;
+}
+
+.get-description {
+	font-size: 16px;
+	line-height: 125%;
+	text-align: right;
+	color: #DFE0EB;
+}
+.get-description span{
+	color: orange;
+}
+
+/*--------------------------Footer----------------------------*/
+.footer {
+	height: 660px;
+}
+
+.footer a{
+	color: #455880;
+}
+.footer a:hover {
+	text-decoration: underline;
+}
+
+.footer-container {
+	width: 100%;
+	height: 426px;
+}
+
+.footer-body {
+	width: 100%;
+	height: 261px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-logo {
+	width: 310px;
+}
+
+.footer-logo-img {
+	width: 67.45px;
+	height: 23.63px;
+}
+
+.footer-description {
+	line-height: 145%;
+	margin: 31.37px 0 0 0;
+}
+
+.footer-menu {
+	width: 700px;
+	height: 100%;
+}
+
+.footer-menu-items {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: flex-end;
+	gap: 15px;
+}
+
+.footer-menu-item {
+	width: 212px;
+	height: 100%;
+}
+.footer-menu-item:last-child {
+	margin: 0 0 0 19px;
+}
+
+.footer-menu-title {
+	font-size: 22px;
+	line-height: 125%;
+	text-align: left;
+}
+
+.footer-menu-list {
+	margin: 22px 0 0 0;
+}
+
+.footer-menu-link {
+	line-height: 225%;
+}
+
+.footer-social {
+	margin: 31px 0 2px 0;
+	width: 171px;
+	height: 17px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-separator {
+	width: 100%;
+	height: 1px;
+	background-color: #8792A114;
+	margin: 77px 0 53px 0;
+}
+
+.footer-copyright {
+	width: 100%;
+	height: 38px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.footer-copyright-text {
+	font-size: 14px;
+	line-height: 27px;
+	opacity: 50%;
+}
+
+.footer-copyright-links {
+	width: 50%;
+	height: 100%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 25px;
+}
+
+.footer-copyright-links-item {
+	font-size: 14px;
+	line-height: 27px;
+}

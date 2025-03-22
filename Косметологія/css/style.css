@@ -1,0 +1,768 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=DM+Sans:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+/*Обнуление
+
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+--------------------*/
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,
+:active {
+	outline: none;
+}
+a:focus,
+a:active {
+	outline: none;
+}
+button {
+	cursor: pointer;
+}
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+ul li {
+	list-style: none;
+}
+
+/*-----------------------------------------------------*/
+:root {
+	--color-plus-grey: #a1a3a5;
+	--color-border-grey: #dee2e6;
+	--color-text-dark: #212529;
+	--color-background-white: #fff;
+}
+
+body{
+	width: 1440px;
+	font-family: DM Sans;
+	position: relative;
+}
+
+/*-----------------------Header------------------------------*/
+.header {
+	height: 724px;
+	background-color: #F7F1DF;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.menu {
+	width: 1165px;
+	height: 24px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.menu-logo {
+	width: 115px;
+	height: 24px;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 24px;
+	text-align: left;
+	
+}
+.menu-logo a{
+	color: #644B2C;
+}
+.menu-items {
+	width:471px;
+	height: 24px;
+	/* gap: 48px; */
+}
+.menu-items ul{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.menu-item {
+	width: 100px;
+	height: 24px;
+	/* font-family: DM Sans; */
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 24px;
+	text-align: center;
+}
+.menu-item a{
+	color: #644B2C;
+}
+
+.your-beauty {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.your-beauty-card {
+	width: 617px;
+	height: 480.26px;
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	justify-content: center;
+	gap: 20px;
+}
+.your-beauty-card-title {
+	width: 617px;
+	height: 124px;
+	color: #DC2428;
+	font-family: DM Sans;
+	font-size: 48px;
+	font-weight: 700;
+	line-height: 62.4px;
+	text-align: left;
+}
+.your-beauty-card-text {
+	width: 537px;
+	height: 78px;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 26px;
+	text-align: left;
+}
+.your-beauty-card-btn {
+	width: 263px;
+	height: 58px;
+	padding: 17px 30px 17px 30px;
+	gap: 10px;
+	border-radius: 5px;
+	background-color: #DC2428;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 24px;
+	text-align: left;
+}
+.your-beauty-card-btn a{
+	color: #FFFFFF;
+}
+
+.your-beauty-image img{
+	width: 617px;
+	height: 480.26px;
+}
+
+/*-----------------------Statistics------------------------------*/
+.statistics-items {
+	width: 1162px;
+	height: 206px;
+	position: absolute;
+	top: 613px;
+	left: 139px;
+	border-radius: 5px;
+	background-color: #FFFFFF;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.statistics-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.statistics-item-data {
+	width: 200px;
+	height: 94px;
+	color: #111111;
+	font-size: 52px;
+	font-weight: 700;
+	line-height: 52px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.statistics-item-text {
+	width: 200px;
+	height: 26px;
+	color: #2E2E2E;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 26px;
+	text-align: center;
+}
+
+.vertical-selector{
+	width: 2px;
+	height: 72px;
+	border-radius: 1px;
+	background-color: #7E623C;
+}
+
+/*-----------------------Aesthetic treatments------------------------------*/
+.aesthetic-treatments{
+	width: 1440px;
+	height: 880px;
+	background-color: #E4D0B4;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 50px;
+}
+
+.aesthetic-treatments-title {
+	width: 432px;
+	height: 47px;
+	color: #DC2428;
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 46.8px;
+	text-align: center;
+}
+
+.aesthetic-treatments-items {
+	width: 1163px;
+	height: 493px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	column-gap: 61px;
+	row-gap: 63px;
+}
+
+.aesthetic-treatments-item {
+	width: 347px;
+	height: 215px;
+	background-color: #FFFFFF;
+	border-radius: 5px;
+	padding: 15px;
+}
+
+.aesthetic-treatments-item-image img{
+	width: 90px;
+	height: 89px;
+	float: left;
+	margin-right: 20px;
+}
+
+.aesthetic-treatments-item-card-title {
+	color: #000000;
+	font-family: Roboto;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 26px;
+	text-align: left;
+	margin: 20px 0;
+}
+
+.aesthetic-treatments-item-card-text {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 20.8px;
+	text-align: left;
+	color: #2E2E2E;
+	margin: 0 15px;
+}
+
+.card-title-red {
+	color: #DC2428;
+}
+
+/*------------------------Dermatological treatments----------------------------*/
+.dermatological-treatments {
+	width: 1440px;
+	height: 758px;
+	background-color: #FCF8F5;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.dermatological-treatments-image img{
+	width: 399px;
+	height: 598px;
+}
+
+.dermatological-treatments-card {
+	width: 624px;
+	height: 598px;
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	justify-content: center;
+	gap: 40px;
+}
+
+.dermatological-treatments-card-title {
+	width: 515px;
+	height: 47px;
+	color: #DC2428;
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 46.8px;
+	text-align: left;
+}
+
+.dermatological-treatments-card-text {
+	width: 624px;
+	height: 350px;
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	justify-content: center;
+	gap: 30px;
+}
+.dermatological-treatments-card-text p{
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 26px;
+	text-align: left;
+}
+.dermatological-treatments-card-text ul li{
+	font-family: Roboto;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 23.4px;
+	text-align: left;
+	list-style: disc;
+	color: #000000;
+}
+.dermatological-treatments-card-text ul{
+	padding-left: 20px;
+}
+.dermatological-treatments-card-text ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+
+.dermatological-treatments-card-btn {
+	width: 263px;
+	height: 58px;
+	padding: 17px 20px;
+	gap: 10px;
+	border-radius: 5px;
+	background-color: #DC2428;
+}
+.dermatological-treatments-card-btn a{
+	color: #FFFFFF;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 24px;
+	text-align: left;
+	text-transform: uppercase;
+}
+
+/*------------------------FAQ----------------------------*/
+.faq{
+	width: 1440px;
+	height: 682px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 70px;
+}
+
+.faq-accordion{
+	width: 660px;
+	height: 522px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.accordion {
+	display: flex;
+	flex-direction: column;
+	max-width: 600px;
+	width: 100%;
+}
+
+.accordion__title {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 26px;
+	text-align: left;
+	padding: 10px 20px;
+	cursor: pointer;
+	border: 1px solid var(--color-border-grey);
+	color: var(--color-text-dark);
+	background-color: var(--color-background-white);
+}
+.accordion__title.active {
+	border-bottom: none;
+}
+.accordion__title span {
+	display: inline-flex;
+	position: relative;
+	width: 41.9px;
+	height: 30.29px;
+	background-color: transparent;
+	transform: rotate(0);
+	transition: transform 0.5s ease-out;
+}
+.accordion__title.active span {
+	transform: rotate(180deg);
+}
+.accordion__title span::before {
+	content: url(../img/down.png);
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.accordion__content {
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 23.4px;
+	text-align: left;
+	overflow: hidden;
+	padding: 0 20px;
+	box-sizing: content-box;
+	border: 1px solid var(--color-border-grey);
+	border-top: none;
+	max-height: 0;
+	opacity: 0;
+	visibility: hidden;
+	transition: max-height 0.5s ease-out, padding 0.5s ease-out, opacity 0.1s ease-out 0.5s, visibility 0.1s ease-out 0.5s;
+}
+.accordion__content.active {
+	visibility: visible;
+	opacity: 1;
+	padding: 20px;
+	transition: max-height 0.5s ease-out, padding 0.5s ease-out, opacity 0.1s ease-out, visibility 0.1s ease-out;
+}
+
+.active{
+	max-height: 100%;
+}
+
+.faq-image img{
+	width: 424px;
+	height: 522px;
+}
+
+/*------------------------What do----------------------------*/
+.what-do{
+	width: 1440px;
+	height: 647px;
+	background-color: #E4D0B4;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.what-do-title {
+	width: 604px;
+	height: 47px;
+	color: #DC2428;
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 46.8px;
+	text-align: center;
+}
+
+.what-do-slider {
+	width: 85%;
+}
+
+.what-do-slider-card {
+	width: 451px;
+	height: 254.2px;
+	border-radius: 5px;
+	background-color: #F7F7F7;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.what-do-slider-card-image img{
+	width: 172.2px;
+	height: 172.2px;
+	border-radius: 50%;
+}
+
+.what-do-slider-card-body {
+	width: 188.6px;
+	height: 172.2px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+.what-do-slider-card-body-title {
+	width: 188.6px;
+	height: 26px;
+	color: #000000;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 26px;
+	text-align: left;
+}
+.what-do-slider-card-body-line{
+	width: 188.6px;
+	height: 2.05px;
+	background-color: #2E2E2E;
+}
+.what-do-slider-card-body-text {
+	width: 184.5px;
+	height: 72px;
+	color: #2E2E2E;
+	font-size: 18.45px;
+	font-weight: 400;
+	line-height: 23.99px;
+	text-align: left;
+}
+
+.rating {
+	width: 167.5px;
+	height: 24.6px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.rating-star {
+	width: 28.7px;
+	height: 24.6px;
+}
+
+/* Слайдер */
+.slick-slider {
+	min-width: 0;
+}
+
+/* Ограничивающая оболочка */
+.slick-list {
+	overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track {
+	display: flex;
+	align-items: flex-start;
+}
+
+/* Конкретный слайдер */
+.slider {
+	position: relative;
+	padding: 0px 60.24px;
+}
+
+@media (max-width:767px) {
+	.slider {
+		padding: 0px 40px;
+	}
+}
+
+/* Стрелка */
+.slider .slick-arrow {
+	position: absolute;
+	top: 50%;
+	margin: -25.5px 0px 0px 0px;
+	z-index: 10;
+	font-size: 0;
+	width: 25px;
+	height: 51px;
+}
+/* Стрелка влево */
+.slider .slick-arrow.slick-prev {
+	left: 0;
+	background: url('../img/back.png') 0 0 / 100% no-repeat;
+}
+/* Стрелка вправо */
+.slider .slick-arrow.slick-next {
+	right: 0;
+	background: url('../img/forward.png') 0 0 / 100% no-repeat;
+}
+
+/* Точки */
+.slider .slick-dots {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.slider .slick-dots li {
+	list-style: none;
+	margin: 44.8px 18px 0;
+}
+.slider .slick-dots button {
+	font-size: 0;
+	width: 20px;
+	height: 20px;
+	background-color: #fff;
+	border-radius: 50%;
+}
+.slider .slick-dots li.slick-active button {
+	background-color: #DC2428;
+}
+
+.slider__item {
+	margin: 0px 25.5px;
+}
+
+/*------------------------Footer----------------------------*/
+footer{
+	width: 1440px;
+	height: 483px;
+	background-color: #644B2C;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-around;
+	color: #FFFFFF;
+}
+
+.footer-card {
+	width: 1440px;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-around;
+}
+
+.footer-card-logo {
+	width: 153px;
+	height: 24px;
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 24px;
+	text-align: left;
+}
+.footer-card-logo a{
+	color: #FFFFFF;
+}
+
+.footer-card-contacts {
+	width: 360px;
+	height: 277px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+.footer-card-contacts-title{
+	width: 117px;
+	height: 31px;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 31.2px;
+	letter-spacing: 0.015em;
+	text-align: left;
+}
+
+.footer-card-contacts-data{
+	width: 360px;
+	height: 230px;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 26px;
+	letter-spacing: 0.015em;
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-evenly;
+}
+.footer-card-contacts-data-tel a,
+.footer-card-contacts-data-email a{
+	color: #FFFFFF;
+}
+.footer-card-contacts-data-selector {
+	width: 360px;
+	height: 1px;
+	background-color: #FFFFFF;
+}
+
+.footer-card-contacts-data-social {
+	width: 176px;
+	height: 32px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.footer-card-contacts-data-social-instagram a img,
+.footer-card-contacts-data-social-facebook a img,
+.footer-card-contacts-data-social-youtube a img{
+	width: 32px;
+	height: 32px;
+}
+
+.footer-card-inform {
+	width: 205px;
+	height: 165px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+.footer-card-inform-title {
+	width: 205px;
+	height: 31px;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 31.2px;
+	letter-spacing: 0.015em;
+	text-align: left;
+}
+.footer-card-inform-items {
+	width: 205px;
+	height: 102px;
+}
+.footer-card-inform-item{
+	width: 205px;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 26px;
+	letter-spacing: 0.015em;
+	text-align: left;
+}
+.footer-card-inform-item a{
+	color: #FFFFFF;
+}
+.footer-card-inform-item:not(:last-child) {
+	margin: 0 0 12px 0;
+}
+
+.rights-reserved {
+	width: 1440px;
+	height: 26px;
+	display: flex;
+	align-items: flex-end;
+	padding: 0 0 0 124px;
+}

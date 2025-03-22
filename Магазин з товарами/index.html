@@ -1,0 +1,410 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+	<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+	<head>
+		<!-- Заголовок страницы в браузере -->
+		<title>Магазин с товарами</title>
+		<!-- Подключаем CSS -->
+		<link rel="stylesheet" href="css/style.css" />
+		<!-- Кодировка страницы -->
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	</head>
+	<!-- Отображаемое тело страницы -->
+	<body>
+		<header class="header">
+			<div class="header-container __container">
+				<a class="header-logo" href="#"><img src="/img/logo.png" alt="logo"></a>
+				<nav class="header-menu">
+					<ul class="menu-list">
+						<li class="menu-item"><a class="menu-link" href="#">Каталог</a></li>
+						<li class="menu-item"><a class="menu-link" href="#">О компании</a></li>
+						<li class="menu-item"><a class="menu-link" href="#">Контакты</a></li>
+						<li class="menu-item"><a class="menu-link" href="#">Вопросы</a></li>
+				</nav>
+				<div class="header-services">
+					<!-- <div class="search-block">
+						<input type="text" placeholder="Поиск..." id="search" class="search">
+						<button class="search-btn" type="submit"><i class="lni lni-search-2"></i></button>
+					</div> -->
+					<a href="#" class="header-search"><img class="header-search-icon" src="/img/icon-search.png" alt="icon-search"></a>
+					<a href="#" class="header-shopping"><img class="header-shopping-icon" src="/img/shopping-bag-open.png" alt="shopping-bag-open"></a>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="novelty">
+				<div class="novelty-container __container">
+					<div class="novelty-header">
+						<h2 class="novelty-title">НОВИНКА НЕДЕЛИ</h2>
+						<p class="novelty-text">Мягкая игрушка антистресс Кот+Акула=КОТАКУЛА. Приятная на ощупь. Выполнена из качественного материала. Собери всю коллекцию.</p>
+						<a class="novelty-btn __button __arrow-button" href="#">К покупкам</a>
+					</div>
+					<div class="novelty-body">
+						<img class="novelty-image" src="/img/novelty-1.png" alt="novelty-1">
+						<img class="novelty-image" src="/img/novelty-2.png" alt="novelty-2">
+						<img class="novelty-image" src="/img/novelty-3.png" alt="novelty-3">
+						<img class="novelty-image" src="/img/novelty-4.png" alt="novelty-4">
+					</div>
+				</div>
+			</section>
+			<div class="separator __container"></div>
+			<section class="products">
+				<div class="products-container __container">
+					<div class="products-header __header-container">
+						<h3 class="products-title __title-container">Наша продукция</h3>
+						<h2 class="product-subtitle __subtitle-container">Популярные товары</h2>
+					</div>
+					<div class="products-body">
+						<div class="content">
+							<div class="tabs">
+								<nav class="tabs__items">
+									<a href="#tab_01" class="tabs__item"><span>Новый год</span></a>
+									<a href="#tab_02" class="tabs__item"><span>Товары для дома</span></a>
+									<a href="#tab_03" class="tabs__item"><span>Электроника</span></a>
+								</nav>
+								<div class="tabs__body">
+									<div id="tab_01" class="tabs__block">
+										<!-- Первая вкладка. -->
+											<!-- Слайдер -->
+										<div class="slider">
+											<div class="slider__item">
+												<img class="slider__item-image" src="/img/artificial-spruce.png" alt="artificial-spruce">
+												<div class="slider-item-card">
+													<div class="slider-item-title">Елка Premium</div>
+													<div class="slider-item-rating">
+														<img src="/img/star_yellow.png" alt="star" class="slider-item-rating-image">
+														<p class="slider-item-rating-value">4.9</p>
+														<p class="slider-item-rating-reviews">(360 отзывов)</p>
+													</div>
+													<a  class="slider-item-btn slider-item-big_btn __button" href="#">К покупкам</a>
+												</div>
+											</div>
+											<div class="slider__item">
+												<img class="slider__item-image" src="/img/garland-star.png" alt="garland-star">
+												<div class="slider-item-card">
+													<div class="slider-item-title">Гирлянда Звезда</div>
+													<div class="slider-item-rating">
+														<img src="/img/star_yellow.png" alt="star" class="slider-item-rating-image">
+														<p class="slider-item-rating-value">4.9</p>
+														<p class="slider-item-rating-reviews">(500 отзывов)</p>
+													</div>
+													<a  class="slider-item-btn __button" href="#">Купить</a>
+												</div>
+											</div>
+											<div class="slider__item">
+												<img class="slider__item-image" src="/img/artificial-spruce.png" alt="artificial-spruce">
+												<div class="slider-item-card">
+													<div class="slider-item-title">Елка Premium</div>
+													<div class="slider-item-rating">
+														<img src="/img/star_yellow.png" alt="star" class="slider-item-rating-image">
+														<p class="slider-item-rating-value">5.0</p>
+														<p class="slider-item-rating-reviews">(360 отзывов)</p>
+													</div>
+													<a  class="slider-item-btn __button" href="#">Купить</a>
+												</div>
+											</div>
+											<div class="slider__item">
+												<img class="slider__item-image" src="/img/artificial-spruce.png" alt="artificial-spruce">
+												<div class="slider-item-card">
+													<div class="slider-item-title">Елка Premium</div>
+													<div class="slider-item-rating">
+														<img src="/img/star_yellow.png" alt="star" class="slider-item-rating-image">
+														<p class="slider-item-rating-value">4.9</p>
+														<p class="slider-item-rating-reviews">(360 отзывов)</p>
+													</div>
+													<a  class="slider-item-btn __button" href="#">Купить</a>
+												</div>
+											</div>
+											<div class="slider__item">
+												<img class="slider__item-image" src="/img/artificial-spruce.png" alt="artificial-spruce">
+												<div class="slider-item-card">
+													<div class="slider-item-title">Елка Premium</div>
+													<div class="slider-item-rating">
+														<img src="/img/star_yellow.png" alt="star" class="slider-item-rating-image">
+														<p class="slider-item-rating-value">4.9</p>
+														<p class="slider-item-rating-reviews">(360 отзывов)</p>
+													</div>
+													<a  class="slider-item-btn slider-item-big_btn __button" href="#">К покупкам</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div id="tab_02" class="tabs__block">
+										Вторая вкладка. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim laudantium esse modi aut in recusandae explicabo, doloremque animi sapiente hic nobis ducimus minima distinctio deleniti tempora deserunt cumque amet consequatur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim laudantium esse modi aut in recusandae explicabo, doloremque animi sapiente hic nobis ducimus minima distinctio deleniti tempora deserunt cumque amet consequatur.
+									</div>
+									<div id="tab_03" class="tabs__block">
+										Третья вкладка. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim laudantium esse modi aut in recusandae explicabo, doloremque animi sapiente hic nobis ducimus minima distinctio deleniti tempora deserunt cumque amet consequatur.
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="separator __container"></div>
+			<section class="achievements">
+				<div class="achievements-container __container">
+					<div class="achievements-item">
+						<h2 class="achievements-value">300+</h2>
+						<p class="achievements-text">тысяч клиентов</p>
+					</div>
+					<div class="achievements-selector"></div>
+					<div class="achievements-item">
+						<h2 class="achievements-value">5+</h2>
+						<p class="achievements-text">лет с вами</p>
+					</div>
+					<div class="achievements-selector"></div>
+					<div class="achievements-item">
+						<h2 class="achievements-value">15+</h2>
+						<p class="achievements-text">брендов</p>
+					</div>
+					<div class="achievements-selector"></div>
+					<div class="achievements-item">
+						<h2 class="achievements-value">5 000+</h2>
+						<p class="achievements-text">тысяч доставленных заказов</p>
+					</div>
+				</div>
+			</section>
+			<div class="separator __container"></div>
+			<section class="about">
+				<div class="about-container __container">
+					<div class="about-header __header-container">
+						<h3 class="about-title __title-container">О нас</h3>
+						<h2 class="about-subtitle __subtitle-container">Почему мы лучшие</h2>
+					</div>
+					<div class="about-body">
+						<div class="about-body-why">
+							<p class="about-body-mission">Наша миссия - исполнять мечту и изменить жизнь людей к лучшему с помощью удобных товаров, даже если магазина нет рядом. Мы сами все доставим. Вам не придется никуда ехать.</p>
+							<div class="about-body-achievement">
+								<h3 class="about-body-achievement-title">Наши достижения</h3>
+								<ul class="about-body-achievement-list">
+									<li class="about-body-achievement-list-item">...</li>
+									<li class="about-body-achievement-list-item">...</li>
+									<li class="about-body-achievement-list-item">...</li>
+								</ul>
+							</div>
+							<div class="about-body-we_create">
+								<h3 class="about-body-we_create-title">Мы создаем уют в Вашем доме</h3>
+								<ul class="about-body-we_create-list">
+									<li class="about-body-we_create-list-item">...</li>
+								</ul>
+							</div>
+							<a href="#" class="about-body-btn __button __arrow-button">Подробнее</a>
+						</div>
+						<div class="about-body-images">
+							<img src="/img/about-image-1.png" alt="about-image-1">
+							<img src="/img/about-image-2.png" alt="about-image-2">
+						</div>
+					</div>
+			</section>
+			<div class="separator __container"></div>
+			<section class="reviews">
+				<div class="reviews-container __container">
+					<div class="reviews-header __header-container">
+						<h3 class="reviews-title __title-container">Отзывы</h3>
+						<h2 class="reviews-subtitle __subtitle-container">Что говорят о нас</h2>
+					</div>
+					<div class="reviews-dody">
+						<!-- Слайдер -->
+						<div class="slider-2">
+							<div class="slider-2__item">
+								<div class="slider-2__item-header">
+									<img src="/img/photo-1.png" alt="photo-1" class="slider-2__item-photo">
+									<div class="slider-2__item-person">
+										<h3 class="slider-2__item-name">Михаил</h3>
+										<div class="slider-2__item-rating">
+											<img src="/img/star_yellow.png" alt="star_yellow">
+											<img src="/img/star_yellow.png" alt="star_yellow">
+											<img src="/img/star_yellow.png" alt="star_yellow">
+											<img src="/img/star_yellow.png" alt="star_yellow">
+											<img src="/img/star_yellow.png" alt="star_yellow">
+										</div>
+									</div>
+								</div>
+								<p class="slider-2__item-text">Всё как ожидалось! Давно хотел такую гирлянду, покупка радует и создаёт новогоднее настроение! На ёлку высотой 160 см вполне хватило 50 м гирлянды. </p>
+							</div>
+							<div class="slider-2__item">
+								<div class="slider-2__item-header">
+									<img src="/img/photo-2.png" alt="photo-2" class="slider-2__item-photo">
+									<div class="slider-2__item-person">
+										<h3 class="slider-2__item-name">Aнна</h3>
+										<div class="slider-2__item-rating">
+											<img src="/img/star_yellow.png" alt="star_yellow">
+											<img src="/img/star_yellow.png" alt="star_yellow">
+											<img src="/img/star_yellow.png" alt="star_yellow">
+											<img src="/img/star_yellow.png" alt="star_yellow">
+											<img src="/img/star-gray.png" alt="star-gray">
+										</div>
+									</div>
+								</div>
+								<p class="slider-2__item-text">Всё как ожидалось! Давно хотела такую гирлянду, покупка радует и создаёт новогоднее настроение! На ёлку высотой 160 см вполне хватило 50 м гирлянды.</p>
+							</div>
+							<div class="slider-2__item">
+								<div class="slider-2__item-header">
+									<img src="/img/photo-3.png" alt="photo-3" class="slider-2__item-photo">
+									<div class="slider-2__item-person">
+										<h3 class="slider-2__item-name">Наталья</h3>
+										<div class="slider-2__item-rating">
+											<img src="/img/star_yellow.png" alt="star_yellow">
+											<img src="/img/star_yellow.png" alt="star_yellow">
+											<img src="/img/star_yellow.png" alt="star_yellow">
+											<img src="/img/star_yellow.png" alt="star_yellow">
+											<img src="/img/star-gray.png" alt="star-gray">
+										</div>
+									</div>
+								</div>
+								<p class="slider-2__item-text">Всё как ожидалось! Давно хотела такую гирлянду, покупка радует и создаёт новогоднее настроение! На ёлку высотой 160 см вполне хватило 50 м гирлянды.</p>
+							</div>
+							<div class="slider-2__item">
+								<div class="slider-2__item-header">
+									<img src="/img/photo-2.png" alt="photo-2" class="slider-2__item-photo">
+									<div class="slider-2__item-person">
+										<h3 class="slider-2__item-name">Aнна</h3>
+										<div class="slider-2__item-rating">
+											<img src="/img/star_yellow.png" alt="star_yellow">
+											<img src="/img/star_yellow.png" alt="star_yellow">
+											<img src="/img/star_yellow.png" alt="star_yellow">
+											<img src="/img/star_yellow.png" alt="star_yellow">
+											<img src="/img/star-gray.png" alt="star-gray">
+										</div>
+									</div>
+								</div>
+								<p class="slider-2__item-text">Всё как ожидалось! Давно хотела такую гирлянду, покупка радует и создаёт новогоднее настроение! На ёлку высотой 160 см вполне хватило 50 м гирлянды.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="separator __container"></div>
+			<section class="interesting">
+				<div class="interesting-container __container">
+					<div class="interesting-header __header-container">
+						<h3 class="interesting-title __title-container">Интересное</h3>
+						<h2 class="interesting-subtitle __subtitle-container">Что рассказываем мы</h2>
+					</div>
+					<div class="interesting-items">
+						<div class="interesting-item">
+							<img class="interesting-item-image" src="/img/spruces.png" alt="spruces">
+							<div class="interesting-item-details">
+								<div class="interesting-item-autor">
+									<img src="/img/icon-user.png" alt="icon-user">
+									<p class="interesting-item-autor-name">Дима Иванов</p>
+								</div>
+								<div class="interesting-item-date">
+									<img src="/img/icon-calendar-blank.png" alt="icon-calendar-blank">
+									<p class="interesting-item-date_value">Февраля 23, 2024</p>
+								</div>
+							</div>
+							<h2 class="interesting-item-title">Почему искуственная ёлка лучше натуральной.</h2>
+							<div class="interesting-item-btn">
+								<a href="#" class="interesting-item-btn-link">Читать</a>
+								<img src="/img/caret-right.png" alt="caret-right">
+							</div>
+						</div>
+						<div class="interesting-item">
+							<img class="interesting-item-image" src="/img/spruces.png" alt="spruces">
+							<div class="interesting-item-details">
+								<div class="interesting-item-autor">
+									<img src="/img/icon-user.png" alt="icon-user">
+									<p class="interesting-item-autor-name">Дима Иванов</p>
+								</div>
+								<div class="interesting-item-date">
+									<img src="/img/icon-calendar-blank.png" alt="icon-calendar-blank">
+									<p class="interesting-item-date_value">Февраля 23, 2024</p>
+								</div>
+							</div>
+							<h2 class="interesting-item-title">Почему искуственная ёлка лучше натуральной.</h2>
+							<div class="interesting-item-btn">
+								<a href="#" class="interesting-item-btn-link">Читать</a>
+								<img src="/img/caret-right.png" alt="caret-right">
+							</div>
+						</div>
+						<div class="interesting-item">
+							<img class="interesting-item-image" src="/img/spruces.png" alt="spruces">
+							<div class="interesting-item-details">
+								<div class="interesting-item-autor">
+									<img src="/img/icon-user.png" alt="icon-user">
+									<p class="interesting-item-autor-name">Дима Иванов</p>
+								</div>
+								<div class="interesting-item-date">
+									<img src="/img/icon-calendar-blank.png" alt="icon-calendar-blank">
+									<p class="interesting-item-date_value">Февраля 23, 2024</p>
+								</div>
+							</div>
+							<h2 class="interesting-item-title">Почему искуственная ёлка лучше натуральной.</h2>
+							<div class="interesting-item-btn">
+								<a href="#" class="interesting-item-btn-link">Читать</a>
+								<img src="/img/caret-right.png" alt="caret-right">
+							</div>
+						</div>
+					</div>
+					<a href="#" class="interesting-body-btn __button __arrow-button">Подробнее</a>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer-container __container">
+				<div class="footer-connection">
+					<a class="footer-logo" href="#"><img src="/img/logo-footer.png" alt="logo-footer"></a>
+					<p class="footer-copyright">©2024 Все права защищены.</p>
+					<div class="footer-contacts">
+						<a href="mailto:hello@домен.ru">hello@домен.ru</a>
+						<a href="tel:+72345678989">Phone : +7 (234)567 89 89</a>
+					</div>
+				</div>
+				<div class="footer-menu">
+					<div class="footer-menu-item">
+						<h3 class="footer-menu-title">Компания</h3>
+						<ul class="footer-menu-list">
+							<li class="footer-menu-list-item">
+								<a href="#" class="footer-menu-link">О нас</a>
+							</li>
+							<li class="footer-menu-list-item">
+								<a href="#" class="footer-menu-link">Сотрудничество</a>
+							</li>
+							<li class="footer-menu-list-item">
+								<a href="#" class="footer-menu-link">Контакты</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer-menu-item">
+						<h3 class="footer-menu-title">Покупателям</h3>
+						<ul class="footer-menu-list">
+							<li class="footer-menu-list-item">
+								<a href="#" class="footer-menu-link">Вопросы и ответы</a>
+							</li>
+							<li class="footer-menu-list-item">
+								<a href="#" class="footer-menu-link">Персональные данные</a>
+							</li>
+							<li class="footer-menu-list-item">
+								<a href="#" class="footer-menu-link">Что такое куки?</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer-menu-social">
+						<a href="https://www.facebook.com/" target="_blank">
+							<img src="/img/facebook.png" alt="facebook">
+						</a>
+						<a href="https://x.com/" target="_blank">
+							<img src="/img/twitter.png" alt="twitter">
+						</a>
+						<a href="https://www.instagram.com/" target="_blank">
+							<img src="/img/instagram.png" alt="instagram">
+						</a>
+						<a href="https://www.youtube.com/" target="_blank">
+							<img src="/img/youtube.png" alt="youtube">
+						</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	<!-- Подключаем jQuery -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<!-- Подключаем слайдер Slick -->
+	<script src="js/slick.min.js"></script>
+	<!-- Подключаем файл скриптов -->
+	<script src="js/script.js"></script>
+	</body>
+</html>

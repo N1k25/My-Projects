@@ -1,0 +1,829 @@
+@import url(https://fonts.googleapis.com/css?family=DM+Sans:regular,500,700&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Roboto:500&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Inter:regular&display=swap);
+@font-face {
+	font-family: 'Sequel Sans Book Disp';
+	font-display: swap;
+	src: url("../fonts/SequelSansDisp.eot");
+	src: local("O"), url("../fonts/SequelSansDisp.woff") format("woff"),
+		url("../fonts/SequelSansDisp.woff2") format("woff2"),
+		url("../fonts/SequelSansDisp.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Sequel Sans Disp';
+	font-display: swap;
+	src: local("O"), url("../fonts/sequel-sans-medium-disp.ttf") format("truetype");
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Sequel Sans Disp';
+	font-display: swap;
+	src: local("O"), url("../fonts/sequel-sans-semi-bold-disp.ttf") format("truetype");
+	font-weight: 600;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Sequel Sans Disp';
+	font-display: swap;
+	src: local("O"), url("../fonts/sequel-sans-bold-disp.ttf") format("truetype");
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Sequel Sans Disp';
+	font-display: swap;
+	src: local("O"), url("../fonts/sequel-sans-black-disp.ttf") format("truetype");
+	font-weight: 900;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Sequel Sans Roman Disp';
+	font-display: swap;
+	src: local("O"), url("../fonts/sequel-sans-roman-disp.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Darkline';
+	font-display: swap;
+	src: local("O"), url("../fonts/Darkline.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-family: 'Sequel Sans Book Disp', Inter, sans-serif;
+	line-height: 1;
+	font-size: 16px;
+	font-weight: normal;
+	color: #262626;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+.page{
+	background-color: #F9FAFC;
+}
+
+header,
+section,
+footer,
+.button{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.__container{
+	max-width: 1170px;
+}
+
+.__title {
+	font-family: 'Sequel Sans Disp';
+	font-size: 28px;
+	line-height: 38px;
+}
+
+.__event {
+	font-family: 'Sequel Sans Disp';
+	font-weight: 500;
+	font-size: 10px;
+	line-height: 101%;
+	opacity: 60%;
+}
+
+/*-------------------------------Header---------------------------------*/
+.header {
+	height: 92px;
+}
+
+.header-container {
+	width: 100%;
+	height: 92px;
+	display: flex;
+	align-items: center;;
+}
+
+.header-logo {
+	font-family: Darkline;
+	font-size: 42px;
+	line-height: 42px;
+	letter-spacing: 1%;
+	vertical-align: bottom;
+	color: #000000;
+}
+
+.menu {
+	width: 715px;
+	margin: 0 127px 0 74px;
+}
+
+.menu-list {
+	display: flex;
+	justify-content: space-between;
+}
+ 
+.menu-link:hover{
+	text-decoration: underline;
+}
+
+.menu-link {
+	font-family: DM Sans;
+	font-size: 15px;
+	line-height: 42px;
+	letter-spacing: 1%;
+	vertical-align: bottom;
+	color: #262626;
+	opacity: 60%;
+}
+.menu-item:first-child .menu-link {
+	font-weight: 700;
+	opacity: 100%;
+}
+
+.header-btn {
+	width: 100px;
+	height: 35px;
+	background-color: #B8C2CE;
+	border-radius: 6px;
+	color: #FFFFFF;
+	font-family: DM Sans;
+	font-size: 14px;
+	line-height: 42px;
+	letter-spacing: 1%;
+	vertical-align: bottom;
+}
+.header-btn::before {
+	content: url('/img/search.svg');
+	margin: 8px 9.5px 0 0;
+}
+
+/*-------------------------------Today---------------------------------*/
+.today {
+	height: 703px;
+	align-items: flex-end;
+	position: relative;
+}
+
+.today-container {
+	width: 1383px;
+	height: 683px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
+	gap: 31px;
+	padding: 0 0 44px 0;
+	position: relative;
+	margin: 0 0 0 -215px;
+}
+
+.today-header {
+	width: 716px;
+	height: 513px;
+	background-image: url('/img/basketball_sport_icon.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	opacity: 8%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.today-title {
+	width: 470px;
+	height: 300px;
+	font-family: 'Sequel Sans Disp';
+	font-weight: 900;
+	font-size: 80px;
+	line-height: 75px;
+	text-transform: uppercase;
+	background: linear-gradient(#262626, #B8C2CE);
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+	position: absolute;
+	left: 213px;
+	top: 92px;
+}
+
+.today-body {
+	width: 720px;
+	height: 580px;
+	background-image: url('/img/basketball-player.png');
+	background-position: right -150px bottom;
+	background-size: cover;
+	background-repeat: no-repeat;
+	filter: grayscale();
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
+}
+
+.today-body-article{
+	width: 365px;
+	height: 161px;
+	border-radius: 6px;
+	margin: 0 104px -44px 0;
+}
+
+.today-content {
+	font-size: 18px;
+	line-height: 25px;
+}
+
+.today-btn {
+	width: 285px;
+	height: 62px;
+	background-color: #262626;
+	color: #E1E8F0;
+	border-radius: 6px;
+	font-family: 'Sequel Sans Disp';
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 38px;
+	letter-spacing: 9%;
+	text-transform: uppercase;
+	margin: 24px 0 0 0;
+}
+
+.today-news {
+	width: 270px;
+	height: 554px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.today-news-title {
+	width: 89px;
+	height: 34px;
+	background-color: #E1E8F0;
+	border-radius: 3px;
+	font-family: 'Sequel Sans Disp';
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 100%;
+	text-transform: capitalize;
+	color: #B8C2CE;
+	text-align: center;
+	padding: 6px 0 0 0;
+}
+
+.today-news-item {
+	width: 100%;
+	height: 233px;
+	border-radius: 6px;
+}
+.today-news-item:nth-child(2) {
+	background-image: url('/img/african-woman-sports.png');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.today-news-item:last-child {
+	background-image: url('/img/formula-one-racing.png');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.today-news-item,
+.today-news-item-card,
+.today-news-item-card-content{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.today-news-item-card {
+	height: 132px;
+	padding: 12px 18px;
+	background: linear-gradient(transparent, #F2F2F2);
+}
+
+.today-news-item-card-content {
+	width: 200px;
+	height: 54px;
+}
+
+.today-news-item-card-text {
+	line-height: 124%;
+	margin: 4px 0 0 0;
+}
+
+/*-------------------------------Category---------------------------------*/
+.category {
+	height: 568px;
+}
+
+.category-container {
+	width: 100%;
+	height: 488px;
+	font-family: 'Sequel Sans Disp';
+}
+
+.category-container,
+.category-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.category-items {
+	height: 434px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.category-item {
+	width: 270px;
+	height: 100%;
+}
+
+.category-item-title {
+	width: 100%;
+	height: 118px;
+	background-color: #EBEEF3;
+	border-radius: 6px;
+	font-weight: 900;
+	font-size: 37px;
+	line-height: 75px;
+	text-transform: uppercase;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.category-item-title p{
+	background: linear-gradient(#262626, #B8C2CE);
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+}
+.category-item:nth-child(2) .category-item-title {
+	height: 169px;
+	line-height: 39px;
+	text-align: center;
+}
+
+.category-item-image {
+	width: 100%;
+	height: 288px;
+	border-radius: 6px;
+}
+.category-item:nth-child(2) .category-item-image{
+	height: 235px;
+}
+
+/*-------------------------------Trending News---------------------------------*/
+.trending_news {
+	height: 689px;
+}
+
+.trending_news-container {
+	width: 100%;
+	height: 609px;
+	display: flex;
+	border-radius: 6px;
+	background-color: #EBEEF3;
+}
+
+.trending_news-items {
+	width: 600px;
+	padding: 29px 30px 36px 36px;
+}
+
+.trending_news-title {
+	margin: 0 0 16px 0;
+}
+
+.trending_news-item {
+	width: 499px;
+	height: 150px;
+	display: flex;
+	gap: 20px;
+	border-radius: 6px;
+}
+.trending_news-item:not(:last-child) {
+	margin: 0 0 20px 0;
+}
+
+.trending_news-item img{
+	width: 234px;
+	height: 100%;
+	border-radius: 6px;
+}
+
+.trending_news-item-card{
+	width: 245px;
+}
+
+.trending_news-item-card-border{
+	width: 279px;
+	height: 1px;
+	background-color: #B8C2CE;
+	margin: 0 0 15px 0;
+}
+
+.trending_news-item:nth-child(2) .trending_news-item-card .trending_news-item-card-border {
+	background-color: transparent;
+}
+
+.trending_news-item-card-title {
+	font-family: 'Sequel Sans Disp';
+	font-size: 18px;
+	line-height: 137%;
+	margin: 4px 0 12px 0;
+}
+
+.trending_news-item-card-text {
+	font-family: DM Sans;
+	font-size: 12px;
+	line-height: 124%;
+	color: #696868;
+}
+
+.trending_news-cycling {
+	width: 570px;
+	background-image: url('/img/sportsman-drinking-water-training-stationary-bike.png');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: 6px;
+	padding: 31px 25px 36px 36px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	position: relative;
+}
+.trending_news-cycling::after {
+	content: "";
+	background-color: #000000;
+	position: absolute;
+	opacity: 60%;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	border-radius: 6px;
+}
+
+.trending_news-cycling-title {
+	width: 108px;
+	height: 36px;
+	color: #EBEEF3;
+	text-align: center;
+	padding: 5px 0 0 0;
+	font-family: DM Sans;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 100%;
+	text-transform: capitalize;
+	border-radius: 3px;
+	border: 1px solid #EBEEF3;
+	z-index: 5;
+}
+
+.trending_news-cycling-body {
+	color: #FFFFFF;
+	z-index: 5;
+}
+
+.trending_news-cycling-event {
+	font-family: DM Sans;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 101%;
+}
+
+.trending_news-cycling-text {
+	font-family: 'Sequel Sans Disp';
+	font-weight: 900;
+	font-size: 36px;
+	line-height: 100%;
+	text-transform: capitalize;
+	margin: 14px 0 0 0;
+}
+
+/*-------------------------------Sports News---------------------------------*/
+.sports_news {
+	height: 698px;
+}
+
+.sports_news-container {
+	width: 100%;
+	height: 618px;
+	border-radius: 6px;
+	background-color: #EBEEF3;
+}
+
+.sports_news-card {
+	height: 518px;
+	background-image: url('/img/two-opposing-players-give-handshake-end-game.png');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: 6px 6px 0 0;
+	position: relative;
+	padding: 31px 48px 45px 48px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.sports_news-card::after {
+	content: "";
+	background-color: #000000;
+	position: absolute;
+	opacity: 60%;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	border-radius: 6px 6px 0 0;
+}
+
+.sports_news-card-title {
+	width: 108px;
+	height: 36px;
+	color: #EBEEF3;
+	text-align: center;
+	padding: 6px 0 0 0;
+	font-family: DM Sans;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 100%;
+	text-transform: capitalize;
+	border-radius: 3px;
+	border: 1px solid #EBEEF3;
+	z-index: 5;
+}
+
+.sports_news-card-body {
+	color: #F9FAFC;
+	z-index: 5;
+}
+
+.sports_news-card-event {
+	font-family: DM Sans;
+	font-size: 18px;
+	line-height: 101%;
+}
+
+.sports_news-card-news {
+	width: 760px;
+	font-family: 'Sequel Sans Disp';
+	font-weight: 900;
+	font-size: 36px;
+	line-height: 43px;
+	text-transform: uppercase;
+	margin: 10px 0 20px 0;
+}
+
+.sports_news-card-text {
+	width: 697px;
+	font-family: DM Sans;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 28px;
+	color: #FFFFFF;
+}
+
+/*---------------------*/
+/* Основные стили */
+
+/* Слайдер */
+.slick-slider {
+	min-width: 0;
+}
+
+/* Ограничивающая оболочка */
+.slick-list {
+	overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track {
+	display: flex;
+	align-items: flex-start;
+}
+
+/* Конкретный слайдер */
+.sports_news-slider {
+	position: relative;
+}
+
+.sports_news-slider .slick-arrow {
+	position: absolute;
+	bottom: 25px;
+	z-index: 10;
+	font-size: 0;
+	width: 70px;
+	height: 50px;
+	border-radius: 3px;
+}
+
+.sports_news-slider .slick-arrow.slick-prev {
+	right: 425px;
+	background: url('../img/arrow-prev.png') 50% 50% / 40% no-repeat, #000000;
+}
+
+.sports_news-slider .slick-arrow.slick-next {
+	right: 25px;
+	background: url('../img/arrow-next.png') 50% 50% / 40% no-repeat, #000000;
+}
+
+.sports_news-slider .slick-arrow.slick-disabled {
+	opacity: 0.2;
+}
+
+.sports_news-slider .slick-dots {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	margin: 0 110px 0 0;
+}
+
+.sports_news-slider .slick-dots li {
+	list-style: none;
+	margin: 30px 20px;
+}
+
+.sports_news-slider .slick-dots button {
+	font-size: 0;
+	width: 35px;
+	height: 35px;
+	background-color: transparent;
+	border-radius: 50%;
+	font-size: 24px;
+	letter-spacing: 1%;
+	opacity: 61%;
+}
+
+.sports_news-slider .slick-dots li.slick-active button {
+	background-color: #000000;
+	color: #EBEEF3;
+	opacity: 100%;
+	font-family: 'Sequel Sans Disp';
+	font-weight: 700;
+}
+
+/*-------------------------------Recent News---------------------------------*/
+.recent_news {
+	height: 434px;
+	/* border: 1px solid red; */
+}
+
+.recent_news-container {
+	width: 100%;
+	height: 354px;
+	display: flex;
+	justify-content: space-between;
+	/* border: 1px solid green; */
+}
+
+.recent_news-announcement,
+.recent_news-list {
+	width: 270px;
+}
+
+.recent_news-announcement,
+.recent_news-list,
+.recent_news-list-body,
+.recent_news-list-body-items,
+.clubs-ranking {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.recent_news-announcement-body {
+	height: 300px;
+	background-image: url('/img/karate-fighter.png');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: 6px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.recent_news-announcement-body-header {
+	height: 82px;
+	background: linear-gradient(to right, rgb(168, 110, 3), rgb(192, 171, 52));
+	border-radius: 0 0 6px 6px;
+	color: #EBEEF3;
+	padding: 16px 18px 12px 18px;
+}
+
+.recent_news-announcement-body-event {
+	opacity: 100%;
+}
+
+.recent_news-announcement-body-news {
+	font-size: 16px;
+	line-height: 124%;
+	margin: 4px 0 0 0;
+}
+
+.recent_news-list-body,
+.clubs-ranking-body {
+	height: 300px;
+	background-color: #EBEEF3;
+	border-radius: 6px;
+}
+
+.recent_news-list-body {
+	padding: 14px 7px 17px 14px;
+	align-items: center;
+}
+
+.recent_news-list-body-items {
+	height: 230px;
+}
+
+.recent_news-list-body-item {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+.recent_news-list-body-image {
+	width: 70px;
+	height: 70px;
+	border-radius: 3px;
+}
+
+.recent_news-list-body-event {
+	font-family: DM Sans;
+}
+
+.recent_news-list-body-title {
+	font-family: 'Sequel Sans Disp';
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 124%;
+	margin: 4px 0 0 0;
+}
+
+.recent_news-list-body-btn {
+	width: 80px;
+	height: 28px;
+	background-color: #B8C2CE;
+	border-radius: 3px;
+	color: #FFFFFF;
+	font-family: DM Sans;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 42px;
+	letter-spacing: 1%;
+	text-align: center;
+	vertical-align: middle;
+}
+.recent_news-list-body-btn::after {
+	content: '→';
+	margin: 0 0 0 4px;
+}
+
+.clubs-ranking {
+	width: 570px;
+	/* border: 1px solid yellow; */
+}
+
+.clubs-ranking-title {}
+
+.clubs-ranking-body {}

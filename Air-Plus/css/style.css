@@ -1,0 +1,778 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:regular,500,600,700);
+@import url(https://fonts.googleapis.com/css?family=Prosto+One:regular);
+@import url(https://fonts.googleapis.com/css?family=Roboto:regular,700);
+@import url(https://fonts.googleapis.com/css?family=Inter:regular);
+
+/*Обнуление*/
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    line-height: 1;
+    font-size: 16px;
+    color: #151515;
+    font-family: Poppins;
+    font-weight: 400;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
+/*---------------------------------------------------------------------------------*/
+.__container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.button--blue {
+    display: inline-block;
+    width: 93px;
+    height: 31px;
+    background-color: #656293;
+    border-radius: 5px;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*----------------------------------Header------------------------------------*/
+.header{
+    height: 720px;
+    padding: 38px 0 0 0;
+    background-image: url('/img/sky.jpg');
+    background-size: cover;
+    background-position: bottom 0px right 0px;
+}
+
+.header-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 36.42px;
+    z-index: 5;
+}
+
+.logo-image img {
+    height: 36.42px;
+}
+
+.header-menu {
+    width: 812px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu__list {
+    display: flex;
+}
+
+.menu__item:not(:first-child) {
+    margin: 0 0 0 20px;
+}
+
+.menu__link {
+    font-size: 14px;
+    line-height: 21px;
+    text-align: right;
+    color: #151515;
+}
+
+.menu__link:hover {
+    text-decoration: underline;
+}
+
+.menu__button {
+    margin: 0 0 0 20px;
+}
+
+.button {
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    padding-top: 6px;
+    color: #151515;
+}
+
+.button--blue{
+    color: #ffffff;
+}
+
+.reserved {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 65px 0 0 105px;
+}
+
+.reserved-title {
+    width: 587px;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 66px;
+    line-height: 77.34px;
+}
+.reserved-title span{
+    font-family: Roboto;
+    font-weight: 700;
+    color: #656293;
+}
+
+.reserved-button {
+    display: inline-block;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #151515;
+    margin: 48px 0 0 0;
+}
+
+.reserved-image {
+    width: 360px;
+    height: 451px;
+}
+
+/*----------------------------------Ticket Order------------------------------------*/
+.ticket-order-body{
+    width: 100%;
+    height: 306px;
+    margin: -215px 0 0 0;
+}
+
+.ticket-order {
+    height: 306px;
+}
+
+.ticket-order-container {
+    width: 100%;
+    height: 266px;
+    padding: 34px 29px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0px 3px 14px #AAAAAA;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.type-of-trip {
+    display: flex;
+}
+
+.round-trip,
+.flight-type,
+.person {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+}
+#round-trip,
+#flight-type,
+#person {
+    height: 24px;
+    margin: 0 20px 0 0;
+}
+
+.travel-choice {
+    height: 117px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.travel-choice-from,
+.travel-choice-to {
+    height: 100%;
+    width: 300px;
+    border: 1px solid #AAAAAA;
+    border-radius: 10px;
+    padding: 16px 20px;
+}
+
+.travel-choice-title,
+.travel-choice-date-title {
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    opacity: 60%;
+}
+
+.travel-choice-index,
+.travel-choice-date-value {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.travel-choice-adress {
+    font-size: 14px;
+    line-height: 21px;
+    opacity: 60%;
+}
+
+.travel-choice-button {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+}
+
+.travel-choice-date {
+    display: flex;
+    justify-content: space-between;
+    width: 381px;
+    height: 100%;
+    border: 1px solid #AAAAAA;
+    border-radius: 10px;
+    padding: 16px 20px;
+}
+
+.travel-choice-date-departure,
+.travel-choice-date-return {
+    width: 156px;
+    height: 86px;
+}
+
+.travel-choice-date-choice {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.travel-choice-date-button {
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+}
+
+.travel-choice-date-buttons {
+    display: flex;
+    gap: 44px;
+}
+
+.travel-choice-date-btn__prev,
+.travel-choice-date-btn__next{
+    width: 32px;
+    height: 21px;
+    background-color: transparent;
+    font-size: 14px;
+    line-height: 21px;
+    opacity: 60%;
+}
+.travel-choice-date-btn__prev:hover,
+.travel-choice-date-btn__next:hover {
+    text-decoration: underline;
+}
+
+.requirements a{
+    font-size: 14px;
+    line-height: 21px;
+    text-decoration: underline;
+    color: #151515;
+}
+
+.ticket-order-body-button{
+    width: 233px;
+    height: 80px;
+    border-radius: 10px;
+    font-size: 18px;
+    line-height: 27px;
+    margin: -50% 0 0 41%;
+}
+    
+/*----------------------------------Private Jet------------------------------------*/
+.private-jet {
+    height: 1215px;
+    position: relative;
+}
+
+.circle-1{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #e6e4e4;
+    position: absolute;
+    left: 48%;
+    top: 5px;
+    z-index: -1;
+}
+
+.bcg-left{
+    width: 400px;
+    height: 523px;
+    background-color: #E5F4F6;
+    border-radius: 0 50px 50px 0;
+    position: absolute;
+    top: 110px;
+    left: 0;
+    z-index: -6;
+}
+
+.bcg-reight{
+    width: 400px;
+    height: 523px;
+    background-color: #E5F4F6;
+    border-radius: 50px 0 0 50px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -6;
+}
+
+.private-jet-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.private-jet-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+    text-align: center;
+    color: #000;
+}
+
+.private-jet-charter {
+    width: 100%;
+    height: 523px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.private-jet-charter img{
+    width: 589px;
+    height: 392px;
+}
+
+.private-jet-charter-body {
+    width: 463px;
+}
+
+.private-jet-charter-body-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000;
+    margin: 0 0 14px 0;
+}
+
+.private-jet-charter-body-text {
+    line-height: 24px;
+    letter-spacing: 2%;
+    text-align: justify;
+    opacity: 60%;
+}
+
+/*----------------------------------Jet Performance------------------------------------*/
+.jet-performance {
+    height: 837px;
+    position: relative;
+}
+
+.circle-2{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #e6e4e4;
+    position: absolute;
+    left: 48.5%;
+    top: 80px;
+    z-index: -1;
+}
+
+.jet-performance-container {
+    width: 100%;
+    height: 688px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.jet-performance-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+    text-align: center;
+    color: #000;
+}
+
+.jet-performance-body {
+    width: 100%;
+    height: 566px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.jet-performance-body > img{
+    width: 297px;
+    height: 328px;
+}
+
+.jet-performance-body-items {
+    width: 370px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.jet-performance-body-item {
+    width: 100%;
+    height: 268px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 32px #AAAAAA;
+    text-align: center;
+    padding: 40px 52px;
+}
+
+.jet-performance-body-item-image img{
+    width: 55px;
+    height: 55px;
+}
+
+.jet-performance-body-item-title {
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    margin: 13px 0 11px 0;
+}
+
+.jet-performance-body-item-text {
+    line-height: 24px;
+    letter-spacing: 2%;
+    text-align: center;
+    opacity: 60%;
+}
+
+/*----------------------------------Luxury Charters------------------------------------*/
+.luxury-charters {
+    height: 432px;
+    background-image: url('/img/earth.png');
+    background-size: contain;
+    background-position: left 450px top 85px;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.circle-3 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #e6e4e4;
+    position: absolute;
+    left: 48.5%;
+    top: 5px;
+    z-index: -1;
+}
+
+.luxury-charters-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0 66px 0;
+}
+
+.luxury-charters-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+    text-align: center;
+}
+
+.luxury-charters-body {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.luxury-charters-body-item {
+    width: 255px;
+    height: 251px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 32px #AAAAAA;
+    text-align: center;
+    padding: 10px 12px;
+    background-color: #ffffff;
+}
+
+.luxury-charters-body-item-image img{
+    width: 230.6px;
+    height: 189px;
+}
+
+.luxury-charters-body-item-text {
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin: 14px 0 0 0;
+}
+
+/*----------------------------------Membership------------------------------------*/
+.membership {
+    height: 949px;
+    align-items: flex-start;
+    position: relative;
+}
+
+.circle-4 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #e6e4e4;
+    position: absolute;
+    left: 48.5%;
+    top: 7px;
+    z-index: -1;
+}
+
+.membership-container {
+    width: 1232px;
+    height: 731px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.membership-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.membership-body {
+    width: 100%;
+    height: 572px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.membership-card {
+    width: 400px;
+    height: 100%;
+    padding: 24px;
+    background-color: #F5F5F5;
+}
+.membership-card:first-child {
+    border-radius: 20px 0 0 20px; 
+}
+.membership-card:nth-child(2) {
+    width: 384px;
+    background-color: #656293;
+    border-radius: 24px;
+    color: #ffffff;
+    margin: -40px 0 0 0;
+}
+.membership-card:nth-child(2) .membership-card-btn{
+    width: 336px;
+    background-color: #ffffff;
+    color: #151515;
+}
+.membership-card:nth-child(2) .membership-card-list  .membership-card-list-item {
+    background: url('/img/li-white.png') left no-repeat;
+}
+
+.membership-card:last-child {
+    border-radius: 0 20px 20px 0;
+}
+
+.membership-card-title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.membership-card-text {
+    font-size: 22px;
+    line-height: 33px;
+    color: #A9A9AA;
+    margin: 32px 0 24px 0;
+}
+
+.membership-card-list {
+    border-bottom: 1px dashed #A9A9AA;
+}
+
+.membership-card-list-item {
+    background: url('/img/li-dark.png') left no-repeat;
+    padding: 0 0 0 32px;
+    margin: 0 0 16px 0;
+    line-height: 24px;
+    letter-spacing: 0%;
+}
+
+.membership-card-price {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    margin: 65px 0 24px 0;
+}
+
+.membership-card-btn {
+    width: 352px;
+    height: 64px;
+    border-radius: 12px;
+    background-color: #656293;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 40px;
+    text-align: center;
+}
+
+/*----------------------------------Footer------------------------------------*/
+.footer {
+    height: 170px;
+    background-color: #656293;
+    color: #ffffff;
+}
+
+.footer-container {
+    width: 100%;
+    height: 100%;
+}
+
+.footer-logo {
+    height: 116px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-logo img{
+    width: 139px;
+    height: 36.42px;
+}
+
+.footer-selector{
+    width: 100%;
+    height: 1px;
+    background-color: #ffffff;
+    opacity: 20%;
+}
+
+.footer-body {
+    height: 53px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    opacity: 70%;
+}
+
+.footer-menu {
+    width: 316px;
+}
+
+.footer-menu__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-menu__item a{
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.footer-menu__item:hover{
+    text-decoration: underline;
+}
+
+.footer-copyright {
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+}

@@ -1,0 +1,465 @@
+@import url(https://fonts.googleapis.com/css?family=Be+Vietnam+Pro:regular&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Outfit:regular&display=swap);
+
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	line-height: 1;
+	font-size: 13px;
+	font-family: Be Vietnam Pro, sans-serif;
+	font-weight: 400;
+	color: #1C2436;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+.wrapper {
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+header,
+section,
+footer {
+	min-width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.button{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.__header-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.__title-container {
+	font-family: Outfit;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 1.28px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #454C5F;
+}
+
+.__subtitle-container {
+	font-family: Outfit;
+	font-size: 44px;
+	line-height: 57.6px;
+	letter-spacing: 0.96px;
+	text-align: center;
+}
+/*------------------------Header-----------------------*/
+.header {
+	width: 100%;
+	height: 90px;
+	/* display: flex; */
+	justify-content: space-between;
+	/* align-items: center; */
+}
+
+.header-menu {
+	width: 454px;
+	height: 42px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.menu-list {
+	width: 385px;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 16px;
+}
+
+.menu-item:hover {
+	text-decoration: underline;
+}
+
+.menu-link{
+	font-family: Be Vietnam Pro;
+	line-height: 24px;
+	letter-spacing: 0.28px;
+	color: #000000;
+}
+
+.header-btn {
+	width: 147px;
+	height: 42px;
+	border: 1px solid #E8E7EE;
+	color: #1C2436;
+}
+
+/*------------------------Build site-----------------------*/
+.build-site {
+	height: 980px;
+}
+
+.build-site-container {
+	height: 820px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+}
+.build-site-container img{
+	width: 100%;
+	height: 480px;
+}
+
+.build-site-header {
+	width: 770px;
+	height: 300px;
+}
+
+.build-site-title {
+	font-family: Be Vietnam Pro;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.64px;
+	text-transform: uppercase;
+	color: #1C2436;
+}
+
+.build-site-subtitle {
+	font-size: 67px;
+	line-height: 86.4px;
+	letter-spacing: 1.44px;
+}
+
+.build-site-text {
+	font-size: 18px;
+	line-height: 32px;
+	letter-spacing: 0.36px;
+	text-align: center;
+}
+
+/*------------------------Browse collection-----------------------*/
+.browse-collection {
+	height: 741px;
+}
+
+.browse-collection-container {
+	width: 1060px;
+	height: 581px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.browse-collection-header {
+	width: 100%;
+	height: 114px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 21px 0 0;
+}
+
+.browse-collection-subtitle {
+	width: 435px;
+	height: 100%;
+	text-align: left;
+}
+
+.browse-collection-text {
+	width: 431px;
+	height: 96px;
+	font-size: 16px;
+	line-height: 32px;
+	letter-spacing: 0.36px;
+}
+
+.separator {
+	width: 100%;
+	height: 1px;
+	background: #E8E7EE;
+}
+
+.browse-collection-body {
+	width: 100%;
+	height: 386px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.browse-collection-items {
+	height: 298px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.browse-collection-item {
+	width: 327px;
+	border: 1px solid #E8E7EE;
+	padding: 41px;
+	text-align: center;
+}
+
+.browse-collection-item-image {
+	width: 72px;
+	height: 72px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+}
+.browse-collection-item:first-child .browse-collection-item-image {
+	background-color: #CFF2ED;
+}
+.browse-collection-item:nth-child(2) .browse-collection-item-image {
+	background-color: #E6CFF2;
+}
+.browse-collection-item:last-child .browse-collection-item-image {
+	background-color: #EBFA9E;
+}
+.browse-collection-item-image img{
+	width: 40px;
+	height: 40px;
+}
+
+.browse-collection-item-content-title {
+	font-family: Outfit;
+	font-size: 23px;
+	line-height: 32px;
+	letter-spacing: 0.48px;
+	text-align: center;
+	margin: 32px 0 10px 0;
+}
+
+.browse-collection-item-content-text {
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.32px;
+	text-align: center;
+	color: #454C5F;
+}
+
+.browse-collection-btn {
+	height: 56px;
+	justify-content: space-between;
+	background-color: #F6F6F9;
+	padding: 0 16px;
+	color: #1C2436;
+	font-size: 14px;
+	line-height: 24px;
+	letter-spacing: 0.32px;
+	text-align: center;
+}
+.browse-collection-btn img{
+	width: 24px;
+	height: 24px;
+}
+
+/*------------------------Landing Pages-----------------------*/
+.landing-pages {
+	height: 1351px;
+}
+
+.landing-pages-container,
+.company-pages-container,
+.overview-pages-container,
+.pricing-pages-container,
+.contact-pages-container,
+.blog-pages-container,
+.account-pages-container {
+	height: 1241px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.landing-pages-header,
+.company-pages-header,
+.overview-pages-header,
+.pricing-pages-header,
+.contact-pages-header,
+.blog-pages-header,
+.account-pages-header {
+	height: 89px;
+}
+
+.landing-pages-body,
+.company-pages-body,
+.overview-pages-body,
+.pricing-pages-body,
+.contact-pages-body,
+.blog-pages-body,
+.account-pages-body {
+	height: 1112px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 75px 47px;
+}
+.landing-pages-body img,
+.company-pages-body img,
+.overview-pages-body img,
+.pricing-pages-body img,
+.contact-pages-body img,
+.blog-pages-body img,
+.account-pages-body img {
+	width: 526px;
+	height: 385px;
+}
+
+/*------------------------Company Pages-----------------------*/
+.company-pages {
+	height: 1301px;
+}
+
+/*------------------------Overview Pages-----------------------*/
+.overview-pages,
+.pricing-pages,
+.contact-pages,
+.blog-pages {
+	height: 725px;
+}
+
+.overview-pages-container,
+.pricing-pages-container,
+.contact-pages-container,
+.blog-pages-container {
+	width: 100%;
+	height: 665px;
+}
+
+.overview-pages-body,
+.pricing-pages-body,
+.contact-pages-body,
+.blog-pages-body {
+	width: 100%;
+	height: 536px;
+}
+
+/*------------------------Pricing Pages-----------------------*/
+
+/*------------------------Contact Pages-----------------------*/
+
+/*------------------------Blog Pages-----------------------*/
+
+/*------------------------Account Pages-----------------------*/
+.account-pages {
+	height: 1361px;
+}
+
+/*------------------------Footer-----------------------*/
+.footer {
+	height: 654px;
+}
+
+.footer-container {
+	width: 1120px;
+	height: 514px;
+	background-color: #2A514C;
+	color: #ffffff;
+	line-height: 24px;
+	letter-spacing: 0.28px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+.footer-social {
+	height: 56px;
+	padding: 0 0 0 80px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer-logo {
+	color: #ffffff;
+}
+
+.footer-social-icon:not(:last-child) {
+	margin: 0 16px 0 0;
+}
+.footer-social-icon img{
+	width: 40px;
+	height: 40px;
+}
+
+.footer-menu {
+	width: 100%;
+	height: 362px;
+	border-top: 1px solid #F0FAF81A;
+	border-bottom: 1px solid #F0FAF81A;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-menu-item {
+	width: 247px;
+	padding: 40px 0;
+}
+
+.footer-menu-item-title {
+	font-size: 12px;
+	line-height: 16px;
+	letter-spacing: 0.96px;
+	text-transform: uppercase;
+	color: #EBFA9E;
+	margin: 0 0 48px 0;
+}
+
+.footer-menu-list-item:not(:last-child) {
+	margin: 0 0 24px 0;
+}
+.footer-menu-list-item:hover {
+	text-decoration: underline;
+}
+
+.footer-menu-list-link {
+	color: #ffffff;
+}
+
+.footer-developers {
+	height: 24px;
+}
+
+.footer-developers-text span{
+	color: #BFE03E;
+}
