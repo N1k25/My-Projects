@@ -17,5 +17,14 @@ $(document).ready(function(){
 		speed:500,
 		autoplaySpeed:800,
 	});
+	$('.subscription-slider').slick({
+		arrows:true,
+		dots: true,
+		infinite: false,
+		slidesToShow:1,
+		autoplay:false,
+		speed:500,
+		autoplaySpeed:800,
+	});
 });
 

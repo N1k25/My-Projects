@@ -1041,4 +1041,167 @@ table tr th {
 	opacity: 0.2;
 }
 
+/*-------------------------------Subscription---------------------------------*/
+.subscription {
+	height: 550px;
+}
+
+.subscription-container {
+	width: 100%;
+	height: 488px;
+}
+
+.subscription-card {
+	width: 100%;
+	height: 385px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #EBEEF3;
+	border-radius: 6px;
+}
+
+.subscription-card-header {
+	margin: 0 0 0 68px;
+}
+
+.subscription-card-title {
+	font-weight: 900;
+	font-size: 60px;
+	line-height: 60px;
+	letter-spacing: 1%;
+	text-transform: uppercase;
+	background: linear-gradient(#262626, #B8C2CE);
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+	margin: 0 0 43px 0;
+}
+
+/*-------------------*/
+.subscription-form-mail {
+	width: 614px;
+	height: 58px;
+}
+
+form {
+	display: flex;
+}
+
+.form-group {
+	position: relative;
+	margin-bottom: 45px;
+}
+
+input {
+	display: block;
+	width: 440px;
+	height: 58px;
+	padding: 10px;
+	border: 1px solid #262626;
+	background-color: transparent;
+	border-radius: 6px 0 0 6px;
+}
+
+input:focus {
+	outline: none;
+}
+
+.label2 {
+	position: absolute;
+	top: 14px;
+	left: 24px;
+	font-family: DM Sans;
+	font-size: 21px;
+	line-height: 28px;
+	letter-spacing: 1%;
+	pointer-events: none;
+	opacity: 37%;
+	transition: all 0.2s ease;
+}
+
+input:focus~.label2,
+input:valid~.label2 {
+	top: -20px;
+	font-size: 10pt;
+	color: #626A72;
+}
+
+.form-button {
+	width: 74px;
+	height: 58px;
+	background-color: #262626;
+	border-radius: 0 6px 6px 0;
+}
+.form-button img{
+	transform: rotate(-45deg);
+}
+/*-------------------*/
+
+.subscription-card-image {
+	width: 530px;
+	height: 100%;
+	margin: 0 0 0 -68px;
+}
+
+/* Конкретный слайдер */
+.subscription-slider {
+	position: relative;
+}
+
+.subscription-slider .slick-arrow {
+	position: absolute;
+	bottom: 25px;
+	z-index: 10;
+	font-size: 0;
+	width: 70px;
+	height: 50px;
+	border-radius: 3px;
+}
+
+.subscription-slider .slick-arrow.slick-prev {
+	right: 425px;
+	background: url('../img/arrow-prev.png') 50% 50% / 40% no-repeat, #000000;
+}
+
+.subscription-slider .slick-arrow.slick-next {
+	right: 25px;
+	background: url('../img/arrow-next.png') 50% 50% / 40% no-repeat, #000000;
+}
+
+.subscription-slider .slick-arrow.slick-disabled {
+	opacity: 0.2;
+}
+
+.subscription-slider .slick-dots {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	margin: 0 110px 0 0;
+}
+
+.subscription-slider .slick-dots li {
+	list-style: none;
+	margin: 35px 20px;
+}
+
+.subscription-slider .slick-dots button {
+	font-size: 0;
+	width: 35px;
+	height: 35px;
+	background-color: transparent;
+	border-radius: 50%;
+	font-size: 24px;
+	letter-spacing: 1%;
+	opacity: 61%;
+}
+
+.subscription-slider .slick-dots li.slick-active button {
+	background-color: #000000;
+	color: #EBEEF3;
+	opacity: 100%;
+	font-family: 'Sequel Sans Disp';
+	font-weight: 700;
+}
+
 /*-------------------------------    ---------------------------------*/
