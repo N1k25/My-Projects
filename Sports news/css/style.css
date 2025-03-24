@@ -704,7 +704,6 @@ footer,
 /*-------------------------------Recent News---------------------------------*/
 .recent_news {
 	height: 434px;
-	/* border: 1px solid red; */
 }
 
 .recent_news-container {
@@ -712,7 +711,6 @@ footer,
 	height: 354px;
 	display: flex;
 	justify-content: space-between;
-	/* border: 1px solid green; */
 }
 
 .recent_news-announcement,
@@ -823,6 +821,71 @@ footer,
 	width: 570px;
 }
 
-.clubs-ranking-title {}
+.clubs-ranking-body {
+	padding: 15px 0 12px 0;
+}
 
-.clubs-ranking-body {}
+table{
+	width: 100%;
+	vertical-align: middle;
+	border-bottom: 0.5px solid #B8C2CE;
+	padding: 0 27px 0 32px;
+}
+table:first-child,
+table:last-child {
+	border: none;
+}
+
+table tr th {
+	display: flex;
+	align-items: center;
+}
+
+.table-head tr{
+	display: flex;
+	align-items: center;
+	font-family: 'Sequel Sans Disp';
+	font-weight: 600;
+	line-height: 100%;
+	text-transform: capitalize;
+	text-align: center;
+	height: 19px;
+}
+.table-head tr th {
+	width: 230px;
+	text-align: left;
+}
+
+table tr td{
+	height: 38px;
+	text-align: center;
+	width: 37px;
+}
+.table-head tr td {
+	padding: 12px 0 0 0;
+	width: 40px;
+}
+
+table tr th {
+	padding: 6px 0 0 0;
+}
+.table-head tr th{
+	padding: 0;
+}
+
+.table-serial_number,
+.table-name {
+	font-family: 'Sequel Sans Disp';
+	font-weight: 600;
+	font-size: 13px;
+	line-height: 100%;
+	text-transform: capitalize;
+}
+
+.table-image {
+	width: 24px;
+	height: 24px;
+	margin: 0 7px 0 11px;
+}
+
+/*-------------------------------    ---------------------------------*/
