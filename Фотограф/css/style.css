@@ -502,4 +502,113 @@ footer {
 	opacity: 70%;
 }
 
+/*-------------------------------Consultation------------------------------*/
+.consultation {
+	height: 476px;
+}
+
+.consultation-container {
+	width: 100%;
+	height: 276px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.consultation-header {
+	width: 825px;
+	text-align: center;
+}
+
+.consultation-title {
+	font-family: Gilroy;
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 52px;
+}
+
+.consultation-text {
+	font-family: Gilroy;
+	font-weight: 600;
+	line-height: 24px;
+	color: #333333;
+	margin: 16px 0 0 0;
+}
+
+.consultation-body {
+	width: 482px;
+	text-align: center;
+}
+
+.consultation-body-text {
+	font-family: Gilroy;
+	font-weight: 600;
+	font-size: 15px;
+	line-height: 20px;
+	margin: 24px 0 0 0;
+}
+.consultation-body-text span{
+	opacity: 40%;
+}
+
+.consultation-body-link {
+	color: #F86624;
+}
+
+/*-------------------*/
+.consultation-form-tel {
+	width: 100%;
+	height: 56px;
+}
+
+form {
+	display: flex;
+	justify-content: space-between;
+}
+
+.form-group {
+	position: relative;
+	margin-bottom: 45px;
+}
+
+input {
+	display: block;
+	width: 260px;
+	height: 56px;
+	padding: 10px;
+	border: 1px solid #bbbaba;
+	background-color: transparent;
+	border-radius: 8px;
+	position: relative;
+}
+
+input:focus {
+	outline: none;
+}
+
+.label2 {
+	position: absolute;
+	top: 16px;
+	left: 20px;
+	font-family: Gilroy;
+	font-weight: 700;
+	line-height: 24px;
+	pointer-events: none;
+	opacity: 20%;
+	transition: all 0.2s ease;
+}
+
+input:focus~.label2,
+input:valid~.label2 {
+	top: -20px;
+	font-size: 10pt;
+	color: #626A72;
+}
+
+.form-button {
+	width: 206px;
+	height: 56px;
+}
+
 /*-------------------------------     ------------------------------*/
