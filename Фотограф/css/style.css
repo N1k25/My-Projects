@@ -143,6 +143,11 @@ footer {
 	font-size: 64px;
 	line-height: 68px;
 }
+.__title-litle{
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 52px;
+}
 .__subtitle{
 	font-size: 28px;
 	line-height: 130%;
@@ -523,9 +528,6 @@ footer {
 
 .consultation-title {
 	font-family: Gilroy;
-	font-weight: 700;
-	font-size: 48px;
-	line-height: 52px;
 }
 
 .consultation-text {
@@ -708,12 +710,6 @@ input:valid~.label2 {
 	text-align: center;
 }
 
-.price-title {
-	font-weight: 700;
-	font-size: 48px;
-	line-height: 52px;
-}
-
 .price-text {
 	opacity: 80%;
 	margin: 24px 0 0 0;
@@ -792,4 +788,72 @@ input:valid~.label2 {
 	line-height: 20px;
 }
 
-/*-------------------------------    ------------------------------*/
+/*-------------------------------About------------------------------*/
+.about {
+	height: 720px;
+}
+
+.about-container {
+	width: 100%;
+	height: 520px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.about-body {
+	width: 540px;
+	height: 384px;
+}
+
+.about-subtitle {
+	font-family: Gilroy;
+	font-weight: 600;
+	line-height: 24px;
+	color: #EA3546;
+}
+
+.about-title {
+	margin: 16px 0;
+}
+
+.about-text {
+	font-family: Gilroy;
+	font-weight: 600;
+	line-height: 24px;
+	opacity: 70%;
+}
+
+.about-btn {
+	width: 255px;
+	height: 56px;
+	margin: 32px 0 0 0;
+	font-family: Gilroy;
+	font-weight: 700;
+	line-height: 24px;
+}
+
+.about-images {
+	width: 445px;
+	height: 100%;
+	position: relative;
+}
+
+.about-image:first-child {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 350px;
+	height: 342px;
+	border-radius: 50%;
+}
+.about-image:last-child {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 255px;
+	height: 255px;
+	border-radius: 50%;
+}
+
+/*-------------------------------     ------------------------------*/
