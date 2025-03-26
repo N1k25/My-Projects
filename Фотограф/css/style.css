@@ -946,13 +946,11 @@ input:valid~.label2 {
 /*-------------------------------Order------------------------------*/
 .order {
 	height: 884px;
-	border: 1px solid red;
 }
 
 .order-container {
 	width: 540px;
 	height: 684px;
-	border: 1px solid green;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -962,10 +960,7 @@ input:valid~.label2 {
 .order-header {
 	height: 116px;
 	text-align: center;
-	border: 1px solid blue;
 }
-
-.order-title {}
 
 .order-text {
 	line-height: 24px;
@@ -1052,4 +1047,45 @@ input:valid~.label2 {
 	opacity: 80%;
 }
 
-/*-------------------------------    ------------------------------*/
+/*-------------------------------Footer------------------------------*/
+.footer {
+	height: 340px;
+}
+
+.footer-container {
+	width: 452px;
+	height: 180px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer-social-link:not(:last-child) {
+	margin: 0 10px 0 0;
+}
+
+.footer-menu {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-menu-item:hover {
+	text-decoration: underline;
+}
+
+.footer-menu-link {
+	font-weight: 700;
+	line-height: 24px;
+	vertical-align: middle;
+	color: #000000;
+	opacity: 80%;
+}
+
+.footer-copyright {
+	font-weight: 700;
+	font-size: 15px;
+	line-height: 20px;
+	opacity: 60%;
+}
