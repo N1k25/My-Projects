@@ -943,4 +943,113 @@ input:valid~.label2 {
 	max-width: 100%;
 }
 
-/*-------------------------------      ------------------------------*/
+/*-------------------------------Order------------------------------*/
+.order {
+	height: 884px;
+	border: 1px solid red;
+}
+
+.order-container {
+	width: 540px;
+	height: 684px;
+	border: 1px solid green;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.order-header {
+	height: 116px;
+	text-align: center;
+	border: 1px solid blue;
+}
+
+.order-title {}
+
+.order-text {
+	line-height: 24px;
+	color: #333333;
+	margin: 16px 0 0 0;
+}
+
+.order-body {
+	width: 100%;
+	height: 528px;
+	border: 1px solid yellow;
+}
+/*--------------*/
+
+
+/*! ------ Форма заказа -------- */
+
+
+/*--------------*/
+.order-body-text {
+	width: 450px;
+	font-weight: 700;
+	font-size: 13px;
+	line-height: 18px;
+	text-align: center;
+	margin: 24px auto 0 auto;
+	border: 1px solid pink;
+}
+
+.order-body-text span {
+	opacity: 40%;
+}
+
+.order-body-link {
+	color: #F86624;
+}
+
+
+/*-------------------------------Contacts------------------------------*/
+.contacts {
+	height: 400px;
+	background-color: #662E9B;
+	background-image: url(/img/map.png);
+	background-size: 50%;
+	background-position: left;
+	background-repeat: no-repeat;
+}
+
+.contacts-container {
+	width: 100%;
+	height: 160px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.contacts-header {
+	width: 445px;
+	height: 100%;
+	color: #FFFFFF;
+}
+
+.contacts-title {
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 32px;
+}
+
+.contacts-data {
+	margin: 16px 0 0 0;
+	line-height: 24px;
+}
+
+.contacts-tel {
+	color: #FFFFFF;
+	opacity: 80%;
+}
+
+.contacts-email {
+	color: #FFFFFF;
+	opacity: 100%;
+}
+
+.contacts-address {
+	opacity: 80%;
+}
+
+/*-------------------------------    ------------------------------*/
