@@ -971,15 +971,85 @@ input:valid~.label2 {
 .order-body {
 	width: 100%;
 	height: 528px;
-	border: 1px solid yellow;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.order-form{
+	width: 100%;
+}
+
+/* ------ Форма заказа -------- */
+.order-form form{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+#name,
+#email,
+#phone {
+	width: 100%;
+	height: 56px;
+	border-radius: 6px;
+	padding: 16px 20px;
+	margin: 0 0 12px 0;
+}
+form input::placeholder {
+	font-weight: 700;
+	line-height: 24px;
+	opacity: 20%;
+}
+
+.photo-type {
+	margin: 28px 0 0 0;
+}
+
+.photo-type label{
+	line-height: 24px;
+	color: #333333;
+	margin: 0 0 8px 0;
+}
+
+.photo-type div {
+	display: flex;
+	align-items: center;
+	height: 40px;
+	width: 260px;
+}
+
+.photo-type div input{
+	width: 24px;
+	height: 24px;
+	margin: 0 16px 0 0;
+}
+
+input[type=radio] {
+	appearance: none;
+	border-radius: 50%;
+}
+
+.photo-type div input:checked {
+	box-shadow: inset 0 0 0 8px #F86624, inset 0 0 0 3px #FFFFFF, inset 0 0 0 16px #FFFFFF;
+}
+
+.photo-type div label {
+	font-weight: 700;
+	line-height: 24px;
+	color: #333333;
+}
+
+.order-btn{
+	width: 100%;
+	height: 56px;
+	border-radius: 6px;
+	line-height: 24px;
+	margin: 24px 0 0 0;
 }
 /*--------------*/
 
-
-/*! ------ Форма заказа -------- */
-
-
-/*--------------*/
 .order-body-text {
 	width: 450px;
 	font-weight: 700;
@@ -987,13 +1057,10 @@ input:valid~.label2 {
 	line-height: 18px;
 	text-align: center;
 	margin: 24px auto 0 auto;
-	border: 1px solid pink;
 }
-
 .order-body-text span {
 	opacity: 40%;
 }
-
 .order-body-link {
 	color: #F86624;
 }

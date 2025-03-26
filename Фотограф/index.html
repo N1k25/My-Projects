@@ -309,7 +309,29 @@
 					</div>
 					<div class="order-body">
 						<!-- Форма заказа -->
-						<form action=""></form>
+						<div class="order-form">
+							<form action="" method="post">
+								<input type="text" id="name" name="name" tabindex="1" required placeholder="Ваше имя">
+								<input type="email" id="email" name="email" tabindex="2" autocomplete="off" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Электронная почта">
+								<input type="tel" id="phone" name="phone" tabindex="3" required placeholder="Контактный телефон">
+								<div class="photo-type">
+									<label for="type-photos">Выберите тип съемки</label>
+									<div>
+										<input type="radio" tabindex="4" name="type-photos" checked value="wedding-photo">
+										<label for="wedding-photo">Свадебная фотосессия</label>
+									</div>
+									<div>
+										<input type="radio" tabindex="4" name="type-photos" value="family-photo">
+										<label for="family-photo">Семейная фотосессия</label>
+									</div>
+									<div>
+										<input type="radio" tabindex="4" name="type-photos" value="children-photo">
+										<label for="children-photo">Детская фотосъемка</label>
+									</div>
+								</div>
+								<button tabindex="5" class="order-btn __button-orange" type="submit">Оставить заявку</button>
+							</form>
+						</div>
 						<p class="order-body-text">
 							<span>Оставляя заявку, вы соглашаетесь на</span>
 							<a href="#" class="order-body-link">обработку персональных данных</a>
