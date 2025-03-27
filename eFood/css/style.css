@@ -26,6 +26,7 @@ html,body{
 	line-height: 1;
 	font-size: 15px;
 	color: #363853;
+	background-color: #EFEFEF;
 	-ms-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
@@ -68,7 +69,6 @@ footer {
 /*--------------------------Header-------------------------------*/
 .header {
 	height: 150px;
-	border: 1px solid red;
 }
 
 .header-container {
@@ -119,6 +119,191 @@ footer {
 	border-radius: 5px;
 	font-size: 18px;
 	line-height: 100%;
+	box-shadow: 0px 22px 40px #FF683830;
 }
 
-/*--------------------------      -------------------------------*/
+/*--------------------------Service-------------------------------*/
+.service {
+	height: 825.54px;
+}
+
+.service-container {
+	width: 1231px;
+	height: 681px;
+	margin: 0 0 0 59px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.service-header {
+	width: 530px;
+}
+
+.service-title {
+	font-weight: 500;
+	font-size: 66px;
+	line-height: 100%;
+	text-transform: capitalize;
+}
+.service-title span {
+	color: #FF7A50;
+}
+
+.service-text {
+	width: 513px;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 30px;
+	text-transform: capitalize;
+	margin: 23px 0 44.78px 0;
+}
+
+.service-buttons {
+	display: flex;
+}
+
+.service-btn {
+	width: 163px;
+	height: 50.41px;
+	border-radius: 5px;
+	font-size: 20px;
+	line-height: 100%;
+}
+
+.service-btn_download {
+	font-size: 20px;
+	line-height: 100%;
+	color: #363853;
+	margin: 0 0 0 30px;
+}
+.service-btn_download:hover {
+	text-decoration: underline;
+}
+
+.service-body {
+	width: 689px;
+	height: 100%;
+	background-image: url('/img/scooter-guy.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+
+.service-delivery {
+	width: 154px;
+	height: 54px;
+	background-color: #FFFFFF;
+	border-radius: 6px;
+	box-shadow: 0px 4px 12px #0000001F;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 9px;
+	position: absolute;
+	top: 123.46px;
+	left: 124px;
+}
+
+.service-delivery-icon {
+	width: 43px;
+	height: 43px;
+	border-radius: 50%;
+	border: 1px solid #EFEFEF;
+}
+
+.service-delivery-person {
+	color: #3D3D3D;
+}
+
+.service-delivery-person-name {
+	font-weight: 500;
+	font-size: 10px;
+	line-height: 100%;
+	letter-spacing: 0%;
+	text-transform: capitalize;
+}
+
+.service-delivery-person-position {
+	font-size: 7px;
+	line-height: 100%;
+	text-transform: capitalize;
+	margin: 3px 0 0 0;
+}
+
+.service-delivery-call {
+	width: 24px;
+	height: 24px;
+	background-color: #5EDB71;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.service-product {
+	width: 178px;
+	height: 75px;
+	background-color: #FFFFFF;
+	border-radius: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 8px 0 0;
+	box-shadow: 0px 4px 12px #00000012;
+	position: absolute;
+	top: 271.46px;
+	right: -30px;
+}
+
+.service-product-icon {
+	width: 69.54px;
+	height: 62.42px;
+}
+
+.service-product-card-title {
+	font-size: 11px;
+	line-height: 100%;
+	color: #302F3C;
+}
+
+.service-product-card-rating {
+	margin: 0 0 2px 0;
+}
+
+.service-product-card-rating-icon {
+	width: 11.55px;
+	height: 11px;
+}
+
+.service-product-card-price {
+	font-weight: 500;
+	line-height: 100%;
+}
+.service-product-card-price span {
+	font-weight: 700;
+	font-size: 8px;
+	line-height: 100%;
+	color: #FF7A50;
+}
+
+.service-shape {
+	position: absolute;
+	top: 47.07px;
+	right: 37.21px;
+}
+
+.service-time {
+	position: absolute;
+	top: 12.46px;
+	right: 76.88px;
+}
+
+.service-time_1 {
+	position: absolute;
+	top: 16.46px;
+	left: 245px;
+}
+
+/*--------------------------     -------------------------------*/
