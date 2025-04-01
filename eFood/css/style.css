@@ -791,4 +791,125 @@ footer {
 	top: 10px;
 }
 
+/*--------------------------Reviews-------------------------------*/
+.reviews {
+	height: 797px;
+}
+
+.reviews-container {
+	width: 100%;
+	height: 631px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.reviews-body {
+	width: 100%;
+	height: 528px;
+}
+
+.reviews-item {
+	width: 100%;
+	height: 528px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.reviews-item-img {
+	width: 433px;
+	height: 100%;
+	border-radius: 24px;
+}
+
+.reviews-item-card {
+	width: 661px;
+	height: 358px;
+	padding: 0 46px;
+}
+
+.reviews-item-text {
+	font-size: 20px;
+	line-height: 45px;
+	letter-spacing: 0.5px;
+	position: relative;
+}
+.reviews-item-text::before {
+	content: url('/img/quotes-opening.svg');
+	width: 32px;
+	position: absolute;
+	left: -46px;
+	top: 0;
+}
+.reviews-item-text::after {
+	content: url('/img/quotes-closing.svg');
+	width: 32px;
+	position: absolute;
+	right: -46px;
+	bottom: -40px;
+}
+
+.reviews-item-name {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 100%;
+	color: #FF7A50;
+	margin: 74px 0 18px 0;
+}
+
+.reviews-item-position {
+	font-size: 14px;
+	line-height: 100%;
+	color: #AAAAAA;
+}
+
+/* Основные стили */
+
+/* Слайдер */
+.slick-slider {
+	min-width: 0;
+}
+
+/* Ограничивающая оболочка */
+.slick-list {
+	overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track {
+	display: flex;
+	align-items: flex-start;
+}
+
+/* Конкретный слайдер */
+.reviews-slider {
+	position: relative;
+}
+
+.reviews-slider .slick-arrow {
+	position: absolute;
+	bottom: 92px;
+	z-index: 10;
+	font-size: 0;
+	width: 32px;
+	height: 32px;
+}
+
+.reviews-slider .slick-arrow.slick-prev {
+	right: 132px;
+	background: url('../img/arrow-right-orange.svg') 0 0 / 100% no-repeat;
+	transform: rotate(180deg);
+}
+
+.reviews-slider .slick-arrow.slick-next {
+	right: 56px;
+	background: url('../img/arrow-right-orange.svg') 0 0 / 100% no-repeat;
+}
+
+.reviews-slider .slick-arrow.slick-disabled {
+	opacity: 0.2;
+}
+
 /*--------------------------     -------------------------------*/
