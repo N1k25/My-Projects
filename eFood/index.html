@@ -15,7 +15,7 @@
 	<body>
 		<header class="header">
 			<div class="header-container __container">
-				<a href="#" class="header-logo">EFood</a>
+				<a href="#" class="logo">EFood</a>
 				<div class="header-body">
 					<nav class="menu">
 						<ul class="menu-list">
@@ -23,22 +23,24 @@
 								<a href="#" class="menu-link">Home</a>
 							</li>
 							<li class="menu-item">
-								<a href="#" class="menu-link">Service</a>
+								<a href="#service" class="menu-link">Service</a>
 							</li>
 							<li class="menu-item">
 								<a href="#" class="menu-link">Top cities</a>
 							</li>
 							<li class="menu-item">
-								<a href="#" class="menu-link">Contract</a>
+								<a href="#footer" class="menu-link">Contract</a>
 							</li>
 							<li class="menu-item">
-								<a href="#" class="menu-link">
-									<img src="/img/search.svg" alt="search">
-								</a>
+								<form class="search">
+									<input type="text" class="search-input" spellcheck="false" />
+									<div class="cross"></div>
+								</form>
 							</li>
-							<li class="menu-item">
+							<li class="menu-item" id="count-reset">
 								<a href="#" class="menu-link">
 									<img src="/img/buy.svg" alt="buy">
+									<span id="cart-count" class="cart-count"></span>
 								</a>
 							</li>
 						</ul>
@@ -50,12 +52,12 @@
 		<main class="main">
 			<section class="service">
 				<div class="service-container">
-					<div class="service-header">
+					<div class="service-header" id="service">
 						<h1 class="service-title">super fast <span>Food delivery</span> service</h1>
 						<p class="service-text">We provide super fast-delivery service. Let’s use our services right now and get discounts of up to 50%</p>
 						<div class="service-buttons">
-							<a href="#" class="service-btn button button-orange">Explore Food</a>
-							<a href="#" class="service-btn_download button">Download App</a>
+							<a href="#category" class="service-btn button button-orange">Explore Food</a>
+							<a href="#app" class="service-btn_download button">Download App</a>
 						</div>
 					</div>
 					<div class="service-body">
@@ -90,11 +92,11 @@
 				</div>
 			</section>
 			<section class="category">
-				<div class="category-container __container">
+				<div class="category-container __container" >
 					<h2 class="category-title __title">Our popular <span>Category</span></h2>
 					<div class="category-body">
 						<div class="content">
-							<div class="tabs">
+							<div class="tabs" id="category">
 								<nav class="tabs__items">
 									<a href="#tab_01" class="tabs__item">
 										<img src="/img/burger-icon.svg" alt="burger-icon" class="tabs__item-icon">
@@ -133,7 +135,7 @@
 												</div>
 												<h3 class="slider__item-title">Cheeseburger With Salad</h3>
 												<p class="slider__item-price">$18.00</p>
-												<a href="#" class="slider__item-btn button button-orange">Add to Cart</a>
+												<a href="#tab_01" class="slider__item-btn button button-orange add-to-cart">Add to Cart</a>
 											</div>
 											<div class="slider__item">
 												<img src="/img/burger-2.jpg" alt="burger-2" class="slider__item-img">
@@ -146,7 +148,7 @@
 												</div>
 												<h3 class="slider__item-title">Beef Burger</h3>
 												<p class="slider__item-price">$15.00</p>
-												<a href="#" class="slider__item-btn button button-orange">Add to Cart</a>
+												<a href="#tab_01" class="slider__item-btn button button-orange add-to-cart">Add to Cart</a>
 											</div>
 											<div class="slider__item">
 												<img src="/img/burger-3.jpg" alt="burger-3" class="slider__item-img">
@@ -159,7 +161,7 @@
 												</div>
 												<h3 class="slider__item-title">Royel Cheeseburger</h3>
 												<p class="slider__item-price">$16.00</p>
-												<a href="#" class="slider__item-btn button button-orange">Add to Cart</a>
+												<a href="#tab_01" class="slider__item-btn button button-orange add-to-cart">Add to Cart</a>
 											</div>
 											<div class="slider__item">
 												<img src="/img/burger-4.jpg" alt="burger-4" class="slider__item-img">
@@ -172,7 +174,7 @@
 												</div>
 												<h3 class="slider__item-title">Black Gambugrer </h3>
 												<p class="slider__item-price">$14.00</p>
-												<a href="#" class="slider__item-btn button button-orange">Add to Cart</a>
+												<a href="#tab_01" class="slider__item-btn button button-orange add-to-cart">Add to Cart</a>
 											</div>
 											<div class="slider__item">
 												<img src="/img/burger-5.jpg" alt="burger-5" class="slider__item-img">
@@ -185,7 +187,7 @@
 												</div>
 												<h3 class="slider__item-title">Chicken Burger</h3>
 												<p class="slider__item-price">$15.00</p>
-												<a href="#" class="slider__item-btn button button-orange">Add to Cart</a>
+												<a href="#tab_01" class="slider__item-btn button button-orange add-to-cart">Add to Cart</a>
 											</div>
 											<div class="slider__item">
 												<img src="/img/burger-1.jpg" alt="burger-1" class="slider__item-img">
@@ -198,7 +200,7 @@
 												</div>
 												<h3 class="slider__item-title">Cheeseburger With Salad</h3>
 												<p class="slider__item-price">$18.00</p>
-												<a href="#" class="slider__item-btn button button-orange">Add to Cart</a>
+												<a href="#tab_01" class="slider__item-btn button button-orange add-to-cart">Add to Cart</a>
 											</div>
 											<div class="slider__item">
 												<img src="/img/burger-2.jpg" alt="burger-2" class="slider__item-img">
@@ -211,7 +213,7 @@
 												</div>
 												<h3 class="slider__item-title">Beef Burger</h3>
 												<p class="slider__item-price">$15.00</p>
-												<a href="#" class="slider__item-btn button button-orange">Add to Cart</a>
+												<a href="#tab_01" class="slider__item-btn button button-orange add-to-cart">Add to Cart</a>
 											</div>
 											<div class="slider__item">
 												<img src="/img/burger-3.jpg" alt="burger-3" class="slider__item-img">
@@ -224,7 +226,7 @@
 												</div>
 												<h3 class="slider__item-title">Royel Cheeseburger</h3>
 												<p class="slider__item-price">$16.00</p>
-												<a href="#" class="slider__item-btn button button-orange">Add to Cart</a>
+												<a href="#tab_01" class="slider__item-btn button button-orange add-to-cart">Add to Cart</a>
 											</div>
 										</div>
 									</div>
@@ -275,7 +277,7 @@
 								<p class="provide-item-text">500+ restaurant & cafe shop</p>
 							</li>
 						</ul>
-						<a href="#" class="provide-btn button button-orange">See more</a>
+						<a href="#service" class="provide-btn button button-orange">See more</a>
 					</div>
 				</div>
 			</section>
@@ -354,7 +356,7 @@
 			</section>
 			<section class="app">
 				<div class="app-container __container">
-					<div class="app-header">
+					<div class="app-header" id="app">
 						<h2 class="app-title __title">Download  Our <span>Mobile App</span></h2>
 						<p class="app-text">It's all at your fingertips -- the restaurants you love. Find the right food to suit your mood, and make the first bite last. Go ahead, download app and get 50% discount</p>
 						<div class="app-links">
@@ -427,12 +429,131 @@
 				</div>
 			</section>
 		</main>
-		<footer class="footer"></footer>
+		<footer class="footer" id="footer">
+			<div class="footer-container">
+				<div class="footer-body __container">
+					<div class="footer-contacts">
+						<a href="#" class="footer-logo"><span>E</span>Food</a>
+						<div class="footer-contacts-list">
+							<div class="footer-contacts-item">
+								<img src="/img/location.svg" alt="location" class="footer-contacts-item-icon">
+								<p class="footer-contacts-item-text">Dhaka, Bangladesh</p>
+							</div>
+							<a href="tel:0943833399" class="footer-contacts-item">
+								<img src="/img/calling-1.svg" alt="calling-1" class="footer-contacts-item-icon">
+								<p class="footer-contacts-item-text">0943833399</p>
+							</a>
+							<a href="mailto:support@efood.com" class="footer-contacts-item">
+								<img src="/img/message.svg" alt="message" class="footer-contacts-item-icon">
+								<p class="footer-contacts-item-text">support@efood.com</p>
+							</a>
+							<div class="footer-social">
+								<a href="https://www.facebook.com/" target="_blank" class="footer-social-link">
+									<img src="/img/ic-facebook.svg" alt="facebook" class="footer-social-link-icon">
+								</a>
+								<a href="https://x.com/" target="_blank" class="footer-social-link">
+									<img src="/img/ic-twitter.svg" alt="twitter" class="footer-social-link-icon">
+								</a>
+								<a href="https://www.instagram.com/" target="_blank" class="footer-social-link">
+									<img src="/img/ic-instagram.svg" alt="instagram" class="footer-social-link-icon">
+								</a>
+								<a href="https://ru.pinterest.com/" target="_blank" class="footer-social-link">
+									<img src="/img/ic-pinterest.svg" alt="pinterest" class="footer-social-link-icon">
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="footer-menu">
+						<div class="footer-menu-card">
+							<h3 class="footer-menu-card-title">Service</h3>
+							<ul class="footer-menu-card-list">
+								<li class="footer-menu-card-list-item">
+									<a href="#" class="footer-menu-card-list-link">How it works</a>
+								</li>
+								<li class="footer-menu-card-list-item">
+									<a href="#" class="footer-menu-card-list-link">Home delivery</a>
+								</li>
+								<li class="footer-menu-card-list-item">
+									<a href="#category" class="footer-menu-card-list-link">Products</a>
+								</li>
+								<li class="footer-menu-card-list-item">
+									<a href="#" class="footer-menu-card-list-link">Menu</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer-menu-card">
+							<h3 class="footer-menu-card-title">Company</h3>
+							<ul class="footer-menu-card-list">
+								<li class="footer-menu-card-list-item">
+									<a href="#" class="footer-menu-card-list-link">About Us</a>
+								</li>
+								<li class="footer-menu-card-list-item">
+									<a href="#" class="footer-menu-card-list-link">News</a>
+								</li>
+								<li class="footer-menu-card-list-item">
+									<a href="#" class="footer-menu-card-list-link">Our trusted partner</a>
+								</li>
+								<li class="footer-menu-card-list-item">
+									<a href="#" class="footer-menu-card-list-link">New users FAQ</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer-menu-card">
+							<h3 class="footer-menu-card-title">Supports</h3>
+							<ul class="footer-menu-card-list">
+								<li class="footer-menu-card-list-item">
+									<a href="#" class="footer-menu-card-list-link">Help center</a>
+								</li>
+								<li class="footer-menu-card-list-item">
+									<a href="#" class="footer-menu-card-list-link">Feedback</a>
+								</li>
+								<li class="footer-menu-card-list-item">
+									<a href="#" class="footer-menu-card-list-link">Contact us</a>
+								</li>
+								<li class="footer-menu-card-list-item">
+									<a href="#" class="footer-menu-card-list-link">Terms conditins</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer-menu-card">
+							<h3 class="footer-menu-card-title">Resources</h3>
+							<ul class="footer-menu-card-list">
+								<li class="footer-menu-card-list-item">
+									<a href="#app" class="footer-menu-card-list-link">Download app</a>
+								</li>
+								<li class="footer-menu-card-list-item">
+									<a href="#" class="footer-menu-card-list-link">Blog</a>
+								</li>
+								<li class="footer-menu-card-list-item">
+									<a href="#" class="footer-menu-card-list-link">What’s new</a>
+								</li>
+								<li class="footer-menu-card-list-item">
+									<a href="#" class="footer-menu-card-list-link">Sitemap</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<hr width="100%" size="3" color="#969696" style="opacity: 20%;" class="footer-line">
+				<div class="footer-copyright __container">
+					<p class="footer-copyright-text">© 2021 EFood - All rights reserved.</p>
+					<div class="footer-copyright-links">
+						<a href="#" class="footer-copyright-link">Privacy Policy</a>
+						<a href="#" class="footer-copyright-link">Security</a>
+						<a href="#" class="footer-copyright-link">Terms</a>
+					</div>
+				</div>
+			</div>
+		</footer>
 	<!-- Подключаем jQuery -->
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 	<!-- Подключаем слайдер Slick -->
 	<script src="js/slick.min.js"></script>
 	<!-- Подключаем файл скриптов -->
 	<script src="js/script.js"></script>
+	<!-- Подключаем файл счетчика -->
+	<script src="js/app.js"></script>
+	<!-- Подключаем файл поиска -->
+	<script src="js/search.js"></script>
 	</body>
 </html>

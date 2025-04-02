@@ -89,14 +89,14 @@ footer {
 	align-items: center;
 }
 
-.header-logo {
+.logo {
 	font-weight: 500;
 	font-size: 33px;
 	line-height: 100%;
 	letter-spacing: 5%;
 	color: #363853;
 }
-.header-logo::first-letter {
+.logo::first-letter {
 	color: #FF7A50;
 }
 
@@ -112,6 +112,7 @@ footer {
 
 .menu-item {
 	margin: 0 60px 0 0;
+	position: relative;
 }
 
 .menu-link {
@@ -122,6 +123,91 @@ footer {
 .menu-link:hover {
 	color: #FF6838;
 }
+
+/*---------Search-----------*/
+.search {
+	position: relative;
+}
+
+.search .search-input {
+	background: none;
+	border: 1px solid #363853;
+	border-radius: 24px;
+	height: 24px;
+	width: 24px;
+	color: #363853;
+	transition: all 0.3s ease;
+	cursor: pointer;
+}
+
+.search .search-input:focus {
+	outline: 0;
+}
+
+.search .cross {
+	position: absolute;
+	top: 10px;
+	right: 0;
+	cursor: pointer;
+	width: 24px;
+	height: 24px;
+	transition: all 0.3s 0.3s ease;
+}
+
+.search .cross:before,
+.search .cross:after {
+	content: "";
+	display: block;
+	background: #363853;
+	position: absolute;
+	width: 1px;
+	height: 12px;
+	transition: all 0.3s ease;
+	right: 0;
+	bottom: 4px;
+}
+
+.search .cross:before {
+	transform: rotate(-45deg);
+}
+
+.search .cross:after {
+	transform: rotate(-45deg);
+}
+
+.search.opened .search-input {
+	width: 150px;
+	transition-delay: 0.5s;
+	cursor: text;
+}
+
+.search.opened .cross {
+	transform: translateX(-12px) translateY(-12px);
+	transition-delay: 0s;
+}
+
+.search.opened .cross:before {
+	transition-delay: 0.3s;
+	transform: rotate(45deg);
+}
+
+/*---------Counter-----------*/
+.cart-count{
+	width: 14px;
+	height: 14px;
+	background-color: #FF6838;
+	color: #FFFFFF;
+	font-size: 10px;
+	line-height: 100%;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: -5px;
+	right: -5px;
+}
+/*---------------------------*/
 
 .header-btn {
 	width: 120px;
@@ -143,7 +229,6 @@ footer {
 	margin: 0 0 0 59px;
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
 }
 
 .service-header {
@@ -1005,4 +1090,106 @@ input:valid~.label2 {
 	height: 15.6px;
 }
 
-/*--------------------------    -------------------------------*/
+/*--------------------------Footer-------------------------------*/
+.footer {
+	height: 387px;
+}
+
+.footer-container{
+	width: 100%;
+	height: 315px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.footer-body,
+.footer-copyright,
+.footer-menu {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-body {
+	width: 100%;
+	height: 245px;
+}
+
+.footer-logo {
+	font-weight: 500;
+	font-size: 33px;
+	letter-spacing: 5%;
+	color: #363853;
+}
+.footer-logo span {
+	color: #FF7A50;
+}
+
+.footer-contacts-list {
+	margin: 29px 0 0 0;
+}
+
+.footer-contacts-item {
+	display: flex;
+	align-items: center;
+	gap: 7px;
+	font-family: DM Sans;
+	font-size: 16px;
+	line-height: 32px;
+	color: #37383D;
+	margin: 0 0 15px 0;
+}
+
+.footer-social {
+	display: flex;
+	gap: 13px;
+}
+
+.footer-social-link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 39px;
+	height: 39px;
+	border-radius: 50%;
+	background-color: #dddcdc;
+}
+
+.footer-menu *{
+	color: #37383D;
+	font-size: 18px;
+	line-height: 49px;
+	letter-spacing: 1%;
+}
+
+.footer-menu-card:not(:first-child) {
+	margin: 0 0 0 99px;
+}
+
+.footer-menu-card-title {
+	font-weight: 500;
+}
+
+.footer-menu-card-list-item:hover {
+	text-decoration: underline;
+}
+
+.footer-copyright {
+	width: 100%;
+}
+
+.footer-copyright-text,
+.footer-copyright-link {
+	font-size: 14px;
+	line-height: 14px;
+	letter-spacing: 4%;
+	color: #646464;
+}
+
+.footer-copyright-link {
+	margin: 0 0 0 52px;
+}
+.footer-copyright-link:hover {
+	text-decoration: underline;
+}
