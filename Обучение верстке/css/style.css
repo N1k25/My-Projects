@@ -84,4 +84,108 @@ footer {
     height: 50px;
 }
 
-/*----------------------------     --------------------------------*/
+/*----------------------------Learn--------------------------------*/
+.learn {
+    height: 700px;
+    position: relative;
+    justify-content: space-between;
+}
+
+.learn-body {
+    width: 1090px;
+    height: 100%;
+    border-radius: 0 20px 20px 0;
+    position: relative;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 0 0 120px;
+}
+.learn-body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #CD10FF, #9F06FF);
+    border-radius: 0 20px 20px 0;
+    opacity: 0.05;
+}
+
+.learn-title {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 68px;
+    letter-spacing: -1px;
+    width: 537px;
+}
+
+.learn-text {
+    font-size: 20px;
+    line-height: 30px;
+    width: 550px;
+    color: #4F596A;
+    margin: 20px 0 40px 0;
+}
+
+.learn-btn {
+    width: 206px;
+    height: 66px;
+    margin: 0 0 100px 0;
+}
+
+.learn-students {
+    display: flex;
+    align-items: center;
+}
+
+.student-photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 4px solid #F4F9FA;
+}
+.student-photo:not(:first-child) {
+    margin: 0 0 0 -20px;
+}
+
+.learn-students-text {
+    line-height: 100%;
+    color: #4F596A;
+    margin: 0 0 0 9px;
+}
+.learn-students-text span {
+    color: #9F06FF;
+}
+
+.learn-video,
+.learn-video-player {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.learn-video {
+    width: 590px;
+    height: 360px;
+    border-radius: 20px 0 0 20px;
+    background-color: #001A49;
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.learn-video-player {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+}
+
+/*----------------------------    --------------------------------*/
