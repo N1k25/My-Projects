@@ -376,4 +376,62 @@ footer {
     top: -137px;
 }
 
-/*----------------------------    --------------------------------*/
+/*----------------------------Instructor--------------------------------*/
+.instructor {
+    height: 622px;
+}
+
+.instructor-container {
+    width: 100%;
+    height: 382px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.instructor-header {
+    width: 560px;
+}
+
+.instructor-subtitle {
+    margin: 20px 0 0 0;
+}
+
+.instructor-image {
+    width: 419px;
+    height: 382px;
+    position: relative;
+}
+
+.instructor-circle:first-child {
+    width: 88px;
+    height: 88px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+.instructor-circle:last-child {
+    width: 132px;
+    height: 132px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+.instructor-photo {
+    width: 372px;
+    height: 372px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #CD10FF, #9F06FF);
+    margin: 0 auto;
+}
+.instructor-photo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+/*----------------------------     --------------------------------*/
