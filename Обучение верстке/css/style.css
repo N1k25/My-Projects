@@ -434,4 +434,86 @@ footer {
     border-radius: 50%;
 }
 
-/*----------------------------     --------------------------------*/
+/*----------------------------Say--------------------------------*/
+.say {
+    height: 806px;
+    background: linear-gradient(45deg, #CD10FF, #CD10FF, #9F06FF);
+    color: #FFFFFF;
+}
+
+.say-container {
+    width: 100%;
+}
+
+.say-header {
+    text-align: center;
+}
+
+.say-subtitle {
+    width: 550px;
+    color: #FFFFFF;
+    margin: 20px auto 100px auto;
+}
+
+.say-body {
+    width: 1300px;
+    height: 330px;
+}
+
+.say-author {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    margin: 30px 0 0 0;
+}
+
+.author-photo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.author-info {
+    line-height: 100%;
+}
+
+.author-name {
+    font-weight: 700;
+    margin: 0 0 4px 0;
+}
+
+/* Основные стили */
+
+/* Слайдер */
+.slick-slider {
+    min-width: 0;
+}
+
+/* Ограничивающая оболочка */
+.slick-list {
+    overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track {
+    display: flex;
+    align-items: flex-start;
+}
+
+/* Конкретный слайдер */
+.slider {
+    position: relative;
+}
+
+.slider__item {
+    padding: 40px;
+    width: 550px;
+    height: 100%;
+    border-radius: 20px;
+    background-color: #4C007032;
+    margin: 0 20px 0 0;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+/*----------------------------    --------------------------------*/
