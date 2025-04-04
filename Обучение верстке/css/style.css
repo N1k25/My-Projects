@@ -9,6 +9,8 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+	overflow: hidden;
+	/* overflow-x: hidden; */
 }
 
 .__container {
@@ -20,7 +22,6 @@ footer {
     font-weight: 700;
     font-size: 46px;
     line-height: 56px;
-
 }
 .__subtitle {
     font-size: 20px;
@@ -373,7 +374,8 @@ footer {
     height: 382px;
     position: absolute;
     right: -248px;
-    top: -137px;
+    top: 0;
+    /* top: -137px; */
 }
 
 /*----------------------------Instructor--------------------------------*/
@@ -516,4 +518,91 @@ footer {
     line-height: 30px;
 }
 
-/*----------------------------    --------------------------------*/
+/*----------------------------Questions--------------------------------*/
+.questions {
+    margin: 150px 0 45px 0;
+}
+
+.questions-container {
+    width: 850px;
+}
+
+.questions-title {
+    text-align: center;
+    margin: 0 0 60px 0;
+}
+
+.questions-body {
+    width: 100%;
+}
+
+/*------------------*/
+.accordion {
+    display: flex;
+    flex-direction: column;
+    max-width: 850px;
+    width: 100%;
+    min-height: 104px;
+    border: 1px solid #a1a3a5;
+    border-radius: 21px;
+}
+
+.accordion__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 25px 20px;
+    cursor: pointer;
+}
+
+.accordion:not(:last-child) {
+    margin: 0 0 20px 0;
+}
+
+.accordion__title span {
+    display: inline-flex;
+    position: relative;
+    width: 48px;
+    height: 48px;
+    background-color: transparent;
+    transform: rotate(0);
+    transition: transform 0.5s ease-out;
+}
+
+.accordion__title.active span {
+    transform: rotate(180deg);
+}
+
+.accordion__title span::before {
+    content: url('/img/arrow.svg');
+    position: absolute;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.accordion__content {
+    line-height: 26px;
+    color: #4F596A;
+    overflow: hidden;
+    padding: 0 20px;
+    box-sizing: content-box;
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: max-height 0.5s ease-out, padding 0.5s ease-out, opacity 0.1s ease-out 0.5s, visibility 0.1s ease-out 0.5s;
+}
+
+.accordion__content.active {
+    visibility: visible;
+    opacity: 1;
+    padding: 0 143px 44px 40px;
+    transition: max-height 0.5s ease-out, padding 0.5s ease-out, opacity 0.1s ease-out, visibility 0.1s ease-out;
+}
+
+/*----------------------------     --------------------------------*/
