@@ -1,0 +1,57 @@
+@import url("reset.css");
+@import url(https://fonts.googleapis.com/css?family=Roboto:regular&display=swap);
+@font-face {
+    font-family: 'Segoe UI';
+    font-display: swap;
+    src: url("../fonts/SegoeUI.eot");
+    src: local("O"), url("../fonts/SegoeUI.woff") format("woff"),
+        url("../fonts/SegoeUI.woff2") format("woff2"),
+        url("../fonts/SegoeUI.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.wrapper{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+
+/*-------------------------Header-------------------------*/
+.header {
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 195px 0 175px;
+    border: 1px solid red;
+}
+
+.logo {
+    font-family: Times New Roman;
+    font-size: 39px;
+    line-height: 54px;
+    letter-spacing: 1.6px;
+    color: #3E3E42;
+}
+
+.menu-list {
+    display: flex;
+    align-items: center;
+}
+
+.menu-item {
+    margin: 0 0 0 60px;
+}
+
+.menu-link {
+    line-height: 16px;
+    letter-spacing: 0.32px;
+    color: #3E3E42;
+}
+.menu-link:hover {
+    color: green;
+    text-decoration: underline;
+}
+
+/*-------------------------    -------------------------*/
