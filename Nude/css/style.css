@@ -14,8 +14,20 @@
 .wrapper{
     max-width: 1280px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
 
+main {
+    flex: 1 1 auto;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 /*-------------------------Header-------------------------*/
 .header {
@@ -25,6 +37,7 @@
     align-items: center;
     padding: 0 195px 0 175px;
     border: 1px solid red;
+    background-color: #FDF7F0;
 }
 
 .logo {
@@ -54,4 +67,158 @@
     text-decoration: underline;
 }
 
-/*-------------------------    -------------------------*/
+/*-------------------------Start-------------------------*/
+.start {
+    height: 753px;
+    background-color: #FDF7F0;
+    padding: 0 110px 0 175px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.start-header {
+    width: 363px;
+    margin: 45px 0 0 0;
+}
+
+.start-title {
+    font-family: Times New Roman;
+    font-size: 46px;
+    line-height: 50px;
+    letter-spacing: 1px;
+    color: #374F4C;
+}
+
+.start-subtitle {
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 0.32px;
+    margin: 27px 0 16px 0;
+}
+
+.start-text {
+    width: 350px;
+    font-size: 11px;
+    line-height: 25px;
+    letter-spacing: 0.32px;
+}
+.start-text:not(:last-child) {
+    margin: 0 0 11px 0; 
+}
+
+.app-links {
+    display: flex;
+    gap: 8px;
+    margin: 48px 0;
+}
+
+.app-link {
+    width: 162px;
+    height: 54px;
+    border-radius: 7px;
+    background-color: #000000;
+    border: 2px solid #A6A6A6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 11px;
+}
+
+.app-link:last-child {
+    width: 182px;
+}
+
+.app-link-logo {
+    width: 24px;
+    height: 29px;
+}
+.app-link:last-child .app-link-logo {
+    width: 31px;
+    height: 35px;
+}
+
+.app-link-storage {
+    width: 102px;
+}
+.app-link:last-child .app-link-storage {
+    width: 114px;
+}
+
+
+.app-link-storage-action {
+    width: 94px;
+}
+.app-link:last-child .app-link-storage .app-link-storage-action {
+    width: 52px;
+}
+
+.app-link-storage-store {
+    width: 100%;
+}
+
+.awards {
+    width: 456px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 5px;
+    row-gap: 10px;
+}
+
+.award {
+    width: 122px;
+    height: 50px;
+}
+
+.start-images {
+    width: 603px;
+    height: 584px;
+    position: relative;
+}
+
+.start-image:first-child {
+    width: 240px;
+    height: 221px;
+    position: absolute;
+    top: 70px;
+    left: 58px;
+}
+.start-image:nth-child(2) {
+    width: 289px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.start-image-3 {
+    width: 347px;
+    height: 364px;
+    background-image: url('/img/image-background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+    position: absolute;
+    bottom: 20px;
+    left: 3px;
+}
+.start-image-3-img{
+    width: 194px;
+    height: 152px;
+}
+.start-image-3 p {
+    width: 143px;
+    font-family: Times New Roman;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.8px;
+    text-align: center;
+    color: #374F4C;
+}
+
+/*-------------------------     -------------------------*/
