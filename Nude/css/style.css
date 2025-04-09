@@ -36,7 +36,6 @@ section{
     justify-content: space-between;
     align-items: center;
     padding: 0 195px 0 175px;
-    border: 1px solid red;
     background-color: #FDF7F0;
 }
 
@@ -221,4 +220,100 @@ section{
     color: #374F4C;
 }
 
-/*-------------------------     -------------------------*/
+/*-------------------------Transition-top-------------------------*/
+.transition-top {
+    height: 29px;
+    background-color: #FDF7F0;
+    background-image: url('/img/top-section.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*-------------------------Help-------------------------*/
+.help {
+    height: 571px;
+    background-color: #374F4C;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 82px;
+    margin: -1px 0 0 0;
+}
+
+.help-body {
+    width: 1098px;
+    height: 188px;
+    background-color: #EDE5DC;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 42px;
+}
+
+.help-body-item {
+    display: flex;
+}
+
+
+.help-body-item-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.help-body-item:first-child .help-body-item-img {
+    background-color: #B2B0BD;
+}
+.help-body-item:nth-child(2) .help-body-item-img {
+    background-color: #DEB28A;
+}
+.help-body-item:last-child .help-body-item-img {
+    background-color: #CAD4BD;
+}
+
+.help-body-item-data {
+    margin: 0 0 0 16px;
+}
+
+.help-body-item-title {
+    font-family: Times New Roman;
+    font-size: 22px;
+    line-height: 24px;
+    letter-spacing: 0.88px;
+    color: #374F4C;
+}
+
+.help-body-item-text {
+    width: 248px;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.28px;
+    margin: 10px 0 0 0;
+}
+
+.help-header {
+    text-align: center;
+}
+
+.help-title {
+    width: 589px;
+    font-family: Times New Roman;
+    font-size: 74px;
+    line-height: 74.74px;
+    letter-spacing: 2.96px;
+    color: #EDE5DC;
+}
+
+.help-text {
+    line-height: 26px;
+    letter-spacing: 0.32px;
+    color: #FFFFFF;
+    margin: 26px 0 0 0;
+}
+
+/*-------------------------    -------------------------*/
