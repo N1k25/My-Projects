@@ -531,4 +531,95 @@ section{
     color: #EDE5DC;
 }
 
-/*-------------------------    -------------------------*/
+/*-------------------------Footer-------------------------*/
+.footer {
+    height: 887px;
+    background-color: #F3DCC4;
+}
+
+.footer-menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 76px 133px 0 133px;
+}
+
+.footer-logo {
+    font-family: Times New Roman;
+    font-size: 40px;
+    line-height: 70px;
+    color: #3E3E42;
+}
+.footer-logo span {
+    font-family: Segoe UI;
+    color: #212529;
+}
+
+.footer-menu-items {
+    display: flex;
+}
+
+.footer-menu-card:not(:last-child) {
+    margin: 0 80px 0 0;
+}
+
+.footer-menu-item:not(:last-child) {
+    margin: 0 0 8px 0;
+}
+.footer-menu-item:hover {
+    text-decoration: underline;
+}
+
+.footer-menu-item-title {
+    font-family: Times New Roman;
+    font-size: 20px;
+    line-height: 34px;
+    letter-spacing: 0.4px;
+}
+
+.footer-menu-list {
+    margin: 15px 0 0 0;
+}
+
+.footer-menu-link {
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.32px;
+    color: #3E3E42;
+}
+
+hr {
+    margin: 67px 0 71px 0;
+}
+
+.footer-miscellaneous {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-miscellaneous-body{
+    width: 1125px;
+}
+
+.footer-important {
+    height: 284px;
+    border: 1px solid #484E54;
+    padding: 22px;
+    line-height: 22px;
+    letter-spacing: 0.32px;
+}
+.footer-important span {
+    color: #000000;
+}
+
+.footer-copyright {
+    margin: 29px 0 22px 0;
+    line-height: 22.5px;
+    letter-spacing: 0.3px;
+}
+
+.footer-text {
+    font-size: 11px;
+    line-height: 16.5px;
+    letter-spacing: 0.22px;
+}
