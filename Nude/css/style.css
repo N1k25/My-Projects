@@ -371,4 +371,33 @@ section{
     width: 350px;
 }
 
-/*-------------------------   -------------------------*/
+/*-------------------------Install-------------------------*/
+.install {
+    height: 361px;
+    background-color: #374F4C;
+    flex-direction: column;
+}
+
+.install-title {
+    width: 434px;
+    font-family: Times New Roman;
+    font-size: 48px;
+    line-height: 58.56px;
+    letter-spacing: 1.92px;
+    color: #EDE5DC;
+    text-align: center;
+}
+
+.install-text {
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.24px;
+    color: #FFFFFF;
+    margin: 10px 0 37px 0;
+}
+
+.install-buttons {
+    margin: 0;
+}
+
+/*-------------------------    -------------------------*/
