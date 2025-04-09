@@ -29,6 +29,24 @@ section{
     justify-content: center;
 }
 
+.__title {
+    font-family: Times New Roman;
+    font-size: 32px;
+    line-height: 39.68px;
+    letter-spacing: 1.28px;
+    color: #EDE5DC;
+}
+.__text {
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.32px;
+    color: #FFFFFF;
+}
+.__image {
+    width: 280px;
+    height: 526px;
+}
+
 /*-------------------------Header-------------------------*/
 .header {
     height: 90px;
@@ -234,10 +252,8 @@ section{
 .help {
     height: 571px;
     background-color: #374F4C;
-    display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    align-items: center;
     gap: 82px;
     margin: -1px 0 0 0;
 }
@@ -316,4 +332,19 @@ section{
     margin: 26px 0 0 0;
 }
 
-/*-------------------------    -------------------------*/
+/*-------------------------Find-------------------------*/
+.find {
+    height: 660px;
+    background-color: #374F4C;
+    gap: 368px;
+}
+
+.find-header {
+    width: 359px;
+}
+
+.find-text {
+    margin: 27px 0 0 0;
+}
+
+/*-------------------------   -------------------------*/
