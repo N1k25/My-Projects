@@ -334,7 +334,8 @@ section{
 
 /*-------------------------Find-------------------------*/
 .find,
-.see {
+.see,
+.open {
     height: 660px;
     background-color: #374F4C;
     gap: 368px;
@@ -353,8 +354,14 @@ section{
     width: 361px;
 }
 
-.see-text {
+.see-text,
+.open-text {
     margin: 27px 0 0 0;
+}
+
+/*-------------------------Open-------------------------*/
+.open-header {
+    width: 363px;
 }
 
 /*-------------------------    -------------------------*/
