@@ -334,4 +334,16 @@ footer,
     color: #F09C96;
 }
 
-/*----------------------------------    ----------------------------------------*/
+/*----------------------------------Footer----------------------------------------*/
+.footer {
+    height: 88px;
+    background-color: #023A15;
+    color: #FFFFFF;
+}
+
+.footer-text {
+    line-height: 24px;
+}
+.footer-text span {
+    line-height: 16px;
+}
