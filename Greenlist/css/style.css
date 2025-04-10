@@ -4,7 +4,7 @@
 @font-face {
     font-family: 'GT Super Display';
     font-display: swap;
-    src: local("O"), url("../fonts/GT-Super-Display-Super-Trial.otf") format("otf");
+    src: url("../fonts/GT-Super-Display-Super-Trial.otf") format("otf");
     font-weight: 900;
     font-style: normal;
 }
@@ -20,6 +20,11 @@ footer,
 
 .__container {
     max-width: 1296px;
+}
+
+.__text {
+    font-size: 18px;
+    line-height: 27px;
 }
 
 /*----------------------------------Header----------------------------------------*/
@@ -141,4 +146,47 @@ footer,
     height: 60px;
 }
 
-/*----------------------------------    ----------------------------------------*/
+/*----------------------------------Challenge----------------------------------------*/
+.challenge {
+    height: 965px;
+    margin: 128px 0 0 0;
+    border: 1px solid red;
+}
+
+.challenge-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 146px;
+}
+
+.challenge-header {
+    width: 613px;
+    height: 100%;
+}
+
+.challenge-title {
+    font-family: 'GT Super Display';
+    font-weight: 900;
+    font-size: 66px;
+    line-height: 84px;
+    letter-spacing: 2px;
+}
+
+.challenge-text {
+    width: 460px;
+    margin: 33px 0 127px 0;
+}
+
+.challenge-header-img {
+    width: 557px;
+    height: 371px;
+}
+
+.challenge-img {
+    width: 391px;
+    height: 531px;
+}
+
+/*----------------------------------     ----------------------------------------*/
