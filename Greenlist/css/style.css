@@ -258,13 +258,15 @@ footer,
 }
 
 .educate-text,
-.celebrate-text {
+.celebrate-text,
+.drive-text {
     width: 386px;
     margin: 16px 0 0 0;
 }
 
 .educate-img,
-.celebrate-img {
+.celebrate-img,
+.drive-img {
     width: 562px;
     height: 535px;
     border: 1px solid yellow;
@@ -289,6 +291,28 @@ footer,
 .celebrate-header {
     width: 450px;
     height: 311px;
+    border: 1px solid blue;
+}
+
+/*----------------------------------Drive----------------------------------------*/
+.drive {
+    height: 407px;
+    border: 1px solid violet;
+}
+
+.drive-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 167px;
+    padding: 0 0 0 124px;
+    border: 1px solid brown;
+}
+
+.drive-header {
+    width: 400px;
+    height: 257px;
     border: 1px solid blue;
 }
 
