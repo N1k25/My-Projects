@@ -257,14 +257,39 @@ footer,
     border: 1px solid blue;
 }
 
-.educate-text {
+.educate-text,
+.celebrate-text {
+    width: 386px;
     margin: 16px 0 0 0;
 }
 
-.educate-img {
-     width: 562px;
+.educate-img,
+.celebrate-img {
+    width: 562px;
     height: 535px;
     border: 1px solid yellow;
 }
 
-/*----------------------------------   ----------------------------------------*/
+/*----------------------------------Celebrate----------------------------------------*/
+.celebrate {
+    height: 407px;
+    border: 1px solid gold;
+}
+
+.celebrate-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 142px;
+    padding: 0 0 0 43px;
+    border: 1px solid palegreen;
+}
+
+.celebrate-header {
+    width: 450px;
+    height: 311px;
+    border: 1px solid blue;
+}
+
+/*----------------------------------    ----------------------------------------*/
