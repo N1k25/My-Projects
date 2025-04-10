@@ -22,6 +22,14 @@ footer,
     max-width: 1296px;
 }
 
+.__title {
+    font-family: GT Super Display;
+    font-weight: 900;
+    font-size: 53px;
+    line-height: 72px;
+    letter-spacing: 2px;
+}
+
 .__text {
     font-size: 18px;
     line-height: 27px;
@@ -226,4 +234,37 @@ footer,
     height: 543px;
 }
 
-/*----------------------------------    ----------------------------------------*/
+/*----------------------------------Educate----------------------------------------*/
+.educate {
+    height: 657px;
+    align-items: flex-end;
+    border: 1px solid red;
+}
+
+.educate-container {
+    width: 100%;
+    height: 407px;
+    display: flex;
+    align-items: center;
+    gap: 142px;
+    padding: 0 0 0 99px;
+    border: 1px solid green;
+}
+
+.educate-header {
+    width: 450px;
+    height: 284px;
+    border: 1px solid blue;
+}
+
+.educate-text {
+    margin: 16px 0 0 0;
+}
+
+.educate-img {
+     width: 562px;
+    height: 535px;
+    border: 1px solid yellow;
+}
+
+/*----------------------------------   ----------------------------------------*/
