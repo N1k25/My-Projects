@@ -238,7 +238,6 @@ footer,
 .educate {
     height: 657px;
     align-items: flex-end;
-    border: 1px solid red;
 }
 
 .educate-container {
@@ -248,13 +247,11 @@ footer,
     align-items: center;
     gap: 142px;
     padding: 0 0 0 99px;
-    border: 1px solid green;
 }
 
 .educate-header {
     width: 450px;
     height: 284px;
-    border: 1px solid blue;
 }
 
 .educate-text,
@@ -269,13 +266,11 @@ footer,
 .drive-img {
     width: 562px;
     height: 535px;
-    border: 1px solid yellow;
 }
 
 /*----------------------------------Celebrate----------------------------------------*/
 .celebrate {
     height: 407px;
-    border: 1px solid gold;
 }
 
 .celebrate-container {
@@ -285,19 +280,16 @@ footer,
     align-items: center;
     gap: 142px;
     padding: 0 0 0 43px;
-    border: 1px solid palegreen;
 }
 
 .celebrate-header {
     width: 450px;
     height: 311px;
-    border: 1px solid blue;
 }
 
 /*----------------------------------Drive----------------------------------------*/
 .drive {
     height: 407px;
-    border: 1px solid violet;
 }
 
 .drive-container {
@@ -307,13 +299,39 @@ footer,
     align-items: center;
     gap: 167px;
     padding: 0 0 0 124px;
-    border: 1px solid brown;
 }
 
 .drive-header {
     width: 400px;
     height: 257px;
-    border: 1px solid blue;
+}
+
+/*----------------------------------Sign-up----------------------------------------*/
+.sign-up {
+    height: 589px;
+    margin: 128px 0 0 0;
+    background-color: #023A15;
+    color: #FFFFFF;
+}
+
+.sign-up-container {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sign-up-title {
+    font-family: 'GT Super Display';
+    font-weight: 900;
+    font-size: 106px;
+    line-height: 110px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.sign-up-title span {
+    font-size: 110px;
+    color: #F09C96;
 }
 
 /*----------------------------------    ----------------------------------------*/
