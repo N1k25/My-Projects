@@ -1,0 +1,88 @@
+@import url("reset.css");
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:regular,700&display=swap);
+
+header,
+section,
+footer,
+.__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.__button-green {
+    background-color: #00B289;
+    color: #FFFFFF;
+    border-radius: 4px;
+    border: 1px solid #00B289;
+}
+
+/*----------------------------------Header----------------------------------------*/
+.header {
+    height: 76px;
+}
+
+.header-container {
+    width: 1180.81px;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.nav {
+    height: 54px;
+    display: flex;
+    align-items: center;
+}
+
+.menu label,
+#product {
+    font-size: 17px;
+    line-height: 22px;
+    color: #4C4D5F;
+}
+
+#product{
+    width: 80px;
+    background: url(/img/select.svg) no-repeat transparent;
+    background-position: left;
+    margin: 0 0 0 9px;
+    color: black;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.menu-btn {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+}
+
+.btn__login {
+    width: 92px;
+    height: 39px;
+    border: 1px solid #00B289;
+    border-radius: 4px;
+    color: #00B289;
+    margin: 0 16px 0 37.2px;
+}
+.btn__login:hover {
+    color: #FFFFFF;
+    background-color: #00B289;
+}
+
+.btn__start {
+    width: 136px;
+    height: 39px;
+}
+.btn__start:hover {
+    color: #00B289;
+    background-color: #FFFFFF;
+}
+
+/*----------------------------------    ----------------------------------------*/

@@ -1,0 +1,43 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="en">
+	<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+	<head>
+		<!-- Заголовок страницы в браузере -->
+		<title>Bonsai</title>
+		<link rel="icon" type="image/png" href="img/favicon.ico"/>
+		<!-- Подключаем CSS -->
+		<link rel="stylesheet" href="css/style.css" />
+		<!-- Кодировка страницы -->
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	</head>
+	<!-- Отображаемое тело страницы -->
+	<body>
+		<header class="header">
+			<div class="header-container">
+				<a href="#" class="logo">
+					<img src="/img/logo.svg" alt="logo">
+				</a>
+				<nav class="nav">
+					<div class="menu">
+						<label for="product">Product</label>
+						<select name="product" id="product">
+							<option value="none" disabled selected></option>
+							<option value="product-1">product-1</option>
+							<option value="product-2">product-2</option>
+							<option value="product-3">product-3</option>
+							<option value="product-4">product-4</option>
+							<option value="product-5">product-5</option>
+						</select>
+					</div>
+					<a href="#" class="menu-btn btn__login __button">Log In</a>
+					<a href="#" class="menu-btn btn__start __button __button-green">start free</a>
+				</nav>
+			</div>
+		</header>
+		<main class="page"></main>
+		<footer class="footer"></footer>
+	<script src="js/select.js"></script>
+	</body>
+</html>
