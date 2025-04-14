@@ -422,4 +422,77 @@ input:valid~.label2 {
     z-index: -1;
 }
 
-/*----------------------------------     ----------------------------------------*/
+/*----------------------------------Trusted----------------------------------------*/
+.trusted {
+    height: 751px;
+    position: relative;
+}
+
+.trusted-container {
+    width: 1065.62px;
+    height: 531px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: #4C4D5F;
+}
+
+.tusted-header {
+    text-align: center;
+}
+
+.trusted-title {
+    font-size: 46px;
+    line-height: 44px;
+    margin: 0 0 48px 0;
+}
+
+.trusted-text {
+    width: 680px;
+    font-size: 25px;
+    line-height: 36px;
+    opacity: 0.67;
+    margin: 0 auto;
+}
+
+.trusted-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 192px;
+    width: 100%;
+}
+
+.trusted-body-item {
+    width: 300px;
+    height: 256px;
+}
+
+.trusted-body-item-title {
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 32px;
+    margin: 30px 0 14px 0;
+}
+
+.trusted-body-item-text {
+    font-size: 17px;
+    line-height: 25px;
+    opacity: 0.61;
+}
+
+.trusted-background {
+    position: absolute;
+    width: 935px;
+    height: 794px;
+    bottom: -700px;
+    left: -660px;
+    transform: rotate(-20.24deg);
+    border-radius: 94px;
+    background-color: #F2FAFF;
+    z-index: -1;
+}
+
+/*----------------------------------    ----------------------------------------*/
