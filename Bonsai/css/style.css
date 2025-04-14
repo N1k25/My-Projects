@@ -264,4 +264,162 @@ input:valid~.label2 {
     z-index: -1;
 }
 
-/*----------------------------------    ----------------------------------------*/
+/*----------------------------------Work----------------------------------------*/
+.work {
+    height: 893px;
+    position: relative;
+}
+
+.work-container {
+    width: 1065.62px;
+    height: 640px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.work-list {
+    width: 373px;
+    height: 100%;
+    padding: 0 15px;
+}
+
+.work-item {
+    height: 78px;
+    padding: 0 20px;
+    font-size: 22px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.work-item *{
+    color: #4C4D5F;
+}
+.work-item:not(:last-child) {
+    border-bottom: 3px double #E5E9EF;
+}
+.work-item:first-child::before {
+    content: url('/img/proposals.svg');
+    margin-right: 26px;
+}
+.work-item:first-child::after {
+    content: url('/img/arrow-submenu.svg');
+    margin-left: 151px;
+}
+.work-item:nth-child(2)::before {
+    content: url('/img/contacts.svg');
+    margin-right: 26px;
+}
+.work-item:nth-child(3)::before {
+    content: url('/img/client-crm.svg');
+    margin-right: 26px;
+}
+.work-item:nth-child(4)::before {
+    content: url('/img/time-tracking.svg');
+    margin-right: 26px;
+}
+.work-item:nth-child(5)::before {
+    content: url('/img/invoices.svg');
+    margin-right: 26px;
+}
+.work-item:nth-child(5)::after {
+    content: url('/img/arrow-submenu.svg');
+    margin-left: 168px;
+}
+.work-item:nth-child(6)::before {
+    content: url('/img/task-tracking.svg');
+    margin-right: 26px;
+}
+.work-item:nth-child(7)::before {
+    content: url('/img/accounting-taxes.svg');
+    margin-right: 26px;
+}
+.work-item:last-child::before {
+    content: url('/img/forms.svg');
+    margin-right: 26px;
+}
+
+.work-item:hover {
+    box-shadow: 1px 1px 60px #0204450F;
+}
+
+.work-sublist {
+    display: none;
+}
+
+.work-item:first-child:hover,
+.work-item:nth-child(5):hover {
+    height: 100px;
+}
+.work-item:first-child:hover::after,
+.work-item:nth-child(5):hover::after {
+    content: '';
+}
+
+.work-item:first-child:hover .work-sublist,
+.work-item:nth-child(5):hover .work-sublist {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.work-subitem a:hover {
+    color: #01B289;
+}
+
+.work-header {
+    width: 602.39px;
+    height: 100%;
+    position: relative;
+}
+
+.work-title {
+    font-size: 44px;
+    line-height: 44px;
+    margin: 20.42px 0 0 0;
+}
+
+.work-text {
+    width: 356px;
+    font-size: 22px;
+    line-height: 32px;
+    opacity: 0.58;
+    margin: 15px 0 86.58px 0;
+}
+
+.work-link {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #01B289;
+}
+.work-link::after {
+    content: url('/img/arrow-right.svg');
+    margin: 0 0 0 10px;
+}
+
+.work-image {
+    width: 411px;
+    height: 306px;
+    position: absolute;
+    right: 28.81px;
+    bottom: 23.58px;
+}
+
+.work-background {
+    position: absolute;
+    width: 902px;
+    height: 969px;
+    top: 147px;
+    right: -400px;
+    transform: rotate(55.76deg);
+    border-radius: 94px;
+    background-color: #FFF5E8;
+    z-index: -1;
+}
+
+/*----------------------------------     ----------------------------------------*/
