@@ -1,10 +1,10 @@
 $(document).ready(function(){
 	$('.slider').slick({
-		arrows:true,
+		arrows:false,
 		dots:true,
-		slidesToShow:3,
-		autoplay:true,
-		speed:1000,
+		slidesToShow:1.97,
+		autoplay:false,
+		speed:500,
 		autoplaySpeed:800,
 		responsive:[
 			{
