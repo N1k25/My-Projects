@@ -617,4 +617,39 @@ input:valid~.label2 {
     background-color: #FFFFFF;
 }
 
+/*----------------------------------Help----------------------------------------*/
+.help {
+    height: 397px;
+}
+
+.help-container {
+    width: 1066px;
+    height: 336px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 70px;
+    background-color: #F2FAFF;
+    border-radius: 8px;
+}
+
+.help-title {
+    font-size: 42px;
+    line-height: 62px;
+    color: #4C4D5F;
+}
+.help-title span {
+    color: #01B289;
+}
+
+.help-btn {
+    width: 195px;
+    height: 64px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+}
+
 /*----------------------------------    ----------------------------------------*/
