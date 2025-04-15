@@ -652,4 +652,61 @@ input:valid~.label2 {
     text-transform: uppercase;
 }
 
-/*----------------------------------    ----------------------------------------*/
+/*----------------------------------Footer----------------------------------------*/
+.footer {
+    height: 1035px;
+}
+
+.footer-container {
+    width: 979px;
+    height: 635px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-container * {
+    color: #4C4D5F;
+}
+.footer-container a:hover {
+    text-decoration: underline;
+}
+
+.footer-card-title {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: 0.12px;
+    text-transform: uppercase;
+    margin: 0 0 40.58px 0;
+}
+
+.footer-card-list {
+    margin: 0 0 25px 0;
+}
+
+.footer-card-list-item {
+    line-height: 30px;
+    letter-spacing: 0.11px;
+}
+
+.footer-card-templates-title {
+    margin: 0 0 10.58px 0;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: 0.11px;
+}
+
+#invoice__templates,
+#proposal__templates,
+#contract__templates,
+#agreement__templates,
+#work__templates,
+#quote__templates,
+#comparisons {
+    width: 29px;
+    background: url(/img/arrow-down.svg) no-repeat transparent;
+    background-position: right;
+    color: black;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
