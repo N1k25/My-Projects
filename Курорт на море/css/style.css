@@ -1,4 +1,5 @@
 @import url("reset.css");
+/* @import url("resort.css"); */
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:regular,700,italic&display=swap);
 @import url(https://fonts.googleapis.com/css?family=Spectral:700&display=swap);
@@ -69,10 +70,11 @@ footer,
     background-color: #4EA842;
 }
 
+/*------------------------------*/
 .start {
     width: 100%;
     height: 740px;
-    background-image: url(/img/image-1.jpg);
+    background-image: url(/img/seashore.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -110,6 +112,78 @@ footer,
     text-align: center;
     color: #FDFDFD;
     margin: 19px 0 0 0;
+}
+
+/*----------------------------------Resort--------------------------------------*/
+.resort {
+    height: 685px;
+    background-color: #EBEBEB;
+    background-image: url(/img/background.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.resort-container {
+    width: 100%;
+    height: 368px;
+    position: relative;
+}
+
+.resort-title {
+    font-family: Spectral;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 100%;
+    color: #312C3A;
+}
+
+.resort-img {
+    width: 380px;
+    height: 259px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.resort-description {
+    width: 610px;
+    height: 168px;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 16px #00000026;
+    padding: 26px 34px 18px 30px;
+    position: absolute;
+    right: 0;
+    bottom: 74px;
+    
+}
+.resort-description-text {
+    line-height: 100%;
+    text-align: justify;
+    color: #896F50;
+}
+
+.resort-icon {
+    position: absolute;
+    left: 390px;
+    bottom: 11px;
+}
+
+.resort-link {
+    width: 145px;
+    height: 40px;
+    border: 1px solid #1A1424;
+    border-radius: 20px;
+    line-height: 100%;
+    color: #1A1424;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.resort-link::after {
+    content: url('/img/arrow.svg');
+    margin: 0 0 0 16px;
 }
 
 /*----------------------------------    --------------------------------------*/
