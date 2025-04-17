@@ -22,13 +22,13 @@ footer,
     height: 110px;
     justify-content: flex-start;
     flex-direction: column;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .menu {
     width: 100%;
     height: 100%;
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 
 .menu-list {
@@ -72,3 +72,150 @@ footer,
     background-color: #4EA842;
 }
 
+
+/*----------------------------------Start--------------------------------------*/
+
+.start {
+    height: 380px;
+    background-image: url(/img/house.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.start::after {
+    content: "";
+    width: 100%;
+    height: 220px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    background-color: #34C6BD;
+    opacity: 0.8;
+}
+
+.start-container {
+    width: 610px;
+    z-index: 2;
+}
+
+.start-title {
+    font-family: Spectral;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 88%;
+    text-align: center;
+    color: #FEFEFE;
+}
+
+.start-text {
+    line-height: 100%;
+    text-align: center;
+    color: #f5f5f5;
+    margin: 19px 0 0 0;
+}
+.start-text img {
+    margin: 0 15px 0 10px;
+}
+
+
+/*----------------------------------    --------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------Footer--------------------------------------*/
+.footer {
+    height: 256px;
+    /* border: 1px solid violet; */
+}
+
+.footer-container {
+    width: 882px;
+    height: 142px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-menu {
+    display: flex;
+    gap: 30px;
+}
+
+.footer-item {
+    margin: 0 0 17px 0;
+}
+
+.footer-item:hover {
+    text-decoration: underline;
+}
+
+.footer-link {
+    line-height: 100%;
+    letter-spacing: 1px;
+    color: #312C3A;
+}
+
+.footer-list:first-child .footer-item:first-child .footer-link {
+    font-weight: 700;
+}
+
+.footer-social {
+    width: 148px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-social-items {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-social-link {
+    width: 42px;
+    height: 42px;
+    border: 1px solid #312C3A;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-contacts {
+    width: 232px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-contacts-icon {
+    width: 35px;
+    height: 35px;
+}
+
+.footer-telephones {
+    width: 182px;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.footer-telephone {
+    font-size: 21px;
+    line-height: 100%;
+    color: #312C3A;
+}
