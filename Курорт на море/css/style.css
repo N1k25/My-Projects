@@ -345,4 +345,119 @@ footer,
     flex-direction: column;
 }
 
-/*----------------------------------    --------------------------------------*/
+/*----------------------------------Reviews--------------------------------------*/
+.reviews {
+    height: 381px;
+    background-color: #B58C5D;
+    color: #FFFFFF;
+    background-image: url(/img/mask.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.reviews-container {
+    width: 620px;
+    height: 299px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.reviews-title {
+    font-family: Spectral;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 100%;
+}
+
+.reviews-body {
+    width: 100%;
+    height: 224px;
+}
+
+.reviews-name {
+    height: 22px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    margin: 0 0 19px 0;
+}
+
+.reviews-separator {
+    width: 102px;
+    height: 1px;
+    background-color: #FFFFFF;
+    margin: 0 auto;
+}
+
+.reviews-text {
+    width: 380px;
+    height: 82px;
+    font-style: italic;
+    line-height: 100%;
+    margin: 22px auto 18px ;
+}
+
+.reviews-rating img:not(:last-child) {
+    margin: 0 5px 0 0;
+}
+
+/* Основные стили */
+
+/* Слайдер */
+.slick-slider {
+    min-width: 0;
+}
+
+/* Ограничивающая оболочка */
+.slick-list {
+    overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track {
+    display: flex;
+    align-items: flex-start;
+}
+
+/* Конкретный слайдер */
+.slider {
+    position: relative;
+    padding: 0px 60px;
+}
+
+.slider .slick-arrow {
+    position: absolute;
+    top: 50%;
+    margin: -30px 0px 0px 0px;
+    z-index: 10;
+    font-size: 0;
+    width: 40px;
+    height: 40px;
+}
+
+.slider .slick-arrow.slick-prev {
+    left: 0;
+    background: url('../img/sl-arrow_l.svg') 0 0 / 100% no-repeat;
+}
+
+.slider .slick-arrow.slick-next {
+    right: 0;
+    background: url('../img/sl-arrow_r.svg') 0 0 / 100% no-repeat;
+}
+
+.slider-counter {
+    margin-top: 26px;
+    line-height: 100%;
+    letter-spacing: 6.8px;
+    text-align: center;
+}
+
+.slider__item {
+    text-align: center;
+}
+
+/*----------------------------------     --------------------------------------*/
