@@ -460,4 +460,83 @@ footer,
     text-align: center;
 }
 
-/*----------------------------------     --------------------------------------*/
+/*----------------------------------Footer--------------------------------------*/
+.footer {
+    height: 256px;
+}
+
+.footer-container {
+    width: 882px;
+    height: 142px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-menu {
+    display: flex;
+    gap: 30px;
+}
+
+.footer-item {
+    margin: 0 0 17px 0;
+}
+.footer-item:hover {
+    text-decoration: underline;
+}
+
+.footer-link {
+    line-height: 100%;
+    letter-spacing: 1px;
+    color: #312C3A;
+}
+.footer-list:first-child .footer-item:first-child .footer-link {
+    font-weight: 700;
+}
+
+.footer-social {
+    width: 148px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-social-items {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-social-link {
+    width: 42px;
+    height: 42px;
+    border: 1px solid #312C3A;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-contacts {
+    width: 232px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-contacts-icon {
+    width: 35px;
+    height: 35px;
+}
+
+.footer-telephones {
+    width: 182px;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.footer-telephone {
+    font-size: 21px;
+    line-height: 100%;
+    color: #312C3A;
+}
