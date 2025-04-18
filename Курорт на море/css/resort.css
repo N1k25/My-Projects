@@ -239,8 +239,29 @@ footer,
     right: 0;
 }
 
+/*----------------------------------Parking--------------------------------------*/
+.parking {
+    height: 286px;
+    border: 1px solid red;
+}
 
+.parking-container {
+    border: 1px solid green;
+}
 
+.parking-header {
+    padding: 24px;
+    position: relative;
+}
+
+.parking-description {
+    padding: 52px 9px 53px 24px;
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+}
+
+/*----------------------------------    --------------------------------------*/
 
 
 
