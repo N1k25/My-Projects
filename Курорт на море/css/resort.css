@@ -17,6 +17,37 @@ footer,
     max-width: 940px;
 }
 
+.resort-container {
+    width: 944px;
+    height: 266px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.__title {
+    font-family: Spectral;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 100%;
+    color: #1A1424;
+}
+
+.__description {
+    width: 610px;
+    height: 174px;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 15px #00000026;
+    padding: 31px 9px 13px 30px;
+    /* z-index: 2; */
+    line-height: 100%;
+}
+
+.resort-img {
+    height: 100%;
+    width: 384px;
+}
+
 /*----------------------------------Header--------------------------------------*/
 .header {
     height: 110px;
@@ -139,8 +170,32 @@ footer,
 }
 
 
-/*----------------------------------    --------------------------------------*/
+/*----------------------------------Playground--------------------------------------*/
+.playground {
+    height: 286px;
+    border: 1px solid red;
+}
 
+.playground-container {
+    border: 1px solid green;
+}
+
+.playground-header {
+    width: 560px;
+    padding: 11px 18px;
+    position: relative;
+}
+
+
+.playground-description {
+    height: 168px;
+    position: absolute;
+    bottom: 26px;
+    right: 0;
+}
+
+
+/*----------------------------------   --------------------------------------*/
 
 
 
