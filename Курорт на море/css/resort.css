@@ -214,8 +214,30 @@ footer,
     bottom: 20px;
 }
 
-/*----------------------------------    --------------------------------------*/
+/*----------------------------------Table tennis--------------------------------------*/
+.table-tennis {
+    height: 286px;
+    border: 1px solid red;
+}
 
+.table-tennis-container {
+    border: 1px solid green;
+}
+
+.table-tennis-header {
+    width: 560px;
+    padding: 11px 18px;
+    position: relative;
+}
+
+
+.table-tennis-description {
+    height: 168px;
+    padding: 54px 9px 49px 30px;
+    position: absolute;
+    bottom: 26px;
+    right: 0;
+}
 
 
 
