@@ -38,7 +38,6 @@ footer,
     border-radius: 4px;
     background-color: #FFFFFF;
     box-shadow: 0 4px 15px #00000026;
-    padding: 31px 9px 13px 30px;
     /* z-index: 2; */
     line-height: 100%;
 }
@@ -151,7 +150,6 @@ footer,
     margin: 0 15px 0 10px;
 }
 
-
 /*----------------------------------About--------------------------------------*/
 .about {
     height: 367px;
@@ -168,7 +166,6 @@ footer,
     line-height: 100%;
     text-align: justify;
 }
-
 
 /*----------------------------------Playground--------------------------------------*/
 .playground {
@@ -189,13 +186,37 @@ footer,
 
 .playground-description {
     height: 168px;
+    padding: 31px 9px 13px 30px;
     position: absolute;
     bottom: 26px;
     right: 0;
 }
 
+/*----------------------------------Barbecue--------------------------------------*/
+.barbecue {
+    height: 286px;
+    border: 1px solid red;
+}
 
-/*----------------------------------   --------------------------------------*/
+.barbecue-container {
+    border: 1px solid green;
+}
+
+.barbecue-header {
+    padding: 24px;
+    position: relative;
+}
+
+.barbecue-description {
+    padding: 11px 9px 39px 24px;
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+}
+
+/*----------------------------------    --------------------------------------*/
+
+
 
 
 
