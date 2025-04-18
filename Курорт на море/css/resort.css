@@ -1,5 +1,4 @@
 @import url("reset.css");
-/* @import url("style.css"); */
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:regular,700,italic&display=swap);
 @import url(https://fonts.googleapis.com/css?family=Spectral:700&display=swap);
@@ -38,7 +37,6 @@ footer,
     border-radius: 4px;
     background-color: #FFFFFF;
     box-shadow: 0 4px 15px #00000026;
-    /* z-index: 2; */
     line-height: 100%;
 }
 
@@ -52,13 +50,11 @@ footer,
     height: 110px;
     justify-content: flex-start;
     flex-direction: column;
-    /* border: 1px solid red; */
 }
 
 .menu {
     width: 100%;
     height: 100%;
-    /* border: 1px solid green; */
 }
 
 .menu-list {
@@ -170,11 +166,6 @@ footer,
 /*----------------------------------Playground--------------------------------------*/
 .playground {
     height: 286px;
-    border: 1px solid red;
-}
-
-.playground-container {
-    border: 1px solid green;
 }
 
 .playground-header {
@@ -195,11 +186,6 @@ footer,
 /*----------------------------------Barbecue--------------------------------------*/
 .barbecue {
     height: 286px;
-    border: 1px solid red;
-}
-
-.barbecue-container {
-    border: 1px solid green;
 }
 
 .barbecue-header {
@@ -217,11 +203,6 @@ footer,
 /*----------------------------------Table tennis--------------------------------------*/
 .table-tennis {
     height: 286px;
-    border: 1px solid red;
-}
-
-.table-tennis-container {
-    border: 1px solid green;
 }
 
 .table-tennis-header {
@@ -242,11 +223,6 @@ footer,
 /*----------------------------------Parking--------------------------------------*/
 .parking {
     height: 286px;
-    border: 1px solid red;
-}
-
-.parking-container {
-    border: 1px solid green;
 }
 
 .parking-header {
@@ -264,11 +240,6 @@ footer,
 /*----------------------------------Economic block--------------------------------------*/
 .economic-block {
     height: 286px;
-    border: 1px solid red;
-}
-
-.economic-block-container {
-    border: 1px solid green;
 }
 
 .economic-block-header {
@@ -286,17 +257,27 @@ footer,
     right: 0;
 }
 
-/*----------------------------------   --------------------------------------*/
+/*----------------------------------Sauna--------------------------------------*/
+.sauna {
+    height: 286px;
+}
 
+.sauna-header {
+    padding: 24px;
+    position: relative;
+}
 
-
-
-
+.sauna-description {
+    padding: 12px 9px 12px 24px;
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+}
 
 /*----------------------------------Footer--------------------------------------*/
 .footer {
     height: 256px;
-    /* border: 1px solid violet; */
+    margin: 76px 0 0 0;
 }
 
 .footer-container {
