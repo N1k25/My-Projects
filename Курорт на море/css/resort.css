@@ -261,9 +261,32 @@ footer,
     bottom: 20px;
 }
 
-/*----------------------------------    --------------------------------------*/
+/*----------------------------------Economic block--------------------------------------*/
+.economic-block {
+    height: 286px;
+    border: 1px solid red;
+}
+
+.economic-block-container {
+    border: 1px solid green;
+}
+
+.economic-block-header {
+    width: 560px;
+    padding: 11px 18px;
+    position: relative;
+}
 
 
+.economic-block-description {
+    height: 168px;
+    padding: 54px 9px 49px 30px;
+    position: absolute;
+    bottom: 26px;
+    right: 0;
+}
+
+/*----------------------------------   --------------------------------------*/
 
 
 
