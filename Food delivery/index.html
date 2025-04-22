@@ -1,0 +1,59 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="en">
+	<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+	<head>
+		<!-- Заголовок страницы в браузере -->
+		<title>Food delivery</title>
+		<link rel="icon" type="image/png" href="img/favicon.ico"/>
+		<!-- Подключаем CSS -->
+		<link rel="stylesheet" href="css/style.css" />
+		<!-- Кодировка страницы -->
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	</head>
+	<!-- Отображаемое тело страницы -->
+	<body>
+		<header class="header">
+			<div class="header-container __container">
+				<a href="#" class="header-logo">
+					<img src="/img/logo.svg" alt="logo">
+				</a>
+				<nav class="header-menu">
+					<a href="#" class="header-link__login">Log in</a>
+					<a href="#" class="header-link__cart">
+						<img src="/img/cart.svg" alt="cart" class="header-link__cart-img">
+					</a>
+					<div class="header-burger">
+						<input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+						<label for="openSidebarMenu" class="sidebarIconToggle">
+							<div class="spinner diagonal part-1"></div>
+							<div class="spinner horizontal"></div>
+							<div class="spinner diagonal part-2"></div>
+						</label>
+						<div id="sidebarMenu">
+							<ul class="sidebarMenuInner">
+								<li class="sidebarMenuInner-contacts">
+									<a href="tel:0800111126" class="sidebarMenuInner-contacts-link">0800 111 126</a>
+									<p class="working-hours">8:00 - 22:00</p>
+								</class=></li>
+								<li><a href="#">Delivery info</a></li>
+								<li><a href="#">About us</a></li>
+								<li><a href="#">Restaurants</a></li>
+								<li><a href="#">Specialities</a></li>
+								<li class="site-language">
+									<select name="language" id="language">
+										<option value="language-en" selected>English</option>
+										<option value="language-ua">Українська</option>
+									</select>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<main class="page"></main>
+		<footer class="footer"></footer>
+	</body>
+</html>

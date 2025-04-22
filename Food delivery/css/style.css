@@ -1,0 +1,236 @@
+@import url("reset.css");
+
+@import url(https://fonts.googleapis.com/css?family=Martel+Sans:300,regular,700,800&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Poppins:300,regular,600&display=swap);
+@font-face {
+    font-family: 'Open Sans Condensed';
+    font-display: swap;
+    src: url("../fonts/OpenSansCondensed-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+header,
+section,
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.__container {
+    max-width: 1256px;
+}
+
+/*--------------------------------Header-------------------------------*/
+.header {
+    height: 72px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.header-container {
+    width: 100%;
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-menu {
+    display: flex;
+    align-items: center;
+}
+
+.header-link__login {
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    vertical-align: middle;
+    color: #9093A6;
+}
+.header-link__login::before {
+    content: url('/img/login.svg');
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+}
+
+.header-link__cart {
+    margin: 0 48px;
+}
+
+.header-link__cart::after {
+    content: "0";
+    width: 10px;
+    height: 20px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    vertical-align: middle;
+    color: #9093A6;
+    margin-left: 2px;
+}
+
+.header-burger {
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    border-radius: 25px;
+    box-shadow: 0 8px 40px #00000014;
+    position: relative;
+}
+
+#sidebarMenu {
+    height: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 285px;
+    margin-top: 72px;
+    padding: 0 42px 0 36px;
+    transform: translateX(285px);
+    transition: transform 250ms ease-in-out;
+    background-color: #FFFFFF;
+    box-shadow: 0 10px 24px #0000001A;
+}
+
+.sidebarMenuInner {
+    margin: 0;
+    padding: 0;
+    border-top: 2px solid rgba(255, 255, 255, 0.10);
+}
+
+.sidebarMenuInner li {
+    padding: 22px 0;
+    cursor: default;
+}
+.sidebarMenuInner li:not(:last-child) {
+    border-bottom: 1px solid #F2F4FA;
+}
+
+.sidebarMenuInner-contacts::before {
+    content: url('/img/call.svg');
+    width: 16px;
+    height: 16px;
+    margin-right: 13px;
+    cursor: default;
+}
+
+.working-hours {
+    cursor: default;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    margin: 6px 0 0 40px;
+    color: #9093A6 ;
+}
+
+.sidebarMenuInner li a {
+    color: #9093A6;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    vertical-align: middle;
+}
+
+.sidebarMenuInner-contacts-link {
+    color: #3F4255!important;
+    letter-spacing: 0.5px;
+    vertical-align: middle;
+}
+
+.site-language {
+    text-align: right;
+}
+
+#language {
+    height: 51px;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 16px;
+    vertical-align: middle;
+    color: #9093A6;
+    background: url(/img/down.svg) no-repeat transparent;
+    background-position: right;
+    padding-right: 15px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+input[type="checkbox"]:checked~#sidebarMenu {
+    transform: translateX(0);
+}
+
+input[type=checkbox] {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    display: none;
+}
+
+.sidebarIconToggle {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: absolute;
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+    top: 17px;
+    left: 12px;
+    height: 24px;
+    width: 24px;
+}
+
+.spinner {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: absolute;
+    height: 2px;
+    width: 24px;
+    background-color: #9093A6;
+}
+
+.horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+
+.diagonal.part-1 {
+    position: relative;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    float: left;
+}
+
+.diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+
+input[type=checkbox]:checked~.sidebarIconToggle>.horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    opacity: 0;
+}
+
+input[type=checkbox]:checked~.sidebarIconToggle>.diagonal.part-1 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(135deg);
+    margin-top: 5px;
+}
+
+input[type=checkbox]:checked~.sidebarIconToggle>.diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(-135deg);
+    margin-top: -7px;
+}
+
+/*--------------------------------   -------------------------------*/
