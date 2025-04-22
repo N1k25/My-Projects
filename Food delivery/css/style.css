@@ -12,7 +12,8 @@
 
 header,
 section,
-footer {
+footer,
+.__button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,6 +27,11 @@ footer {
 .header {
     height: 72px;
     border-bottom: 1px solid #e5e5e5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #FFFFFF;
 }
 
 .header-container {
@@ -233,4 +239,120 @@ input[type=checkbox]:checked~.sidebarIconToggle>.diagonal.part-2 {
     margin-top: -7px;
 }
 
-/*--------------------------------   -------------------------------*/
+/*--------------------------------Food court-------------------------------*/
+.food__court {
+    margin-top: 97px;
+    height: 706px;
+    border: 1px solid red;
+}
+
+.food__court-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.food__court-header {
+    height: 288px;
+    width: 536px;
+    margin: 95px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.food__court-title {
+    font-family: Poppins;
+    font-weight: 300;
+    font-size: 58px;
+    line-height: 64px;
+    letter-spacing: 5%;
+    vertical-align: middle;
+    color: #3F4255;
+}
+
+.food__court-buttons {
+    display: flex;
+    column-gap: 24px;
+}
+
+.food__court-button {
+    width: 118px;
+    height: 72px;
+    border: 2px solid #FFE145;
+    border-radius: 2px;
+}
+.food__cort-button_caption {
+    width: 70px;
+    height: 35px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    vertical-align: bottom;
+    color: #3F4255;
+}
+.food__cort-button_caption span {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+.food__court-images {
+    height: 100%;
+    width: 803px;
+    position: relative;
+    z-index: -1;
+}
+
+.food__court-image_food {
+    width: 648px;
+    height: 649px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.food__court-image_rucola {
+    width: 122px;
+    height: 166px;
+    position: absolute;
+    left: 35px;
+    bottom: 41.71px;
+    transform: rotate(-31.51deg);
+}
+
+.food__court-images-description {
+    width: 190px;
+    height: 104px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.food__court-images-description-text {
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    vertical-align: middle;
+    color: #313030;
+}
+
+/*--------------------------------Advantages-------------------------------*/
+.advantages {}
+
+.advantages-container {}
+
+.advantages-item {}
+
+.advantages-item-icon {}
+
+.advantages-item-text {}
