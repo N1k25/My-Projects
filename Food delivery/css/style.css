@@ -857,4 +857,41 @@ input:valid~.label2 {
     left: 581px;
 }
 
+/*--------------------------------Social-------------------------------*/
+.social {
+    height: 456px;
+    align-items: flex-start;
+}
+
+.social-container {
+    width: 100%;
+    height: 384px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.social-title {
+    font-family: Poppins;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 64px;
+    letter-spacing: 8%;
+}
+.social-title span {
+    color: #9093A6;
+}
+
+.social-body {
+    height: 299px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-body-item {
+    width: 296px;
+    height: 100%;
+    border-radius: 6px;
+}
+
 /*--------------------------------   -------------------------------*/
