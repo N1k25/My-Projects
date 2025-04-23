@@ -393,4 +393,114 @@ input[type=checkbox]:checked~.sidebarIconToggle>.diagonal.part-2 {
     color: #3F4255;
 }
 
+/*--------------------------------Restaurants-------------------------------*/
+.restaurants {
+    height: 442px;
+}
+
+.restaurants-container {
+    width: 100%;
+    height: 392px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.restaurants-header {
+    width: 100%;
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.restaurants-title {
+    font-family: Poppins;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 64px;
+    letter-spacing: 8%;
+    vertical-align: middle;
+    color: #3F4255;
+}
+
+.restaurants-button {
+    width: 118px;
+    height: 100%;
+    background-color: #F2F4FA;
+    border-radius: 4px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    vertical-align: bottom;
+    color: #9093A6;
+}
+
+.restaurants-item {
+    width: 296px;
+    height: 296px;
+    border-radius: 4px;
+    box-shadow: 0 2px 16px #3C3E4A14;
+    margin: 0px 12px;
+}
+
+.restaurants-item-image {
+    width: 100%;
+    height: 184px;
+    border-radius: 4px 4px 0 0;
+}
+
+.restaurants-item-logo {
+    width: 100%;
+    height: 112px;
+    display: grid;
+    place-items: center;
+}
+
+/* Основные стили */
+
+/* Слайдер */
+.slick-slider {
+    min-width: 0;
+}
+
+/* Ограничивающая оболочка */
+.slick-list {
+    overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track {
+    display: flex;
+    align-items: flex-start;
+}
+
+/* Конкретный слайдер */
+.restaurants-slider {
+    position: relative;
+}
+
+.restaurants-slider .slick-arrow {
+    position: absolute;
+    top: 50%;
+    margin: -30px 0px 0px 0px;
+    z-index: 1000;
+    font-size: 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 25px;
+    box-shadow: 0 8px 40px #00000014;
+}
+
+.restaurants-slider .slick-arrow.slick-prev {
+    left: -20px;
+    background: url('../img/arrow-left.svg') #FFFFFF 0 0 / 100% no-repeat;
+}
+
+.restaurants-slider .slick-arrow.slick-next {
+    right: -20px;
+    background: url('../img/arrow-right.svg') #FFFFFF 0 0 / 100% no-repeat;
+}
+
 /*--------------------------------    -------------------------------*/

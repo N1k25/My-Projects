@@ -8,7 +8,7 @@
 		<title>Food delivery</title>
 		<link rel="icon" type="image/png" href="img/favicon.ico"/>
 		<!-- Подключаем CSS -->
-		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="./css/style.css" />
 		<!-- Кодировка страницы -->
 		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
 	</head>
@@ -17,12 +17,12 @@
 		<header class="header">
 			<div class="header-container __container">
 				<a href="#" class="header-logo">
-					<img src="/img/logo.svg" alt="logo">
+					<img src="./img/logo.svg" alt="logo">
 				</a>
 				<nav class="header-menu">
 					<a href="#" class="header-link__login">Log in</a>
 					<a href="#" class="header-link__cart">
-						<img src="/img/cart.svg" alt="cart" class="header-link__cart-img">
+						<img src="./img/cart.svg" alt="cart" class="header-link__cart-img">
 					</a>
 					<div class="header-burger">
 						<input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
@@ -68,10 +68,10 @@
 						</div>
 					</div>
 					<div class="food__court-images">
-						<img src="/img/food.png" alt="food" class="food__court-image_food">
-						<img src="/img/rucola.png" alt="rucola" class="food__court-image_rucola">
+						<img src="./img/food.png" alt="food" class="food__court-image_food">
+						<img src="./img/rucola.png" alt="rucola" class="food__court-image_rucola">
 						<div class="food__court-images-description">
-							<img src="/img/arrow.svg" alt="arrow" class="food__court-images-description-arrow">
+							<img src="./img/arrow.svg" alt="arrow" class="food__court-images-description-arrow">
 							<p class="food__court-images-description-text">Fresh salad, Il Pasifigio</p>
 						</div>
 					</div>
@@ -81,21 +81,85 @@
 				<div class="advantages-container __container">
 					<div class="advantages-items">
 						<div class="advantages-item">
-							<img src="/img/time-eat.svg" alt="time-eat" class="advantages-item-icon">
+							<img src="./img/time-eat.svg" alt="time-eat" class="advantages-item-icon">
 							<p class="advantages-item-text">Delivery in all paris in less than 30 minutes</p>
 						</div>
 						<div class="advantages-item">
-							<img src="/img/delivery.svg" alt="delivery" class="advantages-item-icon">
+							<img src="./img/delivery.svg" alt="delivery" class="advantages-item-icon">
 							<p class="advantages-item-text">Free delivery from 29 euros</p>
 						</div>
 						<div class="advantages-item">
-							<img src="/img/french.svg" alt="french" class="advantages-item-icon">
+							<img src="./img/french.svg" alt="french" class="advantages-item-icon">
 							<p class="advantages-item-text">Only fresh and French products</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="restaurants">
+				<div class="restaurants-container __container">
+					<div class="restaurants-header">
+						<h2 class="restaurants-title">Restaurants</h2>
+						<a href="#" class="restaurants-button __button">show all</a>
+					</div>
+					<div class="restaurants-slider">
+						<div class="restaurants-item slider-item">
+							<img src="./img/burger.png" alt="burger" class="restaurants-item-image">
+							<div class="restaurants-item-logo">
+								<img src="./img/restaurant-1.png" alt="restaurant-1">
+							</div>
+						</div>
+						<div class="restaurants-item slider-item">
+							<img src="./img/risotto.png" alt="risotto" class="restaurants-item-image">
+							<div class="restaurants-item-logo">
+								<img src="./img/restaurant-2.png" alt="restaurant-">
+							</div>
+						</div>
+						<div class="restaurants-item slider-item">
+							<img src="./img/veggie.png" alt="veggie" class="restaurants-item-image">
+							<div class="restaurants-item-logo">
+								<img src="./img/restaurant-3.png" alt="restaurant-">
+							</div>
+						</div>
+						<div class="restaurants-item slider-item">
+							<img src="./img/wok-food.png" alt="wok-food" class="restaurants-item-image">
+							<div class="restaurants-item-logo">
+								<img src="./img/restaurant-4.png" alt="restaurant-4">
+							</div>
+						</div>
+						<div class="restaurants-item slider-item">
+							<img src="./img/burger.png" alt="burger" class="restaurants-item-image">
+							<div class="restaurants-item-logo">
+								<img src="./img/restaurant-1.png" alt="restaurant-1">
+							</div>
+						</div>
+						<div class="restaurants-item slider-item">
+							<img src="./img/risotto.png" alt="risotto" class="restaurants-item-image">
+							<div class="restaurants-item-logo">
+								<img src="./img/restaurant-2.png" alt="restaurant-">
+							</div>
+						</div>
+						<div class="restaurants-item slider-item">
+							<img src="./img/veggie.png" alt="veggie" class="restaurants-item-image">
+							<div class="restaurants-item-logo">
+								<img src="./img/restaurant-3.png" alt="restaurant-">
+							</div>
+						</div>
+						<div class="restaurants-item slider-item">
+							<img src="./img/wok-food.png" alt="wok-food" class="restaurants-item-image">
+							<div class="restaurants-item-logo">
+								<img src="./img/restaurant-4.png" alt="restaurant-4">
+							</div>
 						</div>
 					</div>
 				</div>
 			</section>
 		</main>
 		<footer class="footer"></footer>
+	<!-- Подключаем jQuery -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<!-- Подключаем слайдер Slick -->
+	<script src="./js/slick.min.js"></script>
+	<!-- Подключаем файл скриптов -->
+	<script src="./js/script.js"></script>
 	</body>
 </html>
