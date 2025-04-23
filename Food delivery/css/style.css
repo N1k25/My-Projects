@@ -483,7 +483,7 @@ input[type=checkbox]:checked~.sidebarIconToggle>.diagonal.part-2 {
     position: absolute;
     top: 50%;
     margin: -30px 0px 0px 0px;
-    z-index: 1000;
+    z-index: 10;
     font-size: 0;
     width: 48px;
     height: 48px;
@@ -695,7 +695,7 @@ input:valid~.label2 {
     position: absolute;
     top: 50%;
     margin: -30px 0px 0px 0px;
-    z-index: 1000;
+    z-index: 10;
     font-size: 0;
     width: 48px;
     height: 48px;
@@ -785,4 +785,76 @@ input:valid~.label2 {
     color: #3F4255;
 }
 
-/*--------------------------------    -------------------------------*/
+/*--------------------------------Map-------------------------------*/
+.map {
+    height: 774px;
+}
+
+.map-container {
+    width: 100%;
+    height: 600px;
+    background-image: url('/img/map.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.map-image {
+    width: 439.5px;
+    height: 384.5px;
+    position: absolute;
+    top: 68px;
+    left: 326.5px;
+    opacity: 0.6;
+}
+
+.map-image-loc-1 {
+    position: absolute;
+    top: 223px;
+    left: 385px;
+}
+
+.map-image-loc-2 {
+    position: absolute;
+    top: 120px;
+    left: 476px;
+}
+
+.map-image-loc-3 {
+    position: absolute;
+    top: 80px;
+    left: 701px;
+}
+
+.map-image-loc-4 {
+    position: absolute;
+    top: 159px;
+    left: 557px;
+}
+
+.map-image-loc-5 {
+    position: absolute;
+    top: 232px;
+    left: 509px;
+}
+
+.map-image-loc-6 {
+    position: absolute;
+    top: 216px;
+    left: 646px;
+}
+
+.map-image-loc-7 {
+    position: absolute;
+    top: 339px;
+    left: 694px;
+}
+
+.map-image-loc-8 {
+    position: absolute;
+    top: 375px;
+    left: 581px;
+}
+
+/*--------------------------------   -------------------------------*/
