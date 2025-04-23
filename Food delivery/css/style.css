@@ -654,8 +654,11 @@ input:valid~.label2 {
     border-radius: 6px;
     box-shadow: 0 2px 16px #3C3E4A14;
     margin: 0px 12px;
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .specialities-item-title {
@@ -710,4 +713,76 @@ input:valid~.label2 {
     background: url('../img/arrow-right.svg') #FFFFFF 0 0 / 100% no-repeat;
 }
 
-/*--------------------------------   -------------------------------*/
+/*--------------------------------About-------------------------------*/
+.about {
+    height: 284px;
+    background-image: url('/img/lemon.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.about-container {
+    width: 900px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-item {
+    width: 225px;
+}
+
+.about-item-body {
+    height: 149px;
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+
+.about-item-body-bkg {
+    width: 126px;
+    height: 126px;
+    border-radius: 50%;
+    background-color: #FFE145;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.about-item-body-circle {
+    width: 127px;
+    height: 127px;
+    border-radius: 50%;
+    border: 1px solid #B79C10;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.about-item-body-content {
+    font-family: 'Open Sans Condensed';
+    font-size: 58px;
+    line-height: 64px;
+    letter-spacing: 5%;
+    text-align: center;
+    vertical-align: middle;
+    color: #3F4255;
+    z-index: 2;
+}
+
+.about-item-title {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    color: #3F4255;
+}
+
+/*--------------------------------    -------------------------------*/
