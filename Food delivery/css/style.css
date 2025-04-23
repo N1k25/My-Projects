@@ -92,7 +92,7 @@ footer,
     width: 285px;
     margin-top: 72px;
     padding: 0 42px 0 36px;
-    transform: translateX(285px);
+    transform: translateX(310px);
     transition: transform 250ms ease-in-out;
     background-color: #FFFFFF;
     box-shadow: 0 10px 24px #0000001A;
@@ -395,7 +395,7 @@ input[type=checkbox]:checked~.sidebarIconToggle>.diagonal.part-2 {
 
 /*--------------------------------Restaurants-------------------------------*/
 .restaurants {
-    height: 442px;
+    height: 492px;
 }
 
 .restaurants-container {
@@ -474,6 +474,7 @@ input[type=checkbox]:checked~.sidebarIconToggle>.diagonal.part-2 {
 .slick-track {
     display: flex;
     align-items: flex-start;
+    padding: 0 0 10px 0;
 }
 
 /* Конкретный слайдер */
@@ -501,6 +502,112 @@ input[type=checkbox]:checked~.sidebarIconToggle>.diagonal.part-2 {
 .restaurants-slider .slick-arrow.slick-next {
     right: -20px;
     background: url('../img/arrow-right.svg') #FFFFFF 0 0 / 100% no-repeat;
+}
+
+/*--------------------------------Delivery-------------------------------*/
+.delivery {
+    height: 297px;
+    background-color: #F2F4FA;
+    margin: 72px 0 0 0;
+}
+
+.delivery-container {
+    width: 1096px;
+    height: 136px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.delivery-header {
+    width: 509px;
+    height: 100%;
+    color: #3F4255;
+}
+
+.delivery-title {
+    font-family: Poppins;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 64px;
+    letter-spacing: 8%;
+}
+
+.delivery-text {
+    width: 400px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    margin: 24px 0 0 0;
+}
+
+/*-------------------*/
+.delivery-form__mail {
+    width: 428px;
+    height: 72px;
+}
+
+form {
+    display: flex;
+}
+
+.form-group {
+    position: relative;
+}
+
+input {
+    display: block;
+    width: 336px;
+    height: 72px;
+    padding: 10px;
+    box-shadow: 0 8px 40px #00000014;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    margin: 0 4px 0 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: #3F4255;
+}
+
+input:focus {
+    outline: none;
+}
+
+.label2 {
+    position: absolute;
+    top: 20px;
+    left: 48px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    pointer-events: none;
+    color: #9093A6;
+    transition: all 0.2s ease;
+}
+.label2::before {
+    content: url('/img/location.svg');
+    display: inline-block;
+    margin: 0 8px 0 0;
+    vertical-align: middle;
+}
+
+input:focus~.label2,
+input:valid~.label2 {
+    top: -24px;
+    font-size: 10pt;
+    color: #626A72;
+}
+
+.form-button {
+    width: 88px;
+    height: 72px;
+    background-color: #FFE145;
+    border-radius: 4px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    color: #B79C10;
 }
 
 /*--------------------------------    -------------------------------*/
