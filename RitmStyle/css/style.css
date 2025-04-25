@@ -1,0 +1,92 @@
+@import url("reset.css");
+
+@import url(https://fonts.googleapis.com/css?family=El+Messiri:700&display=swap);
+
+@font-face {
+    font-family: 'Proxima Nova';
+    font-display: swap;
+    src: url("../fonts/ProximaNova-Regular.eot");
+    src: local("O"), url("../fonts/ProximaNova-Regular.woff") format("woff"),
+        url("../fonts/ProximaNova-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Proxima Nova';
+    font-display: swap;
+    src: url("../fonts/ProximaNova-Bold.eot");
+    src: local("O"), url("../fonts/ProximaNova-Bold.woff") format("woff"),
+        url("../fonts/ProximaNova-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Proxima Nova';
+    font-display: swap;
+    src: url("../fonts/ProximaNova-Light.eot");
+    src: local("O"), url("../fonts/ProximaNova-Light.woff") format("woff"),
+        url("../fonts/ProximaNova-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Proxima Nova';
+    font-display: swap;
+    src: url("../fonts/ProximaNova-Semibold.eot");
+    src: local("O"), url("../fonts/ProximaNova-Semibold.woff") format("woff"),
+        url("../fonts/ProximaNova-Semibold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+.wrapper {
+    max-width: 1296px;
+    margin: 0 auto;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*-------------------------------Header-----------------------------------*/
+.header {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 0 0 0;
+    border: 1px solid red;
+}
+
+.menu {
+    width: 655px;
+}
+
+.menu-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-link {
+    line-height: 135%;
+    color: #FFFFFF;
+}
+.menu-link:hover {
+    color: #018ABE;
+}
+
+.header-button {
+    width: 155px;
+    height: 36px;
+    border-radius: 3px;
+    background-color: #018ABE;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+
+/*-------------------------------    -----------------------------------*/
