@@ -57,7 +57,6 @@
     align-items: center;
     justify-content: space-between;
     margin: 30px 0 0 0;
-    border: 1px solid red;
 }
 
 .menu {
@@ -89,4 +88,62 @@
     color: #FFFFFF;
 }
 
-/*-------------------------------    -----------------------------------*/
+/*-------------------------------Aquatherapy-----------------------------------*/
+.aquatherapy {
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-image: url('/img/aquatherapy.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 50px 0 0 0;
+    position: relative;
+}
+.aquatherapy::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #98C9DC;
+    opacity: 0.5;
+    border-radius: 10px;
+}
+
+.aquatherapy-container {
+    z-index: 2;
+}
+
+.aquatherapy-header {
+    width: 489px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 136px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.aquatherapy-header-text {
+    font-family: El Messiri;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 140%;
+    text-align: center;
+}
+
+.aquatherapy-title {
+    width: 587px;
+    font-family: 'El Messiri';
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 140%;
+    text-align: center;
+}
+
+/*-------------------------------   -----------------------------------*/
