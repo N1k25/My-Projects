@@ -50,6 +50,13 @@
     justify-content: center;
 }
 
+.__section-type{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
 .__header {
     display: flex;
     align-items: center;
@@ -161,10 +168,6 @@
 .sessions {
     height: 699px;
     margin: 150px 0 0 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
 }
 
 .sessions-header {
@@ -216,6 +219,93 @@
     font-weight: 700;
     font-size: 24px;
     line-height: 140%;
+}
+
+/*-------------------------------Reviews-----------------------------------*/
+.reviews {
+    height: 585px;
+    margin: 150px 0 0 0;
+}
+
+.reviews-header {
+    width: 300px;
+}
+
+.slider-item-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;
+}
+
+.slider-item-text {
+    font-weight: 300;
+    line-height: 140%;
+    margin: 20px 0 0 0;
+}
+
+/* Основные стили */
+
+/* Слайдер */
+.slick-slider {
+    min-width: 0;
+}
+
+/* Ограничивающая оболочка */
+.slick-list {
+    overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track {
+    display: flex;
+    align-items: center;
+}
+
+/* Конкретный слайдер */
+.reviews-slider {
+    width: 1736px;
+    position: relative;
+}
+
+.reviews-slider .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reviews-slider .slick-dots li {
+    list-style: none;
+    margin: 60px 10px 0 10px;
+}
+
+.reviews-slider .slick-dots button {
+    font-size: 0;
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border-radius: 3px;
+    opacity: 0.4;
+}
+
+.reviews-slider .slick-dots li.slick-active button {
+    background-color: #FFFFFF;
+    opacity: 1;
+}
+
+.slider__item {
+    width: 636px;
+    padding: 50px 60px;
+    margin: 0 25px;
+    border-radius: 10px;
+    background-color: #018ABE;
+    transition: all 0.3s ease;
+    transform: scale(0.79);
+    opacity: 0.5;
+}
+
+.slider__item.slick-center {
+    transform: scale(1);
+    opacity: 1;
 }
 
 /*-------------------------------   -----------------------------------*/
