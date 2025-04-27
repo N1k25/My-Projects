@@ -428,4 +428,101 @@ table tr {
     line-height: 140%;
 }
 
-/*-------------------------------   -----------------------------------*/
+/*-------------------------------Locations-----------------------------------*/
+.locations {
+    height: 604px;
+    margin: 150px 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 24px;
+    column-gap: 48px;
+}
+
+.locations-map {
+    position: relative;
+}
+
+.big-map {
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+.map-location {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.location-filled-1 {
+    position: absolute;
+    top: 66px;
+    left: 330px;
+}
+
+.location-filled-2 {
+    position: absolute;
+    top: 366px;
+    left: 385px;
+}
+
+.locations-card {
+    width: 392px;
+    height: 290px;
+    background-color: #018ABE;
+    border-radius: 10px;
+    padding: 35px 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.locations-card-title {
+    font-family: 'El Messiri';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 140%;
+    
+}
+
+.locations-card-contacts {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 135%;
+}
+
+.locations-card-address::before {
+    content: url('/img/location.svg');
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 20px 0 0;
+}
+
+.locations-card-metro::before {
+    content: url('/img/metro_logo.svg');
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 20px 0 0;
+}
+
+.locations-card-record::before {
+    content: url('/img/calendar-week.svg');
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 20px 0 0;
+}
+
+.locations-card-btn {
+    width: 155px;
+    height: 36px;
+    border-radius: 3px;
+    background-color: #FFFFFF;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 140%;
+    color: #018ABE;
+}
+
+/*-------------------------------    -----------------------------------*/
