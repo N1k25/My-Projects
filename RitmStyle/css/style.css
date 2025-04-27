@@ -351,4 +351,81 @@
     height: 100%;
 }
 
+/*-------------------------------Cost-----------------------------------*/
+.cost {
+    width: 1076px;
+    height: 614px;
+    margin: 150px auto 0;
+}
+
+.cost-header {
+    width: 518px;
+}
+
+.cost-body {
+    width: 100%;
+    height: 455px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.price-list {
+    width: 416px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table tr {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 56px;
+}
+
+.price-list-li {
+    width: 18px;
+    height: 9px;
+}
+
+.price-list-service {
+    width: 268px;
+    font-size: 18px;
+    line-height: 140%;
+}
+
+.price-list-value {
+    width: 87px;
+    font-family: 'El Messiri';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 140%;
+    text-align: right;
+}
+
+.certificate {
+    width: 526px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.certificate-img {
+    width: 100%;
+    height: 396px;
+    border-radius: 10px;
+}
+
+.certificate-title {
+    font-family: 'El Messiri';
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 140%;
+}
+
 /*-------------------------------   -----------------------------------*/
