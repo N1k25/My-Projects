@@ -572,4 +572,27 @@ footer,
     margin: 10px 0 0 0;
 }
 
-/*-------------------------------    ------------------------------*/
+/*-------------------------------Workplace------------------------------*/
+.workplace {
+    height: 970px;
+}
+
+.workplace-container {
+    width: 100%;
+    height: 810px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.workplace-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 24px;
+}
+
+.workplace-img-big {
+    grid-row: span 2;
+}
+
