@@ -92,8 +92,9 @@ footer,
 }
 
 .__subtitle {
-    font-size: 24px;
+    font-size: 28px;
     line-height: 130%;
+    color: #00BDF8;
 }
 
 .__text {
@@ -281,10 +282,6 @@ footer,
     height: 183px;
 }
 
-.team-subtitle {
-    color: #00BDF8;
-}
-
 .team-text {
     opacity: 0.7;
 }
@@ -314,4 +311,71 @@ footer,
     margin: 8px 0 0 0;
 }
 
-/*-------------------------------  ------------------------------*/
+/*-------------------------------About------------------------------*/
+.about {
+    height: 584px;
+    background-image: url('/img/image-2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.about::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1A236E;
+    opacity: 0.4;
+}
+
+.about-container {
+    width: 730px;
+    height: 380px;
+    color: #FFFFFF;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-header {
+    text-align: center;
+}
+
+.about-subtitle {
+    font-family: 'Gilroy';
+    font-weight: 600;
+    line-height: 24px;
+    color: #00BDF8;
+}
+
+.about-title {
+    font-family: 'Gilroy';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 52px;
+    margin: 16px 0;
+}
+
+.about-text {
+    font-family: 'Gilroy';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    opacity: 0.8;
+}
+
+.about-btn {
+    width: 161px;
+    height: 56px;
+    font-family: 'Gilroy';
+    font-weight: 700;
+    line-height: 24px;
+}
+
+/*-------------------------------    ------------------------------*/
