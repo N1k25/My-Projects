@@ -596,3 +596,65 @@ footer,
     grid-row: span 2;
 }
 
+/*-------------------------------Reviews------------------------------*/
+.reviews {
+    height: 812px;
+    background-color: #F7F8FA;
+}
+
+.reviews-container {
+    width: 100%;
+    height: 612px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.reviews-header {
+    text-align: center;
+}
+
+.reviews-text {
+    opacity: 70%;
+    margin: 24px 0 0 0;
+}
+
+.reviews-body {
+    width: 100%;
+    height: 409px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.reviews-body-item {
+    width: 540px;
+    border-radius: 16px;
+    padding: 40px 32px;
+    background-color: #FFFFFF;
+    text-align: center;
+    align-self: flex-start;
+}
+
+.reviews-body-item-picto {
+    width: 64px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+}
+
+.reviews-body-item-text {
+    margin: 32px 0;
+}
+
+.reviews-body-item-person-name {
+    line-height: 24px;
+}
+
+.reviews-body-item-person-position {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 18px;
+    opacity: 0.4;
+    margin: 4px 0 0 0;
+}
+
