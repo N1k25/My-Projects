@@ -109,7 +109,7 @@ footer,
 
 /*-------------------------------Header------------------------------*/
 .header {
-    height: 80px;
+    height: 98px;
 }
 
 .header-container {
@@ -140,16 +140,16 @@ footer,
     margin: 0 24px 0 0;
 }
 
-.menu-item:hover {
-    text-decoration: underline;
-}
-
 .menu-link {
     line-height: 24px;
     text-align: right;
     vertical-align: middle;
     color: #000000;
-    opacity: 70%;
+    opacity: 0.7;
+}
+.menu-link:hover {
+    color: #00BDF8;
+    opacity: 1;
 }
 
 .header-order {
@@ -163,7 +163,7 @@ footer,
     line-height: 18px;
     text-align: right;
     vertical-align: middle;
-    opacity: 70%;
+    opacity: 0.7;
 }
 
 .header-order-tel-number {
@@ -174,23 +174,11 @@ footer,
 
 .header-order-btn {
     width: 168px;
-    height: 48px;
-    border-radius: 6px;
-    color: #000000;
+    height: 44px;
+    color: #FFFFFF;
     font-size: 15px;
     line-height: 20px;
-    position: relative;
     margin: 0 0 0 32px;
 }
 
-.header-order-btn::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 1px solid #000000;
-    opacity: 10%;
-    border-radius: 6px;
-}
+/*-------------------------------    ------------------------------*/
