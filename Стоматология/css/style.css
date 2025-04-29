@@ -701,3 +701,158 @@ footer,
     border-radius: 8px;
 }
 
+/*-------------------------------Order------------------------------*/
+.order {
+    height: 900px;
+    background-image: url('/img/image-3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.order::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1A236E;
+    opacity: 0.4;
+}
+
+.order-container {
+    width: 540px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 5;
+}
+
+.order-header {
+    height: 144px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.order-title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 52px;
+}
+
+.order-text {
+    line-height: 24px;
+    margin: 16px 0 0 0;
+    opacity: 0.8;
+}
+
+.order-body {
+    width: 100%;
+    height: 516px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.order-form {
+    width: 100%;
+}
+
+/* ------ Форма заказа -------- */
+.order-form form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#name,
+#email,
+#phone {
+    width: 100%;
+    height: 56px;
+    border-radius: 6px;
+    padding: 16px 20px;
+    margin: 0 0 8px 0;
+    border: 1px solid #0000001A;
+}
+
+form input::placeholder {
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 0.2;
+}
+
+.service-type {
+    margin: 28px 0 0 0;
+}
+
+.service-type label {
+    line-height: 24px;
+    color: #FFFFFF;
+    margin: 0 0 8px 0;
+}
+
+.service-type div {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 260px;
+}
+
+.service-type div input {
+    width: 24px;
+    height: 24px;
+    margin: 0 16px 0 0;
+}
+
+input[type=radio] {
+    appearance: none;
+    border-radius: 50%;
+}
+
+.service-type div input {
+    box-shadow: inset 0 0 0 8px transparent, inset 0 0 0 3px #FFFFFF4D, inset 0 0 0 16px transparent;
+}
+.service-type div input:checked {
+    box-shadow: inset 0 0 0 8px #00BDF8, inset 0 0 0 3px #FFFFFF, inset 0 0 0 16px #FFFFFF;
+}
+
+.service-type div label {
+    font-weight: 700;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.order-btn {
+    width: 100%;
+    height: 56px;
+    border-radius: 6px;
+    line-height: 24px;
+    margin: 24px 0 0 0;
+}
+
+/*--------------*/
+
+.order-body-text {
+    width: 450px;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    margin: 24px auto 0 auto;
+}
+
+.order-body-text span {
+    color: #000000;
+    opacity: 40%;
+}
+
+.order-body-link {
+    color: #FFFFFF;
+}
+

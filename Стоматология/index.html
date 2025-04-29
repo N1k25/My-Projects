@@ -255,6 +255,46 @@
 					</div>
 				</div>
 			</section>
+			<section class="order">
+				<div class="order-container __container">
+					<div class="order-header">
+						<h2 class="order-title">Запишитесь<br>на лечение</h2>
+						<p class="order-text">Вы можете легко и просто записаться на лечение</p>
+					</div>
+					<div class="order-body">
+						<!-- Форма заказа -->
+						<div class="order-form">
+							<form action="" method="post">
+								<input type="text" id="name" name="name" tabindex="1" required placeholder="Ваше имя">
+								<input type="tel" id="phone" name="phone" tabindex="3" required placeholder="+7 (000) 000-0000">
+								<input type="email" id="email" name="email" tabindex="2" autocomplete="off" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="E-mail">
+								<div class="service-type">
+									<label for="type-service">Выберите услугу:</label>
+									<div>
+										<input type="radio" tabindex="4" name="type-service" checked value="service-1">
+										<label for="service-1">Консультация</label>
+									</div>
+									<div>
+										<input type="radio" tabindex="4" name="type-service" value="service-2">
+										<label for="service-2">Лечение зубов</label>
+									</div>
+									<div>
+										<input type="radio" tabindex="4" name="type-service" value="service-3">
+										<label for="service-3">Удаление зубов</label>
+									</div>
+								</div>
+								<button tabindex="5" class="order-btn __button-blue" type="submit">Оставить заявку</button>
+							</form>
+						</div>
+						<p class="order-body-text">
+							<span>Оставляя заявку, вы соглашаетесь на</span>
+							<a href="#" class="order-body-link">обработку персональных данных</a>
+							<span>и с</span> 
+							<a href="#" class="order-body-link">условиями бронирования счёта</a>
+						</p>
+					</div>
+				</div>
+			</section>
 		</main>
 		<footer class="footer"></footer>
 	</body>
