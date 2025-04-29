@@ -46,7 +46,7 @@
 		url('../fonts/Stem-Regular.woff2') format('woff2'),
 		url('../fonts/Stem-Regular.woff') format('woff'),
 		url('../fonts/Stem-Regular.ttf') format('truetype');
-	font-weight: bold;
+	font-weight: normal;
 	font-style: normal;
 }
 
