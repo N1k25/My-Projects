@@ -1,0 +1,71 @@
+@import url("reset.css");
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:regular&display=swap);
+
+.wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+header,
+section,
+footer,
+.__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*-------------------------Header-------------------------------*/
+.header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border: 1px solid red;
+}
+
+.menu-list {
+    display: flex;
+    gap: 54px;
+}
+
+.menu-link {
+    font-size: 13px;
+    line-height: 24px;
+    color: #222222;
+}
+.menu-item:first-child .menu-link,
+.menu-item:last-child .menu-link {
+    color: #2B2C4F;
+}
+.menu-item:nth-child(2) .menu-link {
+    color: #000000;
+}
+.menu-item .menu-link:hover {
+    color: green;
+    text-decoration: underline;
+}
+
+.header-buttons {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin: 0 0 0 225px;
+}
+.btn-sign__in {
+    font-size: 13px;
+    line-height: 24px;
+    color: #2B2C4F;
+}
+.btn-demo {
+    width: 153px;
+    height: 42px;
+    border-radius: 100px;
+    border: 1px solid #164038;
+    background-color: #164038;
+    color: #E1FFA0;
+    line-height: 20px;
+}
+
+/*-------------------------    -------------------------------*/
