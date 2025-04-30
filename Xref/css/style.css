@@ -257,4 +257,33 @@ footer,
     font-size: 15px;
 }
 
+/*-------------------------Platform-------------------------------*/
+.platform-body {
+    margin: 179px 0 0 0;
+}
+
+.platform-header {
+    color: #333333;
+}
+
+.platform-text {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.platform-title {
+    font-size: 38px;
+    line-height: 44.1px;
+    text-align: center;
+    margin: 13px 0 79px 0;
+}
+
+.platform-img {
+    width: 963px;
+    height: 471px;
+    border-radius: 12px;
+    box-shadow: 1px 1px 32px #0000001F;
+}
+
 /*-------------------------    -------------------------------*/
