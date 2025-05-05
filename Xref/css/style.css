@@ -467,4 +467,114 @@ footer,
     height: 422px;
 }
 
+/*-------------------------For Industries-------------------------------*/
+.for__industries {
+    padding: 0 38px;
+    margin: 91px 0 0 0;
+    justify-content: space-between;
+}
+
+.for__industries-img {
+    width: 586px;
+    height: 422px;
+}
+
+.for__industries-header {
+    width: 492px;
+    color: #333333;
+}
+
+.for__industries-subtitle {
+    font-size: 21px;
+    line-height: 24px;
+}
+
+.for__industries-title {
+    font-size: 42px;
+    line-height: 44.1px;
+    margin: 14px 0 19px 0;
+}
+
+.for__industries-text {
+    font-size: 15px;
+    line-height: 20.8px;
+}
+
+.for__industries-about {
+    width: 100%;
+    margin: 57px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*-----------------*/
+.accordion {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 238px;
+}
+
+.accordion__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    line-height: 16px;
+    padding: 10px 0;
+    cursor: pointer;
+    border-bottom: 1px solid #0000001A;
+    color: #164038;
+}
+
+.accordion__title.active {
+    border: none;
+}
+
+.accordion__title span {
+    display: inline-flex;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 100px;
+    border: 1px solid #0C252019;
+    transform: rotate(0);
+    transition: transform 0.5s ease-out;
+}
+
+.accordion__title.active span {
+    transform: rotate(90deg);
+}
+
+.accordion__title span::before {
+    content: url('/img/arrow-right.svg');
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    
+}
+
+.accordion__content {
+    font-size: 15px;
+    line-height: 16px;
+    overflow: hidden;
+    padding: 0 20px;
+    box-sizing: content-box;
+    border-bottom: 1px solid #0000001A;
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: max-height 0.5s ease-out, padding 0.5s ease-out, opacity 0.1s ease-out 0.5s, visibility 0.1s ease-out 0.5s;
+}
+
+.accordion__content.active {
+    visibility: visible;
+    opacity: 1;
+    padding: 20px;
+    transition: max-height 0.5s ease-out, padding 0.5s ease-out, opacity 0.1s ease-out, visibility 0.1s ease-out;
+}
+
 /*-------------------------   -------------------------------*/
