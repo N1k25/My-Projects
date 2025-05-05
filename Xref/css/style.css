@@ -408,4 +408,63 @@ footer,
     color: #164038;
 }
 
-/*-------------------------     -------------------------------*/
+/*-------------------------For Teams-------------------------------*/
+.for__teams {
+    justify-content: space-between;
+    margin: 32px 0 0 0;
+    padding: 0 38px;
+}
+
+.for__teams-header {
+    width: 492px;
+}
+
+.for__teams-subtitle {
+    font-size: 20px;
+    line-height: 24px;
+    color: #333333;
+}
+
+.for__teams-title {
+    font-size: 42px;
+    line-height: 44.1px;
+    color: #333333;
+    margin: 14px 0 52px 0;
+}
+
+.for__teams-item:not(:first-child) {
+    margin: 35px 0 0 0;
+}
+
+.for__teams-item-title {
+    font-size: 19px;
+    line-height: 20px;
+    color: #0C2520;
+}
+
+.for__teams-item-line {
+    width: 100%;
+    height: 1px;
+    background-color: #0C2520;
+    opacity: 0.1;
+    margin: 4px 0 0 0;
+}
+
+.for__teams-item-text {
+    font-size: 16px;
+    line-height: 20.8px;
+    color: #333333;
+    margin: 19px 0 22px 0;
+}
+
+.for__teams-item-link {
+    line-height: 16px;
+    color: #164038;
+}
+
+.for__teams-img {
+    width: 586px;
+    height: 422px;
+}
+
+/*-------------------------   -------------------------------*/
