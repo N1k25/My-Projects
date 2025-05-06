@@ -5,7 +5,8 @@
 
 header,
 section,
-footer {
+footer,
+.__button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -44,6 +45,71 @@ footer {
 }
 .menu-link:hover {
     color: #FF774C;
+}
+
+/*-------------------------------Template--------------------------------*/
+.template {
+    height: 1063px;
+}
+
+.template-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: url(/img/bkg-1.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.template-title {
+    width: 1200px;
+    font-size: 100px;
+    line-height: 130px;
+    letter-spacing: 0.4px;
+    text-align: center;
+}
+.template-title span {
+    color: #FF774C;
+}
+
+.template-text {
+    width: 500px;
+    font-family: Mulish;
+    font-size: 25px;
+    line-height: 37.5px;
+    letter-spacing: 0.4px;
+    text-align: center;
+    margin: 3px 0 0 0;
+}
+
+.template_buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 25px 0 70px 0;
+}
+
+.template_button {
+    width: 266px;
+    height: 69px;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-family: Mulish;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.4px;
+}
+.template_button:first-child {
+    background: #FF774C;
+    border: 1px solid #FF774C;
+}
+.template_button:last-child {
+    width: 259px;
+    background: #7390F9;
+    border: 1px solid #7390F9;
 }
 
 /*-------------------------------   --------------------------------*/
