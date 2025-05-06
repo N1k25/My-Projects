@@ -577,4 +577,164 @@ footer,
     transition: max-height 0.5s ease-out, padding 0.5s ease-out, opacity 0.1s ease-out, visibility 0.1s ease-out;
 }
 
-/*-------------------------   -------------------------------*/
+/*-------------------------Customers Say-------------------------------*/
+.customers__say {
+    flex-direction: column;
+    margin: 159px 0 0 0;
+    padding: 0 38px;
+}
+
+.customers__say-header {
+    color: #333333;
+    text-align: center;
+}
+
+.customers__say-subtitle {
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 24px;
+}
+
+.customers__say-title {
+    font-size: 37px;
+    line-height: 44.1px;
+}
+
+.customers__say-body {
+    width: 100%;
+    height: 661px;
+    margin: 80px 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 34px;
+    column-gap: 33px;
+}
+
+.customers__say-body-item {
+    background-color: #0C2520;
+    color: #FFFFFF;
+    padding: 49px 40px 35px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.customers__say-body-item-title {
+    font-size: 28px;
+    line-height: 29.4px;
+}
+
+.customers__say-body-item:first-child .customers__say-body-item-title {
+    font-size: 24px;
+}
+
+.customers__say-body-item-link {
+    line-height: 16px;
+    color: #32735F;
+    margin: 16px 0 0 0;
+}
+
+.big-item {
+    grid-column: span 2;
+    background-color: #164038;
+}
+
+.customers__say-body-itemWhy {
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 66px;
+}
+
+.customers__say-body-itemWhy-proud {
+    width: 367px;
+}
+
+.customers__say-body-itemWhy-proud-title {
+    font-size: 32px;
+    line-height: 33.6px;
+}
+.customers__say-body-itemWhy-proud-title span {
+    color: #E1FFA0;
+}
+
+.customers__say-body-itemWhy-proud-text {
+    font-size: 16px;
+    line-height: 20.8px;
+    margin: 49px 0 29px 0;
+}
+
+.customers__say-body-itemWhy-proud-explanation {
+    line-height: 16px;
+    color: #E1FFA0;
+}
+
+.customers__say-body-itemWhy-separator {
+    width: 1px;
+    height: 204px;
+    background-color: #E8E8E8;
+    opacity: 0.3;
+}
+
+.customers__say-body-itemWhy-value-title {
+    font-size: 80px;
+    line-height: 48px;
+}
+.customers__say-body-itemWhy-value-title span {
+    font-size: 20px;
+    line-height: 12px;
+    margin: 0 0 0 -36px;
+}
+
+.customers__say-body-itemWhy-value-list {
+    margin: 49px 0 0 0;
+}
+
+.customers__say-body-itemWhy-value-list-item {
+    margin: 0 0 14px 0;
+    font-size: 17px;
+    line-height: 20px;
+}
+.customers__say-body-itemWhy-value-list-item span {
+    color: #E1FFA0;
+    margin: 0 8px 0 0;
+}
+
+.customers__say-body-lastItem {
+    justify-content: flex-start;
+}
+
+.customers__say-body-lastItem-title {
+    font-size: 29px;
+    line-height: 33.6px;
+}
+
+.customers__say-body-lastItem-companies {
+    display: flex;
+    gap: 76px;
+    margin: 51px 0 39px 0;
+}
+
+.customers__say-body-lastItem-company {
+    font-size: 22px;
+    line-height: 25.2px;
+}
+.customers__say-body-lastItem-company:last-child {
+    font-size: 21px;
+}
+
+.customers__say-body-lastItem-reviews {
+    display: flex;
+    gap: 11px;
+}
+
+.customers__say-body-lastItem-review {
+    font-size: 12px;
+    line-height: 18.2px;
+}
+.customers__say-body-lastItem-review:last-child {
+    font-size: 14px;
+    width: 94px;
+}
+
+/*-------------------------    -------------------------------*/
