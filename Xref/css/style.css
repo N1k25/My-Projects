@@ -5,7 +5,6 @@
 .wrapper {
     max-width: 1280px;
     margin: 0 auto;
-    border: 1px solid red;
 }
 
 header,
@@ -318,6 +317,9 @@ footer,
 .digital__trust-item-text {
     line-height: 20.8px;
     margin: 25px 0 38px 0;
+}
+.digital__trust-item:last-child .digital__trust-item-text {
+    margin: 25px 0 17px 0;
 }
 
 .digital__trust-item-link {
@@ -737,4 +739,129 @@ footer,
     width: 94px;
 }
 
-/*-------------------------    -------------------------------*/
+/*-------------------------Footer-------------------------------*/
+.footer {
+    height: 1310px;
+    background-color: #164038;
+    color: #FFFFFF;
+    margin: 120px 0 0 0;
+    padding: 120px 78px 0;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+}
+.footer::before {
+    content: url('/img/bkg-3.png');
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+.footer::after {
+    content: url('/img/bkg-2.png');
+    position: absolute;
+    top: -65px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.footer-header {
+    width: 100%;
+    text-align: center;
+    z-index: 5;
+}
+
+.footer-title {
+    font-size: 66px;
+    line-height: 69.3px;
+}
+
+.footer-title-word1 {
+    font-size: 61px;
+    color: #E1FFA0;
+}
+
+.footer-title-word2 {
+    font-size: 60px;
+    color: #E1FFA0;
+}
+
+.footer-title-word3 {
+    font-size: 58px;
+    color: #E1FFA0;
+}
+
+.footer-title-end {
+    font-size: 62px;
+}
+
+.footer-text {
+    line-height: 20.8px;
+    margin: 18px 0 53px 0;
+}
+
+.footer-header-link {
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.footer-menu {
+    display: flex;
+    margin: 226px 0 63px 0;
+    z-index: 5;
+}
+
+.footer-menu-block:nth-child(2) {
+    margin: 0 135px 0 36px;
+}
+.footer-menu-block:last-child {
+    margin:  0 0 0 184px;
+}
+
+.footer-menu-title {
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.footer-menu-list {
+    margin: 61px 0 0 0;
+}
+
+.footer-menu-item {
+    margin: 0 0 20px 0;
+}
+
+.footer-menu-link {
+    line-height: 16px;
+    color: #FFFFFF;
+}
+.footer-menu-block:first-child .footer-menu-list .footer-menu-item:nth-child(2) .footer-menu-link span {
+    font-size: 8px;
+    line-height: 20px;
+    margin: 0 0 0 10px;
+}
+.footer-menu-link:hover {
+    text-decoration: underline;
+}
+
+.footer-privacy {
+    display: flex;
+    gap: 20px;
+    z-index: 5;
+    line-height: 20.8px;
+}
+
+.footer-copyright-link {
+    line-height: 16px;
+    color: #FFFFFF;
+}
+.footer-copyright-link:hover {
+    text-decoration: underline;
+}
+
+.footer-location {
+    font-size: 13px;
+}
