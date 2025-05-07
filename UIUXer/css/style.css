@@ -47,7 +47,6 @@ footer,
 }
 
 .__item-title {
-    font-size: 25px;
     line-height: 37.5px;
     letter-spacing: 0.4px;
     text-align: center;
@@ -114,7 +113,6 @@ footer,
 .template-text {
     width: 500px;
     font-family: Mulish;
-    font-size: 25px;
     line-height: 37.5px;
     letter-spacing: 0.4px;
     text-align: center;
@@ -256,4 +254,53 @@ footer,
     height: 397px;
 }
 
-/*-------------------------------    --------------------------------*/
+/*-------------------------------Get start--------------------------------*/
+.get_start {
+    height: 703px;
+}
+
+.get_start-container {
+    width: 100%;
+    height: 503px;
+    background: url(/img/bkg-1.jpg) center no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.get_start-header {
+    width: 527px;
+}
+
+.get_start-title {
+    width: 344px;
+    text-align: left;
+}
+
+.get_start-text {
+    text-align: left;
+    margin: 12px 0 18px 0;
+}
+
+.get_start-button {
+    width: 274px;
+    height: 69px;
+    border-radius: 10px;
+    background-color: #FF774C;
+    border: 1px solid #FF774C;
+    color: #FFFFFF;
+    font-family: Mulish;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.4px;
+}
+
+.get_start-img {
+    width: 637px;
+    height: 463px;
+    margin: 40px 0 0 0;
+}
+
+/*-------------------------------Footer--------------------------------*/
