@@ -18,11 +18,11 @@ footer,
 
 .__button_green {
     background-color: #2BCA8B;
-    color: #fff;
+    color: #FFFFFF;
 }
 .__button_orange {
     background-color: #F55F39;
-    color: #fff;
+    color: #FFFFFF;
 }
 
 /*---------------------------------Header-------------------------------*/
@@ -210,7 +210,6 @@ input:valid~.label2::before {
 
 .resource_btn-text {
     width: 200px;
-    font-size: 14px;
     line-height: 23px;
     text-align: left;
 }
@@ -218,4 +217,94 @@ input:valid~.label2::before {
     width: 156px;
 }
 
-/*---------------------------------    -------------------------------*/
+/*---------------------------------Help-------------------------------*/
+.help {
+    height: 225px;
+    justify-content: flex-end;
+}
+
+.help-header {
+    width: 630px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 55px;
+}
+
+.help-title {
+    width: 125px;
+    font-size: 28px;
+    line-height: 39px;
+    color: #2BCA8B;
+}
+
+.help-list {
+    padding-left: 15px;
+}
+
+.help-item {
+    line-height: 23px;
+    color: #252061;
+    margin-bottom: 8px;
+}
+
+.writers {
+    width: 600px;
+    height: 305px;
+    padding-left: 10px;
+    color: #FFFFFF;
+    background: url('/img/bkg-1.png') center no-repeat;
+    background-size: cover;
+    background-color: #252061;
+    box-shadow: 7px 7px 50px #00000066;
+    margin-top: -80px;
+}
+
+.writers-container {
+    width: 375px;
+    height: 100%;
+    padding: 37px 0 0 45px;
+}
+
+.writers-title {
+    font-size: 24px;
+    line-height: 23px;
+}
+
+.writers-text {
+    width: 306px;
+    line-height: 23px;
+    margin: 26px 0 18.5px 0;
+}
+
+.writers-photos {
+    width: 330px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    position: relative;
+}
+
+.writers-photo {
+    width: 80px;
+    aspect-ratio: 1 / 1;
+    border-radius: 10px;
+}
+.writers-photo:nth-child(2) {
+    position: absolute;
+    left: 55px;
+    bottom: -12px;
+}
+
+.writers-btn {
+    width: 146px;
+    height: 47px;
+    position: absolute;
+    right: 0;
+    font-size: 15px;
+    line-height: 23px;
+    box-shadow: 6px 6px 13px #00000066;
+}
+
+/*---------------------------------   -------------------------------*/
