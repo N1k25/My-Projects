@@ -310,7 +310,9 @@ input:valid~.label2::before {
 /*---------------------------------Blog-------------------------------*/
 .blog {
     height: 1535px;
-    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 100px;
     border: 1px solid red;
 }
 
@@ -321,7 +323,6 @@ input:valid~.label2::before {
     flex-direction: column;
     justify-content: space-between;
     margin-top: 60px;
-    border: 1px solid green;
 }
 
 .blog-title {
@@ -484,6 +485,57 @@ input:valid~.label2::before {
 .more-item-link {
     line-height: 23px;
     color: #F55F39;
+}
+
+/*---------------------------------Next level-------------------------------*/
+.next_level {
+    width: 1100px;
+    height: 660px;
+    background: url('/img/bkg_img-2.jpg') center no-repeat;
+    background-size: cover;
+    box-shadow: 14px 14px 80px #00000066;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin: -447px auto 0;
+}
+
+.next_level-card {
+    width: 530px;
+    height: 479px;
+    background-color: #352F77;
+    color: #FFFFFF;
+    padding: 49px 50px;
+}
+
+.next_level-title {
+    width: 414px;
+    font-size: 44px;
+    line-height: 60px;
+}
+
+.next_level-text {
+    width: 414px;
+    font-size: 15px;
+    line-height: 23px;
+    margin: 22px 0 55px 0;
+}
+
+.next_level-btn {
+    width: 355px;
+    height: 68px;
+}
+.next_level-btn::before {
+    content: url('/img/arrow_rounded.svg');
+    margin-right: 25px;
+}
+
+.next_level-bth-container {
+    line-height: 23px;
+}
+
+.next_level-btn-title {
+    font-size: 23px;
+    margin-bottom: 9px;
 }
 
 /*---------------------------------   -------------------------------*/
