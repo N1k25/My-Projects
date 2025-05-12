@@ -145,4 +145,77 @@ input:valid~.label2::before {
     color: #E0E0E0;
 }
 
-/*---------------------------------   -------------------------------*/
+/*---------------------------------Resource-------------------------------*/
+.resource {
+    height: 700px;
+    background: url('/img/bkg_img-1.jpg') center no-repeat;
+    background-size: cover;
+}
+
+.resource-container {
+    width: 610px;
+    height: 371px;
+    margin-left: -300px;
+}
+
+.resource-title {
+    font-size: 49px;
+    line-height: 65px;
+    color: #444444;
+}
+.resource-title span {
+    color: #2BCA8B;
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-decoration-skip-ink: none;
+    text-underline-offset: 13px;
+}
+
+.resource-text {
+    width: 556px;
+    font-size: 19px;
+    line-height: 37px;
+    color: #444444;
+    margin: 4px 0 85px 0;
+}
+
+.resource-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.resource_btn {
+    height: 63px;
+    flex-direction: column;
+    gap: 8px;
+}
+.resource_btn:first-child {
+    width: 211px;
+    color: #FFFFFF;
+}
+.resource_btn:last-child {
+    width: 255px;
+    background-color: #FFFFFF;
+    color: #4D4D4D;
+}
+
+.resource_btn-title {
+    width: 200px;
+    font-size: 23px;
+    line-height: 23px;
+}
+.resource_btn:first-child .resource_btn-title {
+    width: 156px;
+}
+
+.resource_btn-text {
+    width: 200px;
+    font-size: 14px;
+    line-height: 23px;
+    text-align: left;
+}
+.resource_btn:first-child .resource_btn-text {
+    width: 156px;
+}
+
+/*---------------------------------    -------------------------------*/
