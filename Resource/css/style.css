@@ -115,7 +115,7 @@ input:focus {
     transition: all 0.2s ease;
 }
 .label2::before {
-    content: url('/img/search.svg');
+    content: url('../img/search.svg');
     width: 25px;
     height: 21px;
     display: inline-block;
@@ -147,7 +147,7 @@ input:valid~.label2::before {
 /*---------------------------------Resource-------------------------------*/
 .resource {
     height: 700px;
-    background: url('/img/bkg_img-1.jpg') center no-repeat;
+    background: url('../img/bkg_img-1.jpg') center no-repeat;
     background-size: cover;
 }
 
@@ -249,7 +249,7 @@ input:valid~.label2::before {
     height: 305px;
     padding-left: 10px;
     color: #FFFFFF;
-    background: url('/img/bkg-1.png') center no-repeat;
+    background: url('../img/bkg-1.png') center no-repeat;
     background-size: cover;
     background-color: #252061;
     box-shadow: 7px 7px 50px #00000066;
@@ -342,7 +342,7 @@ input:valid~.label2::before {
 .big-item {
     width: 534px;
     height: 675px;
-    background: url('/img/image-1.jpg') center no-repeat;
+    background: url('../img/image-1.jpg') center no-repeat;
     background-size: cover;
     display: flex;
     align-items: flex-end;
@@ -406,19 +406,19 @@ input:valid~.label2::before {
     height: 240px;
 }
 .more-item:first-child {
-    background: url('/img/image-2.jpg') center no-repeat;
+    background: url('../img/image-2.jpg') center no-repeat;
     background-size: cover;
     position: relative;
 }
 .more-item:nth-child(2) {
-    background: url('/img/image-3.jpg') center no-repeat;
+    background: url('../img/image-3.jpg') center no-repeat;
     background-size: cover;
     display: flex;
     align-items: flex-end;
     position: relative;
 }
 .more-item:last-child {
-    background: url('/img/bkg-1.png') center no-repeat;
+    background: url('../img/bkg-1.png') center no-repeat;
     background-size: cover;
     background-color: #252061;
     color: #FFFFFF;
@@ -479,7 +479,7 @@ input:valid~.label2::before {
 .next_level {
     width: 1100px;
     height: 660px;
-    background: url('/img/bkg_img-2.jpg') center no-repeat;
+    background: url('../img/bkg_img-2.jpg') center no-repeat;
     background-size: cover;
     box-shadow: 14px 14px 80px #00000066;
     justify-content: flex-start;
@@ -512,7 +512,7 @@ input:valid~.label2::before {
     height: 68px;
 }
 .next_level-btn::before {
-    content: url('/img/arrow_rounded.svg');
+    content: url('../img/arrow_rounded.svg');
     margin-right: 25px;
 }
 
@@ -524,7 +524,7 @@ input:valid~.label2::before {
 /*---------------------------------Accesses-------------------------------*/
 .accesses {
     height: 1193px;
-    background: url('/img/bkg-2.png') center no-repeat;
+    background: url('../img/bkg-2.png') center no-repeat;
     background-size: cover;
     background-color: #252061;
     align-items: flex-end;
@@ -600,7 +600,7 @@ input:valid~.label2::before {
     margin-bottom: 10px;
 }
 .accesses-body-card-item::before {
-    content: url('/img/li.svg');
+    content: url('../img/li.svg');
     display: inline-block;
     vertical-align: middle;
     margin-right: 15px;
@@ -636,7 +636,7 @@ input:valid~.label2::before {
     margin-bottom: 16px;
 }
 .instant-access-title::before {
-    content: url('/img/access-icon.svg');
+    content: url('../img/access-icon.svg');
     display: inline-block;
     vertical-align: middle;
     margin-right: 10px;
@@ -691,7 +691,7 @@ input:valid~.label2::before {
 
 .what_say-body {
     height: 570px;
-    background: url('/img/image-4.jpg') center no-repeat;
+    background: url('../img/image-4.jpg') center no-repeat;
     background-size: cover;
     position: relative;
     box-shadow: 21px 21px 70px #00000033;
@@ -806,4 +806,154 @@ input:valid~.label2::before {
     color: #F55F39;
 }
 
-/*---------------------------------    -------------------------------*/
+/*---------------------------------Search-------------------------------*/
+.search {
+    height: 754px;
+}
+
+.search-container {
+    width: 100%;
+    height: 554px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.search-header {
+    height: 198px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-header-caption {
+    text-align: center;
+    color: #444444;
+    line-height: 49px;
+}
+
+.search-subtitle {
+    font-size: 24px;
+}
+
+.search-title {
+    font-size: 52px;
+}
+
+/*--------------------------*/
+.search-header-form {
+    width: 470px;
+    height: 50px;
+}
+
+.search-form-group {
+    position: relative;
+}
+
+.search-form-group input {
+    width: 306px;
+    height: 50px;
+    display: block;
+    padding: 10px;
+    border: 1px solid #D9D9D9;
+    background-color: transparent;
+    border-radius: 3px 0 0 3px;
+    position: relative;
+    font-size: 14px;
+    line-height: 21px;
+    color: #222222;
+}
+
+.label22 {
+    position: absolute;
+    top: 14px;
+    left: 16px;
+    line-height: 21px;
+    color: #E0E0E0;
+    pointer-events: none;
+    transition: all 0.2s ease;
+}
+
+.label22::before {
+    content: url('../img/search.svg');
+    width: 25px;
+    height: 21px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+input:focus~.label22,
+input:valid~.label22 {
+    top: -20px;
+    font-size: 8pt;
+    color: #626A72;
+}
+
+input:focus~.label22::before,
+input:valid~.label22::before {
+    content: '';
+    display: none;
+}
+
+.search-form-button {
+    width: 165px;
+    height: 50px;
+    border-radius: 0 3px 3px 0;
+    color: #E0E0E0;
+}
+/*---------------------------*/
+
+.search-cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-card {
+    width: 300px;
+    height: 296px;
+    background-color: #FFFFFF;
+    border: 3px solid #E6E8EE;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.search-card-body {
+    height: 214px;
+    padding: 30px;
+}
+
+.search-card-title {
+    font-size: 17px;
+    color: #252061;
+}
+
+.search-card-list {
+    margin-top: 16px;
+}
+
+.search-card-list-item {
+    font-size: 12px;
+    color: #F55F39;
+    margin-bottom: 8px;
+    padding-left: 30px;
+    background: url('../img/list.svg') left 5px no-repeat;
+}
+
+.search-card-footer {
+    height: 53px;
+    background-color: #EEF1F6;
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.search-card-lnk {
+    font-size: 11px;
+    color: #252061;
+}
+
+/*---------------------------------   -------------------------------*/
