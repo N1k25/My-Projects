@@ -187,7 +187,7 @@ footer,
 	vertical-align: bottom;
 }
 .header-btn::before {
-	content: url('/img/search.svg');
+	content: url('../img/search.svg');
 	margin: 8px 9.5px 0 0;
 }
 
@@ -213,7 +213,7 @@ footer,
 .today-header {
 	width: 716px;
 	height: 513px;
-	background-image: url('/img/basketball_sport_icon.jpg');
+	background-image: url('../img/basketball_sport_icon.jpg');
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -243,7 +243,7 @@ footer,
 .today-body {
 	width: 720px;
 	height: 580px;
-	background-image: url('/img/basketball-player.png');
+	background-image: url('../img/basketball-player.png');
 	background-position: right -150px bottom;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -309,13 +309,13 @@ footer,
 	border-radius: 6px;
 }
 .today-news-item:nth-child(2) {
-	background-image: url('/img/african-woman-sports.png');
+	background-image: url('../img/african-woman-sports.png');
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 .today-news-item:last-child {
-	background-image: url('/img/formula-one-racing.png');
+	background-image: url('../img/formula-one-racing.png');
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -479,7 +479,7 @@ footer,
 
 .trending_news-cycling {
 	width: 570px;
-	background-image: url('/img/sportsman-drinking-water-training-stationary-bike.png');
+	background-image: url('../img/sportsman-drinking-water-training-stationary-bike.png');
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -553,7 +553,7 @@ footer,
 
 .sports_news-card {
 	height: 518px;
-	background-image: url('/img/two-opposing-players-give-handshake-end-game.png');
+	background-image: url('../img/two-opposing-players-give-handshake-end-game.png');
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -730,7 +730,7 @@ footer,
 
 .recent_news-announcement-body {
 	height: 300px;
-	background-image: url('/img/karate-fighter.png');
+	background-image: url('../img/karate-fighter.png');
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -924,19 +924,19 @@ table tr th {
 	padding: 14px;
 }
 .card-1 {
-	background-image: url('/img/basketball-equipment.png');
+	background-image: url('../img/basketball-equipment.png');
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 .card-2 {
-	background-image: url('/img/hockey-players.png');
+	background-image: url('../img/hockey-players.png');
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 .card-3 {
-	background-image: url('/img/three-white-shuttlecocks-badminton-racquet.png');
+	background-image: url('../img/three-white-shuttlecocks-badminton-racquet.png');
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;

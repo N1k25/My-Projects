@@ -58,7 +58,7 @@ section{
 }
 
 .logo {
-    font-family: Times New Roman;
+    font-family: 'Times New Roman';
     font-size: 39px;
     line-height: 54px;
     letter-spacing: 1.6px;
@@ -99,7 +99,7 @@ section{
 }
 
 .start-title {
-    font-family: Times New Roman;
+    font-family: 'Times New Roman';
     font-size: 46px;
     line-height: 50px;
     letter-spacing: 1px;
@@ -211,7 +211,7 @@ section{
 .start-image-3 {
     width: 347px;
     height: 364px;
-    background-image: url('/img/image-background.png');
+    background-image: url('../img/image-background.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -230,7 +230,7 @@ section{
 }
 .start-image-3 p {
     width: 143px;
-    font-family: Times New Roman;
+    font-family: 'Times New Roman';
     font-size: 20px;
     line-height: 24px;
     letter-spacing: 0.8px;
@@ -242,7 +242,7 @@ section{
 .transition-top {
     height: 29px;
     background-color: #FDF7F0;
-    background-image: url('/img/top-section.png');
+    background-image: url('../img/top-section.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -297,7 +297,7 @@ section{
 }
 
 .help-body-item-title {
-    font-family: Times New Roman;
+    font-family: 'Times New Roman';
     font-size: 22px;
     line-height: 24px;
     letter-spacing: 0.88px;
@@ -318,7 +318,7 @@ section{
 
 .help-title {
     width: 589px;
-    font-family: Times New Roman;
+    font-family: 'Times New Roman';
     font-size: 74px;
     line-height: 74.74px;
     letter-spacing: 2.96px;
@@ -380,7 +380,7 @@ section{
 
 .install-title {
     width: 434px;
-    font-family: Times New Roman;
+    font-family: 'Times New Roman';
     font-size: 48px;
     line-height: 58.56px;
     letter-spacing: 1.92px;
@@ -404,7 +404,7 @@ section{
 .transition-bottom {
     height: 82px;
     background-color: #FDF7F0;
-    background-image: url('/img/bottom-section.png');
+    background-image: url('../img/bottom-section.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -431,7 +431,7 @@ section{
 
 .accounts-title {
     width: 470px;
-    font-family: Times New Roman;
+    font-family: 'Times New Roman';
     font-size: 46px;
     line-height: 50px;
     letter-spacing: 1.84px;
@@ -449,17 +449,17 @@ section{
     padding: 112px 0 0 40px;
 }
 .accounts-item:first-child {
-    background-image: url('/img/block-1.png');
+    background-image: url('../img/block-1.png');
 }
 .accounts-item:nth-child(2) {
-    background-image: url('/img/block-2.png');
+    background-image: url('../img/block-2.png');
 }
 .accounts-item:last-child {
-    background-image: url('/img/block-3.png');
+    background-image: url('../img/block-3.png');
 }
 
 .accounts-item-title {
-    font-family: Times New Roman;
+    font-family: 'Times New Roman';
     font-size: 26px;
     line-height: 30px;
     letter-spacing: 1.08px;
@@ -485,7 +485,7 @@ section{
 
 .accounts-item-subtitle,
 .accounts-item-text {
-    font-family: Segoe UI;
+    font-family: 'Segoe UI';
     font-size: 14px;
     line-height: 20px;
 }
@@ -509,14 +509,14 @@ section{
     background-color: #FFFFFF;
 }
 .accounts-item:first-child .accounts-item-link::after {
-    content: url('/img/arrow-right.svg');
+    content: url('../img/arrow-right.svg');
     margin: 0 0 0 16px;
 }
 
 /*-------------------------Unpacked-------------------------*/
 .unpacked {
     height: 574px;
-    background-image: url('/img/image-8.png');
+    background-image: url('../img/image-8.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -544,13 +544,13 @@ section{
 }
 
 .footer-logo {
-    font-family: Times New Roman;
+    font-family: 'Times New Roman';
     font-size: 40px;
     line-height: 70px;
     color: #3E3E42;
 }
 .footer-logo span {
-    font-family: Segoe UI;
+    font-family: 'Segoe UI';
     color: #212529;
 }
 
@@ -570,7 +570,7 @@ section{
 }
 
 .footer-menu-item-title {
-    font-family: Times New Roman;
+    font-family: 'Times New Roman';
     font-size: 20px;
     line-height: 34px;
     letter-spacing: 0.4px;

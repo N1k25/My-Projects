@@ -169,7 +169,7 @@ footer,
 /*-------------------------------Keep--------------------------------*/
 .keep {
 	height: 497px;
-	background-image: url('/img/image-1.jpg');
+	background-image: url('../img/image-1.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -261,7 +261,7 @@ footer,
 /*-------------------------------Process--------------------------------*/
 .process {
 	height: 394px;
-	background-image: url('/img/image-2.jpg');
+	background-image: url('../img/image-2.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;

@@ -133,7 +133,7 @@ footer{
 	line-height: 80px;
 }
 .menu-item:nth-child(3) .menu-link::after {
-	content: url('/img/arrow_drop_down.svg');
+	content: url('../img/arrow_drop_down.svg');
 	display: inline-block;
 	width: 16px;
 	height: 16px;
@@ -325,7 +325,7 @@ footer{
 .simplicity{
 	height: 1001px;
 	background-color: #FFF9EA;
-	background-image: url('/img/image-3.png');
+	background-image: url('../img/image-3.png');
 	background-size: 100% 50%;
 	background-position: bottom;
 	background-repeat: no-repeat;

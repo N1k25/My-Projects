@@ -49,7 +49,7 @@ footer,
 
 #product{
     width: 80px;
-    background: url(/img/select.svg) no-repeat transparent;
+    background: url('../img/select.svg') no-repeat transparent;
     background-position: left;
     margin: 0 0 0 9px;
     color: black;
@@ -300,27 +300,27 @@ input:valid~.label2 {
     border-bottom: 3px double #E5E9EF;
 }
 .work-item:first-child::before {
-    content: url('/img/proposals.svg');
+    content: url('../img/proposals.svg');
     margin-right: 26px;
 }
 .work-item:first-child::after {
-    content: url('/img/arrow-submenu.svg');
+    content: url('../img/arrow-submenu.svg');
     margin-left: 151px;
 }
 .work-item:nth-child(2)::before {
-    content: url('/img/contacts.svg');
+    content: url('../img/contacts.svg');
     margin-right: 26px;
 }
 .work-item:nth-child(3)::before {
-    content: url('/img/client-crm.svg');
+    content: url('../img/client-crm.svg');
     margin-right: 26px;
 }
 .work-item:nth-child(4)::before {
-    content: url('/img/time-tracking.svg');
+    content: url('../img/time-tracking.svg');
     margin-right: 26px;
 }
 .work-item:nth-child(5)::before {
-    content: url('/img/invoices.svg');
+    content: url('../img/invoices.svg');
     margin-right: 26px;
 }
 .work-item:nth-child(5)::after {
@@ -328,15 +328,15 @@ input:valid~.label2 {
     margin-left: 168px;
 }
 .work-item:nth-child(6)::before {
-    content: url('/img/task-tracking.svg');
+    content: url('../img/task-tracking.svg');
     margin-right: 26px;
 }
 .work-item:nth-child(7)::before {
-    content: url('/img/accounting-taxes.svg');
+    content: url('../img/accounting-taxes.svg');
     margin-right: 26px;
 }
 .work-item:last-child::before {
-    content: url('/img/forms.svg');
+    content: url('../img/forms.svg');
     margin-right: 26px;
 }
 
@@ -398,7 +398,7 @@ input:valid~.label2 {
     color: #01B289;
 }
 .work-link::after {
-    content: url('/img/arrow-right.svg');
+    content: url('../img/arrow-right.svg');
     margin: 0 0 0 10px;
 }
 
@@ -703,7 +703,7 @@ input:valid~.label2 {
 #quote__templates,
 #comparisons {
     width: 29px;
-    background: url(/img/arrow-down.svg) no-repeat transparent;
+    background: url('../img/arrow-down.svg') no-repeat transparent;
     background-position: right;
     color: black;
     -webkit-appearance: none;

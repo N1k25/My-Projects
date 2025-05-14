@@ -280,7 +280,7 @@ footer {
 .service-body {
 	width: 689px;
 	height: 100%;
-	background-image: url('/img/scooter-guy.png');
+	background-image: url('../img/scooter-guy.png');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -924,14 +924,14 @@ footer {
 	position: relative;
 }
 .reviews-item-text::before {
-	content: url('/img/quotes-opening.svg');
+	content: url('../img/quotes-opening.svg');
 	width: 32px;
 	position: absolute;
 	left: -46px;
 	top: 0;
 }
 .reviews-item-text::after {
-	content: url('/img/quotes-closing.svg');
+	content: url('../img/quotes-closing.svg');
 	width: 32px;
 	position: absolute;
 	right: -46px;

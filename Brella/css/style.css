@@ -167,7 +167,7 @@ footer {
 	color: #214E41;
 }
 .login-btn::after {
-	content: url('/img/login-icon.png');
+	content: url('../img/login-icon.png');
 	transform: translateX(5px);
 }
 
@@ -179,7 +179,7 @@ footer {
 /*------------------------Supplemental----------------------------*/
 .supplemental {
 	height: 720px;
-	background-image: url(/img/image-1.jpg);
+	background-image: url('../img/image-1.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -446,7 +446,7 @@ footer {
 	line-height: 42px;
 }
 .brings-benefits-title::after {
-	content: url('/img/arrow-right.png');
+	content: url('../img/arrow-right.png');
 	display: inline-block;
 	width: 30px;
 	height: 23px;
@@ -561,7 +561,7 @@ footer {
 /*------------------------Employers----------------------------*/
 .employers {
 	height: 522px;
-	background-image: url(/img/image-2.jpg);
+	background-image: url('../img/image-2.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -598,7 +598,6 @@ footer {
 }
 
 .backed-body {
-	/* height: 70px; */
 	width: 100%;
 }
 
@@ -698,7 +697,7 @@ footer {
 .solution {
 	height: 577px;
 	background-color: #E3EEED;
-	background-image: url('/img/image-3.png');
+	background-image: url('../img/image-3.png');
 	background-size: 50% 100%;
 	background-position: left;
 	background-repeat: no-repeat;

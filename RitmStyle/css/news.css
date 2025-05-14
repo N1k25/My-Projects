@@ -27,7 +27,7 @@
 }
 
 .news-card {
-    background-image: url('/img/session.jpg');
+    background-image: url('../img/session.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

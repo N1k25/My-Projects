@@ -375,7 +375,6 @@ footer {
     position: absolute;
     right: -248px;
     top: 0;
-    /* top: -137px; */
 }
 
 /*----------------------------Instructor--------------------------------*/
@@ -578,7 +577,7 @@ footer {
 }
 
 .accordion__title span::before {
-    content: url('/img/arrow.svg');
+    content: url('../img/arrow.svg');
     position: absolute;
     border-radius: 50%;
     left: 50%;

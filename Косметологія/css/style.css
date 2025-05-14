@@ -72,7 +72,7 @@ ul li {
 
 body{
 	width: 1440px;
-	font-family: DM Sans;
+	font-family: 'DM Sans';
 	position: relative;
 }
 
@@ -108,7 +108,6 @@ body{
 .menu-items {
 	width:471px;
 	height: 24px;
-	/* gap: 48px; */
 }
 .menu-items ul{
 	display: flex;
@@ -118,7 +117,6 @@ body{
 .menu-item {
 	width: 100px;
 	height: 24px;
-	/* font-family: DM Sans; */
 	font-size: 24px;
 	font-weight: 700;
 	line-height: 24px;
@@ -147,7 +145,6 @@ body{
 	width: 617px;
 	height: 124px;
 	color: #DC2428;
-	font-family: DM Sans;
 	font-size: 48px;
 	font-weight: 700;
 	line-height: 62.4px;
@@ -439,7 +436,7 @@ body{
 	transform: rotate(180deg);
 }
 .accordion__title span::before {
-	content: url(../img/down.png);
+	content: url('../img/down.png');
 	position: absolute;
 	left: 50%;
 	top: 50%;

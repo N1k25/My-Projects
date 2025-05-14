@@ -109,7 +109,7 @@ body {
 	height: 23px;
 	font-size: 15px;
 	line-height: 22.4px;
-	letter-spacing: 0.6000000238418579px;
+	letter-spacing: 0.6px;
 	text-align: center;
 	color: #757575;
 }
@@ -131,7 +131,6 @@ body {
 .how-to-launch-podcast {
 	width: 100%;
 	padding: 122px 0;
-	/* border: 2px solid yellow; */
 }
 
 .how-to-launch-podcast-container {
@@ -239,7 +238,6 @@ body {
 .how-to {
 	width: 100%;
 	height: 444px;
-	/* border: 2px solid blue; */
 	padding: 70px 0 0 0;
 }
 
@@ -283,7 +281,6 @@ body {
 .learn {
 	width: 100%;
 	height: 728px;
-	/* border: 2px solid red; */
 	display: flex;
 	align-items: center;
 }
@@ -328,9 +325,6 @@ body {
 .get-skills {
 	width: 100%;
 	height: 599px;
-	/* border: 2px solid green; */
-	/* display: flex;
-	align-items: flex-start; */
 }
 
 .get-skills-container {
@@ -371,7 +365,6 @@ body {
 	width: 100%;
 	height: 232px;
 	color: #FFFFFF;
-	/* border: 2px solid red; */
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -432,7 +425,6 @@ body {
 }
 
 .course-curriculum-accordion {
-	/* border: 2px solid red; */
 	width: 1230px;
 	height: 577px;
 	display: flex;
@@ -495,7 +487,7 @@ body {
 }
 
 .accordion__title span::before {
-	content: url(../img/down.png);
+	content: url('../img/down.png');
 	position: absolute;
 	left: 50%;
 	top: 50%;
@@ -532,7 +524,6 @@ body {
 .by-the-end {
 	width: 100%;
 	height: 677px;
-	/* border: 2px solid red; */
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -548,7 +539,6 @@ body {
 .by-the-end-container {
 	width: 100%;
 	height: 485px;
-	/* border: 2px solid green; */
 	padding: 0 50px;
 	display: flex;
 	flex-direction: column;
@@ -577,7 +567,6 @@ body {
 .by-the-end-container-item {
 	width: 247px;
 	height: 164px;
-	/* border: 2px solid yellow; */
 }
 
 .by-the-end-container-item-image {
@@ -605,7 +594,6 @@ body {
 }
 
 .amazing-course-container {
-	/* border: 2px solid red; */
 	width: 650px;
 	height: 361.39px;
 	color: #FFFFFF;
@@ -715,7 +703,7 @@ body {
 }
 .accordionTitle::before,
 .accordion__Heading::before {
-  content: url(/img/down.png);
+  content: url('../img/down.png');
   font-size: 1.5em;
   line-height: 0.5em;
   float: right;
@@ -908,7 +896,7 @@ body {
 	font-size: 17px;
 	line-height: 25.2px;
 	text-align: left;
-	background: url('/img/chek.png') left no-repeat;
+	background: url('../img/chek.png') left no-repeat;
 	padding: 0px 0px 0px 30px;
 	margin: 10px 0 0 0;
 }

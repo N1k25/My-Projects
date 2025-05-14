@@ -116,7 +116,7 @@
     align-items: center;
     justify-content: center;
     border-radius: 10px;
-    background-image: url('/img/aquatherapy.jpg');
+    background-image: url('../img/aquatherapy.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -184,7 +184,7 @@
 }
 
 .session-card {
-    background-image: url('/img/session.jpg');
+    background-image: url('../img/session.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -495,21 +495,21 @@ table tr {
 }
 
 .locations-card-address::before {
-    content: url('/img/location.svg');
+    content: url('../img/location.svg');
     display: inline-block;
     vertical-align: middle;
     margin: 0 20px 0 0;
 }
 
 .locations-card-metro::before {
-    content: url('/img/metro_logo.svg');
+    content: url('../img/metro_logo.svg');
     display: inline-block;
     vertical-align: middle;
     margin: 0 20px 0 0;
 }
 
 .locations-card-record::before {
-    content: url('/img/calendar-week.svg');
+    content: url('../img/calendar-week.svg');
     display: inline-block;
     vertical-align: middle;
     margin: 0 20px 0 0;

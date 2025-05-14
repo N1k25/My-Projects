@@ -71,7 +71,7 @@ footer,
 /*-------------------------Recruit-------------------------------*/
 .recruit {
     height: 845px;
-    background-image: url('/img/bkg-1.jpg');
+    background-image: url('../img/bkg-1.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -550,7 +550,7 @@ footer,
 }
 
 .accordion__title span::before {
-    content: url('/img/arrow-right.svg');
+    content: url('../img/arrow-right.svg');
     position: absolute;
     top: 50%;
     left: 50%;
@@ -752,7 +752,7 @@ footer,
     position: relative;
 }
 .footer::before {
-    content: url('/img/bkg-3.png');
+    content: url('../img/bkg-3.png');
     position: absolute;
     top: 0;
     right: 0;
@@ -760,7 +760,7 @@ footer,
     height: 100%;
 }
 .footer::after {
-    content: url('/img/bkg-2.png');
+    content: url('../img/bkg-2.png');
     position: absolute;
     top: -65px;
     left: 0;

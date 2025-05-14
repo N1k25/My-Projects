@@ -191,7 +191,7 @@ section{
 .screens-container {
 	height: 841px;
 	width: 100%;
-	background-image: url('/img/screens.png');
+	background-image: url('../img/screens.png');
 	background-position: top center;
 	background-repeat: no-repeat;
 	background-size: contain;

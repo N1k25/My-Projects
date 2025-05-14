@@ -106,7 +106,7 @@ footer,
     margin: 41px 0 29px 0;
 }
 .connect-btn::before {
-    content: url('/img/picture.svg');
+    content: url('../img/picture.svg');
     width: 24px;
     height: 24px;
     margin: 0 8px 0 0;
@@ -121,7 +121,7 @@ footer,
     width: 558px;
     height: 650px;
     margin: 87px 11px 0 0;
-    background-image: url('/img/image-background.svg');
+    background-image: url('../img/image-background.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

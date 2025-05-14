@@ -179,7 +179,7 @@ footer,
 /*-------------------------------Right Now------------------------------*/
 .right_now {
     height: 798px;
-    background-image: url('/img/image-1.jpg');
+    background-image: url('../img/image-1.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -314,7 +314,7 @@ footer,
 /*-------------------------------About------------------------------*/
 .about {
     height: 584px;
-    background-image: url('/img/image-2.jpg');
+    background-image: url('../img/image-2.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -491,7 +491,7 @@ footer,
 }
 
 .category-body-item:first-child {
-    background-image: url('/img/category-1.jpg');
+    background-image: url('../img/category-1.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -499,7 +499,7 @@ footer,
 }
 
 .category-body-item:nth-child(2) {
-    background-image: url('/img/category-2.jpg');
+    background-image: url('../img/category-2.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -507,7 +507,7 @@ footer,
 }
 
 .category-body-item:nth-child(3) {
-    background-image: url('/img/category-3.jpg');
+    background-image: url('../img/category-3.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -515,7 +515,7 @@ footer,
 }
 
 .category-body-item:nth-child(4) {
-    background-image: url('/img/category-4.jpg');
+    background-image: url('../img/category-4.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -523,7 +523,7 @@ footer,
 }
 
 .category-body-item:nth-child(5) {
-    background-image: url('/img/category-5.jpg');
+    background-image: url('../img/category-5.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -531,7 +531,7 @@ footer,
 }
 
 .category-body-item:last-child {
-    background-image: url('/img/category-6.jpg');
+    background-image: url('../img/category-6.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -704,7 +704,7 @@ footer,
 /*-------------------------------Order------------------------------*/
 .order {
     height: 900px;
-    background-image: url('/img/image-3.jpg');
+    background-image: url('../img/image-3.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

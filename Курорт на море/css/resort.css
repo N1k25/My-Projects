@@ -103,7 +103,7 @@ footer,
 
 .start {
     height: 380px;
-    background-image: url(/img/house.jpg);
+    background-image: url('../img/house.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

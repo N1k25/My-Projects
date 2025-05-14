@@ -155,7 +155,7 @@ header{
 .take-your-podcast-container-body-title-underline {
 	width: 160px;
 	height: 104px;
-	background-image: url(/img/underline.png);
+	background-image: url('../img/underline.png');
 	background-position: bottom;
 	background-repeat: no-repeat;
 	font-size: 75px;

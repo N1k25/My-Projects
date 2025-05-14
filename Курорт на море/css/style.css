@@ -74,7 +74,7 @@ footer,
 .start {
     width: 100%;
     height: 740px;
-    background-image: url(/img/seashore.jpg);
+    background-image: url('../img/seashore.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -118,7 +118,7 @@ footer,
 .resort {
     height: 685px;
     background-color: #EBEBEB;
-    background-image: url(/img/background.svg);
+    background-image: url('../img/background.svg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -182,7 +182,7 @@ footer,
     right: 0;
 }
 .resort-link::after {
-    content: url('/img/arrow.svg');
+    content: url('../img/arrow.svg');
     margin: 0 0 0 16px;
 }
 
@@ -235,7 +235,7 @@ footer,
     right: 0;
 }
 .rooms-link::after {
-    content: url('/img/arrow.svg');
+    content: url('../img/arrow.svg');
     margin: 0 0 0 19px;
 }
 
@@ -298,7 +298,7 @@ footer,
     line-height: 100%;
     color: #6C656F;
     text-indent: 20px;
-    background: url('/img/li.svg') no-repeat;
+    background: url('../img/li.svg') no-repeat;
 }
 
 .rooms-link-more {
@@ -350,7 +350,7 @@ footer,
     height: 381px;
     background-color: #B58C5D;
     color: #FFFFFF;
-    background-image: url(/img/mask.png);
+    background-image: url('../img/mask.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
