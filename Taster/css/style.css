@@ -1,0 +1,56 @@
+@import url("reset.css");
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:regular&display=swap);
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #FAEDD4;
+}
+
+header,
+section,
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*---------------------------------------Header---------------------------------------*/
+.header {
+    height: 150px;
+}
+
+.header-container {
+    width: 1100px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    width: 580px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-btn:first-child {
+    margin-right: 6px;
+}
+
+.page-language {
+    font-size: 19px;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: #FB3B2D;   
+}
+.page-language:not(:last-child) {
+    margin-right: 21px;
+}
+.page-language:hover {
+    color: #000000;
+}
+
+/*---------------------------------------    ---------------------------------------*/
