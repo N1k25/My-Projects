@@ -84,7 +84,60 @@ footer {
     color: #FB3B2D;
     font-size: 20px;
     line-height: 66px;
-    text-transform: uppercase;   
+    text-transform: uppercase;
+    box-shadow: 0 0 0 0 #FB3B2D;
+}
+
+/*---------------------------------------Discover---------------------------------------*/
+.discover {
+    height: 584px;
+}
+
+.discover-body {
+    width: 719px;
+    height: 582px;
+    border: 2px solid #FB3B2D;
+    border-left: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.discover-title {
+    width: 569px;
+    font-size: 65px;
+    line-height: 65px;
+    padding-left: 50px;
+    margin-bottom: 36px;
+}
+
+.discover-text {
+    width: 594px;
+    font-size: 22px;
+    line-height: 33px;
+    padding-left: 50px;
+    margin: 27px 0 23px 0;
+}
+
+.discover-line {
+    margin-bottom: 1px;
+}
+
+.discover-btn {
+    height: 114px;
+    background-color: #FB3B2D;
+    color: #FAEDD4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 37px;
+    line-height: 62.9px;
+}
+
+.discover-img {
+    width: 481px;
+    height: 582px;
+    border-top: 2px solid #FB3B2D;
 }
 
 /*---------------------------------------    ---------------------------------------*/
