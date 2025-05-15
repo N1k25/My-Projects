@@ -53,4 +53,38 @@ footer {
     color: #000000;
 }
 
+/*---------------------------------------Join---------------------------------------*/
+.join {
+    height: 290px;
+    background-color: #FB3B2D;
+    flex-direction: column;
+    gap: 65px;
+}
+
+.join-title {
+    width: 1059px;
+    font-size: 35px;
+    line-height: 52.8px;
+    text-align: center;
+    color: #FAEDD4;
+}
+
+.join-buttons {
+    display: flex;
+    gap: 6px;
+}
+
+.join-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 28px;
+    background-color: #FAEDD4;
+    color: #FB3B2D;
+    font-size: 20px;
+    line-height: 66px;
+    text-transform: uppercase;   
+}
+
 /*---------------------------------------    ---------------------------------------*/
