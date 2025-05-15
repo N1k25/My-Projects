@@ -232,4 +232,44 @@ footer {
     color: #FAEDD4;
 }
 
-/*---------------------------------------    ---------------------------------------*/
+/*---------------------------------------Footer---------------------------------------*/
+.footer {
+    height: 386px;
+}
+
+.footer-container {
+    width: 1050px;
+    height: 286px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-item {
+    width: 242.5px;
+}
+
+.footer-item-title {
+    font-size: 22px;
+    line-height: 22px;
+}
+
+.footer-order-title {
+    margin-top: 31px;
+}
+
+.footer-list {
+    margin-top: 36px;
+}
+.footer-list-order {
+    margin-top: 0;
+}
+
+.footer-link {
+    font-size: 22px;
+    line-height: 33px;
+    color: #FB3B2D;
+}
+.footer-link:hover {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+}
