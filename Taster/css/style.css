@@ -217,4 +217,19 @@ footer {
     text-align: center;
 }
 
-/*---------------------------------------     ---------------------------------------*/
+/*---------------------------------------Achievement---------------------------------------*/
+.achievement {
+    height: 120px;
+    background-color: #FB3B2D;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.achievement-item {
+    font-size: 40px;
+    line-height: 80px;
+    color: #FAEDD4;
+}
+
+/*---------------------------------------    ---------------------------------------*/
