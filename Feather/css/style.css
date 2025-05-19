@@ -176,7 +176,12 @@ footer,
 
 /*---------------------------------Keeping----------------------------------*/
 .keeping {
+    flex-direction: column;
+}
+.keeping-header {
+    width: 892px;
     height: 381px;
+    display: flex;
     flex-direction: column;
     justify-content: flex-end;
     gap: 16px;
@@ -190,9 +195,96 @@ footer,
 }
 
 .keeping-text {
-    width: 892px;
     font-size: 24px;
     line-height: 32px;
+}
+
+.keeping-body {
+    height: 2501px;
+    padding-top: 32px;
+}
+
+.keeping-card {
+    display: flex;
+    margin-bottom: 64px;
+}
+.keeping-card:nth-child(odd) {
+    height: 411px;
+    justify-content: flex-end;
+    padding-left: 85px;
+}
+.keeping-card:nth-child(even) {
+    height: 616px;
+    padding-right: 92px;
+}
+
+.keeping-card-header {
+    /* text-align: left; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.keeping-card-title {
+    font-size: 36px;
+    line-height: 44px;
+}
+
+.keeping-card-text {
+    font-size: 18px;
+    line-height: 28px;
+    margin: 20px 0 33px 0;
+}
+
+.keeping-card-link {
+    font-size: 18px;
+    line-height: 28px;
+    color: #E9672B;
+}
+
+.keeping-card-image {
+    width: 616px;
+    height: 100%;
+}
+.keeping-card:first-child {
+    gap: 177px;
+    .keeping-card-header {
+        width: 402px;
+    }
+    .keeping-card-image {
+        background: url('../img/image-1.jpg') no-repeat center;
+        background-size: cover;
+    }
+}
+.keeping-card:nth-child(2) {
+    gap: 131px;
+    .keeping-card-header {
+        width: 441px;
+    }
+    .keeping-card-image {
+        background: url('../img/image-2.jpg') no-repeat center;
+        background-size: contain;
+    }
+}
+.keeping-card:nth-child(3) {
+    gap: 141px;
+    .keeping-card-header {
+        width: 438px;
+    }
+    .keeping-card-image {
+        background: url('../img/image-3.jpg') no-repeat center;
+        background-size: cover;
+    }
+}
+.keeping-card:last-child {
+    gap: 131px;
+    .keeping-card-header {
+        width: 441px;
+    }
+    .keeping-card-image {
+        background: url('../img/image-4.jpg') no-repeat center;
+        background-size: contain;
+    }
 }
 
 /*---------------------------------    ----------------------------------*/
