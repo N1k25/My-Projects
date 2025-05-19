@@ -436,4 +436,25 @@ footer,
     line-height: 24px;
 }
 
-/*---------------------------------    ----------------------------------*/
+/*---------------------------------Ease----------------------------------*/
+.ease {
+    height: 612px;
+    background-color: #F6CFCA;
+    flex-direction: column;
+    gap: 41px;;
+}
+
+.ease-title {
+    width: 913px;
+    font-size: 88px;
+    line-height: 100px;
+    text-align: center;
+}
+
+.ease-items {
+    display: flex;
+    align-items: center;
+    gap: 94px;
+}
+
+/*---------------------------------   ----------------------------------*/
