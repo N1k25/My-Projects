@@ -26,6 +26,11 @@ footer,
     background-color: #E9672B;
 }
 
+.__title {
+    font-size: 48px;
+    line-height: 54px;
+}
+
 /*---------------------------------Header----------------------------------*/
 .header {
     height: 75px;
@@ -101,7 +106,72 @@ footer,
     width: 628px;
     height: 100%;
     background: url('../img/image-1.jpg') no-repeat center;
-    background-size:contain;
+    background-size: contain;
+}
+
+/*---------------------------------Shop----------------------------------*/
+.shop {
+    height: 459px;
+    background-color: #FBF8F5;
+    flex-direction: column;
+    gap: 43px;
+    padding: 0 100px 0 92px;
+}
+
+.shop-cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.shop-card {
+    width: 248px;
+    height: 257px;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    text-align: center;
+}
+.shop-card:first-child {
+    border: 2px solid #E9672B;
+    box-shadow: 8px 8px 0 #CBC6F4;
+    .shop-card-image {
+        background: url(../img/living_room.jpg) no-repeat center;
+        background-size: cover;
+    }
+}
+.shop-card:nth-child(2) {
+    border: 2px solid #225DCA;
+    box-shadow: 8px 8px 0 #E7CB43;
+    .shop-card-image {
+        background: url(../img/bedroom.jpg) no-repeat center;
+        background-size: cover;
+    }
+}
+.shop-card:nth-child(3) {
+    border: 2px solid #242947;
+    box-shadow: 8px 8px 0 #A2D4C5;
+    .shop-card-image {
+        background: url(../img/home_office.jpg) no-repeat center;
+        background-size: cover;
+    }
+}
+.shop-card:last-child {
+    border: 2px solid #DE4333;
+    box-shadow: 8px 8px 0 #AF4920;
+    .shop-card-image {
+        background: url(../img/dining_room.jpg) no-repeat center;
+        background-size: cover;
+    }
+}
+
+.shop-card-image {
+    height: 193px;
+}
+
+.shop-card-title {
+    font-size: 17px;
+    line-height: 28px;
+    margin-top: 15px;
 }
 
 /*---------------------------------    ----------------------------------*/
