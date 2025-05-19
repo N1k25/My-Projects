@@ -287,4 +287,56 @@ footer,
     }
 }
 
+/*---------------------------------Bestsellers----------------------------------*/
+.bestsellers {
+    height: 870px;
+    background-color: #FBF8F5;
+    flex-direction: column;
+    gap: 56px;
+}
+
+.bestsellers-title {
+    font-size: 36px;
+    line-height: 44px;
+}
+
+.bestsellers-items {
+    display: flex;
+    gap: 4px;
+}
+
+.bestsellers-item {
+    width: 233px;
+    height: 430px;
+    background-color: #FFFFFF;
+    text-align: center;
+    padding-top: 40px;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.bestsellers-item-img {
+    width: 169px;
+    aspect-ratio: 1 / 1;
+}
+
+.bestsellers-item-title {
+    margin: 31px 0 9px 0;
+}
+
+.bestsellers-price__rent {
+    font-size: 20px;
+    color: #E9672B;
+}
+
+.bestsellers-price__buy {
+    color: #4F4F4F;
+}
+
+.bestsellers-link {
+    font-size: 18px;
+    line-height: 28px;
+    color: #E9672B;
+}
+
 /*---------------------------------    ----------------------------------*/
