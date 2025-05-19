@@ -16,6 +16,12 @@ footer,
     align-items: center;
 }
 
+.__button {
+    font-size: 18px;
+    line-height: 28px;
+    color: #000000;
+}
+
 .__button-orange {
     background-color: #E9672B;
 }
@@ -58,6 +64,44 @@ footer,
 }
 .menu__right-item:last-child {
     margin-left: 40px;
+}
+
+/*---------------------------------Offer----------------------------------*/
+.offer {
+    height: 611px;
+    background-color: #FBF8F5;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 33px;
+}
+
+.offer-header {
+    width: 523px;
+    margin-top: 104px;
+}
+
+.offer-title {
+    font-size: 64px;
+    line-height: 76px;
+}
+
+.offer-text {
+    font-size: 18px;
+    line-height: 28px;
+    margin: 18px 0 46px 0;
+}
+
+.offer-btn {
+    width: 154px;
+    height: 60px;
+    border-radius: 30px;
+}
+
+.offer-img {
+    width: 628px;
+    height: 100%;
+    background: url('../img/image-1.jpg') no-repeat center;
+    background-size:contain;
 }
 
 /*---------------------------------    ----------------------------------*/
