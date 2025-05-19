@@ -339,4 +339,40 @@ footer,
     color: #E9672B;
 }
 
-/*---------------------------------    ----------------------------------*/
+/*---------------------------------Floyd----------------------------------*/
+.floyd {
+    height: 343px;
+}
+
+.floyd-img {
+    width: 832px;
+    height: 100%;
+}
+
+.floyd-header {
+    width: 448px;
+    height: 100%;
+    background-color: #E9672B;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.floyd-title {
+    font-size: 36px;
+    line-height: 44px;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 24px 0 32px 0;
+}
+
+.floyd-btn {
+    width: 272px;
+    height: 60px;
+    border-radius: 88px;
+    background-color: #FFFFFF;
+    font-size: 18px;
+    line-height: 28px;
+}
+
