@@ -17,15 +17,18 @@ footer,
 }
 
 .__button-black {
+    width: 117px;
+    height: 39px;
     background-color: #292A2D;
     color: #FFFFFF;
+    line-height: 11.67px;
+    border-radius: 20.83px;
 }
 
 /*-----------------------------Header----------------------------------*/
 .header {
     height: 117px;
     justify-content: space-between;
-    border: 1px solid red;
 }
 
 .menu {
@@ -59,11 +62,7 @@ footer,
 }
 
 .btn-get__started {
-    width: 117px;
-    height: 39px;
-    border-radius: 20.83px;
     margin: 0 25px 0 34px;
-    line-height: 11.67px;
     color: #EEECE3;
 }
 
@@ -132,6 +131,72 @@ footer,
 .search.opened .cross:before {
     transition-delay: 0.3s;
     transform: rotate(45deg);
+}
+
+/*-----------------------------Financing----------------------------------*/
+.financing {
+    height: 459px;
+    border-bottom: 1px solid #5B666F40;
+    padding-right: 75.34px;
+    justify-content: space-between;
+}
+
+.financing-title {
+    font-size: 42px;
+    line-height: 41.67px;
+    letter-spacing: 1.67px;
+    span {
+        font-size: 33px;
+    }
+}
+
+.financing-text {
+    width: 333px;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.13px;
+    margin: 33px 0 21px 0;
+}
+
+.financing-images {
+    width: 350px;
+    height: 100%;
+    position: relative;
+}
+
+.financing-img:first-child {
+    width: 100%;
+    height: 100%;
+}
+.financing-img:nth-child(2) {
+    width: 167px;
+    height: 180px;
+    position: absolute;
+    left: -75px;
+    top: 66px;
+}
+
+.financing-images-block {
+    width: 175px;
+    height: 161px;
+    position: absolute;
+    bottom: 33px;
+    right: -42px;
+}
+
+.financing-images-block-dot {
+    width: 14.58px;
+    height: 13.42px;
+    background-color: #292A2D;
+    border-radius: 50%;
+}
+
+.financing-images-block-img {
+    width: 167px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    top: 37px;
 }
 
 /*-----------------------------    ----------------------------------*/
