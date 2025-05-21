@@ -1,0 +1,137 @@
+@import url("reset.css");
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:regular&display=swap);
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header,
+section,
+footer,
+.__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.__button-black {
+    background-color: #292A2D;
+    color: #FFFFFF;
+}
+
+/*-----------------------------Header----------------------------------*/
+.header {
+    height: 117px;
+    justify-content: space-between;
+    border: 1px solid red;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu-list {
+    display: flex;
+    gap: 38px;
+    margin-left: 54px;
+}
+
+.menu-link {
+    font-size: 13px;
+    line-height: 16px;
+    color: #292A2D;
+    &:hover {
+        color: green;
+    }
+}
+
+.header-service {
+    display: flex;
+    align-items: center;
+}
+
+.btn-log__in {
+    line-height: 11.67px;
+    color: #292A2D;
+}
+
+.btn-get__started {
+    width: 117px;
+    height: 39px;
+    border-radius: 20.83px;
+    margin: 0 25px 0 34px;
+    line-height: 11.67px;
+    color: #EEECE3;
+}
+
+/*---------Search-----------*/
+.search {
+    position: relative;
+}
+
+.search .search-input {
+    background: none;
+    border: 1px solid #363853;
+    border-radius: 24px;
+    height: 24px;
+    width: 24px;
+    color: #363853;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.search .search-input:focus {
+    outline: 0;
+}
+
+.search .cross {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transition: all 0.3s 0.3s ease;
+}
+
+.search .cross:before,
+.search .cross:after {
+    content: "";
+    display: block;
+    background: #363853;
+    position: absolute;
+    width: 1px;
+    height: 12px;
+    transition: all 0.3s ease;
+    right: 0;
+    bottom: 4px;
+}
+
+.search .cross:before {
+    transform: rotate(-45deg);
+}
+
+.search .cross:after {
+    transform: rotate(-45deg);
+}
+
+.search.opened .search-input {
+    width: 150px;
+    transition-delay: 0.5s;
+    cursor: text;
+}
+
+.search.opened .cross {
+    transform: translateX(-12px) translateY(-12px);
+    transition-delay: 0s;
+}
+
+.search.opened .cross:before {
+    transition-delay: 0.3s;
+    transform: rotate(45deg);
+}
+
+/*-----------------------------    ----------------------------------*/
