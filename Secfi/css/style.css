@@ -5,6 +5,7 @@
 .wrapper {
     max-width: 1200px;
     margin: 0 auto;
+    background-color: #FFFFFF;
 }
 
 header,
@@ -28,6 +29,7 @@ footer,
 /*-----------------------------Header----------------------------------*/
 .header {
     height: 117px;
+    padding: 0 83px 0 67px;
     justify-content: space-between;
 }
 
@@ -135,10 +137,12 @@ footer,
 
 /*-----------------------------Financing----------------------------------*/
 .financing {
+    width: 1067px;
     height: 459px;
     border-bottom: 1px solid #5B666F40;
     padding-right: 75.34px;
     justify-content: space-between;
+    margin: 0 auto;
 }
 
 .financing-title {
@@ -197,6 +201,113 @@ footer,
     position: absolute;
     right: 0;
     top: 37px;
+}
+
+/*-----------------------------Now what----------------------------------*/
+.now_what {
+    height: 380px;
+    position: relative;
+    flex-direction: column;
+}
+
+.now_what-header {
+    width: 506px;
+    text-align: center;
+}
+
+.cookies {
+    width: 467px;
+    height: 132px;
+    border: 1px solid #292A2D26;
+    border-radius: 29.17px;
+    margin: 0 auto;
+    padding: 17px 10px 0 26px;
+}
+
+.cookies-text {
+    width: 388px;
+    font-size: 13px;
+    line-height: 18.75px;
+    letter-spacing: 0.13px;
+    color: #004250;
+    text-align: left;
+}
+
+.cookies-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 9px;
+}
+
+.cookies-policy-link {
+    line-height: 18.75px;
+    letter-spacing: 0.13px;
+    color: #004250;
+}
+.cookies-policy-link:not(:last-child) {
+    margin-right: 17px;
+}
+
+.cookies-btn {
+    width: 84px;
+    height: 39px;
+    background-color: #004250;
+    color: #FFFFFF;
+    line-height: 11.67px;
+    border-radius: 20.83px;
+}
+
+.cokies-title {
+    font-size: 9px;
+    line-height: 15px;
+    letter-spacing: 0.1px;
+    text-transform: uppercase;
+    color: #73726C;
+    margin-top: -5px;
+}
+
+.now_what-title {
+    font-size: 26px;
+    line-height: 36.67px;
+    letter-spacing: 1.33px;
+    margin: 13px 0 21px 0;
+}
+
+.now_what-text {
+    font-size: 15px;
+    line-height: 22.5px;
+    letter-spacing: 0.15px;
+  
+}
+
+.we-work {
+    width: 140px;
+    font-size: 10px;
+    line-height: 12.5px;
+    letter-spacing: 0.1px;
+    color: #73726C;
+    position: absolute;
+    top: 38.37px;
+    left: 67px;
+}
+
+.now_what-card {
+    width: 60px;
+    aspect-ratio: 1 / 1;
+    background-color: #333333;
+    display: grid;
+    place-content: center;
+    position: absolute;
+    right: 20px;
+    top: 114.37px;
+}
+
+.now_what-card-img:last-child {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /*-----------------------------    ----------------------------------*/
