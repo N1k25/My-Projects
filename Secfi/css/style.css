@@ -341,7 +341,7 @@ footer,
     aspect-ratio: 1 / 1;
     background-color: #FBFBF9;
     margin: 27px auto 0;
-    border-radius: 50%;
+    border-radius: 20.83px;
     display: grid;
     place-content: center;
 }
@@ -411,6 +411,66 @@ footer,
 .how_we_help-item-header-link {
     line-height: 11.67px;
     color: #292A2D;
+}
+
+/*-----------------------------Why----------------------------------*/
+.why {
+    height: 592px;
+    gap: 215px;
+    position: relative;
+}
+
+.why-header {
+    width: 280px;
+    margin-top: -230px;
+}
+
+.why-subtitle {
+    font-size: 10px;
+    line-height: 15px;
+    letter-spacing: 0.1px;
+    text-transform: uppercase;
+    color: #73726C;
+}
+
+.why-title {
+    font-size: 37px;
+    line-height: 43.75px;
+    letter-spacing: 1.75px;
+}
+
+.why-body {
+    width: 375px;
+}
+
+.why-body-item:not(:last-child) {
+    margin-bottom: 17px;
+}
+
+.why-body-item-title {
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.why-body-item-text {
+    font-size: 13px;
+    line-height: 18.75px;
+    margin-top: 17px;
+}
+
+.why-link {
+    position: absolute;
+    left: 67px;
+    bottom: 118px;
+    font-size: 10px;
+    line-height: 12px;
+    color: #292A2D;
+}
+
+.why-img {
+    position: absolute;
+    left: 467px;
+    bottom: 112px;
 }
 
 /*-----------------------------    ----------------------------------*/
