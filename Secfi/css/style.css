@@ -473,4 +473,87 @@ footer,
     bottom: 112px;
 }
 
+/*-----------------------------We know----------------------------------*/
+.we_know {
+    height: 592px;
+    background-color: #73726C;
+    gap: 133px;
+}
+
+.we_know-img {
+    width: 400px;
+    height: 238px;
+}
+
+.we_know-body {
+    color: #FFFFFF;
+}
+
+.we_know-title {
+    font-size: 13px;
+    line-height: 18.75px;
+    letter-spacing: 0.13px;
+    text-transform: uppercase;
+    margin-bottom: 113px;
+}
+
+.slider-item-value {
+    font-size: 106px;
+    line-height: 116.67px;
+    letter-spacing: 4.67px;
+}
+
+.slider-item-description {
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: 0.8px;
+    margin-top: 48px;
+}
+
+/* Основные стили */
+/* Слайдер */
+.slick-slider{
+    min-width: 0;
+}
+/* Ограничивающая оболочка */
+.slick-list {
+    overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track{
+    display: flex;
+    align-items: flex-start;
+}
+/* Конкретный слайдер */
+.we_know-slider {
+    width: 261px;
+    height: 227px;
+    position: relative;
+}
+
+.we_know-slider .slick-dots{
+    display: flex;
+    align-items: center;
+    margin-top: 23px;
+}
+.we_know-slider .slick-dots li{
+    list-style: none;
+    margin-right: 9px;
+}
+.we_know-slider .slick-dots button{
+    font-size: 0;
+    width: 33px;
+    height: 4px;
+    background-color: #292A2D33;
+    border-radius: 8.33px;
+}
+
+.we_know-slider .slick-dots li.slick-active button{
+    background-color: #FFFFFF;
+}
+
+.slider__item {
+    width: 261px;
+}    
+
 /*-----------------------------    ----------------------------------*/
