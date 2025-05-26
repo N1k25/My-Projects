@@ -556,7 +556,7 @@ footer,
     width: 261px;
 }    
 
-/*-----------------------------Testimonial----------------------------------*/
+/*-----------------------------Testimonials----------------------------------*/
 .testimonials {
     height: 730px;
     background-color: #313236;
@@ -612,6 +612,116 @@ footer,
     font-size: 13px;
     line-height: 18.75px;
     letter-spacing: 0.13px;    
+}
+
+/*-----------------------------Options----------------------------------*/
+.options {
+    flex-direction: column;
+    gap: 34px;
+    padding: 66px 0;
+}
+
+.options-title {
+    font-size: 19px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    color: #463F3C;    
+}
+
+.options-body {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 67px;
+}
+
+.options-body-item {
+    width: 248px;
+    height: 364px;
+    border-radius: 3.33px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 21px;
+}
+.options-body-item:first-child {
+    background-color: #879EAD;
+    .options-item-title {
+        width: 164px;
+    }
+    .options-item-card {
+        background: url('../img/photo-1.png') no-repeat center;
+        background-size: cover;
+    }
+}
+.options-body-item:nth-child(2) {
+    background-color: #1A5866;
+    .options-item-title {
+        width: 184px;
+    }
+    .options-item-card {
+        background: url('../img/photo-2.png') no-repeat center;
+        background-size: cover;
+    }
+}
+.options-body-item:nth-child(3) {
+    background-color: #776C62;
+    .options-item-title {
+        width: 160px;
+    }
+    .options-item-card {
+        background: url('../img/photo-3.png') no-repeat center;
+        background-size: cover;
+    }
+}
+.options-body-item:last-child {
+    background-color: #99958E;
+    .options-item-title {
+        width: 186px;
+    }
+    .options-item-card {
+        background: url('../img/photo-4.png') no-repeat center;
+        background-size: cover;
+    }
+}
+
+.options-item-title {
+    font-size: 20px;
+    line-height: 27.5px;
+    letter-spacing: 1px;
+    color: #FFFFFF;    
+    margin-left: 25px;
+}
+
+.options-item-card {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    padding: 26px 25px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.options-item-card-link {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.options-item-card-btn {
+    width: 39px;
+    aspect-ratio: 1 / 1;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+}
+
+.options-item-card-img {
+    rotate: 180deg;
+}
+
+.options-item-card-btn_caption {
+    line-height: 11.67px;   
 }
 
 /*-----------------------------   ----------------------------------*/
