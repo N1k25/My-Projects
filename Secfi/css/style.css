@@ -724,4 +724,89 @@ footer,
     line-height: 11.67px;   
 }
 
-/*-----------------------------   ----------------------------------*/
+/*-----------------------------Footer----------------------------------*/
+.footer {
+    height: 480px;
+    padding: 0 67px;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 66px;
+    background: url('../img/logo-footer.png') no-repeat center;
+    background-size: contain;
+    position: relative;
+}
+
+.footer-dots {
+    width: 117.53px;
+    height: 112.6px;
+    border-radius: 50%;
+    background-color: #000000;
+    position: absolute;
+    top: 16.73px;
+    right: 89.75px;
+}
+
+.footer-menu {
+    display: flex;
+}
+
+.footer-menu-card:nth-child(2) {
+    margin: 0 46px 0 59px;
+}
+.footer-menu-card:last-child {
+    margin-left: 89px;
+}
+
+.footer-menu-card-title {
+    font-size: 10px;
+    line-height: 12px;
+    text-transform: uppercase;
+    color: #004250;    
+}
+
+.footer-menu-list {
+    margin-top: 15px;
+}
+
+.footer-menu-item {
+    margin-bottom: 19px;
+}
+
+.footer-menu-link {
+    line-height: 11.67px;
+    color: #292A2D;    
+}
+.footer-menu-link:hover {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    text-underline-offset: 3px;
+}
+
+.footer-links {
+    text-align: right;
+    z-index: 2;
+}
+
+.footer-social-link {
+    margin-left: 20px;
+}
+
+.footer-policy {
+    margin-top: 20px;
+}
+
+.footer-policy-item {
+    margin-bottom: 11px;
+}
+
+.footer-policy-link {
+    font-size: 7px;
+    line-height: 10.83px;
+    letter-spacing: 0.08px;
+    color: #ADB2B7;    
+}
+.footer-policy-link:hover {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    text-underline-offset: 3px;
+}
