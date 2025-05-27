@@ -1,0 +1,137 @@
+@import url("reset.css");
+
+@import url(https://fonts.googleapis.com/css?family=Poppins:regular,500,600,700&display=swap);
+
+head,
+section,
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*-----------------------------------Header-----------------------------------*/
+.header {
+    margin-top: 40px;
+    border: 1px solid red;
+}
+
+.header-service,
+.header-body,
+.menu-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-service {
+    height: 48px;
+}
+
+.logo-link {
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 100%;
+    color: #000000;
+}
+.logo-link span {
+    font-weight: 700;
+}
+
+.service-link {
+    line-height: 100%;
+    color: #000000;
+}
+.service-link::before {
+    content: url('../img/sign_in-icon.svg');
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.line {
+    margin: 20px 0;
+}
+
+.header-body {
+    height: 56px;
+}
+
+.local {
+    width: 152.2px;
+    height: 100%;
+    background-color: #FFAE5D;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.local::before {
+    content: url('../img/loc.svg');
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.menu-list {
+    height: 24px;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.menu-link {
+    line-height: 100%;
+    color: #606060;
+}
+.menu-link:hover {
+    color: #FFAE5D;
+}
+
+/*---------Search-----------*/
+.search-form-mail {
+    width: 622px;
+    height: 56px;
+}
+
+form {
+    display: flex;
+    position: relative;
+}
+
+.form-group {
+    position: relative;
+}
+
+input {
+    display: block;
+    width: 622px;
+    height: 56px;
+    padding: 10px;
+    border: 1px solid #80808080;
+    border-radius: 20px;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;   
+}
+
+input:focus {
+    outline: none;
+}
+
+.form-button {
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    position: absolute;
+    top: 20px;
+    right: 13px;
+}
+
+.form-button img {
+    width: 16px;
+    height: 16px;
+}
+
+/*-----------------------------------     -----------------------------------*/
