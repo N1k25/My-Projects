@@ -207,4 +207,13 @@ input:focus {
     color: #FF3232;
 }
 
+/*-----------------------------------Echo dot-----------------------------------*/
+.echo__dot {
+    height: 600px;
+    background: url('../img/bkg-1.jpg') center no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    margin-top: 60px;
+}
+
 /*-----------------------------------    -----------------------------------*/
