@@ -1,6 +1,7 @@
 @import url("reset.css");
 
 @import url(https://fonts.googleapis.com/css?family=Poppins:regular,500,600,700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap);
 
 head,
 section,
@@ -32,20 +33,22 @@ footer {
     font-size: 32px;
     line-height: 100%;
     color: #000000;
-}
-.logo-link span {
-    font-weight: 700;
+
+    & span {
+        font-weight: 700;
+    }
 }
 
 .service-link {
     line-height: 100%;
     color: #000000;
-}
-.service-link::before {
-    content: url('../img/sign_in-icon.svg');
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 10px;
+
+    &::before {
+        content: url('../img/sign_in-icon.svg');
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+    }
 }
 
 .line {
@@ -64,13 +67,13 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-}
 
-.local::before {
-    content: url('../img/loc.svg');
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 10px;
+    &::before {
+        content: url('../img/loc.svg');
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+    }
 }
 
 .menu-list {
@@ -82,9 +85,10 @@ footer {
 .menu-link {
     line-height: 100%;
     color: #606060;
-}
-.menu-link:hover {
-    color: #FFAE5D;
+
+    &:hover {
+        color: #FFAE5D;
+    }
 }
 
 /*---------Search-----------*/
@@ -126,11 +130,11 @@ input:focus {
     position: absolute;
     top: 20px;
     right: 13px;
-}
 
-.form-button img {
-    width: 16px;
-    height: 16px;
+    & img {
+        width: 16px;
+        height: 16px;
+    }
 }
 
 /*-----------------------------------Hero-----------------------------------*/
@@ -145,11 +149,13 @@ input:focus {
     font-weight: 300;
     font-size: 96px;
     line-height: 100px;
+
+    & span {
+        font-weight: 700;
+        color: #FFAE5D;
+    }
 }
-.hero-title span {
-    font-weight: 700;
-    color: #FFAE5D;
-}
+
 .hero-title span ~ span {
     color: #000000;
 }
@@ -369,11 +375,12 @@ input:focus {
     font-weight: 400;
     line-height: 100%;
     margin: 15px 0;
-}
-.review-item-price span {
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 100%;
+
+    & span {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 100%;
+    }
 }
 
 .review-item-rating {
@@ -387,4 +394,74 @@ input:focus {
     color: #FFAE5D;
 }
 
-/*-----------------------------------    -----------------------------------*/
+/*-----------------------------------Footer-----------------------------------*/
+.footer {
+    height: 200px;
+    background-color: #404040;
+    color: #FFFFFF;
+    justify-content: space-between;
+}
+
+.footer-logo-link {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 100%;
+    color: #FFFFFF;
+
+    & span {
+        font-weight: 300;
+    }
+}
+
+.footer-menu {
+    display: flex;
+    gap: 40px;
+}
+
+.footer-menu-link {
+    line-height: 100%;
+    color: #FFFFFF;
+
+    &:hover {
+        text-decoration: underline;
+        text-underline-offset: 3px;
+        text-decoration-skip-ink: none;
+    }
+}
+
+.footer-lang {
+    font-family: 'Noto Color Emoji', sans-serif;
+    position: relative;
+    display: inline-block;
+    width: 120.23px;
+    height: 24px;
+
+    .lang-list {
+        width: 100%;
+        height: 100%;
+        font-family: 'Noto Color Emoji', sans-serif;
+        font-size: 16px;
+        background-color: transparent;
+        color: #FFFFFF;
+        border: 2px solid transparent;
+        appearance: none;
+        transition: 0.3s ease;
+
+        &:hover {
+            border: 2px solid #FFAE5D;
+            color: #FFAE5D;
+            background: white;
+        }
+
+        & option {
+            color: #000;
+        }
+    }
+    .arrow {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        pointer-events: none;
+        transform: translateY(-50%);     
+    }
+}
