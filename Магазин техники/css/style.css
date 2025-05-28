@@ -189,8 +189,10 @@ input:focus {
 }
 
 .hero-item-img {
-    width: 100%;
+    display: block;
+    max-width: 235px;
     height: 235px;
+    margin: 0 auto;
 }
 
 .hero-item-name {
@@ -220,7 +222,8 @@ input:focus {
 
 /*-----------------------------------Hot deals-----------------------------------*/
 .hot__deals,
-.searched__items {
+.searched__items,
+.deals {
     flex-direction: column;
     gap: 30px;
     margin-top: 60px;
@@ -228,7 +231,8 @@ input:focus {
 }
 
 .hot__deals-header,
-.searched__items-header {
+.searched__items-header,
+.deals-header {
     width: 100%;
     height: 56px;
     border-bottom: 2px dashed #FFAE5D;
@@ -238,44 +242,52 @@ input:focus {
 }
 
 .hot__deals-title,
-.searched__items-title {
+.searched__items-title,
+.deals-title {
     font-weight: 600;
     font-size: 24px;
 }
 
 .hot__deals-items,
-.searched__items-body {
+.searched__items-body,
+.deals-items {
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
-.hot__deals-item {
+.hot__deals-item,
+.deals-item {
     width: 266px;
     height: 381px;
     padding: 15px 15.5px;
     border-radius: 10px;
 }
 
-.hot__deals-item-img {
+.hot__deals-item-img,
+.deals-item-img {
     display: block;
+    max-width: 235px;
     height: 235px;
     margin: 0 auto;
 }
 
-.hot__deals-item-name {
+.hot__deals-item-name,
+.deals-item-name {
     height: 72px;
     margin: 10px 0;
 }
 
-.hot__deals-item-cost {
+.hot__deals-item-cost,
+.deals-item-cost {
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-weight: 400;
 }
 
-.hot__deals-item-discount {
+.hot__deals-item-discount,
+.deals-item-discount {
     color: #FF3232;
 }
 
@@ -318,4 +330,9 @@ input:focus {
     color: #606060;
 }
 
-/*-----------------------------------    -----------------------------------*/
+/*-----------------------------------Deals-----------------------------------*/
+.deals {
+    margin-top: 30px;
+}
+
+/*-----------------------------------   -----------------------------------*/
