@@ -1,0 +1,139 @@
+@import url("reset.css");
+
+@import url(https://fonts.googleapis.com/css?family=Inter:regular,700,700italic&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Mulish:regular&display=swap);
+
+header,
+section,
+footer,
+.__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.__container {
+    max-width: 1200px;
+}
+
+.__button-orange {
+    background-color: #FFB342;
+    color: #1C2752;
+}
+
+/*-----------------------------------Header----------------------------------*/
+.header {
+    height: 227px;
+    align-items: flex-start;
+    border: 1px solid red;
+}
+
+.header-container {
+    width: 100%;
+}
+
+.header-service-container,
+.header-contacts,
+.header-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.header-service {
+    width: 100%;
+    background-color: #F2F2F2;
+}
+
+.header-service-container {
+    height: 69px;
+}
+
+.header-work_time {
+    line-height: 27px;
+    letter-spacing: 0.36px;
+    color: #1C2752;
+}
+
+.header-social-link {
+    margin: 0 10px;
+}
+
+.header-contacts {
+    height: 128px;
+}
+
+.header-logo-img {
+    width: 242px;
+    height: 48px;
+}
+
+.contacts {
+    display: flex;
+}
+
+.contacts-item {
+    margin-left: 65px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.contacts-item-picto {
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    background-color: #FFB342;
+    display: grid;
+    place-content: center;
+}
+
+.contacts-item-data {
+    letter-spacing: 0.36px;
+}
+
+.contacts-item-title {
+    font-size: 20px;
+    line-height: 26px;
+    color: #1C2752;
+}
+
+.contacts-item-link {
+    line-height: 27px;
+    color: #7E7E7E;
+}
+
+.header-menu {
+    height: 88px;
+    background-color: #FFB342;
+    padding: 0 10px 0 20px;
+}
+
+.menu-list {
+    display: flex;
+    gap: 50px;
+}
+
+.menu-link {
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.36px;
+    color: #222222;    
+}
+.menu-link:hover {
+    color: #FFFFFF;
+}
+
+.menu-btn {
+    width: 298px;
+    height: 68px;
+    background-color: #1C2752;
+    border: 2px solid #1C2752;
+    color: #F4F4F4;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.36px;
+}
+
+/*-----------------------------------   ----------------------------------*/
