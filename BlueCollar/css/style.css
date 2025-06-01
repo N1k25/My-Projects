@@ -25,7 +25,6 @@ footer,
 .header {
     height: 227px;
     align-items: flex-start;
-    border: 1px solid red;
 }
 
 .header-container {
@@ -58,6 +57,11 @@ footer,
 
 .header-social-link {
     margin: 0 10px;
+}
+
+.header-social-img:hover {
+    transform: scale(1.5);
+    transition: 0.3s;
 }
 
 .header-contacts {
@@ -102,6 +106,11 @@ footer,
 .contacts-item-link {
     line-height: 27px;
     color: #7E7E7E;
+
+    &:hover {
+        color: #1C2752;
+        transition: 0.3s;
+    }
 }
 
 .header-menu {
@@ -120,9 +129,11 @@ footer,
     line-height: 30px;
     letter-spacing: 0.36px;
     color: #222222;    
-}
-.menu-link:hover {
-    color: #FFFFFF;
+
+    &:hover {
+        color: #FFFFFF;
+        transition: 0.3s;
+    }
 }
 
 .menu-btn {
@@ -134,6 +145,70 @@ footer,
     font-size: 20px;
     line-height: 30px;
     letter-spacing: 0.36px;
+
+    &:hover {
+        background-color: #223a97;
+        border: 2px solid #223a97;
+        color: #FFB342;
+        transition: 0.3s;
+    }
 }
 
-/*-----------------------------------   ----------------------------------*/
+/*-----------------------------------Hero----------------------------------*/
+.hero {
+    height: 813px;
+    background: url('../img/hero/image.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.hero-container {
+    width: 100%;
+    color: #FFFFFF;
+}
+
+.hero-caption {
+    width: 662px;
+    height: 29px;
+    background-color: #FFFFFF33;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hero-caption-subtitle {
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.36px;
+    text-transform: capitalize;
+}
+
+.hero-title {
+    width: 712px;
+    font-family: Mulish;
+    font-size: 60px;
+    line-height: 78px;
+    letter-spacing: 1.2px;
+    text-transform: capitalize;
+    margin: 30px 0;
+}
+
+.hero-btn {
+    width: 227px;
+    height: 68px;
+    background-color: #FFB342;
+    border: 2px solid #FFB342;
+    color: #1C2752;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.36px;   
+    
+    &:hover {
+        background-color: #fa9702;
+        border: 2px solid #fa9702;
+        color: #FFFFFF;
+        transition: 0.3s;
+    }
+}
+
+/*-----------------------------------    ----------------------------------*/
