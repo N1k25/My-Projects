@@ -21,6 +21,14 @@ footer,
     color: #1C2752;
 }
 
+.__caption {
+    height: 27px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 .__subtitle {
     font-size: 18px;
     line-height: 27px;
@@ -193,10 +201,6 @@ footer,
     width: 662px;
     height: 29px;
     background-color: #FFFFFF33;
-    padding-left: 20px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
 }
 
 .hero-caption-subtitle {
@@ -257,12 +261,7 @@ footer,
 
 .welcome-caption {
     width: 249px;
-    height: 27px;
     background-color: #F4F4F4;
-    padding-left: 20px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
 }
 
 .welcome-title {
@@ -313,6 +312,175 @@ footer,
 .welcome-experience-item {
     font-size: 17px;
     margin-bottom: 10px;
+}
+
+/*-----------------------------------Offer----------------------------------*/
+.offer {
+    height: 900px;
+    background-color: #FFB342;
+    align-items: self-start;
+    padding-top: 140px;
+}
+
+.offer-container {
+    width: 100%;
+}
+
+.offer-header {
+    width: 840px;
+    height: 181px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.offer-caption {
+    width: 207px;
+    background-color: #F4F4F4;
+    margin: 0 auto;
+}
+
+.offer-title {
+    margin: 22px 0 12px 0;
+}
+
+.offer-text {
+    color: #1C2752;
+}
+
+.offer-body {
+    margin-top: 40px;
+}
+
+.tabs {
+    margin: 0px 0px 50px 0px;
+}
+
+.tabs__items {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.tabs__item {
+    width: 250px;
+    height: 68px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1C2752;
+    border: 1px solid #1C2752;
+    text-decoration: none;
+
+    span {
+        position: relative;
+        z-index: 2;
+    }
+}
+
+.tabs__item:nth-child(1)::before {
+    content: url('../img/offer/icon-1.svg');
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    z-index: 2;
+}
+.tabs__item:nth-child(2)::before {
+    content: url('../img/offer/icon-2.svg');
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    z-index: 2;
+}
+.tabs__item:nth-child(3)::before {
+    content: url('../img/offer/icon-3.svg');
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    z-index: 2;
+}
+
+.tabs__body {
+    margin-top: 40px;
+}
+
+.tabs__block {
+    width: 1160px;
+    height: 528px;
+    margin: 0 auto;
+    position: relative;
+    background-color: #FFFFFF;
+    display: none;
+}
+
+.tabs__block:before {
+    content: "";
+    width: 250px;
+    height: 68px;
+    position: absolute;
+    top: -108px;
+    background-color: #FFFFFF;
+}
+
+
+.tabs__block:nth-child(1):before {
+    left: 175px;
+}
+
+.tabs__block:nth-child(2):before {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.tabs__block:nth-child(3):before {
+    right: 175px;
+}
+
+.tabs__block:target {
+    display: block;
+}
+
+.tabs__card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabs__card-header {
+    width: 624px;
+    height: 408px;
+    padding: 10px 0;
+}
+
+.tabs__card-caption {
+    width: 259px;
+    height: 28px;
+    background-color: #F4F4F4;
+}
+
+.tabs__card-title {
+    margin: 22px 0 12px 0;
+}
+
+.tabs__card-text_1 {
+    width: 507px;
+}
+.tabs__card-text_2 {
+    width: 549px;
+    margin-top: 10px;
+}
+
+.tabs__card-btn {
+    width: 190px;
+    height: 68px;
+    margin-top: 30px;
+}
+
+.tabs__card-img {
+    width: 416px;
+    height: 366px;
 }
 
 /*-----------------------------------    ----------------------------------*/
