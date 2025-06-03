@@ -560,4 +560,122 @@ footer,
     }
 }
 
-/*-----------------------------------    ----------------------------------*/
+/*-----------------------------------Choose us----------------------------------*/
+.choose__us {
+    height: 848px;
+    display: flex;
+}
+
+.achievement-container {
+    width: 50%;
+    height: 100%;
+    background: url('../img/choose_us/image.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.achievement {
+    width: 560px;
+    height: 568px;
+    padding: 100px 80px;
+    position: relative;
+
+    &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: #1C2752;
+        opacity: 0.86;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+.achievement-item {
+    display: flex;
+    font-family: Mulish;
+    line-height: 35px;
+    letter-spacing: 0.36px;
+    margin-bottom: 25px;
+}
+
+.achievement-item-value {
+    width: 110px;
+    height: 67px;
+    background-color: #FFB342;
+    border: 1px solid #FFB342;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    color: #1C2752;
+    padding-left: 21px;
+    z-index: 2;
+}
+
+.achievement-item-indicator {
+    width: 290px;
+    height: 67px;
+    border: 1px solid #FFFFFF;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    font-size: 25px;
+    color: #FFFFFF;
+    z-index: 2;
+}
+
+.choose__us-container {
+    width: 50%;
+    height: 100%;
+    align-items: flex-end;
+    padding-bottom: 63px;
+}
+
+.choose__us-body {
+    width: 590px;
+    height: 692px;
+}
+
+.choose__us-header {
+    padding-top: 10px;
+}
+
+.choose__us-caption {
+    width: 213px;
+    background-color: #F4F4F4;
+}
+
+.choose__us-title {
+    margin: 23px 0 11px 0;
+}
+
+.choose__us-text {
+    width: 577px;
+    font-size: 17px;
+}
+
+.chose__us-list {
+    width: 501.5px;
+    margin-top: 40px;
+}
+
+.choose__us-item {
+    margin-bottom: 25px;
+    background: url('../img/common/li.svg') left 0 no-repeat;
+	padding-left: 52px;
+}
+
+.chose__us-item-title {
+    font-family: Mulish;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.36px;
+    color: #1C2752;
+}
+
+.chose__us-item-text {
+    font-size: 17px;
+    margin-top: 8px;
+}
+
+/*-----------------------------------     ----------------------------------*/
