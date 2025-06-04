@@ -92,7 +92,7 @@ footer,
 
 .header-social-img:hover {
     transform: scale(1.5);
-    transition: 0.3s;
+    transition: all 0.3s ease;
 }
 
 .header-contacts {
@@ -137,10 +137,12 @@ footer,
 .contacts-item-link {
     line-height: 27px;
     color: #7E7E7E;
+    display: block;
 
     &:hover {
         color: #1C2752;
-        transition: 0.3s;
+        scale: 1.1;
+        transition: all 0.3s ease;
     }
 }
 
@@ -163,7 +165,7 @@ footer,
 
     &:hover {
         color: #FFFFFF;
-        transition: 0.3s;
+        transition: all 0.3s ease;
     }
 }
 
@@ -181,7 +183,7 @@ footer,
         background-color: #223a97;
         border: 2px solid #223a97;
         color: #FFB342;
-        transition: 0.3s;
+        transition: all 0.3s ease;
     }
 }
 
@@ -231,7 +233,7 @@ footer,
         background-color: #fa9702;
         border: 2px solid #fa9702;
         color: #FFFFFF;
-        transition: 0.3s;
+        transition: all 0.3s ease;
     }
 }
 
@@ -476,6 +478,12 @@ footer,
     width: 190px;
     height: 68px;
     margin-top: 30px;
+
+    &:hover {
+        background-color: #fa9702;
+        color: #FFFFFF;
+        transition: all 0.3s ease;
+    }
 }
 
 .tabs__card-img {
@@ -556,7 +564,8 @@ footer,
 
     &:hover {
         color: #FFB342;
-        transition: 0.3s;
+        scale: 1.05;
+        transition: all 0.3s ease;
     }
 }
 
@@ -734,4 +743,291 @@ footer,
     color: #7E7E7E;    
 }
 
-/*-----------------------------------   ----------------------------------*/
+/*-----------------------------------Tesmonial----------------------------------*/
+.tesmonial {
+    height: 947px;
+    margin-top: 140px;
+    gap: 45px;
+}
+
+.tesmonial-container {
+    width: 591px;
+    height: 100%;
+}
+
+.tesmonial-caption {
+    width: 174px;
+    background-color: #F4F4F4;
+    margin-top: 10px;
+}
+
+.tesmonial-title {
+    margin-top: 22px;
+}
+
+.testimonials-slider {
+    width: 100%;
+    height: 378px;
+    border: 1px solid #DDDDDD;
+    margin-top: 42px;
+    padding: 41px;
+}
+
+.slider-item-header {
+    height: 98px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-bottom: 1px solid #DCDCDC;
+}
+
+.slider-item-person {
+    display: flex;
+    align-items: center;
+    gap: 10px;;
+}
+
+.slider-item-person-img {
+    width: 70px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+}
+
+.slider-item-person-info {
+    letter-spacing: 0.36px;
+}
+
+.slider-item-person-name {
+    font-family: Mulish;
+    font-size: 22px;
+    line-height: 30.8px;
+    color: #1C2752;
+}
+
+.slider-item-person-location {
+    font-size: 18px;
+    line-height: 27px;
+    color: #7E7E7E;    
+}
+
+.slider-item-quotes {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #FFB342;
+    display: grid;
+    place-content: center;
+}
+
+.slider-item-text {
+    font-weight: 700;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.36px;
+    color: #7E7E7E;
+
+    span {
+        color: #1C2752;
+    }
+}
+
+/* Основные стили */
+
+/* Слайдер */
+.slick-slider {
+    min-width: 0;
+}
+
+/* Ограничивающая оболочка */
+.slick-list {
+    overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track {
+    display: flex;
+    align-items: flex-start;
+}
+
+/* Конкретный слайдер */
+.slider {
+    width: 509px;
+    position: relative;
+}
+
+.slider .slick-arrow {
+    position: absolute;
+    bottom: -73px;
+    z-index: 10;
+    font-size: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.slider .slick-arrow.slick-prev {
+    left: 0;
+    background: url('../img/testimonial/arrow_prev.png') 0 0 / 100% no-repeat;
+}
+
+.slider .slick-arrow.slick-next {
+    left: 71px;
+    background: url('../img/testimonial/arrow_next.png') 0 0 / 100% no-repeat;
+}
+
+.slider__item {
+    width: 509px;
+    height: 226px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/*----------------------------*/
+.question {
+    width: 100%;
+    height: 330px;
+    background-color: #FFB342;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.question-header {
+    width: 511px;
+    color: #1C2752;
+    line-height: 32.5px;
+    letter-spacing: 0.36px; 
+}
+.question-caption {
+    width: 191px;
+    background-color: #F4F4F4;
+    margin-top: 10px;
+}
+
+.question-title {
+    font-family: Mulish;
+    font-size: 25px;
+    margin: 21px 0 13px 0;
+}
+
+.question-text {
+    width: 483px;
+    font-size: 18px;
+}
+
+.question-to__call {
+    width: 511px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.question-call {
+    width: 50px;
+    aspect-ratio: 1 / 1;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+}
+
+.question-phone {
+    font-family: Mulish;
+    font-size: 30px;
+    line-height: 45px;
+    letter-spacing: 0.36px;
+    color: #FFFFFF;    
+
+    &:hover {
+        scale: 1.1;
+        transition: all 0.3s ease;
+    }
+}
+/*------------------------------*/
+.meet__us-container {
+    width: 564px;
+    height: 100%;
+}
+
+.meet__us-caption {
+    width: 146px;
+    background-color: #F4F4F4;
+    margin-top: 10px;
+}
+
+.meet__us-title {
+    margin-top: 22px;
+}
+
+.meet__us-form {
+    width: 100%;
+    height: 758px;
+    background-color: #F4F4F4;
+    margin-top: 40px;
+    display: grid;
+    place-content: center;
+}
+
+.form {
+    width: 484px;
+    height: 623px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input {
+    margin-bottom: 25px;
+    height: 65px;
+}
+
+.form-textarea {
+    height: 150px;
+    margin-bottom: 35px;
+    resize: none;
+}
+
+.form-input,
+.form-textarea {
+    border: 1px solid #CCCCCC;
+    font-size: 17px;
+    line-height: 27px;
+    letter-spacing: 0.36px;
+    color: #1C2752; 
+    padding-left: 44px;
+
+    &::placeholder {
+        font-size: 17px;
+        line-height: 27px;
+        letter-spacing: 0.36px;
+        color: #1C2752; 
+    }
+}
+.form-textarea {
+    padding-top: 19px;
+}
+
+.form-btn {
+    height: 68px;
+    background-color: #FFB342;
+    border: 2px solid #FFB342;
+    color: #1C2752;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 27px;
+    letter-spacing: 0.36px;
+    cursor: pointer;  
+
+    &:hover {
+        background-color: #fa9702;
+        border: 2px solid #fa9702;
+        color: #FFFFFF;
+        transition: all 0.3s ease;
+    }
+}
+
+/*-----------------------------------    ----------------------------------*/
