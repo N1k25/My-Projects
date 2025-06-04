@@ -509,6 +509,7 @@ footer,
 .services-header {
     width: 840px;
     text-align: center;
+    padding-top: 10px;
 }
 
 .services-caption {
@@ -694,6 +695,10 @@ footer,
     flex-direction: column;
     gap: 50px;
     padding-top: 20px;
+}
+
+.gallery-header {
+    padding-top: 10px;
 }
 
 .gallery-caption {
@@ -1028,6 +1033,43 @@ footer,
         color: #FFFFFF;
         transition: all 0.3s ease;
     }
+}
+
+/*-----------------------------------Clients----------------------------------*/
+.clients {
+    height: 221px;
+    border: 1px solid red;
+    margin-top: 60px;
+}
+
+.clients-container {
+    width: 100%;
+    height: 221px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.clients-header {
+    padding-top: 10px;
+}
+
+.clients-caption {
+    width: 134px;
+    background-color: #F4F4F4;
+    margin: 0 auto;
+}
+
+.clients-title {
+    margin-top: 22px;
+}
+
+.clients-body {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 /*-----------------------------------    ----------------------------------*/
