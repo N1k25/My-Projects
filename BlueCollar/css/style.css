@@ -1449,4 +1449,129 @@ form {
     color: #1C2752;
 }
 
-/*-----------------------------------    ----------------------------------*/
+/*-----------------------------------Footer----------------------------------*/
+.footer {
+    height: 560px;
+    background-color: #1C2752;
+    align-items: flex-start;
+    padding-top: 50px;
+}
+
+.footer-container {
+    width: 100%;
+    height: 480px;
+}
+
+.footer-contacts {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-logo-img {
+    width: 242px;
+    height: 48px;
+}
+
+.footer-contacts-item-title,
+.footer-contacts-item-link {
+    color: #FFFFFF;
+}
+
+.footer-contacts-item-link:hover {
+    color: #FFFFFF;
+    scale: 1.1;
+    transition: all 0.3s ease;
+}
+
+.footer-body {
+    width: 100%;
+    height: 305px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #4B557D;
+    border-bottom: 1px solid #4B557D;
+    margin-top: 50px;
+}
+
+.footer-body-caption {
+    width: 401px;
+    align-self: flex-end;
+}
+
+.footer-body-caption-text {
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.36px;
+    color: #FFFFFF;
+}
+
+.footer-social {
+    display: flex;
+    gap: 15px;
+    margin-top: 52px;
+}
+
+.footer-social-item {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #2C3765;
+    display: grid;
+    place-content: center;
+
+    &:hover .footer-social-item-ico {
+        scale: 1.5;
+        transition: all 0.3s ease;
+    }
+}
+
+.footer-menu-big {
+    width: 472px;
+    display: flex;
+    border-left: 1px solid #4B557D;
+    border-right: 1px solid #4B557D;
+
+    .footer-menu-card {
+        margin-left: 80px;
+    }
+}
+.footer-menu {
+    width: 236px;
+
+    .footer-menu-card {
+        padding-left: 20px;
+    }
+}
+
+.footer-menu-title {
+    font-family: Mulish;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.36px;
+    color: #FFB342;    
+}
+
+.footer-menu-list {
+    margin-top: 16px;
+}
+
+.footer-menu-item {
+    margin-bottom: 10px;
+}
+
+.footer-menu-link {
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.36px;
+    color: #FFFFFF;
+    display: block;
+
+    &:hover {
+        text-decoration: underline;
+        text-underline-offset: 5px;
+        text-decoration-skip-ink: none;
+        transition: all 0.3s ease;
+    };
+}
