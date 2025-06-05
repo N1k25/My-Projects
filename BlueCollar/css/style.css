@@ -1239,4 +1239,120 @@ footer,
     margin-top: 9px;
 }
 
-/*-----------------------------------   ----------------------------------*/
+/*-----------------------------------Stay----------------------------------*/
+.stay {
+    height: 1081px;
+    align-items: flex-end;
+    padding-bottom: 80px;
+}
+
+.stay-container {
+    width: 100%;
+}
+
+.stay-header {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.stay-caption {
+    width: 192px;
+    background-color: #F4F4F4;
+    margin: 0 auto;
+}
+
+.stay-title {
+    margin-top: 22px;
+}
+
+.stay-body {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.stay-item {
+    width: 580px;
+    height: 644px;
+}
+
+.stay-item-img {
+    width: 100%;
+}
+
+.stay-item-publication {
+    height: 62px;
+    display: flex;
+    justify-content: center;
+    margin-top: -34px;
+}
+
+.stay-item-author,
+.stay-item-date {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    line-height: 22.5px;
+    letter-spacing: 0.3px;
+    color: #1C2752;    
+}
+.stay-item-author {
+    width: 180px;
+    background-color: #FFC368;
+
+    &::before {
+        content: url('../img/stay/man.svg');
+        margin-right: 10px;
+    }
+}
+.stay-item-date {
+    width: 181px;
+    background-color: #FFB342;
+
+    &::before {
+        content: url('../img/stay/clock.svg');
+        margin-right: 10px;
+    }
+}
+
+.stay-item-info {
+    margin-top: 21px;
+    letter-spacing: 0.36px;
+}
+
+.stay-item-title {
+    font-family: Mulish;
+    font-size: 30px;
+    line-height: 42px;
+    color: #1C2752;    
+}
+
+.stay-item-text {
+    line-height: 27px;
+    color: #7E7E7E;
+    margin: 16px 0 17px 0;
+}
+
+.stay-item-link {
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.4px;
+    color: #1C2752;    
+    display: block;
+
+    &::after {
+        content: url('../img/stay/arrow_right.svg');
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 10px;
+    }
+
+    &:hover {
+        scale: 1.05;
+        transition: all 0.3s ease;
+    }
+}
+
+/*-----------------------------------    ----------------------------------*/
