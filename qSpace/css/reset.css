@@ -18,6 +18,7 @@ nav,footer,header,aside{display: block;}
 html,body{
 	height: 100%;
 	width: 100%;
+	background-color: #FBFBFB;
 	font-family: 'DM Sans';
 	line-height: 1;
 	font-size: 18px;

@@ -6,7 +6,7 @@
 header,
 section,
 footer,
-__button {
+.__button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,11 +16,20 @@ __button {
     max-width: 1200px;
 }
 
+.__section-name {
+    line-height: 145%;
+}
+
+.__text {
+    font-size: 20px;
+    line-height: 155%;
+    opacity: 0.6;
+}
+
 /*---------------------------------Header------------------------------------*/
 .header {
     height: 49px;
     margin-top: 48px;
-    border: 1px solid red;
 }
 
 .header-container {
@@ -63,6 +72,236 @@ __button {
         color: #FFB21E;
         transition: all 0.3s ease;
     }
+}
+
+/*---------------------------------Hero------------------------------------*/
+.hero {
+    height: 710px;
+    margin-top: 65px;
+    position: relative;
+    border: 1px solid red;
+}
+
+.hero-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero-header {
+    width: 727px;
+    height: 385px;
+    position: absolute;
+    top: 35px;
+    left: 0;
+}
+
+.hero-section-name {
+    width: 183px;
+    height: 34px;
+    border-bottom: 2px solid;
+    border-image: linear-gradient(to right, #FFB21E, #FFFFFF) 1;
+    border-image-slice: 1;
+
+}
+
+.hero-title {
+    font-family: Questrial;
+    font-size: 56px;
+    line-height: 145%;
+    margin: 16px 0;
+}
+
+.hero-text {
+    width: 490px;
+}
+
+.hero-btn {
+    width: 282px;
+    height: 63px;
+    background-color: #FFB21E;
+    border-radius: 8px;
+    margin-top: 32px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 155%;
+    color: #FFFFFF;
+
+    &::after {
+        content: url('../img/hero/arrow.svg');
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 10px;
+    }
+
+    &:hover {
+        background-color: orange;
+        transition: all 0.3s ease;
+    }
+}
+
+.hero-block {
+    width: 260.7px;
+    height: 24px;
+    background-color: #1254FF;
+    opacity: 0.1;
+    position: absolute;
+    right: 66px;
+    bottom: 179px;
+}
+
+.hero-images {
+    width: 798px;
+    height: 100%;
+    position: relative;
+}
+
+.hero-customers {
+    width: 360px;
+    height: 360px;
+    position: absolute;
+    top: 0;
+    right: 25px;
+}
+
+.hero-customers-title,
+.hero-comunity-title,
+.hero-facilities-title {
+    height: 58px;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    display: grid;
+    place-items: center;
+    font-size: 16px;
+    line-height: 155%;
+}
+.hero-customers-title {
+    width: 257px;
+    position: absolute;
+    top: 42px;
+    left: -144px;
+    z-index: 2;
+}
+
+.hero-customers-img_wrapper,
+.hero-comunity-img_wrapper,
+.hero-facilities-img_wrapper {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 1px solid gray;
+    display: grid;
+    place-items: center;
+}
+.hero-customers-img_wrapper {
+    border-bottom: 2px solid #1254FF;
+    rotate: 45deg;
+}
+
+.hero-customers-img {
+    width: 305px;
+    height: 305px;
+    border-radius: 50%;
+    rotate: -45deg;
+    background: url('../img/hero/image-1.png') center no-repeat;
+    background-size: cover;
+}
+
+.hero-comunity {
+    width: 360px;
+    height: 360px;
+    position: absolute;
+    bottom: 83px;
+    left: 113px;
+}
+
+.hero-comunity-title {
+    width: 190px;
+    position: absolute;
+    bottom: 65px;
+    left: -113px;
+    z-index: 2;
+}
+
+.hero-comunity-img_wrapper {
+    border-bottom: 2px solid #FFB21E;
+    rotate: 45deg;
+}
+
+.hero-comunity-img {
+    width: 296px;
+    height: 296px;
+    border-radius: 50%;
+    rotate: -45deg;
+    background: url('../img/hero/image-2.png') center no-repeat;
+    background-size: cover;
+}
+
+.hero-facilities {
+    width: 295px;
+    height: 295px;
+    position: absolute;
+    bottom: 0;
+    right: 25px;
+}
+
+.hero-facilities-title {
+    width: 166px;
+    position: absolute;
+    bottom: 60px;
+    right: -30px;
+}
+
+.hero-facilities-img_wrapper {
+    border-top: 2px solid #1254FF;
+}
+
+.hero-facilities-img {
+    width: 231px;
+    height: 231px;
+    border-radius: 50%;
+    background: url('../img/hero/image-3.png') center no-repeat;
+    background-size: cover;
+}
+
+.hero-circle_blue {
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    left: -74px;
+    bottom: 34px;
+}
+
+.hero-circle_orange {
+    width: 417px;
+    height: 417px;
+    position: absolute;
+    top: -182px;
+    left: -54px;
+}
+
+.hero-circle_orange-litle {
+    height: 171px;
+    position: absolute;
+    bottom: 214px;
+    right: 0;
+}
+
+.hero-lines {
+    width: 298px;
+    height: 298px;
+    position: absolute;
+    left: 0;
+    bottom: -64px;
+}
+
+.hero-dots {
+    height: 200px;
+    position: absolute;
+    top: 22px;
+    right: 0;
 }
 
 /*---------------------------------    ------------------------------------*/
