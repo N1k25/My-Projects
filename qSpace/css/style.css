@@ -79,7 +79,6 @@ footer,
     height: 710px;
     margin-top: 65px;
     position: relative;
-    border: 1px solid red;
 }
 
 .hero-container {
@@ -104,7 +103,6 @@ footer,
     border-bottom: 2px solid;
     border-image: linear-gradient(to right, #FFB21E, #FFFFFF) 1;
     border-image-slice: 1;
-
 }
 
 .hero-title {
@@ -302,6 +300,131 @@ footer,
     position: absolute;
     top: 22px;
     right: 0;
+}
+
+/*---------------------------------About------------------------------------*/
+.about {
+    height: 463px;
+    margin-top: 46px;
+    position: relative;
+    border: 1px solid red;
+}
+
+.about-container {
+    width: 100%;
+    height: 100%;
+}
+
+.about-body {
+    width: 1128px;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.about-images {
+    width: 414px;
+    height: 100%;
+    position: relative;
+}
+
+.about-img-wrapper {
+    width: 334px;
+    height: 341px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    left: 40px;
+    bottom: 33px;
+    z-index: 2;
+}
+
+.about-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-blue_circle {
+    width: 171px;
+    height: 171px;
+    position: absolute;
+    top: 0;
+    left: 50px;
+    rotate: -15deg;
+    transform-origin: top right;
+}
+
+.about-dots {
+    width: 168px;
+    height: 136px;
+    position: absolute;
+    right: 0;
+    top: 81px;
+}
+
+.about-orange_circle {
+    width: 311px;
+    height: 311px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom right, #FFB21E, #FFFFFF);
+    opacity: 0.16;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.about-header {
+    width: 666px;
+    height: 308px;
+    margin-bottom: 59px;
+}
+
+.about-section-name {
+    width: 61px;
+    height: 29px;
+    border-bottom: 2px solid;
+    border-image: linear-gradient(to right, #1254FF, #FFFFFF) 1;
+    border-image-slice: 1;
+    font-size: 20px;
+    line-height: 145%;
+    letter-spacing: 1px;
+}
+
+.about-title {
+    font-family: Questrial;
+    font-size: 64px;
+    line-height: 145%;
+    margin-top: 16px;    
+}
+
+.about-link {
+    display: block;
+    margin-top: 32px;
+    font-size: 24px;
+    line-height: 100%;
+    color: #1254FF;
+
+    &::after {
+        content: url('../img/about/arrow.svg');
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 16px;
+    }
+
+    &:hover {
+        scale: 1.05;
+        transition: all 0.3s ease;
+    }
+}
+
+.about-lines {
+    width: 218px;
+    height: 211px;
+    position: absolute;
+    right: 0;
+    bottom: -57px;
 }
 
 /*---------------------------------    ------------------------------------*/
