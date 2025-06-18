@@ -431,7 +431,6 @@ footer,
     height: 712px;
     margin-top: 200px;
     position: relative;
-    border: 1px solid red;
 }
 
 .facilities-container {
@@ -533,4 +532,209 @@ footer,
     bottom: 35px;
 }
 
-/*---------------------------------   ------------------------------------*/
+/*---------------------------------Spaces------------------------------------*/
+.spaces {
+    height: 750px;
+    margin-top: 200px;
+    position: relative;
+    border: 1px solid red;
+}
+
+.spaces-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.spaces-header {
+    text-align: center;
+}
+
+.spaces-section-name {
+    display: inline-block;
+    width: 120px;
+    height: 45px;
+    border-bottom: 2px solid;
+    border-image: linear-gradient(to right, #FFFFFF, #1254FF, #FFFFFF) 1;
+    border-image-slice: 1;
+}
+
+.spaces-body {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.spaces-card {
+    width: 270px;
+    height: 641px;
+    border-radius: 16px;
+    padding: 40px 18px;
+    background-color: #FFFFFF;
+    z-index: 2;
+
+    &:first-child {
+        background-color: #FFF0D2;
+
+        .spaces-card-item {
+            background: url('../img/spaces/li-yellow.svg') left 5px no-repeat;
+        }
+
+        .spaces-card-btn {
+            color: #FFFFFF;
+            background-color: #FFB21E;
+
+            &::after {
+                content: url('../img/spaces/arrow-white.svg');
+                display: inline-block;
+                vertical-align: middle;
+                margin-left: 16px;
+            }
+
+            &:hover {
+                background-color: orange;
+                transition: all 0.3s ease;
+            }
+        }
+    }
+
+    &:nth-child(2),
+    &:last-child {
+        .spaces-card-item {
+            background: url('../img/spaces/li-blue.svg') left 5px no-repeat;
+        }
+
+        .spaces-card-btn {
+            color: #1254FF;
+
+            &::after {
+                content: url('../img/spaces/arrow-blue.svg');
+                display: inline-block;
+                vertical-align: middle;
+                margin-left: 16px;
+            }
+
+            &:hover {
+                background-color: #1254FF1A;
+                transition: all 0.3s ease;
+            }
+        }
+    }
+
+    &:nth-child(3) {
+        .spaces-card-item {
+            background: url('../img/spaces/li-yellow.svg') left 5px no-repeat;
+        }
+
+        .spaces-card-btn {
+            color: #FFB21E;
+
+            &::after {
+                content: url('../img/spaces/arrow-yellow.svg');
+                display: inline-block;
+                vertical-align: middle;
+                margin-left: 16px;
+            }
+
+            &:hover {
+                background-color: #1254FF1A;
+                transition: all 0.3s ease;
+            }
+        }
+    }
+}
+
+.spaces-card-header {
+    height: 123px;
+    text-align: center;
+}
+
+.spaces-card-title {
+    font-size: 24px;
+    line-height: 100%;
+}
+
+.spaces-card-text {
+    font-size: 18px;
+    margin-top: 8px;
+}
+
+.spaces-card-list {
+    height: 244px;
+    margin: 64px 0;
+}
+
+.spaces-card-item {
+    line-height: 155%;
+    margin-bottom: 10px;
+    padding-left: 40px;
+}
+
+.spaces-card-btn {
+    width: 192px;
+    height: 58px;
+    border-radius: 8px;
+    border: 1px solid #1254FF1A;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 100%;
+}
+
+.spaces-dots_blue {
+    width: 168px;
+    height: 136px;
+    position: absolute;
+    top: 66px;
+    left: 195px;
+}
+
+.spaces-dots_orange {
+    width: 168px;
+    height: 136px;
+    position: absolute;
+    bottom: -26px;
+    right: 216px;
+}
+
+.spaces-circle_orange {
+    width: 171px;
+    height: 171px;
+    position: absolute;
+    top: 123px;
+    right: 197px;
+}
+
+.spaces-lines {
+    height: 211px;
+    position: absolute;
+    right: 0;
+    bottom: 95px;
+}
+
+.spaces-blue_circle {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom left, #1254FF29, #FFFFFF);
+    opacity: 0.4;
+    position: absolute;
+    top: 278px;
+    left: -125px;
+}
+
+.spaces-orange_circle {
+    width: 222px;
+    height: 222px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom right, #FFB21E29, #FFFFFF);
+    opacity: 0.9;
+    position: absolute;
+    top: -183px;
+    left: -95px;
+}
+
+/*---------------------------------    ------------------------------------*/
