@@ -133,4 +133,64 @@ footer {
     background-color: #34E0A1;
 }
 
+/* -------------------------------------------Hero------------------------------------------ */
+.hero {
+    height: 644px;
+    align-items: flex-end;
+    border: 1px solid red;
+}
+
+.hero-container {
+    width: 100%;
+    height: 536px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-header {
+    width: 50%;
+}
+
+.hero-title {
+    font-family: Roboto;
+    font-size: 124px;
+    line-height: 123.84px;
+}
+
+.hero-text {
+    width: 469px;
+    font-family: Roboto;
+    font-size: 20px;
+    line-height: 27.72px;
+    margin: 106px 0 44px 0;
+}
+
+.hero-header-btn {
+    width: 229px;
+    height: 49px;
+}
+
+.hero-content {
+    width: 50%;
+    position: relative;
+}
+
+.hero-img {
+    width: 628px;
+    height: 491px;
+    position: absolute;
+    top: -27px;
+    right: 9px;
+}
+
+.hero-content-btn {
+    width: 212px;
+    height: 64px;
+    font-size: 36px;
+    line-height: 36px;
+    position: absolute;
+    bottom: -32px;
+    right: 0;
+}
+
 /* -------------------------------------------    ------------------------------------------ */
