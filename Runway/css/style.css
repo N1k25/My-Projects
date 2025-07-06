@@ -336,7 +336,7 @@ footer {
 .are__saying {
     height: 865px;
     background-color: #000;
-    border-top: 1px solid red;
+    /* border-top: 1px solid red; */
 }
 
 .are__saying-container {
@@ -346,7 +346,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 
 
@@ -356,6 +356,8 @@ footer {
 
 .are__saying-body {
     height: 441px;
+    display: grid;
+    place-items: center;
     border: 1px solid blue;
 }
 
@@ -491,4 +493,91 @@ footer {
     line-height: 120px;
 }
 
-/* -------------------------------------------   ------------------------------------------ */
+/* -------------------------------------------Footer------------------------------------------ */
+.footer {
+    height: 408px;
+    background-color: #473FF4;
+    align-items: flex-start;
+}
+
+.footer-container {
+    width: 100%;
+    color: #fff;
+}
+
+.footer-body {
+    height: 240px;
+    display: flex;
+}
+
+.footer-logo-container {
+    width: 269px;
+}
+
+.footer-logo {
+    width: 120px;
+    height: 26px;
+}
+
+.footer-menu {
+    width: 1075px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-menu-item {
+    width: 348px;
+}
+
+.footer-menu-title {
+    font-family: Roboto;
+    line-height: 24.75px;
+    text-transform: uppercase;
+}
+
+.footer-menu-list {
+    margin-top: 24px;
+}
+
+.footer-menu-link {
+    font-family: Roboto;
+    line-height: 24.75px;
+    color: #fff;
+
+    &:hover {
+        text-decoration: underline;
+        text-underline-offset: 4px;
+        text-decoration-skip-ink: none;
+    }
+}
+
+.footer-copyright {
+    display: flex;
+    margin-top: 80px;
+}
+
+.footer-copyright-text {
+    width: 269px;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.footer-copyright-list {
+    display: flex;
+}
+
+.footer-copyright-list-item {
+    margin-right: 44px;
+}
+
+.footer-copyright-link {
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+
+    &:hover {
+        text-decoration: underline;
+        text-underline-offset: 4px;
+        text-decoration-skip-ink: none;
+    }
+}
