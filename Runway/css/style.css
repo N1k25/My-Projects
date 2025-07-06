@@ -332,4 +332,33 @@ footer {
     margin-top: 122px;
 }
 
-/* -------------------------------------------    ------------------------------------------ */
+/* -------------------------------------------Are saying------------------------------------------ */
+.are__saying {
+    height: 865px;
+    background-color: #000;
+    border-top: 1px solid red;
+}
+
+.are__saying-container {
+    width: 100%;
+    height: 657px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid green;
+}
+
+
+.are__saying-section-title {
+    width: 448px;
+}
+
+.are__saying-body {
+    height: 441px;
+    border: 1px solid blue;
+}
+
+/* !Слайдер */
+
+/* -------------------------------------------   ------------------------------------------ */
