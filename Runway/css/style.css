@@ -466,4 +466,29 @@ footer {
     right: 0;
 }
 
+/* -------------------------------------------Get started------------------------------------------ */
+.get__started {
+    height: 496px;
+    background-color: #473FF4;
+    align-items: flex-start;
+}
+
+.get__started-container {
+    width: 100%;
+    height: 240px;
+    margin-top: 96px;
+    color: #fff;
+}
+
+.get__started-title {
+    background: url('../img/get-started/arrow-right.svg') left 5px no-repeat;
+    padding-left: 153px;
+}
+
+.get__started-title-item {
+    font-family: Roboto;
+    font-size: 120px;
+    line-height: 120px;
+}
+
 /* -------------------------------------------   ------------------------------------------ */
