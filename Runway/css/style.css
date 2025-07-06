@@ -412,4 +412,58 @@ footer {
     right: 0;
 }
 
+/* -------------------------------------------Automate------------------------------------------ */
+.automate {
+    height: 906px;
+    position: relative;
+    align-items: flex-start;
+}
+
+.automate-container {
+    width: 100%;
+    height: 714px;
+    margin-top: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.automate-title {
+    width: 443px;
+    font-family: Roboto;
+    font-size: 64px;
+    line-height: 64px;
+}
+
+.automate-body {
+    height: 490px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.automate-text_block {
+    width: 336px;
+}
+
+.automate-text {
+    line-height: 28px;
+}
+
+.automate-btn {
+    width: 156px;
+    height: 21px;
+    margin-top: 218px;
+}
+
+.automate-img {
+    width: 935px;
+    height: 526px;
+}
+
+.automate-octagons {
+    position: absolute;
+    top: 64px;
+    right: 0;
+}
+
 /* -------------------------------------------   ------------------------------------------ */
