@@ -361,4 +361,55 @@ footer {
 
 /* !Слайдер */
 
+/* -------------------------------------------Media------------------------------------------ */
+.media {
+    height: 1062px;
+    position: relative;
+}
+
+.media-container {
+    width: 100%;
+    height: 806px;
+}
+
+.media-title {
+    width: 431px;
+    font-family: Roboto;
+    font-size: 64px;
+    line-height: 64px;
+    margin: 57px 0 96px 0;
+}
+
+.media-body {
+    height: 490px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.media-img {
+    width: 923px;
+    height: 519px;
+    translate: 0px -64px;
+}
+
+.media-text_block {
+    width: 336px;
+}
+
+.media-text {
+    line-height: 28px;
+}
+
+.media-btn {
+    width: 186px;
+    height: 25px;
+    margin-top: 218px;
+}
+
+.media-circles {
+    position: absolute;
+    top: 128px;
+    right: 0;
+}
+
 /* -------------------------------------------   ------------------------------------------ */
