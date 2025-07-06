@@ -299,4 +299,37 @@ footer {
     line-height: 28px;
 }
 
-/* -------------------------------------------     ------------------------------------------ */
+/* -------------------------------------------Creating------------------------------------------ */
+.creating {
+    height: 1064px;
+    background-color: #000;
+}
+
+.creating-container {
+    width: 100%;
+    height: 862px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.creating-body {
+    height: 706px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.creating-list-item {
+    font-family: Roboto;
+    font-size: 122px;
+    line-height: 122.4px;
+}
+
+.creating-img {
+    width: 766px;
+    height: 427px;
+    margin-top: 122px;
+}
+
+/* -------------------------------------------    ------------------------------------------ */
