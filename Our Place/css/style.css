@@ -182,4 +182,170 @@ footer,
     color: #4F463F;
 }
 
-/*---------------------------------------   ---------------------------------------*/
+/*---------------------------------------Designed---------------------------------------*/
+.designed {
+    height: 939px;
+    background-color: #FBF6EA;
+    align-items: start;
+}
+
+.designed-container {
+    width: 100%;
+    height: 724px;
+    margin-top: 75px;
+}
+
+.designed-header {
+    height: 171px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 53px;
+}
+
+.designed-title {
+    font-size: 35px;
+    line-height: 48px;
+}
+
+.designed-colors {
+    width: 345px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.designed-color {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+    &:first-child {
+        background-color: #E09D81;
+    }
+    &:nth-child(2) {
+        background-color: #748EA1;
+    }
+    &:nth-child(3) {
+        background-color: #B76D47;
+    }
+    &:nth-child(4) {
+        background-color: #7D836E;
+    }
+    &:nth-child(5) {
+        background-color: #C33636;
+    }
+    &:nth-child(6) {
+        background-color: #CDC7B3;
+    }
+    &:nth-child(7) {
+        background-color: #595752;
+        border: 3px solid #E09D81;
+    }
+    &:last-child {
+        background-color: #D3C2CA;
+    }
+}
+
+.designed-body {
+    width: 562px;
+    height: 553px;
+    margin: 0 auto;
+    translate: 75px 0px;
+    position: relative;
+}
+
+.designed-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.designed-property {
+    display: block;
+    line-height: 15.48px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #6E6259;
+}
+.property_1 {
+    width: 135px;
+    position: absolute;
+    top: 83px;
+    left: -144px;
+}
+.property_2 {
+    width: 107px;
+    position: absolute;
+    bottom: 165px;
+    left: -64px;
+}
+.property_3 {
+    width: 172px;
+    position: absolute;
+    bottom: 34px;
+    left: -144px;
+}
+.property_4 {
+    width: 158px;
+    position: absolute;
+    top: 36px;
+    right: 26px;
+}
+.property_5 {
+    width: 171px;
+    position: absolute;
+    top: 284px;
+    right: 21px;
+}
+.property_6 {
+    position: absolute;
+    bottom: 94px;
+    right: 15px;
+}
+
+.designed-square {
+    width: 12px;
+    height: 12px;
+    background-color: #E09D81;
+}
+
+.square_1 {
+    position: absolute;
+    top: 99px;
+    left: 31px;
+    z-index: -1;
+}
+
+.square_2 {
+    position: absolute;
+    top: 107px;
+    right: 101px;
+}
+
+.square_3 {
+    position: absolute;
+    bottom: 249px;
+    right: 219px;
+    z-index: -1;
+}
+
+.square_4 {
+    position: absolute;
+    bottom: 144px;
+    left: 90px;
+}
+
+.square_5 {
+    position: absolute;
+    bottom: 130px;
+    right: 101px;
+    z-index: -1;
+}
+
+.square_6 {
+    position: absolute;
+    bottom: 22px;
+    left: 107px;
+}
+
+/*---------------------------------------    ---------------------------------------*/
