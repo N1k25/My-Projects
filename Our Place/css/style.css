@@ -66,4 +66,59 @@ footer,
     color: #F5F1E9;
 }
 
+/*---------------------------------------Hero---------------------------------------*/
+.hero {
+    height: 605px;
+    background: url('../img/hero/image.jpg') no-repeat center;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+.hero-container {
+    width: 1123px;
+    height: 265px;
+    justify-self: end;
+    margin-right: -67px;
+}
+
+.hero-subtitle {
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+.hero-title {
+    width: 248px;
+    font-size: 50px;
+    line-height: 72px;
+    letter-spacing: 1px;
+    margin: 9px 0 57px 0;
+
+    span {
+        display: block;
+        text-decoration: underline;
+        margin-top: -19px;
+    }
+}
+
+.hero-btn {
+    width: 248px;
+    height: 60px;
+    background-color: #D37657;
+    border-radius: 2px;
+    font-weight: 700;
+    line-height: 20.4px;
+    text-transform: uppercase;
+    color: #fff;
+
+    &:hover {
+        background-color: #C87B5E;
+        scale: 1.05;
+        translate: 0px -5px;
+        box-shadow: 2px 2px 10px #000000;
+        font-size: 13px;
+        transition: 0.3s;
+    }
+}
+
 /*---------------------------------------    ---------------------------------------*/
