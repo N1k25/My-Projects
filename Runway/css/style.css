@@ -336,7 +336,6 @@ footer {
 .are__saying {
     height: 865px;
     background-color: #000;
-    /* border-top: 1px solid red; */
 }
 
 .are__saying-container {
@@ -346,7 +345,6 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* border: 1px solid green; */
 }
 
 
@@ -356,12 +354,95 @@ footer {
 
 .are__saying-body {
     height: 441px;
-    display: grid;
-    place-items: center;
-    border: 1px solid blue;
 }
 
-/* !Слайдер */
+.slider-item-photo {
+    width: 82px;
+    height: 82px;
+    border-radius: 50%;
+}
+
+.slider-item-body {
+    width: 528px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.slider-item-text {
+    font-family: Roboto;
+    font-size: 43px;
+    line-height: 43.2px;
+}
+
+.slider-item-author-position {
+    font-size: 17px;
+    line-height: 28px;
+}
+
+.slider-item-author-name {
+    font-size: 15px;
+    line-height: 24px;
+}
+
+/*------------------------*/
+/* Основные стили */
+/* Слайдер */
+.slick-slider {
+    min-width: 0;
+}
+
+/* Ограничивающая оболочка */
+.slick-list {
+    overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track {
+    display: flex;
+    align-items: flex-start;
+}
+
+/* Конкретный слайдер */
+.slider {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.slider .slick-arrow {
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+    font-size: 0;
+    width: 44px;
+    height: 44px;
+}
+
+.slider .slick-arrow.slick-prev {
+    left: 44%;
+    background: url('../img/are-saying/prev-arrow.svg') 0 0 / 100% no-repeat;
+}
+
+.slider .slick-arrow.slick-next {
+    right: 44%;
+    background: url('../img/are-saying/next-arrow.svg') 0 0 / 100% no-repeat;
+}
+
+.slider-counter {
+    line-height: 28px;
+    text-align: center;
+    translate: 0 -140%;
+}
+
+.slider__item {
+    width: 680px;
+    height: 292px;
+    margin-right: 40px;
+    display: flex;
+    gap: 12px;
+}
 
 /* -------------------------------------------Media------------------------------------------ */
 .media {
