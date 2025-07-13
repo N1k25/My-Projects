@@ -154,4 +154,32 @@ footer,
     height: 29px;
 }
 
+/*---------------------------------------Welcome---------------------------------------*/
+.welcome {
+    height: 340px;
+}
+
+.welcome-container {
+    width: 1185px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.welcome-title {
+    width: 400px;
+    font-weight: 700;
+    font-size: 41px;
+    line-height: 46.2px;
+    letter-spacing: 1.25px;
+    text-align: center;
+}
+
+.welcome-text {
+    width: 650px;
+    font-size: 16px;
+    line-height: 25.92px;
+    color: #4F463F;
+}
+
 /*---------------------------------------   ---------------------------------------*/
