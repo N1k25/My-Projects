@@ -113,7 +113,7 @@ footer,
 
     &:hover {
         background-color: #C87B5E;
-        scale: 1.05;
+        scale: 1.01;
         translate: 0px -5px;
         box-shadow: 2px 2px 10px #000000;
         font-size: 13px;
@@ -553,4 +553,57 @@ footer,
     border-radius: 50%;
 }
 
-/*---------------------------------------   ---------------------------------------*/
+/*---------------------------------------Dirty Dishes---------------------------------------*/
+.dirty__dishes {
+    height: 480px;
+    background-color: #F5F1E9;
+    background-image: url('../img/dirty_dishes/image-1.jpg'), url('../img/dirty_dishes/image-2.jpg');
+    background-position: left top, right bottom;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 480px 100%, 480px 100%;
+}
+
+.dirty__dishes-container {
+    width: 450px;
+    text-align: center;
+}
+
+.dirty__dishes-subtitle {
+    font-size: 11px;
+    line-height: 20.4px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.dirty__dishes-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 46.08px;
+    letter-spacing: 1px;
+    margin: 33px 0 61px 0;
+}
+
+.dirty__dishes-btn {
+    width: 206px;
+    height: 54px;
+    background-color: #fff;
+    border: 1px solid #AAA0984A;
+    border-radius: 4px;
+    margin: 0 auto;
+    font-weight: 700;
+    line-height: 12px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #4F463F;
+
+    &:hover {
+        background-color: #F5FFFA;
+        scale: 1.01;
+        translate: 0px -5px;
+        box-shadow: 2px 2px 10px #000000;
+        font-size: 13px;
+        transition: 0.3s;
+    }
+}
+
+/*---------------------------------------    ---------------------------------------*/
