@@ -1,0 +1,123 @@
+@import url("reset.css");
+@import url(https://fonts.googleapis.com/css?family=Roboto:regular,700,900&display=swap);
+
+header,
+section,
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.__container {
+    max-width: 1320px;
+}
+
+.__button {
+    display: grid;
+    place-items: center;
+    border-radius: 24px;
+}
+
+/*-------------------------------Header--------------------------------*/
+.header {
+    flex-direction: column;
+    line-height: 24px;
+}
+
+.ship {
+    width: 100%;
+    height: 40px;
+    background-color: #4B50FA;
+    display: grid;
+    place-items: center;
+    color: #FFFFFF;
+}
+
+.nav {
+    width: 100%;
+    height: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid red;
+}
+
+.menu {
+    display: flex;
+    gap: 40px;
+}
+
+.menu-item {
+    &:hover {
+        scale: 1.03;
+        translate: 0px -5px;
+        transition: 0.3s;
+    }
+}
+
+.menu-link {
+    color: #141414;
+
+    &:hover {
+        color: #4B50FA;
+        transition: 0.3s;
+    }
+
+}
+
+.service {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.login-btn {
+    font-size: 15px;
+    color: #141414;
+
+    &:hover {
+        color: #4B50FA;
+        scale: 1.03;
+        translate: 0px -5px;
+        transition: 0.3s;
+    }
+}
+
+.shedule-btn {
+    width: 210px;
+    height: 50px;
+    border: 1px solid #141414;
+    color: #141414;
+
+    &:hover {
+        background-color: #4B50FA;
+        color: #FFFFFF;
+        scale: 1.03;
+        translate: 0px -5px;
+        box-shadow: 2px 2px 5px #141414;
+        transition: 0.3s;
+    }
+}
+
+.store {
+    position: relative;
+}
+
+.store-img {
+    cursor: pointer;
+}
+
+.counter {
+    width: 20px;
+    height: 20px;
+    background-color: #4B50FA;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    color: #FFFFFF;
+    font-size: 15px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
