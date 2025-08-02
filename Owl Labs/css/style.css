@@ -279,4 +279,68 @@ footer {
     bottom: 107px;
 }
 
+/*-------------------------------Focus--------------------------------*/
+.focus {
+    height: 970px;
+    background: url('../img/focus/figure.png') center no-repeat;
+    background-size: cover;
+    background-color: #FFB480;
+    align-items: flex-start;
+    padding-top: 128px;
+}
+
+.focus-container {
+    width: 100%;
+    height: 552px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.focus-header {
+    width: 504px;
+    padding-left: 84px;
+    color: #141414;
+}
+
+.focus-title {
+    font-weight: 900;
+    font-size: 85px;
+    line-height: 104.4px;
+    text-transform: uppercase;
+    translate: 0px -21px;
+}
+
+.focus-text {
+    font-size: 32px;
+    line-height: 40px;
+    margin: 22px 0 40px 0;
+}
+
+.focus-btn {
+    width: 240px;
+    height: 48px;
+    background-color: #4B50FA;
+    line-height: 24px;
+    color: #FFFFFF;
+
+    &:hover {
+        scale: 1.03;
+        translate: 0px -5px;
+        box-shadow: 2px 2px 5px #141414;
+        transition: 0.3s;
+    }
+}
+
+.focus-images {
+    width: 704px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.focus-img {
+    width: 346px;
+    height: 480px;
+    object-fit: cover;
+}
+
 /*-------------------------------    --------------------------------*/
