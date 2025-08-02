@@ -40,7 +40,6 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid red;
 }
 
 .menu {
@@ -121,3 +120,91 @@ footer {
     top: -10px;
     right: -10px;
 }
+
+/*-------------------------------Hero--------------------------------*/
+.hero {
+    height: 674px;
+    background: radial-gradient(#F5F5F5, #4B50FA, #F5F5F5);
+}
+
+.hero-container {
+    width: 1200px;
+    height: 492px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 49px;
+    position: relative;
+}
+
+.hero-title {
+    width: 669px;
+    height: 100%;
+    font-weight: 900;
+    font-size: 155px;
+    line-height: 164px;
+    text-transform: uppercase;
+    position: absolute;
+    left: -65px;
+    bottom: -41px;
+}
+
+.hero-img {
+    width: 237px;
+    height: 589px;
+}
+
+.hero-body {
+    width: 432px;
+    align-self: end;
+}
+
+.hero-text {
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.hero-btn {
+    width: 208px;
+    height: 48px;
+    background-color: #141414;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin: 40px 0 24px 0;
+
+    &:hover {
+        scale: 1.03;
+        translate: 0px -5px;
+        box-shadow: 2px 2px 5px #141414;
+        transition: 0.3s;
+    }
+}
+
+.hero-link {
+    display: block;
+    line-height: 24px;
+    color: #141414;
+    text-decoration: underline;
+    text-decoration-skip: none;
+    text-underline-offset: 5px;
+
+    &::before {
+        content: url('../img/hero/play.svg');
+        width: 24px;
+        height: 24px;
+        margin-right: 12px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    &:hover {
+        text-decoration: underline;
+        text-decoration-skip: none;
+        text-underline-offset: 5px;
+        scale: 1.03;
+        translate: 5px -5px;
+        transition: 0.3s;
+    }
+}
+
+/*-------------------------------    --------------------------------*/
