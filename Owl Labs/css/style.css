@@ -575,4 +575,108 @@ footer {
     height: 192px;
 }
 
-/*-------------------------------   --------------------------------*/
+/*-------------------------------Events--------------------------------*/
+.events {
+    height: 826px;
+    background-color: #F5F5F5;
+}
+
+.events-container {
+    width: 1152px;
+    height: 586px;
+    display: flex;
+    justify-content: space-between;
+    color: #FFFFFF;
+}
+
+.events-header {
+    width: 760px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.events-header-bkg {
+    height: 512px;
+    background: url('../img/events/image.jpg') center no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+}
+
+.events-header-title {
+    width: 219px;
+    font-size: 61px;
+    line-height: 75.68px;
+    text-transform: uppercase;
+    translate: 40px 8px;
+}
+
+.events-header-btn {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #141414;
+    font-size: 15px;
+    line-height: 24px;
+    color: #141414;
+
+    &:hover {
+        scale: 1.03;
+        translate: 0px -5px;
+        box-shadow: 2px 2px 5px #141414;
+        transition: 0.3s;
+    }
+}
+
+.events-body {
+    width: 368px;
+    background-color: #0A3232;
+    padding: 32px 38.5px;
+}
+
+.events-body-container {
+    width: 100%;
+    height: 100%;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.events-body-title {
+    width: 269px;
+    font-weight: 700;
+    font-size: 31px;
+    line-height: 40px;
+}
+
+.events-body-text {
+    width: 285px;
+    line-height: 40px;
+    margin-top: 18px;
+}
+
+.events-body-link {
+    font-size: 14px;
+    line-height: 23.94px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    &::after {
+        content: url('../img/events/arrow.svg');
+        display: inline-block;
+        vertical-align: middle;
+        width: 24px;
+        height: 24px;
+        margin-left: 159px;
+    }
+
+    &:hover {
+        scale: 1.03;
+        translate: 0px -5px;
+        transition: 0.3s;
+    }
+}
+
+/*-------------------------------      --------------------------------*/
