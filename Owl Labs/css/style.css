@@ -19,6 +19,20 @@ footer {
     border-radius: 24px;
 }
 
+.__button_blue {
+    background-color: #4B50FA;
+    line-height: 24px;
+    color: #FFFFFF;
+
+    &:hover {
+        border: 1px solid #141414;
+        scale: 1.03;
+        translate: 0px -5px;
+        box-shadow: 2px 2px 5px #141414;
+        transition: 0.3s;
+    }
+}
+    
 /*-------------------------------Header--------------------------------*/
 .header {
     flex-direction: column;
@@ -251,16 +265,6 @@ footer {
 .see_all-btn {
     width: 240px;
     height: 48px;
-    background-color: #4B50FA;
-    line-height: 24px;
-    color: #FFFFFF;
-
-    &:hover {
-        scale: 1.03;
-        translate: 0px -5px;
-        box-shadow: 2px 2px 5px #141414;
-        transition: 0.3s;
-    }
 }
 
 .see__all-img {
@@ -319,16 +323,6 @@ footer {
 .focus-btn {
     width: 240px;
     height: 48px;
-    background-color: #4B50FA;
-    line-height: 24px;
-    color: #FFFFFF;
-
-    &:hover {
-        scale: 1.03;
-        translate: 0px -5px;
-        box-shadow: 2px 2px 5px #141414;
-        transition: 0.3s;
-    }
 }
 
 .focus-images {
@@ -341,6 +335,43 @@ footer {
     width: 346px;
     height: 480px;
     object-fit: cover;
+}
+
+/*-------------------------------Connect--------------------------------*/
+.connect {
+    height: 904px;
+    background: url('../img/connect/image.png') center no-repeat;
+    background-size: cover;
+    align-items: flex-start;
+    padding-top: 152px;
+}
+
+.connect-container {
+    width: 1160px;
+}
+
+.connect-header {
+    width: 587px;
+    translate: 0px -96px;
+}
+
+.connect-title {
+    font-weight: 900;
+    font-size: 83px;
+    line-height: 104.4px;
+    text-transform: uppercase;
+}
+
+.connect-text {
+    width: 395px;
+    font-size: 32px;
+    line-height: 40px;
+    margin: 14px 0 40px 0;
+}
+
+.connect-btn {
+    width: 240px;
+    height: 48px;
 }
 
 /*-------------------------------    --------------------------------*/
