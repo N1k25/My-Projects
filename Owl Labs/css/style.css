@@ -679,4 +679,214 @@ footer {
     }
 }
 
-/*-------------------------------      --------------------------------*/
+/*-------------------------------Footer--------------------------------*/
+.footer {
+    height: 694px;
+    background-color: #4B50FA;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 173px;
+    padding-top: 120px;
+    color: #FFFFFF;
+    position: relative;
+}
+
+.footer-container_top {
+    width: 1152px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-header {
+    width: 400px;
+}
+
+.footer-title {
+    font-size: 31px;
+    line-height: 40px;
+}
+
+.footer-mail {
+    width: 400px;
+    height: 41px;
+    margin-top: 40px;
+}
+
+/*-------------------*/
+form {
+    display: flex;
+    position: relative;
+}
+
+.form-group {
+    position: relative;
+}
+
+.subscribe-mail {
+    display: block;
+    width: 400px;
+    height: 41px;
+    padding: 10px;
+    border-bottom: 1px solid #FFFFFF;
+    background-color: transparent;
+    font-size: 16px;
+    line-height: 100%;
+    color: #FFFFFF;
+}
+
+.subscribe-mail:focus {
+    outline: none;
+}
+
+.label2 {
+    position: absolute;
+    bottom: 5px;
+    left: 7px;
+    pointer-events: none;
+    font-size: 14px;
+    line-height: 16px;
+    opacity: 0.3;
+    transition: all 0.2s ease;
+}
+
+.subscribe-mail:focus~.label2,
+.subscribe-mail:valid~.label2 {
+    top: -20px;
+    font-size: 10pt;
+    color: #626A72;
+}
+
+.form-button {
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    position: absolute;
+    bottom: 9px;
+    right: 0;
+}
+/*-----------------------------*/
+
+.footer-body {
+    width: 612px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-menu {
+    display: flex;
+    gap: 64px;
+}
+
+.footer-menu-item-title {
+    font-size: 12px;
+    line-height: 15.96px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.footer-menu-list {
+    margin-top: 12px;
+}
+
+.footer-menu-list-item {
+    margin-bottom: 8px;
+}
+
+.footer-menu-list-link {
+    line-height: 24px;
+    color: #FFFFFF;
+
+    &:hover {
+        text-decoration: underline;
+        text-decoration-skip: none;
+        text-underline-offset: 5px;
+    }
+}
+
+.footer-contacts {
+    width: 183px;
+}
+
+.footer-container_bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-social-link {
+    margin-right: 32px;
+}
+
+.footer-social-link_img {
+    width: 16px;
+    height: 16px;
+
+    &:hover {
+        scale: 1.5;
+        filter: drop-shadow(2px 2px 5px #FFFFFF);
+        transition: 0.3s;
+    }
+}
+
+.footer-copyright {
+    display: flex;
+    gap: 15px;
+    margin-top: 39px;
+}
+
+.footer-copyright-link {
+    font-size: 12px;
+    line-height: 20px;
+    color: #FFFFFF;
+
+    &:hover {
+        text-decoration: underline;
+        text-decoration-skip: none;
+        text-underline-offset: 5px;
+    }
+}
+
+.footer-country_select {
+    display: flex;
+    gap: 20px;
+    align-self: flex-end;
+}
+
+.footer-country_select-title {
+    line-height: 24px;
+}
+
+.footer-country_select-wrapper {
+    position: relative;
+    width: 80px;
+
+    select {
+        width: 100%;
+        height: 24px;
+        background-color: transparent;
+        appearance: none; /* Chrome */
+        -webkit-appearance: none; /* Safari */
+        -moz-appearance: none; /* Firefox */
+    }
+    
+    /* Створюємо кастомну стрілку */
+    &::after {
+        /* content: "▼"; */
+        content: url('../img/footer/down-list.svg');
+        font-size: 12px;
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        pointer-events: none;
+        /* Щоб не блокувало клік */
+    }
+}
+
+.footer-figure {
+    width: 581px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
