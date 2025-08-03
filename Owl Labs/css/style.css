@@ -432,4 +432,118 @@ footer {
     height: 100%;
 }
 
+/*-------------------------------Possibility--------------------------------*/
+.possibility {
+    height: 1181px;
+}
+
+.possibility-container {
+    width: 1200px;
+    height: 925px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.possibility-title {
+    width: 524px;
+    font-size: 48px;
+    line-height: 56.16px;
+    color: #141414;
+    margin-left: 24px;
+}
+
+.possibility-items {
+    width: 100%;
+    height: 733px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.possibility-item {
+    width: 25%;
+    padding: 38px 18px 32px 0;
+
+    &:first-child {
+        .possibility-card-header {
+            background-color: #A4C3D8;
+        }
+    }
+    &:nth-child(2) {
+        .possibility-card-header {
+            background-color: #D9A603;
+        }
+    }
+    &:nth-child(3) {
+        .possibility-card-header {
+            background-color: #FFB480;
+        }
+    }
+    &:last-child {
+        .possibility-card-header {
+            background-color: #B3B97D;
+        }
+    }
+}
+
+.possibility-card {
+    width: 282px;
+    color: #141414;
+}
+
+.possibility-card-header {
+    width: 100%;
+    height: 386px;
+    padding: 25px 25px 28px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    border: 3px solid #000000;
+}
+
+.possibility-card-header-title {
+    font-size: 31px;
+    line-height: 40px;
+}
+
+.possibility-card-header-text {
+    font-size: 20px;
+    line-height: 28px;
+    margin-top: 11px;
+}
+
+.possibility-card-header-link__img:hover {
+    scale: 1.03;
+    translate: 0px -5px;
+    transition: 0.3s;
+}
+
+.possibility-card-body {
+    margin-top: 24px;
+}
+
+.possibility-card-body-text {
+    line-height: 24px;
+
+    &::before {
+        content: '\"';
+    }
+    &::after {
+        content: '\"';
+    }
+}
+
+.possibility-card-body-line {
+    margin: 13px 0 8px 0;
+}
+
+.possibility-card-body-author {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15.96px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
 /*-------------------------------    --------------------------------*/
