@@ -374,4 +374,62 @@ footer {
     height: 48px;
 }
 
+/*-------------------------------Collaboration--------------------------------*/
+.collaboration {
+    height: 823px;
+    background-color: #0A3232;
+    align-items: flex-start;
+    padding-top: 141px;;
+}
+
+.collaboration-container {
+    width: 1152px;
+    height: 554px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.collaboration-header {
+    width: 552px;
+    color: #FFFFFF;
+}
+
+.collaboration-title {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 72.32px;
+}
+
+.collaboration-text {
+    width: 330px;
+    font-size: 20px;
+    line-height: 28px;
+    margin: 28px 0 38px 0;
+}
+
+.collaboration-btn {
+    width: 210px;
+    height: 50px;
+    border: 1px solid #F5F5F5;
+    color: #FFFFFF;
+    line-height: 24px;
+
+    &:hover {
+        scale: 1.03;
+        translate: 0px -5px;
+        box-shadow: 2px 2px 5px #141414;
+        transition: 0.3s;
+    }
+}
+
+.collaboration-line {
+    width: 100%;
+    margin-top: 63px;
+}
+
+.collaboration-img {
+    height: 100%;
+}
+
 /*-------------------------------    --------------------------------*/
