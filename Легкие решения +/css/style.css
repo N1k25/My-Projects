@@ -21,6 +21,13 @@ footer {
     color: #FFFFFF;
     font-weight: 500;
     line-height: 100%;
+
+    &:hover {
+        scale: 1.03;
+        transform: 0 -5px;
+        box-shadow: 2px 2px 5px #000;
+        transition: 0.3s;
+    }
 }
 
 /*-----------------------------------Header + Hero-----------------------------------*/
@@ -94,13 +101,89 @@ footer {
     width: 200px;
     height: 45px;
     margin: 0 auto;
-
-    &:hover {
-        scale: 1.03;
-        transform: 0 -5px;
-        box-shadow: 2px 2px 5px #000;
-        transition: 0.3s;
-    }
 }
 
-/*-----------------------------------Header + Hero-----------------------------------*/
+/*-----------------------------------Creation-----------------------------------*/
+.creation {
+    height: 703px;
+}
+
+.creation-container {
+    width: 100%;
+    text-align: center;
+}
+
+.creation-title {
+    width: 739px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 146%;
+    color: #323232;
+    margin: 0 auto;
+}
+
+.creation-text {
+    width: 730px;
+    line-height: 158%;
+    color: #999999;
+    margin: 50px auto 70px;
+}
+
+.creation-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.creation-item {
+    width: 353px;
+    height: 139px;
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+}
+
+.creation-item-icon_outer_boundary {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 1px solid #E0E0E0;
+    display: grid;
+    place-items: center;
+}
+
+.creation-item-icon_inner_boundary {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 1px solid #4985FF;
+    display: grid;
+    place-items: center;
+}
+
+
+.creation-item-data {
+    width: 222px;
+    text-align: left;
+    padding-top: 46px;
+}
+
+.creation-item-title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+}
+
+.creation-item-text {
+    font-size: 14px;
+    line-height: 158%;
+    color: #999999;
+    margin-top: 12px;
+}
+
+.creation-btn {
+    width: 200px;
+    height: 45px;
+    margin: 55px auto 0;
+}
+
+/*-----------------------------------     -----------------------------------*/
