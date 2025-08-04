@@ -1,0 +1,106 @@
+@import url("reset.css");
+@import url(https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800&display=swap);
+
+header,
+section,
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.__container {
+    max-width: 1100px;
+}
+
+.__button {
+    display: grid;
+    place-items: center;
+    border-radius: 30px;
+    background-color: #4985FF;
+    color: #FFFFFF;
+    font-weight: 500;
+    line-height: 100%;
+}
+
+/*-----------------------------------Header + Hero-----------------------------------*/
+.header {
+    height: 900px;
+    background: url('../img/hero/image.jpg') center no-repeat;
+    background-size: cover;
+    color: #FFFFFF;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.menu {
+    width: 100%;
+    height: 100px;
+}
+
+.menu-list {
+    height: 100%;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.menu-item {
+    &:first-child {
+        text-decoration: underline;
+        text-underline-offset: 43px;
+    }
+    
+
+    &:hover {
+        text-decoration: underline;
+        text-underline-offset: 43px;
+        text-decoration-color: #4985FF;
+        transition: 0.3s;
+    }
+}
+
+.menu-link {
+    font-weight: 500;
+    line-height: 100%;
+    color: #FFFFFF;
+
+    &:hover {
+        color: #4985FF;
+        transition: 0.3s;
+    }
+}
+
+.hero-content {
+    width: 829px;
+    margin-top: 220px;
+    text-align: center;
+}
+
+.hero-subtitle {
+    font-weight: 500;
+    line-height: 100%;
+}
+
+.hero-title {
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 134%;
+    margin: 20px 0 50px 0;
+}
+
+.hero-btn {
+    width: 200px;
+    height: 45px;
+    margin: 0 auto;
+
+    &:hover {
+        scale: 1.03;
+        transform: 0 -5px;
+        box-shadow: 2px 2px 5px #000;
+        transition: 0.3s;
+    }
+}
+
+/*-----------------------------------Header + Hero-----------------------------------*/
