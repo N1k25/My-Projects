@@ -600,4 +600,93 @@ form {
     margin-top: 35px;
 }
 
-/*-----------------------------------    -----------------------------------*/
+/*-----------------------------------Footer-----------------------------------*/
+.footer {
+    height: 413px;
+    background-color: #F6F6F8;
+}
+
+.footer-container {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.footer-menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-item:not(:first-child) {
+    width: 245px;
+}
+
+.footer-item-title {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.footer-list {
+    margin-top: 35px;
+}
+
+.footer-list-item:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.footer-list-item-link {
+    display: block;
+    font-size: 14px;
+    line-height: 158%;
+    color: #999999;
+    transition: 0.4s;
+
+    &::before {
+    content: url('../img/footer/right-arrow.svg');
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    }
+
+    &:hover {
+        scale: 1.03;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        text-underline-offset: 3px;
+        translate: 3px 0;
+    }
+}
+
+.footer-item:first-child .footer-list .footer-list-item:first-child .footer-list-item-link::before {
+    content: url('../img/footer/mail.svg');
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+.footer-item:first-child .footer-list .footer-list-item:nth-child(2) .footer-list-item-link::before {
+    content: url('../img/footer/call.svg');
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+.footer-item:first-child .footer-list .footer-list-item:last-child .footer-list-item-link::before {
+    content: url('../img/footer/location.svg');
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+
+.footer-line {
+    width: 100%;
+    height: 2px;
+    background-color: #E0E0E0;
+    margin: 70px 0 30px 0;
+}
+
+.footer-copyright {
+    font-size: 13px;
+    line-height: 158%;
+    color: #999999;
+    text-align: center;
+}
