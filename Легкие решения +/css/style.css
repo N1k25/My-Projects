@@ -1,6 +1,10 @@
 @import url("reset.css");
 @import url(https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800&display=swap);
 
+html {
+    scroll-behavior: smooth;
+}
+
 header,
 section,
 footer {
@@ -480,9 +484,10 @@ footer {
     margin: 0 auto 85px;
     display: grid;
     place-items: center;
+    overflow: hidden;
 }
 
-#video-play__btn {
+.video-play__btn {
     width: 300px;
     height: 100px;
     display: flex;
@@ -507,6 +512,10 @@ footer {
 .video-play__btn-icon {
     width: 60px;
     height: 60px;
+}
+
+.none {
+    display: none;
 }
 
 /*-----------------------------------Subscription-----------------------------------*/
@@ -560,27 +569,17 @@ form {
     line-height: 27px;
     letter-spacing: 0.36px;
 }
-
-.subscription-mail:focus {
-    outline: none;
-}
-
-.label2 {
+.subscription-mail::placeholder {
     position: absolute;
-    top: 10px;
+    top: 13px;
     left: 33px;
     pointer-events: none;
     font-size: 13px;
     line-height: 158%;
     color: #999999;
-    transition: all 0.2s ease;
 }
-
-.subscription-mail:focus~.label2,
-.subscription-mail:valid~.label2 {
-    top: -20px;
-    font-size: 10pt;
-    color: #626A72;
+.subscription-mail:focus {
+    outline: none;
 }
 
 #form-button {
