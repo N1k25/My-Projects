@@ -25,3 +25,4 @@ const cookiesButton = document.querySelector('.cookies-btn');
 cookiesButton.addEventListener('click', function() {
     cookiesBlock.classList.add('none');
 });
+

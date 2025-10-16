@@ -29,6 +29,11 @@ button {
 .header {
     height: 84px;
     background-color: #045b746c;
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100; */
 }
 
 .menu {
@@ -159,4 +164,40 @@ button {
     display: none;
 }
 
-/*---------------------------------    ---------------------------------*/
+/*---------------------------------Stripe---------------------------------*/
+.stripe {
+    height: 189px;
+    background-color: #F0FAF7;
+}
+
+/*---------------------------------Get---------------------------------*/
+.get {
+    height: 607px;
+    align-items: flex-end;
+}
+
+.get-container {
+    width: 650px;
+    text-align: center;
+    padding: 79px 0 49px 0;
+}
+
+.get-title {
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 40px;
+    line-height: 45.6px;
+    text-align: center;
+}
+
+.get-text {
+    font-size: 20px;
+    line-height: 31.2px;
+    margin: 25px 0 14px 0;
+}
+
+.get-img {
+    width: 100%;
+}
+
+/*---------------------------------   ---------------------------------*/
