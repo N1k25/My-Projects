@@ -20,6 +20,10 @@ button {
     text-transform: uppercase;
     transition: 0.3s;
 
+    &:hover {
+        translate: 0 -3px;
+    }
+
     &:active {
         scale: 0.95;
     }
@@ -200,4 +204,88 @@ button {
     width: 100%;
 }
 
-/*---------------------------------   ---------------------------------*/
+/*---------------------------------Shop---------------------------------*/
+.shop {
+    height: 463px;
+    align-items: flex-start;
+}
+
+.shop-container {
+    text-align: center;
+}
+
+.shop-title {
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 40px;
+    line-height: 45.6px;
+}
+
+.shop-text {
+    font-size: 16px;
+    line-height: 18.4px;
+    margin: 20px 0 47px 0;
+}
+
+.shop-cards {
+    display: flex;
+    gap: 24px;
+}
+
+.shop-card {
+    width: 290px;
+    padding: 40px 0 48px;
+
+    &:first-child {
+        background-color: #005466;
+
+        .shop-card-img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .shop-card-title {
+            color: #F6F9E5;
+        }
+    }
+    &:nth-child(2) {
+        background-color: #F7D8BF;
+
+        .shop-card-img {
+            width: 32px;
+            height: 30px;
+        }
+
+        .shop-card-title {
+            color: #C47B59;
+        }
+    }
+    &:last-child {
+        background-color: #F1FAF6;
+
+        .shop-card-img {
+            width: 68px;
+            height: 30px;
+        }
+
+        .shop-card-title {
+            color: #64BAA1;
+        }
+    }
+}
+
+.shop-card-title {
+    line-height: 16.1px;
+    text-transform: uppercase;
+    margin: 37px 0 42px 0;
+}
+
+.shop-card-btn {
+    width: 182px;
+    height: 36px;
+    border: 2px solid #000000;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+/*---------------------------------    ---------------------------------*/
