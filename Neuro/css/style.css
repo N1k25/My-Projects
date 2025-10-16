@@ -288,4 +288,115 @@ button {
     text-transform: uppercase;
 }
 
+/*---------------------------------Vawes-1---------------------------------*/
+.vawes-1 {
+    height: 100px;
+    background-image: url('../img/waves1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*---------------------------------Energy---------------------------------*/
+.energy {
+    height: 973px;
+    background-color: #005466;
+    margin-top: -2px;
+}
+
+.energy-container {
+    width: 100%;
+    height: 822px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.energy-images {
+    height: 100%;
+    width: 822px;
+    position: relative;
+}
+
+.energy-gum {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -67px;
+    z-index: 2;
+}
+
+.energy-mints {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.energy-body {
+    width: 434px;
+    color: #F6F9E5;
+}
+
+.energy-title {
+    width: 199px;
+    font-size: 55px;
+    line-height: 62.7px;
+}
+
+.energy-text {
+    width: 406px;
+    font-size: 19px;
+    line-height: 30px;
+    margin: 25px 0;
+}
+
+.energy-colors {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-left: 10px;
+    margin-bottom: 37px;
+}
+
+.energy-color {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #FFFFFF;
+}
+
+.energy-color-1 {
+    background-color: #13C0D7;
+}
+
+.energy-color-2 {
+    background-color: #D53F23;
+}
+
+.energy-color-title {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.energy-btn {
+    background-color: transparent;
+    border: 2px solid #F6F9E5;
+    border-radius: 2px;
+    color: #F6F9E5;
+    font-size: 14px;
+    line-height: 14.84px;
+}
+
+/*---------------------------------Vawes-2---------------------------------*/
+.vawes-2 {
+    height: 100px;
+    background-image: url('../img/waves2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -80px;
+}
+
 /*---------------------------------    ---------------------------------*/
