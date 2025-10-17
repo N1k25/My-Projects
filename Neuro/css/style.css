@@ -493,4 +493,87 @@ button {
     line-height: 14.84px;
 }
 
+/*---------------------------------State---------------------------------*/
+.state {
+    height: 844px;
+}
+
+.state-container {
+    width: 1200px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 64px;
+}
+
+.state-img {
+    width: 492px;
+    height: 487px;
+}
+
+.state-body {
+    width: 420px;
+}
+
+.state-title {
+    font-size: 40px;
+    line-height: 45.2px;
+}
+
+.state-text {
+    width: 418px;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 25px 0;
+}
+
+.state-btn {
+    border: 2px solid #000000;
+    border-radius: 2px;
+    background-color: transparent;
+}
+
+/*---------------------------------Subscription---------------------------------*/
+.subscription {
+    height: 849px;
+    background-color: #F1FAF6;
+}
+
+.subscription-container {
+    width: 1200px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 64px;
+}
+
+.subscription-img {
+    width: 492px;
+    height: 492px;
+}
+
+.subscription-body {
+    width: 440px;
+}
+
+.subscription-title {
+    font-size: 40px;
+    line-height: 45.2px;
+}
+
+.subscription-text {
+    width: 390px;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 25px 0;
+}
+
+.subscription-btn {
+    border: 2px solid #000000;
+    border-radius: 2px;
+    background-color: transparent;
+}
+
 /*---------------------------------    ---------------------------------*/
