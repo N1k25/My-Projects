@@ -399,4 +399,98 @@ button {
     margin-top: -80px;
 }
 
+/*---------------------------------Calm---------------------------------*/
+.calm {
+    height: 1051px;
+    background-color: #F7D8BF;
+    margin-top: -2px;
+    overflow-x: hidden;
+}
+
+.calm-container {
+    width: 100%;
+    height: 826px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.calm-images {
+    height: 100%;
+    width: 822px;
+    position: relative;
+    margin-top: -88px;
+}
+
+.calm-gum {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.calm-mints {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -22px;
+    right: -74px;
+}
+
+.calm-body {
+    width: 434px;
+    color: #C47B59;
+}
+
+.calm-title {
+    width: 221px;
+    font-size: 55px;
+    line-height: 62.7px;
+}
+
+.calm-text {
+    width: 428px;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 25px 0;
+}
+
+.calm-colors {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-left: 10px;
+    margin-bottom: 37px;
+}
+
+.calm-color {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #FFFFFF;
+}
+
+.calm-color-1 {
+    background-color: #C47B59;
+}
+
+.calm-color-2 {
+    background-color: #EF9632;
+}
+
+.calm-color-title {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.calm-btn {
+    background-color: transparent;
+    border: 2px solid #C47B59;
+    border-radius: 2px;
+    color: #C47B59;
+    font-size: 14px;
+    line-height: 14.84px;
+}
+
 /*---------------------------------    ---------------------------------*/
