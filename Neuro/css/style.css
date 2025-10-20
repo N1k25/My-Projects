@@ -729,4 +729,38 @@ button {
     }
 }
 
-/*---------------------------------    ---------------------------------*/
+/*---------------------------------Refresh---------------------------------*/
+.refresh {
+    height: 700px;
+    position: relative;
+    background: url('../img/refresh/image.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.refresh-container {
+    width: 1200px;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.refresh-header {
+    width: 347px;
+    color: #FFFFFF;
+}
+
+.refresh-title {
+    font-size: 55px;
+    line-height: 59.95px;
+}
+
+.refresh-btn {
+    background-color: #000000;
+    color: #FFFFFF;
+    border: 2px solid #000000;
+    border-radius: 2px;
+    margin-top: 30px;
+}
