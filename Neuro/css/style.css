@@ -610,6 +610,7 @@ button {
     font-size: 16px;
     line-height: 16.96px;
     color: #000000;
+    text-transform: uppercase;
     text-decoration: underline;
     text-underline-offset: 11px;
     text-decoration-thickness: 2px;
@@ -643,4 +644,64 @@ button {
     background-size: cover;
 }
 
-/*---------------------------------     ---------------------------------*/
+/*---------------------------------Science---------------------------------*/
+.science {
+    height: 670px;
+    background-color: #64BAA1;
+    position: relative;
+}
+
+.science-container {
+    width: 1200px;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.science-body {
+    width: 440px;
+    color: #FFFFFF;
+}
+
+.science-title {
+    width: 308px;
+    font-size: 40px;
+    line-height: 45.2px;
+}
+
+.science-text {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 22px 0;
+}
+
+.science-link {
+    font-size: 16px;
+    line-height: 16.96px;
+    color: #0A644A;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-underline-offset: 11px;
+    text-decoration-thickness: 2px;
+    transition: 0.4s;
+
+    &:hover {
+        display: block;
+        scale: 1.03;
+        text-decoration: underline;
+        text-underline-offset: 11px;
+        text-decoration-thickness: 2px;
+        translate: 5px 2px;
+    }
+}
+
+.science-img {
+    width: 847px;
+    height: 844px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+/*---------------------------------    ---------------------------------*/
