@@ -1,0 +1,125 @@
+@import url("reset.css");
+@import url(https://fonts.googleapis.com/css?family=Poppins:regular,500,600,700&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Roboto:regular&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+3:regular,700&display=swap);
+
+@font-face {
+	font-family: 'DINPro';
+	font-display: swap;
+	src: url("../fonts/DINPro-Bold.eot");
+	src: local("O"), url("../fonts/DINPro-Bold.woff") format("woff"), 
+            url("../fonts/DINPro-Bold.woff2") format("woff2"),
+			url("../fonts/DINPro-Bold.ttf") format("truetype"); 
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gilroy';
+	font-display: swap;
+	src: url("../fonts/Gilroy-Medium.eot");
+	src: local("O"), url("../fonts/Gilroy-Medium.woff") format("woff"), 
+            url("../fonts/Gilroy-Medium.woff2") format("woff2"),
+			url("../fonts/Gilroy-Medium.ttf") format("truetype"); 
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SF Pro Text';
+	font-display: swap;
+	src: url("../fonts/SFProDisplay-Regular.eot");
+	src: local("O"), url("../fonts/SFProDisplay-Regular.woff") format("woff"), 
+            url("../fonts/SFProDisplay-Regular.woff2") format("woff2"),
+			url("../fonts/SFProDisplay-Regular.ttf") format("truetype"); 
+	font-weight: 400;
+	font-style: normal;
+}
+
+header,
+section,
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.__container {
+    max-width: 1246px;
+}
+
+/*--------------------------------Header----------------------------------*/
+.header {
+    height: 57px;
+    margin-top: 35px;
+    border: 1px solid red;
+}
+
+.header-container {
+    width: 1155px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    display: block;
+    width: 147px;
+}
+
+.menu-item {
+    list-style: none;
+}
+
+.menu-link {
+    display: block;
+    font-size: 18px;
+    line-height: 100%;
+    color: #021206;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+
+    &:hover {
+        color: #4EDAAC;
+        opacity: 1;
+        scale: 1.04;
+    }
+
+    &:active {
+        scale: 0.97;
+    }
+}
+
+.header-buttons {
+    height: 100%;
+    display: flex;
+    gap: 23px;
+    align-items: center;
+}
+
+.button {
+    padding: 15px 30px;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    color: #021206;
+    opacity: 0.7;
+    background-color: transparent;
+    border: 1px solid #021206;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: #F44545;
+        color: #FFFFFF;
+        opacity: 1;
+    }
+
+    &:active {
+        scale: 0.97;
+        background-color: #c70f0f;
+    }
+}
+
+/*--------------------------------   ----------------------------------*/
