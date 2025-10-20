@@ -704,4 +704,29 @@ button {
     bottom: 0;
 }
 
+/*---------------------------------Share---------------------------------*/
+.share {
+    height: 378px;
+}
+
+.share-container {
+    width: 100%;
+    text-align: center;
+}
+
+.share-title {
+    font-size: 40px;
+    line-height: 45.2px;
+}
+
+.share-text {
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 23px;
+
+    span {
+        font-size: 19px;
+    }
+}
+
 /*---------------------------------    ---------------------------------*/
