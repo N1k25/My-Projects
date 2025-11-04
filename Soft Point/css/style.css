@@ -108,7 +108,6 @@ footer {
     font-weight: 500;
     font-size: 18px;
     line-height: 100%;
-    color: #021206;
     opacity: 0.7;
     background-color: transparent;
     border: 1px solid #021206;
@@ -156,7 +155,6 @@ body.sticky-header header {
     font-weight: 600;
     font-size: 54px;
     line-height: 100%;
-    color: #021206;
 
     span {
         color: #4EDAAC;
@@ -184,7 +182,6 @@ body.sticky-header header {
 .hero-text {
     font-size: 21px;
     line-height: 160%;
-    color: #021206;
     margin: 25px 0 30px 0;
 
     span {
@@ -214,7 +211,6 @@ form {
     background-color: #FFFFFF;
     font-size: 18px;
     line-height: 100%;
-    color: #021206;
 }
 
 .hero-mail:focus {
@@ -228,7 +224,6 @@ form {
     pointer-events: none;
     font-size: 18px;
     line-height: 100%;
-    color: #021206;
     transition: all 0.3s ease;
 }
 
@@ -432,6 +427,137 @@ form {
 .partner-img {
     height: 100%;
     transition: 0.3s ease;
+
+    &:hover {
+        scale: 1.03;
+    }
+}
+
+/*--------------------------------Software----------------------------------*/
+.software {
+    height: 830px;
+}
+
+.software-container {
+    width: 1216px;
+    height: 610px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.software-cards {
+    width: 594px;
+    height: 100%;
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(2, auto);
+    gap: 30px;
+}
+
+.software-card {
+    width: 282px;
+    height: 290px;
+    border: 1px solid #0212061A;
+    border-radius: 10px;
+    padding: 35px 24px 36px 35px;
+    transition: 0.3s;
+
+    &:first-child .software-card-rectangle {
+        background: linear-gradient(#FF9A9A, #F14C4C);
+        box-shadow: 1px 5px 30px #D7151580;
+    }
+    &:nth-child(2) .software-card-rectangle {
+        background: linear-gradient(#85FED6, #4EDAAC);
+        box-shadow: 1px 5px 30px #53D7AB80;
+    }
+    &:nth-child(3) .software-card-rectangle {
+        background: linear-gradient(#FCD876, #FABC13);
+        box-shadow: 1px 5px 30px #EEB92A99;
+    }
+    &:last-child .software-card-rectangle {
+        background: linear-gradient(#FE9AF4, #EC4EDC);
+        box-shadow: 1px 5px 30px #E644D680;
+    }
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0px 15px 60px #414D4426;
+    }
+}
+
+.software-card-rectangle {
+    width: 75px;
+    height: 75px;
+    border-radius: 10px;
+    display: grid;
+    place-content: center;
+}
+
+.software-card-title {
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 100%;
+    margin: 25px 0 9px 0;
+}
+
+.software-card-text {
+    line-height: 160%;
+}
+
+.software-header {
+    width: 548px;
+}
+
+.software-title {
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 100%;
+}
+
+.software-text {
+    width: 480px;
+    font-size: 18px;
+    line-height: 160%;
+    margin-top: 20px;
+
+    span {
+        font-weight: 600;
+    }
+}
+
+.software-links {
+    margin-top: 29px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+}
+
+.software-link__more {
+    padding: 15px 40px;
+    border-radius: 6px;
+    background-color: #282323;
+    border: 2px solid #282323;
+    color: #FFFFFF;
+    transition: 0.3s;
+
+    &:hover {
+        background-color: #FFFFFF;
+        color: #282323;
+        border: 2px solid #282323;
+    }
+
+    &:active {
+        scale: 0.97;
+    }
+}
+
+.software-link__ask {
+    color: #FF4D4D;
+    transition: 0.3s;
 
     &:hover {
         scale: 1.03;
