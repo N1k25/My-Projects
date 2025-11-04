@@ -564,4 +564,107 @@ form {
     }
 }
 
+/*--------------------------------Analysis----------------------------------*/
+.analysis {
+    height: 550px;
+    overflow: hidden;
+}
+
+.analysis-container {
+    width: 1203px;
+    height: 464px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.analysis-header {
+    width: 524px;
+}
+
+.analysis-title {
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 100%;
+}
+
+.analysis-text {
+    width: 448px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+    margin: 20px 0;
+}
+
+.analysis-list-item {
+    &::before {
+        content: url('../img/analysis/li.svg');
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 11px;
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 16px;
+    }
+}
+
+.analysis-images {
+    width: 595px;
+    height: 100%;
+    position: relative;
+}
+
+.analysis-image__dashboard {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.analysis-image__plan {
+    position: absolute;
+    right: -130px;
+    bottom: -155px;
+}
+
+.analysis-image__users {
+    position: absolute;
+    bottom: -120px;
+    left: -80px;
+}
+
+.analysis-circle__green {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background: linear-gradient(#8EE7CA, #87D2BA);
+    box-shadow: 0px 4px 70px #9BD7C3CC;
+}
+
+.analysis-circle__green-dot {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #ADFDE3;
+}
+
+.analysis-circle__green-dot1 {
+    position: absolute;
+    top: 36px;
+    left: 44px;
+}
+
+.analysis-circle__green-dot2 {
+    position: absolute;
+    top: 44px;
+    left: 36px;
+}
+
+.analysis-circle__green-dot3 {
+    position: absolute;
+    top: 47px;
+    left: 46px;
+}
+
+
 /*--------------------------------    ----------------------------------*/
