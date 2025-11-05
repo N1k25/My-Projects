@@ -766,4 +766,73 @@ form {
     }
 }
 
-/*--------------------------------   ----------------------------------*/
+/*--------------------------------Get software----------------------------------*/
+.get__software {
+    height: 643px;
+    align-items: flex-end;
+    overflow: hidden;
+    margin-top: 110px;
+}
+
+.get__software-container {
+    width: 100%;
+    height: 527px;
+    background-color: #8EE6C9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.get__software-data {
+    width: 1084px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.get__software-header {
+    width: 480px;
+}
+
+.get__software-title {
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 100%;
+}
+
+.get__software-text {
+    font-size: 18px;
+    line-height: 160%;
+    margin-top: 20px;
+}
+
+.get__software-btn {
+    padding: 15px 33px;
+    background-color: #F44545;
+    border-radius: 6px;
+    margin-top: 30px;
+    font-size: 20px;
+    line-height: 160%;
+    color: #FFFFFF;
+    transition: 0.3s;
+
+    &:hover {
+        background-color: #f72c2c;
+    }
+
+    &:active {
+        scale: 0.97;
+        background-color: #c70f0f;
+    }
+}
+
+.get__software-img {
+    width: 965px;
+    height: 643px;
+    position: absolute;
+    right: -130px;
+    bottom: 0;
+}
+
+/*--------------------------------    ----------------------------------*/
