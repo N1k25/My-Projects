@@ -566,7 +566,8 @@ form {
 
 /*--------------------------------Analysis----------------------------------*/
 .analysis {
-    height: 550px;
+    height: 700px;
+    margin-top: -100px;
     overflow: hidden;
 }
 
@@ -667,4 +668,102 @@ form {
 }
 
 
-/*--------------------------------    ----------------------------------*/
+/*--------------------------------Information----------------------------------*/
+.information {
+    height: 441px;
+    margin-top: 58px;
+}
+
+.information-container {
+    width: 1184px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.information-images {
+    width: 591px;
+    height: 100%;
+    position: relative;
+}
+
+.information-image__dashboard {
+    width: 100%;
+    height: 100%;
+}
+
+.information-image__grade {
+    position: absolute;
+    top: -77px;
+    left: -103px;
+}
+
+.information-image__age {
+    position: absolute;
+    left: -134px;
+    bottom: -224px;
+}
+
+.information-image__geo {
+    position: absolute;
+    right: -131px;
+    bottom: -120px;
+}
+
+.information-circle__yellow {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background: linear-gradient(#FFE6A1, #F9D678), linear-gradient(#FEDF8B, #FFB44E);
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.information-circle__yellow-dot {
+    width: 4px;
+    height: 4px;
+    background-color: #FFEFCD;
+}
+
+.information-circle__yellow-dot1 {
+    position: absolute;
+    top: 33px;
+    right: 36px;
+}
+
+.information-circle__yellow-dot2 {
+    position: absolute;
+    top: 42px;
+    right: 31px;
+}
+
+.information-circle__yellow-dot3 {
+    position: absolute;
+    top: 44px;
+    right: 42px;
+}
+
+.information-header {
+    width: 499px;
+}
+
+.information-title {
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 100%;
+}
+
+.information-text {
+    font-size: 18px;
+    line-height: 160%;
+    margin-top: 20px;
+
+    span {
+        font-weight: 600;
+    }
+}
+
+/*--------------------------------   ----------------------------------*/
