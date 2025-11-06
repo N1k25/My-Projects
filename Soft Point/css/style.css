@@ -414,7 +414,7 @@ form {
 /*--------------------------------Partners----------------------------------*/
 .partners {
     height: 163px;
-    background-color: #8EE6C9;
+    background-color: rgb(142, 230, 201, 10%);
 }
 
 .partners-container {
@@ -777,7 +777,7 @@ form {
 .get__software-container {
     width: 100%;
     height: 527px;
-    background-color: #8EE6C9;
+    background-color: rgb(142, 230, 201, 10%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1197,4 +1197,61 @@ input[type="range"]::-webkit-slider-thumb:hover {
     right: 13px;
 }
 
-/*--------------------------------Pricing plan----------------------------------*/
+/*--------------------------------Footer----------------------------------*/
+.footer {
+    height: 211px;
+    background-color: rgb(142, 230, 201, 10%);
+}
+
+.footer-container {
+    width: 1146px;
+    display: flex;
+    gap: 50px;
+}
+
+.footer-header {
+    width: 244px;
+}
+
+.footer-logo {
+    display: block;
+    width: 70%;
+    height: 60px;
+    margin: 0 auto;
+}
+
+.footer-text {
+    line-height: 160%;
+    opacity: 0.7;
+}
+
+.footer-menu {
+    display: flex;
+    gap: 180px;
+    opacity: 0.7;
+}
+
+.footer-menu-item-title {
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 100%;
+}
+
+.footer-menu-list {
+    margin-top: 20px;
+}
+
+.footer-menu-list__item:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-menu-link {
+    line-height: 160%;
+    color: #021206;
+
+    &:hover {
+        text-decoration: underline;
+        text-underline-offset: 5px;
+        text-decoration-skip-ink: none;
+    }
+}
