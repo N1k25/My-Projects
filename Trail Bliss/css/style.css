@@ -46,7 +46,7 @@ footer {
     }
 
     &:hover::before {
-        animation: fill 0.8s forwards;
+        animation: fill 0.6s forwards;
     }
     
 }
@@ -60,8 +60,11 @@ footer {
     height: 2px;
   }
   100% {
-    width: 100%;
+    width: 135%;
     height: 100%;
+    left: 50%;
+    translate: -50% 0;;
+    border-radius: 100px;
     background: #FEC86E;
   }
 }
