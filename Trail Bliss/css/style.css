@@ -1,0 +1,127 @@
+@import url("reset.css");
+@import url(https://fonts.googleapis.com/css?family=Manrope:regular,500,600,700&display:swap);
+
+.wrapper {
+    max-width: 1240px;
+    margin: 0 auto;
+    border: 1px solid gray;
+}
+
+header,
+section,
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*-----------------------------Header-----------------------------*/
+.header {
+    padding: 24px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+    gap: 32px;
+}
+
+.menu-link {
+    font-size: 20px;
+    color: #161616;
+    position: relative;
+
+
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        height: 2px;
+        background: #FEC86E;
+        z-index: -1;
+    }
+
+    &:hover::before {
+        animation: fill 0.8s forwards;
+    }
+    
+}
+
+@keyframes fill {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 100%;
+    height: 2px;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    background: #FEC86E;
+  }
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-text {
+    font-size: 18px;
+}
+
+.services-testimonial,
+.services-faq,
+.services-contact__us {
+    font-size: 20px;
+    color: #161616;
+}
+
+.services-testimonial,
+.services-faq {
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        height: 2px;
+        background: #FEC86E;
+        z-index: -1;
+    }
+
+    &:hover::before {
+        animation: fill 0.8s forwards;
+    }
+}
+
+.services-faq {
+    margin: 0 32px;
+}
+
+.services-contact__us {
+    display: inline-block;
+    padding: 8px 14px;
+    border: 1px solid #161616;
+    border-radius: 100px;
+    transition: 0.3s;
+
+    &:hover {
+        background-color: #FEC86E;
+        box-shadow: 2px 2px 5px #161616;
+    }
+
+    &:active {
+        scale: 0.97;
+    }
+}
+
+/*-----------------------------    -----------------------------*/
