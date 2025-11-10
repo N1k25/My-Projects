@@ -1,6 +1,10 @@
 @import url("reset.css");
 @import url(https://fonts.googleapis.com/css?family=Manrope:regular,500,600,700&display:swap);
 
+html {
+  scroll-behavior: smooth;
+}
+    
 .wrapper {
     max-width: 1240px;
     margin: 0 auto;
@@ -66,6 +70,8 @@ footer {
     translate: -50% 0;;
     border-radius: 100px;
     background: #FEC86E;
+    border: 1px solid #161616;
+    box-shadow: 2px 2px 5px #161616;
   }
 }
 
@@ -84,10 +90,6 @@ footer {
 .services-contact__us {
     font-size: 20px;
     color: #161616;
-}
-
-.services-testimonial,
-.services-faq {
     position: relative;
 
     &::before {
@@ -110,22 +112,6 @@ footer {
     margin: 0 32px;
 }
 
-.services-contact__us {
-    display: inline-block;
-    padding: 8px 14px;
-    border: 1px solid #161616;
-    border-radius: 100px;
-    transition: 0.3s;
-
-    &:hover {
-        background-color: #FEC86E;
-        box-shadow: 2px 2px 5px #161616;
-    }
-
-    &:active {
-        scale: 0.97;
-    }
-}
 
 /*-----------------------------Hero-----------------------------*/
 .hero {
