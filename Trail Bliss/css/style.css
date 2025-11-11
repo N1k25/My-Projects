@@ -112,7 +112,6 @@ footer {
     margin: 0 32px;
 }
 
-
 /*-----------------------------Hero-----------------------------*/
 .hero {
     flex-direction: column;
@@ -181,5 +180,164 @@ footer {
     background-size: 100%;
 }
 
+/*-----------------------------Tales-----------------------------*/
+.tales {
+    height: 688px;
+    flex-direction: column;
+    gap: 52px;
+}
+
+.tales-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tales-title {
+    width: 608px;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 48px;
+    line-height: 120%;
+}
+
+.tales-text {
+    width: 496px;
+    font-style: Medium;
+    font-size: 24px;
+    line-height: 100%;
+}
+
+.tales-cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tales-card {
+    border-radius: 16px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.card-adventure {
+    width: 397px;
+    height: 300px;
+    background: url('../img/tales/image1.jpg') center no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+
+    &::before {
+        content: "";
+        background: linear-gradient(#00000000, #000000);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
+
+.card-adventure-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 3;
+}
+
+.card-adventure-title {
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 24px;
+    line-height: 100%;
+    color: #FFFFFF;
+}
+
+.tales-card-arrow__block {
+    width: 40px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background-color: orange;
+    z-index: 3;
+}
+
+.card-group__tour {
+    width: 292px;
+    height: 360px;
+    background-color: #D3F5FE;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-group__tour-title {
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 24px;
+    line-height: 100%;
+}
+
+.card-group__tour-text {
+    font-style: Medium;
+    font-size: 18px;
+    line-height: 100%;
+    color: #454444;
+}
+
+.card-custom__plan {
+    width: 292px;
+    height: 360px;
+    background: url('../img/tales/image2.jpg') center no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+
+    &::before {
+        content: "";
+        background: linear-gradient(#000000, #00000000);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
+
+.card-custom__plan-title {
+    display: inline-block;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 24px;
+    line-height: 100%;
+    color: #FFFFFF;
+    z-index: 3;
+}
+
+.card-movie {
+    width: 187px;
+    height: 200px;
+    background: url('../img/tales/image3.jpg') center no-repeat;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    position: relative;
+
+    &::before {
+        content: "";
+        background: linear-gradient(#00000000, #000000);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
 
 /*-----------------------------    -----------------------------*/
