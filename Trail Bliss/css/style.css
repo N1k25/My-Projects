@@ -350,23 +350,27 @@ footer {
 }
 
 /*-----------------------------Companion-----------------------------*/
-.companion {
+.companion,
+.planning {
     height: 740px;
     justify-content: space-between;
 }
 
-.companion-header {
+.companion-header,
+.planning-header {
     width: 608px;
 }
 
-.companion-title {
+.companion-title,
+.planning-title {
     font-weight: 700;
     font-style: Bold;
     font-size: 48px;
     line-height: 120%;
 }
 
-.companion-text {
+.companion-text,
+.planning-text {
     font-style: Medium;
     font-size: 20px;
     line-height: 100%;
@@ -399,7 +403,8 @@ footer {
     }
 }
 
-.companion-image {
+.companion-image,
+.planning-image {
     width: 503px;
     height: 500px;
     border-radius: 16px;
@@ -415,4 +420,16 @@ footer {
     }
 }
 
-/*-----------------------------    -----------------------------*/
+/*-----------------------------Moments-----------------------------*/
+
+
+
+
+
+
+
+/*-----------------------------Planning-----------------------------*/
+.planning-image {
+    border-radius: 0px;
+}
+
