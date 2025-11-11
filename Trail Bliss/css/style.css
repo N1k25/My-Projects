@@ -264,6 +264,15 @@ footer {
     place-items: center;
     background-color: orange;
     z-index: 3;
+    transition: 0.3s;
+
+    &:hover {
+        scale: 1.1;
+    }
+
+    &:active {
+        scale: 0.97;
+    }
 }
 
 .card-group__tour {
@@ -337,6 +346,72 @@ footer {
         position: absolute;
         left: 0;
         top: 0;
+    }
+}
+
+/*-----------------------------Companion-----------------------------*/
+.companion {
+    height: 740px;
+    justify-content: space-between;
+}
+
+.companion-header {
+    width: 608px;
+}
+
+.companion-title {
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 48px;
+    line-height: 120%;
+}
+
+.companion-text {
+    font-style: Medium;
+    font-size: 20px;
+    line-height: 100%;
+    color: #454444;
+    margin: 24px 0;
+}
+
+.companion-link {
+    width: 204px;
+    height: 61px;
+    background-color: transparent;
+    border: 1px solid #161616;
+    border-radius: 100px;
+    margin-top: 24px;
+    font-size: 18px;
+    color: #161616;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: 0.3s;
+
+    &:hover {
+        gap: 15px;
+        box-shadow: 3px 3px 10px #000000;
+    }
+
+    &:active {
+        scale: 0.97;
+    }
+}
+
+.companion-image {
+    width: 503px;
+    height: 500px;
+    border-radius: 16px;
+    overflow: hidden;
+    
+    img {
+        width: 100%;
+        transition: 0.3s ease;
+    }
+
+    &:hover img {
+        scale: 1.03;
     }
 }
 
