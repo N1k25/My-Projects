@@ -421,15 +421,150 @@ footer {
 }
 
 /*-----------------------------Moments-----------------------------*/
+.moments {
+    height: 928px;
+    flex-direction: column;
+    gap: 52px;
+}
 
+.moments-header {
+    width: 100%;
+}
 
+.moments-title {
+    width: 608px;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 48px;
+    line-height: 120%;
+}
 
+.moments-body {
+    width: 100%;
+}
 
+.moments-slider-item {
+    width: 700px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
+.moments-slider-item-img {
+    width: 100%;
+    height: 409px;
+    border-radius: 16px;
+    object-fit: cover;
+}
 
+.moments-slider-item-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.moments-slider-item-description {
+    width: 419px;
+}
+
+.moments-slider-item-date {
+    width: 110px;
+    height: 38px;
+    border-radius: 27px;
+    background-color: #FBF1D6;
+    display: grid;
+    place-items: center;
+}
+
+.moments-slider-item-date-text {
+    font-weight: 700;
+    font-style: Bold;
+    line-height: 100%;
+}
+
+.moments-slider-item-title {
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 24px;
+    line-height: 100%;
+    margin: 8px 0;
+}
+
+.moments-slider-item-text {
+    line-height: 100%;
+    color: #454444;
+}
+
+.moments-slider-item-cost {
+    width: 100px;
+}
+
+.moments-slider-item-cost-title {
+    font-size: 14px;
+    line-height: 100%;
+    color: #454444;
+}
+
+.moments-slider-item-cost-price {
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 40px;
+    line-height: 100%;
+    color: #2B2B2B;
+}
+
+/*---------------------------*/
+/* Основные стили */
+
+/* Слайдер */
+.slick-slider{
+	min-width: 0;
+}
+/* Ограничивающая оболочка */
+.slick-list {
+	overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track{
+	display: flex;
+	align-items: flex-start;
+    gap: 20px;
+}
+
+/* Конкретный слайдер */
+.moments-slider {
+	position: relative;
+}
+
+/* @media (max-width:767px){
+	.moments-slider {
+		padding: 0px 40px;
+	}
+} */
+
+.moments-slider .slick-arrow{
+	position: absolute;
+	top: 50%;
+	z-index: 10;
+	font-size: 0;
+	width: 40px;
+	height: 40px;
+}
+.moments-slider .slick-arrow.slick-prev{
+	right: 52px;
+    top: -130px;
+	background: url('../img/moments/left.svg') 0 0 / 100% no-repeat;
+}
+.moments-slider .slick-arrow.slick-next{
+	right: 0;
+    top: -130px;
+	background: url('../img/moments/right.svg') 0 0 / 100% no-repeat;
+}
 
 /*-----------------------------Planning-----------------------------*/
 .planning-image {
     border-radius: 0px;
 }
 
+/*-----------------------------    -----------------------------*/
