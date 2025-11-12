@@ -425,6 +425,7 @@ footer {
     height: 928px;
     flex-direction: column;
     gap: 52px;
+    background-color: #FEFCF7;
 }
 
 .moments-header {
@@ -545,7 +546,6 @@ footer {
 
 .moments-slider .slick-arrow{
 	position: absolute;
-	top: 50%;
 	z-index: 10;
 	font-size: 0;
 	width: 40px;
@@ -555,16 +555,141 @@ footer {
 	right: 52px;
     top: -130px;
 	background: url('../img/moments/left.svg') 0 0 / 100% no-repeat;
+
+    &:active {
+        scale: 0.97;
+    }
 }
 .moments-slider .slick-arrow.slick-next{
 	right: 0;
     top: -130px;
 	background: url('../img/moments/right.svg') 0 0 / 100% no-repeat;
+
+    &:active {
+        scale: 0.97;
+    }
 }
 
 /*-----------------------------Planning-----------------------------*/
 .planning-image {
     border-radius: 0px;
+}
+
+/*-----------------------------Partner-----------------------------*/
+.partner {
+    height: 473px;
+    justify-content: space-between;
+    background-color: #FEFCF7;
+}
+
+.partner-header {
+    width: 397px;
+    height: 311px;
+}
+
+.partner-title {
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 48px;
+    line-height: 120%;
+}
+
+.partner-text {
+    font-size: 20px;
+    line-height: 100%;
+    color: #454444;
+    margin-top: 24px;
+}
+
+.partner-body {
+    width: 726px;
+}
+
+.partner-slider-item {
+    width: 351px;
+    height: 313px;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.partner-slider-item-img {
+    width: 24px;
+    height: 24px;
+}
+
+.partner-slider-item-text {
+    font-weight: 400;
+    font-style: Regular;
+    line-height: 100%;
+    color: #000000;
+}
+
+.partner-slider-item-author {
+    width: 177px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.partner-slider-item-author-photo {
+    width: 40px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+}
+
+.partner-slider-item-author-name {
+    font-weight: 400;
+    font-style: Regular;
+    line-height: 100%;
+    color: #000000;
+}
+
+.partner-slider-item-author-address {
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    line-height: 100%;
+    color: #454444;
+}
+
+/*---------------------------*/
+/* Конкретный слайдер */
+.partner-slider {
+	position: relative;
+}
+
+/* @media (max-width:767px){
+	.moments-slider {
+		padding: 0px 40px;
+	}
+} */
+
+.partner-slider .slick-arrow{
+	position: absolute;
+	z-index: 10;
+	font-size: 0;
+	width: 40px;
+	height: 40px;
+}
+.partner-slider .slick-arrow.slick-prev{
+	bottom: 0;
+    left: -510px;
+	background: url('../img/partner/left.svg') 0 0 / 100% no-repeat;
+
+    &:active {
+        scale: 0.97;
+    }
+}
+.partner-slider .slick-arrow.slick-next{
+	bottom: 0;
+    left: -458px;
+	background: url('../img/partner/right.svg') 0 0 / 100% no-repeat;
+
+    &:active {
+        scale: 0.97;
+    }
 }
 
 /*-----------------------------    -----------------------------*/
