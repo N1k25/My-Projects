@@ -4,6 +4,8 @@
 <html lang="en">
 	<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
 	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">       
 		<!-- Заголовок страницы в браузере -->
 		<title>Trail Bliss</title>
 		<link rel="icon" type="image/png" href="img/favicon.png"/>
@@ -36,6 +38,21 @@
 					<a href="#" class="services-faq">FAQ</a>
 					<a href="#" class="services-contact__us">Contact Us</a>
 				</div>
+				<div class="burger">
+					<span class="burger-line"></span>
+					<span class="burger-line"></span>
+					<span class="burger-line"></span>
+				</div>
+				<nav class="mobile-menu">
+					<ul class="mobile-menu-list">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Pricing</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">Testimonial</a></li>
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">Contact Us</a></li>
+					</ul>
+				</nav>
 			</header>
 			<main class="page">
 				<section class="hero">
@@ -66,7 +83,7 @@
 							</div>
 						</div>
 						<div class="tales-card card-group__tour">
-							<h3 class="card-group__tour-title">Let's <br> Explore in a <br> Group Tour</h3>
+							<h3 class="card-group__tour-title">Let's Explore in a Group Tour</h3>
 							<p class="card-group__tour-text">At Trail Bliss, the world is our playground. and every journey is an opportunity to discover something new. Join us as we explore thunders of the world and create memories that will last a lifetime.</p>
 						</div>
 						<div class="tales-card card-custom__plan">
@@ -382,5 +399,7 @@
 	<!-- Подключаем файл скриптов -->
 	<script src="./js/script.js"></script>
 	<script src="./js/index.js"></script>
+	<!-- Подключаем файл скриптов бургера -->
+	<script src="./js/burger.js"></script>
 	</body>
 </html>
