@@ -1,0 +1,59 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+	<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Заголовок страницы в браузере -->
+		<title>Aveji</title>
+		<link rel="icon" type="image/png" href="img/favicon.png"/>
+		<!-- Подключаем CSS -->
+		<link rel="stylesheet" href="./css/style.css"/>
+		<!-- Кодировка страницы -->
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	</head>
+	<!-- Отображаемое тело страницы -->
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="header__logo">
+					<img src="./img/header/logo.svg" alt="logo">
+				</div>
+				<nav class="header__nav">
+					<ul class="header__menu">
+						<li class="header__item"><a href="#" class="header__link">О нас</a></li>
+						<li class="header__item"><a href="#" class="header__link">Проекты</a></li>
+						<li class="header__item"><a href="#" class="header__link">Материалы</a></li>
+						<li class="header__item"><a href="#" class="header__link">Отзывы</a></li>
+					</ul>
+					<a href="tel:380123456789" class="header-phone__link">+380 12 345 67 89</a>
+				</nav>
+				<div class="burger">
+					<span class="burger-line"></span>
+					<span class="burger-line"></span>
+					<span class="burger-line"></span>
+				</div>
+				<nav class="mobile-menu">
+					<ul class="mobile-menu-list">
+						<li class="mobile-menu__item"><a href="#" class="mobile-menu__link">О нас</a></li>
+						<li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Проекты</a></li>
+						<li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Материалы</a></li>
+						<li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Отзывы</a></li>
+					</ul>
+					<a href="tel:380123456789" class="mobile-menu-phone__link">+380 12 345 67 89</a>
+				</nav>
+			</header>
+			<main class="main">
+				<section class="hero"></section>
+				<section class="achievement"></section>
+				<section class="how-we-work"></section>
+				<section class="projects"></section>
+				<section class="reviews"></section>
+				<section class="order"></section>
+			</main>
+			<footer class="footer"></footer>
+		</div>
+	<script src="./js/burger.js"></script>
+	</body>
+</html>
