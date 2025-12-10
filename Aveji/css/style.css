@@ -567,4 +567,69 @@ footer {
     }
 }
 
-/*----------------------------------     ----------------------------------------*/
+/*----------------------------------Reviews----------------------------------------*/
+.reviews {
+    margin-top: 120px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.reviews-title {
+    font-family: Helvetica;
+    font-size: 48px;
+}
+
+.reviews-cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.reviews-card {
+    width: 415px;
+    padding: 40px;
+    text-align: center;
+    border: 1px solid #000000;
+}
+
+.reviews-card-name {
+    font-family: Helvetica;
+    font-weight: Bold;
+    font-size: 18px;
+    margin: 32px 0 20px 0;
+}
+
+.reviews-card-text {
+    line-height: 140%;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .reviews {
+        margin-top: 48px;
+        gap: 20px;
+    }
+
+    .reviews-title {
+        font-size: 28px;
+    }
+
+    .reviews-cards {
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .reviews-card {
+        width: 100%;
+        padding: 32px;
+    }
+
+    .reviews-card-icon {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+/*----------------------------------    ----------------------------------------*/
