@@ -9,6 +9,10 @@ body {
     padding: 12px 0 16px 0;
 }
 
+body.lock {
+    overflow: hidden;
+}
+
 .wrapper {
     max-width: 1376px;
     margin: 0 auto;
