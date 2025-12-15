@@ -494,4 +494,137 @@ footer {
 	background: #FF5B04;
 }
 
-/*------------------------------------------     ----------------------------------------*/
+/*------------------------------------------Victories----------------------------------------*/
+.victories {
+	max-width: 1520px;
+	margin: 140px auto 0;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 50px;
+}
+
+.victories-title {
+	font-family: 'Soyuz Grotesk';
+	font-weight: 700;
+	font-size: 90px;
+	line-height: 90px;
+}
+
+.victories-text {
+	font-family: 'Intro Script R';
+	font-size: 60px;
+	line-height: 45px;
+	color: #FF5B04;
+	margin-top: 30px;
+}
+
+.victories-body {
+	width: 100%;
+	height: 510px;
+}
+
+.victories-slider-item {
+	width: 745px;
+	height: 420px;
+	border-radius: 30px;
+	box-shadow: 3px 4px 10px #00000040;
+	/* border: 1px solid red; */
+	margin: 0 13px 10px;
+	padding: 50px 79px 50px 50px;
+}
+
+.victories-slider-item-date {
+	line-height: 20px;
+	color: #8F8F8F;
+}
+
+.victories-slider-item-title {
+	font-size: 30px;
+	line-height: 45px;
+	margin: 50px 0 30px 0;
+}
+
+.victories-slider-item-text {
+	font-weight: 300;
+	line-height: 30px;
+}
+
+.victories-slider-item-link {
+	display: block;
+	font-weight: 500;
+	font-size: 25px;
+	line-height: 30px;
+	text-decoration: underline;
+	text-decoration-skip-ink: none;
+	color: #002063;
+	margin-top: 40px;
+	width: 100%;
+	text-align: right;
+	transition: 0.3s;
+
+	&:hover {
+		color: #FF5B04;
+		text-decoration: underline;
+		text-decoration-skip-ink: none;
+	}
+}
+
+/* Конкретный слайдер */
+.victories-slider {
+	position: relative;
+	width: 100%;
+}
+
+.victories-slider .slick-arrow{
+	position: absolute;
+	bottom: 0;
+	z-index: 10;
+	font-size: 0;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border: 1px solid #9D9B9B;
+}
+.victories-slider .slick-arrow.slick-prev{
+	right: 96px;
+	bottom: 0;
+	background: url('../img/heroes/next.svg') 0 0 / 100% no-repeat;
+	transform: rotate(180deg);
+
+	&:active {
+		scale: 0.97;
+	}
+}
+.victories-slider .slick-arrow.slick-next{
+	right: 26px;
+	bottom: 0;
+	background: url('../img/heroes/next.svg') 0 0 / 100% no-repeat;
+
+	&:active {
+		scale: 0.97;
+	}
+}
+
+.victories-slider .slick-dots{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 59px;
+}
+.victories-slider .slick-dots li{
+	list-style: none;
+	margin-right: 12px;
+}
+.victories-slider .slick-dots button{
+	font-size: 0;
+	width: 12px;
+	height: 12px;
+	background: linear-gradient(#003E91, #002063);
+	border-radius: 50%;
+}
+
+.victories-slider .slick-dots li.slick-active button{
+	background: #FF5B04;
+}
+
+/*------------------------------------------    ----------------------------------------*/

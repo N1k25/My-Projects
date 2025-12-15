@@ -21,5 +21,27 @@ $(document).ready(function(){
 			}
 		]
 	});
+	$('.victories-slider').slick({
+		arrows:true,
+		dots:true,
+		slidesToShow:2,
+		autoplay:false,
+		speed:700,
+		autoplaySpeed:800,
+		responsive:[
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow:1
+				}
+			},
+			{
+				breakpoint: 550,
+				settings: {
+					slidesToShow:1
+				}
+			}
+		]
+	});
 });
 
