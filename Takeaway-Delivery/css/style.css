@@ -1,0 +1,110 @@
+@import url("reset.css");
+@import url(https://fonts.googleapis.com/css?family=Inter:regular&display=swap);
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.container {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid green; */
+}
+
+header,
+section,
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*-----------------------------------Slogan----------------------------------------*/
+.slogan {
+    padding: 14px 0;
+    background-color: #35B8BE;
+    color: #FFFFFF
+}
+
+.slogan-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.slogan__text {
+    font-size: 14px;
+    line-height: 20px;
+    opacity: 0.8;
+}
+
+.slogan-link {
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+    transition: all 0.3s ease;
+
+    &:hover {
+        text-decoration: underline;
+        text-underline-offset: 5px;
+        font-size: 16px;
+    }
+}
+
+/*-----------------------------------Header----------------------------------------*/
+.header {
+    padding: 20px 0;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.nav-list {
+    display: flex;
+    gap: 36px;
+}
+
+.nav-link {
+    font-size: 15px;
+    line-height: 20px;
+    color: #28224B;
+
+    &:hover {
+        color: #35B8BE;
+    }
+}
+
+.shopping-cart {
+    width: 55px;
+    height: 55px;
+    border-radius: 4px;
+    background-color: #35B8BE;
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+
+.shop-count {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    color: #35B8BE;
+    font-size: 13px;
+    line-height: 18px;
+    display: grid;
+    place-items: center;
+    box-shadow: 7px 7px 25px #7E828F45;
+    position: absolute;
+    top: -6px;
+    right: -6px;
+}
+
+/*-----------------------------------    ----------------------------------------*/
