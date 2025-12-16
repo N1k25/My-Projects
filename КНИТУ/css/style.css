@@ -35,7 +35,6 @@ body {
 .wrapper {
 	max-width: 1920px;
 	margin: 0 auto;
-	border: 1px solid red;
 }
 
 .container__header {
@@ -767,4 +766,138 @@ footer {
 	opacity: 0.8;
 }
 
-/*------------------------------------------    ----------------------------------------*/
+/*------------------------------------------Footer----------------------------------------*/
+.container__footer {
+	width: 100%;
+	background-color: #302E2E;
+	color: #FFFFFF;
+	border-radius: 30px 30px 0 0;
+	margin-top: 100px;
+	padding: 36px 0 58px 0;
+}
+
+.footer {
+	max-width: 1520px;
+	margin: 0 auto;
+	flex-direction: column;
+	gap: 40px;
+}
+
+.footer-body {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-phone__block {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.footer-phone-link {
+	display: block;
+	font-size: 30px;
+	color: #FFFFFF;
+	transition: all 0.4s ease;
+
+	&:hover {
+		color: #FF5B04;
+	}
+}
+
+.footer-policy-link {
+	font-size: 16px;
+	line-height: 30px;
+	color: #FFFFFF;
+	text-decoration: underline;
+	text-underline-offset: 3px;
+	transition: all 0.4s ease;
+
+	&:hover {
+		color: #FF5B04;
+		text-decoration: underline;
+		text-underline-offset: 3px;
+	}
+}
+
+.footer-mail__block {
+	display: flex;
+	align-items: center;
+	gap: 28px;
+}
+
+.footer-mail-icon__block {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	border: 1px solid #FFFFFF;
+	display: grid;
+	place-items: center;
+}
+
+.footer-mail-icon {
+	width: 30px;
+	height: 30px;
+}
+
+.footer-mail-links {
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+}
+
+.footer-mail-link {
+	font-family: Gilroy;
+	line-height: 30px;
+	color: #FFFFFF;
+	transition: all 0.4s ease;
+
+	&:hover {
+		color: #FF5B04;
+	}
+}
+
+.footer-social__items {
+	display: flex;
+	align-items: center;
+	gap: 35px;
+}
+
+.footer-social-item {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	border: 1px solid #FFFFFF;
+	transition: all 0.4s ease;
+
+	&:hover {
+		border-color: #FF5B04;
+
+		.footer-social-icon {
+			filter: invert(44%) sepia(96%) saturate(4200%) hue-rotate(6deg) brightness(103%) contrast(104%);
+		}
+	}
+}
+
+.footer-social-link {
+	display: grid;
+	place-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+.footer-social-icon {
+	width: 30px;
+	height: 30px;
+
+	&:hover {
+		color: #FF5B04;
+	}
+}
+
+.footer-line {
+	width: 100%;
+	height: 1px;
+	background-color: #EBEAE866;
+}
