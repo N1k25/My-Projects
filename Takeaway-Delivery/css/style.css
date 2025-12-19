@@ -297,6 +297,15 @@ footer {
 .faq-image-container {
     width: 578px;
     height: 586px;
+    position: relative;
+}
+
+.faq-pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 205px;
+    height: 177px;
 }
 
 .faq-content {
