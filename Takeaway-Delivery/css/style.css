@@ -184,7 +184,8 @@ footer {
 
 .hero-image,
 .home-image,
-.faq-image {
+.faq-image,
+.call-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -196,7 +197,8 @@ footer {
 }
 
 /*-----------------------------------Home----------------------------------------*/
-.home {
+.home,
+.call {
     padding: 140px 0;
     background: url('../img/home/bg-shape.png') no-repeat center/cover;
 }
@@ -206,7 +208,9 @@ footer {
 }
 
 .home-title,
-.faq-title {
+.how-it-works-title,
+.faq-title,
+.call-title {
     width: 380px;
     font-size: 50px;
     line-height: 55px;
@@ -219,7 +223,8 @@ footer {
 }
 
 .home-text,
-.faq-text {
+.faq-text,
+.call-text {
     font-size: 18px;
     line-height: 27px;
     letter-spacing: 0.36px;
@@ -243,14 +248,6 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 66px;
-}
-
-.how-it-works-title {
-    font-size: 50px;
-    line-height: 55px;
-    letter-spacing: 1.65px;
-    text-align: center;
-    color: #35B8BE;
 }
 
 .how-it-works-cards {
@@ -310,4 +307,20 @@ footer {
     width: 529px;
 }
 
-/*-----------------------------------    ----------------------------------------*/
+/*-----------------------------------Call----------------------------------------*/
+.call-content {
+    width: 578px;
+}
+
+.call-title {
+    width: 100%;
+    font-size: 55px;
+}
+
+.call-image-container {
+    width: 527px;
+    height: 567px;
+    overflow: hidden;
+}
+
+/*-----------------------------------   ----------------------------------------*/
