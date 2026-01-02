@@ -210,6 +210,7 @@ footer {
 
 .home-title,
 .how-it-works-title,
+.menu-title,
 .faq-title,
 .call-title {
     width: 380px;
@@ -288,6 +289,180 @@ footer {
     height: 2px;
     background-color: #D1CDCD;
     margin-top: 148px;
+}
+
+/*-----------------------------------Menu----------------------------------------*/
+.menu {
+    padding: 140px 0;
+    background: url('../img/home/bg-shape.png') no-repeat center/cover;
+}
+
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.menu-header {
+    width: 670px;
+    text-align: center;
+}
+
+.menu-title {
+    width: 100%;
+}
+
+.menu-text {
+    width: 466px;
+    line-height: 27px;
+    letter-spacing: 0.36px;
+    color: #546285;
+    margin: 26px auto 0;
+}
+
+.menu-tabs {
+    width: 100%;
+}
+
+.tabs-container {
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.tabs {
+	display: flex;
+	flex-direction: column;
+}
+
+.tabs__links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+	overflow: hidden;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	order: 0;
+	margin-bottom: 40px;
+	background-color: transparent;
+}
+
+.tabs__links > a {
+	display: inline-block;
+	text-decoration: none;
+	padding: 16px 46px;
+	text-align: center;
+	color: #222222;
+    background-color: transparent;
+    border: 1px solid #61728333;
+    border-radius: 6px;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.tabs > #tab-1:target ~ .tabs__links > a[href="#tab-1"],
+.tabs > #tab-2:target ~ .tabs__links > a[href="#tab-2"],
+.tabs > #tab-3:target ~ .tabs__links > a[href="#tab-3"] {
+	background-color: #35B8BE;
+    color: #FFFFFF;
+	cursor: default;
+}
+
+.tabs > div:not(.tabs__links) {
+	display: none;
+	order: 1;
+}
+
+.tabs > div:target {
+	display: block;
+}
+
+#tab-1, #tab-2, #tab-3 {
+    scroll-margin-top: 100px;
+}
+
+.tab1-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.tab1-card {
+    width: 580px;
+    padding: 26px;
+    border: 1px solid #35B8BE26;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tab1-card-photo {
+    width: 120px;
+    aspect-ratio: 1 / 1;
+}
+
+.tab1-card-body {
+    width: 378px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.tab1-card-header {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tab1-card-title {
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.6px;
+    color: #08090A;
+}
+
+.tab1-card-price {
+    font-size: 15px;
+    line-height: 20px;
+    color: #35B8BE;
+}
+
+.tab1-card-desc {
+    line-height: 24px;
+    letter-spacing: 0.32px;
+    color: #546285;
+}
+
+.tab1-card-order {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.tab1-card-input {
+    width: 60px;
+    height: 48px;
+    border: 1px solid #DDDDDD;
+    border-radius: 6px;
+    display: grid;
+    place-items: center;
+    line-height: 27px;
+    letter-spacing: 0.36px;
+    color: #000000;
+}
+
+.tab1-card-btn {
+    padding: 8px 12px 10px 10px;
+    line-height: 27px;
+    letter-spacing: 0.36px;
+    color: #000000;
 }
 
 /*-----------------------------------FAQ----------------------------------------*/
