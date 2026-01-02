@@ -11,7 +11,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* border: 1px solid green; */
 }
 
 .__button {
@@ -577,4 +576,103 @@ footer {
     left: 0;
 }
 
-/*-----------------------------------    ----------------------------------------*/
+/*-----------------------------------Footer----------------------------------------*/
+.footer {
+    background: url('../img/footer/pattern-footer.png') no-repeat left bottom;
+    background-color: #F5FBFC;
+    padding: 100px 0 60px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 161px;
+}
+
+.footer-body,
+.footer-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-logo {
+    width: 40px;
+    height: 51px;
+}
+
+.footer-head-text {
+    width: 250px;
+    line-height: 27px;
+    letter-spacing: 0.36px;
+    color: #546285;
+    margin-top: 25px;
+}
+
+.footer-menu {
+    display: flex;
+    gap: 16px;
+}
+
+.footer-menu-card {
+    width: 189px;
+}
+
+.footer-menu-item-title {
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #08090A;
+}
+
+.footer-menu-list {
+    margin-top: 28px;
+}
+
+.footer-menu-item:not(:last-child) {
+    margin-bottom: 28px;
+}
+
+.footer-menu-link {
+    font-size: 15px;
+    line-height: 20px;
+    color: #546285;
+
+    &:hover {
+        color: #35B8BE;
+    }
+}
+
+.footer-bottom {
+    align-items: center;
+}
+
+.footer-bottom-text {
+    font-size: 15px;
+    line-height: 20px;
+    color: #353448;
+
+    span {
+        color: #35B8BE;
+    }
+}
+
+.footer-social {
+    display: flex;
+    gap: 24px;
+}
+
+.footer-social-link {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #7E828F4D;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+
+    &:hover {
+        background-color: #35B8BE;
+        transition: 0.3s ease;
+    }
+}
