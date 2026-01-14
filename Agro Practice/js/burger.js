@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-let mobileMenuLinks = document.querySelectorAll('.mobile-menu__link, .mobile-menu-phone__link');
+let mobileMenuLinks = document.querySelectorAll('.mobile-menu__link');
 mobileMenuLinks.forEach(link => {
     link.addEventListener('click', () => {
         burger.classList.remove('active');
