@@ -286,6 +286,62 @@ footer {
     text-transform: uppercase;
 }
 
+/*----------------------------------Agro practice----------------------------------*/
+.agro__practice-container {
+    width: 100%;
+}
+
+.agro__practice-item{
+    display: flex;
+    justify-content: space-between;
+    gap: 66px;
+    
+    &:not(:nth-child(4), :last-child) {
+        margin-bottom: 70px;
+    }
+}
+
+.agro__practice-image {
+    width: 192px;
+    height: 166px;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: 0.4s;
+    
+        &:hover {
+            scale: 1.1;
+        }
+    }
+}
+
+.agro__practice-text {
+    width: 1042px;
+    font-size: 24px;
+    
+    p:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+
+.agro__practice-title {
+    width: 800px;
+    font-size: 96px;
+    text-align: center;
+    background-image: url('../img/agro_practice/image5.jpg');
+    background-size: contain;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    margin: 50px auto;
+}
+
+/*----------------------------------      ----------------------------------*/
+
 
 
 
@@ -468,6 +524,35 @@ footer {
     .hero-form {
         width: 100%;
         padding: 50px;
+    }
+
+    /*-----------------------------Agro practice-----------------------------*/
+    .agro__practice-item {
+        gap: 35px;
+
+        &:not(:nth-child(4), :last-child) {
+            margin-bottom: 50px;
+        }
+    }
+
+    .agro__practice-image {
+        width: 181px;
+        height: 181px;
+    }
+
+    .agro__practice-text {
+        width: 471px;
+        font-size: 16px;
+
+        p:not(:last-child) {
+            margin-bottom: 15px;
+        }
+    }
+
+    .agro__practice-title {
+        width: 100%;
+        font-size: 72px;
+        margin: 40px auto;
     }
 }       
 
@@ -743,6 +828,45 @@ footer {
             }
         }
     }
+
+    /*-----------------------------Agro practice-----------------------------*/
+    .agro__practice-item {
+        flex-direction: column;
+        align-items: center;
+        gap: 35px;
+
+        &:nth-child(2),
+        &:nth-child(4),
+        &:nth-child(7) {
+            flex-direction: column-reverse;
+        }
+
+        &:not(:nth-child(4), :last-child) {
+            margin-bottom: 35px;
+        }
+    }
+
+    .agro__practice-image {
+        width: 192px;
+        height: 166px;
+    }
+
+    .agro__practice-text {
+        width: 100%;
+        font-size: 14px;
+        text-align: center;
+
+        p:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+
+    .agro__practice-title {
+        width: 100%;
+        font-size: 72px;
+        margin: 40px auto;
+    }
+
 }      
 
 
