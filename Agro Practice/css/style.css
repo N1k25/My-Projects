@@ -340,7 +340,53 @@ footer {
     margin: 50px auto;
 }
 
-/*----------------------------------      ----------------------------------*/
+/*----------------------------------Team----------------------------------*/
+.team {
+    margin-top: 120px;
+    background: linear-gradient(#FFFFFF, #FFFFFF00), linear-gradient(#FFFFFF, #FFFFFF00), url('../img/team/field.jpg') no-repeat bottom;
+    background-size: cover;
+    position: relative;
+}
+
+.team-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-title {
+    font-size: 36px;
+    text-transform: uppercase;
+
+    span {
+        color: #36A74C;
+    }
+}
+
+.team-desc {
+    width: 525px;
+    text-align: center;
+    line-height: 200%;
+    margin-top: 50px;
+}
+
+.team-img {
+    width: 75.6%;
+}
+
+.logo-bkg-text {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 15%;
+    font-size: 144px;
+    opacity: 5%;
+    text-transform: uppercase;
+}
+
+/*----------------------------------Footer----------------------------------*/
+
 
 
 
@@ -554,6 +600,27 @@ footer {
         font-size: 72px;
         margin: 40px auto;
     }
+
+    /*-----------------------------Team-----------------------------*/
+    .team {
+        margin-top: 80px;
+    }
+
+    .team-desc {
+        width: 450px;
+        font-size: 16px;
+        margin-top: 35px;
+    }
+
+    .team-img {
+        width: 100%;
+    }
+
+    .logo-bkg-text {
+        font-size: 64px;
+        top: 20%;
+    }
+
 }       
 
 
@@ -862,11 +929,33 @@ footer {
     }
 
     .agro__practice-title {
-        width: 100%;
-        font-size: 72px;
+        width: 280px;
+        font-size: 30px;
         margin: 40px auto;
     }
 
+    /*-----------------------------Team-----------------------------*/
+    .team {
+        margin-top: 50px;
+    }
+
+    .team-title {
+        font-size: 24px;
+    }
+
+    .team-desc {
+        width: 280px;
+        font-size: 14px;
+        margin-top: 25px;
+    }
+
+    .team-img {
+        width: 100%;
+    }
+
+    .logo-bkg-text {
+        font-size: 28px;
+        top: 35%;
+    }
+
 }      
-
-
