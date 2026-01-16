@@ -1,6 +1,9 @@
 @import url("reset.css");
-
 @import url(https://fonts.googleapis.com/css?family=Days+One:regular&display=swap);
+
+html {
+    scroll-behavior: smooth;
+}
 
 .wrapper {
     max-width: 1440px;
