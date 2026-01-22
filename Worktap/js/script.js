@@ -1,0 +1,6 @@
+const findFieldEl = document.querySelector('.find__field');
+const findButtonnEl = document.querySelector('.find__btn');
+
+findButtonnEl.addEventListener('click', () => {
+    findFieldEl.value = '';
+});
