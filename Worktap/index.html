@@ -16,262 +16,282 @@
 	<!-- Отображаемое тело страницы -->
 	<body>
 		<div class="wrapper">
-			<div class="container">
-				<header class="header">
-					<div class="header-left">
-						<a href="#" class="header-logo">
-							<img src="./img/header/logo.png" alt="Worktap Logo"/>
-						</a>
-						<nav class="header-menu">
-							<ul>
-								<li><a href="#">Биржа</a></li>
-								<li><a href="#">Ворки</a></li>
-								<li><a href="#">Конкурсы</a></li>
-								<li><a href="#">Создать ворк</a></li>
-								<li><a href="#">Создать заказ</a></li>
+			<header class="header container">
+				<div class="header-left">
+					<a href="#" class="header-logo">
+						<img src="./img/header/logo.png" alt="Worktap Logo"/>
+					</a>
+					<nav class="header-menu">
+						<ul>
+							<li><a href="#">Биржа</a></li>
+							<li><a href="#">Ворки</a></li>
+							<li><a href="#">Конкурсы</a></li>
+							<li><a href="#">Создать ворк</a></li>
+							<li><a href="#">Создать заказ</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header-services">
+					<a href="#" class="registration__link header-services__link">Регистрация</a>
+					<a href="#" class="login__link header-services__link">Войти</a>
+				</div>
+			</header>
+			<main class="page">
+				<section class="hero container">
+					<div class="hero-content">
+						<h1 class="hero-title">Покупайте фриланс-услуги в <span>два клика</span></h1>
+						<p class="hero-desc">Ворк — единица работы продавца, которую можно купить как товар в магазине</p>
+						<div class="hero-form">
+							<input type="text" class="find__field" placeholder="Что нужно сделать?">
+							<button type="button" class="find__btn">Найти</button>
+						</div>
+						<div class="hero-categories">
+							<h4 class="hero-categories-title">Выберите рубрику, чтобы начать</h4>
+							<ul class="hero-categories-list">
+								<li class="hero-categories-item">
+									<a href="#" class="hero-categories-link">Тексты и переводы</a>
+								</li>
+								<li class="hero-categories-item">
+									<a href="#" class="hero-categories-link">Разработка</a>
+								</li>
+								<li class="hero-categories-item">
+									<a href="#" class="hero-categories-link">Дизайн</a>
+								</li>
+								<li class="hero-categories-item">
+									<a href="#" class="hero-categories-link">Аудио, видео монтаж</a>
+								</li>
+								<li class="hero-categories-item">
+									<a href="#" class="hero-categories-link">SEO и оптимизация</a>
+								</li>
+								<li class="hero-categories-item">
+									<a href="#" class="hero-categories-link">Бизнес и жизнь</a>
+								</li>
+								<li class="hero-categories-item">
+									<a href="#" class="hero-categories-link">Соцсети и реклама</a>
+								</li>
+								<li class="hero-categories-item">
+									<a href="#" class="hero-categories-link">Все категории</a>
+								</li>
 							</ul>
-						</nav>
+						</div>
 					</div>
-					<div class="header-services">
-						<a href="#" class="registration__link header-services__link">Регистрация</a>
-						<a href="#" class="login__link header-services__link">Войти</a>
+					<div class="hero-images">
+						<!-- <div class="hero__photo-wrap">
+							<img src="./img/hero/businessman.png" alt="businessman" class="hero__photo">
+						</div>
+						<img src="./img/hero/tooltip-star.png" alt="tooltip-star" class="hero__tooltip">
+						<img src="./img/hero/dots.svg" alt="dots" class="hero__dots">
+						<img src="./img/hero/dots-grey.svg" alt="dots-grey" class="hero__dots-grey">
+						<img src="./img/hero/vawes.svg" alt="vawes" class="hero__vawes">
+						<div class="hero-rating">
+							<img src="./img/hero/star.svg" alt="star">
+							<img src="./img/hero/star.svg" alt="star">
+							<img src="./img/hero/star.svg" alt="star">
+							<img src="./img/hero/star.svg" alt="star">
+							<img src="./img/hero/star.svg" alt="star">
+						</div>
+						<div class="hero-circle__small"></div>
+						<div class="hero-circle__large"></div> -->
 					</div>
-				</header>
-				<main class="page">
-					<section class="hero">
-						<div class="hero-content">
-							<h1 class="hero-title">Покупайте фриланс-услуги в <span>два клика</span></h1>
-							<p class="hero-desc">Ворк — единица работы продавца, которую можно купить как товар в магазине</p>
-							<div class="hero-form">
-								<input type="text" class="find__field" placeholder="Что нужно сделать?">
-								<button type="button" class="find__btn">Найти</button>
+				</section>
+				<section class="works container">
+					<h2 class="works-title">Актуальные ворки</h2>
+					<div class="works-body">
+						<div class="works-card">
+							<div class="works-card-header">
+								<img src="./img/works/photo1.png" alt="photo1" class="works-card-photo">
+								<h3 class="works-card-title">Сделать дизайн<br>интернет-магазина</h3>
 							</div>
-							<div class="hero-categories">
-								<h4 class="hero-categories-title">Выберите рубрику, чтобы начать</h4>
-								<ul class="hero-categories-list">
-									<li class="hero-categories-item">
-										<a href="#" class="hero-categories-link">Тексты и переводы</a>
-									</li>
-									<li class="hero-categories-item">
-										<a href="#" class="hero-categories-link">Разработка</a>
-									</li>
-									<li class="hero-categories-item">
-										<a href="#" class="hero-categories-link">Дизайн</a>
-									</li>
-									<li class="hero-categories-item">
-										<a href="#" class="hero-categories-link">Аудио, видео монтаж</a>
-									</li>
-									<li class="hero-categories-item">
-										<a href="#" class="hero-categories-link">SEO и оптимизация</a>
-									</li>
-									<li class="hero-categories-item">
-										<a href="#" class="hero-categories-link">Бизнес и жизнь</a>
-									</li>
-									<li class="hero-categories-item">
-										<a href="#" class="hero-categories-link">Соцсети и реклама</a>
-									</li>
-									<li class="hero-categories-item">
-										<a href="#" class="hero-categories-link">Все категории</a>
-									</li>
-								</ul>
-							</div>
+							<p class="works-card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed leo at hendrerit dictum diam, enim. Dolor in imperdiet ultrices mauris. Est vitae vulputate est nec cras. Turpis nunc ornare nulla neque, interdum. At pharetra consectetur nec est convallis...</p>
+							<a href="#" class="works-card-link">Посмотреть</a>
 						</div>
-						<div class="hero-images">
-							<!-- <div class="hero__photo-wrap">
-								<img src="./img/hero/businessman.png" alt="businessman" class="hero__photo">
+						<div class="works-card">
+							<div class="works-card-header">
+								<img src="./img/works/photo2.png" alt="photo2" class="works-card-photo">
+								<h3 class="works-card-title">Верстка landing page</h3>
 							</div>
-							<img src="./img/hero/tooltip-star.png" alt="tooltip-star" class="hero__tooltip">
-							<img src="./img/hero/dots.svg" alt="dots" class="hero__dots">
-							<img src="./img/hero/dots-grey.svg" alt="dots-grey" class="hero__dots-grey">
-							<img src="./img/hero/vawes.svg" alt="vawes" class="hero__vawes">
-							<div class="hero-rating">
-								<img src="./img/hero/star.svg" alt="star">
-								<img src="./img/hero/star.svg" alt="star">
-								<img src="./img/hero/star.svg" alt="star">
-								<img src="./img/hero/star.svg" alt="star">
-								<img src="./img/hero/star.svg" alt="star">
-							</div>
-							<div class="hero-circle__small"></div>
-							<div class="hero-circle__large"></div> -->
+							<p class="works-card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed leo at hendrerit dictum diam, enim. Dolor in imperdiet ultrices mauris. Est vitae vulputate est nec cras. Turpis nunc ornare nulla neque, interdum. At pharetra consectetur nec est convallis...</p>
+							<a href="#" class="works-card-link">Посмотреть</a>
 						</div>
-					</section>
-					<section class="works">
-						<h2 class="works-title">Актуальные ворки</h2>
-						<div class="works-body">
-							<div class="works-card">
-								<div class="works-card-header">
-									<img src="./img/works/photo1.png" alt="photo1" class="works-card-photo">
-									<h3 class="works-card-title">Сделать дизайн<br>интернет-магазина</h3>
-								</div>
-								<p class="works-card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed leo at hendrerit dictum diam, enim. Dolor in imperdiet ultrices mauris. Est vitae vulputate est nec cras. Turpis nunc ornare nulla neque, interdum. At pharetra consectetur nec est convallis...</p>
-								<a href="#" class="works-card-link">Посмотреть</a>
+						<div class="works-card">
+							<div class="works-card-header">
+								<img src="./img/works/photo3.png" alt="photo3" class="works-card-photo">
+								<h3 class="works-card-title">Сделать дизайн сайта-каталога и посадить на какой нибудь ко...</h3>
 							</div>
-							<div class="works-card">
-								<div class="works-card-header">
-									<img src="./img/works/photo2.png" alt="photo2" class="works-card-photo">
-									<h3 class="works-card-title">Верстка landing page</h3>
-								</div>
-								<p class="works-card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed leo at hendrerit dictum diam, enim. Dolor in imperdiet ultrices mauris. Est vitae vulputate est nec cras. Turpis nunc ornare nulla neque, interdum. At pharetra consectetur nec est convallis...</p>
-								<a href="#" class="works-card-link">Посмотреть</a>
-							</div>
-							<div class="works-card">
-								<div class="works-card-header">
-									<img src="./img/works/photo3.png" alt="photo3" class="works-card-photo">
-									<h3 class="works-card-title">Сделать дизайн сайта-каталога и посадить на какой нибудь ко...</h3>
-								</div>
-								<p class="works-card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed leo at hendrerit dictum diam, enim. Dolor in imperdiet ultrices mauris. Est vitae vulputate est nec cras. Turpis nunc ornare nulla neque, interdum. At pharetra consectetur nec est convallis...</p>
-								<a href="#" class="works-card-link">Посмотреть</a>
-							</div>
-							<div class="works-card">
-								<div class="works-card-header">
-									<img src="./img/works/photo4.png" alt="photo4" class="works-card-photo">
-									<h3 class="works-card-title">Продвижение instagram</h3>
-								</div>
-								<p class="works-card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed leo at hendrerit dictum diam, enim. Dolor in imperdiet ultrices mauris. Est vitae vulputate est nec cras. Turpis nunc ornare nulla neque, interdum. At pharetra consectetur nec est convallis...</p>
-								<a href="#" class="works-card-link">Посмотреть</a>
-							</div>
-							<div class="works-card">
-								<div class="works-card-header">
-									<img src="./img/works/photo5.png" alt="photo5" class="works-card-photo">
-									<h3 class="works-card-title">Срочно! Нужен веб дизайнер!</h3>
-								</div>
-								<p class="works-card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed leo at hendrerit dictum diam, enim. Dolor in imperdiet ultrices mauris. Est vitae vulputate est nec cras. Turpis nunc ornare nulla neque, interdum. At pharetra consectetur nec est convallis...</p>
-								<a href="#" class="works-card-link">Посмотреть</a>
-							</div>
-							<div class="works-card">
-								<a href="#" class="works-card-link">Смотреть все ворки</a>
-							</div>
+							<p class="works-card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed leo at hendrerit dictum diam, enim. Dolor in imperdiet ultrices mauris. Est vitae vulputate est nec cras. Turpis nunc ornare nulla neque, interdum. At pharetra consectetur nec est convallis...</p>
+							<a href="#" class="works-card-link">Посмотреть</a>
 						</div>
-					</section>
-					<section class="freelancers">
-						<h2 class="freelancers-title">Топ фрилансеров</h2>
-						<div class="freelancers-body">
-							<div class="freelancers-card">
-								<div class="freelancers-card-header">
-									<img src="./img/freelancers/photo1.png" alt="photo1" class="freelancers-card-photo">
-									<div class="freelancers-card-photo__dot"></div>
-									<div class="freelancers-card-person__data">
-										<h3 class="freelancers-card-person__name">Марина Королёва</h3>
-										<p class="freelancers-card-person__position">Разработчик PHP  </p>
-										<p class="freelancers-card-person__jobs">Выполено проектов: 65</p>
-										<div class="freelancers-card-person__rating">
-											<img src="./img/freelancers/star-yellow.svg" alt="Person rating star yellow">
-											<img src="./img/freelancers/star-yellow.svg" alt="Person rating star yellow">
-											<img src="./img/freelancers/star-yellow.svg" alt="Person rating star yellow">
-											<img src="./img/freelancers/star-yellow.svg" alt="Person rating star yellow">
-											<img src="./img/freelancers/star-gray.svg" alt="Person rating star gray">
-											<img src="./img/freelancers/half_stars-yellow.svg" alt="Person rating half star gray">
-										</div>
+						<div class="works-card">
+							<div class="works-card-header">
+								<img src="./img/works/photo4.png" alt="photo4" class="works-card-photo">
+								<h3 class="works-card-title">Продвижение instagram</h3>
+							</div>
+							<p class="works-card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed leo at hendrerit dictum diam, enim. Dolor in imperdiet ultrices mauris. Est vitae vulputate est nec cras. Turpis nunc ornare nulla neque, interdum. At pharetra consectetur nec est convallis...</p>
+							<a href="#" class="works-card-link">Посмотреть</a>
+						</div>
+						<div class="works-card">
+							<div class="works-card-header">
+								<img src="./img/works/photo5.png" alt="photo5" class="works-card-photo">
+								<h3 class="works-card-title">Срочно! Нужен веб дизайнер!</h3>
+							</div>
+							<p class="works-card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed leo at hendrerit dictum diam, enim. Dolor in imperdiet ultrices mauris. Est vitae vulputate est nec cras. Turpis nunc ornare nulla neque, interdum. At pharetra consectetur nec est convallis...</p>
+							<a href="#" class="works-card-link">Посмотреть</a>
+						</div>
+						<div class="works-card">
+							<a href="#" class="works-card-link">Смотреть все ворки</a>
+						</div>
+					</div>
+				</section>
+				<section class="freelancers container">
+					<h2 class="freelancers-title">Топ фрилансеров</h2>
+					<div class="freelancers-body">
+						<div class="freelancers-card">
+							<div class="freelancers-card-header">
+								<img src="./img/freelancers/photo1.png" alt="photo1" class="freelancers-card-photo">
+								<div class="freelancers-card-photo__dot"></div>
+								<div class="freelancers-card-person__data">
+									<h3 class="freelancers-card-person__name">Марина Королёва</h3>
+									<p class="freelancers-card-person__position">Разработчик PHP  </p>
+									<p class="freelancers-card-person__jobs">Выполено проектов: 65</p>
+									<div class="freelancers-card-person__rating">
+										<img src="./img/freelancers/star-yellow.svg" alt="Person rating star yellow">
+										<img src="./img/freelancers/star-yellow.svg" alt="Person rating star yellow">
+										<img src="./img/freelancers/star-yellow.svg" alt="Person rating star yellow">
+										<img src="./img/freelancers/star-yellow.svg" alt="Person rating star yellow">
+										<img src="./img/freelancers/star-gray.svg" alt="Person rating star gray">
+										<img src="./img/freelancers/half_stars-yellow.svg" alt="Person rating half star gray">
 									</div>
 								</div>
-								<a href="#" class="freelancers-card-link">Написать</a>
 							</div>
-							<div class="freelancers-card">
-								<div class="freelancers-card-header">
-									<img src="./img/freelancers/photo2.png" alt="photo2" class="freelancers-card-photo">
-									<div class="freelancers-card-photo__dot"></div>
-									<div class="freelancers-card-person__data">
-										<h3 class="freelancers-card-person__name">Семён Сергеев</h3>
-										<p class="freelancers-card-person__position">Копирайтер</p>
-										<p class="freelancers-card-person__jobs">Выполено проектов: 104</p>
-										<div class="freelancers-card-person__rating">
-											<img src="./img/freelancers/star-yellow.svg" alt="Person rating star yellow">
-											<img src="./img/freelancers/star-yellow.svg" alt="Person rating star yellow">
-											<img src="./img/freelancers/star-yellow.svg" alt="Person rating star yellow">
-											<img src="./img/freelancers/star-yellow.svg" alt="Person rating star yellow">
-											<img src="./img/freelancers/star-gray.svg" alt="Person rating star gray">
-										</div>
-									</div>
-								</div>
-								<a href="#" class="freelancers-card-link">Написать</a>
-							</div>
-							<div class="freelancers-card">
-								<div class="freelancers-card-header">
-									<img src="./img/freelancers/photo3.png" alt="photo3" class="freelancers-card-photo">
-									<div class="freelancers-card-photo__dot"></div>
-									<div class="freelancers-card-person__data">
-										<h3 class="freelancers-card-person__name">Ангелина Сорокина</h3>
-										<p class="freelancers-card-person__position">Дизайнер сайтов</p>
-										<p class="freelancers-card-person__jobs">Выполено проектов: 25</p>
-										<div class="freelancers-card-person__rating">
-											<img src="./img/freelancers/star-yellow.svg" alt="Person rating star yellow">
-											<img src="./img/freelancers/star-yellow.svg" alt="Person rating star yellow">
-											<img src="./img/freelancers/star-yellow.svg" alt="Person rating star yellow">
-											<img src="./img/freelancers/star-yellow.svg" alt="Person rating star yellow">
-											<img src="./img/freelancers/star-yellow.svg" alt="Person rating star yellow">
-										</div>
-									</div>
-								</div>
-								<a href="#" class="freelancers-card-link">Написать</a>
-							</div>
-							<div class="freelancers-card">
-								<div class="freelancers-card-header">
-									<img src="./img/freelancers/photo4.png" alt="photo4" class="freelancers-card-photo">
-									<div class="freelancers-card-photo__dot"></div>
-									<div class="freelancers-card-person__data">
-										<h3 class="freelancers-card-person__name">Никита Зайцев</h3>
-										<p class="freelancers-card-person__position">Маркетолог</p>
-										<p class="freelancers-card-person__jobs">Выполено проектов: 144</p>
-										<div class="freelancers-card-person__rating">
-											<img src="./img/freelancers/star-yellow.svg" alt="Person rating star yellow">
-											<img src="./img/freelancers/star-yellow.svg" alt="Person rating star yellow">
-											<img src="./img/freelancers/star-yellow.svg" alt="Person rating star yellow">
-											<img src="./img/freelancers/star-yellow.svg" alt="Person rating star yellow">
-											<img src="./img/freelancers/star-gray.svg" alt="Person rating star gray">
-										</div>
-									</div>
-								</div>
-								<a href="#" class="freelancers-card-link">Написать</a>
-							</div>
-							<div class="freelancers-card">
-								<div class="freelancers-card-header">
-									<img src="./img/freelancers/photo5.png" alt="photo5" class="freelancers-card-photo">
-									<div class="freelancers-card-photo__dot"></div>
-									<div class="freelancers-card-person__data">
-										<h3 class="freelancers-card-person__name">Наталья Захарова</h3>
-										<p class="freelancers-card-person__position">Motion дизайнер </p>
-										<p class="freelancers-card-person__jobs">Выполено проектов: 71</p>
-										<div class="freelancers-card-person__rating">
-											<img src="./img/freelancers/star-yellow.svg" alt="Person rating star yellow">
-											<img src="./img/freelancers/star-yellow.svg" alt="Person rating star yellow">
-											<img src="./img/freelancers/star-yellow.svg" alt="Person rating star yellow">
-											<img src="./img/freelancers/star-yellow.svg" alt="Person rating star yellow">
-											<img src="./img/freelancers/star-yellow.svg" alt="Person rating star yellow">
-										</div>
-									</div>
-								</div>
-								<a href="#" class="freelancers-card-link">Написать</a>
-							</div>
-							<div class="freelancers-card">
-								<a href="#" class="freelancers-card-link">Посмотреть всех ТОП фрилансеров</a>
-							</div>
+							<a href="#" class="freelancers-card-link">Написать</a>
 						</div>
-					</section>
-					<section class="solve__problems">
-						<h2 class="solve__problems-title">Как решать задачи на WorkTap?</h2>
-						<p class="solve__problems-desc">Идеально подходит для бизнеса и частных лиц</p>
-						<div class="solve__problems-body">
-							<div class="solve__problems-card">
-								<img src="./img/solve_problems/icon1.svg" alt="icon1" class="solve__problems-icon">
-								<h3 class="solve__problems-card-title">Выберите услугу</h3>
-								<p class="solve__problems-card-desc">В супермаркете WorkTap представлен широкий выбор услуг от квалифицированных специалистов.</p>
+						<div class="freelancers-card">
+							<div class="freelancers-card-header">
+								<img src="./img/freelancers/photo2.png" alt="photo2" class="freelancers-card-photo">
+								<div class="freelancers-card-photo__dot"></div>
+								<div class="freelancers-card-person__data">
+									<h3 class="freelancers-card-person__name">Семён Сергеев</h3>
+									<p class="freelancers-card-person__position">Копирайтер</p>
+									<p class="freelancers-card-person__jobs">Выполено проектов: 104</p>
+									<div class="freelancers-card-person__rating">
+										<img src="./img/freelancers/star-yellow.svg" alt="Person rating star yellow">
+										<img src="./img/freelancers/star-yellow.svg" alt="Person rating star yellow">
+										<img src="./img/freelancers/star-yellow.svg" alt="Person rating star yellow">
+										<img src="./img/freelancers/star-yellow.svg" alt="Person rating star yellow">
+										<img src="./img/freelancers/star-gray.svg" alt="Person rating star gray">
+									</div>
+								</div>
 							</div>
-							<div class="solve__problems-card">
-								<img src="./img/solve_problems/icon2.svg" alt="icon2" class="solve__problems-icon">
-								<h3 class="solve__problems-card-title">Оплатите</h3>
-								<p class="solve__problems-card-desc">Деньги будут перечислены продавцу после того, как он выполнит работу, и вы её одобрите. </p>
-							</div>
-							<div class="solve__problems-card">
-								<img src="./img/solve_problems/icon3.svg" alt="icon3" class="solve__problems-icon">
-								<h3 class="solve__problems-card-title">Получите результат</h3>
-								<p class="solve__problems-card-desc">Наш супермаркет гарантирует вам возврат средств в полном объёме в случае невыполнения заказа.</p>
-							</div>
+							<a href="#" class="freelancers-card-link">Написать</a>
 						</div>
-					</section>
-					<section class="helps__business"></section>
-				</main>
-				<footer class="footer"></footer>
-			</div>
+						<div class="freelancers-card">
+							<div class="freelancers-card-header">
+								<img src="./img/freelancers/photo3.png" alt="photo3" class="freelancers-card-photo">
+								<div class="freelancers-card-photo__dot"></div>
+								<div class="freelancers-card-person__data">
+									<h3 class="freelancers-card-person__name">Ангелина Сорокина</h3>
+									<p class="freelancers-card-person__position">Дизайнер сайтов</p>
+									<p class="freelancers-card-person__jobs">Выполено проектов: 25</p>
+									<div class="freelancers-card-person__rating">
+										<img src="./img/freelancers/star-yellow.svg" alt="Person rating star yellow">
+										<img src="./img/freelancers/star-yellow.svg" alt="Person rating star yellow">
+										<img src="./img/freelancers/star-yellow.svg" alt="Person rating star yellow">
+										<img src="./img/freelancers/star-yellow.svg" alt="Person rating star yellow">
+										<img src="./img/freelancers/star-yellow.svg" alt="Person rating star yellow">
+									</div>
+								</div>
+							</div>
+							<a href="#" class="freelancers-card-link">Написать</a>
+						</div>
+						<div class="freelancers-card">
+							<div class="freelancers-card-header">
+								<img src="./img/freelancers/photo4.png" alt="photo4" class="freelancers-card-photo">
+								<div class="freelancers-card-photo__dot"></div>
+								<div class="freelancers-card-person__data">
+									<h3 class="freelancers-card-person__name">Никита Зайцев</h3>
+									<p class="freelancers-card-person__position">Маркетолог</p>
+									<p class="freelancers-card-person__jobs">Выполено проектов: 144</p>
+									<div class="freelancers-card-person__rating">
+										<img src="./img/freelancers/star-yellow.svg" alt="Person rating star yellow">
+										<img src="./img/freelancers/star-yellow.svg" alt="Person rating star yellow">
+										<img src="./img/freelancers/star-yellow.svg" alt="Person rating star yellow">
+										<img src="./img/freelancers/star-yellow.svg" alt="Person rating star yellow">
+										<img src="./img/freelancers/star-gray.svg" alt="Person rating star gray">
+									</div>
+								</div>
+							</div>
+							<a href="#" class="freelancers-card-link">Написать</a>
+						</div>
+						<div class="freelancers-card">
+							<div class="freelancers-card-header">
+								<img src="./img/freelancers/photo5.png" alt="photo5" class="freelancers-card-photo">
+								<div class="freelancers-card-photo__dot"></div>
+								<div class="freelancers-card-person__data">
+									<h3 class="freelancers-card-person__name">Наталья Захарова</h3>
+									<p class="freelancers-card-person__position">Motion дизайнер </p>
+									<p class="freelancers-card-person__jobs">Выполено проектов: 71</p>
+									<div class="freelancers-card-person__rating">
+										<img src="./img/freelancers/star-yellow.svg" alt="Person rating star yellow">
+										<img src="./img/freelancers/star-yellow.svg" alt="Person rating star yellow">
+										<img src="./img/freelancers/star-yellow.svg" alt="Person rating star yellow">
+										<img src="./img/freelancers/star-yellow.svg" alt="Person rating star yellow">
+										<img src="./img/freelancers/star-yellow.svg" alt="Person rating star yellow">
+									</div>
+								</div>
+							</div>
+							<a href="#" class="freelancers-card-link">Написать</a>
+						</div>
+						<div class="freelancers-card">
+							<a href="#" class="freelancers-card-link">Посмотреть всех ТОП фрилансеров</a>
+						</div>
+					</div>
+				</section>
+				<section class="solve__problems container">
+					<h2 class="solve__problems-title">Как решать задачи на WorkTap?</h2>
+					<p class="solve__problems-desc">Идеально подходит для бизнеса и частных лиц</p>
+					<div class="solve__problems-body">
+						<div class="solve__problems-card">
+							<img src="./img/solve_problems/icon1.svg" alt="icon1" class="solve__problems-icon">
+							<h3 class="solve__problems-card-title">Выберите услугу</h3>
+							<p class="solve__problems-card-desc">В супермаркете WorkTap представлен широкий выбор услуг от квалифицированных специалистов.</p>
+						</div>
+						<div class="solve__problems-card">
+							<img src="./img/solve_problems/icon2.svg" alt="icon2" class="solve__problems-icon">
+							<h3 class="solve__problems-card-title">Оплатите</h3>
+							<p class="solve__problems-card-desc">Деньги будут перечислены продавцу после того, как он выполнит работу, и вы её одобрите. </p>
+						</div>
+						<div class="solve__problems-card">
+							<img src="./img/solve_problems/icon3.svg" alt="icon3" class="solve__problems-icon">
+							<h3 class="solve__problems-card-title">Получите результат</h3>
+							<p class="solve__problems-card-desc">Наш супермаркет гарантирует вам возврат средств в полном объёме в случае невыполнения заказа.</p>
+						</div>
+					</div>
+				</section>
+				<section class="helps__business">
+					<div class="container">
+						<div class="helps__business-body">
+							<h2 class="helps__business-title">Как WorkTap помогает бизнесу?</h2>
+							<ul class="helps__business-list">
+								<li class="helps__business-item">
+									<img src="./img/helps_business/credit-card.svg" alt="credit-card" class="helps__business-item-icon">
+									<p class="helps__business-item-text">Оплачивайте с р/с или карты компании</p>
+								</li>
+								<li class="helps__business-item">
+									<img src="./img/helps_business/money.svg" alt="money" class="helps__business-item-icon">
+									<p class="helps__business-item-text">Экономьте до 87% бюджета на фрилансе</p>
+								</li>
+								<li class="helps__business-item">
+									<img src="./img/helps_business/clock.svg" alt="clock" class="helps__business-item-icon">
+									<p class="helps__business-item-text">Экономьте до 75% времени на решении фриланс задач</p>
+								</li>
+							</ul>
+							<p class="helps__business-desc">WorkTap — быстро, просто и безопасно!</p>
+							<a href="#" class="helps__business-link">Начать!</a>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer class="footer"></footer>
 		</div>
 	<script src="./js/script.js"></script>
 	</body>

@@ -386,6 +386,10 @@
         background-color: #1DBF73;
         color: #F6FAFD;
     }
+
+    &:active {
+        scale: 0.95;
+    }
 }
 
 /*------------------------------------Freelancers--------------------------------*/
@@ -515,6 +519,10 @@
         background-color: #1DBF73;
         color: #F6FAFD;
     }
+
+    &:active {
+        scale: 0.95;
+    }
 }
 
 /*------------------------------------Solve problems--------------------------------*/
@@ -560,4 +568,74 @@
     margin: 20px 0;
 }
 
-/*------------------------------------    --------------------------------*/
+/*------------------------------------Helps business--------------------------------*/
+.helps__business {
+    height: 734px;
+    padding-top: 50px;
+    /* background: linear-gradient(#E2A401, #E6A901, #E3A401, #E5A800, #EEB301, #EFB400); */
+    background-color: #EEB301;
+    background-image: url('../img/helps_business/workspace.jpg');
+	background-size: 67.7% 100%;
+	background-position: right;
+	background-repeat: no-repeat;
+}
+
+.helps__business-title {
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 2%;
+    color: #F6FAFD;
+}
+
+.helps__business-list {
+    margin: 45px 0 50px 0;
+}
+
+.helps__business-item {
+    width: 533px;
+    padding: 20px;
+    background-color: #F6FAFD;
+    border-radius: 20px;
+    box-shadow: 0 16px 16px #0000000A;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    &:not(:last-child) {
+        margin-bottom: 30px;
+    }
+}
+
+.helps__business-desc {
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 2%;
+    color: #F6FAFD;
+}
+
+.helps__business-link {
+    display: inline-block;
+    padding: 20px 60px;
+    background-color: #5E4EDB;
+    color: #F6FAFD;
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 2%;
+    border-radius: 50px;
+    margin-top: 40px;
+    transition: all 0.3s ease;
+
+    &:hover {
+        translate: 0 -3px;
+    }
+
+    &:active {
+        scale: 0.95;
+    }
+}
+
+.helps__business-photo {
+    height: 734px;
+}
+
+/*------------------------------------   --------------------------------*/
