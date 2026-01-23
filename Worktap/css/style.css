@@ -391,7 +391,6 @@
 /*------------------------------------Freelancers--------------------------------*/
 .freelancers {
     margin-top: 100px;
-    border: 1px solid blue;
 }
 
 .freelancers-title {
@@ -516,6 +515,49 @@
         background-color: #1DBF73;
         color: #F6FAFD;
     }
+}
+
+/*------------------------------------Solve problems--------------------------------*/
+.solve__problems {
+    padding: 100px 0;
+}
+
+.solve__problems-title {
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 2%;
+}
+
+.solve__problems-desc {
+    font-size: 16px;
+    margin: 20px 0 50px 0;
+}
+
+.solve__problems-body {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 26px;
+}
+
+.solve__problems-card {
+    width: 389px;
+
+    &:nth-child(2) {
+        width: 359px;
+    }
+}
+
+.solve__problems-icon {
+    width: 83px;
+    height: 83px;
+}
+
+.solve__problems-card-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 20px 0;
 }
 
 /*------------------------------------    --------------------------------*/
