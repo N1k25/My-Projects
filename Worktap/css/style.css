@@ -39,7 +39,6 @@
     justify-content: space-between;
     margin-top: 30px;
     padding: 20px 0;
-    border: 1px solid blue;
 }
 
 .header-left {
@@ -88,7 +87,6 @@
     justify-content: space-between;
     margin-top: 10px;
     padding: 28px 0 122px 0;
-    border: 1px solid orange;
 }
 
 .hero-content {
@@ -310,4 +308,85 @@
 }
 */
 
-/*------------------------------------      --------------------------------*/
+/*------------------------------------Works--------------------------------*/
+.works {
+    margin-top: 120px;
+    border: 1px solid blue;
+}
+
+.works-title {
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 2%;
+}
+
+.works-body {
+    margin-top: 48px;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 26px;
+}
+
+.works-card {
+    width: 420px;
+    border: 1px solid #F2F0FE;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    transition: all 0.2s ease;
+
+    &:last-child {
+        background-color: #F2F0FE;
+
+        .works-card-link {
+            border: none;
+            font-size: 18px;
+            font-weight: 600;
+        }
+    }
+
+    &:hover {
+        box-shadow: 0 16px 16px #2222220A;
+        translate: 0 -10px;
+        border-radius: 20px;
+    }
+}
+
+.works-card-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.works-card-photo {
+    width: 44px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+}
+
+.works-card-title {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.works-card-link {
+    height: 41px;
+    display: grid;
+    place-items: center;
+    border: 1px solid #1DBF73;
+    border-radius: 50px;
+    font-weight: 500;
+    color: #1DBF73;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: #1DBF73;
+        color: #F6FAFD;
+    }
+}
+
+/*------------------------------------     --------------------------------*/
