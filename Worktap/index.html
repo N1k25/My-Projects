@@ -324,7 +324,7 @@
 							<h3 class="footer-item-title">О Проекте</h3>
 							<ul class="footer-item-list">
 								<li class="footer-item-list__item">
-									<a href="#" class="footer-list-link">О Нас</a>
+									<button class="footer-list-link" id="open-modal__about-btn">О Нас</button>
 								</li>
 								<li class="footer-item-list__item">
 									<a href="#" class="footer-list-link">Как Это Работает</a>
@@ -408,8 +408,25 @@
 					</div>
 					<div class="footer-copyright">Copyright @ 2021  |  WorkTap – Worktap.KZ. All Rights Reserved</div>
 				</div>
+				<div class="modal-about" id="modal-about">
+					<div class="modal__box-about">
+						<button class="modal__about-close-btn" id="close-modal__about-btn">
+							<svg width="23" height="25" viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z"
+									fill="#333333" />
+								<path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z" fill="#333333" />
+							</svg>
+						</button>
+						<h2 class="about-title">О нас</h2>
+
+						<p class="about-desc">WorkTap - онлайн сервис поиска частных специалистов для решения бизнес задач в кратчайшие сроки. Наша платформа объединяет заказчиков услуг, которым необходимо выполнить какую-либо работу, и компетентных специалистов, ищущих подработку или дополнительный заработок.</p>
+
+						<img src="./img/about/image.jpg" alt="image" class="about-img">
+					</div>
+				</div>
 			</footer>
 		</div>
 	<script src="./js/script.js"></script>
+	<script src="./js/modal.js"></script>
 	</body>
 </html>
