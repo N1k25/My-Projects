@@ -56,3 +56,34 @@ document.getElementById("modal-how--it--work").addEventListener('click', event =
     if (event._isClickWithInModal) return;
     event.currentTarget.classList.remove('open');
 });
+
+
+/*------------------------------------Service rules--------------------------------*/
+// Открыть модальное окно
+document.getElementById("open-modal__service--rules").addEventListener("click", function() {
+    document.getElementById("modal-service--rules").classList.add("open")
+})
+
+// Закрыть модальное окно
+document.getElementById("close-modal__service--rules-btn").addEventListener("click", function() {
+    document.getElementById("modal-service--rules").classList.remove("open")
+})
+document.getElementById("service--rules-btn").addEventListener("click", function() {
+    document.getElementById("modal-service--rules").classList.remove("open")
+})
+
+// Закрыть модальное окно при нажатии на Esc
+window.addEventListener('keydown', (e) => {
+    if (e.key === "Escape") {
+        document.getElementById("modal-service--rules").classList.remove("open")
+    }
+});
+
+// Закрыть модальное окно при клике вне его
+document.querySelector("#modal-service--rules .modal__box-service--rules").addEventListener('click', event => {
+    event._isClickWithInModal = true;
+});
+document.getElementById("modal-service--rules").addEventListener('click', event => {
+    if (event._isClickWithInModal) return;
+    event.currentTarget.classList.remove('open');
+});

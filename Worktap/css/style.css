@@ -714,7 +714,8 @@
 
 /*------------------------------------About--------------------------------*/
 .modal-about,
-.modal-how--it--work {
+.modal-how--it--work,
+.modal-service--rules {
     position: fixed;
     left: 0;
     top: 0;
@@ -732,7 +733,8 @@
 }
 
 .modal__box-about,
-.modal__box-how--it--work {
+.modal__box-how--it--work,
+.modal__box-service--rules {
     position: relative;
     max-width: 1280px;
     border-radius: 20px;
@@ -749,7 +751,8 @@
 }
 
 .about-title,
-.how--it--work-title {
+.how--it--work-title,
+.service--rules-title {
     font-weight: 600;
     font-size: 24px;
     letter-spacing: 2%;
@@ -770,7 +773,8 @@
 }
 
 .modal__about-close-btn,
-.modal__how--it--work-close-btn {
+.modal__how--it--work-close-btn,
+.modal__service--rules-close-btn {
     position: absolute;
     top: 8px;
     right: 8px;
@@ -782,28 +786,33 @@
 }
 
 .modal__about-close-btn svg path,
-.modal__how--it--work-close-btn svg path {
+.modal__how--it--work-close-btn svg path,
+.modal__service--rules-close-btn svg path {
     transition: fill .4s;
 }
 
 .modal__about-close-btn:hover svg path,
-.modal__how--it--work-close-btn:hover svg path {
+.modal__how--it--work-close-btn:hover svg path,
+.modal__service--rules-close-btn:hover svg path {
     fill: blue;
 }
 
 .modal__about-close-btn:active svg path,
-.modal__how--it--work-close-btn:active svg path {
+.modal__how--it--work-close-btn:active svg path,
+.modal__service--rules-close-btn:active svg path {
     fill: rgb(186, 53, 0);
 }
 
 .modal-about.open,
-.modal-how--it--work.open {
+.modal-how--it--work.open,
+.modal-service--rules.open {
     visibility: visible;
     opacity: 1;
 }
 
 .modal-about.open .modal__box-about,
-.modal-how--it--work.open .modal__box-how--it--work {
+.modal-how--it--work.open .modal__box-how--it--work,
+.modal-service--rules.open .modal__box-service--rules {
     transform: scale(1);
 }
 
@@ -850,7 +859,8 @@
     font-size: 16px;
 }
 
-.how--it--work-btn {
+.how--it--work-btn,
+.service--rules-btn {
     width: 380px;
     height: 41px;
     background-color: #1DBF73;
@@ -865,3 +875,29 @@
     }
 }
 
+/*------------------------------------Service rules--------------------------------*/
+.modal__box-service--rules {
+    padding: 40px;
+}
+
+.service--rules-desc {
+    height: 519px;
+    margin: 20px 0 31px 0;
+    text-align: left;
+    overflow-y: scroll;
+}
+
+.service--rules-desc-title {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.service--rules-desc-text {
+    line-height: 150%;
+
+    &:not(:last-child) {
+        margin-bottom: 10px;
+    }
+}
+
+/*------------------------------------    --------------------------------*/
