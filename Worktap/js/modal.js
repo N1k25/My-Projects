@@ -87,3 +87,34 @@ document.getElementById("modal-service--rules").addEventListener('click', event 
     if (event._isClickWithInModal) return;
     event.currentTarget.classList.remove('open');
 });
+
+
+/*------------------------------------Security policy--------------------------------*/
+// Открыть модальное окно
+document.getElementById("open-modal__security--policy").addEventListener("click", function() {
+    document.getElementById("modal-security--policy").classList.add("open")
+})
+
+// Закрыть модальное окно
+document.getElementById("close-modal__security--policy-btn").addEventListener("click", function() {
+    document.getElementById("modal-security--policy").classList.remove("open")
+})
+document.getElementById("security--policy-btn").addEventListener("click", function() {
+    document.getElementById("modal-security--policy").classList.remove("open")
+})
+
+// Закрыть модальное окно при нажатии на Esc
+window.addEventListener('keydown', (e) => {
+    if (e.key === "Escape") {
+        document.getElementById("modal-security--policy").classList.remove("open")
+    }
+});
+
+// Закрыть модальное окно при клике вне его
+document.querySelector("#modal-security--policy .modal__box-security--policy").addEventListener('click', event => {
+    event._isClickWithInModal = true;
+});
+document.getElementById("modal-security--policy").addEventListener('click', event => {
+    if (event._isClickWithInModal) return;
+    event.currentTarget.classList.remove('open');
+});
