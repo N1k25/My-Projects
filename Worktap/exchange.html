@@ -10,6 +10,7 @@
 		<link rel="icon" type="image/png" href="img/favicon.ico"/>
 		<!-- Подключаем CSS -->
 		<link rel="stylesheet" href="./css/style.css"/>
+		<link rel="stylesheet" href="./css/exchange.css"/>
 		<!-- Кодировка страницы -->
 		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
 	</head>
@@ -18,12 +19,12 @@
 		<div class="wrapper">
 			<header class="header container">
 				<div class="header-left">
-					<a href="#" class="header-logo">
+					<a href="./index.html" class="header-logo">
 						<img src="./img/header/logo.png" alt="Worktap Logo"/>
 					</a>
 					<nav class="header-menu">
 						<ul>
-							<li><a href="./exchange.html">Биржа</a></li>
+							<li><a href="#">Биржа</a></li>
 							<li><a href="#">Ворки</a></li>
 							<li><a href="#">Конкурсы</a></li>
 							<li><a href="#">Создать ворк</a></li>
@@ -31,13 +32,42 @@
 						</ul>
 					</nav>
 				</div>
-				<div class="header-services">
-					<a href="#" class="registration__link header-services__link">Регистрация</a>
-					<a href="#" class="login__link header-services__link">Войти</a>
+				<div class="header__authorization">
+					<div class="header__authorization-user--service">
+						<!-- <img src="./exchange/img/header/star.svg" alt="Закладка" class="header__authorization-user--service-icon"/> -->
+						<svg class="header__authorization-user--service-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M5.99962 14.4L1.65082 10.8C0.830016 10.1436 1.19002 8.8236 2.23162 8.6748L8.39962 8.4L11.0336 1.7964C11.1233 1.617 11.2612 1.46612 11.4318 1.36066C11.6024 1.25521 11.799 1.19936 11.9996 1.19936C12.2002 1.19936 12.3968 1.25521 12.5674 1.36066C12.738 1.46612 12.8759 1.617 12.9656 1.7964L15.5996 8.4L21.7676 8.6748C22.8092 8.8236 23.1692 10.1436 22.3484 10.8L17.9996 14.4L19.1864 21.4284C19.2174 21.6452 19.1885 21.8663 19.1028 22.0678C19.0171 22.2693 18.8779 22.4435 18.7003 22.5716C18.5226 22.6997 18.3134 22.7767 18.0951 22.7943C17.8768 22.8119 17.6579 22.7695 17.462 22.6716L11.9996 19.2L6.53722 22.6704C6.34134 22.7683 6.12241 22.8107 5.90415 22.7931C5.68588 22.7755 5.4766 22.6985 5.29897 22.5704C5.12134 22.4423 4.98214 22.2681 4.89645 22.0666C4.81075 21.8651 4.78183 21.644 4.81282 21.4272L5.99962 14.4Z" fill="currentColor"/>
+						</svg>
+						<svg class="header__authorization-user--service-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M11.9984 0C12.3167 0 12.6219 0.126428 12.8469 0.351472C13.072 0.576516 13.1984 0.88174 13.1984 1.2V3.6384L13.1972 3.6636L13.1948 3.6996C14.8732 3.9829 16.3969 4.85145 17.4959 6.1512C18.5949 7.45095 19.198 9.09791 19.1984 10.8C19.1984 14.5116 19.9484 15.9744 21.1172 18.252L21.158 18.3336C21.362 18.7296 21.074 19.2 20.6276 19.2H3.36921C3.26723 19.2001 3.16694 19.174 3.07795 19.1242C2.98895 19.0744 2.91425 19.0025 2.86101 18.9156C2.80776 18.8286 2.77776 18.7294 2.77387 18.6275C2.76998 18.5256 2.79235 18.4244 2.83881 18.3336L2.87961 18.252C4.04841 15.9744 4.79841 14.5116 4.79841 10.8C4.79849 9.0977 5.40152 7.45046 6.50052 6.15046C7.59952 4.85046 9.12346 3.98174 10.802 3.6984L10.7996 3.6504C10.7988 3.63361 10.7984 3.61681 10.7984 3.6V1.2C10.7984 0.88174 10.9248 0.576516 11.1499 0.351472C11.3749 0.126428 11.6802 0 11.9984 0V0ZM14.3984 21.6C14.3984 22.2365 14.1456 22.847 13.6955 23.2971C13.2454 23.7471 12.6349 24 11.9984 24C11.3619 24 10.7514 23.7471 10.3014 23.2971C9.85127 22.847 9.59841 22.2365 9.59841 21.6H14.3984Z" fill="currentColor"/>
+						</svg>
+						<svg class="header__authorization-user--service-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g clip-path="url(#clip0_20606_952)">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C5.3832 0 0 5.3832 0 12C0 14.0736 0.54 16.104 1.5648 17.9088L0.1212 21.558C-0.4284 23.0088 0.9924 24.4296 2.4432 23.8788L6.0912 22.434C7.89142 23.4602 9.92784 23.9999 12 24C18.6168 24 24 18.6168 24 12C24 5.3832 18.6168 0 12 0ZM6.3516 11.1516C6.46278 11.0398 6.59498 10.951 6.74058 10.8905C6.88618 10.8299 7.04231 10.7988 7.2 10.7988C7.35769 10.7988 7.51382 10.8299 7.65942 10.8905C7.80502 10.951 7.93722 11.0398 8.0484 11.1516C8.16022 11.2628 8.24896 11.395 8.30951 11.5406C8.37007 11.6862 8.40124 11.8423 8.40124 12C8.40124 12.1577 8.37007 12.3138 8.30951 12.4594C8.24896 12.605 8.16022 12.7372 8.0484 12.8484C7.93722 12.9602 7.80502 13.049 7.65942 13.1095C7.51382 13.1701 7.35769 13.2012 7.2 13.2012C7.04231 13.2012 6.88618 13.1701 6.74058 13.1095C6.59498 13.049 6.46278 12.9602 6.3516 12.8484C6.23978 12.7372 6.15104 12.605 6.09049 12.4594C6.02993 12.3138 5.99876 12.1577 5.99876 12C5.99876 11.8423 6.02993 11.6862 6.09049 11.5406C6.15104 11.395 6.23978 11.2628 6.3516 11.1516ZM11.1516 11.1516C11.2628 11.0398 11.395 10.951 11.5406 10.8905C11.6862 10.8299 11.8423 10.7988 12 10.7988C12.1577 10.7988 12.3138 10.8299 12.4594 10.8905C12.605 10.951 12.7372 11.0398 12.8484 11.1516C12.9602 11.2628 13.049 11.395 13.1095 11.5406C13.1701 11.6862 13.2012 11.8423 13.2012 12C13.2012 12.1577 13.1701 12.3138 13.1095 12.4594C13.049 12.605 12.9602 12.7372 12.8484 12.8484C12.6229 13.0725 12.3179 13.1983 12 13.1983C11.6821 13.1983 11.3771 13.0725 11.1516 12.8484C10.9275 12.6229 10.8017 12.3179 10.8017 12C10.8017 11.6821 10.9275 11.3771 11.1516 11.1516ZM16.8 10.8C16.6423 10.7995 16.486 10.8302 16.3402 10.8904C16.1944 10.9505 16.0619 11.0389 15.9504 11.1504C15.8389 11.2619 15.7505 11.3944 15.6904 11.5402C15.6302 11.686 15.5995 11.8423 15.6 12C15.5995 12.1577 15.6302 12.314 15.6904 12.4598C15.7505 12.6056 15.8389 12.7381 15.9504 12.8496C16.0619 12.9611 16.1944 13.0495 16.3402 13.1096C16.486 13.1698 16.6423 13.2005 16.8 13.2C16.9577 13.2005 17.114 13.1698 17.2598 13.1096C17.4056 13.0495 17.5381 12.9611 17.6496 12.8496C17.7611 12.7381 17.8495 12.6056 17.9096 12.4598C17.9698 12.314 18.0005 12.1577 18 12C18.0005 11.8423 17.9698 11.686 17.9096 11.5402C17.8495 11.3944 17.7611 11.2619 17.6496 11.1504C17.5381 11.0389 17.4056 10.9505 17.2598 10.8904C17.114 10.8302 16.9577 10.7995 16.8 10.8Z" fill="currentColor"/>
+							</g>
+							<defs>
+							<clipPath id="clip0_20606_952">
+							<rect width="24" height="24" fill="white"/>
+							</clipPath>
+							</defs>
+						</svg>
+
+
+						<!-- <img src="./exchange/img/header/bell.svg" alt="Уведомления" class="header__authorization-user--service-icon"/> -->
+						<!-- <img src="./exchange/img/header/message.svg" alt="Сообщения" class="header__authorization-user--service-icon"/> -->
+					</div>
+					<div class="header__authorization-user">
+						<div class="header__authorization-user--name">Ернар Ибрагимов</div>
+						<img src="./exchange/img/header/photo.jpg" alt="Аватар пользователя" class="header__authorization-user--photo"/>
+						<select class="header__authorization-user--select" id="user-select">
+							<option></option>
+							<option value="redirect">Выйти</option>
+						</select>
+					</div>
 				</div>
 			</header>
 			<main class="page">
-				<section class="hero container">
+				<!-- <section class="hero container">
 					<div class="hero-content">
 						<h1 class="hero-title">Покупайте фриланс-услуги в <span>два клика</span></h1>
 						<p class="hero-desc">Ворк — единица работы продавца, которую можно купить как товар в магазине</p>
@@ -76,220 +106,10 @@
 						</div>
 					</div>
 					<div class="hero-images">
-						<!-- <div class="hero__photo-wrap">
-							<img src="./img/hero/businessman.png" alt="businessman" class="hero__photo">
-						</div>
-						<img src="./img/hero/tooltip-star.png" alt="tooltip-star" class="hero__tooltip">
-						<img src="./img/hero/dots.svg" alt="dots" class="hero__dots">
-						<img src="./img/hero/dots-grey.svg" alt="dots-grey" class="hero__dots-grey">
-						<img src="./img/hero/vawes.svg" alt="vawes" class="hero__vawes">
-						<div class="hero-rating">
-							<img src="./img/hero/star.svg" alt="star">
-							<img src="./img/hero/star.svg" alt="star">
-							<img src="./img/hero/star.svg" alt="star">
-							<img src="./img/hero/star.svg" alt="star">
-							<img src="./img/hero/star.svg" alt="star">
-						</div>
-						<div class="hero-circle__small"></div>
-						<div class="hero-circle__large"></div> -->
+						
 					</div>
-				</section>
-				<section class="works container">
-					<h2 class="works-title">Актуальные ворки</h2>
-					<div class="works-body">
-						<div class="works-card">
-							<div class="works-card-header">
-								<img src="./img/works/photo1.png" alt="photo1" class="works-card-photo">
-								<h3 class="works-card-title">Сделать дизайн<br>интернет-магазина</h3>
-							</div>
-							<p class="works-card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed leo at hendrerit dictum diam, enim. Dolor in imperdiet ultrices mauris. Est vitae vulputate est nec cras. Turpis nunc ornare nulla neque, interdum. At pharetra consectetur nec est convallis...</p>
-							<a href="#" class="works-card-link">Посмотреть</a>
-						</div>
-						<div class="works-card">
-							<div class="works-card-header">
-								<img src="./img/works/photo2.png" alt="photo2" class="works-card-photo">
-								<h3 class="works-card-title">Верстка landing page</h3>
-							</div>
-							<p class="works-card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed leo at hendrerit dictum diam, enim. Dolor in imperdiet ultrices mauris. Est vitae vulputate est nec cras. Turpis nunc ornare nulla neque, interdum. At pharetra consectetur nec est convallis...</p>
-							<a href="#" class="works-card-link">Посмотреть</a>
-						</div>
-						<div class="works-card">
-							<div class="works-card-header">
-								<img src="./img/works/photo3.png" alt="photo3" class="works-card-photo">
-								<h3 class="works-card-title">Сделать дизайн сайта-каталога и посадить на какой нибудь ко...</h3>
-							</div>
-							<p class="works-card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed leo at hendrerit dictum diam, enim. Dolor in imperdiet ultrices mauris. Est vitae vulputate est nec cras. Turpis nunc ornare nulla neque, interdum. At pharetra consectetur nec est convallis...</p>
-							<a href="#" class="works-card-link">Посмотреть</a>
-						</div>
-						<div class="works-card">
-							<div class="works-card-header">
-								<img src="./img/works/photo4.png" alt="photo4" class="works-card-photo">
-								<h3 class="works-card-title">Продвижение instagram</h3>
-							</div>
-							<p class="works-card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed leo at hendrerit dictum diam, enim. Dolor in imperdiet ultrices mauris. Est vitae vulputate est nec cras. Turpis nunc ornare nulla neque, interdum. At pharetra consectetur nec est convallis...</p>
-							<a href="#" class="works-card-link">Посмотреть</a>
-						</div>
-						<div class="works-card">
-							<div class="works-card-header">
-								<img src="./img/works/photo5.png" alt="photo5" class="works-card-photo">
-								<h3 class="works-card-title">Срочно! Нужен веб дизайнер!</h3>
-							</div>
-							<p class="works-card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed leo at hendrerit dictum diam, enim. Dolor in imperdiet ultrices mauris. Est vitae vulputate est nec cras. Turpis nunc ornare nulla neque, interdum. At pharetra consectetur nec est convallis...</p>
-							<a href="#" class="works-card-link">Посмотреть</a>
-						</div>
-						<div class="works-card">
-							<a href="#" class="works-card-link">Смотреть все ворки</a>
-						</div>
-					</div>
-				</section>
-				<section class="freelancers container">
-					<h2 class="freelancers-title">Топ фрилансеров</h2>
-					<div class="freelancers-body">
-						<div class="freelancers-card">
-							<div class="freelancers-card-header">
-								<img src="./img/freelancers/photo1.png" alt="photo1" class="freelancers-card-photo">
-								<div class="freelancers-card-photo__dot"></div>
-								<div class="freelancers-card-person__data">
-									<h3 class="freelancers-card-person__name">Марина Королёва</h3>
-									<p class="freelancers-card-person__position">Разработчик PHP  </p>
-									<p class="freelancers-card-person__jobs">Выполено проектов: 65</p>
-									<div class="freelancers-card-person__rating">
-										<img src="./img/freelancers/star-yellow.svg" alt="Person rating star yellow">
-										<img src="./img/freelancers/star-yellow.svg" alt="Person rating star yellow">
-										<img src="./img/freelancers/star-yellow.svg" alt="Person rating star yellow">
-										<img src="./img/freelancers/star-yellow.svg" alt="Person rating star yellow">
-										<img src="./img/freelancers/star-gray.svg" alt="Person rating star gray">
-										<img src="./img/freelancers/half_stars-yellow.svg" alt="Person rating half star gray">
-									</div>
-								</div>
-							</div>
-							<a href="#" class="freelancers-card-link">Написать</a>
-						</div>
-						<div class="freelancers-card">
-							<div class="freelancers-card-header">
-								<img src="./img/freelancers/photo2.png" alt="photo2" class="freelancers-card-photo">
-								<div class="freelancers-card-photo__dot"></div>
-								<div class="freelancers-card-person__data">
-									<h3 class="freelancers-card-person__name">Семён Сергеев</h3>
-									<p class="freelancers-card-person__position">Копирайтер</p>
-									<p class="freelancers-card-person__jobs">Выполено проектов: 104</p>
-									<div class="freelancers-card-person__rating">
-										<img src="./img/freelancers/star-yellow.svg" alt="Person rating star yellow">
-										<img src="./img/freelancers/star-yellow.svg" alt="Person rating star yellow">
-										<img src="./img/freelancers/star-yellow.svg" alt="Person rating star yellow">
-										<img src="./img/freelancers/star-yellow.svg" alt="Person rating star yellow">
-										<img src="./img/freelancers/star-gray.svg" alt="Person rating star gray">
-									</div>
-								</div>
-							</div>
-							<a href="#" class="freelancers-card-link">Написать</a>
-						</div>
-						<div class="freelancers-card">
-							<div class="freelancers-card-header">
-								<img src="./img/freelancers/photo3.png" alt="photo3" class="freelancers-card-photo">
-								<div class="freelancers-card-photo__dot"></div>
-								<div class="freelancers-card-person__data">
-									<h3 class="freelancers-card-person__name">Ангелина Сорокина</h3>
-									<p class="freelancers-card-person__position">Дизайнер сайтов</p>
-									<p class="freelancers-card-person__jobs">Выполено проектов: 25</p>
-									<div class="freelancers-card-person__rating">
-										<img src="./img/freelancers/star-yellow.svg" alt="Person rating star yellow">
-										<img src="./img/freelancers/star-yellow.svg" alt="Person rating star yellow">
-										<img src="./img/freelancers/star-yellow.svg" alt="Person rating star yellow">
-										<img src="./img/freelancers/star-yellow.svg" alt="Person rating star yellow">
-										<img src="./img/freelancers/star-yellow.svg" alt="Person rating star yellow">
-									</div>
-								</div>
-							</div>
-							<a href="#" class="freelancers-card-link">Написать</a>
-						</div>
-						<div class="freelancers-card">
-							<div class="freelancers-card-header">
-								<img src="./img/freelancers/photo4.png" alt="photo4" class="freelancers-card-photo">
-								<div class="freelancers-card-photo__dot"></div>
-								<div class="freelancers-card-person__data">
-									<h3 class="freelancers-card-person__name">Никита Зайцев</h3>
-									<p class="freelancers-card-person__position">Маркетолог</p>
-									<p class="freelancers-card-person__jobs">Выполено проектов: 144</p>
-									<div class="freelancers-card-person__rating">
-										<img src="./img/freelancers/star-yellow.svg" alt="Person rating star yellow">
-										<img src="./img/freelancers/star-yellow.svg" alt="Person rating star yellow">
-										<img src="./img/freelancers/star-yellow.svg" alt="Person rating star yellow">
-										<img src="./img/freelancers/star-yellow.svg" alt="Person rating star yellow">
-										<img src="./img/freelancers/star-gray.svg" alt="Person rating star gray">
-									</div>
-								</div>
-							</div>
-							<a href="#" class="freelancers-card-link">Написать</a>
-						</div>
-						<div class="freelancers-card">
-							<div class="freelancers-card-header">
-								<img src="./img/freelancers/photo5.png" alt="photo5" class="freelancers-card-photo">
-								<div class="freelancers-card-photo__dot"></div>
-								<div class="freelancers-card-person__data">
-									<h3 class="freelancers-card-person__name">Наталья Захарова</h3>
-									<p class="freelancers-card-person__position">Motion дизайнер </p>
-									<p class="freelancers-card-person__jobs">Выполено проектов: 71</p>
-									<div class="freelancers-card-person__rating">
-										<img src="./img/freelancers/star-yellow.svg" alt="Person rating star yellow">
-										<img src="./img/freelancers/star-yellow.svg" alt="Person rating star yellow">
-										<img src="./img/freelancers/star-yellow.svg" alt="Person rating star yellow">
-										<img src="./img/freelancers/star-yellow.svg" alt="Person rating star yellow">
-										<img src="./img/freelancers/star-yellow.svg" alt="Person rating star yellow">
-									</div>
-								</div>
-							</div>
-							<a href="#" class="freelancers-card-link">Написать</a>
-						</div>
-						<div class="freelancers-card">
-							<a href="#" class="freelancers-card-link">Посмотреть всех ТОП фрилансеров</a>
-						</div>
-					</div>
-				</section>
-				<section class="solve__problems container">
-					<h2 class="solve__problems-title">Как решать задачи на WorkTap?</h2>
-					<p class="solve__problems-desc">Идеально подходит для бизнеса и частных лиц</p>
-					<div class="solve__problems-body">
-						<div class="solve__problems-card">
-							<img src="./img/solve_problems/icon1.svg" alt="icon1" class="solve__problems-icon">
-							<h3 class="solve__problems-card-title">Выберите услугу</h3>
-							<p class="solve__problems-card-desc">В супермаркете WorkTap представлен широкий выбор услуг от квалифицированных специалистов.</p>
-						</div>
-						<div class="solve__problems-card">
-							<img src="./img/solve_problems/icon2.svg" alt="icon2" class="solve__problems-icon">
-							<h3 class="solve__problems-card-title">Оплатите</h3>
-							<p class="solve__problems-card-desc">Деньги будут перечислены продавцу после того, как он выполнит работу, и вы её одобрите. </p>
-						</div>
-						<div class="solve__problems-card">
-							<img src="./img/solve_problems/icon3.svg" alt="icon3" class="solve__problems-icon">
-							<h3 class="solve__problems-card-title">Получите результат</h3>
-							<p class="solve__problems-card-desc">Наш супермаркет гарантирует вам возврат средств в полном объёме в случае невыполнения заказа.</p>
-						</div>
-					</div>
-				</section>
-				<section class="helps__business">
-					<div class="container">
-						<div class="helps__business-body">
-							<h2 class="helps__business-title">Как WorkTap помогает бизнесу?</h2>
-							<ul class="helps__business-list">
-								<li class="helps__business-item">
-									<img src="./img/helps_business/credit-card.svg" alt="credit-card" class="helps__business-item-icon">
-									<p class="helps__business-item-text">Оплачивайте с р/с или карты компании</p>
-								</li>
-								<li class="helps__business-item">
-									<img src="./img/helps_business/money.svg" alt="money" class="helps__business-item-icon">
-									<p class="helps__business-item-text">Экономьте до 87% бюджета на фрилансе</p>
-								</li>
-								<li class="helps__business-item">
-									<img src="./img/helps_business/clock.svg" alt="clock" class="helps__business-item-icon">
-									<p class="helps__business-item-text">Экономьте до 75% времени на решении фриланс задач</p>
-								</li>
-							</ul>
-							<p class="helps__business-desc">WorkTap — быстро, просто и безопасно!</p>
-							<a href="#" class="helps__business-link">Начать!</a>
-						</div>
-					</div>
-				</section>
+				</section> -->
+				
 			</main>
 			<footer class="footer">
 				<div class="container">
@@ -568,5 +388,6 @@
 		</div>
 	<script src="./js/script.js"></script>
 	<script src="./js/modal.js"></script>
+	<script src="./js/exchange.js"></script>
 	</body>
 </html>

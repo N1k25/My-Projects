@@ -1,0 +1,56 @@
+@import url("reset.css");
+@import url(https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700&display=swap);
+
+/*------------------------------------ Header --------------------------------*/
+.header__authorization {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.header__authorization-user--service {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.header__authorization-user--service-icon {
+    cursor: pointer;
+    color: #B0AAD0;
+
+    &.active {
+        color: #1DBF73;
+    }
+}
+
+.header__authorization-user {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.header__authorization-user--name {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.header__authorization-user--select {
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #222222;
+    cursor: pointer;
+}
+
+.header__authorization-user--photo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+
