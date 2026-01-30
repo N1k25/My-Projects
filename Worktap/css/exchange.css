@@ -53,4 +53,105 @@
     object-fit: cover;
 }
 
+/*------------------------------------ Hero --------------------------------*/
+.hero__exchange {
+    padding: 160px 0;
+    position: relative;
+}
 
+.hero__exchange-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero__exchange-title {
+    width: 1049px;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+
+    span {
+        color: #1DBF73;
+    }
+}
+
+.hero__exchange-form {
+    width: 645px;
+    margin: 60px 0 40px 0;
+
+    input {
+        width: 100%;
+    }
+}
+
+.hero__exchange-categories {
+    width: 740px;
+}
+
+.hero__exchange-categories-list {
+    justify-content: center;
+}
+
+.hero__exchange-hint {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 40px 0 20px 0;
+
+    span {
+        font-weight: 600;
+        color: #1DBF73;
+    }
+}
+
+.circle-red {
+    border-radius: 50%;
+    background-color: #FFEDDD;
+}
+
+.circle-red-big {
+    width: 191px;
+    height: 191px;
+    position: absolute;
+    top: 201px;
+    left: -191px;
+}
+
+.circle-red-medium {
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    top: 0;
+    left: 650px;
+}
+
+.circle-red-small {
+    width: 57px;
+    height: 57px;
+    position: absolute;
+    bottom: 114px;
+    right: 49px;
+}
+
+.circle-green {
+    border-radius: 50%;
+    background-color: #D7FFEC;
+}
+
+.circle-green-medium {
+    width: 103px;
+    height: 103px;
+    position: absolute;
+    top: 80px;
+    right: 49px;
+}
+
+.circle-green-small {
+    width: 57px;
+    height: 57px;
+    position: absolute;
+    bottom: 114px;
+    left: 246px;
+}
+
+/*------------------------------------    --------------------------------*/
