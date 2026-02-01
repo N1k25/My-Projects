@@ -1,6 +1,10 @@
 @import url("reset.css");
 @import url(https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700&display=swap);
 
+html {
+  scroll-behavior: smooth;
+}
+
 /*------------------------------------ Header --------------------------------*/
 .header__authorization {
     display: flex;
@@ -154,4 +158,166 @@
     left: 246px;
 }
 
-/*------------------------------------    --------------------------------*/
+/*------------------------------------ Projects --------------------------------*/
+.projects__exchange {
+    padding: 60px 0;
+    background-color: #F6FAFD;
+}
+
+.projects__exchange-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.projects__exchange-title {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.projects__exchange-sort--select-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.projects__exchange-sort--select-label-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.projects__exchange-sort--select-label {
+    padding: 13px 23px;
+    border: 1px solid #F2F0FE;
+    border-radius: 20px;
+    color: #656084;
+}
+
+.projects__exchange-sort--select {
+    padding: 10px 20px;
+    border: 1px solid #F2F0FE;
+    border-radius: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: transparent;
+}
+
+.projects__exchange-list {
+    margin: 40px 0;
+}
+
+.projects__exchange-list--item {
+    height: 209px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid #F2F0FE;
+    transition: all 0.3s ease;
+
+    &:not(:last-child) {
+        margin-bottom: 40px;
+    }
+
+    &:hover {
+        box-shadow: 0px 16px 16px #2222220A;
+    }
+}
+
+.projects__exchange-list--item-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #000000;
+}
+
+.projects__exchange-list--item-title {
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 2%;
+}
+
+.projects__exchange-list--item-person {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.projects__exchange-list--item-person-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.projects__exchange-list--item-person-info {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.projects__exchange-list--item-person-projects-posted {
+    margin: 12px 0;
+}
+
+.projects__exchange-list--item-person-projects-status {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+}
+
+.projects__exchange-list--item-person-reviews {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.projects__exchange-list--item-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: right;
+}
+
+.projects__exchange-list--item-content-budget {
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 2%;
+    color: #1DBF73;
+}
+
+.projects__exchange-list--item-content-deadline {
+    margin-top: 10px;
+    color: #656084;
+}
+
+.projects__exchange-list--item-content-proposals {
+    font-size: 18px;
+    color: #656084;
+}
+
+.projects__exchange-link {
+    display: block;
+    width: 240px;
+    padding: 16px 48px;
+    margin: 0 auto;
+    border-radius: 40px;
+    border: 1px solid #1DBF73;
+    background-color: transparent;
+    color: #1DBF73;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: #1DBF73;
+        color: #FFFFFF;
+    }
+
+    &:active {
+        transform: scale(0.95);
+    }
+}
+
+/*------------------------------------     --------------------------------*/
