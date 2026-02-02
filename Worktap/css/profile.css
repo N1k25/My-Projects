@@ -1,0 +1,228 @@
+@import url("reset.css");
+
+/*------------------------------------Hero--------------------------------*/
+.hero__profile {
+    padding: 37px 0 212px 0;
+    position: relative;
+}
+
+.hero__profile-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.hero__profile-content {
+    width: 645px;
+    margin-top: 141px;
+}
+
+.hero__profile-subtitle {
+    font-size: 24px;
+    font-weight: 600;
+    color: #FBA457;
+}
+
+.hero__profile-title {
+    font-size: 36px;
+    font-weight: 600;
+    color: #000000;
+    margin: 10px 0 20px 0;
+    
+    span {
+        color: #1DBF73;
+    }
+}
+
+.hero__profile-skills {
+    .hero-categories-item:last-child {
+        border-color: #F2F0FE;
+        
+        .hero-categories-link {
+            color: #222222;
+        }
+
+        &:hover {
+            box-shadow: 0 8px 15px #222222;
+        }
+    }
+}
+
+.hero__profile-details {
+    margin-top: 60px;
+    width: 100%;
+    padding: 20px 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    
+    background-color: #F2F0FE;
+
+    
+
+    summary {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 18px;
+        font-weight: 500;
+        color: #000000;
+
+        &::marker {
+            content: '';
+        }
+
+        &::after {
+            content: url('../profile/img/hero/chevron-down.svg');
+            transition: transform 0.5s ease;
+        }
+    }
+
+    &:open {
+        summary::after {
+            transform: rotate(180deg);
+        }
+    }
+}
+
+::details-content {
+    transition: height 0.5s ease, content-visibility 0.5s ease allow-discrete;
+    height: 0;
+    overflow: clip;
+}
+
+@supports (interpolate-size: allow-keywords) {
+    :root {
+        interpolate-size: allow-keywords;
+    }
+
+    [open]::details-content {
+        height: auto;
+    }
+}
+
+.hero__profile-images {
+    width: 626px;
+    height: 498px;
+    position: relative;
+}
+
+.hero__profile-photo {
+    width: 420px;
+    height: 420px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    left: 94px;
+    bottom: 11px;
+    z-index: 2;
+}
+
+.hero__profile-online {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 36px;
+    border-radius: 50px;
+    background-color: #F6FAFD;
+    font-size: 16px;
+    font-weight: 500;
+    color: #1DBF73;
+    box-shadow: 0 8px 16px #0000000A;
+    position: absolute;
+    left: 0;
+    top: 218px;
+    z-index: 3;
+
+    &::before {
+        content: '';
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background-color: #1DBF73;
+        margin-right: 8px;
+    }
+}
+
+.hero__profile-dots {
+    position: absolute;
+    left: 64px;
+    bottom: 70px;
+}
+
+.hero__profile-vawes {
+    width: 77.5px;
+    height: 34px;
+    position: absolute;
+    right: 82.5px;
+    top: 160px;
+    z-index: 3;
+}
+
+.hero__profile-settings {
+    padding: 16px;
+    border-radius: 10px;
+    background-color: #F6FAFD;
+    box-shadow: 0 8px 16px #0000000A;
+    position: absolute;
+    right: 143px;
+    top: 77px;
+    z-index: 3;
+}
+
+.hero__profile-rating {
+    display: inline-block;
+    padding: 20px 40px;
+    border-radius: 20px;
+    background-color: #F6FAFD;
+    box-shadow: 0 16px 16px #0000000A;
+    position: absolute;
+    bottom: 0;
+    left: 210px;
+    z-index: 3;
+}
+
+.hero__profile-circle {
+    border-radius: 50%;
+    background-color: #FFEDDD;
+}
+
+.hero__profile-circle--medium {
+    width: 103px;
+    height: 103px;
+    position: absolute;
+    left: 73px;
+    top: 0;
+}
+
+.hero__profile-circle--large {
+    width: 172px;
+    height: 172px;
+    position: absolute;
+    bottom: 7px;
+    right: 41px;
+}
+
+.fast__find {
+    width: 233px;
+    height: 80px;
+    background-color: #FBA457;
+    border-radius: 0 50px 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 700;
+    color: #F6FAFD;
+    position: absolute;
+    left: 0;
+    top: 277px;
+
+    &::after {
+        content: url('../profile/img/hero/chevron-right.svg');
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 10px;
+    }
+}
+
