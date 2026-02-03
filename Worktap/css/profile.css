@@ -53,10 +53,8 @@
     width: 100%;
     padding: 20px 40px;
     border-radius: 20px;
-    cursor: pointer;
-    
     background-color: #F2F0FE;
-
+    
     
 
     summary {
@@ -66,6 +64,7 @@
         font-size: 18px;
         font-weight: 500;
         color: #000000;
+        cursor: pointer;
 
         &::marker {
             content: '';
@@ -98,6 +97,74 @@
     [open]::details-content {
         height: auto;
     }
+}
+
+.hero__profile-details-info {
+    margin-top: 30px;
+}
+
+.hero__profile-details-info-item {
+    display: flex;
+    justify-content: space-between;
+    
+    &:not(:last-child) {
+        margin-bottom: 10px;
+    }
+}
+
+.hero__profile-details-info-item-title {
+    width: 180px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.hero__profile-details-info-item-desc {
+    width: 315px;
+    font-size: 18px;
+
+    ol {
+        margin-left: 20px;
+
+        li:not(:last-child) {
+            margin-bottom: 8px;
+        }
+    }
+}
+
+.country::before {
+    content: url('../profile/img/hero/world.svg');
+    margin-right: 12px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.online::before {
+    content: url('../profile/img/hero/clock.svg');
+    margin-right: 12px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.education::before {
+    content: url('../profile/img/hero/bank.svg');
+    margin-right: 12px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.languages::before {
+    content: url('../profile/img/hero/language.svg');
+    margin-right: 12px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.certificates::before {
+    content: url('../profile/img/hero/note.svg');
+    margin-right: 12px;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .hero__profile-images {
@@ -226,3 +293,4 @@
     }
 }
 
+/*------------------------------------    --------------------------------*/
