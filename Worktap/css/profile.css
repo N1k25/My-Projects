@@ -1,8 +1,8 @@
 @import url("reset.css");
 
-/*------------------------------------Hero--------------------------------*/
+/*------------------------------------ Hero --------------------------------*/
 .hero__profile {
-    padding: 37px 0 212px 0;
+    padding: 37px 0 60px 0;
     position: relative;
 }
 
@@ -293,4 +293,80 @@
     }
 }
 
-/*------------------------------------    --------------------------------*/
+/*------------------------------------ Works --------------------------------*/
+.works__profile {
+    padding: 60px 0;
+}
+
+.works__profile-title {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 2%;
+    color: #000000;
+}
+
+.works__profile-cards {
+    margin: 40px 0 60px 0;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 27px;
+}
+
+.works__profile-card {
+    width: 308px;
+    height: 276px;
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid #F2F0FE;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+
+    &:not(:first-child):hover {
+        box-shadow: 0 16px 16px #000000;
+    }
+}
+
+.works__profile-card-add {
+    justify-content: center;
+
+    &:hover {
+        background-color: #D7FFEC;
+    }
+}
+
+.works__profile-card-link--add {
+    display: grid;
+    place-items: center;
+    gap: 20px;
+    font-size: 30px;
+    font-weight: 600;
+    color: #1DBF73;
+}
+
+.works__profile-card-image {
+    width: 100%;
+    height: 172px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.works__profile-card-title {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.works__profile-card-price {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1DBF73;
+}
+
+/*------------------------------------     --------------------------------*/
