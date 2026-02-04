@@ -369,4 +369,85 @@
     color: #1DBF73;
 }
 
-/*------------------------------------     --------------------------------*/
+/*------------------------------------ Reviews profile --------------------------------*/
+.reviews__profile-tabs {
+    height: 510px;
+    margin: 20px 0 40px 0;
+    position: relative;
+}
+
+.tab, .tab-title {
+  display: inline-block;
+}
+.tab input[type="radio"] {
+  display: none;
+}
+.tab-title {
+  font-size: 16px;
+  color: #000000;
+  margin-right: 40px;
+  cursor: pointer;
+}
+.tab-content {
+  position: absolute;
+  left: 0;
+  top: 40px;
+  width: 100%;
+  display: none;
+}
+.tab :checked + .tab-title {
+  position: relative;
+  color: #1DBF73;
+  font-weight: 600;
+  z-index: 1;
+}
+.tab :checked ~ .tab-content {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 26px;
+  row-gap: 40px;
+}
+
+.reviews__profile-card {
+    width: 420px;
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid #F2F0FE;
+    transition: all 0.3s ease;
+
+    &:hover {
+        box-shadow: 0 16px 16px #000000;
+    }
+}
+
+.reviews__profile-card-person {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.reviews__profile-card-person-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #C4C4C4;
+}
+
+.reviews__profile-card-person-name {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.reviews__profile-card-person-rating {
+    margin-top: 20px;
+
+    img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.reviews__profile-card-text {
+    color: #000000;
+}
