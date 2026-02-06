@@ -1,0 +1,519 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+	<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Заголовок страницы в браузере -->
+		<title>Worktap</title>
+		<link rel="icon" type="image/png" href="img/favicon.ico"/>
+		<!-- Подключаем CSS -->
+		<link rel="stylesheet" href="./css/style.css"/>
+		<link rel="stylesheet" href="./css/exchange.css"/>
+		<link rel="stylesheet" href="./css/profile.css"/>
+		<link rel="stylesheet" href="./css/chat.css"/>
+		<!-- Кодировка страницы -->
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	</head>
+	<!-- Отображаемое тело страницы -->
+	<body>
+		<div class="wrapper">
+			<header class="header container">
+				<div class="header-left">
+					<a href="./index.html" class="header-logo">
+						<img src="./img/header/logo.png" alt="Worktap Logo"/>
+					</a>
+					<nav class="header-menu">
+						<ul>
+							<li><a href="./exchange.html">Биржа</a></li>
+							<li><a href="#">Ворки</a></li>
+							<li><a href="#">Конкурсы</a></li>
+							<li><a href="#">Создать заказ</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__authorization">
+					<div class="header__authorization-user--service">
+						<!-- <img src="./exchange/img/header/star.svg" alt="Закладка" class="header__authorization-user--service-icon"/> -->
+						<svg class="header__authorization-user--service-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M5.99962 14.4L1.65082 10.8C0.830016 10.1436 1.19002 8.8236 2.23162 8.6748L8.39962 8.4L11.0336 1.7964C11.1233 1.617 11.2612 1.46612 11.4318 1.36066C11.6024 1.25521 11.799 1.19936 11.9996 1.19936C12.2002 1.19936 12.3968 1.25521 12.5674 1.36066C12.738 1.46612 12.8759 1.617 12.9656 1.7964L15.5996 8.4L21.7676 8.6748C22.8092 8.8236 23.1692 10.1436 22.3484 10.8L17.9996 14.4L19.1864 21.4284C19.2174 21.6452 19.1885 21.8663 19.1028 22.0678C19.0171 22.2693 18.8779 22.4435 18.7003 22.5716C18.5226 22.6997 18.3134 22.7767 18.0951 22.7943C17.8768 22.8119 17.6579 22.7695 17.462 22.6716L11.9996 19.2L6.53722 22.6704C6.34134 22.7683 6.12241 22.8107 5.90415 22.7931C5.68588 22.7755 5.4766 22.6985 5.29897 22.5704C5.12134 22.4423 4.98214 22.2681 4.89645 22.0666C4.81075 21.8651 4.78183 21.644 4.81282 21.4272L5.99962 14.4Z" fill="currentColor"/>
+						</svg>
+						<svg class="header__authorization-user--service-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M11.9984 0C12.3167 0 12.6219 0.126428 12.8469 0.351472C13.072 0.576516 13.1984 0.88174 13.1984 1.2V3.6384L13.1972 3.6636L13.1948 3.6996C14.8732 3.9829 16.3969 4.85145 17.4959 6.1512C18.5949 7.45095 19.198 9.09791 19.1984 10.8C19.1984 14.5116 19.9484 15.9744 21.1172 18.252L21.158 18.3336C21.362 18.7296 21.074 19.2 20.6276 19.2H3.36921C3.26723 19.2001 3.16694 19.174 3.07795 19.1242C2.98895 19.0744 2.91425 19.0025 2.86101 18.9156C2.80776 18.8286 2.77776 18.7294 2.77387 18.6275C2.76998 18.5256 2.79235 18.4244 2.83881 18.3336L2.87961 18.252C4.04841 15.9744 4.79841 14.5116 4.79841 10.8C4.79849 9.0977 5.40152 7.45046 6.50052 6.15046C7.59952 4.85046 9.12346 3.98174 10.802 3.6984L10.7996 3.6504C10.7988 3.63361 10.7984 3.61681 10.7984 3.6V1.2C10.7984 0.88174 10.9248 0.576516 11.1499 0.351472C11.3749 0.126428 11.6802 0 11.9984 0V0ZM14.3984 21.6C14.3984 22.2365 14.1456 22.847 13.6955 23.2971C13.2454 23.7471 12.6349 24 11.9984 24C11.3619 24 10.7514 23.7471 10.3014 23.2971C9.85127 22.847 9.59841 22.2365 9.59841 21.6H14.3984Z" fill="currentColor"/>
+						</svg>
+						<svg class="header__authorization-user--service-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g clip-path="url(#clip0_20606_952)">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C5.3832 0 0 5.3832 0 12C0 14.0736 0.54 16.104 1.5648 17.9088L0.1212 21.558C-0.4284 23.0088 0.9924 24.4296 2.4432 23.8788L6.0912 22.434C7.89142 23.4602 9.92784 23.9999 12 24C18.6168 24 24 18.6168 24 12C24 5.3832 18.6168 0 12 0ZM6.3516 11.1516C6.46278 11.0398 6.59498 10.951 6.74058 10.8905C6.88618 10.8299 7.04231 10.7988 7.2 10.7988C7.35769 10.7988 7.51382 10.8299 7.65942 10.8905C7.80502 10.951 7.93722 11.0398 8.0484 11.1516C8.16022 11.2628 8.24896 11.395 8.30951 11.5406C8.37007 11.6862 8.40124 11.8423 8.40124 12C8.40124 12.1577 8.37007 12.3138 8.30951 12.4594C8.24896 12.605 8.16022 12.7372 8.0484 12.8484C7.93722 12.9602 7.80502 13.049 7.65942 13.1095C7.51382 13.1701 7.35769 13.2012 7.2 13.2012C7.04231 13.2012 6.88618 13.1701 6.74058 13.1095C6.59498 13.049 6.46278 12.9602 6.3516 12.8484C6.23978 12.7372 6.15104 12.605 6.09049 12.4594C6.02993 12.3138 5.99876 12.1577 5.99876 12C5.99876 11.8423 6.02993 11.6862 6.09049 11.5406C6.15104 11.395 6.23978 11.2628 6.3516 11.1516ZM11.1516 11.1516C11.2628 11.0398 11.395 10.951 11.5406 10.8905C11.6862 10.8299 11.8423 10.7988 12 10.7988C12.1577 10.7988 12.3138 10.8299 12.4594 10.8905C12.605 10.951 12.7372 11.0398 12.8484 11.1516C12.9602 11.2628 13.049 11.395 13.1095 11.5406C13.1701 11.6862 13.2012 11.8423 13.2012 12C13.2012 12.1577 13.1701 12.3138 13.1095 12.4594C13.049 12.605 12.9602 12.7372 12.8484 12.8484C12.6229 13.0725 12.3179 13.1983 12 13.1983C11.6821 13.1983 11.3771 13.0725 11.1516 12.8484C10.9275 12.6229 10.8017 12.3179 10.8017 12C10.8017 11.6821 10.9275 11.3771 11.1516 11.1516ZM16.8 10.8C16.6423 10.7995 16.486 10.8302 16.3402 10.8904C16.1944 10.9505 16.0619 11.0389 15.9504 11.1504C15.8389 11.2619 15.7505 11.3944 15.6904 11.5402C15.6302 11.686 15.5995 11.8423 15.6 12C15.5995 12.1577 15.6302 12.314 15.6904 12.4598C15.7505 12.6056 15.8389 12.7381 15.9504 12.8496C16.0619 12.9611 16.1944 13.0495 16.3402 13.1096C16.486 13.1698 16.6423 13.2005 16.8 13.2C16.9577 13.2005 17.114 13.1698 17.2598 13.1096C17.4056 13.0495 17.5381 12.9611 17.6496 12.8496C17.7611 12.7381 17.8495 12.6056 17.9096 12.4598C17.9698 12.314 18.0005 12.1577 18 12C18.0005 11.8423 17.9698 11.686 17.9096 11.5402C17.8495 11.3944 17.7611 11.2619 17.6496 11.1504C17.5381 11.0389 17.4056 10.9505 17.2598 10.8904C17.114 10.8302 16.9577 10.7995 16.8 10.8Z" fill="currentColor"/>
+							</g>
+							<defs>
+							<clipPath id="clip0_20606_952">
+							<rect width="24" height="24" fill="white"/>
+							</clipPath>
+							</defs>
+						</svg>
+						<!-- <img src="./exchange/img/header/bell.svg" alt="Уведомления" class="header__authorization-user--service-icon"/> -->
+						<!-- <img src="./exchange/img/header/message.svg" alt="Сообщения" class="header__authorization-user--service-icon"/> -->
+					</div>
+					<div class="header__authorization-user">
+						<div class="header__authorization-user--name">Ернар Ибрагимов</div>
+						<img src="./exchange/img/header/photo.jpg" alt="Аватар пользователя" class="header__authorization-user--photo"/>
+						<select class="header__authorization-user--select" id="user-select">
+							<option></option>
+							<option value="redirect">Выйти</option>
+						</select>
+					</div>
+				</div>
+			</header>
+			<main class="page">
+				<section class="chat">
+					<div class="container">
+						<div class="tabs">
+							<div class="tabs__nav">
+								<input type="text" placeholder="Поиск" class="tabs__nav-search">
+								<button class="tabs__nav-btn" type="button" data-tab="#tab_1">
+									<img src="./chat/img/avatar.jpg" alt="Аватар пользователя" class="tabs__nav-btn--photo"/>
+									<div class="tabs__nav-btn--info">
+										<div class="tabs__nav-btn--name">Никита Евреев</div>
+										<div class="tabs__nav-btn--theme">Ну че там, сделал?</div>
+									</div>
+								</button>
+								<button class="tabs__nav-btn" type="button" data-tab="#tab_2">
+									<img src="./chat/img/avatar.jpg" alt="Аватар пользователя" class="tabs__nav-btn--photo"/>
+									<div class="tabs__nav-btn--info">
+										<div class="tabs__nav-btn--name">Никита Евреев</div>
+										<div class="tabs__nav-btn--theme">Ну че там, сделал?</div>
+									</div>
+								</button>
+								<button class="tabs__nav-btn" type="button" data-tab="#tab_3">
+									<img src="./chat/img/avatar.jpg" alt="Аватар пользователя" class="tabs__nav-btn--photo"/>
+									<div class="tabs__nav-btn--info">
+										<div class="tabs__nav-btn--name">Никита Евреев</div>
+										<div class="tabs__nav-btn--theme">Ну че там, сделал?</div>
+									</div>
+								</button>
+								<button class="tabs__nav-btn" type="button" data-tab="#tab_4">
+									<img src="./chat/img/avatar.jpg" alt="Аватар пользователя" class="tabs__nav-btn--photo"/>
+									<div class="tabs__nav-btn--info">
+										<div class="tabs__nav-btn--name">Никита Евреев</div>
+										<div class="tabs__nav-btn--theme">Ну че там, сделал?</div>
+									</div>
+								</button>
+								<button class="tabs__nav-btn" type="button" data-tab="#tab_5">
+									<img src="./chat/img/avatar.jpg" alt="Аватар пользователя" class="tabs__nav-btn--photo"/>
+									<div class="tabs__nav-btn--info">
+										<div class="tabs__nav-btn--name">Никита Евреев</div>
+										<div class="tabs__nav-btn--theme">Ну че там, сделал?</div>
+									</div>
+								</button>
+								<button class="tabs__nav-btn" type="button" data-tab="#tab_6">
+									<img src="./chat/img/avatar.jpg" alt="Аватар пользователя" class="tabs__nav-btn--photo"/>
+									<div class="tabs__nav-btn--info">
+										<div class="tabs__nav-btn--name">Никита Евреев</div>
+										<div class="tabs__nav-btn--theme">Ну че там, сделал?</div>
+									</div>
+								</button>
+							</div>
+							<div class="tabs__content">
+								<div class="tabs__item" id="tab_1">
+									<div class="tabs__item-header">
+										<img src="./chat/img/avatar.jpg" alt="Аватар пользователя" class="tabs__item-header--photo tabs__nav-btn--photo"/>
+										<div class="tabs__item-header--info">
+											<div class="tabs__item-header--name">Никита Евреев</div>
+											<div class="tabs__item-header--status">Онлайн</div>
+										</div>
+									</div>
+									<div class="tabs__item-body">
+										<div class="tabs__item-date">Сегодня</div>
+										<div class="tabs__item-message--in">Нужно сделать супер крутой дизайн для сайта</div>
+										<div class="tabs__item-message--in">Ну в общем так</div>
+										<div class="tabs__item-message--in-attach">
+											<div class="tabs__item-message--in-attach-img-container">
+												<img src="./chat/img/photo-1.jpg" alt="photo-1" class="tabs__item-message--in-attach-img">
+												<p class="tabs__item-message--in-attach-name">Фото 1.png</p>
+											</div>
+											<div class="tabs__item-message--in-attach-img-container">
+												<img src="./chat/img/photo-2.jpg" alt="photo-2" class="tabs__item-message--in-attach-img">
+												<p class="tabs__item-message--in-attach-name">Фото фото....jpg</p>
+											</div>
+											<div class="tabs__item-message--in-attach-img-container attach-hide">
+												<img src="./chat/img/photo-2.jpg" alt="photo-2" class="tabs__item-message--in-attach-img">
+												<p class="tabs__item-message--in-attach-name">Фото фото....jpg</p>
+											</div>
+											<div class="tabs__item-message--in-attach-img-container attach-hide">
+												<img src="./chat/img/photo-2.jpg" alt="photo-2" class="tabs__item-message--in-attach-img">
+												<p class="tabs__item-message--in-attach-name">Фото фото....jpg</p>
+											</div>
+											<div class="tabs__item-message--in-attach-img-container attach-hide">
+												<img src="./chat/img/photo-1.jpg" alt="photo-1" class="tabs__item-message--in-attach-img">
+												<p class="tabs__item-message--in-attach-name">Фото 1.png</p>
+											</div>
+											<div class="tabs__item-message--in-attach-img-container attach-hide">
+												<img src="./chat/img/photo-2.jpg" alt="photo-2" class="tabs__item-message--in-attach-img">
+												<p class="tabs__item-message--in-attach-name">Фото фото....jpg</p>
+											</div>
+											<div class="tabs__item-message--in-attach-img-container attach-hide">
+												<img src="./chat/img/doc.svg" alt="doc" class="tabs__item-message--in-attach-img">
+												<p class="tabs__item-message--in-attach-name">Бриф.docx</p>
+											</div>
+											<div class="tabs__item-message--in-attach-img-container">
+												<img src="./chat/img/doc.svg" alt="doc" class="tabs__item-message--in-attach-img">
+												<p class="tabs__item-message--in-attach-name">Бриф.docx</p>
+											</div>
+											<button class="tabs__item-message--in-attach-btn">Еще</button>
+										</div>
+										<div class="tabs__item-message--out">Ок!</div>
+									</div>
+									<div class="tabs__item-footer">
+										<div class="tabs__item-footer--message-container">
+											<div id="attachTrigger" class="attach-choice">
+												<svg class="tabs__item-footer--message-attach-icon" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<circle cx="22" cy="22" r="22" fill="currentColor"/>
+													<g clip-path="url(#clip0_226_1711)">
+													<path d="M17.243 32C16.5546 32.0011 15.8728 31.8663 15.2366 31.6032C14.6005 31.3401 14.0226 30.954 13.536 30.467C13.0477 29.9811 12.6605 29.4032 12.3969 28.7667C12.1332 28.1303 11.9983 27.4479 12 26.759C12 25.357 12.546 24.04 13.536 23.051L23.051 13.532C23.6614 12.9235 24.4122 12.4747 25.2371 12.2252C26.062 11.9756 26.9356 11.9329 27.7809 12.1009C28.6262 12.2689 29.4171 12.6424 30.0839 13.1885C30.7506 13.7346 31.2727 14.4364 31.604 15.232C31.8675 15.8686 32.0021 16.5511 32 17.24C32.0021 17.9289 31.8675 18.6113 31.604 19.2478C31.3405 19.8843 30.9534 20.4622 30.465 20.948L26.207 25.208C25.8438 25.5706 25.3969 25.8381 24.9057 25.9869C24.4145 26.1358 23.8943 26.1613 23.3909 26.0612C22.8875 25.9612 22.4165 25.7387 22.0196 25.4133C21.6226 25.088 21.312 24.6699 21.115 24.196C20.9579 23.8169 20.8777 23.4103 20.879 23C20.879 22.165 21.203 21.381 21.793 20.792L26.293 16.291C26.3853 16.1955 26.4956 16.1193 26.6176 16.0669C26.7396 16.0145 26.8708 15.9869 27.0036 15.9857C27.1364 15.9846 27.2681 16.0099 27.391 16.0602C27.5139 16.1104 27.6255 16.1847 27.7194 16.2786C27.8133 16.3725 27.8876 16.4841 27.9378 16.607C27.9881 16.7299 28.0134 16.8616 28.0123 16.9944C28.0111 17.1272 27.9835 17.2584 27.9311 17.3804C27.8787 17.5024 27.8025 17.6127 27.707 17.705L23.207 22.206C23.1024 22.31 23.0196 22.4337 22.9632 22.57C22.9069 22.7063 22.8783 22.8525 22.879 23C22.8782 23.1474 22.9067 23.2935 22.9627 23.4298C23.0188 23.5661 23.1014 23.6899 23.2056 23.7941C23.3099 23.8983 23.4338 23.9807 23.5702 24.0366C23.7065 24.0926 23.8526 24.1209 24 24.12C24.297 24.12 24.582 24.002 24.793 23.793L29.051 19.533C29.3529 19.2325 29.5922 18.8751 29.7551 18.4815C29.9179 18.0879 30.0012 17.6659 30 17.24C30 16.374 29.663 15.559 29.051 14.947C28.4422 14.3401 27.6176 13.9993 26.758 13.9993C25.8984 13.9993 25.0738 14.3401 24.465 14.947L14.95 24.465C14.6478 24.7657 14.4082 25.1234 14.2451 25.5173C14.0821 25.9113 13.9987 26.3336 14 26.76C14 27.626 14.338 28.44 14.95 29.053C15.5588 29.6599 16.3834 30.0006 17.243 30.0006C18.1026 30.0006 18.9272 29.6599 19.536 29.053L21.293 27.295C21.3853 27.1995 21.4956 27.1233 21.6176 27.0709C21.7396 27.0185 21.8708 26.9909 22.0036 26.9897C22.1364 26.9886 22.2681 27.0139 22.391 27.0642C22.5139 27.1144 22.6255 27.1887 22.7194 27.2826C22.8133 27.3765 22.8876 27.4881 22.9378 27.611C22.9881 27.7339 23.0134 27.8656 23.0123 27.9984C23.0111 28.1312 22.9835 28.2624 22.9311 28.3844C22.8787 28.5064 22.8025 28.6167 22.707 28.709L20.95 30.467C20.4632 30.9536 19.8852 31.3395 19.2491 31.6026C18.6131 31.8656 17.9313 32.0007 17.243 32Z" fill="#F2F0FE"/>
+													</g>
+													<defs>
+													<clipPath id="clip0_226_1711">
+													<rect width="20" height="20" fill="white" transform="translate(12 12)"/>
+													</clipPath>
+													</defs>
+												</svg> 
+											</div>
+											<div class="attach-choice-block attach-block-hide">
+												<div class="attach-choice-block-icon"></div>
+												<svg class="attach-choice-block-icon" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<circle cx="22" cy="22" r="22" fill="currentColor"/>
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M17.5081 14.4655L16.3562 17H14.5C13.6716 17 13 17.6716 13 18.5V20.382L13.5029 20.6334C18.8518 23.308 25.1479 23.308 30.4971 20.6334L31 20.382V18.5C31 17.6716 30.3284 17 29.5 17H27.6438L26.4919 14.4655C26.0862 13.573 25.1963 13 24.2161 13H19.7839C18.8037 13 17.9138 13.573 17.5081 14.4655ZM19.7839 15C19.5879 15 19.4099 15.1146 19.3289 15.2931L18.553 17H25.447L24.6711 15.2931C24.5901 15.1146 24.4121 15 24.2161 15H19.7839Z" fill="#656084"/>
+													<path d="M31 22.6129C28.4612 23.8174 25.7405 24.485 23 24.6155V26C23 26.5523 22.5522 27 22 27C21.4478 27 21 26.5523 21 26V24.6155C18.2595 24.485 15.5391 23.8175 13 22.613V29.5C13 30.3284 13.6716 31 14.5 31H29.5C30.3284 31 31 30.3284 31 29.5V22.6129Z" fill="#656084"/>
+												</svg>
+												<svg class="attach-choice-block-icon" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<circle cx="22" cy="22" r="22" fill="currentColor"/>
+													<g clip-path="url(#clip0_3977_5919)">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M31 28C31.5523 28 32 27.5523 32 27V13C32 12.4477 31.5523 12 31 12H17C16.4477 12 16 12.4477 16 13V27C16 27.5523 16.4477 28 17 28H31ZM18.4264 26C18.1732 26 18.0001 25.809 18 25.6036C18.0001 25.5239 18.0261 25.4417 18.0835 25.368L21.1288 22.1272C21.2917 21.9592 21.5746 21.9592 21.746 22.1192L23.1431 23.6L25.7659 19.7752C25.9459 19.5352 26.323 19.5432 26.4858 19.7912L29.9478 25.4C30.102 25.672 29.8963 26 29.5706 26H18.4264ZM23 17C23 18.1046 22.1046 19 21 19C19.8954 19 19 18.1046 19 17C19 15.8954 19.8954 15 21 15C22.1046 15 23 15.8954 23 17Z" fill="#656084"/>
+													<path d="M12 16.5C12 15.6716 12.6716 15 13.5 15H14V30H29V30.5C29 31.3284 28.3284 32 27.5 32H13.5C12.6716 32 12 31.3284 12 30.5V16.5Z" fill="#656084"/>
+													</g>
+													<defs>
+													<clipPath id="clip0_3977_5919">
+													<rect width="20" height="20" fill="white" transform="translate(12 12)"/>
+													</clipPath>
+													</defs>
+												</svg>
+												<svg class="attach-choice-block-icon" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<circle cx="22" cy="22" r="22" fill="currentColor"/>
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M23.3787 12C23.7765 12 24.158 12.158 24.4393 12.4393L28.5607 16.5607C28.842 16.842 29 17.2235 29 17.6213V30.5C29 31.3284 28.3284 32 27.5 32H16.5C15.6716 32 15 31.3284 15 30.5V13.5C15 12.6716 15.6716 12 16.5 12H23.3787ZM18 17H22V19H18V17ZM26 21V23H18V21H26ZM18 27V25H25V27H18Z" fill="#656084"/>
+												</svg>
+												<!-- Прихований інпут для вибору файлів -->
+												<input id="fileInput" type="file" multiple>
+											</div>
+											<input type="text" placeholder="Введите Ваше сообщение" class="tabs__item-footer--message-input">
+										</div>
+										<button class="tabs__item-footer--message-send-btn">Отправить</button>
+									</div>
+								</div>
+								<div class="tabs__item" id="tab_2">
+									<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, magni assumenda aspernatur accusamus accusantium nesciunt quis soluta magnam odit alias consequuntur libero tempore error dolore modi dolores rem, perferendis perspiciatis beatae incidunt distinctio dignissimos velit. Sit minus tenetur fugiat, provident nulla nisi placeat nemo architecto! Blanditiis dignissimos temporibus tenetur dolorum?</p>
+								</div>
+								<div class="tabs__item" id="tab_3">
+									<p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae neque totam temporibus? Quasi commodi vitae natus optio sunt excepturi, soluta quas consequuntur sit explicabo. Natus aperiam placeat assumenda vero, odio soluta repellendus consectetur expedita, ducimus corporis atque. Repellendus, repellat amet. Blanditiis pariatur laudantium dolore obcaecati iure quod! Nihil labore rem minima quia similique assumenda quam. Libero dolor molestiae unde, quasi consequuntur voluptate error debitis esse odio nesciunt voluptatem tempora repellendus harum! Modi voluptas nam voluptatem commodi, minus eligendi alias quia fugiat? Nesciunt, reprehenderit veritatis mollitia animi a minima aperiam quia commodi facilis ea modi dignissimos maiores cupiditate saepe sint? Enim beatae iste dolores fuga, veritatis necessitatibus, molestias natus mollitia, obcaecati illo voluptate id? Quo dolorum odio nisi? Neque modi officiis voluptates et sit eum in, cumque odio rem quis vel dolor quod deleniti ducimus suscipit sapiente laborum. Aut accusantium impedit voluptate dolorem nihil assumenda dolores est quae optio quam reprehenderit quasi harum vero, cumque illum praesentium possimus aperiam quaerat! Quia consequuntur omnis eaque itaque sunt! Odio error minus ex earum incidunt fugit dolorem laboriosam? Soluta temporibus nisi dignissimos nesciunt molestiae perferendis quos in odit veniam ab voluptates reprehenderit beatae ratione voluptatum, doloribus labore vitae quidem! Ut dicta minus facere fugiat.</p>
+								</div>
+								<div class="tabs__item" id="tab_4">
+									<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+									<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab quia vitae ex laborum rerum pariatur fugiat nulla, repellendus eveniet, sit id quam eligendi animi, debitis qui ut. Labore, non voluptatibus!</p>
+								</div>
+								<div class="tabs__item" id="tab_5">
+									<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+									<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium at molestiae ipsam nesciunt animi quasi earum nemo delectus distinctio repellat aliquam magnam eveniet maxime, culpa minima dolorum placeat ad! Quod excepturi soluta amet, asperiores quis ullam expedita laboriosam ipsum nihil ipsa deleniti recusandae fugiat hic ad molestias? Laudantium minus deleniti quod nesciunt! Soluta necessitatibus esse repellat, ad ea maxime dicta, consequatur accusamus expedita aperiam ut architecto, doloremque odio. Libero quisquam neque, quam deserunt aliquid provident eum est quibusdam eos debitis voluptas praesentium dolor blanditiis odio illum expedita dolorum qui distinctio porro fuga ipsa autem? Amet ex aperiam, adipisci vero cupiditate quibusdam molestias ipsa incidunt nobis harum debitis obcaecati laudantium aspernatur laborum, necessitatibus explicabo doloribus quam. Recusandae cum et, beatae sequi consequuntur sit molestias, ratione dolor nostrum molestiae eveniet asperiores possimus doloribus labore eos temporibus? Odit eos reprehenderit deserunt esse beatae facere ut quibusdam autem voluptatum, minus quis porro. Libero excepturi voluptatem voluptatum debitis laudantium expedita magnam incidunt officia cum autem. Consectetur cumque, tenetur incidunt esse eum autem iste quasi adipisci nobis, delectus nihil corporis ipsa. Perspiciatis placeat labore magnam, quas corrupti necessitatibus expedita numquam laboriosam est molestiae, dicta facilis adipisci aliquam libero! Maxime numquam eum est non dignissimos consectetur totam aut tempore ratione soluta, iusto delectus, hic possimus illo velit itaque nobis odio repellendus reprehenderit a quas doloribus asperiores. Id iusto perferendis quam dignissimos itaque, consequuntur placeat reprehenderit molestias cum exercitationem aut velit doloremque quisquam architecto sapiente repellendus ipsa! Rem obcaecati quia natus ex laudantium nemo, mollitia, inventore animi vitae facere dicta tenetur beatae qui ab quasi! At aut sequi perferendis nulla? Quidem amet magnam magni laborum fugit sit veniam, accusamus debitis aliquid excepturi. Repellat ab hic molestiae nesciunt, commodi ut doloremque. Repudiandae dicta, molestiae architecto dolore iure dolores aspernatur vero eligendi officiis temporibus minus amet culpa, sunt saepe natus molestias quod ut consectetur. Vel ipsam accusamus, facilis culpa sunt error eius rem quidem quasi quas eligendi, minus ducimus eveniet, cum voluptatibus tempora a suscipit debitis? Cumque fuga officiis repellat beatae saepe provident impedit natus voluptates similique tempore itaque corporis earum laudantium laboriosam amet labore veniam, ducimus dolor sint est animi eos delectus maxime! Earum asperiores provident dignissimos ad, quas autem quaerat iusto consequuntur rem facilis neque porro cumque nemo inventore repellat magni? Amet vitae similique esse ex ducimus omnis laborum iure quidem soluta earum, nemo facilis quod incidunt. Magnam, quaerat? Cumque distinctio totam dicta, nobis quae commodi numquam asperiores quasi fuga assumenda doloremque omnis expedita impedit quia temporibus vitae fugiat, excepturi similique eos atque culpa, cum adipisci vel. Eum, veritatis quas commodi, esse deleniti vero harum libero iusto possimus recusandae dicta dignissimos omnis vel pariatur vitae excepturi sequi distinctio enim eos tempore consectetur. Consequatur recusandae eius odio iure molestias itaque quasi sit ullam totam cumque labore animi quibusdam hic tenetur earum, dignissimos adipisci! Praesentium quam, veritatis saepe quibusdam fugit tenetur repellendus asperiores qui ipsum, eum perferendis at atque minus adipisci. Labore corporis consequuntur enim omnis a numquam modi ea quibusdam minus amet? Sint in et aut tempora deserunt corporis.</p>
+								</div>
+								<div class="tabs__item" id="tab_6">
+									<p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+									<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia voluptas doloremque, iure adipisci porro inventore totam hic corrupti, temporibus, animi repellat voluptate. Consectetur quisquam voluptatibus minima quibusdam voluptatum voluptatem ea corporis? Aspernatur quidem doloremque mollitia aliquam repellendus tenetur voluptatum similique ut ipsum cumque vitae eveniet incidunt facilis quia qui repudiandae, at quisquam soluta omnis illum dignissimos ad. Minus velit doloribus tempora accusantium natus iusto vero aliquam ratione fugit est nesciunt obcaecati saepe alias voluptas ea animi corrupti, maxime beatae magni eaque quia laborum qui soluta! Cum asperiores culpa esse harum, odio nesciunt temporibus quo quis velit non consectetur minus nobis dolore saepe qui neque odit, hic in. Rem nulla quam officiis veniam corporis reiciendis quis facere sit dolorum nesciunt provident quod dolores deserunt totam ducimus magnam qui ea impedit, et similique reprehenderit doloribus! Repudiandae corporis est laboriosam veniam dolores illum facere optio totam magnam minima, recusandae repellendus qui, hic assumenda adipisci nisi error esse nostrum! Rerum aliquam autem sed eligendi dolore nulla recusandae, eius, eos in quibusdam deleniti explicabo ducimus labore numquam praesentium ratione! Alias quae, dolores error nihil sunt, eligendi exercitationem ducimus fugiat laborum eum neque. Numquam, sed? Repudiandae explicabo suscipit obcaecati nam non consequuntur culpa nulla rem quod blanditiis accusantium veritatis dignissimos, vero laborum. Facilis tempora veniam quae dolores rerum placeat modi ducimus. Architecto error ab, illum mollitia accusantium unde, doloribus provident dolore sequi quae reiciendis ipsum veniam nihil voluptas sunt quaerat perspiciatis velit! Sed tempora, sint maiores corporis quo accusamus, amet odio laudantium, ex quia porro optio animi fugiat harum nihil voluptate esse repellat dolorum neque enim illo. Possimus tenetur provident illo aspernatur, iure, in reprehenderit pariatur ducimus ex libero molestiae consequuntur quam. Obcaecati blanditiis qui minima? Consequatur voluptatum non, quae labore minus rem aliquid atque vitae dolore nisi dolor saepe quasi totam alias assumenda modi esse rerum nulla fugiat voluptatibus. Delectus magnam sunt culpa obcaecati enim iure a, voluptatum illo hic voluptatibus expedita unde ea consectetur quidem recusandae! Facilis id, fuga modi dicta quae rem numquam? Numquam, iure rem? Quam porro modi illo assumenda sunt error laborum veniam ea harum possimus, et distinctio, nulla placeat voluptas quo? Porro corporis accusamus ut repellendus ipsam, consequuntur excepturi soluta iste distinctio cumque perferendis molestias dolor consectetur voluptates exercitationem hic debitis animi. Sequi debitis quidem autem corporis, officia a vero. Nobis, obcaecati! Odio veritatis repudiandae voluptates eius facilis sapiente consequuntur error eveniet, dolor voluptatibus incidunt. Id, ab vel ratione architecto similique exercitationem non corrupti, adipisci iure quo, voluptatem quidem culpa sint. Officiis enim consectetur quidem, ut debitis tempore ea esse excepturi, optio ex repudiandae ipsa placeat nesciunt veritatis nemo impedit voluptas alias maxime nulla aliquam. Quos consequuntur natus quaerat incidunt, sint facere praesentium dolores pariatur repudiandae quia animi, quae eum expedita esse dolor, cumque iste rerum? Ut magni excepturi odit doloribus, consequatur laborum obcaecati tenetur officia autem esse reiciendis placeat ullam dolorem iste explicabo eum iure eius est molestias dolores tempore adipisci! Id voluptatum modi maxime dolor nemo, sit cumque accusantium vitae quo dolore? Adipisci rem corrupti, consequatur error voluptas sequi molestiae mollitia earum hic cupiditate? Voluptatem nihil perferendis fugiat quasi in veritatis corporis nam beatae maiores iusto, dolor earum harum quae at deserunt! Eaque fugit, tempore, consectetur aperiam accusamus fuga dolores labore reprehenderit iste, quod a quidem neque ea qui. Quae molestias nihil ex officia! Fugit, unde suscipit? Alias eius officiis obcaecati illum dolorum similique laudantium repudiandae dolores! Quia a optio ad reiciendis inventore vero odit aperiam, consequatur dolor laboriosam ullam reprehenderit accusamus! Architecto impedit velit excepturi quos fuga adipisci distinctio, aperiam nam. Qui odio nemo necessitatibus dolor illo veritatis, facere aliquid quasi ipsam fuga ratione, officia vel odit quisquam amet autem cupiditate dolorum optio exercitationem velit. Impedit exercitationem sapiente culpa ipsum consectetur! Voluptate officia tenetur perspiciatis voluptatibus sint commodi omnis ad ex, assumenda est eaque numquam voluptas eligendi quos dolor ullam suscipit nesciunt, optio a enim maxime repudiandae eveniet harum reprehenderit. Eaque hic, optio, consequatur vitae modi alias nulla, aliquam ipsam officia voluptatum ea repudiandae quos fuga dolorem praesentium laudantium sequi obcaecati doloribus assumenda doloremque molestias eos a perferendis? Mollitia eius similique sapiente? Quod, ipsam! Aspernatur cum nam unde ut, dolores commodi aliquid, quis, incidunt ea consequuntur porro molestiae mollitia? Tempora, eligendi pariatur qui at repellendus itaque rem?</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer class="footer">
+				<div class="container">
+					<div class="footer-items">
+						<div class="footer-item">
+							<h3 class="footer-item-title">Топ категории</h3>
+							<ul class="footer-item-list">
+								<li class="footer-item-list__item">
+									<a href="#" class="footer-list-link">Тексты и переводы</a>
+								</li>
+								<li class="footer-item-list__item">
+									<a href="#" class="footer-list-link">Разработка</a>
+								</li>
+								<li class="footer-item-list__item">
+									<a href="#" class="footer-list-link">Дизайн</a>
+								</li>
+								<li class="footer-item-list__item">
+									<a href="#" class="footer-list-link">Аудио, видео монтаж</a>
+								</li>
+								<li class="footer-item-list__item">
+									<a href="#" class="footer-list-link">Соцсети и реклама</a>
+								</li>
+								<li class="footer-item-list__item">
+									<a href="#" class="footer-list-link">Бизнес и жизнь</a>
+								</li>
+								<li class="footer-item-list__item">
+									<a href="#" class="footer-list-link">SEO и оптимизация</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer-item">
+							<h3 class="footer-item-title">О Проекте</h3>
+							<ul class="footer-item-list">
+								<li class="footer-item-list__item">
+									<button class="footer-list-link" id="open-modal__about-btn">О Нас</button>
+								</li>
+								<li class="footer-item-list__item">
+									<button class="footer-list-link" id="open-modal__how--it--work">Как Это Работает</button>
+								</li>
+								<li class="footer-item-list__item">
+									<a href="#" class="footer-list-link">Политика Приватности</a>
+								</li>
+								<li class="footer-item-list__item">
+									<button class="footer-list-link" id="open-modal__service--rules">Правила Пользования</button>
+								</li>
+								<li class="footer-item-list__item">
+									<a href="#" class="footer-list-link">Пресса о нас</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer-item">
+							<h3 class="footer-item-title">Поддержка</h3>
+							<ul class="footer-item-list">
+								<li class="footer-item-list__item">
+									<a href="#" class="footer-list-link">Контакты</a>
+								</li>
+								<li class="footer-item-list__item">
+									<button class="footer-list-link" id="open-modal__security--policy">Политика Безопасности</button>
+								</li>
+								<li class="footer-item-list__item">
+									<a href="#" class="footer-list-link">FAQ</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer-item">
+							<h3 class="footer-item-title">Follow</h3>
+							<div class="footer-social">
+								<a href="https://www.facebook.com/?locale=uk_UA" target="_blank" class="footer-social-link">
+									<!-- <img src="./img/footer/icon_facebook.svg" alt="icon facebook" class="footer-social-link__icon"> -->
+									<svg class="footer-social-link__icon fb-icon" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_19880_1980)">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M0 25.1396C0 37.5687 9.02708 47.9042 20.8333 50V31.9437H14.5833V25H20.8333V19.4438C20.8333 13.1937 24.8604 9.72292 30.5562 9.72292C32.3604 9.72292 34.3062 10 36.1104 10.2771V16.6667H32.9167C29.8604 16.6667 29.1667 18.1937 29.1667 20.1396V25H35.8333L34.7229 31.9437H29.1667V50C40.9729 47.9042 50 37.5708 50 25.1396C50 11.3125 38.75 0 25 0C11.25 0 0 11.3125 0 25.1396Z" fill="currentColor"/>
+										</g>
+										<defs>
+										<clipPath id="clip0_19880_1980">
+										<rect width="50" height="50" fill="white"/>
+										</clipPath>
+										</defs>
+									</svg>
+								</a>
+								<a href="https://x.com/?lang=uk" target="_blank" class="footer-social-link">
+									<!-- <img src="./img/footer/icon_twitter.svg" alt="icon twitter" class="footer-social-link__icon"> -->
+									<svg class="footer-social-link__icon twitter-icon" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_19880_1983)">
+										<path d="M25 0C11.1942 0 0 11.1942 0 25C0 38.8058 11.1942 50 25 50C38.8058 50 50 38.8058 50 25C50 11.1942 38.8058 0 25 0ZM37.0145 18.8449C37.0312 19.1071 37.0312 19.3806 37.0312 19.6484C37.0312 27.8404 30.7924 37.2768 19.3917 37.2768C15.8761 37.2768 12.6172 36.2556 9.87165 34.4978C10.3739 34.5536 10.8538 34.5759 11.3672 34.5759C14.269 34.5759 16.9364 33.5938 19.0625 31.9308C16.3393 31.875 14.0513 30.0893 13.2701 27.6339C14.2243 27.7734 15.0837 27.7734 16.0658 27.5223C14.6637 27.2374 13.4033 26.4759 12.499 25.3671C11.5946 24.2583 11.102 22.8706 11.1049 21.4397V21.3616C11.9252 21.8248 12.8906 22.1094 13.9007 22.1484C13.0516 21.5826 12.3552 20.8159 11.8734 19.9165C11.3915 19.017 11.1391 18.0126 11.1384 16.9922C11.1384 15.8371 11.4397 14.7824 11.981 13.8672C13.5374 15.7831 15.4795 17.3501 17.6812 18.4663C19.8828 19.5825 22.2947 20.223 24.76 20.346C23.8839 16.1328 27.0312 12.7232 30.8147 12.7232C32.6004 12.7232 34.2076 13.471 35.3404 14.6763C36.7411 14.4141 38.0804 13.8895 39.2746 13.1864C38.8114 14.6205 37.8404 15.8315 36.5513 16.596C37.8013 16.4621 39.0067 16.1161 40.1228 15.6306C39.2801 16.8694 38.2254 17.9688 37.0145 18.8449Z" fill="currentColor"/>
+										</g>
+										<defs>
+										<clipPath id="clip0_19880_1983">
+										<rect width="50" height="50" fill="white"/>
+										</clipPath>
+										</defs>
+									</svg>
+								</a>
+								<a href="https://www.instagram.com/" target="_blank" class="footer-social-link">
+									<!-- <img src="./img/footer/icon_instagram.svg" alt="icon instagram" class="footer-social-link__icon"> -->
+									<svg class="footer-social-link__icon instagram-icon" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<circle cx="25" cy="25" r="25" fill="#222222"/>
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M19.7105 12.2437C21.079 12.1807 21.5153 12.1667 25.0013 12.1667C28.4873 12.1667 28.9236 12.1819 30.291 12.2437C31.6583 12.3056 32.5916 12.5237 33.4083 12.8399C34.2635 13.1631 35.0393 13.6682 35.681 14.3216C36.3343 14.9621 36.8383 15.7367 37.1603 16.5931C37.4776 17.4097 37.6946 18.3431 37.7576 19.7081C37.8206 21.0789 37.8346 21.5152 37.8346 25.0001C37.8346 28.4861 37.8195 28.9224 37.7576 30.2909C37.6958 31.6559 37.4776 32.5892 37.1603 33.4059C36.8383 34.2624 36.3335 35.0383 35.681 35.6797C35.0393 36.3331 34.2635 36.8371 33.4083 37.1591C32.5916 37.4764 31.6583 37.6934 30.2933 37.7564C28.9236 37.8194 28.4873 37.8334 25.0013 37.8334C21.5153 37.8334 21.079 37.8182 19.7105 37.7564C18.3455 37.6946 17.4121 37.4764 16.5955 37.1591C15.739 36.837 14.9631 36.3322 14.3216 35.6797C13.6687 35.0389 13.1635 34.2633 12.8411 33.4071C12.525 32.5904 12.308 31.6571 12.245 30.2921C12.182 28.9212 12.168 28.4849 12.168 25.0001C12.168 21.5141 12.1831 21.0777 12.245 19.7104C12.3068 18.3431 12.525 17.4097 12.8411 16.5931C13.164 15.7368 13.6696 14.9613 14.3228 14.3204C14.9633 13.6677 15.7385 13.1624 16.5943 12.8399C17.411 12.5237 18.3443 12.3067 19.7093 12.2437H19.7105ZM30.1871 14.5537C28.8338 14.4919 28.4278 14.4791 25.0013 14.4791C21.5748 14.4791 21.1688 14.4919 19.8155 14.5537C18.5636 14.6109 17.8846 14.8197 17.432 14.9959C16.8335 15.2292 16.4053 15.5057 15.9561 15.9549C15.5304 16.3691 15.2027 16.8734 14.9971 17.4307C14.821 17.8834 14.6121 18.5624 14.555 19.8142C14.4931 21.1676 14.4803 21.5736 14.4803 25.0001C14.4803 28.4266 14.4931 28.8326 14.555 30.1859C14.6121 31.4377 14.821 32.1167 14.9971 32.5694C15.2025 33.1259 15.5303 33.6311 15.9561 34.0452C16.3703 34.4711 16.8755 34.7989 17.432 35.0042C17.8846 35.1804 18.5636 35.3892 19.8155 35.4464C21.1688 35.5082 21.5736 35.5211 25.0013 35.5211C28.429 35.5211 28.8338 35.5082 30.1871 35.4464C31.439 35.3892 32.118 35.1804 32.5706 35.0042C33.1691 34.7709 33.5973 34.4944 34.0465 34.0452C34.4723 33.6311 34.8001 33.1259 35.0055 32.5694C35.1816 32.1167 35.3905 31.4377 35.4476 30.1859C35.5095 28.8326 35.5223 28.4266 35.5223 25.0001C35.5223 21.5736 35.5095 21.1676 35.4476 19.8142C35.3905 18.5624 35.1816 17.8834 35.0055 17.4307C34.7721 16.8322 34.4956 16.4041 34.0465 15.9549C33.6322 15.5292 33.128 15.2015 32.5706 14.9959C32.118 14.8197 31.439 14.6109 30.1871 14.5537ZM23.3621 28.9562C24.2776 29.3373 25.2969 29.3887 26.2461 29.1018C27.1952 28.8148 28.0153 28.2071 28.5662 27.3827C29.1171 26.5582 29.3647 25.5681 29.2667 24.5814C29.1687 23.5946 28.7311 22.6725 28.0288 21.9726C27.5811 21.5251 27.0397 21.1825 26.4437 20.9694C25.8477 20.7563 25.2118 20.678 24.5819 20.7401C23.952 20.8023 23.3436 21.0033 22.8007 21.3287C22.2578 21.6542 21.7938 22.0959 21.4422 22.6222C21.0905 23.1485 20.8599 23.7463 20.7669 24.3724C20.674 24.9985 20.721 25.6374 20.9046 26.2432C21.0882 26.8489 21.4039 27.4065 21.8288 27.8756C22.2538 28.3447 22.7774 28.7138 23.3621 28.9562ZM20.337 20.3357C20.9495 19.7232 21.6767 19.2373 22.477 18.9058C23.2773 18.5743 24.1351 18.4037 25.0013 18.4037C25.8675 18.4037 26.7253 18.5743 27.5256 18.9058C28.3259 19.2373 29.0531 19.7232 29.6656 20.3357C30.2782 20.9483 30.764 21.6755 31.0955 22.4758C31.427 23.2761 31.5977 24.1338 31.5977 25.0001C31.5977 25.8663 31.427 26.7241 31.0955 27.5244C30.764 28.3247 30.2782 29.0519 29.6656 29.6644C28.4286 30.9015 26.7508 31.5964 25.0013 31.5964C23.2518 31.5964 21.574 30.9015 20.337 29.6644C19.0999 28.4274 18.4049 26.7495 18.4049 25.0001C18.4049 23.2506 19.0999 21.5728 20.337 20.3357ZM33.0606 19.3861C33.2124 19.2429 33.3339 19.0707 33.418 18.8797C33.502 18.6887 33.5469 18.4828 33.55 18.2742C33.553 18.0655 33.5141 17.8584 33.4357 17.665C33.3573 17.4717 33.2408 17.296 33.0933 17.1485C32.9457 17.0009 32.7701 16.8845 32.5767 16.806C32.3833 16.7276 32.1762 16.6887 31.9675 16.6918C31.7589 16.6948 31.553 16.7397 31.362 16.8237C31.171 16.9078 30.9988 17.0293 30.8556 17.1811C30.5772 17.4763 30.4247 17.8684 30.4306 18.2742C30.4365 18.6799 30.6004 19.0674 30.8873 19.3544C31.1743 19.6414 31.5618 19.8052 31.9675 19.8111C32.3733 19.817 32.7654 19.6646 33.0606 19.3861Z" fill="#F7F6FF"/>
+									</svg>
+								</a>
+								<a href="https://ua.linkedin.com/" target="_blank" class="footer-social-link">
+									<!-- <img src="./img/footer/icon_linkedin.svg" alt="icon linkedin" class="footer-social-link__icon"> -->
+									<svg class="footer-social-link__icon linkedin-icon" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_19880_1990)">
+										<path d="M25 0C11.1927 0 0 11.1927 0 25C0 38.8073 11.1927 50 25 50C38.8073 50 50 38.8073 50 25C50 11.1927 38.8073 0 25 0ZM18.8802 35.362H13.8177V19.0703H18.8802V35.362ZM16.3177 17.0703C14.7187 17.0703 13.6849 15.9375 13.6849 14.5365C13.6849 13.1068 14.75 12.0078 16.3828 12.0078C18.0156 12.0078 19.0156 13.1068 19.0469 14.5365C19.0469 15.9375 18.0156 17.0703 16.3177 17.0703ZM37.3698 35.362H32.3073V26.3333C32.3073 24.2318 31.5729 22.8047 29.7422 22.8047C28.3438 22.8047 27.513 23.7708 27.1458 24.7005C27.0104 25.0312 26.9766 25.5 26.9766 25.9661V35.3594H21.9115V24.2656C21.9115 22.2318 21.8464 20.5312 21.7786 19.0677H26.1771L26.4089 21.3307H26.5104C27.1771 20.2682 28.8099 18.7005 31.5417 18.7005C34.8724 18.7005 37.3698 20.9323 37.3698 25.7292V35.362Z" fill="currentColor"/>
+										</g>
+										<defs>
+										<clipPath id="clip0_19880_1990">
+										<rect width="50" height="50" fill="white"/>
+										</clipPath>
+										</defs>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="footer-copyright">Copyright @ 2021  |  WorkTap – Worktap.KZ. All Rights Reserved</div>
+				</div>
+				<div class="modal-about" id="modal-about">
+					<div class="modal__box-about">
+						<button class="modal__about-close-btn" id="close-modal__about-btn">
+							<svg width="23" height="25" viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z"
+									fill="#333333" />
+								<path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z" fill="#333333" />
+							</svg>
+						</button>
+						<h2 class="about-title">О нас</h2>
+
+						<p class="about-desc">WorkTap - онлайн сервис поиска частных специалистов для решения бизнес задач в кратчайшие сроки. Наша платформа объединяет заказчиков услуг, которым необходимо выполнить какую-либо работу, и компетентных специалистов, ищущих подработку или дополнительный заработок.</p>
+
+						<img src="./img/about/image.jpg" alt="image" class="about-img">
+					</div>
+				</div>
+				<div class="modal-how--it--work" id="modal-how--it--work">
+					<div class="modal__box-how--it--work">
+						<button class="modal__how--it--work-close-btn" id="close-modal__how--it--work-btn">
+							<svg width="23" height="25" viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z"
+									fill="#333333" />
+								<path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z" fill="#333333" />
+							</svg>
+						</button>
+						<h2 class="how--it--work-title">Как это работает</h2>
+
+						<div class="how--it--work-cards">
+							<div class="how--it--work-card">
+								<img src="./img/how_it_work/product_iteration.png" alt="product iteration" class="how--it--work-card-icon">
+								<h3 class="how--it--work-card-title">Укажите вид работы и категорию</h3>
+								<p class="how--it--work-card-desc"></p>
+							</div>
+							<div class="how--it--work-card">
+								<img src="./img/how_it_work/updated_resume.png" alt="updated resume" class="how--it--work-card-icon">
+								<h3 class="how--it--work-card-title">Выберите специалиста</h3>
+								<p class="how--it--work-card-desc">Каждый специалист перед началом работы проходит тщательную проверку, имеет рейтинг и отзывы предыдущих заказчиков.</p>
+							</div>
+							<div class="how--it--work-card">
+								<img src="./img/how_it_work/pay_online.png" alt="pay online" class="how--it--work-card-icon">
+								<h3 class="how--it--work-card-title">Оплатите услугу</h3>
+								<p class="how--it--work-card-desc"></p>
+							</div>
+							<div class="how--it--work-card">
+								<img src="./img/how_it_work/teacher.png" alt="teacher" class="how--it--work-card-icon">
+								<h3 class="how--it--work-card-title">Cпециалист выполняет работу</h3>
+								<p class="how--it--work-card-desc">После выполнения заказа у вас будет возможность поставить специалисту оценку и написать отзыв.</p>
+							</div>
+						</div>
+
+						<button class="how--it--work-btn" id="how--it--work-btn">Понятно</button>
+					</div>
+				</div>
+				<div class="modal-service--rules" id="modal-service--rules">
+					<div class="modal__box-service--rules">
+						<button class="modal__service--rules-close-btn" id="close-modal__service--rules-btn">
+							<svg width="23" height="25" viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z"
+									fill="#333333" />
+								<path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z" fill="#333333" />
+							</svg>
+						</button>
+						<h2 class="service--rules-title">ПРАВИЛА СЕРВИСА</h2>
+
+						<div class="service--rules-desc">
+							<h3 class="service--rules-desc-title">Правила сайта</h3>
+							<p class="service--rules-desc-text">1. Пользоваться сервисом worktap.kz может любой человек, достигший совершеннолетия. Для создания или заказа ворка необходима регистрация с помощью email.</p>
+							<p class="service--rules-desc-text">2. У одного человека может быть только один аккаунт. Администрация оставляет за собой право удалить дублирующие аккаунты.</p>
+							<p class="service--rules-desc-text">3. При регистрации пользователь самостоятельно выбирает логин, который будет виден всем пользователям сайта. Логин может содержать цифры, буквы латинского алфавита и знаки - и _. Нельзя использовать в качестве логинов номера телефонов, ненормативную лексику, слова, перевод или звучание которых может негативно восприниматься другими пользователями, а также системные и зарезервированные слова. Администрация вправе изменять такие логины пользователей.</p>
+							<p class="service--rules-desc-text">4. Ответственность за всю размещенную пользователем информацию (тексты, иллюстрации, видео и т.д.) несет сам пользователь. Регистрируясь на сайте, пользователь подтверждает, что понимает свою ответственность и гарантирует возмещение расходов, понесенных сервисом, в случае предъявления претензий правообладателей к сайту worktap.kz.</p>
+							<p class="service--rules-desc-text">5. На сайте запрещена ненормативная лексика, грубое общение, несанкционированная реклама, размещение информации и материалов, негативно влияющих на имидж сайта. Запрещено размещение материалов, содержащих угрозы и оскорбления, дискредитирующих других лиц, нарушающих права граждан на частную жизнь или публичный порядок, носящих характер непристойности; нарушающие в той или иной степени честь и достоинство, права и охраняемые законом интересы других лиц; способствующие или содержащие призывы к разжиганию религиозной, расовой или межнациональной розни, содержащие попытки разжигания вражды или призывы к насилию, а также любых материалов, нарушающих законодательство и авторское право. Всю ответственность в случае нарушений несет на себе пользователь. Нарушающая правила или закон информация будет удалена.</p>
+							<p class="service--rules-desc-text">6. Администрация ресурса оставляет за собой право удалить любые материалы (проекты, ворки, отзывы, комментарии), а также заблокировать или удалить пользователя без объяснения причин. При подозрении на несанкционированный доступ к аккаунту, рассылке спама или иной подозрительной активности администрация сайта вправе заблокировать аккаунт и вывод средств до выяснения обстоятельств.</p>
+							<p class="service--rules-desc-text">6. Администрация ресурса оставляет за собой право удалить любые материалы (проекты, ворки, отзывы, комментарии), а также заблокировать или удалить пользователя без объяснения причин. При подозрении на несанкционированный доступ к аккаунту, рассылке спама или иной подозрительной активности администрация сайта вправе заблокировать аккаунт и вывод средств до выяснения обстоятельств.</p>
+							<p class="service--rules-desc-text">7. Спорные ситуации, в том числе с финансами, разрешаются с помощью переписки, при обращении пользователя в службу поддержки сайта. Если какой-либо вопрос не регулируется правилами, администрация системы принимает решение о том, как необходимо поступить в той или иной ситуации.</p>
+							<p class="service--rules-desc-text">8. Пользователь берет на себя обязательство не разглашать информацию, полученную в процессе работы в системе, которая доступна только при входе в свой аккаунт. Эта информация включает в себя, но не ограничивается параметрами и условиями заказов, личной перепиской с другими пользователями и администрацией Worktap. В качестве исключения пользователь имеет право публиковать данные о своем заработке в системе, собственных ворках, и других параметрах своего аккаунта, если это не затрагивает информацию, связанную с другими пользователями (данные их заказов, личная переписка).</p>
+							<p class="service--rules-desc-text">9. Если продавец ведет постоянную деятельность и получает стабильный доход посредством размещения услуг и выполнения заказов на сайте worktap.kz, он самостоятельно должен регулировать свои взаимоотношения с государственными органами: самостоятельно оформить ИП/патент/юр. лицо и вовремя оплачивать налоги/сборы.</p>
+							<p class="service--rules-desc-text">10. Пользователь сайта не имеет права использовать для продвижения партнерской ссылки некачественные методы рекламы, копировать сайт полностью или частично, использовать дизайн или бренд сайта WorkTap с целью введения пользователей в заблуждение. Подробнее: Правила партнерской программы.</p>
+							<p class="service--rules-desc-text">11. Использование персональных данных сайтом WorkTap. Пользователь дает добровольное согласие на предоставление, хранение и обработку своих данных, и на получение информации, в том числе email рассылок, от WorkTap, регистрируясь на сайте. WorkTap может собирать, хранить и обрабатывать пользовательскую информацию (куки, данные, идентификаторы), если это необходимо в целях обеспечения работы сайта, корректной работы партнерской программы, а также для рекламных целей. На сайте происходит сбор данных о посетителях с помощью сервисов Гугл Аналитика и Яндекс Метрика. Все данные пользователя хранятся на защищенных серверах и не передаются третьим лицам, исключая необходимость такой передачи в целях обеспечения работы сервиса или маркетинговых целях, а также следуя требованиям законодательства. В любое время вы можете отключить передачу cookie в настройках браузера. При этом следует учесть, что в этом случае некоторые функции сервиса могут перестать работать.</p>
+							<p class="service--rules-desc-text">12. Пользователи не имеют права продавать, покупать, дарить аккаунты WorkTap и передавать учётные данные аккаунта третьим лицам.</p>
+						</div>
+
+						<button class="service--rules-btn" id="service--rules-btn">Понятно</button>
+					</div>
+				</div>
+				<div class="modal-security--policy" id="modal-security--policy">
+					<div class="modal__box-security--policy">
+						<button class="modal__security--policy-close-btn" id="close-modal__security--policy-btn">
+							<svg width="23" height="25" viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z"
+									fill="#333333" />
+								<path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z" fill="#333333" />
+							</svg>
+						</button>
+						<h2 class="security--policy-title">Политика безопасности</h2>
+
+						<div class="security--policy-desc">
+							<h3 class="security--policy-desc-title">БЕЗОПАСНОСТЬ ОНЛАЙН ПЛАТЕЖЕЙ</h3>
+							
+							<h4 class="security--policy-desc-subtitle">Платежи. Оплата банковской картой онлайн</h4>
+							<p class="security--policy-desc-text">Наш сайт подключен к интернет-эквайрингу, и Вы можете оплатить Услугу банковской картой Visa или Mastercard. После подтверждения выбранного Товара либо услуги откроется защищенное окно с платежной страницей процессингового центра CloudPayments, где Вам необходимо ввести данные Вашей банковской карты. Для дополнительной аутентификации держателя карты используется протокол 3-D Secure. Если Ваш Банк-эмитент поддерживает данную технологию, Вы будете перенаправлены на его сервер для прохождения дополнительной идентификации. Информацию о правилах и методах дополнительной идентификации уточняйте в Банке, выдавшем Вам банковскую карту.</p>
+							<p class="security--policy-desc-text">Услуга онлайн-оплаты осуществляется в соответствии с правилами Международных платежных систем Visa и MasterCard на принципах соблюдения конфиденциальности и безопасности совершения платежа, для этого используются самые актуальные методы проверки, шифрования и передачи данных по закрытым каналам связи. Ввод данных банковской карты осуществляется в защищенном окне на платежной странице CloudPayments.</p>
+							<p class="security--policy-desc-text">В поля на платежной странице требуется ввести номер карты, имя владельца карты, срок действия карты, трёхзначный код безопасности (CVV2 для VISA или CVC2 для MasterCard). Все необходимые данные отображены на поверхности банковской карты.</p>
+							<p class="security--policy-desc-text">CVV2/ CVC2 — это трёхзначный код безопасности, находящийся на оборотной стороне карты.</p>
+							<p class="security--policy-desc-text">Далее в том же окне откроется страница Вашего банка-эмитента для ввода 3-D Secure кода. В случае, если у вас не настроен статичный 3-D Secure, он будет отправлен на ваш номер телефона посредством SMS. Если 3-D Secure код к Вам не пришел, то следует обратится в ваш банк-эмитент.</p>
+							<p class="security--policy-desc-text">3-D Secure — это самая современная технология обеспечения безопасности платежей по картам в сети интернет. Позволяет однозначно идентифицировать подлинность держателя карты, осуществляющего операцию, и максимально снизить риск мошеннических операций по карте.</p>
+							
+							<h4 class="security--policy-desc-subtitle">Гарантии безопасности</h4>
+							<p class="security--policy-desc-text">Процессинговый центр CloudPayments защищает и обрабатывает данные Вашей банковской карты по стандарту безопасности PCI DSS 3.0. Передача информации в платежный шлюз происходит с применением технологии шифрования SSL. Дальнейшая передача информации происходит по закрытым банковским сетям, имеющим наивысший уровень надежности. CloudPayments не передает данные Вашей карты нам и иным третьим лицам. Для дополнительной аутентификации держателя карты используется протокол 3-D Secure.</p>
+							<p class="security--policy-desc-text">В случае, если у Вас есть вопросы по совершенному платежу, Вы можете обратиться в службу поддержки клиентов платежного сервиса по электронной почте support@cloudpayments.kz.</p>
+							
+							<h4 class="security--policy-desc-subtitle">Безопасность онлайн-платежей</h4>
+							<p class="security--policy-desc-text">Предоставляемая Вами персональная информация (имя, адрес, телефон, e-mail, номер кредитной карты) является конфиденциальной и не подлежит разглашению. Данные Вашей кредитной карты передаются только в зашифрованном виде и не сохраняются на нашем Web-сервере.</p>
+							<p class="security--policy-desc-text">Безопасность обработки Интернет-платежей гарантирует ТОО «CloudPayments Kazakhstan». Все операции с платежными картами происходят в соответствии с требованиями VISA International, MasterCard и других платежных систем. При передаче информации используются специализированные технологии безопасности карточных онлайн-платежей, обработка данных ведется на безопасном высокотехнологичном сервере процессинговой компании.</p>
+							
+							<h4 class="security--policy-desc-subtitle">Оплата платежными картами безопасна, потому что:</h4>
+							<p class="security--policy-desc-text">•	Система авторизации гарантирует покупателю, что платежные реквизиты его платежной карты (номер, срок действия, CVV2/CVC2) не попадут в руки мошенников, так как эти данные не хранятся на сервере авторизации и не могут быть похищены.</p>
+							<p class="security--policy-desc-text">•	Покупатель вводит свои платежные данные непосредственно в системе авторизации CloudPayments, а не на сайте интернет-магазина, следовательно, платежные реквизиты карточки покупателя не будут доступны третьим лицам.</p>
+							
+							<h4 class="security--policy-desc-subtitle">Конфиденциальность</h4>
+							<p class="security--policy-desc-text">1. Определения <br>
+																 Интернет проект https://worktap.kz (далее – URL, «мы») серьезно относится к вопросу конфиденциальности информации своих клиентов и посетителей сайта https://worktap.kz (далее – «вы», «посетители сайта»). <br>
+																 Персонифицированной мы называем информацию, содержащую персональные данные (например: ФИО, логин или название компании) посетителя сайта, а также информацию о действиях, совершаемых вами на сайте URL. (например: заказ посетителя сайта с его контактной информацией). <br>
+																 Анонимными мы называем данные, которые невозможно однозначно идентифицировать с конкретным посетителем сайта (например: статистика посещаемости сайта).
+							</p>
+							<p class="security--policy-desc-text">2. Использование информации <br>
+																Мы используем персонифицированную информацию конкретного посетителя сайта исключительно для обеспечения ему качественного оказания услуг и их учета. <br>
+																Мы не раскрываем персонифицированных данных одних посетителей сайта URL другим посетителям сайта. <br>
+																Мы никогда не публикуем персонифицированную информацию в открытом доступе и не передаем ее третьим лицам. <br>
+																Исключением являются лишь ситуации, когда предоставление такой информации уполномоченным государственным органам предписано действующим законодательством Республики Казахстан. <br>
+																Мы публикуем и распространяем только отчеты, построенные на основании собранных анонимных данных. При этом отчеты не содержат информацию, по которой было бы возможным идентифицировать персонифицированные данные пользователей услуг. <br>
+																Мы также используем анонимные данные для внутреннего анализа, целью которого является развитие продуктов и услуг URL
+							</p>
+							<p class="security--policy-desc-text">3. Ссылки <br>
+																Сайт https://worktap.kz может содержать ссылки на другие сайты, не имеющие отношения к нашей компании и принадлежащие третьим лицам. <br>
+																Мы не несем ответственности за точность, полноту и достоверность сведений, размещенных на сайтах третьих лиц, и не берем на себя никаких обязательств по сохранению конфиденциальности информации, оставленной вами на таких сайтах.
+							</p>
+							<p class="security--policy-desc-text">4. Ограничение ответственности <br>
+																Мы делаем все возможное для соблюдения настоящей политики конфиденциальности, однако, мы не можем гарантировать сохранность информации в случае воздействия факторов находящихся вне нашего влияния, результатом действия которых станет раскрытие информации. <br>
+																Сайт https://worktap.kz и вся размещенная на нем информация представлены по принципу "как есть" без каких-либо гарантий. <br>
+																Мы не несем ответственности за неблагоприятные последствия, а также за любые убытки, причиненные вследствие ограничения доступа к сайту URL или вследствие посещения сайта и использования размещенной на нем информации.
+							</p>
+							<p class="security--policy-desc-text">5. Контакты <br>
+																По вопросам, касающимся настоящей политики, просьба обращаться по адресу worktapkz@gmail.com
+							</p>
+							<p class="security--policy-desc-text">Юридическое лицо <br>
+																"WorkTap.kz" LLC <br>
+																БИН: 201240012054 <br>
+																010000, г. Нур-Султан <br>
+																ул. Е 15, 3
+							</p>
+						</div>
+
+						<button class="security--policy-btn" id="security--policy-btn">Понятно</button>
+						<button class="download-security--policy-btn" id="download-security--policy-btn">Скачать документ</button>
+					</div>
+				</div>
+			</footer>
+		</div>
+	<script src="./js/script.js"></script>
+	<script src="./js/modal.js"></script>
+	<script src="./js/exchange.js"></script>
+	<script src="./js/profile.js"></script>
+	<script src="./js/chat.js"></script>
+	</body>
+</html>
