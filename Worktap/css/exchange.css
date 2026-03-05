@@ -57,6 +57,118 @@ html {
     object-fit: cover;
 }
 
+.ui-select {
+    width: 331px;
+    position: relative;
+}
+
+.ui-select-trigger {
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.ui-select-value {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.ui-select-arrow {
+    width: 24px;
+    height: 24px;
+    background-image: url('../profile/img/hero/chevron-down.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: transform .2s;
+}
+
+.ui-select.open .ui-select-arrow {
+    transform: rotate(180deg);
+}
+
+.ui-select-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    border-radius: 0 0 20px 20px;
+    background: #F2F0FE;
+    padding: 0 20px 20px 20px;
+    opacity: 0;
+    transform: translateY(-5px);
+    pointer-events: none;
+    z-index: 5;
+    transition: 0.2s;
+}
+
+.ui-select.open .ui-select-trigger {
+    border-radius: 20px 20px 0 0;
+    background: #F2F0FE;
+}
+
+.ui-select.open .ui-select-dropdown {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.ui-select-role {
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+    background-color: #EBE8FF;
+    border-radius: 20px;
+    padding: 4px 16px;
+}
+
+.ui-option {
+    display: inline-block;
+    cursor: pointer;
+    font-weight: 500;
+    color: #000000;
+}
+
+.ui-option input {
+    display: none;
+}
+
+.ui-option:has(input:checked) {
+  background: #FBA457;
+  border-radius: 20px;
+  color: #FFFFFF;
+  font-weight: 600;
+  padding: 8px 16px;
+}
+
+.ui-select-menu {
+    margin-top: 16px;
+}
+.ui-select-menu-item:hover {
+    background: #EBE8FF;
+    border-radius: 20px;
+}
+
+.ui-select-menu-item:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.ui-select-menu-item:last-child .ui-select-menu-link{
+    color: #FF4343;
+}
+
+.ui-select-menu-link {
+    font-size: 16px;
+    color: #000000;
+}
+
+
 /*------------------------------------ Hero --------------------------------*/
 .hero__exchange {
     padding: 160px 0;

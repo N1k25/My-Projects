@@ -7,11 +7,18 @@ userServiceIcons.forEach(icon => {
 });
 
 
-// Выход из аккаунта с перенаправлением на главную страницу
-document.getElementById('user-select').addEventListener('change', function () {
-if (this.value === 'redirect') {
-    window.location.href = 'index.html';
-}
+// Открытие/закрытие выпадающего списка в шапке при клике на иконку пользователя
+const select = document.getElementById("uiSelect");
+const trigger = select.querySelector(".ui-select-trigger");
+
+trigger.addEventListener("click", () => {
+  select.classList.toggle("open");
+});
+
+document.addEventListener("click", e => {
+  if (!select.contains(e.target)) {
+    select.classList.remove("open");
+  }
 });
 
 
