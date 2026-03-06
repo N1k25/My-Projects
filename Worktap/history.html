@@ -11,6 +11,10 @@
 		<!-- Подключаем CSS -->
 		<link rel="stylesheet" href="./css/style.css"/>
 		<link rel="stylesheet" href="./css/exchange.css"/>
+		<link rel="stylesheet" href="./css/profile.css"/>
+		<link rel="stylesheet" href="./css/chat.css"/>
+		<link rel="stylesheet" href="./css/wallet.css"/>
+		<link rel="stylesheet" href="./css/history.css"/>
 		<!-- Кодировка страницы -->
 		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
 	</head>
@@ -24,7 +28,7 @@
 					</a>
 					<nav class="header-menu">
 						<ul>
-							<li><a href="#">Биржа</a></li>
+							<li><a href="./exchange.html">Биржа</a></li>
 							<li><a href="#">Ворки</a></li>
 							<li><a href="#">Конкурсы</a></li>
 							<li><a href="#">Создать заказ</a></li>
@@ -54,6 +58,7 @@
 						<a href="./chat.html">
 							<img src="./exchange/img/header/message.svg" alt="Сообщения" class="header__authorization-user--service-icon"/>
 						</a>
+
 					</div>
 					<div class="header__authorization-user">
 						<div class="ui-select" id="uiSelect">
@@ -78,7 +83,7 @@
 								<ul class="ui-select-menu">
 									<li class="ui-select-menu-item"><a href="#" class="ui-select-menu-link">Мой кабинет</a></li>
 									<li class="ui-select-menu-item"><a href="#" class="ui-select-menu-link">Мои заказы</a></li>
-									<li class="ui-select-menu-item"><a href="./history.html" class="ui-select-menu-link">История</a></li>
+									<li class="ui-select-menu-item"><a href="#" class="ui-select-menu-link">История</a></li>
 									<li class="ui-select-menu-item"><a href="./wallet.html" class="ui-select-menu-link">Мой кошелек</a></li>
 									<li class="ui-select-menu-item"><a href="#" class="ui-select-menu-link">Мои настройки</a></li>
 									<li class="ui-select-menu-item"><a href="index.html" class="ui-select-menu-link">Выйти из аккаунта</a></li>
@@ -89,361 +94,411 @@
 				</div>
 			</header>
 			<main class="page">
-				<section class="hero__exchange container">
-					<div class="hero__exchange-content">
-						<h1 class="hero__exchange-title">Ищите и находите подходящую работу среди <span>10,000+</span> проектов и покажите на что Вы способны!</h1>
-						<div class="hero-form hero__exchange-form">
-							<input type="text" class="find__field" placeholder="Какую работу ищете?">
-							<button type="button" class="find__btn">Найти</button>
-						</div>
-						<div class="hero-categories hero__exchange-categories">
-							<!-- <h4 class="hero-categories-title">Выберите рубрику, чтобы начать</h4> -->
-							<ul class="hero-categories-list hero__exchange-categories-list">
-								<li class="hero-categories-item">
-									<a href="#" class="hero-categories-link">Тексты и переводы</a>
-								</li>
-								<li class="hero-categories-item">
-									<a href="#" class="hero-categories-link">Разработка</a>
-								</li>
-								<li class="hero-categories-item">
-									<a href="#" class="hero-categories-link">Дизайн</a>
-								</li>
-								<li class="hero-categories-item">
-									<a href="#" class="hero-categories-link">Аудио, видео монтаж</a>
-								</li>
-								<li class="hero-categories-item">
-									<a href="#" class="hero-categories-link">SEO и оптимизация</a>
-								</li>
-								<li class="hero-categories-item">
-									<a href="#" class="hero-categories-link">Бизнес и жизнь</a>
-								</li>
-								<li class="hero-categories-item">
-									<a href="#" class="hero-categories-link">Соцсети и реклама</a>
-								</li>
-								<li class="hero-categories-item">
-									<a href="#" class="hero-categories-link">Все категории</a>
-								</li>
-							</ul>
-						</div>
-						<p class="hero__exchange-hint">Ниже все заказы по <span>дизайну</span></p>
-						<a href="#projects__exchange" class="hero__exchange-link">
-							<img src="./exchange/img/hero/chevron-down.svg" alt="Указатель вниз" class="hero__exchange-link--icon">
-						</a>
-					</div>
-					<div class="circle-red circle-red-big"></div>
-					<div class="circle-red circle-red-medium"></div>
-					<div class="circle-red circle-red-small"></div>
-					<div class="circle-green circle-green-medium"></div>
-					<div class="circle-green circle-green-small"></div>
-				</section>
-				<section class="projects__exchange" id="projects__exchange">
+				<section class="history">
 					<div class="container">
-						<div class="projects__exchange-header">
-							<h3 class="projects__exchange-title">65 проектов по дизайну</h3>
-							<div class="projects__exchange-sort--select-wrapper">
-								<div class="projects__exchange-sort--select-label-wrapper">
-									<div class="projects__exchange-sort--select-label projects__exchange-sort--select-label-start-price">Минимальная цена</div>
-									<div class="projects__exchange-sort--select-label-line">—</div>
-									<div class="projects__exchange-sort--select-label projects__exchange-sort--select-label-end-price">Максимальная цена</div>
+						<h1 class="history-title">История <span>покупок</span></h1>
+						<div class="history-content">
+							<div class="history-content-top">
+								<h3 class="history-content-top__title">Всего 65 сделок</h3>
+								<div class="history-content-top__filter">
+									<span class="history-content-top__filter-text">Показать только:</span>
+									<label class="history-content-top__filter-option">
+										<input type="radio" name="history-filter" value="active" id="filter-active">
+										Выполняется
+									</label>
+									<label class="history-content-top__filter-option">
+										<input type="radio" name="history-filter" value="completed" id="filter-completed">
+										Завершено
+									</label>
 								</div>
-								<select class="projects__exchange-sort--select" id="projects-sort-select">
+								<select class="projects__exchange-sort--select" id="history-sort-select">
 									<option value="min-max-price">По возрастанию цены</option>
 									<option value="max-min-price">По убыванию цены</option>
 								</select>
 							</div>
+							<div class="history-content-cards">
+								<div class="history-card active">
+									<div class="card-image-block">
+										<img src="./profile/img/works/image.jpg" alt="image" class="card-img">
+										<img src="./img/freelancers/star-gray.svg" alt="Star gray" class="card-like">
+									</div>
+									<div class="card-content">
+										<h3 class="card-title">Дизайн сайта </h3>
+										<div class="card-description">Стандарт пакет</div>
+										<div class="card-info">
+											<div class="card-info__price">50 000 тенге</div>
+											<div class="card-info__date">26.03.2021</div>
+										</div>
+										<div class="card-status">Выполняется</div>
+										<div class="card-links">
+											<a href="./chat.html" class="card-link link__chat">В чат</a>
+											<a href="#" class="card-link link__read--more">Подробнее </a>
+										</div>
+									</div>
+								</div>
+								<div class="history-card active">
+									<div class="card-image-block">
+										<img src="./profile/img/works/image.jpg" alt="image" class="card-img">
+										<img src="./img/freelancers/star-yellow.svg" alt="Star yellow" class="card-like">
+									</div>
+									<div class="card-content">
+										<h3 class="card-title">Дизайн сайта </h3>
+										<div class="card-description">Стандарт пакет</div>
+										<div class="card-info">
+											<div class="card-info__price">50 000 тенге</div>
+											<div class="card-info__date">26.03.2021</div>
+										</div>
+										<div class="card-status">Выполняется</div>
+										<div class="card-links">
+											<a href="./chat.html" class="card-link link__chat">В чат</a>
+											<a href="#" class="card-link link__read--more">Подробнее </a>
+										</div>
+									</div>
+								</div>
+								<div class="history-card completed">
+									<div class="card-image-block">
+										<img src="./profile/img/works/image.jpg" alt="image" class="card-img">
+										<img src="./img/freelancers/star-yellow.svg" alt="Star yellow" class="card-like">
+									</div>
+									<div class="card-content">
+										<h3 class="card-title">Дизайн сайта </h3>
+										<div class="card-description">Стандарт пакет</div>
+										<div class="card-info">
+											<div class="card-info__price">50 000 тенге</div>
+											<div class="card-info__date">26.03.2021</div>
+										</div>
+										<div class="card-status">Завершено</div>
+										<div class="card-links">
+											<a href="./chat.html" class="card-link link__chat">В чат</a>
+											<a href="#" class="card-link link__read--more">Подробнее </a>
+										</div>
+									</div>
+								</div>
+								<div class="history-card active">
+									<div class="card-image-block">
+										<img src="./profile/img/works/image.jpg" alt="image" class="card-img">
+										<img src="./img/freelancers/star-yellow.svg" alt="Star yellow" class="card-like">
+									</div>
+									<div class="card-content">
+										<h3 class="card-title">Дизайн сайта </h3>
+										<div class="card-description">Стандарт пакет</div>
+										<div class="card-info">
+											<div class="card-info__price">50 000 тенге</div>
+											<div class="card-info__date">26.03.2021</div>
+										</div>
+										<div class="card-status">Выполняется</div>
+										<div class="card-links">
+											<a href="./chat.html" class="card-link link__chat">В чат</a>
+											<a href="#" class="card-link link__read--more">Подробнее </a>
+										</div>
+									</div>
+								</div>
+								<div class="history-card active">
+									<div class="card-image-block">
+										<img src="./profile/img/works/image.jpg" alt="image" class="card-img">
+										<img src="./img/freelancers/star-gray.svg" alt="Star gray" class="card-like">
+									</div>
+									<div class="card-content">
+										<h3 class="card-title">Дизайн сайта </h3>
+										<div class="card-description">Стандарт пакет</div>
+										<div class="card-info">
+											<div class="card-info__price">50 000 тенге</div>
+											<div class="card-info__date">26.03.2021</div>
+										</div>
+										<div class="card-status">Выполняется</div>
+										<div class="card-links">
+											<a href="./chat.html" class="card-link link__chat">В чат</a>
+											<a href="#" class="card-link link__read--more">Подробнее </a>
+										</div>
+									</div>
+								</div>
+								<div class="history-card completed">
+									<div class="card-image-block">
+										<img src="./profile/img/works/image.jpg" alt="image" class="card-img">
+										<img src="./img/freelancers/star-gray.svg" alt="Star gray" class="card-like">
+									</div>
+									<div class="card-content">
+										<h3 class="card-title">Дизайн сайта </h3>
+										<div class="card-description">Стандарт пакет</div>
+										<div class="card-info">
+											<div class="card-info__price">50 000 тенге</div>
+											<div class="card-info__date">26.03.2021</div>
+										</div>
+										<div class="card-status">Завершено</div>
+										<div class="card-links">
+											<a href="./chat.html" class="card-link link__chat">В чат</a>
+											<a href="#" class="card-link link__read--more">Подробнее </a>
+										</div>
+									</div>
+								</div>
+								<div class="history-card active">
+									<div class="card-image-block">
+										<img src="./profile/img/works/image.jpg" alt="image" class="card-img">
+										<img src="./img/freelancers/star-yellow.svg" alt="Star yellow" class="card-like">
+									</div>
+									<div class="card-content">
+										<h3 class="card-title">Дизайн сайта </h3>
+										<div class="card-description">Стандарт пакет</div>
+										<div class="card-info">
+											<div class="card-info__price">50 000 тенге</div>
+											<div class="card-info__date">26.03.2021</div>
+										</div>
+										<div class="card-status">Выполняется</div>
+										<div class="card-links">
+											<a href="./chat.html" class="card-link link__chat">В чат</a>
+											<a href="#" class="card-link link__read--more">Подробнее </a>
+										</div>
+									</div>
+								</div>
+								<div class="history-card active">
+									<div class="card-image-block">
+										<img src="./profile/img/works/image.jpg" alt="image" class="card-img">
+										<img src="./img/freelancers/star-yellow.svg" alt="Star yellow" class="card-like">
+									</div>
+									<div class="card-content">
+										<h3 class="card-title">Дизайн сайта </h3>
+										<div class="card-description">Стандарт пакет</div>
+										<div class="card-info">
+											<div class="card-info__price">50 000 тенге</div>
+											<div class="card-info__date">26.03.2021</div>
+										</div>
+										<div class="card-status">Выполняется</div>
+										<div class="card-links">
+											<a href="./chat.html" class="card-link link__chat">В чат</a>
+											<a href="#" class="card-link link__read--more">Подробнее </a>
+										</div>
+									</div>
+								</div>
+								<div class="history-card active">
+									<div class="card-image-block">
+										<img src="./profile/img/works/image.jpg" alt="image" class="card-img">
+										<img src="./img/freelancers/star-gray.svg" alt="Star gray" class="card-like">
+									</div>
+									<div class="card-content">
+										<h3 class="card-title">Дизайн сайта </h3>
+										<div class="card-description">Стандарт пакет</div>
+										<div class="card-info">
+											<div class="card-info__price">50 000 тенге</div>
+											<div class="card-info__date">26.03.2021</div>
+										</div>
+										<div class="card-status">Выполняется</div>
+										<div class="card-links">
+											<a href="./chat.html" class="card-link link__chat">В чат</a>
+											<a href="#" class="card-link link__read--more">Подробнее </a>
+										</div>
+									</div>
+								</div>
+								<div class="history-card completed">
+									<div class="card-image-block">
+										<img src="./profile/img/works/image.jpg" alt="image" class="card-img">
+										<img src="./img/freelancers/star-yellow.svg" alt="Star yellow" class="card-like">
+									</div>
+									<div class="card-content">
+										<h3 class="card-title">Дизайн сайта </h3>
+										<div class="card-description">Стандарт пакет</div>
+										<div class="card-info">
+											<div class="card-info__price">50 000 тенге</div>
+											<div class="card-info__date">26.03.2021</div>
+										</div>
+										<div class="card-status">Завершено</div>
+										<div class="card-links">
+											<a href="./chat.html" class="card-link link__chat">В чат</a>
+											<a href="#" class="card-link link__read--more">Подробнее </a>
+										</div>
+									</div>
+								</div>
+								<div class="history-card completed">
+									<div class="card-image-block">
+										<img src="./profile/img/works/image.jpg" alt="image" class="card-img">
+										<img src="./img/freelancers/star-gray.svg" alt="Star gray" class="card-like">
+									</div>
+									<div class="card-content">
+										<h3 class="card-title">Дизайн сайта </h3>
+										<div class="card-description">Стандарт пакет</div>
+										<div class="card-info">
+											<div class="card-info__price">50 000 тенге</div>
+											<div class="card-info__date">26.03.2021</div>
+										</div>
+										<div class="card-status">Завершено</div>
+										<div class="card-links">
+											<a href="./chat.html" class="card-link link__chat">В чат</a>
+											<a href="#" class="card-link link__read--more">Подробнее </a>
+										</div>
+									</div>
+								</div>
+								<div class="history-card completed">
+									<div class="card-image-block">
+										<img src="./profile/img/works/image.jpg" alt="image" class="card-img">
+										<img src="./img/freelancers/star-gray.svg" alt="Star gray" class="card-like">
+									</div>
+									<div class="card-content">
+										<h3 class="card-title">Дизайн сайта </h3>
+										<div class="card-description">Стандарт пакет</div>
+										<div class="card-info">
+											<div class="card-info__price">50 000 тенге</div>
+											<div class="card-info__date">26.03.2021</div>
+										</div>
+										<div class="card-status">Завершено</div>
+										<div class="card-links">
+											<a href="./chat.html" class="card-link link__chat">В чат</a>
+											<a href="#" class="card-link link__read--more">Подробнее </a>
+										</div>
+									</div>
+								</div>
+								<div class="history-card completed">
+									<div class="card-image-block">
+										<img src="./profile/img/works/image.jpg" alt="image" class="card-img">
+										<img src="./img/freelancers/star-gray.svg" alt="Star gray" class="card-like">
+									</div>
+									<div class="card-content">
+										<h3 class="card-title">Дизайн сайта </h3>
+										<div class="card-description">Стандарт пакет</div>
+										<div class="card-info">
+											<div class="card-info__price">50 000 тенге</div>
+											<div class="card-info__date">26.03.2021</div>
+										</div>
+										<div class="card-status">Завершено</div>
+										<div class="card-links">
+											<a href="./chat.html" class="card-link link__chat">В чат</a>
+											<a href="#" class="card-link link__read--more">Подробнее </a>
+										</div>
+									</div>
+								</div>
+								<div class="history-card completed">
+									<div class="card-image-block">
+										<img src="./profile/img/works/image.jpg" alt="image" class="card-img">
+										<img src="./img/freelancers/star-yellow.svg" alt="Star yellow" class="card-like">
+									</div>
+									<div class="card-content">
+										<h3 class="card-title">Дизайн сайта </h3>
+										<div class="card-description">Стандарт пакет</div>
+										<div class="card-info">
+											<div class="card-info__price">50 000 тенге</div>
+											<div class="card-info__date">26.03.2021</div>
+										</div>
+										<div class="card-status">Завершено</div>
+										<div class="card-links">
+											<a href="./chat.html" class="card-link link__chat">В чат</a>
+											<a href="#" class="card-link link__read--more">Подробнее </a>
+										</div>
+									</div>
+								</div>
+								<div class="history-card completed">
+									<div class="card-image-block">
+										<img src="./profile/img/works/image.jpg" alt="image" class="card-img">
+										<img src="./img/freelancers/star-gray.svg" alt="Star gray" class="card-like">
+									</div>
+									<div class="card-content">
+										<h3 class="card-title">Дизайн сайта </h3>
+										<div class="card-description">Стандарт пакет</div>
+										<div class="card-info">
+											<div class="card-info__price">50 000 тенге</div>
+											<div class="card-info__date">26.03.2021</div>
+										</div>
+										<div class="card-status">Завершено</div>
+										<div class="card-links">
+											<a href="./chat.html" class="card-link link__chat">В чат</a>
+											<a href="#" class="card-link link__read--more">Подробнее </a>
+										</div>
+									</div>
+								</div>
+								<div class="history-card completed">
+									<div class="card-image-block">
+										<img src="./profile/img/works/image.jpg" alt="image" class="card-img">
+										<img src="./img/freelancers/star-gray.svg" alt="Star gray" class="card-like">
+									</div>
+									<div class="card-content">
+										<h3 class="card-title">Дизайн сайта </h3>
+										<div class="card-description">Стандарт пакет</div>
+										<div class="card-info">
+											<div class="card-info__price">50 000 тенге</div>
+											<div class="card-info__date">26.03.2021</div>
+										</div>
+										<div class="card-status">Завершено</div>
+										<div class="card-links">
+											<a href="./chat.html" class="card-link link__chat">В чат</a>
+											<a href="#" class="card-link link__read--more">Подробнее </a>
+										</div>
+									</div>
+								</div>
+								<div class="history-card completed">
+									<div class="card-image-block">
+										<img src="./profile/img/works/image.jpg" alt="image" class="card-img">
+										<img src="./img/freelancers/star-gray.svg" alt="Star gray" class="card-like">
+									</div>
+									<div class="card-content">
+										<h3 class="card-title">Дизайн сайта </h3>
+										<div class="card-description">Стандарт пакет</div>
+										<div class="card-info">
+											<div class="card-info__price">50 000 тенге</div>
+											<div class="card-info__date">26.03.2021</div>
+										</div>
+										<div class="card-status">Завершено</div>
+										<div class="card-links">
+											<a href="./chat.html" class="card-link link__chat">В чат</a>
+											<a href="#" class="card-link link__read--more">Подробнее </a>
+										</div>
+									</div>
+								</div>
+								<div class="history-card completed">
+									<div class="card-image-block">
+										<img src="./profile/img/works/image.jpg" alt="image" class="card-img">
+										<img src="./img/freelancers/star-gray.svg" alt="Star gray" class="card-like">
+									</div>
+									<div class="card-content">
+										<h3 class="card-title">Дизайн сайта </h3>
+										<div class="card-description">Стандарт пакет</div>
+										<div class="card-info">
+											<div class="card-info__price">50 000 тенге</div>
+											<div class="card-info__date">26.03.2021</div>
+										</div>
+										<div class="card-status">Завершено</div>
+										<div class="card-links">
+											<a href="./chat.html" class="card-link link__chat">В чат</a>
+											<a href="#" class="card-link link__read--more">Подробнее </a>
+										</div>
+									</div>
+								</div>
+								<div class="history-card completed">
+									<div class="card-image-block">
+										<img src="./profile/img/works/image.jpg" alt="image" class="card-img">
+										<img src="./img/freelancers/star-yellow.svg" alt="Star yellow" class="card-like">
+									</div>
+									<div class="card-content">
+										<h3 class="card-title">Дизайн сайта </h3>
+										<div class="card-description">Стандарт пакет</div>
+										<div class="card-info">
+											<div class="card-info__price">50 000 тенге</div>
+											<div class="card-info__date">26.03.2021</div>
+										</div>
+										<div class="card-status">Завершено</div>
+										<div class="card-links">
+											<a href="./chat.html" class="card-link link__chat">В чат</a>
+											<a href="#" class="card-link link__read--more">Подробнее </a>
+										</div>
+									</div>
+								</div>
+								<div class="history-card completed">
+									<div class="card-image-block">
+										<img src="./profile/img/works/image.jpg" alt="image" class="card-img">
+										<img src="./img/freelancers/star-yellow.svg" alt="Star yellow" class="card-like">
+									</div>
+									<div class="card-content">
+										<h3 class="card-title">Дизайн сайта </h3>
+										<div class="card-description">Стандарт пакет</div>
+										<div class="card-info">
+											<div class="card-info__price">50 000 тенге</div>
+											<div class="card-info__date">26.03.2021</div>
+										</div>
+										<div class="card-status">Завершено</div>
+										<div class="card-links">
+											<a href="./chat.html" class="card-link link__chat">В чат</a>
+											<a href="#" class="card-link link__read--more">Подробнее </a>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
-						<ul class="projects__exchange-list">
-							<li class="projects__exchange-list--item">
-								<div class="projects__exchange-list--item-header">
-									<h4 class="projects__exchange-list--item-title">Нужно сделать Дизайн сайта по тематике авто</h4>
-									<div class="projects__exchange-list--item-person">
-										<img src="./img/freelancers/photo1.png" alt="Аватар пользователя" class="projects__exchange-list--item-person-photo"/>
-										<div class="projects__exchange-list--item-person-info">
-											<div class="projects__exchange-list--item-person-name">Екатерина Иванова</div>
-											<div class="projects__exchange-list--item-person-projects-posted">Размещено проектов на бирже: 25</div>
-											<div class="projects__exchange-list--item-person-projects-status">
-												<div class="projects__exchange-list--item-person-rating">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-gray.svg" alt="Неотмеченая звезда">
-												</div>
-												<div class="projects__exchange-list--item-person-reviews">15 отзывов</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="projects__exchange-list--item-content">
-									<div class="projects__exchange-list--item-content-top">
-										<div class="projects__exchange-list--item-content-budget">Бюджет: 50 000 тенге</div>
-										<div class="projects__exchange-list--item-content-deadline">4 часа 28 минут назад</div>
-									</div>
-									<div class="projects__exchange-list--item-content-proposals">Предложений: 50</div>
-								</div>
-							</li>
-							<li class="projects__exchange-list--item">
-								<div class="projects__exchange-list--item-header">
-									<h4 class="projects__exchange-list--item-title">Нужно сделать Дизайн сайта по тематике авто</h4>
-									<div class="projects__exchange-list--item-person">
-										<img src="./img/freelancers/photo1.png" alt="Аватар пользователя" class="projects__exchange-list--item-person-photo"/>
-										<div class="projects__exchange-list--item-person-info">
-											<div class="projects__exchange-list--item-person-name">Екатерина Иванова</div>
-											<div class="projects__exchange-list--item-person-projects-posted">Размещено проектов на бирже: 25</div>
-											<div class="projects__exchange-list--item-person-projects-status">
-												<div class="projects__exchange-list--item-person-rating">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-gray.svg" alt="Неотмеченая звезда">
-												</div>
-												<div class="projects__exchange-list--item-person-reviews">15 отзывов</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="projects__exchange-list--item-content">
-									<div class="projects__exchange-list--item-content-top">
-										<div class="projects__exchange-list--item-content-budget">Бюджет: 50 000 тенге</div>
-										<div class="projects__exchange-list--item-content-deadline">4 часа 28 минут назад</div>
-									</div>
-									<div class="projects__exchange-list--item-content-proposals">Предложений: 50</div>
-								</div>
-							</li>
-							<li class="projects__exchange-list--item">
-								<div class="projects__exchange-list--item-header">
-									<h4 class="projects__exchange-list--item-title">Нужно сделать Дизайн сайта по тематике авто</h4>
-									<div class="projects__exchange-list--item-person">
-										<img src="./img/freelancers/photo1.png" alt="Аватар пользователя" class="projects__exchange-list--item-person-photo"/>
-										<div class="projects__exchange-list--item-person-info">
-											<div class="projects__exchange-list--item-person-name">Екатерина Иванова</div>
-											<div class="projects__exchange-list--item-person-projects-posted">Размещено проектов на бирже: 25</div>
-											<div class="projects__exchange-list--item-person-projects-status">
-												<div class="projects__exchange-list--item-person-rating">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-gray.svg" alt="Неотмеченая звезда">
-												</div>
-												<div class="projects__exchange-list--item-person-reviews">15 отзывов</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="projects__exchange-list--item-content">
-									<div class="projects__exchange-list--item-content-top">
-										<div class="projects__exchange-list--item-content-budget">Бюджет: 50 000 тенге</div>
-										<div class="projects__exchange-list--item-content-deadline">4 часа 28 минут назад</div>
-									</div>
-									<div class="projects__exchange-list--item-content-proposals">Предложений: 50</div>
-								</div>
-							</li>
-							<li class="projects__exchange-list--item">
-								<div class="projects__exchange-list--item-header">
-									<h4 class="projects__exchange-list--item-title">Нужно сделать Дизайн сайта по тематике авто</h4>
-									<div class="projects__exchange-list--item-person">
-										<img src="./img/freelancers/photo1.png" alt="Аватар пользователя" class="projects__exchange-list--item-person-photo"/>
-										<div class="projects__exchange-list--item-person-info">
-											<div class="projects__exchange-list--item-person-name">Екатерина Иванова</div>
-											<div class="projects__exchange-list--item-person-projects-posted">Размещено проектов на бирже: 25</div>
-											<div class="projects__exchange-list--item-person-projects-status">
-												<div class="projects__exchange-list--item-person-rating">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-gray.svg" alt="Неотмеченая звезда">
-												</div>
-												<div class="projects__exchange-list--item-person-reviews">15 отзывов</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="projects__exchange-list--item-content">
-									<div class="projects__exchange-list--item-content-top">
-										<div class="projects__exchange-list--item-content-budget">Бюджет: 50 000 тенге</div>
-										<div class="projects__exchange-list--item-content-deadline">4 часа 28 минут назад</div>
-									</div>
-									<div class="projects__exchange-list--item-content-proposals">Предложений: 50</div>
-								</div>
-							</li>
-							<li class="projects__exchange-list--item">
-								<div class="projects__exchange-list--item-header">
-									<h4 class="projects__exchange-list--item-title">Нужно сделать Дизайн сайта по тематике авто</h4>
-									<div class="projects__exchange-list--item-person">
-										<img src="./img/freelancers/photo1.png" alt="Аватар пользователя" class="projects__exchange-list--item-person-photo"/>
-										<div class="projects__exchange-list--item-person-info">
-											<div class="projects__exchange-list--item-person-name">Екатерина Иванова</div>
-											<div class="projects__exchange-list--item-person-projects-posted">Размещено проектов на бирже: 25</div>
-											<div class="projects__exchange-list--item-person-projects-status">
-												<div class="projects__exchange-list--item-person-rating">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-gray.svg" alt="Неотмеченая звезда">
-												</div>
-												<div class="projects__exchange-list--item-person-reviews">15 отзывов</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="projects__exchange-list--item-content">
-									<div class="projects__exchange-list--item-content-top">
-										<div class="projects__exchange-list--item-content-budget">Бюджет: 50 000 тенге</div>
-										<div class="projects__exchange-list--item-content-deadline">4 часа 28 минут назад</div>
-									</div>
-									<div class="projects__exchange-list--item-content-proposals">Предложений: 50</div>
-								</div>
-							</li>
-							<li class="projects__exchange-list--item">
-								<div class="projects__exchange-list--item-header">
-									<h4 class="projects__exchange-list--item-title">Нужно сделать Дизайн сайта по тематике авто</h4>
-									<div class="projects__exchange-list--item-person">
-										<img src="./img/freelancers/photo1.png" alt="Аватар пользователя" class="projects__exchange-list--item-person-photo"/>
-										<div class="projects__exchange-list--item-person-info">
-											<div class="projects__exchange-list--item-person-name">Екатерина Иванова</div>
-											<div class="projects__exchange-list--item-person-projects-posted">Размещено проектов на бирже: 25</div>
-											<div class="projects__exchange-list--item-person-projects-status">
-												<div class="projects__exchange-list--item-person-rating">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-gray.svg" alt="Неотмеченая звезда">
-												</div>
-												<div class="projects__exchange-list--item-person-reviews">15 отзывов</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="projects__exchange-list--item-content">
-									<div class="projects__exchange-list--item-content-top">
-										<div class="projects__exchange-list--item-content-budget">Бюджет: 50 000 тенге</div>
-										<div class="projects__exchange-list--item-content-deadline">4 часа 28 минут назад</div>
-									</div>
-									<div class="projects__exchange-list--item-content-proposals">Предложений: 50</div>
-								</div>
-							</li>
-							<li class="projects__exchange-list--item">
-								<div class="projects__exchange-list--item-header">
-									<h4 class="projects__exchange-list--item-title">Нужно сделать Дизайн сайта по тематике авто</h4>
-									<div class="projects__exchange-list--item-person">
-										<img src="./img/freelancers/photo1.png" alt="Аватар пользователя" class="projects__exchange-list--item-person-photo"/>
-										<div class="projects__exchange-list--item-person-info">
-											<div class="projects__exchange-list--item-person-name">Екатерина Иванова</div>
-											<div class="projects__exchange-list--item-person-projects-posted">Размещено проектов на бирже: 25</div>
-											<div class="projects__exchange-list--item-person-projects-status">
-												<div class="projects__exchange-list--item-person-rating">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-gray.svg" alt="Неотмеченая звезда">
-												</div>
-												<div class="projects__exchange-list--item-person-reviews">15 отзывов</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="projects__exchange-list--item-content">
-									<div class="projects__exchange-list--item-content-top">
-										<div class="projects__exchange-list--item-content-budget">Бюджет: 50 000 тенге</div>
-										<div class="projects__exchange-list--item-content-deadline">4 часа 28 минут назад</div>
-									</div>
-									<div class="projects__exchange-list--item-content-proposals">Предложений: 50</div>
-								</div>
-							</li>
-							<li class="projects__exchange-list--item">
-								<div class="projects__exchange-list--item-header">
-									<h4 class="projects__exchange-list--item-title">Нужно сделать Дизайн сайта по тематике авто</h4>
-									<div class="projects__exchange-list--item-person">
-										<img src="./img/freelancers/photo1.png" alt="Аватар пользователя" class="projects__exchange-list--item-person-photo"/>
-										<div class="projects__exchange-list--item-person-info">
-											<div class="projects__exchange-list--item-person-name">Екатерина Иванова</div>
-											<div class="projects__exchange-list--item-person-projects-posted">Размещено проектов на бирже: 25</div>
-											<div class="projects__exchange-list--item-person-projects-status">
-												<div class="projects__exchange-list--item-person-rating">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-gray.svg" alt="Неотмеченая звезда">
-												</div>
-												<div class="projects__exchange-list--item-person-reviews">15 отзывов</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="projects__exchange-list--item-content">
-									<div class="projects__exchange-list--item-content-top">
-										<div class="projects__exchange-list--item-content-budget">Бюджет: 50 000 тенге</div>
-										<div class="projects__exchange-list--item-content-deadline">4 часа 28 минут назад</div>
-									</div>
-									<div class="projects__exchange-list--item-content-proposals">Предложений: 50</div>
-								</div>
-							</li>
-							<li class="projects__exchange-list--item">
-								<div class="projects__exchange-list--item-header">
-									<h4 class="projects__exchange-list--item-title">Нужно сделать Дизайн сайта по тематике авто</h4>
-									<div class="projects__exchange-list--item-person">
-										<img src="./img/freelancers/photo1.png" alt="Аватар пользователя" class="projects__exchange-list--item-person-photo"/>
-										<div class="projects__exchange-list--item-person-info">
-											<div class="projects__exchange-list--item-person-name">Екатерина Иванова</div>
-											<div class="projects__exchange-list--item-person-projects-posted">Размещено проектов на бирже: 25</div>
-											<div class="projects__exchange-list--item-person-projects-status">
-												<div class="projects__exchange-list--item-person-rating">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-gray.svg" alt="Неотмеченая звезда">
-												</div>
-												<div class="projects__exchange-list--item-person-reviews">15 отзывов</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="projects__exchange-list--item-content">
-									<div class="projects__exchange-list--item-content-top">
-										<div class="projects__exchange-list--item-content-budget">Бюджет: 50 000 тенге</div>
-										<div class="projects__exchange-list--item-content-deadline">4 часа 28 минут назад</div>
-									</div>
-									<div class="projects__exchange-list--item-content-proposals">Предложений: 50</div>
-								</div>
-							</li>
-							<li class="projects__exchange-list--item">
-								<div class="projects__exchange-list--item-header">
-									<h4 class="projects__exchange-list--item-title">Нужно сделать Дизайн сайта по тематике авто</h4>
-									<div class="projects__exchange-list--item-person">
-										<img src="./img/freelancers/photo1.png" alt="Аватар пользователя" class="projects__exchange-list--item-person-photo"/>
-										<div class="projects__exchange-list--item-person-info">
-											<div class="projects__exchange-list--item-person-name">Екатерина Иванова</div>
-											<div class="projects__exchange-list--item-person-projects-posted">Размещено проектов на бирже: 25</div>
-											<div class="projects__exchange-list--item-person-projects-status">
-												<div class="projects__exchange-list--item-person-rating">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-gray.svg" alt="Неотмеченая звезда">
-												</div>
-												<div class="projects__exchange-list--item-person-reviews">15 отзывов</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="projects__exchange-list--item-content">
-									<div class="projects__exchange-list--item-content-top">
-										<div class="projects__exchange-list--item-content-budget">Бюджет: 50 000 тенге</div>
-										<div class="projects__exchange-list--item-content-deadline">4 часа 28 минут назад</div>
-									</div>
-									<div class="projects__exchange-list--item-content-proposals">Предложений: 50</div>
-								</div>
-							</li>
-						</ul>
 						<a href="#" class="projects__exchange-link">Загрузить еще</a>
 					</div>
 				</section>
@@ -726,5 +781,8 @@
 	<script src="./js/script.js"></script>
 	<script src="./js/modal.js"></script>
 	<script src="./js/exchange.js"></script>
+	<script src="./js/profile.js"></script>
+	<script src="./js/chat.js"></script>
+	<script src="./js/history.js"></script>
 	</body>
 </html>
