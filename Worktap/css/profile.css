@@ -328,7 +328,7 @@
     transition: all 0.3s ease;
 
     &:not(:first-child):hover {
-        box-shadow: 0 16px 16px #000000;
+        box-shadow: 0 16px 16px #0000000A;
     }
 }
 

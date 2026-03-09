@@ -12,6 +12,10 @@
 		<link rel="stylesheet" href="./css/style.css"/>
 		<link rel="stylesheet" href="./css/exchange.css"/>
 		<link rel="stylesheet" href="./css/profile.css"/>
+		<link rel="stylesheet" href="./css/chat.css"/>
+		<link rel="stylesheet" href="./css/wallet.css"/>
+		<link rel="stylesheet" href="./css/history.css"/>
+		<link rel="stylesheet" href="./css/orders.css"/>
 		<!-- Кодировка страницы -->
 		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
 	</head>
@@ -55,6 +59,7 @@
 						<a href="./chat.html">
 							<img src="./exchange/img/header/message.svg" alt="Сообщения" class="header__authorization-user--service-icon"/>
 						</a>
+
 					</div>
 					<div class="header__authorization-user">
 						<div class="ui-select" id="uiSelect">
@@ -77,8 +82,8 @@
 									</label>
 								</div>
 								<ul class="ui-select-menu">
-									<li class="ui-select-menu-item"><a href="#" class="ui-select-menu-link">Мой кабинет</a></li>
-									<li class="ui-select-menu-item"><a href="./orders.html" class="ui-select-menu-link">Мои заказы</a></li>
+									<li class="ui-select-menu-item"><a href="./profile.html" class="ui-select-menu-link">Мой кабинет</a></li>
+									<li class="ui-select-menu-item"><a href="#" class="ui-select-menu-link">Мои заказы</a></li>
 									<li class="ui-select-menu-item"><a href="./history.html" class="ui-select-menu-link">История</a></li>
 									<li class="ui-select-menu-item"><a href="./wallet.html" class="ui-select-menu-link">Мой кошелек</a></li>
 									<li class="ui-select-menu-item"><a href="#" class="ui-select-menu-link">Мои настройки</a></li>
@@ -90,343 +95,92 @@
 				</div>
 			</header>
 			<main class="page">
-				<section class="hero__profile">
-					<div class="hero__profile-container container">
-						<div class="hero__profile-content">
-							<div class="hero__profile-subtitle">Дизайнер </div>
-							<h1 class="hero__profile-title"><span>Ернар</span> Ибрагимов</h1>
-							<p class="hero__profile-desc">Работаю дизайнером с 1999 года. <br>
-														Был опыт в газетах, журналах, типографиях, рекламных агентствах, издательских домах... Порядка 8 лет, занимаюсь логотипами и фирменными стилями.
-							</p>
-							<div class="hero__profile-skills hero-categories">
-								<ul class="hero-categories-list">
-									<li class="hero-categories-item">
-										<a href="#" class="hero-categories-link">Figma</a>
-									</li>
-									<li class="hero-categories-item">
-										<a href="#" class="hero-categories-link">Adobe photoshop</a>
-									</li>
-									<li class="hero-categories-item">
-										<a href="#" class="hero-categories-link">Adobe illustrator</a>
-									</li>
-									<li class="hero-categories-item">
-										<a href="#" class="hero-categories-link">Corel draw</a>
-									</li>
-									<li class="hero-categories-item">
-										<a href="#" class="hero-categories-link">Adobe After Effects</a>
-									</li>
-									<li class="hero-categories-item">
-										<a href="#" class="hero-categories-link">HTML/CSS</a>
-									</li>
-								</ul>
+				<section class="orders">
+					<div class="container">
+						<h1 class="orders-title">Мои <span>заказы</span></h1>
+						<div class="orders-content">
+							<div class="orders-content-top">
+								<h3 class="orders-content-top__title">Всего 10 заявок</h3>
+								<select class="projects__exchange-sort--select">
+									<option value="min-max-price">По возрастанию цены</option>
+									<option value="max-min-price">По убыванию цены</option>
+								</select>
 							</div>
-							<details class="hero__profile-details">
-								<summary id="hero__profile-details-info-title">Показать подробную информацию</summary>
-								<div class="hero__profile-details-info">
-									<div class="hero__profile-details-info-item">
-										<div class="hero__profile-details-info-item-title country">Страна:</div>
-										<div class="hero__profile-details-info-item-desc">Казахстан, Алматы</div>
+							<div class="orders-content-items">
+								<div class="orders-content-item">
+									<div class="orders-content-item-left">
+										<h4 class="orders-content-item-title">Нужно сделать Дизайн сайта по тематике авто</h4>
+										<div class="orders-content-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mus volutpat sollicitudin in ligula. Massa in ultricies vitae varius habitasse. Est lacus eros nec fermentum, id gravida. Dui aliquet dolor convallis mauris. Massa in ultricies vitae varius habitasse. Est lacus eros nec fermentum...</div>
+										<div class="orders-content-item-status accepting--bets">Прием ставок</div>
 									</div>
-									<div class="hero__profile-details-info-item">
-										<div class="hero__profile-details-info-item-title online">На сайте:</div>
-										<div class="hero__profile-details-info-item-desc">3 года</div>
-									</div>
-									<div class="hero__profile-details-info-item">
-										<div class="hero__profile-details-info-item-title education">Образование:</div>
-										<div class="hero__profile-details-info-item-desc">
-											<ol>
-												<li>Казахстан, КазНУ, Бакалавр</li>
-												<li>Казахстан, КБТУ, Магистратура</li>
-											</ol>
-										</div>
-									</div>
-									<div class="hero__profile-details-info-item">
-										<div class="hero__profile-details-info-item-title languages">Знание языков:</div>
-										<div class="hero__profile-details-info-item-desc">
-											<ol>
-												<li>Казахский</li>
-												<li>Русский</li>
-											</ol>
-										</div>
-									</div>
-									<div class="hero__profile-details-info-item">
-										<div class="hero__profile-details-info-item-title certificates">Сертификаты:</div>
-										<div class="hero__profile-details-info-item-desc">
-											<ol>
-												<li>Сертификат 1, 2020 года</li>
-												<li>Сертификат 2, 2021 года</li>
-											</ol>
-										</div>
+									<div class="orders-content-item-right">
+										<div class="orders-content-item-budget">Бюджет: 50 000 тенге</div>
+										<div class="orders-content-item-done">4 часа 28 минут назад</div>
+										<div class="orders-content-item-offers">Предложений: 50</div>
 									</div>
 								</div>
-							</details>
-						</div>
-						<div class="hero__profile-images">
-							<img src="./exchange/img/header/photo.jpg" alt="Фото пользователя" class="hero__profile-photo">
-							<div class="hero__profile-online">В сети</div>
-							<img src="./img/hero/dots.svg" alt="Точки" class="hero__profile-dots">
-							<img src="./img/hero/vawes.svg" alt="Волны" class="hero__profile-vawes">
-							<img src="./profile/img/hero/settings.svg" alt="Настройки" class="hero__profile-settings">
-							<div class="hero__profile-rating">
-								<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-								<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-								<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-								<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-								<img src="./img/freelancers/star-gray.svg" alt="Неотмеченая звезда">
-							</div>
-							<div class="hero__profile-circle hero__profile-circle--medium"></div>
-							<div class="hero__profile-circle hero__profile-circle--large"></div>
-						</div>    
-					</div>
-					<a href="#" class="fast__find">Быстрый <br> поиск ворков</a>
-				</section>
-				<section class="works__profile">
-					<div class="container">
-						<h2 class="works__profile-title">Мои ворки</h2>
-						<div class="works__profile-cards">
-							<div class="works__profile-card works__profile-card-add">
-								<a href="#" class="works__profile-card-link--add">
-									<img class="works__profile-item-card-icon" src="./profile/img/works/add-icon.svg" alt="Добавить ворк">
-									Создать ворк
-								</a>
-							</div>
-							<div class="works__profile-card">
-								<img class="works__profile-card-image" src="./profile/img/works/image.jpg" alt="Ворк">
-								<h3 class="works__profile-card-title">Дизайн сайта</h3>
-								<div class="works__profile-card-price">50 000 тенге</div>
-							</div>
-							<div class="works__profile-card">
-								<img class="works__profile-card-image" src="./profile/img/works/image.jpg" alt="Ворк">
-								<h3 class="works__profile-card-title">Дизайн сайта</h3>
-								<div class="works__profile-card-price">50 000 тенге</div>
-							</div>
-							<div class="works__profile-card">
-								<img class="works__profile-card-image" src="./profile/img/works/image.jpg" alt="Ворк">
-								<h3 class="works__profile-card-title">Дизайн сайта</h3>
-								<div class="works__profile-card-price">50 000 тенге</div>
-							</div>
-							<div class="works__profile-card">
-								<img class="works__profile-card-image" src="./profile/img/works/image.jpg" alt="Ворк">
-								<h3 class="works__profile-card-title">Дизайн сайта</h3>
-								<div class="works__profile-card-price">50 000 тенге</div>
-							</div>
-							<div class="works__profile-card">
-								<img class="works__profile-card-image" src="./profile/img/works/image.jpg" alt="Ворк">
-								<h3 class="works__profile-card-title">Дизайн сайта</h3>
-								<div class="works__profile-card-price">50 000 тенге</div>
-							</div>
-							<div class="works__profile-card">
-								<img class="works__profile-card-image" src="./profile/img/works/image.jpg" alt="Ворк">
-								<h3 class="works__profile-card-title">Дизайн сайта</h3>
-								<div class="works__profile-card-price">50 000 тенге</div>
-							</div>
-							<div class="works__profile-card">
-								<img class="works__profile-card-image" src="./profile/img/works/image.jpg" alt="Ворк">
-								<h3 class="works__profile-card-title">Дизайн сайта</h3>
-								<div class="works__profile-card-price">50 000 тенге</div>
-							</div>
-							<div class="works__profile-card">
-								<img class="works__profile-card-image" src="./profile/img/works/image.jpg" alt="Ворк">
-								<h3 class="works__profile-card-title">Дизайн сайта</h3>
-								<div class="works__profile-card-price">50 000 тенге</div>
-							</div>
-							<div class="works__profile-card">
-								<img class="works__profile-card-image" src="./profile/img/works/image.jpg" alt="Ворк">
-								<h3 class="works__profile-card-title">Дизайн сайта</h3>
-								<div class="works__profile-card-price">50 000 тенге</div>
-							</div>
-							<div class="works__profile-card">
-								<img class="works__profile-card-image" src="./profile/img/works/image.jpg" alt="Ворк">
-								<h3 class="works__profile-card-title">Дизайн сайта</h3>
-								<div class="works__profile-card-price">50 000 тенге</div>
-							</div>
-							<div class="works__profile-card">
-								<img class="works__profile-card-image" src="./profile/img/works/image.jpg" alt="Ворк">
-								<h3 class="works__profile-card-title">Дизайн сайта</h3>
-								<div class="works__profile-card-price">50 000 тенге</div>
+								<div class="orders-content-item">
+									<div class="orders-content-item-left">
+										<h4 class="orders-content-item-title">Нужно сделать Дизайн сайта по тематике авто</h4>
+										<div class="orders-content-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mus volutpat sollicitudin in ligula. Massa in ultricies vitae varius habitasse. Est lacus eros nec fermentum, id gravida. Dui aliquet dolor convallis mauris. Massa in ultricies vitae varius habitasse. Est lacus eros nec fermentum...</div>
+										<div class="orders-content-item-status completed">Завершено</div>
+									</div>
+									<div class="orders-content-item-right">
+										<div class="orders-content-item-budget">Бюджет: 50 000 тенге</div>
+										<div class="orders-content-item-done">4 часа 28 минут назад</div>
+										<div class="orders-content-item-offers">Предложений: 50</div>
+									</div>
+								</div>
+								<div class="orders-content-item">
+									<div class="orders-content-item-left">
+										<h4 class="orders-content-item-title">Нужно сделать Дизайн сайта по тематике авто</h4>
+										<div class="orders-content-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mus volutpat sollicitudin in ligula. Massa in ultricies vitae varius habitasse. Est lacus eros nec fermentum, id gravida. Dui aliquet dolor convallis mauris. Massa in ultricies vitae varius habitasse. Est lacus eros nec fermentum...</div>
+										<div class="orders-content-item-status closed">Закрыт</div>
+									</div>
+									<div class="orders-content-item-right">
+										<div class="orders-content-item-budget">Бюджет: 50 000 тенге</div>
+										<div class="orders-content-item-done">4 часа 28 минут назад</div>
+										<div class="orders-content-item-offers">Предложений: 50</div>
+									</div>
+								</div>
+								<div class="orders-content-item">
+									<div class="orders-content-item-left">
+										<h4 class="orders-content-item-title">Нужно сделать Дизайн сайта по тематике авто</h4>
+										<div class="orders-content-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mus volutpat sollicitudin in ligula. Massa in ultricies vitae varius habitasse. Est lacus eros nec fermentum, id gravida. Dui aliquet dolor convallis mauris. Massa in ultricies vitae varius habitasse. Est lacus eros nec fermentum...</div>
+										<div class="orders-content-item-status completed">Завершено</div>
+									</div>
+									<div class="orders-content-item-right">
+										<div class="orders-content-item-budget">Бюджет: 50 000 тенге</div>
+										<div class="orders-content-item-done">4 часа 28 минут назад</div>
+										<div class="orders-content-item-offers">Предложений: 50</div>
+									</div>
+								</div>
+								<div class="orders-content-item">
+									<div class="orders-content-item-left">
+										<h4 class="orders-content-item-title">Нужно сделать Дизайн сайта по тематике авто</h4>
+										<div class="orders-content-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mus volutpat sollicitudin in ligula. Massa in ultricies vitae varius habitasse. Est lacus eros nec fermentum, id gravida. Dui aliquet dolor convallis mauris. Massa in ultricies vitae varius habitasse. Est lacus eros nec fermentum...</div>
+										<div class="orders-content-item-status completed">Завершено</div>
+									</div>
+									<div class="orders-content-item-right">
+										<div class="orders-content-item-budget">Бюджет: 50 000 тенге</div>
+										<div class="orders-content-item-done">4 часа 28 минут назад</div>
+										<div class="orders-content-item-offers">Предложений: 50</div>
+									</div>
+								</div>
+								<div class="orders-content-item">
+									<div class="orders-content-item-left">
+										<h4 class="orders-content-item-title">Нужно сделать Дизайн сайта по тематике авто</h4>
+										<div class="orders-content-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mus volutpat sollicitudin in ligula. Massa in ultricies vitae varius habitasse. Est lacus eros nec fermentum, id gravida. Dui aliquet dolor convallis mauris. Massa in ultricies vitae varius habitasse. Est lacus eros nec fermentum...</div>
+										<div class="orders-content-item-status completed">Завершено</div>
+									</div>
+									<div class="orders-content-item-right">
+										<div class="orders-content-item-budget">Бюджет: 50 000 тенге</div>
+										<div class="orders-content-item-done">4 часа 28 минут назад</div>
+										<div class="orders-content-item-offers">Предложений: 50</div>
+									</div>
+								</div>
 							</div>
 						</div>
-						<a href="#" class="projects__exchange-link">Загрузить еще</a>
-					</div>
-				</section>
-				<section class="reviews__profile">
-					<div class="container">
-						<h2 class="works__profile-title">Отзывы</h2>
-						<div class="reviews__profile-tabs">
-							<div class="tab">
-								<input type="radio" id="tab1" name="tab-group" checked>
-								<label for="tab1" class="tab-title">Положительные (65)</label>
-								<section class="tab-content">
-									<div class="reviews__profile-card">
-										<div class="reviews__profile-card-person">
-											<div class="reviews__profile-card-person-photo"></div>
-											<div class="reviews__profile-card-person-info">
-												<h3 class="reviews__profile-card-person-name">Никита Евреев</h3>
-												<div class="reviews__profile-card-person-rating">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-gray.svg" alt="Неотмеченая звезда"> 
-												</div>
-											</div>
-										</div>
-										<div class="reviews__profile-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus tincidunt eget eu, eget commodo condimentum non, fringilla fermentum. Morbi sed enim facilisis metus pretium leo, mauris. In egestas cursus orci dignissim in lectus nulla.</div>
-									</div>
-									<div class="reviews__profile-card">
-										<div class="reviews__profile-card-person">
-											<div class="reviews__profile-card-person-photo"></div>
-											<div class="reviews__profile-card-person-info">
-												<h3 class="reviews__profile-card-person-name">Никита Евреев</h3>
-												<div class="reviews__profile-card-person-rating">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-gray.svg" alt="Неотмеченая звезда"> 
-												</div>
-											</div>
-										</div>
-										<div class="reviews__profile-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus tincidunt eget eu, eget commodo condimentum non, fringilla fermentum. Morbi sed enim facilisis metus pretium leo, mauris. In egestas cursus orci dignissim in lectus nulla.</div>
-									</div>
-									<div class="reviews__profile-card">
-										<div class="reviews__profile-card-person">
-											<div class="reviews__profile-card-person-photo"></div>
-											<div class="reviews__profile-card-person-info">
-												<h3 class="reviews__profile-card-person-name">Никита Евреев</h3>
-												<div class="reviews__profile-card-person-rating">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-gray.svg" alt="Неотмеченая звезда"> 
-												</div>
-											</div>
-										</div>
-										<div class="reviews__profile-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus tincidunt eget eu, eget commodo condimentum non, fringilla fermentum. Morbi sed enim facilisis metus pretium leo, mauris. In egestas cursus orci dignissim in lectus nulla.</div>
-									</div>
-									<div class="reviews__profile-card">
-										<div class="reviews__profile-card-person">
-											<div class="reviews__profile-card-person-photo"></div>
-											<div class="reviews__profile-card-person-info">
-												<h3 class="reviews__profile-card-person-name">Никита Евреев</h3>
-												<div class="reviews__profile-card-person-rating">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-gray.svg" alt="Неотмеченая звезда"> 
-												</div>
-											</div>
-										</div>
-										<div class="reviews__profile-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus tincidunt eget eu, eget commodo condimentum non, fringilla fermentum. Morbi sed enim facilisis metus pretium leo, mauris. In egestas cursus orci dignissim in lectus nulla.</div>
-									</div>
-									<div class="reviews__profile-card">
-										<div class="reviews__profile-card-person">
-											<div class="reviews__profile-card-person-photo"></div>
-											<div class="reviews__profile-card-person-info">
-												<h3 class="reviews__profile-card-person-name">Никита Евреев</h3>
-												<div class="reviews__profile-card-person-rating">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-gray.svg" alt="Неотмеченая звезда"> 
-												</div>
-											</div>
-										</div>
-										<div class="reviews__profile-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus tincidunt eget eu, eget commodo condimentum non, fringilla fermentum. Morbi sed enim facilisis metus pretium leo, mauris. In egestas cursus orci dignissim in lectus nulla.</div>
-									</div>
-									<div class="reviews__profile-card">
-										<div class="reviews__profile-card-person">
-											<div class="reviews__profile-card-person-photo"></div>
-											<div class="reviews__profile-card-person-info">
-												<h3 class="reviews__profile-card-person-name">Никита Евреев</h3>
-												<div class="reviews__profile-card-person-rating">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-gray.svg" alt="Неотмеченая звезда"> 
-												</div>
-											</div>
-										</div>
-										<div class="reviews__profile-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus tincidunt eget eu, eget commodo condimentum non, fringilla fermentum. Morbi sed enim facilisis metus pretium leo, mauris. In egestas cursus orci dignissim in lectus nulla.</div>
-									</div>
-								</section>
-							</div>
-							<div class="tab">
-								<input type="radio" id="tab2" name="tab-group">
-								<label for="tab2" class="tab-title">Отрицательные (10)</label>
-								<section class="tab-content">
-									<div class="reviews__profile-card">
-										<div class="reviews__profile-card-person">
-											<div class="reviews__profile-card-person-photo"></div>
-											<div class="reviews__profile-card-person-info">
-												<h3 class="reviews__profile-card-person-name">Екатерина Иванова</h3>
-												<div class="reviews__profile-card-person-rating">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-gray.svg" alt="Неотмеченая звезда">
-													<img src="./img/freelancers/star-gray.svg" alt="Неотмеченая звезда"> 
-												</div>
-											</div>
-										</div>
-										<div class="reviews__profile-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus tincidunt eget eu, eget commodo condimentum non, fringilla fermentum. Morbi sed enim facilisis metus pretium leo, mauris. In egestas cursus orci dignissim in lectus nulla.</div>
-									</div>
-									<div class="reviews__profile-card">
-										<div class="reviews__profile-card-person">
-											<div class="reviews__profile-card-person-photo"></div>
-											<div class="reviews__profile-card-person-info">
-												<h3 class="reviews__profile-card-person-name">Екатерина Иванова</h3>
-												<div class="reviews__profile-card-person-rating">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-gray.svg" alt="Неотмеченая звезда">
-													<img src="./img/freelancers/star-gray.svg" alt="Неотмеченая звезда"> 
-												</div>
-											</div>
-										</div>
-										<div class="reviews__profile-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus tincidunt eget eu, eget commodo condimentum non, fringilla fermentum. Morbi sed enim facilisis metus pretium leo, mauris. In egestas cursus orci dignissim in lectus nulla.</div>
-									</div>
-									<div class="reviews__profile-card">
-										<div class="reviews__profile-card-person">
-											<div class="reviews__profile-card-person-photo"></div>
-											<div class="reviews__profile-card-person-info">
-												<h3 class="reviews__profile-card-person-name">Екатерина Иванова</h3>
-												<div class="reviews__profile-card-person-rating">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-gray.svg" alt="Неотмеченая звезда">
-													<img src="./img/freelancers/star-gray.svg" alt="Неотмеченая звезда"> 
-												</div>
-											</div>
-										</div>
-										<div class="reviews__profile-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus tincidunt eget eu, eget commodo condimentum non, fringilla fermentum. Morbi sed enim facilisis metus pretium leo, mauris. In egestas cursus orci dignissim in lectus nulla.</div>
-									</div>
-									<div class="reviews__profile-card">
-										<div class="reviews__profile-card-person">
-											<div class="reviews__profile-card-person-photo"></div>
-											<div class="reviews__profile-card-person-info">
-												<h3 class="reviews__profile-card-person-name">Екатерина Иванова</h3>
-												<div class="reviews__profile-card-person-rating">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
-													<img src="./img/freelancers/star-gray.svg" alt="Неотмеченая звезда">
-													<img src="./img/freelancers/star-gray.svg" alt="Неотмеченая звезда"> 
-												</div>
-											</div>
-										</div>
-										<div class="reviews__profile-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus tincidunt eget eu, eget commodo condimentum non, fringilla fermentum. Morbi sed enim facilisis metus pretium leo, mauris. In egestas cursus orci dignissim in lectus nulla.</div>
-									</div>
-								</section>
-							</div>
-						</div>
-						<a href="#" class="projects__exchange-link">Загрузить еще</a>
 					</div>
 				</section>
 			</main>
@@ -709,5 +463,7 @@
 	<script src="./js/modal.js"></script>
 	<script src="./js/exchange.js"></script>
 	<script src="./js/profile.js"></script>
+	<script src="./js/chat.js"></script>
+	<script src="./js/history.js"></script>
 	</body>
 </html>
