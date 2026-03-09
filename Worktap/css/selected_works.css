@@ -1,0 +1,46 @@
+@import url("reset.css");
+
+.selected__works {
+    padding: 60px 0;
+}
+
+.card-info__price {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1DBF73;
+    margin: 20px 0;
+}
+
+.card-info__person {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.card-info__person-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+}
+
+.card-info__person-name {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.ard-info__person-projects {
+    color: #B0AAD0;
+    margin-top: 10px;
+}
+
+.card-info__person-rating {
+    margin-top: 20px;
+}
+
+.card-info__person-rating-icon {
+    width: 30px;
+    height: 30px;
+}
