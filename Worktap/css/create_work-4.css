@@ -1,0 +1,21 @@
+@import url("reset.css");
+
+.step--4 {
+    padding: 52px 0 100px 0;
+}
+
+.connecting--line::before {
+    width: 65%;
+}
+
+.step--4__form {
+    width: 100%;
+    margin: 80px 0;
+}
+
+.work__editor-subtitle {
+    font-size: 18px;
+    font-weight: 500;
+    color: #000000;
+    margin: 30px 0 40px 0;
+}
