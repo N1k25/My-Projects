@@ -15,6 +15,17 @@ a:focus,a:active{outline: none;}
 
 nav,footer,header,aside{display: block;}
 
+/*Удалить стрелки в Chrome, Safari, Edge, Opera*/
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+/*Удалить стрелки в Firefox*/
+input[type="number"] {
+	-moz-appearance: textfield;
+}
+
 html,body{
 	height: 100%;
 	width: 100%;

@@ -12,6 +12,7 @@
 		<link rel="stylesheet" href="./css/style.css"/>
 		<link rel="stylesheet" href="./css/exchange.css"/>
 		<link rel="stylesheet" href="./css/create_work-1.css"/>
+		<link rel="stylesheet" href="./css/create_work-2.css"/>
 		<!-- Кодировка страницы -->
 		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
 	</head>
@@ -90,14 +91,14 @@
 				</div>
 			</header>
 			<main class="page">
-				<section class="step--1">
+				<section class="step--2">
 					<div class="container">
 						<div class="steps-navigation">
-							<div class="step step--completed step--active">
+							<div class="step step--completed">
 								<div class="step-number">1</div>
 								<div class="step-title">Основные</div>
 							</div>
-							<div class="step">
+							<div class="step step--completed step--active">
 								<div class="step-number">2</div>
 								<div class="step-title">Стоимость и опции</div>
 							</div>
@@ -119,76 +120,128 @@
 							</div>
 							<div class="connecting--line"></div>
 						</div>
-						<div class="step--1__form">
-							<div class="step--1__form-title">
-								<label for="work-title" class="step--1__form-label">Название</label>
-								<input type="text" id="work-title" class="step--1__form-input" placeholder="Placeholder"/>
-							</div>
-							<div class="step--1__form-categories">
-								<div>
-									<label for="work-category" class="step--1__form-label">Категория</label>
-									<select id="work-category" class="step--1__form-select">
-										<option value="" disabled selected hidden>Placeholder</option>
-										<option value="design">Дизайн</option>
-										<option value="programming">Разработка</option>
-										<option value="writing">Аудио, видео монтаж</option>
-										<option value="marketing">Тексты и переводы</option>
-										<option value="video">SEO и оптимизация</option>
-										<option value="music">Соцсети и реклама</option>
-										<option value="business">Бизнес и жизнь</option>
-									</select>
+						<div class="step--2__form">
+							<div class="packages">
+								<h2 class="packages__title">Пакеты</h2>
+								<div class="packages-cards">
+									<div class="packages-card">
+										<h3 class="packages-card__title">Эконом</h3>
+										<div class="field">
+											<label for="desc">Описание пакета</label>
+											<textarea name="desc" class="desc-field" required placeholder="placeholder"></textarea>
+										</div>
+										<div class="field">
+											<label for="date">Срок выполнения</label>
+											<input type="date" name="date" class="date-input" required placeholder="placeholder">
+										</div>
+										<div class="field">
+											<label for="revisions">Количество доработок</label>
+											<input type="number" name="revisions" placeholder="placeholder">
+										</div>
+										<div class="field">
+											<label for="price">Стоимость в тенге</label>
+											<input type="number" name="price" class="price-input" required placeholder="placeholder">
+										</div>
+										<button type="button" class="add__option step__button--disabled" id="add__option">Добавить опцию</button>
+									</div>
+									<div class="packages-card">
+										<h3 class="packages-card__title">Стандарт</h3>
+										<div class="field">
+											<label for="desc">Описание пакета</label>
+											<textarea name="desc" class="desc-field" required placeholder="placeholder"></textarea>
+										</div>
+										<div class="field">
+											<label for="date">Срок выполнения</label>
+											<input type="date" name="date" class="date-input" required placeholder="placeholder">
+										</div>
+										<div class="field">
+											<label for="revisions">Количество доработок</label>
+											<input type="number" name="revisions" placeholder="placeholder">
+										</div>
+										<div class="field">
+											<label for="price">Стоимость в тенге</label>
+											<input type="number" name="price" class="price-input" required placeholder="placeholder">
+										</div>
+										<button type="button" class="add__option step__button--disabled" id="add__option">Добавить опцию</button>
+									</div>
+									<div class="packages-card">
+										<h3 class="packages-card__title">Бизнес</h3>
+										<div class="field">
+											<label for="desc">Описание пакета</label>
+											<textarea name="desc" class="desc-field" required placeholder="placeholder"></textarea>
+										</div>
+										<div class="field">
+											<label for="date">Срок выполнения</label>
+											<input type="date" name="date" class="date-input" required placeholder="placeholder">
+										</div>
+										<div class="field">
+											<label for="revisions">Количество доработок</label>
+											<input type="number" name="revisions" placeholder="placeholder">
+										</div>
+										<div class="field">
+											<label for="price">Стоимость в тенге</label>
+											<input type="number" name="price" class="price-input" required placeholder="placeholder">
+										</div>
+										<button type="button" class="add__option step__button--disabled" id="add__option">Добавить опцию</button>
+									</div>
 								</div>
-								<div>
-									<label for="work-subcategory" class="step--1__form-label">Подкатегория</label>
-									<select id="work-subcategory" class="step--1__form-select">
-										<option value="" disabled selected hidden>Placeholder</option>
-										<option value="subcategory1">Подкатегория 1</option>
-										<option value="subcategory2">Подкатегория 2</option>
-									</select>
-								</div>
 							</div>
-							<div class="step--1__form-tags">
-								<div class="tags-title">Теги</div>
-								<ul class="tags-list">
-									<li class="tags-item">
-										<div class="tags-item--name">Тег 1</div>
-										<button class="tags-item--close"></button>
-									</li>
-									<li class="tags-item">
-										<div class="tags-item--name">Тег 2</div>
-										<button class="tags-item--close"></button>
-									</li>
-									<li class="tags-item">
-										<div class="tags-item--name">Дизайн сайта</div>
-										<button class="tags-item--close"></button>
-									</li>
-									<li class="tags-item">
-										<div class="tags-item--name">Тег 1</div>
-										<button class="tags-item--close"></button>
-									</li>
-									<li class="tags-item">
-										<div class="tags-item--name">Тег 2</div>
-										<button class="tags-item--close"></button>
-									</li>
-									<li class="tags-item">
-										<div class="tags-item--name">Дизайн сайта</div>
-										<button class="tags-item--close"></button>
-									</li>
-								</ul>
+							<div class="options">
+								<h3 class="additional--options__title">Дополнительные опции</h3>
+								<div class="additional--options">
+									<div class="additional--options__form">
+										<div class="additional--options__form-fields">
+											<div class="field">
+												<label for="name">Название</label>
+												<input type="text" id="new-option-name" name="name" required placeholder="placeholder">
+											</div>
+											<div class="field">
+												<label for="hint">Подсказка для покупателя</label>
+												<input type="text" id="new-option-hint" name="hint" required placeholder="placeholder">
+											</div>
+											<div class="service">
+												<div class="field">
+													<label for="date">Срок выполнения</label>
+													<input type="date" id="new-option-date" name="date" required placeholder="placeholder">
+												</div>
+												<div class="field">
+													<label for="price">Цена в тенге</label>
+													<input type="number" id="new-option-price" name="price" required placeholder="placeholder">
+												</div>
+											</div>
+										</div>
+										<button type="button" class="remove__option step__button--disabled" id="remove__option">Удалить</button>
+									</div>
+									<button type="button" class="add__new--option" id="add__new--option">
+										<img src="./create_work/img/add.svg" alt="Добавить новую опцию" class="add__new--option-icon">
+										Добавить новую опцию
+									</button>
+								</div>
 							</div>
 						</div>
 						<div class="step__links">
-							<a href="#" class="step__button step__button--prev step__button--hidden">Назад</a>
-							<a href="./create_work-2.html" class="step__button step__button--next step__button--disabled">Дальше</a>
+							<a href="./create_work-1.html" class="step__button step__button--prev">Назад</a>
+							<a href="./create_work-3.html" class="step__button step__button--next step__button--disabled">Дальше</a>
+						</div>
+					</div>
+					<div class="modal__new--option" id="modal-new--option">
+						<div class="modal__box-new--option">
+							<h2 class="new--option-title">Добавление новой опции</h2>
+							<div class="new--option__form">
+								<div class="field">
+									<label for="name">Название опции</label>
+									<input type="text" class="new--option__name" name="name" required placeholder="placeholder">
+								</div>
+							</div>
+							<button class="new--option-btn step__button step__button--next step__button--disabled" id="new--option-btn">Добавить опцию</button>
 						</div>
 					</div>
 				</section>
 			</main>
 		</div>
 	<script src="./js/script.js"></script>
-	<!-- <script src="./js/modal.js"></script> -->
 	<script src="./js/exchange.js"></script>
 	<script src="./js/profile.js"></script>
-	<script src="./js/create-work-1.js"></script>
+	<script src="./js/create-work-2.js"></script>
 	</body>
 </html>

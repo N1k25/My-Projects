@@ -1,0 +1,232 @@
+@import url("reset.css");
+
+.step--2 {
+    padding: 52px 0 100px 0;
+}
+
+.connecting--line::before {
+    content: '';
+    width: 25%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #1DBF73;
+}
+
+.step--2__form {
+    width: 100%;
+    margin: 80px 0;
+}
+
+.packages__title,
+.additional--options__title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.packages-cards {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.packages-card {
+    width: 420px;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border: 1px solid #F2F0FE;;
+}
+
+.packages-card__title {
+    font-size: 24px;
+    font-weight: 500;
+    color: #000000;
+    text-align: center;
+}
+
+.field label {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.field input,
+.field textarea {
+    display: block;
+    width: 100%;
+    height: 30px;
+    margin-top: 18px;
+    border-bottom: 1px solid #F2F0FE;
+    background-color: transparent;
+    padding: 0 18px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #B0AAD0;
+    position: relative;
+
+    &::placeholder {
+        color: #B0AAD0;
+        position: absolute;
+        top: 0;
+    }
+
+    &.desc-field {
+        height: 101px;
+        resize: none;
+    }
+}
+
+.add__option {
+    height: 60px;
+    border-radius: 50px;
+    background-color: #EBE8FF;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: #656084;
+    transition: 0.3s;
+
+    &:hover {
+        background-color: #656084;
+        color: #EBE8FF;
+    }
+
+    &:active {
+        scale: 0.98;
+    }
+}
+
+.options {
+    margin-top: 130px;
+}
+
+.additional--options {
+    margin-top: 30px;
+    display: flex;
+    gap: 30px;
+}
+
+.additional--options__form {
+    width: 533px;
+    border: 1px solid #F2F0FE;
+    border-radius: 20px;
+    padding: 20px 56.5px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.additional--options__form-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.service {
+    display: flex;
+    justify-content: space-between;
+
+    .field {
+        width: 195px;
+    }
+}
+
+.remove__option {
+    width: 100%;
+    height: 60px;
+    border-radius: 50px;
+    background-color: #FFDBDB;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: #FF4343;
+    transition: 0.3s;
+
+    &:hover {
+        background-color: #ebcaca;
+    }
+
+    &:active {
+        scale: 0.98;
+    }
+}
+
+.add__new--option {
+    width: 307px;
+    border-radius: 20px;
+    border: 1px solid #EBE8FF;
+    background-color: #F2F0FE;
+    font-size: 18px;
+    font-weight: 600;
+    color: #FBA457;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    transition: 0.3s;
+
+    &:hover {
+        background-color: #EBE8FF;
+    }
+
+    &:active {
+        scale: 0.98;
+    }
+}
+
+.modal__new--option {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 99998;
+    background-color: rgba(0, 0, 0, .3);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.4s, visibility 0.4s;
+}
+
+.modal__box-new--option {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    position: relative;
+    max-width: 460px;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 20px;
+    z-index: 1;
+    background-color: #F6FAFD;;
+    box-shadow: 0px 0px 17px -7px rgba(34, 60, 80, 0.2);
+    transform: scale(0);
+    transition: transform 0.8s;
+}
+
+.modal__new--option.open {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal__new--option.open .modal__box-new--option {
+    transform: scale(1);
+}
+
+.new--option-title {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.new--option-btn {
+    width: 100%;
+}

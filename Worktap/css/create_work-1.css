@@ -1,7 +1,7 @@
 @import url("reset.css");
 
 .step--1 {
-    margin-top: 52px;
+    padding: 52px 0 100px 0;
 }
 
 .steps-navigation {
@@ -68,12 +68,12 @@
 }
 
 .connecting--line {
-    width: 779px;
+    width: 90%;
     height: 6px;
     background-color: #B0AAD0;
     position: absolute;
     top: 32%;
-    left: 50%;
+    left: 49%;
     transform: translate(-50%, -50%);
 }
 
@@ -98,9 +98,12 @@
     font-size: 16px;
     font-weight: 600;
     color: #B0AAD0;
+    position: relative;
 
     &::placeholder {
         color: #B0AAD0;
+        position: absolute;
+        top: 0;
     }
 }
 
@@ -163,7 +166,7 @@
     background-repeat: no-repeat;
 }
 
-.step--1__links {
+.step__links {
     width: 100%;
     display: flex;
     justify-content: space-between;
