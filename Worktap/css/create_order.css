@@ -1,0 +1,22 @@
+@import url("reset.css");
+
+.create--order {
+    padding: 80px 0;
+}
+
+.create--order__body {
+    width: 644px;
+    margin-bottom: 80px;
+}
+
+.create--order__documents-title {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.create--order__fields {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 60px;
+}

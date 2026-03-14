@@ -1,21 +1,3 @@
-// Добавление новой фотографии
-const addNewPhotoButton = document.getElementById('add__new--photo');
-addNewPhotoButton.addEventListener('click', () => {
-    buttonNext.classList.remove('step__button--disabled');
-});
-
-
-// Ссылка на YouTube
-const linkYoutubeInput = document.getElementById('link_youtube_input');
-linkYoutubeInput.addEventListener('input', () => {
-    if (linkYoutubeInput.value.trim() !== '') {
-        buttonNext.classList.remove('step__button--disabled');
-    } else {
-        buttonNext.classList.add('step__button--disabled');
-    }
-});
-
-
 // Загрузка документов
 const uploadBtn = document.querySelector('.gallery__documents-form--input--field-download-btn');
 const fileInput = document.querySelector('.gallery__documents-file-input');
@@ -54,9 +36,7 @@ fileInput.addEventListener('change', () => {
 
 
 // Добавление обработчика события клика на список документов (для переключения статуса загруженного файла)
-const documentList = document.querySelector('.gallery__documents-form--list');
-
-documentList.addEventListener('click', function (e) {
+fileList.addEventListener('click', function (e) {
 	const button = e.target.closest('.gallery__documents-form--list-item-file-service-btn');
 
 	if (!button) return;
@@ -65,4 +45,22 @@ documentList.addEventListener('click', function (e) {
 	const documentStatus = documentListItem.querySelector('.gallery__documents-form--list-item-file-status');
 
 	documentStatus.classList.toggle('file-status__not--completed');
+});
+
+
+// Добавление новой фотографии
+const addNewPhotoButton = document.getElementById('add__new--photo');
+addNewPhotoButton.addEventListener('click', () => {
+    buttonNext.classList.remove('step__button--disabled');
+});
+
+
+// Ссылка на YouTube
+const linkYoutubeInput = document.getElementById('link_youtube_input');
+linkYoutubeInput.addEventListener('input', () => {
+    if (linkYoutubeInput.value.trim() !== '') {
+        buttonNext.classList.remove('step__button--disabled');
+    } else {
+        buttonNext.classList.add('step__button--disabled');
+    }
 });

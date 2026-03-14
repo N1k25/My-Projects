@@ -15,6 +15,8 @@
 		<link rel="stylesheet" href="./css/create_work-2.css"/>
 		<link rel="stylesheet" href="./css/create_work-3.css"/>
 		<link rel="stylesheet" href="./css/create_work-4.css"/>
+		<link rel="stylesheet" href="./css/create_work-5.css"/>
+		<link rel="stylesheet" href="./css/create_order.css"/>
 		<!-- Кодировка страницы -->
 		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
 	</head>
@@ -31,7 +33,7 @@
 							<li><a href="./exchange.html">Биржа</a></li>
 							<li><a href="./selected_works.html">Ворки</a></li>
 							<li><a href="#">Конкурсы</a></li>
-							<li><a href="./create_order.html">Создать заказ</a></li>
+							<li><a href="#">Создать заказ</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -93,60 +95,95 @@
 				</div>
 			</header>
 			<main class="page">
-				<section class="step--4">
+				<section class="create--order">
 					<div class="container">
-						<div class="steps-navigation">
-							<div class="step step--completed">
-								<div class="step-number">1</div>
-								<div class="step-title">Основные</div>
-							</div>
-							<div class="step step--completed">
-								<div class="step-number">2</div>
-								<div class="step-title">Стоимость и опции</div>
-							</div>
-							<div class="step step--completed">
-								<div class="step-number">3</div>
-								<div class="step-title">Описание</div>
-							</div>
-							<div class="step step--completed step--active">
-								<div class="step-number">4</div>
-								<div class="step-title">Требования</div>
-							</div>
-							<div class="step">
-								<div class="step-number">5</div>
-								<div class="step-title">Галерея</div>
-							</div>
-							<div class="step">
-								<div class="step-number">6</div>
-								<div class="step-title">Публикация</div>
-							</div>
-							<div class="connecting--line"></div>
-						</div>
-						<div class="step--4__form">
-							<div class="work__editor-block">
-								<h2 class="packages__title">Расскажите покупателю, что вам нужно для начала работы над заказом.</h2>
-								<h3 class="work__editor-subtitle">Структурируйте свои инструкции для покупателя в виде произвольного текста.</h3>
-								<div class="work__editor">
-									<div class="work__editor-header">
-										<img src="./create_work/img/bold_font.svg" alt="Иконка кнопки жирного шрифта" class="work__editor-header-btn--icon">
-										<img src="./create_work/img/italic_font.svg" alt="Иконка кнопки курсивного шрифта" class="work__editor-header-btn--icon">
-										<img src="./create_work/img/smile.svg" alt="Иконка кнопки смайлика" class="work__editor-header-btn--icon">
-										<img src="./create_work/img/non-printable_characters.svg" alt="Иконка кнопки невидимых символов" class="work__editor-header-btn--icon">
-										<img src="./create_work/img/alignment.svg" alt="Иконка кнопки выравнивания текста" class="work__editor-header-btn--icon">
-										<img src="./create_work/img/ordered_list.svg" alt="Иконка кнопки нумерованного списка" class="work__editor-header-btn--icon">
-										<img src="./create_work/img/quotes.svg" alt="Иконка кнопки цитат" class="work__editor-header-btn--icon">
-										<img src="./create_work/img/link.svg" alt="Иконка кнопки ссылки" class="work__editor-header-btn--icon">
-										<img src="./create_work/img/image.svg" alt="Иконка кнопки вставки изображения" class="work__editor-header-btn--icon">
-										<img src="./create_work/img/photo.svg" alt="Иконка кнопки вставки фото" class="work__editor-header-btn--icon">
-										<img src="./create_work/img/table.svg" alt="Иконка кнопки вставки таблицы" class="work__editor-header-btn--icon">
+						<div class="create--order__body">
+							<h2 class="create--order-title packages__title">Опубликуйте ваш заказ</h2>
+							<div class="create--order__fields">
+								<div class="step--1__form-title">
+									<label for="work-title" class="step--1__form-label">Название</label>
+									<input type="text" id="work-title" class="step--1__form-input" required placeholder="Placeholder"/>
+								</div>
+								<div class="step--1__form-title">
+									<h2 class="step--1__form-label">Описание</h2>
+									<textarea name="editor" id="work__editor" placeholder="Кратко опишите свой ворк"></textarea>
+								</div>
+								<div class="step--1__form-categories">
+									<div>
+										<label for="work-category" class="step--1__form-label">Категория</label>
+										<select id="work-category" class="step--1__form-select" required>
+											<option value="" disabled selected hidden>Placeholder</option>
+											<option value="design">Дизайн</option>
+											<option value="programming">Разработка</option>
+											<option value="writing">Аудио, видео монтаж</option>
+											<option value="marketing">Тексты и переводы</option>
+											<option value="video">SEO и оптимизация</option>
+											<option value="music">Соцсети и реклама</option>
+											<option value="business">Бизнес и жизнь</option>
+										</select>
 									</div>
-									<textarea name="editor" id="work__editor" placeholder="Кратко опишите требования"></textarea>
+									<div>
+										<label for="work-subcategory" class="step--1__form-label">Подкатегория</label>
+										<select id="work-subcategory" class="step--1__form-select" required>
+											<option value="" disabled selected hidden>Placeholder</option>
+											<option value="subcategory1">Подкатегория 1</option>
+											<option value="subcategory2">Подкатегория 2</option>
+										</select>
+									</div>
+								</div>
+								<div class="field">
+									<label for="term">Срок выполнения работы в днях</label>
+									<input type="number" name="term" required placeholder="14">
+								</div>
+								<div class="field">
+									<label for="budget">Бюджет в тенге</label>
+									<input type="number" name="budget" class="price-input" required placeholder="250 000">
+								</div>
+							</div>
+							<div class="gallery__documents">
+								<h2 class="create--order__documents-title packages__title">Документы</h2>
+								<div class="gallery__documents-form">
+									<div class="gallery__documents-form--input">
+										<div class="gallery__documents-form--input--field-block">
+											<img src="./create_work/img/page_up.svg" alt="Загрузка файла" class="gallery__documents-form--input--field-icon">
+											<div class="gallery__documents-form--input--field-download">
+												<div class="gallery__documents-form--input--field-download-hint">Перетащите файл сюда или нажмите</div>
+												<input type="file" class="gallery__documents-file-input" accept=".doc,.docx,.pdf,.png,.jpg,.jpeg" style="display:none"/>
+												<button class="gallery__documents-form--input--field-download-btn">Загрузить</button>
+											</div>
+										</div>
+										<div class="gallery__documents-form--input--field-hint">Загружайте только файлы doc, pdf, png, jpg, jpeg и не более 500 КБ</div>
+									</div>
+									<ul class="gallery__documents-form--list">
+										<li class="gallery__documents-form--list-item">
+											<div class="gallery__documents-form--list-item-file--name">food.doc</div>
+											<div class="gallery__documents-form--list-item-file-service">
+												<button type="button" class="gallery__documents-form--list-item-file-service-btn">
+													<img src="./create_work/img/page_down.svg" alt="Выгрузить файл" class="gallery__documents-form--list-item-file-service-icon">
+												</button>
+												<div class="gallery__documents-form--list-item-file-status">
+													<img src="./create_work/img/done.svg" alt="Загруженный файл" class="gallery__documents-form--list-item-file-status-icon">
+												</div>
+											</div>
+										</li>
+										<li class="gallery__documents-form--list-item">
+											<div class="gallery__documents-form--list-item-file--name">food.pdf</div>
+											<div class="gallery__documents-form--list-item-file-service">
+												<button type="button" class="gallery__documents-form--list-item-file-service-btn">
+													<img src="./create_work/img/page_down.svg" alt="Выгрузить файл" class="gallery__documents-form--list-item-file-service-icon">
+												</button>
+												<div class="gallery__documents-form--list-item-file-status file-status__not--completed">
+													<img src="./create_work/img/done.svg" alt="Загруженный файл" class="gallery__documents-form--list-item-file-status-icon">
+												</div>
+											</div>
+										</li>
+									</ul>
 								</div>
 							</div>
 						</div>
 						<div class="step__links">
-							<a href="./create_work-3.html" class="step__button step__button--prev">Назад</a>
-							<a href="./create_work-5.html" class="step__button step__button--next step__button--disabled">Дальше</a>
+							<a href="./index.html" class="step__button step__button--prev">Назад</a>
+							<a href="./index.html" class="step__button step__button--next step__button--disabled">Опубликовать</a>
 						</div>
 					</div>
 				</section>
@@ -157,5 +194,7 @@
 	<script src="./js/profile.js"></script>
 	<script src="./js/create-work-2.js"></script>
 	<script src="./js/create-work-3.js"></script>
+	<script src="./js/create-work-5.js"></script>
+	<script src="./js/create_order.js"></script>
 	</body>
 </html>
