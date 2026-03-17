@@ -1,0 +1,377 @@
+@import url("reset.css");
+
+.work {
+    padding: 80px 0;
+}
+
+.work__cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.work__card--1 {
+    width: 758px;
+    border: 1px solid #F2F0FE;
+    border-radius: 20px;
+    color: #000000;
+}
+
+.work__card--1-header {
+    padding: 20px;
+}
+
+.work__card--1-header-title,
+.work__reviews-title {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.work__path {
+    margin-top: 20px;
+    color: #B0AAD0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/*-----------------------------*/
+/* Основные стили */
+
+/* Слайдер */
+.slick-slider{
+	min-width: 0;
+}
+/* Ограничивающая оболочка */
+.slick-list {
+	overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track{
+	display: flex;
+	align-items: flex-start;
+}
+
+/* Конкретный слайдер */
+.work__card--1-sliderbig {
+	position: relative;
+}
+
+.work__card--1-sliderbig .slick-arrow{
+	position: absolute;
+	top: 50%;
+	margin: -20px 0px 0px 0px;
+	z-index: 1000;
+	font-size: 0;
+	width: 43px;
+	height: 43px;
+}
+.work__card--1-sliderbig .slick-arrow.slick-prev{
+	left: 20px;
+	background: url('../work/img/prev.svg') 0 0 / 100% no-repeat;
+}
+.work__card--1-sliderbig .slick-arrow.slick-next{
+	right: 20px;
+	background: url('../work/img/next.svg') 0 0 / 100% no-repeat;
+}
+
+.sliderbig__item {
+    height: 426px;
+    overflow: hidden;
+    text-align: center;
+}
+.sliderbig__item img{
+	width: 100%;
+    object-fit: cover;
+}
+
+/* Конкретный слайдер */
+.work__card--1-slider {
+	position: relative;
+    margin-top: 20px;
+}
+
+.slider__item {
+    height: 90px;
+	margin-left: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.slider__item img{
+	max-width: 100%;
+    object-fit: cover;
+}
+/*---------------------------*/
+
+.work__card--1-desc {
+    margin: 40px 0;
+    padding: 0 20px;
+}
+
+.work__card--1-desc-text {
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.work__card--1-faq {
+    padding: 0 20px;
+}
+
+.work__card--1-faq-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.work__card--1-faq-details {
+    width: 100%;
+    padding: 0 8px 12px;
+    
+    &:not(:last-child) {
+        border-bottom: 1px solid #B0AAD0;
+        margin-bottom: 12px;
+    }
+    
+    summary {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 18px;
+        font-weight: 500;
+        cursor: pointer;
+
+        &::marker {
+            content: '';
+        }
+
+        &::after {
+            content: url('../profile/img/hero/chevron-down.svg');
+            transition: transform 0.5s ease;
+        }
+    }
+    
+    &:open {
+        summary::after {
+            transform: rotate(180deg);
+        }
+    }
+}
+
+::details-content {
+    transition: height 0.5s ease, content-visibility 0.5s ease allow-discrete;
+    height: 0;
+    overflow: clip;
+}
+
+@supports (interpolate-size: allow-keywords) {
+    :root {
+        interpolate-size: allow-keywords;
+    }
+
+    [open]::details-content {
+        height: auto;
+    }
+}
+
+.work__card--1-faq-details-info {
+    margin-top: 12px;
+    font-size: 16px;
+    line-height: 150%;
+
+    span {
+        display: inline-block;
+        margin-top: 12px;
+        font-weight: 500;
+    }
+}
+
+.work__card--1-requirements {
+    margin-top: 40px;
+    padding: 0 20px;
+}
+
+.work__card--1-requirements-title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.work__card--1-requirements-content {
+    padding: 20px;
+}
+
+.work__card--1-requirements-list {
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.work__card--2 {
+    width: 532px;
+    margin-top: 106px;
+    color: #000000;
+
+    .freelancers-card {
+        width: 100%;
+
+        &:hover {
+            transform: translateY(10px);
+        }
+
+        .freelancers-card-person__jobs {
+            margin: 12px 0;
+        }
+    }
+}
+
+.work__card--2-packages-details {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #F2F0FE;
+    border-radius: 20px;
+    
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    
+    summary {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 20px;
+        font-weight: 600;
+        cursor: pointer;
+
+        &::marker {
+            content: '';
+        }
+
+        &::after {
+            content: url('../profile/img/hero/chevron-down.svg');
+            transition: transform 0.5s ease;
+        }
+    }
+    
+    &:open {
+        background-color: #F2F0FE;
+
+        & > summary::after {
+            transform: rotate(180deg);
+        }
+    }
+}
+
+.work__card--2-packages-details-info {
+    padding-top: 20px;
+}
+
+.work__card--2-packages-details-desc {
+    font-size: 16px;
+}
+
+.work__card--2-packages-details-implementation {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.work__card--2-packages-details-implementation-price {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1DBF73;
+}
+
+.work__card--2-packages-details-implementation-term {
+    font-size: 18px;
+    font-weight: 500;
+    color: #656084;
+}
+
+.work__card--2-packages-details-services {
+    font-size: 18px;
+    font-weight: 500;
+    color: #222222;
+}
+
+.work__card--2-packages-details-services-item:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.work__card--2-packages-details-options {
+    margin-top: 50px;
+}
+.work__card--2-packages-details-options-title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.work__card--2-packages-details-options-info {
+    margin-top: 20px;
+}
+
+.work__card--2-packages-details-options-btn {
+    width: 100%;
+    padding: 12px 36px;
+    font-size: 16px;
+    margin-top: 12px;
+}
+
+.work__card--2-packages-details-info-btn {
+    width: 100%;
+    padding: 12px 36px;
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #F6FAFD;
+    margin-top: 50px;
+
+    &:active {
+        scale: 0.98;
+    }
+}
+
+.freelancers-card-person__rating-container {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+}
+
+.freelancers-card-person__reviews-count {
+    font-weight: 600;
+}
+
+.work__card--2 .hero-categories .hero-categories-list .hero-categories-item:last-child {
+    border-color: #F2F0FE;
+
+    &:hover {
+        box-shadow: 0 8px 15px #222222;
+    }
+
+    .hero-categories-link {
+        color: #222222;
+    }
+}
+
+.work__reviews {
+    width: 758px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.work__reviews-title {
+    letter-spacing: 2%;
+}
+
+.work__reviews-tabs {
+    width: 100%;
+    height: 1250px;
+    margin: 0;
+
+    .tab .tab-content {
+        gap: 20px;
+    }
+}
+
+.work__reviews-card {
+    width: 100%;
+}
