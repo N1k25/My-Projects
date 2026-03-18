@@ -1,0 +1,141 @@
+@import url("reset.css");
+
+.order--creator {
+    padding: 60px 0 80px 0;
+    color: #000000;
+}
+
+.order--creator__person-links {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.order--creator__person-link {
+    width: 256px;
+    padding: 12px 0;
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    display: grid;
+    place-items: center;
+    transition: 0.3s;
+
+    &:active {
+        scale: 0.98;
+    }
+}
+
+.order--creator__person-link--change {
+    border: 1px solid #656084;
+    color: #656084;
+
+    &:hover {
+        background-color: #656084;
+        color: #FFFFFF;
+    }
+}
+
+.order--creator__person-link--close {
+    border: 1px solid #FF4343;
+    color: #FF4343;
+
+    &:hover {
+        background-color: #FF4343;
+        color: #FFFFFF;
+    }
+}
+
+.order--creator__freelancer--rates {
+    width: 758px;
+    margin-top: 60px;
+
+    &.none {
+        display: none;
+    }
+}
+
+.order--creator__freelancer--rates-title {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.order--creator__freelancer--rates-list {
+    margin-top: 20px;
+}
+
+.order--creator__freelancer--rates-list-item {
+    padding: 20px;
+    border: 1px solid #F2F0FE;
+    border-radius: 20px;
+
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    &:hover {
+        box-shadow: 0 16px 16px #2222220A;
+    }
+}
+
+.order--creator__freelancer--rates-list-item-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.order--creator__freelancer--rates-list-item-header-info {
+    text-align: right;
+}
+
+.order--creator-term {
+    margin-top: 20px;
+}
+
+.order--creator__freelancer--rates-list-item-desc {
+    margin: 20px 0;
+
+    .reviews__profile-card-text span {
+        font-weight: 500;
+    }
+}
+
+.order--creator__freelancer--rates-list-item-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.order--creator__freelancer--rates-list-item-button {
+    width: 147px;
+    padding: 12px;
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    background: transparent;
+    transition: 0.3s;
+
+    &:active {
+        scale: 0.98;
+    }
+}
+
+.list-item-button--accept {
+    border: 1px solid #1DBF73;
+    color: #1DBF73;
+
+    &:hover {
+        background-color: #1DBF73;
+        color: #FFFFFF;
+    }
+}
+
+.list-item-button--reject {
+    border: 1px solid #B0AAD0;
+    color: #B0AAD0;
+
+    &:hover {
+        background-color: #B0AAD0;
+        color: #FFFFFF;
+    }
+}

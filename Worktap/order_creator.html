@@ -20,6 +20,7 @@
 		<link rel="stylesheet" href="./css/create_work-2.css">
 		<link rel="stylesheet" href="./css/work.css"/>
 		<link rel="stylesheet" href="./css/order_freelancer.css"/>
+		<link rel="stylesheet" href="./css/order_creator.css"/>
 		<!-- Кодировка страницы -->
 		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
 	</head>
@@ -99,7 +100,7 @@
 				</div>
 			</header>
 			<main class="page">
-				<section class="order--freelancer">
+				<section class="order--creator">
 					<div class="container">
 						<div class="order--freelancer__body">
 							<div class="order--freelancer__content">
@@ -126,12 +127,15 @@
 									<li class="order--freelancer-list-item">Документ 3.pdf</li>
 								</ul>
 								<div class="order--freelancer__offer">
-									<button class="order--freelancer__offer-btn tabs__item-footer--message-send-btn" id="offer-service-btn">Предложить услугу</button>
 									<div class="order--freelancer__offer-counter">Предложений: 7</div>
 								</div>
 							</div>
-							<div class="order--freelancer__person-block">
-								<div class="order--freelancer__person projects__exchange-list--item-person">
+							<div class="order--creator__person-block">
+								<div class="order--creator__person-links">
+									<a href="#" class="order--creator__person-link order--creator__person-link--change">Изменить</a>
+									<a href="./index.html" class="order--creator__person-link order--creator__person-link--close">Закрыть без выполения</a>
+								</div>
+								<div class="order--freelancer__person-block projects__exchange-list--item-person">
 									<img src="./img/freelancers/photo1.png" alt="Аватар пользователя" class="projects__exchange-list--item-person-photo"/>
 									<div class="projects__exchange-list--item-person-info">
 										<div class="projects__exchange-list--item-person-name">Екатерина Иванова</div>
@@ -148,28 +152,210 @@
 										</div>
 									</div>
 								</div>
-								<a href="./order_creator.html" class="order--freelancer__person-link works-card-link none">Написать</a>
 							</div>
 						</div>
-						<div class="order--freelancer__form none">
-							<h3 class="order--freelancer__form-title">Предложить услугу</h3>
-							<div class="field">
-								<label for="price">Стоимость</label>
-								<input type="number" name="price" class="price-input" required placeholder="placeholder">
-							</div>
-							<div class="field">
-								<label for="date">Сроки в днях</label>
-								<input type="number" name="date" class="date-input" required placeholder="placeholder">
-							</div>
-							<div class="field">
-								<label for="revisions">Количество доработок</label>
-								<input type="number" name="revisions" required placeholder="placeholder">
-							</div>
-							<div class="field">
-								<label for="desc">Описание пакета</label>
-								<textarea name="desc" class="desc-field" required placeholder="Кратко опишите свой ворк"></textarea>
-							</div>
-							<button class="order--freelancer__form-btn order--freelancer__offer-btn tabs__item-footer--message-send-btn step__button--disabled" id="offer-form-btn">Предложить услугу</button>
+						<div class="order--creator__freelancer--rates none">
+							<h3 class="order--creator__freelancer--rates-title">Ставки фрилансеров</h3>
+							<ul class="order--creator__freelancer--rates-list">
+								<li class="order--creator__freelancer--rates-list-item">
+									<div class="order--creator__freelancer--rates-list-item-header">
+										<div class="reviews__profile-card-person">
+											<div class="reviews__profile-card-person-photo"></div>
+											<div class="reviews__profile-card-person-info">
+												<h3 class="reviews__profile-card-person-name">Никита Евреев</h3>
+												<div class="reviews__profile-card-person-rating">
+													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
+													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
+													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
+													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
+													<img src="./img/freelancers/star-gray.svg" alt="Неотмеченая звезда"> 
+												</div>
+											</div>
+										</div>
+										<div class="order--creator__freelancer--rates-list-item-header-info">
+											<div class="order--freelancer__budget">50 000 тенге</div>
+											<div class="order--creator-term order--freelancer__term">3 дня</div>
+										</div>
+									</div>
+									<div class="order--creator__freelancer--rates-list-item-desc">
+										<div class="reviews__profile-card-text">
+											<span>Количество доработок: 5</span>
+											<br>
+											<br>
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus tincidunt eget eu, eget commodo condimentum non, fringilla fermentum. Morbi sed enim facilisis metus pretium leo, mauris. In egestas cursus orci dignissim in lectus nulla.
+										</div>
+									</div>
+									<div class="order--creator__freelancer--rates-list-item-buttons">
+										<button class="order--creator__freelancer--rates-list-item-button list-item-button--accept">Выбрать</button>
+										<button class="order--creator__freelancer--rates-list-item-button list-item-button--reject">Отклонить</button>
+									</div>
+								</li>
+								<li class="order--creator__freelancer--rates-list-item">
+									<div class="order--creator__freelancer--rates-list-item-header">
+										<div class="reviews__profile-card-person">
+											<div class="reviews__profile-card-person-photo"></div>
+											<div class="reviews__profile-card-person-info">
+												<h3 class="reviews__profile-card-person-name">Никита Евреев</h3>
+												<div class="reviews__profile-card-person-rating">
+													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
+													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
+													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
+													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
+													<img src="./img/freelancers/star-gray.svg" alt="Неотмеченая звезда"> 
+												</div>
+											</div>
+										</div>
+										<div class="order--creator__freelancer--rates-list-item-header-info">
+											<div class="order--freelancer__budget">50 000 тенге</div>
+											<div class="order--creator-term order--freelancer__term">3 дня</div>
+										</div>
+									</div>
+									<div class="order--creator__freelancer--rates-list-item-desc">
+										<div class="reviews__profile-card-text">
+											Количество доработок: 5
+											<br>
+											<br>
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus tincidunt eget eu, eget commodo condimentum non, fringilla fermentum. Morbi sed enim facilisis metus pretium leo, mauris. In egestas cursus orci dignissim in lectus nulla.
+										</div>
+									</div>
+									<div class="order--creator__freelancer--rates-list-item-buttons">
+										<button class="order--creator__freelancer--rates-list-item-button list-item-button--accept">Выбрать</button>
+										<button class="order--creator__freelancer--rates-list-item-button list-item-button--reject">Отклонить</button>
+									</div>
+								</li>
+								<li class="order--creator__freelancer--rates-list-item">
+									<div class="order--creator__freelancer--rates-list-item-header">
+										<div class="reviews__profile-card-person">
+											<div class="reviews__profile-card-person-photo"></div>
+											<div class="reviews__profile-card-person-info">
+												<h3 class="reviews__profile-card-person-name">Никита Евреев</h3>
+												<div class="reviews__profile-card-person-rating">
+													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
+													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
+													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
+													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
+													<img src="./img/freelancers/star-gray.svg" alt="Неотмеченая звезда"> 
+												</div>
+											</div>
+										</div>
+										<div class="order--creator__freelancer--rates-list-item-header-info">
+											<div class="order--freelancer__budget">50 000 тенге</div>
+											<div class="order--creator-term order--freelancer__term">3 дня</div>
+										</div>
+									</div>
+									<div class="order--creator__freelancer--rates-list-item-desc">
+										<div class="reviews__profile-card-text">
+											Количество доработок: 5
+											<br>
+											<br>
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus tincidunt eget eu, eget commodo condimentum non, fringilla fermentum. Morbi sed enim facilisis metus pretium leo, mauris. In egestas cursus orci dignissim in lectus nulla.
+										</div>
+									</div>
+									<div class="order--creator__freelancer--rates-list-item-buttons">
+										<button class="order--creator__freelancer--rates-list-item-button list-item-button--accept">Выбрать</button>
+										<button class="order--creator__freelancer--rates-list-item-button list-item-button--reject">Отклонить</button>
+									</div>
+								</li>
+								<li class="order--creator__freelancer--rates-list-item">
+									<div class="order--creator__freelancer--rates-list-item-header">
+										<div class="reviews__profile-card-person">
+											<div class="reviews__profile-card-person-photo"></div>
+											<div class="reviews__profile-card-person-info">
+												<h3 class="reviews__profile-card-person-name">Никита Евреев</h3>
+												<div class="reviews__profile-card-person-rating">
+													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
+													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
+													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
+													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
+													<img src="./img/freelancers/star-gray.svg" alt="Неотмеченая звезда"> 
+												</div>
+											</div>
+										</div>
+										<div class="order--creator__freelancer--rates-list-item-header-info">
+											<div class="order--freelancer__budget">50 000 тенге</div>
+											<div class="order--creator-term order--freelancer__term">3 дня</div>
+										</div>
+									</div>
+									<div class="order--creator__freelancer--rates-list-item-desc">
+										<div class="reviews__profile-card-text">
+											Количество доработок: 5
+											<br>
+											<br>
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus tincidunt eget eu, eget commodo condimentum non, fringilla fermentum. Morbi sed enim facilisis metus pretium leo, mauris. In egestas cursus orci dignissim in lectus nulla.
+										</div>
+									</div>
+									<div class="order--creator__freelancer--rates-list-item-buttons">
+										<button class="order--creator__freelancer--rates-list-item-button list-item-button--accept">Выбрать</button>
+										<button class="order--creator__freelancer--rates-list-item-button list-item-button--reject">Отклонить</button>
+									</div>
+								</li>
+								<li class="order--creator__freelancer--rates-list-item">
+									<div class="order--creator__freelancer--rates-list-item-header">
+										<div class="reviews__profile-card-person">
+											<div class="reviews__profile-card-person-photo"></div>
+											<div class="reviews__profile-card-person-info">
+												<h3 class="reviews__profile-card-person-name">Никита Евреев</h3>
+												<div class="reviews__profile-card-person-rating">
+													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
+													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
+													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
+													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
+													<img src="./img/freelancers/star-gray.svg" alt="Неотмеченая звезда"> 
+												</div>
+											</div>
+										</div>
+										<div class="order--creator__freelancer--rates-list-item-header-info">
+											<div class="order--freelancer__budget">50 000 тенге</div>
+											<div class="order--creator-term order--freelancer__term">3 дня</div>
+										</div>
+									</div>
+									<div class="order--creator__freelancer--rates-list-item-desc">
+										<div class="reviews__profile-card-text">
+											Количество доработок: 5
+											<br>
+											<br>
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus tincidunt eget eu, eget commodo condimentum non, fringilla fermentum. Morbi sed enim facilisis metus pretium leo, mauris. In egestas cursus orci dignissim in lectus nulla.
+										</div>
+									</div>
+									<div class="order--creator__freelancer--rates-list-item-buttons">
+										<button class="order--creator__freelancer--rates-list-item-button list-item-button--accept">Выбрать</button>
+										<button class="order--creator__freelancer--rates-list-item-button list-item-button--reject">Отклонить</button>
+									</div>
+								</li>
+								<li class="order--creator__freelancer--rates-list-item">
+									<div class="order--creator__freelancer--rates-list-item-header">
+										<div class="reviews__profile-card-person">
+											<div class="reviews__profile-card-person-photo"></div>
+											<div class="reviews__profile-card-person-info">
+												<h3 class="reviews__profile-card-person-name">Никита Евреев</h3>
+												<div class="reviews__profile-card-person-rating">
+													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
+													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
+													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
+													<img src="./img/freelancers/star-yellow.svg" alt="Отмеченая звезда">
+													<img src="./img/freelancers/star-gray.svg" alt="Неотмеченая звезда"> 
+												</div>
+											</div>
+										</div>
+										<div class="order--creator__freelancer--rates-list-item-header-info">
+											<div class="order--freelancer__budget">50 000 тенге</div>
+											<div class="order--creator-term order--freelancer__term">3 дня</div>
+										</div>
+									</div>
+									<div class="order--creator__freelancer--rates-list-item-desc">
+										<div class="reviews__profile-card-text">
+											Количество доработок: 5
+											<br>
+											<br>
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus tincidunt eget eu, eget commodo condimentum non, fringilla fermentum. Morbi sed enim facilisis metus pretium leo, mauris. In egestas cursus orci dignissim in lectus nulla.
+										</div>
+									</div>
+									<div class="order--creator__freelancer--rates-list-item-buttons">
+										<button class="order--creator__freelancer--rates-list-item-button list-item-button--accept">Выбрать</button>
+										<button class="order--creator__freelancer--rates-list-item-button list-item-button--reject">Отклонить</button>
+									</div>
+								</li>
+							</ul>
 						</div>
 					</div>
 				</section>
@@ -462,5 +648,6 @@
 	<script src="js/work.js"></script>
 	<script src="js/create-work-2.js"></script>
 	<script src="js/order_freelancer.js"></script>
+	<script src="js/order_creator.js"></script>
 	</body>
 </html>
