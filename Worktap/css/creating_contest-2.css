@@ -1,0 +1,81 @@
+@import url("reset.css");
+
+.creating__contest-step--2 {
+    padding: 52px 0 80px 0;
+}
+
+.creating__contest-step--2 .steps-navigation {
+    width: 905px;
+}
+
+.creating__contest-step--2 .connecting--line {
+    width: 85%;
+
+    &::before {
+        content: '';
+        width: 30%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #1DBF73;
+    }
+}
+
+.creating__contest-step--2 .step--1__form {
+    margin-bottom: 80px;
+}
+
+.creating__contest-step--2-field {
+    margin-top: 30px;
+
+    label {
+        display: inline-block;
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 24px;
+    }
+}
+
+.duration-input-block {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.duration-input {
+    width: 533px;
+    appearance: none;
+    height: 7px;
+    background: linear-gradient(to right, #1DBF73 50%, #B0AAD0 50%);
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+/* Бігунок */
+.duration-input::-webkit-slider-thumb {
+  appearance: none;
+  width: 22px;
+  height: 22px;
+  background: #1DBF73;
+  border-radius: 50%;
+  box-shadow: 0 0 4px rgba(0,0,0,0.3);
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.duration-input::-webkit-slider-thumb:hover {
+  background: #1DBF73;
+}
+
+.duration-value {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #000000;
+}
