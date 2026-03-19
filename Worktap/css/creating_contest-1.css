@@ -1,0 +1,38 @@
+@import url("reset.css");
+
+.creating__contest-step--1 {
+    padding: 52px 0 100px 0;
+}
+
+.creating__contest-step--1 .steps-navigation {
+    width: 905px;
+}
+
+.creating__contest-step--1 .connecting--line {
+    width: 85%;
+}
+
+.step--1__cards {
+    margin: 60px 0 281px 0;
+    display: flex;
+    justify-content: space-between;
+    color: #000000;
+}
+
+.step--1__card {
+    width: 307px;
+    font-size: 20px;
+}
+
+.step--1__card-img {
+    object-fit: cover;
+}
+
+.step--1__card-title {
+    font-weight: 600;
+    margin: 24px 0;
+}
+
+.step--1__card-desc {
+    line-height: 125%;
+}
