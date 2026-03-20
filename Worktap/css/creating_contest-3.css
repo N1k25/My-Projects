@@ -1,0 +1,167 @@
+@import url("reset.css");
+
+.creating__contest-step--3 {
+    padding: 52px 0 80px 0;
+}
+
+.creating__contest-step--3 .steps-navigation {
+    width: 905px;
+}
+
+.creating__contest-step--3 .connecting--line {
+    width: 85%;
+
+    &::before {
+        content: '';
+        width: 55%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #1DBF73;
+    }
+}
+
+.creating__contest-step--3-form {
+    width: 100%;
+    margin: 80px 0;
+
+    .work__editor {
+        width: 100%;
+    }
+}
+
+.work__editor-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    textarea {
+        height: 101px;
+        resize: vertical;
+    }
+}
+
+.checkbox-social--network-group,
+.checkbox-purpose-creating-page-group,
+.checkbox-preferred-style-page-group {
+    padding-left: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.flex {
+    display: flex;
+	align-items: center;
+	gap: 6px;
+    cursor: pointer;
+
+    input[type="checkbox"] {
+		appearance: none; 
+        padding: 0;
+        margin: 0;        
+        width: 24px;
+        height: 24px;
+        border: 2px solid #B0AAD0;
+        border-radius: 50%;
+        cursor: pointer;
+        outline: none;
+        display: inline-block;
+        position: relative;
+
+        &:checked {
+            background-color: #1DBF73;
+            border-color: #1DBF73;
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 2px;
+                left: 7px;
+                width: 8px;
+                height: 16px;
+                border: solid #fff;
+                border-width: 0 3px 3px 0;
+                transform: rotate(45deg);
+            }
+        }
+	}
+}
+
+#social-network-input {
+    display: none;
+}
+
+#purpose-creating-page-input {
+    display: none;
+}
+
+#preferred-style-page-input {
+    display: none;
+}
+
+.file-input::file-selector-button {
+    padding: 5px 12px;
+    background-color: #1DBF73;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.file-input::file-selector-button:hover {
+    background-color: #0c9b58;
+}
+
+.permission-block {
+    margin-top: 30px;
+    color: #000000;
+
+    label {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
+
+#permission-checkbox {
+    appearance: none;         
+    width: 24px;
+    height: 24px;
+    border: 2px solid #B0AAD0;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    display: inline-block;
+    position: relative;
+
+    &:checked {
+        background-color: #1DBF73;
+        border-color: #1DBF73;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 2px;
+            left: 7px;
+            width: 8px;
+            height: 16px;
+            border: solid #fff;
+            border-width: 0 3px 3px 0;
+            transform: rotate(45deg);
+        }
+    }
+}
+
+.permission__hint {
+    margin-top: 20px;
+    padding-left: 32px;
+    font-size: 16px;
+}
