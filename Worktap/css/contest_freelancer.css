@@ -1,0 +1,62 @@
+@import url("reset.css");
+
+.contest--freelancer {
+    padding: 60px 0 80px 0;
+    color: #000000;
+}
+
+.contest--freelancer .hero-categories .hero-categories-list .hero-categories-item:last-child {
+    border-color: #F2F0FE;
+
+    &:hover {
+        box-shadow: 0 8px 15px #222222;
+    }
+
+    .hero-categories-link {
+        color: #222222;
+    }
+}
+
+.contest--freelancer__desc {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 16px;
+}
+
+.desc-item-title {
+    font-weight: 600;
+}
+
+.desc-item-list {
+    padding-left: 20px;
+
+    li {
+        list-style-type: disc;
+    }
+}
+
+.desc-item:nth-child(8) .desc-item-list {
+    padding-left: 0;
+    
+    li{
+        list-style-type: none;
+    }
+}
+
+.contest--freelancer__person-block {
+    width: 532px;
+}
+
+.contest--freelancer__form.none {
+    display: none;
+}
+
+.contest--freelancer-gallery__photos-desc {
+    margin: 30px 0 20px;
+}
+
+.contest--freelancer__form-btn {
+    width: 228px;
+}
