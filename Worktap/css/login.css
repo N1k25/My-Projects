@@ -1,0 +1,191 @@
+@import url("reset.css");  
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.form-welcome-row {
+    margin-bottom: 58px;
+}
+
+.form-welcome-row h1 {
+    color: #1A202C;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 8px;
+}
+
+.form-welcome-row h2 {
+    color: #2D3748;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.text-field {
+    margin-top: 40px;
+}
+
+.form-wrapper {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+}
+
+.form-side {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 195px;
+    height: 40px;
+    position: absolute;
+    top: 20px;
+    left: 70px;
+}
+
+.my-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    position: relative;
+    max-width: 509px;
+    width: 100%;
+}
+
+.form__button {
+    color: #FFFFFF;
+    outline: none;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    width: 100%;
+    height: 50px;
+    border-radius: 100px;
+    transition: all .3s ease;
+}
+
+.my-form__button {
+    background: #04C35C;
+    border: 1px solid #04C35C;
+    margin-top: 48px;
+}
+
+.my-form__button--google {
+    background-color: #2D3748;
+    border: 1px solid #2D3748;
+    margin-top: 20px;
+
+    span::before {
+        content: url('../login/img/google.svg');
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 12px;
+    }
+}
+
+.my-form:invalid .my-form__button {
+    pointer-events: none;
+    opacity: 0.4;
+    user-select: none;
+}
+
+.my-form__actions {
+    margin-top: 36px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.my-form__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 24px;
+}
+
+.my-form__row a {
+    font-size: 18px;
+    color: #FBA457;
+}
+
+.text-field input:user-invalid {
+    color: #e5484d;
+    border-bottom: 1px solid #e5484d;
+}
+
+.error-message {
+    display: none;
+}
+
+.text-field input:user-invalid~.error-message {
+    display: block;
+    margin-top: 0.25rem;
+    font-size: 0.8rem;
+    color: #e5484d;
+}
+
+/* aside */
+.info-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 60px;
+    background: url('../login/img/marek-levak.jpg');
+    background-position: 20% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.info-side .blockquote-wrapper {
+    position: relative;
+    padding: 20px;
+    width: 100%;
+    background: #FFFFFF;
+    border-radius: 20px;
+    box-shadow: 0 16px 20px #0000001F;
+}
+
+.info-side .blockquote-wrapper blockquote {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.dots {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.dot {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #FBA457;
+    opacity: 0.5;
+
+    &:first-child {
+        width: 32px;
+        height: 32px;
+        opacity: 1;
+    }
+}
