@@ -19,10 +19,10 @@ fileInput.addEventListener('change', () => {
         <div class="gallery__documents-form--list-item-file--name">${file.name}</div>
         <div class="gallery__documents-form--list-item-file-service">
             <button type="button" class="gallery__documents-form--list-item-file-service-btn">
-                <img src="./create_work/img/page_down.svg" class="gallery__documents-form--list-item-file-service-icon">
+                <img src="../img/create_work/page_down.svg" class="gallery__documents-form--list-item-file-service-icon">
             </button>
             <div class="gallery__documents-form--list-item-file-status file-status__not--completed">
-                <img src="./create_work/img/done.svg" alt="Загруженный файл" class="gallery__documents-form--list-item-file-status-icon">
+                <img src="../img/create_work/done.svg" alt="Загруженный файл" class="gallery__documents-form--list-item-file-status-icon">
             </div>
         </div>
     `;

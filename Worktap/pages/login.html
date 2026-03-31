@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login Worktap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/creating_contest-3.css">
+    <link rel="stylesheet" href="../css/create_work-1.css">
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+
+<body>
+    <div class="form-wrapper">
+        <main class="form-side">
+            <a href="#" title="Logo">
+                <img src="../img/main/header/logo.png" alt="Worktap Logo" class="logo">
+            </a>
+            <form class="my-form">
+                <div class="form-welcome-row">
+                    <h2>Добро пожаловать!</h2>
+                    <h1>Войдите в свой аккаунт</h1>
+                </div>
+                <div class="text-field">
+                    <label for="email" class="step--1__form-label">E-mail</label>
+                    <input type="email" class="step--1__form-input" id="email" name="email" autocomplete="off" placeholder="E-mail"
+                        required>
+                    <div class="error-message">E-mail в неправильном формате</div>
+                </div>
+                <div class="text-field">
+                    <label for="password" class="step--1__form-label">Пароль</label>
+                    <input class="step--1__form-input" id="password" type="password" name="password" placeholder="Пароль"
+                        title="Минимум 6 символов, как минимум 1 буква, 1 цифра и 1 символ."
+                        pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[\W_])[A-Za-z\d\W_]{6,}$" required>
+                    <div class="error-message">Минимум 6 символов, как минимум 1 буква, 1 цифра и 1 символ.</div>
+                </div>
+                <div class="my-form__row">
+                    <label class="flex"><input type="checkbox" id="facebook-checkbox">Запомнить меня</label>
+                    <a href="./reset_password.html" title="Забыли пароль?">
+                        Забыли пароль?
+                    </a>
+                </div>
+                <button class="form__button my-form__button" type="button" onclick="window.location.href='./profile.html'">
+                    Войти
+                </button>
+                <button class="form__button my-form__button--google" type="button" onclick="window.location.href='./profile.html'">
+                    <span>Или войдите с помощю Google</span>
+                </button>
+                <div class="my-form__actions">
+                    <div class="my-form__row">
+                        <span>У Вас все еще нет аккауна?</span>
+                        <a href="./register.html" title="Зарегистрируйтесь бесплатно!">
+                            Зарегистрируйтесь бесплатно!
+                        </a>
+                    </div>
+                </div>
+            </form>
+        </main>
+        <aside class="info-side">
+            <div class="blockquote-wrapper">
+                <blockquote>
+                    Worktap — это маркетплейс фриланс услуг, где можно купить услугу как товар в магазине или создать индивидуальный заказ на бирже.
+                </blockquote>
+            </div>
+            <div class="dots">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </aside>
+    </div>
+</body>
+
+</html>

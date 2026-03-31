@@ -67,11 +67,11 @@
 }
 .work__card--1-sliderbig .slick-arrow.slick-prev{
 	left: 20px;
-	background: url('../work/img/prev.svg') 0 0 / 100% no-repeat;
+	background: url('../img/work/prev.svg') 0 0 / 100% no-repeat;
 }
 .work__card--1-sliderbig .slick-arrow.slick-next{
 	right: 20px;
-	background: url('../work/img/next.svg') 0 0 / 100% no-repeat;
+	background: url('../img/work/next.svg') 0 0 / 100% no-repeat;
 }
 
 .sliderbig__item {
@@ -144,7 +144,7 @@
         }
 
         &::after {
-            content: url('../profile/img/hero/chevron-down.svg');
+            content: url('../img/profile/hero/chevron-down.svg');
             transition: transform 0.5s ease;
         }
     }
@@ -244,7 +244,7 @@
         }
 
         &::after {
-            content: url('../profile/img/hero/chevron-down.svg');
+            content: url('../img/profile/hero/chevron-down.svg');
             transition: transform 0.5s ease;
         }
     }

@@ -93,7 +93,7 @@ body {
     margin-top: 20px;
 
     span::before {
-        content: url('../login/img/google.svg');
+        content: url('../img/login/google.svg');
         display: inline-block;
         vertical-align: middle;
         margin-right: 12px;
@@ -148,7 +148,7 @@ body {
     justify-content: flex-end;
     align-items: center;
     padding: 60px;
-    background: url('../login/img/marek-levak.jpg');
+    background: url('../img/login/marek-levak.jpg');
     background-position: 20% 50%;
     background-size: cover;
     background-repeat: no-repeat;

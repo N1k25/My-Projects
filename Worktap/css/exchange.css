@@ -82,7 +82,7 @@ html {
 .ui-select-arrow {
     width: 24px;
     height: 24px;
-    background-image: url('../profile/img/hero/chevron-down.svg');
+    background-image: url('../img/profile/hero/chevron-down.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -150,6 +150,7 @@ html {
 .ui-select-menu {
     margin-top: 16px;
 }
+
 .ui-select-menu-item:hover {
     background: #EBE8FF;
     border-radius: 20px;
@@ -164,6 +165,9 @@ html {
 }
 
 .ui-select-menu-link {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 0 10px 10px;
     font-size: 16px;
     color: #000000;
 }

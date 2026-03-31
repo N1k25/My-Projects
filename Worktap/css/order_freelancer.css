@@ -55,7 +55,7 @@
     align-items: center;
 
     &::before {
-        content: url('../order_freelancer/img/doc.svg');
+        content: url('../img/order_freelancer/doc.svg');
         margin-right: 12px;
     }
 

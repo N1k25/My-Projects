@@ -71,7 +71,7 @@
         }
 
         &::after {
-            content: url('../profile/img/hero/chevron-down.svg');
+            content: url('../img/profile/hero/chevron-down.svg');
             transition: transform 0.5s ease;
         }
     }
@@ -133,35 +133,35 @@
 }
 
 .country::before {
-    content: url('../profile/img/hero/world.svg');
+    content: url('../img/profile/hero/world.svg');
     margin-right: 12px;
     display: inline-block;
     vertical-align: middle;
 }
 
 .online::before {
-    content: url('../profile/img/hero/clock.svg');
+    content: url('../img/profile/hero/clock.svg');
     margin-right: 12px;
     display: inline-block;
     vertical-align: middle;
 }
 
 .education::before {
-    content: url('../profile/img/hero/bank.svg');
+    content: url('../img/profile/hero/bank.svg');
     margin-right: 12px;
     display: inline-block;
     vertical-align: middle;
 }
 
 .languages::before {
-    content: url('../profile/img/hero/language.svg');
+    content: url('../img/profile/hero/language.svg');
     margin-right: 12px;
     display: inline-block;
     vertical-align: middle;
 }
 
 .certificates::before {
-    content: url('../profile/img/hero/note.svg');
+    content: url('../img/profile/hero/note.svg');
     margin-right: 12px;
     display: inline-block;
     vertical-align: middle;
@@ -286,7 +286,7 @@
     top: 277px;
 
     &::after {
-        content: url('../profile/img/hero/chevron-right.svg');
+        content: url('../img/profile/hero/chevron-right.svg');
         display: inline-block;
         vertical-align: middle;
         margin-left: 10px;
