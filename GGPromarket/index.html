@@ -1,0 +1,113 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+	<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Заголовок страницы в браузере -->
+		<title>GGPromarket</title>
+		<link rel="icon" type="image/png" href="img/favicon.png"/>
+		<!-- Подключаем CSS -->
+		<link rel="stylesheet" href="./css/style.css"/>
+		<!-- Кодировка страницы -->
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	</head>
+	<!-- Отображаемое тело страницы -->
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="header-top container">
+					<img src="./img/header/logo.png" alt="" class="logo">
+					<div class="location">
+						<img src="./img/header/location.svg" alt="" class="location-ico">
+						<a href="#" class="location-city">Москва</a>
+					</div>
+					<div class="call">
+						<div class="phone">
+							<select name="phone" id="phone">
+								<option value="84950183210">8 495 018-32-10</option>
+								<option value="84950123456">8 495 012-34-56</option>
+								<option value="84950987654">8 495 098-76-54</option>
+							</select>
+						</div>
+						<button class="phone-btn">Заказать звонок</button>
+					</div>
+					<nav class="menu">
+						<ul class="menu-list">
+							<li class="menu-item">
+								<a href="#" class="menu-link">Оплата</a>
+							</li>
+							<li class="menu-item">
+								<a href="#" class="menu-link">Доставка</a>
+							</li>
+							<li class="menu-item">
+								<a href="#" class="menu-link">Поставщикам</a>
+							</li>
+							<li class="menu-item">
+								<a href="#" class="menu-link">Статьи</a>
+							</li>
+							<li class="menu-item">
+								<a href="#" class="menu-link">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header-bottom container">
+					<div class="navigation">
+						<div class="catalog">
+							<div class="burger">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+							<a href="#" class="catalog-link">КАТАЛОГ ТОВАРОВ</a>
+						</div>
+						<div class="stocks">
+							<a href="#" class="stocks-link">АКЦИИ</a>
+						</div>
+						<div class="brand">
+							<a href="#" class="brand-link">БРЕНДЫ</a>
+						</div>
+					</div>
+					<div class="search">
+						<input type="text" id="search-input" placeholder="Что вы ищете?">
+						<button class="search-btn">
+							<img src="./img/header/search-icon.svg" alt="" class="search-ico">
+						</button>
+					</div>
+					<div class="service">
+						<a href="#" class="account">
+							<img src="./img/header/user.svg" alt="Аккаунт" class="account-ico">
+						</a>
+						<div class="likes">
+							<button class="likes-btn">
+								<img src="./img/header/like.svg" alt="Лайки" class="likes-ico">
+							</button>
+							<span>0</span>
+						</div>
+						<div class="trash">
+							<button class="trash-btn">
+								<img src="./img/header/trash.svg" alt="Корзина" class="trash-ico">
+							</button>
+							<span>2</span>
+						</div>
+					</div>
+				</div>
+			</header>
+			<main class="page">
+				<section class="hero"></section>
+				<section class="achievement"></section>
+				<section class="collections"></section>
+				<section class="hits"></section>
+				<section class="stock"></section>
+				<section class="banner">ЕЩЕ ОДИН БАННЕР</section>
+				<section class="brands"></section>
+				<section class="articles"></section>
+				<section class="about"></section>
+			</main>
+			<footer class="footer">Footer</footer>
+		</div>
+	<script src="./js/script.js"></script>
+	</body>
+</html>
