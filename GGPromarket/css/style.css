@@ -427,4 +427,26 @@ select option:hover {
     margin-right: 64px;
 }
 
-/*--------------------------    --------------------------*/
+/*--------------------------Achievement--------------------------*/
+.achievement {
+    margin-top: 42px;
+}
+
+.archievement-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.achievement-item {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.achievement-title {
+    width: 200px;
+    line-height: 20px;
+}
+
+/*--------------------------     --------------------------*/
