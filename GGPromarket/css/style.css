@@ -864,4 +864,48 @@ select option:hover {
     color: #000000;
 }
 
+/*-------------------------- About --------------------------*/
+.about {
+    padding: 70px 0;
+}
+
+.about-container {
+    height: 550px;
+    padding: 0 25px;
+    position: relative;
+}
+
+.about-img {
+    display: block;
+    width: 629px;
+    height: 471px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.about-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: #000000;
+    position: absolute;
+    top: 24px;
+    right: 299px;
+}
+
+.about-info {
+    width: 1148px;
+    padding: 49px 109px 73px 389px;
+    background-color: #3BB9B8;
+    font-size: 16px;
+    line-height: 30px;
+    color: #FFFFFF;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
 /*--------------------------      --------------------------*/
