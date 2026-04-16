@@ -785,4 +785,36 @@ select option:hover {
     color: #FFFFFF;
 }
 
+/*-------------------------- Brands --------------------------*/
+.brands {
+    margin-top: 52px;
+}
+
+.brands-body {
+    margin-top: 42px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.brand-item {
+    width: 240px;
+    height: 132px;
+    background-color: #FFFFFF;
+    display: grid;
+    place-items: center;
+    
+    &:hover {
+        .brand-logo {
+            scale: 1.1;
+        }
+    }
+}
+
+.brand-logo {
+    max-width: 106px;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
 /*--------------------------     --------------------------*/
