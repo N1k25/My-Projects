@@ -770,4 +770,19 @@ select option:hover {
     background-color: #EAF4FF;
 }
 
+/*-------------------------- Banner --------------------------*/
+.banner {
+    margin-top: 40px;
+}
+
+.banner-container {
+    background-color: #2B7BC6;
+    padding: 50px;
+    display: grid;
+    place-items: center;
+    font-size: 16px;
+    letter-spacing: 15%;
+    color: #FFFFFF;
+}
+
 /*--------------------------     --------------------------*/
