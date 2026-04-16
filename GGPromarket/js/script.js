@@ -27,21 +27,52 @@ searchInput.addEventListener('keydown', (event) => {
 
 /*------------------------------------*/
 // Счетчик лайков при клике на кнопку "Нравится"
-const likesButton = document.querySelector('.likes-btn');
+const likeButtons = document.querySelectorAll('.product-like-btn');
 const likesCounter = document.querySelector('.likes span');
 
 let counterLikes = 0;
 
-likesButton.addEventListener('click', () => {
-    counterLikes++;
+likeButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        if (button.classList.contains('active')) {
+            counterLikes--;
+            likesCounter.textContent = counterLikes;
+        } else {
+            counterLikes++;
+            likesCounter.textContent = counterLikes;
+        }
+        button.classList.toggle('active');
+    });
+});
+
+// Сброс счетчика лайков при клике на кнопку "Сбросить"
+const buttonLikeReset = document.querySelector('.likes-btn');
+
+buttonLikeReset.addEventListener('click', () => {
+    counterLikes = 0;
     likesCounter.textContent = counterLikes;
+    likeButtons.forEach(button => {
+        button.classList.remove('active');
+    });
 });
 
 /*------------------------------------*/
 // Сброс счетчика корзины товаров при клике на кнопку "Корзина"
-const trashButton = document.querySelector('.trash-btn');
-const trashCounter = document.querySelector('.trash span');
+const buttonTrashReset = document.querySelector('.trash-btn');
+const trashCounterEl = document.querySelector('.trash span');
+let trashCounter = 0;
 
-trashButton.addEventListener('click', () => {
-    trashCounter.textContent = '0';
+buttonTrashReset.addEventListener('click', () => {
+    trashCounter = 0;
+    trashCounterEl.textContent = trashCounter;
+});
+
+// Счетчик товаров в корзине при клике на кнопку "В корзину"
+const buyButtons = document.querySelectorAll('.buy-btn');
+
+buyButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        trashCounter++;
+        trashCounterEl.textContent = trashCounter;
+    });
 });
