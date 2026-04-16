@@ -564,13 +564,15 @@ select option:hover {
 
 /* Конкретный слайдер */
 .all--hits-slider,
-.stock-slider {
+.stock-slider,
+.articles-slider {
     width: 100%;
 	position: relative;
 }
 
 .all--hits-slider .slick-arrow,
-.stock-slider .slick-arrow {
+.stock-slider .slick-arrow,
+.articles-slider .slick-arrow {
 	position: absolute;
 	top: 50%;
 	margin: -30px 0px 0px 0px;
@@ -580,12 +582,14 @@ select option:hover {
 	height: 60px;
 }
 .all--hits-slider .slick-arrow.slick-prev,
-.stock-slider .slick-arrow.slick-prev {
+.stock-slider .slick-arrow.slick-prev,
+.articles-slider .slick-arrow.slick-prev {
 	left: -20px;
 	background: url('../img/hits/arrow-prev.png') 0 0 / 100% no-repeat;
 }
 .all--hits-slider .slick-arrow.slick-next,
-.stock-slider .slick-arrow.slick-next {
+.stock-slider .slick-arrow.slick-next,
+.articles-slider .slick-arrow.slick-next {
 	right: -20px;
 	background: url('../img/hits/arrow-next.png') 0 0 / 100% no-repeat;
 }
@@ -803,6 +807,7 @@ select option:hover {
     background-color: #FFFFFF;
     display: grid;
     place-items: center;
+    overflow: hidden;
     
     &:hover {
         .brand-logo {
@@ -817,4 +822,46 @@ select option:hover {
     transition: 0.3s;
 }
 
-/*--------------------------     --------------------------*/
+/*-------------------------- Articles --------------------------*/
+.articles {
+    margin-top: 40px;
+}
+
+.articles-body {
+    margin-top: 42px;
+}
+
+.articles-slider-item {
+    width: 370px;
+    margin: 0 10px 0 10px;
+
+    &:hover {
+        .article-img {
+            scale: 1.1;
+        }
+    }
+}
+
+.article-image__block {
+    width: 100%;
+    overflow: hidden;
+}
+
+.article-img {
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.article-info {
+    padding: 30px;
+    background-color: #FFFFFF;
+}
+
+.article-name {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+}
+
+/*--------------------------      --------------------------*/
