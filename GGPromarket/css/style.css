@@ -512,22 +512,26 @@ select option:hover {
 /*-------------------------- Hits --------------------------*/
 .hits {
     margin-top: 52px;
+    padding-bottom: 28px;
 }
 
 .hits-body {
     margin-top: 36px;
 }
 
-.tabs {
+.tabs,
+.stock-tabs {
     width: 100%;
 }
 
-.tabs__nav {
+.tabs__nav,
+.stock-tabs__nav {
     display: flex;
     gap: 10px;
 }
 
-.tabs__nav-btn {
+.tabs__nav-btn,
+.stock--tabs__nav-btn {
     padding: 8px 16px;
     line-height: 24px;
     color: #2B7BC6;
@@ -537,30 +541,36 @@ select option:hover {
     cursor: pointer;
 }
 
-.tabs__nav-btn.active {
+.tabs__nav-btn.active,
+.stock--tabs__nav-btn.active {
     background-color: #3BB9B8;
     color: #fff;
 }
 
-.tabs__content {
+.tabs__content,
+.stock-tabs__content {
     margin-top: 30px;
 }
 
-.tabs__item {
+.tabs__item,
+.stock-tabs__item {
     display: none;
 }
 
-.tabs__item.active {
+.tabs__item.active,
+.stock-tabs__item.active {
     display: flex;
 }                        
 
 /* Конкретный слайдер */
-.all--hits-slider {
+.all--hits-slider,
+.stock-slider {
     width: 100%;
 	position: relative;
 }
 
-.all--hits-slider .slick-arrow{
+.all--hits-slider .slick-arrow,
+.stock-slider .slick-arrow {
 	position: absolute;
 	top: 50%;
 	margin: -30px 0px 0px 0px;
@@ -569,11 +579,13 @@ select option:hover {
 	width: 60px;
 	height: 60px;
 }
-.all--hits-slider .slick-arrow.slick-prev{
+.all--hits-slider .slick-arrow.slick-prev,
+.stock-slider .slick-arrow.slick-prev {
 	left: -20px;
 	background: url('../img/hits/arrow-prev.png') 0 0 / 100% no-repeat;
 }
-.all--hits-slider .slick-arrow.slick-next{
+.all--hits-slider .slick-arrow.slick-next,
+.stock-slider .slick-arrow.slick-next {
 	right: -20px;
 	background: url('../img/hits/arrow-next.png') 0 0 / 100% no-repeat;
 }
@@ -602,7 +614,7 @@ select option:hover {
     line-height: 18px;
     letter-spacing: 15%;
 }
-.status {
+.status:not(:empty) {
     background-color: #FFD600;
 }
 
@@ -750,6 +762,12 @@ select option:hover {
     &:active {
         scale: 0.97;
     }
+}
+
+/*-------------------------- Stock --------------------------*/
+.stock {
+    padding: 52px 0 40px 0;
+    background-color: #EAF4FF;
 }
 
 /*--------------------------     --------------------------*/
