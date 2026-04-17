@@ -908,4 +908,142 @@ select option:hover {
     right: 0;
 }
 
-/*--------------------------      --------------------------*/
+/*-------------------------- Footer --------------------------*/
+.footer-content {
+    padding: 36px 0 47px;
+    background-color: #FFFFFF;
+}
+
+.footer-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-item-list {
+    li:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    a {
+        color: #2B7BC6;
+
+        &:hover {
+            text-decoration: underline;
+            text-decoration-style: dashed;
+            text-underline-offset: 2px;
+            text-decoration-skip-ink: none;
+        }
+    }
+}
+
+.footer-logo {
+    margin: 36px 0 17px;
+}
+
+.footer-copyright {
+    line-height: 20px;
+    color: #99A3A9;
+}
+
+.call-link {
+    display: block;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 40px;
+    color: #000000;
+
+    &:hover {
+        text-decoration: underline;
+        text-decoration-style: dashed;
+        text-underline-offset: 2px;
+        text-decoration-skip-ink: none;
+    }
+}
+
+.order--call-btn {
+    padding: 6px 13px;
+    margin: 18px 0;
+    border-radius: 4px;
+    border: 1px solid #1061AB;
+    background: transparent;
+    outline: none;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 15%;
+    color: #1061AB;
+    transition: 0.3s;
+
+    &:hover {
+        background-color: #1061AB;
+        color: #FFFFFF;
+    }
+
+    &:active {
+        scale: 0.97;
+    }
+}
+
+.work--schedule {
+    line-height: 30px;
+}
+
+.socials {
+    margin-top: 54px;
+    display: flex;
+    align-items: center;
+    gap: 29px;
+}
+
+.location {
+    line-height: 30px;
+}
+
+.email-link {
+    display: block;
+    line-height: 30px;
+    color: #1061AB;
+
+    &:hover {
+        text-decoration: underline;
+        text-decoration-style: dashed;
+        text-underline-offset: 2px;
+        text-decoration-skip-ink: none;
+    }
+}
+
+.evaluate--store {
+    display: block;
+    width: 148px;
+    height: 99px;
+    margin-top: 128px;
+    overflow: hidden;
+}
+
+.evaluate--store-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    scale: 1.1;
+}
+
+.footer-info {
+    padding: 41px 0 49px;
+}
+
+.footer-info-container {
+    line-height: 24px;
+    color: #99A3A9;
+}
+
+.cookie-link,
+.personal-data-link {
+    color: #2B7BC6;
+
+    &:hover {
+        text-decoration: underline;
+        text-decoration-style: dashed;
+        text-underline-offset: 2px;
+        text-decoration-skip-ink: none;
+    }
+}
