@@ -149,4 +149,242 @@
     }
 }
 
-/*-------------------------------------   -----------------------------------------*/
+/*-------------------------------------Hero-----------------------------------------*/
+.hero {
+    padding-bottom: 61px;
+    position: relative;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 75px;
+    padding: 101px 0;
+}
+
+.hero-header {
+    width: 534px;
+    color: #F3F4F6;
+}
+
+.hero-title {
+    font-family: 'ITC Avant Garde Gothic Std';
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 66px;
+    letter-spacing: 1%;
+}
+
+.hero-text {
+    width: 427px;
+    font-family: 'ITC Avant Garde Gothic Std';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: -1.1%;
+    margin-top: 24px;
+}
+
+.hero-links {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    gap: 23px;
+}
+
+.hero-link--start {
+    width: 197px;
+    padding: 18px;
+    border-radius: 100px;
+    background-color: #F0E714;
+    font-family: ITC Avant Garde Gothic Std;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #24272E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+
+    &:hover {
+        gap: 15px;
+
+        img {
+            width: 30px;
+        }
+    }
+}
+
+.hero-link--video {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: 'ITC Avant Garde Gothic Std';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+
+    span {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: #FFFFFF;
+        display: grid;
+        place-items: center;
+        transition: all 0.3s ease;
+
+        img {
+            width: 12px;
+            transition: all 0.3s ease;
+        }
+    }
+
+    &:hover {
+        gap: 15px;
+
+        span {
+            width: 35px;
+            height: 35px;
+
+            img {
+                width: 15px;
+            }
+        }
+    }
+}
+
+.achievement {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.achievement-item {
+    text-align: center;
+}
+
+.achievement-title {
+    font-family: 'ITC Avant Garde Gothic Std';
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 56px;
+    color: #F0E714;
+}
+
+.achievement-text {
+    margin-top: 10px;
+    font-family: 'ITC Avant Garde Gothic Std';
+    font-weight: 500;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+.partners {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 47px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #EDB32D;
+    position: absolute;
+    top: 12px;
+    left: 704px;
+}
+
+.hero-dots {
+    width: 170px;
+    height: 170px;
+    position: absolute;
+    top: 37px;
+    right: 25px;
+}
+
+.hero-img {
+    width: 753px;
+    height: 599px;
+    object-fit: cover;
+    position: absolute;
+    top: 44px;
+    right: 0;
+}
+
+.star {
+    width: 38px;
+    height: 38px;
+    position: absolute;
+    top: 246px;
+    left: 544px;
+}
+
+.static {
+    width: 202px;
+    padding: 20px 16px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 343px;
+    left: 583px;
+}
+
+.block--name {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 32px;
+    background-color: #F0E71480;
+    font-family: Manrope;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: -1.1%;
+    color: #101C26;
+}
+
+.static-title {
+    font-family: Manrope;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: -1.1%;
+    color: #24272E;
+    margin: 18px 0 16px;
+}
+
+.graph {
+    width: 100%;
+    height: 75px;
+    object-fit: cover;
+}
+
+.period {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.month {
+    font-family: Manrope;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: -1.1%;
+    color: #24272E;
+
+    &.active {
+        padding: 2px 7px;
+        border-radius: 9px;
+        background-color: #F7F289;
+    }
+}
+
+/*-------------------------------------     -----------------------------------------*/
