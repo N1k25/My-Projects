@@ -1,0 +1,152 @@
+@import url("reset.css");
+@import url(https://fonts.googleapis.com/css?family=Inter:regular,500,600&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Manrope:regular,500,600&display=swap);
+
+@font-face {
+    font-family: 'ITC Avant Garde Gothic Std';
+    font-display: swap;
+    src: url("../fonts/ITCAvantGardeStd-Bk.eot");
+    src: local("O"), url("../fonts/ITCAvantGardeStd-Bk.woff") format("woff"),
+        url("../fonts/ITCAvantGardeStd-Bk.ttf") format("truetype"),
+        url("../fonts/ITCAvantGardeStd-Bk.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ITC Avant Garde Gothic Std';
+    font-display: swap;
+    src: url("../fonts/ITCAvantGardeStd-Md.eot");
+    src: local("O"), url("../fonts/ITCAvantGardeStd-Md.woff") format("woff"),
+        url("../fonts/ITCAvantGardeStd-Md.ttf") format("truetype"),
+        url("../fonts/ITCAvantGardeStd-Md.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ITC Avant Garde Gothic Std';
+    font-display: swap;
+    src: url("../fonts/ITCAvantGardeStd-Demi.eot");
+    src: local("O"), url("../fonts/ITCAvantGardeStd-Demi.woff") format("woff"),
+        url("../fonts/ITCAvantGardeStd-Demi.ttf") format("truetype"),
+        url("../fonts/ITCAvantGardeStd-Demi.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ITC Avant Garde Gothic Std';
+    font-display: swap;
+    src: url("../fonts/ITCAvantGardeStd-Bold.eot");
+    src: local("O"), url("../fonts/ITCAvantGardeStd-Bold.woff") format("woff"),
+        url("../fonts/ITCAvantGardeStd-Bold.ttf") format("truetype"),
+        url("../fonts/ITCAvantGardeStd-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/*-------------------------------------Header-----------------------------------------*/
+.header {
+    background: url("../img/header/background.png") no-repeat top center;
+    background-size: cover;
+    background-color: #101C26;
+}
+
+.header-menu {
+    padding: 27px 0 28px;
+}
+
+.header-menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 97px;
+    height: 67px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 163px;
+}
+
+.menu-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.menu-item a {
+    font-family: 'ITC Avant Garde Gothic Std';
+    font-weight: 500;
+    line-height: 100%;
+    color: #BAB9B9;
+    position: relative;
+    transition: all 0.3s ease;
+
+    &::after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 2px;
+        background-color: #FFFFFF;
+        position: absolute;
+        bottom: -6px;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: width 0.3s ease;
+    }
+
+    &:hover {
+        color: #FFFFFF;
+
+        &::after {
+            width: 100%;
+        }
+    }
+}
+
+.menu-buttons {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.menu-btn {
+    padding: 13px 32px;
+    border-radius: 100px;
+    border: 1px solid #CECECE;
+    font-family: 'ITC Avant Garde Gothic Std';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #CECECE;
+    outline: none;
+    background: transparent;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: #F0E714;
+        color: #101C26;
+    }
+
+    &:active {
+        scale: 0.97;
+    }
+}
+
+/*-------------------------------------   -----------------------------------------*/
