@@ -56,6 +56,32 @@
     margin: 0 auto;
 }
 
+.block-name {
+    display: inline-block;
+    padding: 10px 16px;
+    border-radius: 1000px;
+    background-color: #F0E71433;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #24272E;
+}
+
+.section-title {
+    font-family: ITC Avant Garde Gothic Std;
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 56px;
+    color: #24272E;
+    margin: 24px 0 16px;
+}
+
+.section-text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #555C68;
+}
+
 /*-------------------------------------Header-----------------------------------------*/
 .header {
     background: url("../img/header/background.png") no-repeat top center;
@@ -387,4 +413,73 @@
     }
 }
 
-/*-------------------------------------     -----------------------------------------*/
+/*-------------------------------------About-----------------------------------------*/
+.about {
+    padding: 140px 0;
+    position: relative;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-image__block {
+    width: 620px;
+    height: 444px;
+    border-radius: 10px;
+    overflow: hidden;
+    
+    &:hover {
+        .about-img {
+            scale: 1.1;
+        }
+    }
+}
+
+.about-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s linear;
+}
+
+.about-header {
+    width: 628px;
+}
+
+.about-link {
+    width: 160px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 12px;
+    border-radius: 100px;
+    background-color: #24272E;
+    margin-top: 40px;
+    font-size: 14px;
+    line-height: 22px;
+    color: #F0E714;
+    transition: 0.3s;
+    
+    &:hover {
+        gap: 10px;
+        
+        img {
+            width: 20px;
+        }
+    }
+}
+
+.about-dots-circle {
+    width: 182px;
+    width: 182px;
+    position: absolute;
+    left: 37px;
+    bottom: 91px;
+    z-index: -1;
+}
+
+/*-------------------------------------    -----------------------------------------*/
