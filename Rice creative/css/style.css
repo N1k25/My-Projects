@@ -449,6 +449,10 @@
     width: 628px;
 }
 
+.about-text {
+    width: 508px;
+}
+
 .about-link {
     width: 160px;
     display: inline-flex;
@@ -482,4 +486,84 @@
     z-index: -1;
 }
 
-/*-------------------------------------    -----------------------------------------*/
+/*-------------------------------------Why-----------------------------------------*/
+.why {
+    padding-bottom: 140px;
+    position: relative;
+}
+
+.why-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.why-header {
+    width: 625px;
+}
+
+.why-text {
+    width: 477px;
+}
+
+.why-image__block {
+    width: 624px;
+    height: 653px;
+}
+
+.why-list {
+    width: 449px;
+    margin-top: 40px;
+}
+
+.why-list__item{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    
+    &:not(:last-child) {
+        margin-bottom: 32px;
+    }
+}
+
+.why-list__item-icon-block {
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    background-color: #24272E;
+    display: grid;
+    place-items: center;
+    aspect-ratio: 1 / 1;
+}
+
+.why-list__item-info {
+    width: 357px;
+}
+
+.why-list__item-title {
+    font-family: 'ITC Avant Garde Gothic Std';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: -1.1%;
+    color: #24272E;
+}
+
+.why-list__item-text {
+    margin-top: 2px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #555C68;
+}
+
+
+.why-dots-circle {
+    width: 182px;
+    height: 182px;
+    position: absolute;
+    right: 26px;
+    bottom: 85px;
+    z-index: -1;
+}
+
+/*-------------------------------------   -----------------------------------------*/
