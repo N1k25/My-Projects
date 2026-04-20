@@ -634,4 +634,185 @@
     color: #555C68;
 }
 
+/*-------------------------------------Ready-----------------------------------------*/
+.ready-header {
+    width: 508px;
+}
+
+.ready-title {
+    margin-bottom: 0;
+}
+
+.ready-body {
+    width: 1360px;
+    margin-top: 58px;
+}
+
+.ready-slider__item {
+    width: 510px;
+}
+
+.ready-slider__item-image-block {
+    width: 100%;
+    height: 641px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide--1 {
+    background-color: #F37825;
+}
+.slide--2 {
+    background-color: #005C46;
+}
+.slide--3 {
+    background-color: #24272E;
+}
+
+.ready-slider__item--1-img {
+    width: 336px;
+    position: absolute;
+    top: 31px;
+    left: 31px;
+    z-index: 2;
+}
+
+.ready-slider__item--1-img--mobile {
+    width: 175px;
+    position: absolute;
+    bottom: 31px;
+    right: 31px;
+}
+
+.ready-slider__item--2 {
+    width: 143px;
+    height: 342px;
+    transform: rotate(-30deg);
+    transform-origin: top left;
+}
+.ready-slider__item--2-img--1 {
+    position: absolute;
+    top: 360px;
+    left: -39px;
+}
+.ready-slider__item--2-img--2 {
+    position: absolute;
+    top: 161px;
+    left: 36px;
+}
+.ready-slider__item--2-img--3 {
+    position: absolute;
+    top: 31px;
+    left: 151px;
+}
+.ready-slider__item--2-img--4 {
+    position: absolute;
+    top: 58px;
+    left: 356px;
+}
+.ready-slider__item--2-img--5 {
+    position: absolute;
+    top: 348px;
+    left: 332px;
+}
+.ready-slider__item--2-img--6 {
+    position: absolute;
+    top: 478px;
+    left: 214px;
+}
+
+.ready-slider__item-info {
+    margin-top: 40px;
+    padding-right: 31px;
+}
+
+.ready-slider__item-title {
+    height: 55px;
+    font-family: 'ITC Avant Garde Gothic Std';
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 28px;
+    color: #24272E;
+}
+
+.ready-slider__item-text {
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #555C68;
+}
+
+.ready-slider__item-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'ITC Avant Garde Gothic Std';
+    font-weight: 600;
+    color: #24272E;
+    transition: 0.3s;
+    
+    &:hover {
+        gap: 12px;
+        
+        img {
+            width: 18px;
+        }
+    }
+}
+
+/* Основные стили */
+/* Слайдер */
+.slick-slider{
+	min-width: 0;
+}
+/* Ограничивающая оболочка */
+.slick-list {
+	overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track{
+	display: flex;
+}
+
+/* Конкретный слайдер */
+.ready-slider {
+	position: relative;
+}
+
+.ready-slider .slick-arrow{
+	position: absolute;
+	top: -140px;
+	z-index: 10;
+	font-size: 0;
+	width: 48px;
+	height: 48px;
+	opacity: 0.6;
+	
+	&:hover {
+        opacity: 1;
+	}
+	
+	&:active {
+        scale: 0.97;
+	}
+}
+.ready-slider .slick-arrow.slick-prev{
+	right: 140px;;
+	background: url('../img/ready/arrow-prev.svg') 0 0 / 100% no-repeat;
+}
+.ready-slider .slick-arrow.slick-next{
+	right: 80px;
+	background: url('../img/ready/arrow-next.svg') 0 0 / 100% no-repeat;
+}
+
+.ready-slider .slick-arrow.slick-disabled{
+	opacity: 0.2;
+}
+
+.slider__item {
+    margin-right: 30px;
+}
+
 /*-------------------------------------    -----------------------------------------*/
