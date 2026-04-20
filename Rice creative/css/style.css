@@ -49,6 +49,7 @@
 .wrapper {
     max-width: 1440px;
     margin: 0 auto;
+    background-color: #F3F4F6;
 }
 
 .container {
@@ -566,4 +567,71 @@
     z-index: -1;
 }
 
-/*-------------------------------------   -----------------------------------------*/
+/*-------------------------------------Services-----------------------------------------*/
+.services {
+    padding-bottom: 140px;
+}
+
+.services-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+}
+
+.services-header {
+    width: 664px;
+    text-align: center;
+}
+
+.services-title {
+    width: 495px;
+    margin: 0 auto;
+}
+
+.services-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.services-card {
+    flex: 0 0 297px;
+    padding: 32px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    transition: 0.3s linear;
+    
+    &:hover {
+        box-shadow: 0 30px 50px #9897975E;
+    }
+}
+
+.services-card-icon-block {
+    width: 58px;
+    height: 58px;
+}
+
+.services-card-info {
+    width: 181px;
+    margin-top: 24px;
+}
+
+.services-card-title {
+    font-family: 'ITC Avant Garde Gothic Std';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #24272E;
+}
+
+.services-card-text {
+    margin-top: 12px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -1.1%;
+    color: #555C68;
+}
+
+/*-------------------------------------    -----------------------------------------*/
