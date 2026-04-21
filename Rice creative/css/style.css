@@ -774,6 +774,7 @@
 /* Лента слайдов */
 .slick-track{
 	display: flex;
+    align-items: center;
 }
 
 /* Конкретный слайдер */
@@ -815,4 +816,117 @@
     margin-right: 30px;
 }
 
-/*-------------------------------------    -----------------------------------------*/
+/*-------------------------------------Testimonial-----------------------------------------*/
+.testimonial {
+    padding: 140px 0;
+    overflow-x: hidden;
+}
+
+.testimonial-container {
+    width: 100%;
+}
+
+.testimonial-header {
+    text-align: center;
+}
+
+.testimonial-slider__item {
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    padding: 32px 60px;
+    text-align: center;
+}
+
+.slide-person__photo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1.5px solid #DCDCDC;
+}
+
+.slide-person__name {
+    font-family: 'ITC Avant Garde Gothic Std';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+    margin-top: 16px;
+}
+
+.slide-person__position {
+    font-size: 12px;
+    line-height: 18px;
+    color: #8791A0;
+    margin: 4px 0;
+}
+
+.person-rating__icon {
+    width: 16px;
+    height: 16px;
+}
+
+.slide-person__quote {
+    margin-top: 20px;
+    line-height: 30px;
+    letter-spacing: -1.1%;
+    color: #555C68;
+    position: relative;
+
+    &::before {
+        content: url('../img/testimonial/open-quote.svg');
+        position: absolute;
+        left: -33px;
+        top: 0;
+    }
+    &::after {
+        content: url('../img/testimonial/close-quote.svg');
+        position: absolute;
+        right: -33px;
+        bottom: -11px;
+    }
+}
+
+/* Конкретный слайдер */
+.testimonial-slider {
+    width: 1780px;
+	position: relative;
+    left: -170px;
+}
+
+
+.testimonial-slider .slick-dots{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.testimonial-slider .slick-dots li{
+	list-style: none;
+	margin: 0 10px;
+}
+.testimonial-slider .slick-dots button{
+	font-size: 0;
+	width: 16px;
+	height: 16px;
+	background-color: #D2D2D2;
+	border-radius: 50%;
+}
+
+.testimonial-slider .slick-dots li.slick-active button{
+	background-color: #101C26;
+}
+
+.testimonial-slider .slider__item {
+	margin: 80px 18px;
+    transition: 0.3s;
+}
+
+.slider__item.slick-center{
+	scale: 1.1;
+    box-shadow: 0 25px 32px #43434324;
+
+    .slide-person__quote {
+        font-size: 20px;
+    }
+}
+
+/*------------------------------------- -----------------------------------------*/
