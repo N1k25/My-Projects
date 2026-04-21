@@ -68,7 +68,7 @@
 }
 
 .section-title {
-    font-family: ITC Avant Garde Gothic Std;
+    font-family: 'ITC Avant Garde Gothic Std';
     font-weight: 600;
     font-size: 44px;
     line-height: 56px;
@@ -929,4 +929,131 @@
     }
 }
 
-/*------------------------------------- -----------------------------------------*/
+/*-------------------------------------Contacts-----------------------------------------*/
+.contacts {
+    padding: 100px 0;
+    background-color: #FFFFFF;
+}
+
+.contacts-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contacts-header {
+    width: 620px;
+    padding: 60px 66px 60px 44px;
+}
+
+.contacts-title {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 44px;
+    color: #010101;
+}
+
+.contacts-text {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.contacts-list {
+    width: 254px;
+    margin-top: 24px;
+}
+
+.contacts-list__item {
+    height: 34px;
+    margin-bottom: 24px;
+    padding-left: 28px;
+}
+
+.contacts-list__item,
+.contacts-list__item a {
+    font-size: 14px;
+    color: #555C68;
+}
+
+.contacts-list__item:first-child {
+    background: url('../img/contacts/location-icon.svg') left -2px no-repeat;
+}
+.contacts-list__item:nth-child(2) {
+    background: url('../img/contacts/phone-icon.svg') left -1px no-repeat;
+}
+.contacts-list__item:last-child {
+    background: url('../img/contacts/email-icon.svg') left -2px no-repeat;
+}
+
+.contacts-list__item a:hover {
+    text-decoration: underline;
+    text-decoration-style: dashed;
+}
+
+.contacts-form__block {
+    width: 620px;
+    border-radius: 10px;
+    background-color: #101C26;
+    padding: 60px 80px;
+}
+
+.form{
+	box-sizing: border-box;
+	max-width: 400px;
+    color: #D3D3D3;
+}
+.form__field {
+	position: relative;
+	width: 100%;
+	margin-bottom: 24px;
+}
+.form__field input {
+	background-color: transparent;
+	border-bottom: 1.5px solid #D3D3D3;
+	box-sizing: border-box;
+	font-family: Inter;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+	height: 40px;
+	outline: 0;
+	padding: 10px 0;
+	width: 100%;
+}
+.form__field label {
+    font-size: 14px;
+    line-height: 24px;
+	pointer-events: none;
+	position: absolute;
+	transition: all 0.2s ease;
+	top: 50%;
+    transform: translate(0, -50%);
+	left: 0;
+}
+.form__field input:focus + label,
+.form__field input:not(:placeholder-shown) + label{
+	top: -16px;
+	left: 0;
+    transform: translate(0, 0);
+}
+
+.form-btn {
+    margin-top: 40px;
+    padding: 13px 60px;
+    background-color: #F0E714;
+    border-radius: 100px;
+    border: none;
+    outline: none;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #101C26;
+    
+    &:active {
+        scale: 0.98;
+    }
+}
+
+/*-------------------------------------      -----------------------------------------*/
