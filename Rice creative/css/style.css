@@ -1056,4 +1056,121 @@
     }
 }
 
-/*-------------------------------------      -----------------------------------------*/
+/*-------------------------------------Footer-----------------------------------------*/
+.footer {
+    padding: 78px 0 57px;
+    background-color: #101C26;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 63px;
+    border-bottom: 2px solid #989898;
+}
+
+.footer-left {
+    width: 329px;
+}
+
+.footer-logo {
+    width: 97px;
+    height: 67px;
+}
+
+.footer-text {
+    margin: 20px 0;
+    font-weight: 400;
+    line-height: 24px;
+    color: #F5F5F5;
+}
+
+.footer-social {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.footer-social__link {
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    background-color: #F0E714;
+    display: grid;
+    place-items: center;
+    
+    &:hover {
+        scale: 1.1;
+    }
+}
+
+.footer-items {
+    display: flex;
+    gap: 60px;
+}
+
+.footer-item:last-child {
+    width: 254px;
+}
+
+.footer-item-title {
+    font-size: 20px;
+    color: #F5F5F5;
+}
+
+.footer-item-list {
+    margin-top: 24px;
+}
+
+.footer-list__item {
+    color: #B3B3B3;
+}
+
+.footer-list__item:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.footer-item:first-child {
+    .footer-list__item:not(:last-child) {
+        margin-bottom: 14px;
+    }
+    
+    .footer-list__item-link {
+        line-height: 100%;
+    }
+}
+
+.footer-list__item-link {
+    color: #B3B3B3;
+    line-height: 28px;
+    
+    &:hover {
+        text-decoration: underline;
+        text-decoration-style: dashed;
+        text-underline-offset: 1px;
+        text-decoration-skip-ink: none;
+    }
+}
+
+.footer-item:last-child {
+    .footer-list__item-link {
+        color: #B3B3B3;
+    }
+    
+    .footer-list__item {
+        padding-left: 24px;
+        
+        &:first-child {
+            line-height: 24px;
+            background: url('../img/footer/location-icon.svg') left 2px no-repeat;
+        }
+        &:nth-child(2) {
+            line-height: 24px;
+            background: url('../img/footer/phone-icon.svg') left 7px no-repeat;
+        }
+        &:last-child {
+            line-height: 24px;
+            background: url('../img/footer/email-icon.svg') left 7px no-repeat;
+        }
+    }
+}
