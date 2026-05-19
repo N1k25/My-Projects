@@ -1,0 +1,333 @@
+@import url("reset.css");
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,regular,700,900&display=swap);
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/*--------------------------------Header-Top--------------------------------*/
+.header {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 657px 463px;
+    grid-template-rows: 72px auto;
+    gap: 20px;
+    background-color: #6a655d;
+    
+    /* Магія градієнта та картинки */
+    background-image:
+        linear-gradient(to right,
+            rgba(74, 73, 68, 0) 0%,   /* Повністю прозорий зліва (видно двері) */
+            rgba(74, 73, 68, 0.8) 5%, /* Починає темнішати */
+            rgba(74, 73, 68, 1) 100%   /* Стає повністю суцільним сірим */
+        ),
+        linear-gradient(to top, #6A655D, #6A655D59 35%),
+        url('../img/popular/door-1.png');   /* Шлях до картинки з дверима */
+
+    /* Налаштування відображення фону */
+    background-repeat: no-repeat;
+    background-position: 0% 40%; 
+    background-size: 50% 210%;
+}
+
+.header-top {
+    width: 657px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 12px 20px 0;
+}
+
+.menu-list {
+    display: flex;
+    align-items: center;
+    gap: 33px;
+}
+
+.menu-link {
+    color: #DCDCDC;
+    transition: 0.3s;
+
+    &:hover {
+        color: #EDB021;
+    }
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    height: 31px;
+    width: 245px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    padding: 0 16px;
+}
+
+.input-container input[type="search"] {
+    flex: 1;
+    height: 100%;
+    background-color: transparent;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 300;
+    outline: none;
+    min-width: 0;
+
+    &::placeholder {
+        font-size: 14px;
+        color: #fff;
+        font-weight: 300;
+    }
+}
+
+.search-btn {
+    width: 18px;
+    height: 18px;
+    background: url(../img/header/search.svg) no-repeat center;
+    background-size: cover;
+    opacity: 0.5;
+    color: #fff;
+    cursor: pointer;
+    pointer-events: none;
+    transition: all 0.15s ease;
+}
+
+.input-container input[type="search"]:not(:placeholder-shown)+.search-btn {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/*--------------------------------*/
+.hero {
+    width: 657px;
+}
+
+.hero-menu__list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-menu__link {
+    font-size: 18px;  
+    color: #fff;
+    transition: 0.3s;
+
+    &:hover {
+        color: #EDB021;
+    }
+}
+
+.hero-slider {
+    width: 450px;
+    margin-top: 75px;
+}
+
+.hero-slider__item {
+    color: #fff;
+}
+
+.hero-slider__item-title {
+    font-size: 40px;
+}
+
+.hero-slider__item-text {
+    font-size: 30px;
+    margin: 18px 0 55px;
+
+    span {
+        color: #EDB021;
+    }
+}
+
+.hero-slider__item-link {
+    display: inline-block;
+    background-color: #EDB021;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 20px;
+    padding: 10px 64px;
+    transition: 0.3s;
+
+    &:hover {
+        background-color: #C84B1E;
+    }
+}
+
+/* Основные стили */
+
+/* Слайдер */
+.slick-slider {
+    min-width: 0;
+}
+
+/* Ограничивающая оболочка */
+.slick-list {
+    overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track {
+    display: flex;
+    align-items: flex-start;
+}
+
+/* Конкретный слайдер */
+.hero-slider {
+    position: relative;
+    padding: 0px 60px;
+}
+
+.hero-slider .slick-arrow {
+    position: absolute;
+    top: 30%;
+    margin: -21px 0px 0px 0px;
+    z-index: 10;
+    font-size: 0;
+    width: 25px;
+    height: 42px;
+    background-color: #fff; /* початковий колір */
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: #EDB021; /* колір при наведенні */
+    }
+}
+
+.hero-slider .slick-arrow.slick-prev {
+    left: 0;
+    transform: rotate(180deg);
+    -webkit-mask: url('../img/hero/slider-arrow.svg') center/contain no-repeat;
+    mask: url('../img/hero/slider-arrow.svg') center/contain no-repeat;
+}
+
+.hero-slider .slick-arrow.slick-next {
+    right: 0;
+    -webkit-mask: url('../img/hero/slider-arrow.svg') center/contain no-repeat;
+    mask: url('../img/hero/slider-arrow.svg') center/contain no-repeat;
+}
+
+.hero-slider .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-slider .slick-dots li {
+    list-style: none;
+    margin: 55px 10px 0;
+}
+
+.hero-slider .slick-dots button {
+    font-size: 0;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    border-radius: 50%;
+}
+
+.hero-slider .slick-dots li.slick-active button {
+    background-color: #fff;
+}
+
+/*--------------------------------*/
+.hero-contacts {
+    padding: 60px 67px 44px 64px;
+    background-color: #EDB021;
+    color: #1C222A;
+    grid-row: span 2;
+}
+
+.hero-contacts-header {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.hero-contacts-logo {
+    width: 100px;
+    height: 100px;
+}
+
+.hero-contacts-title {
+    font-weight: 700;
+    font-size: 48px;
+    letter-spacing: 15.5%;
+    color: #000;
+
+    span {
+        letter-spacing: 20.5%;
+    }
+}
+
+.hero-contacts-phone {
+    display: inline-block;
+    margin: 30px 0 33px;
+    font-size: 36px;
+    letter-spacing: 8%;
+    color: #1C222A;
+    transition: 0.3s;
+
+    &:hover {
+        color: #C84B1E;
+    }
+}
+
+.hero-contacts-body__adress-block {
+    font-weight: 300;
+}
+
+.hero-contacts-body__adress {
+    font-size: 20px;
+    letter-spacing: 2%;
+}
+
+.hero-contacts-body__adress-link,
+.hero-contacts-body-info-email-link {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #fff;
+    transition: 0.3s;
+
+    &:hover {
+        color: #C84B1E;
+    }
+}
+
+.hero-contacts-body-info {
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 300;
+}
+
+.hero-contacts-body-info-worktime {
+    font-size: 16px;
+    letter-spacing: 5%;
+}
+
+.hero-contacts-body-info-email-text {
+    font-size: 20px;
+    letter-spacing: 5%;
+}
+
+.hero-contacts-link {
+    display: block;
+    margin-top: 30px;
+    border-radius: 20px;
+    padding: 14px 69px;
+    background-color: #6A655D;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    transition: 0.3s;
+
+    &:hover {
+        background-color: #C84B1E;
+    }
+}
+
+/*--------------------------------     --------------------------------*/
