@@ -355,7 +355,6 @@
     position: relative;
     border-radius: 20px;
     border: 1px solid #EDB021;
-    font-weight: 400;
     transition: all 0.4s ease;
 
     &:hover {
@@ -416,4 +415,212 @@
     height: 577px;
 }
 
-/*--------------------------------     --------------------------------*/
+/*--------------------------------Popular--------------------------------*/
+.popular {
+    padding: 81px 0 61px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.popular--for--appartments,
+.popular--for--home {
+    width: 560px;
+    border-radius: 20px;
+    border: 1px solid #EDB021;
+    padding: 20px 0 17px;
+    position: relative;
+}
+
+.popular--for--appartments-header,
+.popular--for--home-header {
+    display: inline-block;
+    padding: 10px 9px 9px 13px;
+    position: absolute;
+    top: -21px;
+    left: 24px;
+    background-color: #FFFFFF;
+}
+
+.popular--for--appartments-title,
+.popular--for--home-title {
+    font-size: 20px;
+    color: #1C222A;
+}
+
+.popular--for--appartments-buttons-block,
+.popular--for--home-buttons-block {
+    width: 98px;
+    height: 30px;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: -15px;
+    right: 35px;
+}
+
+.popular--for--appartments__price-toggles-container,
+.popular--for--home__price-toggles-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    margin-top: 17px;
+}
+
+.popular--for--appartments__price-toggle,
+.popular--for--home__price-toggle {
+    display: flex;
+    align-items: center;
+
+    input[type="radio"] {
+        display: none;
+    }
+
+    label {
+        font-size: 12px;
+        color: #1C222A;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    input[type="radio"]:checked + label {
+        color: #EDB021;
+    }
+}
+
+.popular--for--appartments-slider-item,
+.popular--for--home-slider-item {
+    width: 234px;
+
+    &:hover {
+        .popular--for--appartments-slider-item-photo,
+        .popular--for--home-slider-item-photo {
+            opacity: 0.5;
+            transition: all 0.4s ease;
+        }
+
+        .popular--for--appartments-slider-item__img-link,
+        .popular--for--home-slider-item__img-link {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+            transition: all 0.4s ease;
+        }
+
+        .popular--for--appartments-slider-item__button,
+        .popular--for--home-slider-item__button {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+            transition: all 0.4s ease;
+        }
+    }
+}
+
+.popular--for--appartments-slider-item__img-block,
+.popular--for--home-slider-item__img-block {
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+
+.popular--for--appartments-slider-item-photo,
+.popular--for--home-slider-item-photo {
+    width: 100%;
+    object-fit: cover;
+}
+
+.popular--for--appartments-slider-item__img-link,
+.popular--for--home-slider-item__img-link {
+    width: 128px;
+    display: inline-block;
+    padding: 10px 9px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    font-size: 12px;
+    color: #1C222A;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.popular--for--appartments-slider-item-rating,
+.popular--for--home-slider-item-rating {
+    text-align: center;
+}
+
+.popular--for--appartments-slider-item-title,
+.popular--for--home-slider-item-title {
+    letter-spacing: 5%;
+    color: #000;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.popular--for--appartments-slider-item-price,
+.popular--for--home-slider-item-price {
+    text-align: center;
+    font-size: 16px;
+    color: #000;
+
+    &::after {
+        content: url('../img/popular/ruble.svg');
+        display: inline-block;
+        margin-left: 2px;
+        vertical-align: middle;
+    }
+}
+
+.popular--for--appartments-slider-item__button-block,
+.popular--for--home-slider-item__button-block {
+    margin-top: 11px;
+    text-align: center;
+}
+
+.popular--for--appartments-slider-item__button,
+.popular--for--home-slider-item__button {
+    color: #EDB021;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+/* Конкретный слайдер */
+.popular--for--appartments-slider,
+.popular--for--home-slider {
+    position: relative;
+}
+
+.popular--for--appartments-slider .slick-arrow,
+.popular--for--home-slider .slick-arrow {
+    position: absolute;
+    top: -35px;
+    z-index: 10;
+    font-size: 0;
+    width: 30px;
+    height: 30px;
+}
+
+.popular--for--appartments-slider .slick-arrow.slick-prev,
+.popular--for--home-slider .slick-arrow.slick-prev {
+    right: 94px;
+    background: url('../img/popular/arrow-left-circle.svg') 0 0 / 100% no-repeat;
+}
+
+.popular--for--appartments-slider .slick-arrow.slick-next,
+.popular--for--home-slider .slick-arrow.slick-next {
+    right: 44px;
+    background: url('../img/popular/arrow-right-circle.svg') 0 0 / 100% no-repeat;
+}
+
+.popular--for--appartments-slider .slider__item,
+.popular--for--home-slider .slider__item {
+    margin: 0px 18px;
+}
+
+/*--------------------------------    --------------------------------*/
