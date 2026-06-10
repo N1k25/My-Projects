@@ -1046,4 +1046,44 @@
     }
 }
 
-/*--------------------------------   --------------------------------*/
+/*--------------------------------Reasons--------------------------------*/
+.reasons {
+    padding: 55px 0;
+    background-color: #1C222A;
+    color: #FFFFFF;
+}
+
+.reasons__title {
+    font-size: 26px;
+    text-align: center;
+}
+
+.reasons-body {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 45px;
+    margin-top: 80px;
+}
+
+.reasons-card {
+    width: 150px;
+    text-align: center;
+}
+
+.reasons-card__image-block {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background-color: #EDB021;
+    display: grid;
+    place-items: center;
+    margin:  0 auto;
+}
+
+.reasons-card__desc {
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+/*--------------------------------     --------------------------------*/
