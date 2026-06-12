@@ -187,25 +187,36 @@
     font-size: 0;
     width: 25px;
     height: 42px;
+    /*
     background-color: #fff; /* початковий колір */
-    transition: background-color 0.3s ease;
-
+    /* transition: background-color 0.3s ease; */
+    /*
     &:hover {
         background-color: #EDB021; /* колір при наведенні */
-    }
+    /* } */
 }
 
 .hero-slider .slick-arrow.slick-prev {
     left: 0;
+    background: url('../img/hero/slider-arrow.svg') 0 0 / 100% no-repeat;
     transform: rotate(180deg);
-    -webkit-mask: url('../img/hero/slider-arrow.svg') center/contain no-repeat;
-    mask: url('../img/hero/slider-arrow.svg') center/contain no-repeat;
+    /* -webkit-mask: url('../img/hero/slider-arrow.svg') center/contain no-repeat; */
+    /* mask: url('../img/hero/slider-arrow.svg') center/contain no-repeat; */
+
+    &:hover {
+        background: url('../img/hero/slider-arrow-yellow.svg') 0 0 / 100% no-repeat;
+    }
 }
 
 .hero-slider .slick-arrow.slick-next {
     right: 0;
-    -webkit-mask: url('../img/hero/slider-arrow.svg') center/contain no-repeat;
-    mask: url('../img/hero/slider-arrow.svg') center/contain no-repeat;
+    background: url('../img/hero/slider-arrow.svg') 0 0 / 100% no-repeat;
+    /* -webkit-mask: url('../img/hero/slider-arrow.svg') center/contain no-repeat; */
+    /* mask: url('../img/hero/slider-arrow.svg') center/contain no-repeat; */
+
+    &:hover {
+        background: url('../img/hero/slider-arrow-yellow.svg') 0 0 / 100% no-repeat;
+    }
 }
 
 .hero-slider .slick-dots {
