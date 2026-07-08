@@ -1,0 +1,76 @@
+/*--------------------------------Header--------------------------------*/
+.apartments-doors-header {
+    background-color: #6a655d;
+    background-image: none;
+    padding-bottom: 32px;
+}
+
+.apartments-doors-header__container {
+    width: 1140px;
+    position: relative;
+    margin: 0 auto;
+
+    .header-top,
+    .hero {
+        margin-right: 42px;
+    }
+}
+
+.apartments-doors-hero-contacts {
+    display: flex;
+    gap: 30px;
+    padding: 44px 42px 43px 50px;
+    background-color: #EDB021;
+    color: #1C222A;
+    grid-row: span 2;
+    position: absolute;
+    right: 0;
+    top: 0;
+}    
+
+.apartments-doors-hero-contacts-header {
+    display: flex;
+    align-items: center;
+    gap: 11px;   
+}
+
+.apartments-doors-hero-contacts-logo {
+    width: 41px;
+    height: 41px;
+}
+
+.apartments-doors-hero-contacts-title {
+    width: 81px;
+    font-size: 18px;
+}
+
+.apartments-doors-hero-contacts-phone {
+    font-size: 16px;
+    letter-spacing: 3%;
+    margin: 15px 0 20px;
+}
+
+.apartments-doors-hero-contacts-worktime {
+    font-size: 14px;
+    letter-spacing: 6%;
+}
+
+.apartments-doors-hero-contacts-adress-block {
+    width: 200px;
+}
+
+.apartments-doors-hero-contacts-adress {
+    font-size: 14px;
+}
+
+.apartments-doors-hero-contacts-email {
+    font-size: 16px;
+}
+
+.apartments-doors-hero-contacts-link {
+    padding: 8px 35px;
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+/*--------------------------------     --------------------------------*/
