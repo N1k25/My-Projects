@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 /*--------------------------------Header--------------------------------*/
 .apartments-doors-header {
     background-color: #6a655d;
@@ -73,4 +77,70 @@
     font-size: 13px;
 }
 
-/*--------------------------------     --------------------------------*/
+/*--------------------------------Products--------------------------------*/
+
+
+
+
+/*--------------------------------Call surveyor--------------------------------*/
+.call--surveyor {
+    background-color: #1C222A;
+}
+
+.call--surveyor__container {
+    width: 1112px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.call--surveyor__image-block {
+    width: 600px;
+    height: 462px;
+}
+
+.call--surveyor__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.call--surveyor__form {
+    width: 367px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    input {
+        width: 100%;
+        height: 44px;
+        padding: 11px 25px;
+        border-radius: 20px;
+        border: 1px solid #EDB021;
+        background-color: transparent;
+        font-size: 16px;
+        color: #FFFFFF;
+        
+        &::placeholder {
+            color: #FFFFFF;
+        }
+
+        &:focus {
+            border-color: #C84B1E;
+        }
+    }
+}
+
+.call--surveyor__btn {
+    background-color: #EDB021;
+    color: #FFFFFF;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 12px 40px;
+    transition: 0.3s;
+
+    &:hover {
+        background-color: #C84B1E;
+    }
+}
