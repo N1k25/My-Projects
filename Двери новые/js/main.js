@@ -1,3 +1,22 @@
+const headerSearchInputElement = document.querySelector('.header-search');
+const searchBtnElement = document.querySelector('.search-btn');
+
+searchBtnElement.addEventListener('click', () => {
+    if (headerSearchInputElement.value.trim() === '') {
+        alert('Введите текст для поиска');
+    } else {
+        headerSearchInputElement.value = '';
+    }
+});
+
+headerSearchInputElement.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter') {
+        this.value = '';
+    }
+});
+
+/*----------------------*/
+
 const selectionInputs = document.querySelectorAll('.selection-container input[type="radio"]');
 const resetButton = document.querySelector('.reset-button');
 
