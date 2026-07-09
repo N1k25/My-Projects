@@ -1,3 +1,16 @@
+const filterSelectionInputs = document.querySelectorAll('.products-filters input[type="radio"]');
+const filtersResetButton = document.querySelector('.filters-reset');
+
+filtersResetButton.addEventListener('click', () => {
+    // Скидання radio
+    filterSelectionInputs.forEach(input => {
+        input.checked = false;
+    });
+});
+
+
+/*-------------------------------------*/
+
 const surveyorNameInputField = document.querySelector('.call--surveyor__name--input');
 const surveyorPhoneInputField = document.querySelector('.call--surveyor__phone--input');
 const surveyorAddressInputField = document.querySelector('.call--surveyor__address--input');
