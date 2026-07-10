@@ -11,6 +11,7 @@
 		<!-- Подключаем CSS -->
 		<link rel="stylesheet" href="../css/style.css"/>
 		<link rel="stylesheet" href="../css/apartments_doors.css"/>
+		<link rel="stylesheet" href="../css/door-3.css"/>
 		<!-- Кодировка страницы -->
 		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
 	</head>
@@ -56,7 +57,7 @@
 									<a href="mailto:sale@test.ru" class="hero-contacts-body-info-email-link">Напишите нам</a>
 								</div>
 							</div>
-							<a href="#call-surveyor" class="hero-contacts-link apartments-doors-hero-contacts-link">Вызвать замерщика</a>
+							<a href="../pages/apartments_doors.html#call-surveyor" class="hero-contacts-link apartments-doors-hero-contacts-link">Вызвать замерщика</a>
 						</div>
 					</section>
 					<section class="hero">
@@ -67,7 +68,7 @@
 									<a href="#" class="hero-menu__link">Комлектующие</a>
 									<ul class="hero-backdrop--menu__items">
 										<li class="hero-backdrop--menu__item">
-											<a href="#" class="hero-backdrop--menu__link">Двери для квартиры</a>
+											<a href="../pages/apartments_doors.html" class="hero-backdrop--menu__link">Двери для квартиры</a>
 											<ul class="hero-backdrop--submenu">
 												<li class="hero-backdrop--submenu__item"><a href="#" class="hero-backdrop--submenu__link">Взломостойкие</a></li>
 												<li class="hero-backdrop--submenu__item"><a href="#" class="hero-backdrop--submenu__link">С шумоизоляцией</a></li>
@@ -115,300 +116,89 @@
 				</div>
 			</header>
 			<main class="page">
-				<section class="products">
-					<div class="products-container">
+				<section class="product">
+					<div class="product-container">
 						<div class="products-header">
 							<div class="bread-crumbs">
 								<a href="../index.html" class="bread-crumbs__link">Главная</a>
 								<div class="bread-crumbs-dot"></div>
 								<a href="#" class="bread-crumbs__link">Каталог</a>
 								<div class="bread-crumbs-dot"></div>
-								<a href="#" class="bread-crumbs__link current--page">Двери для квартиры</a>
+								<a href="./apartments_doors.html" class="bread-crumbs__link">Двери для квартиры</a>
+								<div class="bread-crumbs-dot"></div>
+								<a href="#" class="bread-crumbs__link current--page">Металическая дверь “Элитная №3”</a>
 							</div>
-							<h1 class="products__title">ДВЕРИ ДЛЯ КВАРТИРЫ</h1>
-							<div class="products-filters">
-								<div class="products-filters__col--left">
-									<div class="door--type-filter">
-										<h4 class="door--type-filter__title">Сортировать по:</h4>
-										<div class="door--type-toggle">
-											<input type="radio" id="door--type-01" name="door--type">
-											<label for="door--type-01">Шумоизоляция</label>
-										</div>
-										<div class="door--type-toggle">
-											<input type="radio" id="door--type-02" name="door--type">
-											<label for="door--type-02">Влагостойкие</label>
-										</div>
-										<div class="door--type-toggle">
-											<input type="radio" id="door--type-03" name="door--type">
-											<label for="door--type-03">Оригинальный дизайн</label>
-										</div>
-										<div class="door--type-toggle">
-											<input type="radio" id="door--type-04" name="door--type">
-											<label for="door--type-04">С зеркалом</label>
-										</div>
-									</div>
-									<div class="product--price-filter">
-										<div class="popular--for--appartments__price-toggle">
-											<input type="radio" id="price-apartment-01" name="price-for-appartments">
-											<label for="price-apartment-01">До 7000</label>
-										</div>
-										<div class="popular--for--appartments__price-toggle">
-											<input type="radio" id="price-apartment-02" name="price-for-appartments">
-											<label for="price-apartment-02">От 7000 До 15 000</label>
-										</div>
-										<div class="popular--for--appartments__price-toggle">
-											<input type="radio" id="price-apartment-03" name="price-for-appartments">
-											<label for="price-apartment-03">От 15 000</label>
-										</div>
+							<h1 class="products__title">Металическая дверь “Элитная №3”</h1>
+						</div>
+						<section class="product-info-section">
+							<div class="product-image-slider">
+								<div class="product-image-slider-item slider__item">
+									<div class="product-image__block">
+										<img src="../img/popular/door-1.png" alt="Изображение двери" class="product__img">
+										<div class="image--label__block">ХИТ</div>
 									</div>
 								</div>
-								<div class="products-filters__col--right">
-									<div class="product--count-filter">
-										<h4 class="product--count-filter__title">На странице :</h4>
-										<div class="product--count-toggle popular--for--appartments__price-toggle">
-											<input type="radio" id="product--count-01" name="product--count">
-											<label for="product--count-01">20</label>
-										</div>
-										<div class="product--count-toggle popular--for--appartments__price-toggle">
-											<input type="radio" id="product--count-02" name="product--count">
-											<label for="product--count-02">40</label>
-										</div>
-										<div class="product--count-toggle popular--for--appartments__price-toggle">
-											<input type="radio" id="product--count-03" name="product--count">
-											<label for="product--count-03">100</label>
-										</div>
+								<div class="product-image-slider-item slider__item">
+									<div class="product-image__block">
+										<img src="../img/popular/door-1.png" alt="Изображение двери" class="product__img">
+										<div class="image--label__block">ХИТ</div>
 									</div>
-									<button class="filters-reset">Сбросить</button>
 								</div>
 							</div>
-						</div>
-						<div class="products-cards">
-							<div class="product-card">
-								<div class="product__img-block">
-									<img src="../img/popular/door-1.png" alt="Door 1 image" class="product-photo">
+							<div class="product-info">
+								<div class="product-reviews__block">
+									<div class="product-rating">
+										<img src="../img/popular/painted-star.svg" alt="Painted star icon" class="product-rating-star">
+										<img src="../img/popular/painted-star.svg" alt="Painted star icon" class="product-rating-star">
+										<img src="../img/popular/painted-star.svg" alt="Painted star icon" class="product-rating-star">
+										<img src="../img/popular/star-uncolored.svg" alt="Star uncolored icon" class="product-rating-star">
+										<img src="../img/popular/star-uncolored.svg" alt="Star uncolored icon" class="product-rating-star">
+									</div>
+									<div class="product-reviews-counter">3 отзыва</div>
 								</div>
-								<div class="product-rating">
-									<img src="../img/popular/painted-star.svg" alt="Painted star icon" class="product-rating-star">
-									<img src="../img/popular/painted-star.svg" alt="Painted star icon" class="product-rating-star">
-									<img src="../img/popular/painted-star.svg" alt="Painted star icon" class="product-rating-star">
-									<img src="../img/popular/star-uncolored.svg" alt="Star uncolored icon" class="product-rating-star">
-									<img src="../img/popular/star-uncolored.svg" alt="Star uncolored icon" class="product-rating-star">
-								</div>
-								<h3 class="product-card-title">GROFF Т2-221 Cappuccino Veralinga (102мм)</h3>
-								<div class="product-price">17 999</div>
-								<div class="product-card__button-block">
-									<a href="./door-3.html" class="product-card__button hero-slider__item-link">Смотреть</a>
-								</div>
-							</div>
-							<div class="product-card">
-								<div class="product__img-block">
-									<img src="../img/popular/door-4.png" alt="Door 4 image" class="product-photo">
-								</div>
-								<div class="product-rating">
-									<img src="../img/popular/painted-star.svg" alt="Painted star icon" class="product-rating-star">
-									<img src="../img/popular/painted-star.svg" alt="Painted star icon" class="product-rating-star">
-									<img src="../img/popular/painted-star.svg" alt="Painted star icon" class="product-rating-star">
-									<img src="../img/popular/star-uncolored.svg" alt="Star uncolored icon" class="product-rating-star">
-									<img src="../img/popular/star-uncolored.svg" alt="Star uncolored icon" class="product-rating-star">
-								</div>
-								<h3 class="product-card-title">GROFF Р3-315 Chalet Grasse/Chalet Grasse</h3>
-								<div class="product-price">15 999</div>
-								<div class="product-card__button-block">
-									<a href="./detailed.html" class="product-card__button hero-slider__item-link">Смотреть</a>
-								</div>
-							</div>
-							<div class="product-card">
-								<div class="product__img-block">
-									<img src="../img/popular/door-1.png" alt="Door 1 image" class="product-photo">
-								</div>
-								<div class="product-rating">
-									<img src="../img/popular/painted-star.svg" alt="Painted star icon" class="product-rating-star">
-									<img src="../img/popular/painted-star.svg" alt="Painted star icon" class="product-rating-star">
-									<img src="../img/popular/painted-star.svg" alt="Painted star icon" class="product-rating-star">
-									<img src="../img/popular/star-uncolored.svg" alt="Star uncolored icon" class="product-rating-star">
-									<img src="../img/popular/star-uncolored.svg" alt="Star uncolored icon" class="product-rating-star">
-								</div>
-								<h3 class="product-card-title">GROFF Р3-312 П-4 Золотой Дуб</h3>
-								<div class="product-price">7 999</div>
-								<div class="product-card__button-block">
-									<a href="./door-3.html" class="product-card__button hero-slider__item-link">Смотреть</a>
+								<ul class="product-info__list">
+									<li class="product-info-list__item">
+										<div class="product-info-list-item__icon--block">
+											<img src="../img/product-info/snowflake.svg" alt="Иконка Снежинка" class="product-info-list-item__icon">
+										</div>
+										<p class="product-info-list-item__text">Технология терморазрыва - дверь не промерзает</p>
+									</li>
+									<li class="product-info-list__item">
+										<div class="product-info-list-item__icon--block">
+											<img src="../img/product-info/pencil.svg" alt="Иконка Ручка" class="product-info-list-item__icon">
+										</div>
+										<p class="product-info-list-item__text">Глубокое полотно</p>
+									</li>
+									<li class="product-info-list__item">
+										<div class="product-info-list-item__icon--block">
+											<img src="../img/product-info/shield.svg" alt="Иконка Щит" class="product-info-list-item__icon">
+										</div>
+										<p class="product-info-list-item__text">Высокий уровень безопасности</p>
+									</li>
+									<li class="product-info-list__item">
+										<div class="product-info-list-item__icon--block">
+											<img src="../img/product-info/mute.svg" alt="Иконка Без звука" class="product-info-list-item__icon">
+										</div>
+										<p class="product-info-list-item__text">Полотно с шумоизоляцией - акустическое наполнение</p>
+									</li>
+									<li class="product-info-list__item">
+										<div class="product-info-list-item__icon--block">
+											<img src="../img/product-info/clock.svg" alt="Иконка Часы" class="product-info-list-item__icon">
+										</div>
+										<p class="product-info-list-item__text">Срок изготовления 48 часов</p>
+									</li>
+								</ul>
+								<div class="product-info-price">47 500</div>
+								<div class="product-info__buttons">
+									<button class="product-info__button">Купить в 1 клик</button>
+									<a href="#" class="product-info__button">Остались вопросы?</a>
 								</div>
 							</div>
-							<div class="product-card">
-								<div class="product__img-block">
-									<img src="../img/popular/door-4.png" alt="Door 4 image" class="product-photo">
-								</div>
-								<div class="product-rating">
-									<img src="../img/popular/painted-star.svg" alt="Painted star icon" class="product-rating-star">
-									<img src="../img/popular/painted-star.svg" alt="Painted star icon" class="product-rating-star">
-									<img src="../img/popular/painted-star.svg" alt="Painted star icon" class="product-rating-star">
-									<img src="../img/popular/star-uncolored.svg" alt="Star uncolored icon" class="product-rating-star">
-									<img src="../img/popular/star-uncolored.svg" alt="Star uncolored icon" class="product-rating-star">
-								</div>
-								<h3 class="product-card-title">Door Out 201 Wenge Veralinga</h3>
-								<div class="product-price">34 500</div>
-								<div class="product-card__button-block">
-									<a href="./detailed.html" class="product-card__button hero-slider__item-link">Смотреть</a>
-								</div>
-							</div>
-							<div class="product-card">
-								<div class="product__img-block">
-									<img src="../img/popular/door-1.png" alt="Door 1 image" class="product-photo">
-								</div>
-								<div class="product-rating">
-									<img src="../img/popular/painted-star.svg" alt="Painted star icon" class="product-rating-star">
-									<img src="../img/popular/painted-star.svg" alt="Painted star icon" class="product-rating-star">
-									<img src="../img/popular/painted-star.svg" alt="Painted star icon" class="product-rating-star">
-									<img src="../img/popular/star-uncolored.svg" alt="Star uncolored icon" class="product-rating-star">
-									<img src="../img/popular/star-uncolored.svg" alt="Star uncolored icon" class="product-rating-star">
-								</div>
-								<h3 class="product-card-title">Оптим Эконом М-11 ИталОрех</h3>
-								<div class="product-price">21 000</div>
-								<div class="product-card__button-block">
-									<a href="./door-3.html" class="product-card__button hero-slider__item-link">Смотреть</a>
-								</div>
-							</div>
-							<div class="product-card">
-								<div class="product__img-block">
-									<img src="../img/popular/door-4.png" alt="Door 4 image" class="product-photo">
-								</div>
-								<div class="product-rating">
-									<img src="../img/popular/painted-star.svg" alt="Painted star icon" class="product-rating-star">
-									<img src="../img/popular/painted-star.svg" alt="Painted star icon" class="product-rating-star">
-									<img src="../img/popular/painted-star.svg" alt="Painted star icon" class="product-rating-star">
-									<img src="../img/popular/star-uncolored.svg" alt="Star uncolored icon" class="product-rating-star">
-									<img src="../img/popular/star-uncolored.svg" alt="Star uncolored icon" class="product-rating-star">
-								</div>
-								<h3 class="product-card-title">Оптим Лайн (66мм) Wenge Crosscut</h3>
-								<div class="product-price">63 999</div>
-								<div class="product-card__button-block">
-									<a href="./detailed.html" class="product-card__button hero-slider__item-link">Смотреть</a>
-								</div>
-							</div>
-							<div class="product-card">
-								<div class="product__img-block">
-									<img src="../img/popular/door-1.png" alt="Door 1 image" class="product-photo">
-								</div>
-								<div class="product-rating">
-									<img src="../img/popular/painted-star.svg" alt="Painted star icon" class="product-rating-star">
-									<img src="../img/popular/painted-star.svg" alt="Painted star icon" class="product-rating-star">
-									<img src="../img/popular/painted-star.svg" alt="Painted star icon" class="product-rating-star">
-									<img src="../img/popular/star-uncolored.svg" alt="Star uncolored icon" class="product-rating-star">
-									<img src="../img/popular/star-uncolored.svg" alt="Star uncolored icon" class="product-rating-star">
-								</div>
-								<h3 class="product-card-title">GROFF Т2-221 Cappuccino Veralinga (102мм)</h3>
-								<div class="product-price">17 999</div>
-								<div class="product-card__button-block">
-									<a href="./door-3.html" class="product-card__button hero-slider__item-link">Смотреть</a>
-								</div>
-							</div>
-							<div class="product-card">
-								<div class="product__img-block">
-									<img src="../img/popular/door-4.png" alt="Door 4 image" class="product-photo">
-								</div>
-								<div class="product-rating">
-									<img src="../img/popular/painted-star.svg" alt="Painted star icon" class="product-rating-star">
-									<img src="../img/popular/painted-star.svg" alt="Painted star icon" class="product-rating-star">
-									<img src="../img/popular/painted-star.svg" alt="Painted star icon" class="product-rating-star">
-									<img src="../img/popular/star-uncolored.svg" alt="Star uncolored icon" class="product-rating-star">
-									<img src="../img/popular/star-uncolored.svg" alt="Star uncolored icon" class="product-rating-star">
-								</div>
-								<h3 class="product-card-title">GROFF Р3-315 Chalet Grasse/Chalet Grasse</h3>
-								<div class="product-price">15 999</div>
-								<div class="product-card__button-block">
-									<a href="./detailed.html" class="product-card__button hero-slider__item-link">Смотреть</a>
-								</div>
-							</div>
-							<div class="product-card">
-								<div class="product__img-block">
-									<img src="../img/popular/door-1.png" alt="Door 1 image" class="product-photo">
-								</div>
-								<div class="product-rating">
-									<img src="../img/popular/painted-star.svg" alt="Painted star icon" class="product-rating-star">
-									<img src="../img/popular/painted-star.svg" alt="Painted star icon" class="product-rating-star">
-									<img src="../img/popular/painted-star.svg" alt="Painted star icon" class="product-rating-star">
-									<img src="../img/popular/star-uncolored.svg" alt="Star uncolored icon" class="product-rating-star">
-									<img src="../img/popular/star-uncolored.svg" alt="Star uncolored icon" class="product-rating-star">
-								</div>
-								<h3 class="product-card-title">GROFF Р3-312 П-4 Золотой Дуб</h3>
-								<div class="product-price">7 999</div>
-								<div class="product-card__button-block">
-									<a href="./door-3.html" class="product-card__button hero-slider__item-link">Смотреть</a>
-								</div>
-							</div>
-							<div class="product-card">
-								<div class="product__img-block">
-									<img src="../img/popular/door-4.png" alt="Door 4 image" class="product-photo">
-								</div>
-								<div class="product-rating">
-									<img src="../img/popular/painted-star.svg" alt="Painted star icon" class="product-rating-star">
-									<img src="../img/popular/painted-star.svg" alt="Painted star icon" class="product-rating-star">
-									<img src="../img/popular/painted-star.svg" alt="Painted star icon" class="product-rating-star">
-									<img src="../img/popular/star-uncolored.svg" alt="Star uncolored icon" class="product-rating-star">
-									<img src="../img/popular/star-uncolored.svg" alt="Star uncolored icon" class="product-rating-star">
-								</div>
-								<h3 class="product-card-title">Door Out 201 Wenge Veralinga</h3>
-								<div class="product-price">34 500</div>
-								<div class="product-card__button-block">
-									<a href="./detailed.html" class="product-card__button hero-slider__item-link">Смотреть</a>
-								</div>
-							</div>
-							<div class="product-card">
-								<div class="product__img-block">
-									<img src="../img/popular/door-1.png" alt="Door 1 image" class="product-photo">
-								</div>
-								<div class="product-rating">
-									<img src="../img/popular/painted-star.svg" alt="Painted star icon" class="product-rating-star">
-									<img src="../img/popular/painted-star.svg" alt="Painted star icon" class="product-rating-star">
-									<img src="../img/popular/painted-star.svg" alt="Painted star icon" class="product-rating-star">
-									<img src="../img/popular/star-uncolored.svg" alt="Star uncolored icon" class="product-rating-star">
-									<img src="../img/popular/star-uncolored.svg" alt="Star uncolored icon" class="product-rating-star">
-								</div>
-								<h3 class="product-card-title">Оптим Эконом М-11 ИталОрех</h3>
-								<div class="product-price">21 000</div>
-								<div class="product-card__button-block">
-									<a href="./door-3.html" class="product-card__button hero-slider__item-link">Смотреть</a>
-								</div>
-							</div>
-							<div class="product-card">
-								<div class="product__img-block">
-									<img src="../img/popular/door-4.png" alt="Door 4 image" class="product-photo">
-								</div>
-								<div class="product-rating">
-									<img src="../img/popular/painted-star.svg" alt="Painted star icon" class="product-rating-star">
-									<img src="../img/popular/painted-star.svg" alt="Painted star icon" class="product-rating-star">
-									<img src="../img/popular/painted-star.svg" alt="Painted star icon" class="product-rating-star">
-									<img src="../img/popular/star-uncolored.svg" alt="Star uncolored icon" class="product-rating-star">
-									<img src="../img/popular/star-uncolored.svg" alt="Star uncolored icon" class="product-rating-star">
-								</div>
-								<h3 class="product-card-title">Оптим Лайн (66мм) Wenge Crosscut</h3>
-								<div class="product-price">63 999</div>
-								<div class="product-card__button-block">
-									<a href="./detailed.html" class="product-card__button hero-slider__item-link">Смотреть</a>
-								</div>
-							</div>
-						</div>
-						<div class="pagination">
-							<a href="#" class="page--number__link">1</a>
-							<a href="#" class="page--number__link">2</a>
-							<a href="#" class="page--number__link active--page">3</a>
-							<div class="ellipsis">...</div>
-							<a href="#" class="page--number__link">7</a>
-						</div>
+						</section>
 					</div>
 				</section>
-				<section class="call--surveyor" id="call-surveyor">
-					<div class="call--surveyor__container">
-						<div class="call--surveyor__image-block">
-							<img src="../img/call_surveyor/home.png" alt="Фото комнаты" class="call--surveyor__img">
-						</div>
-						<div class="call--surveyor__form">
-							<input type="text" class="call--surveyor__name--input" placeholder="Имя">	
-							<input type="tel" maxlength="13" class="call--surveyor__phone--input" placeholder="Телефон">	
-							<input type="text" class="call--surveyor__address--input" placeholder="Адрес">
-							<button class="call--surveyor__btn">Вызвать замерщика</button>	
-						</div>
-					</div>
+				<section class="product-desc">
+					<!-- Характеристики и пр. -->
 				</section>
 			</main>
 			<footer class="footer">
@@ -473,6 +263,12 @@
 				</div>
 			</footer>
 		</div>
+	<!-- Подключаем jQuery -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<!-- Подключаем слайдер Slick -->
+	<script src="../js/slick.min.js"></script>
+	<!-- Подключаем файл скриптов -->
+	<script src="../js/script.js"></script>
 	<script src="../js/main.js"></script>
 	<script src="../js/apartment_doors.js"></script>
 	</body>
