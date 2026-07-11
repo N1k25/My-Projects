@@ -198,7 +198,207 @@
 					</div>
 				</section>
 				<section class="product-desc">
-					<!-- Характеристики и пр. -->
+					<div class="tabs">
+						<div class="tabs__navigation">
+							<button type="button" class="tabs__title active" data-tab="1">
+								Характеристики
+							</button>
+							<button type="button" class="tabs__title" data-tab="2">
+								Комплектация
+							</button>
+							<button type="button" class="tabs__title" data-tab="3">
+								Отзывы
+							</button>
+						</div>
+						<div class="tabs__body">
+							<div class="tabs__content active" id="tab-1">
+								<ul class="product-desc__list">
+									<li class="product-desc-list__item">
+										<div class="product-desc-name">Толщина стали полотна</div>
+										<div class="product-desc-text">120 мм</div>
+									</li>
+									<li class="product-desc-list__item">
+										<div class="product-desc-name">Глубина короба</div>
+										<div class="product-desc-text">120 мм</div>
+									</li>
+									<li class="product-desc-list__item">
+										<div class="product-desc-name">Требования к установке</div>
+										<div class="product-desc-text">Не предназначена для установки на границе улица-дом</div>
+									</li>
+									<li class="product-desc-list__item">
+										<div class="product-desc-name">Утепление полотна</div>
+										<div class="product-desc-text">3-компонентное заполнение по технологии COLD HOLDER</div>
+									</li>
+									<li class="product-desc-list__item">
+										<div class="product-desc-name">Утеплитель короба</div>
+										<div class="product-desc-text">Минеральная плита</div>
+									</li>
+									<li class="product-desc-list__item">
+										<div class="product-desc-name">Толщина стали полотна</div>
+										<div class="product-desc-text">120 мм</div>
+									</li>
+									<li class="product-desc-list__item">
+										<div class="product-desc-name">Глубина короба</div>
+										<div class="product-desc-text">120 мм</div>
+									</li>
+									<li class="product-desc-list__item">
+										<div class="product-desc-name">Требования к установке</div>
+										<div class="product-desc-text">Не предназначена для установки на границе улица-дом</div>
+									</li>
+								</ul>
+							</div>
+							<div class="tabs__content" id="tab-2">
+								<ul class="product-desc__list">
+									<li class="product-desc-list__item">
+										<div class="product-desc-name">Вертушка цилиндровая</div>
+										<div class="product-desc-text">C13 CR Хром, либо CB-Z CP Хром, либо аналоги</div>
+									</li>
+									<li class="product-desc-list__item">
+										<div class="product-desc-name">Петли</div>
+										<div class="product-desc-text">Две петли Сombiarialdo 140*20 мм на опорном подшипнике с открыванием на 120° (Италия)</div>
+									</li>
+									<li class="product-desc-list__item">
+										<div class="product-desc-name">Поворотник для ночной задвижки</div>
+										<div class="product-desc-text">BKW8x60 CP Хром</div>
+									</li>
+									<li class="product-desc-list__item">
+										<div class="product-desc-name">Ночная задвижка</div>
+										<div class="product-desc-text">З-60 Б (вкладная)</div>
+									</li>
+									<li class="product-desc-list__item">
+										<div class="product-desc-name">Накладка цилиндровая (наружная/внутренняя)</div>
+										<div class="product-desc-text">DEF 4286 CP Хром (броненакладка)/ESC 486-O CP Хром (либо аналоги)</div>
+									</li>
+									<li class="product-desc-list__item">
+										<div class="product-desc-name">Ручка</div>
+										<div class="product-desc-text">TOR CP Хром</div>
+									</li>
+									<li class="product-desc-list__item">
+										<div class="product-desc-name">Глазок</div>
+										<div class="product-desc-text">VIEWER4 DVQ 70х130/16 CP Хром со шторкой и углом обзора 180°</div>
+									</li>
+									<li class="product-desc-list__item">
+										<div class="product-desc-name">Цилиндр</div>
+										<div class="product-desc-text">Ключ-шток Kale 164 SXC 96-65/31 SN МатНикель (5 ключей)</div>
+									</li>
+								</ul>
+							</div>
+							<div class="tabs__content" id="tab-3">
+								<div class="reviews-container">
+									<button id="open-modal__reviews-btn">Оставить отзыв</button>
+									<div class="product-reviews-text">Ещё никто не оставил отзыв о товаре. Вы можете стать первым.</div>
+								</div>
+								<div class="modal-reviews" id="modal-reviews">
+									<div class="modal__box-reviews">
+										<button class="modal__reviews-close-btn" id="close-modal__reviews-btn">
+											<svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<circle
+													class="close-circle"
+													cx="17"
+													cy="17"
+													r="14.1667"
+													stroke="#EDB021"
+													stroke-width="2"
+												/>
+
+												<path
+													class="close-cross"
+													d="M21.25 12.75L12.75 21.25"
+													stroke="#EDB021"
+													stroke-width="2"
+													stroke-linecap="round"
+												/>
+
+												<path
+													class="close-cross"
+													d="M12.75 12.75L21.25 21.25"
+													stroke="#EDB021"
+													stroke-width="2"
+													stroke-linecap="round"
+												/>
+											</svg>
+										</button>
+										<h2 class="reviews-title">Оставить отзыв</h2>
+										<div class="reviews-form">
+											<div class="top-row">
+												<input type="text" placeholder="Имя" />
+
+												<input type="tel" maxlength="13" placeholder="+7 900 09 99" />
+
+												<div class="rating">
+													<input type="radio" id="star5" name="rating" />
+													<label for="star5">★</label>
+
+													<input type="radio" id="star4" name="rating" />
+													<label for="star4">★</label>
+
+													<input type="radio" id="star3" name="rating" />
+													<label for="star3">★</label>
+
+													<input type="radio" id="star2" name="rating" />
+													<label for="star2">★</label>
+
+													<input type="radio" id="star1" name="rating" checked />
+													<label for="star1">★</label>
+												</div>
+											</div>
+											<textarea placeholder="Сообщение"></textarea>
+											<div class="file-upload">
+												<input type="file" id="photo" class="file-input" accept="image/*">
+
+												<label for="photo" class="file-button">
+													Добавить фото
+												</label>
+
+												<span class="file-name" id="fileName">Файл не вибрано</span>
+											</div>
+											<label class="checkbox">
+												<input type="checkbox" checked />
+												
+												<span class="checkmark"></span>
+												
+												<span> Соглашаюсь с Политикой обработки персональных данных </span>
+											</label>
+											<button class="submit" id="reviews-submit">Отправить</button>
+										</div>
+									</div>
+								</div>                 
+								<div class="modal-reviews-successfull" id="modal-reviews-successfull">
+									<div class="modal__box-reviews-successfull">
+										<button class="modal__reviews-close-btn" id="close-modal__reviews-successfull-btn">
+											<svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<circle
+													class="close-circle"
+													cx="17"
+													cy="17"
+													r="14.1667"
+													stroke="#EDB021"
+													stroke-width="2"
+												/>
+
+												<path
+													class="close-cross"
+													d="M21.25 12.75L12.75 21.25"
+													stroke="#EDB021"
+													stroke-width="2"
+													stroke-linecap="round"
+												/>
+
+												<path
+													class="close-cross"
+													d="M12.75 12.75L21.25 21.25"
+													stroke="#EDB021"
+													stroke-width="2"
+													stroke-linecap="round"
+												/>
+											</svg>
+										</button>
+										<h2 class="reviews-title">Спасибо за отзыв</h2>
+									</div>
+								</div>                 
+							</div>
+						</div>
+					</div>   
 				</section>
 			</main>
 			<footer class="footer">
@@ -271,5 +471,7 @@
 	<script src="../js/script.js"></script>
 	<script src="../js/main.js"></script>
 	<script src="../js/apartment_doors.js"></script>
+	<script src="../js/tabs.js"></script>
+	<script src="../js/modal.js"></script>
 	</body>
 </html>
