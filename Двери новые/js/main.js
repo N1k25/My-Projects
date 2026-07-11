@@ -17,24 +17,6 @@ headerSearchInputElement.addEventListener('keydown', function (e) {
 
 /*----------------------*/
 
-const selectionInputs = document.querySelectorAll('.selection-container input[type="radio"]');
-const resetButton = document.querySelector('.reset-button');
-
-resetButton.addEventListener('click', () => {
-    // Скидання radio
-    selectionInputs.forEach(input => {
-        input.checked = false;
-    });
-
-    // Скидання range slider
-    minValue = minPrice;
-    maxValue = maxPrice;
-
-    updateTrack();
-});
-
-/*----------------------*/
-
 const mapInputField = document.querySelector('.map-form__input--fild');
 const mapButton = document.querySelector('.map-form__btn');
 
@@ -70,3 +52,23 @@ mapButton.addEventListener('click', () => {
         mapInputField.value = ''
     }
 });
+
+/*----------------------*/
+
+const selectionInputs = document.querySelectorAll('.selection-container input[type="radio"]');
+const resetButton = document.querySelector('.reset-button');
+
+resetButton.addEventListener('click', () => {
+    // Скидання radio
+    selectionInputs.forEach(input => {
+        input.checked = false;
+    });
+
+    // Скидання range slider
+    minValue = minPrice;
+    maxValue = maxPrice;
+
+    updateTrack();
+});
+
+

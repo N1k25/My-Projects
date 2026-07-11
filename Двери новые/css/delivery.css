@@ -1,0 +1,66 @@
+/*--------------------------------Delivery--------------------------------*/
+.delivery {
+    padding: 91px 0 40px;
+    background-color: #1C222A;
+    color: #FFFFFF;
+}
+
+.delivery-container {
+    width: 1140px;
+    margin: 0 auto;
+    padding-left: 193px;
+}
+
+.delivery-title {
+    font-size: 26px;
+}
+
+.delivery-text {
+    width: 646px;
+    margin: 40px 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.delivery-subtitle {
+    font-size: 26px;
+}
+
+.delivery-list {
+    margin-top: 40px;
+}
+
+.delivery-list__item {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+    &:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    &::before {
+        content: '';
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #EDB021;
+    }
+}
+
+/*--------------------------------Delivery Map--------------------------------*/
+.delivery-map {
+    position: relative;
+}
+
+.delivery-map::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #1C222A;
+    z-index: -1;
+}
