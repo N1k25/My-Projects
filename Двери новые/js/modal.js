@@ -1,29 +1,3 @@
-// Открыть модальное окно
-document.getElementById("open-modal__reviews-btn").addEventListener("click", function() {
-    document.getElementById("modal-reviews").classList.add("open")
-});
-
-// Закрыть модальное окно
-document.getElementById("close-modal__reviews-btn").addEventListener("click", function() {
-    document.getElementById("modal-reviews").classList.remove("open")
-});
-
-// Закрыть модальное окно при нажатии на Esc
-window.addEventListener('keydown', (e) => {
-    if (e.key === "Escape") {
-        document.getElementById("modal-reviews").classList.remove("open")
-    }
-});
-
-// Закрыть модальное окно при клике вне его
-document.querySelector("#modal-reviews .modal__box-reviews").addEventListener('click', event => {
-    event._isClickWithInModal = true;
-});
-document.getElementById("modal-reviews").addEventListener('click', event => {
-    if (event._isClickWithInModal) return;
-    event.currentTarget.classList.remove('open');
-});
-
 // Ввод номера телефона
 const modalFormInputPhoneField = document.querySelector('.top-row input[type="tel"]');
 
@@ -86,6 +60,7 @@ document.getElementById("reviews-submit").addEventListener("click", function() {
     document.getElementById("modal-reviews").classList.remove("open");
 });
 
+
 /*--------------------------------------------------*/
 
 // Открыть модальное окно
@@ -97,3 +72,33 @@ document.getElementById("reviews-submit").addEventListener("click", function() {
 document.getElementById("close-modal__reviews-successfull-btn").addEventListener("click", function() {
     document.getElementById("modal-reviews-successfull").classList.remove("open");
 });
+
+
+/*--------------------------------------------------*/
+
+// Открыть модальное окно
+document.getElementById("open-modal__reviews-btn").addEventListener("click", function() {
+    document.getElementById("modal-reviews").classList.add("open")
+});
+
+// Закрыть модальное окно
+document.getElementById("close-modal__reviews-btn").addEventListener("click", function() {
+    document.getElementById("modal-reviews").classList.remove("open")
+});
+
+// Закрыть модальное окно при нажатии на Esc
+window.addEventListener('keydown', (e) => {
+    if (e.key === "Escape") {
+        document.getElementById("modal-reviews").classList.remove("open")
+    }
+});
+
+// Закрыть модальное окно при клике вне его
+document.querySelector("#modal-reviews .modal__box-reviews").addEventListener('click', event => {
+    event._isClickWithInModal = true;
+});
+document.getElementById("modal-reviews").addEventListener('click', event => {
+    if (event._isClickWithInModal) return;
+    event.currentTarget.classList.remove('open');
+});
+
