@@ -1,0 +1,17 @@
+.about {
+    background-color: #1C222A;
+    padding: 91px 0 444px;
+    color: #FFFFFF;
+}
+
+.about-container {
+    width: 1140px;
+    margin: 0 auto;
+    padding-left: 194px;
+}
+
+.about-text {
+    width: 646px;
+    font-size: 16px;
+    line-height: 1.5;
+}
