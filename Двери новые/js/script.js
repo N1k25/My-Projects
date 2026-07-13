@@ -109,4 +109,51 @@ $(document).ready(function(){
 			}
 		]
 	});
+	$('.finishing-big--slider').slick({
+		arrows:false,
+		dots:false,
+		slidesToShow:1,
+		slidesToScroll: 1,
+		asNavFor: '.finishing-slider',
+		autoplay:false,
+		speed:700,
+		autoplaySpeed:800,
+		responsive:[
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow:2
+				}
+			},
+			{
+				breakpoint: 550,
+				settings: {
+					slidesToShow:1
+				}
+			}
+		]
+	});
+	$('.finishing-slider').slick({
+		arrows:true,
+		dots:false,
+		slidesToShow:4,
+		asNavFor: '.finishing-big--slider',
+		autoplay:false,
+		speed:700,
+		autoplaySpeed:800,
+		responsive:[
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow:2
+				}
+			},
+			{
+				breakpoint: 550,
+				settings: {
+					slidesToShow:1
+				}
+			}
+		]
+	});
 });
