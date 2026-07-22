@@ -21,10 +21,24 @@
 					<img src="./img/header/logo.png" alt="Логотип компании" class="logo">
 					<nav class="menu">
 						<ul class="menu-level-1">
-							<li>
+							<li class="has-submenu has-submenu-level-1">
 								<a href="#">КОМПАНИЯ</a>
+								<ul class="submenu level-2">
+									<li>
+										<a href="#">О КОМПАНИИ</a>
+									</li>
+									<li>
+										<a href="#">ЛИЦЕНЗИИ</a>
+									</li>
+									<li>
+										<a href="#">ПАРТНЕРЫ</a>
+									</li>
+									<li>
+										<a href="#">ОТЗЫВЫ КЛИЕНТОВ</a>
+									</li>
+								</ul>
 							</li>
-							<li class="has-submenu">
+							<li class="has-submenu has-submenu-level-1">
 								<a href="#">КАТАЛОГ</a>
 								<ul class="submenu level-2">
 									<li class="has-submenu">
@@ -57,19 +71,35 @@
 									</li>
 								</ul>
 							</li>
-							<li>
+							<li class="has-submenu has-submenu-level-1">
 								<a href="#">УСЛУГИ</a>
+								<ul class="submenu level-2">
+									<li>
+										<a href="#">ДИАГНОСТИКА АККУМУЛЯТОРА</a>
+									</li>
+									<li>
+										<a href="#">ПРИЕМ АККУМУЛЯТОРОВ</a>
+									</li>
+								</ul>
 							</li>
-							<li>
+							<li class="has-submenu has-submenu-level-1">
 								<a href="#">ИНФОРМАЦИЯ</a>
+								<ul class="submenu level-2">
+									<li>
+										<a href="#">НОВОСТИ</a>
+									</li>
+									<li>
+										<a href="#">F.A.Q.</a>
+									</li>
+								</ul>
 							</li>
 							<li>
 								<a href="#">КОНТАКТЫ</a>
 							</li>
 						</ul>
 					</nav>
-					<div class="callback-popover" id="popover" popover>
-						<button class="callback-popover__close" id="closeBtn" popovertarget="popover" popovertargetaction="hide">
+					<div class="callback-popover" id="callback-success-popover" popover>
+						<button class="callback-popover__close" id="closeBtn" popovertarget="callback-success-popover" popovertargetaction="hide">
 							<img src="./img/header/close.svg" alt="Иконка закрытия окна">
 						</button>
 
@@ -84,19 +114,42 @@
 							</div>
 						</div>
 
-						<form class="callback-form" id="callbackForm">
+						<div class="callback-popover__body">
+							<img src="./img/header/success.png" alt="" class="popover-succes-img">
+							<h2 class="callback-succ-popover-title">ВАШЕ ПИСЬМО УСПЕШНО ОТПРАВЛЕНО!</h2>
+						</div>
+					</div>
+					<div class="callback-popover" id="callback-popover" popover>
+						<button class="callback-popover__close" id="closeBtn" popovertarget="callback-popover" popovertargetaction="hide">
+							<img src="./img/header/close.svg" alt="Иконка закрытия окна">
+						</button>
+
+						<div class="callback-popover__header">
+							<div class="callback-popover__icon">
+								<img src="./img/header/call.svg" alt="Иконка телефонной трубки">
+							</div>
+
+							<div class="callback-popover__title">
+								<h3>ОБРАТНЫЙ ЗВОНОК</h3>
+								<p>Представьтесь, мы вам перезвоним.</p>
+							</div>
+						</div>
+
+						<form class="callback-form" id="callbackForm" novalidate>
 							<label>
 								Ваше имя:<span>*</span>
-								<input type="text" />
+								<input type="text" name="name" />
+								<small class="error"></small>
 							</label>
 
 							<label>
 								Телефон:<span>*</span>
-								<input type="tel" id="phone" />
+								<input type="tel" name="phone" id="phone" />
+								<small class="error"></small>
 							</label>
 
 							<label class="callback-checkbox">
-								<input type="checkbox" />
+								<input type="checkbox" id="agree" />
 
 								<span class="callback-checkbox__box"></span>
 
@@ -105,15 +158,17 @@
 									<a href="#">обработку персональных данных</a>
 								</span>
 							</label>
+							<small class="error checkbox-error"></small>
 
 							<div class="callback-form__footer">
 								<span class="callback-form__required"> * Обязательное поле </span>
 
-								<button type="button" id="submitBtn" popovertarget="popover" popovertargetaction="hide">ОТПРАВИТЬ</button>
+								<!-- <button type="button" id="submitBtn" popovertarget="callback-popover" popovertargetaction="hide">ОТПРАВИТЬ</button> -->
+								<button type="submit" id="submitBtn">ОТПРАВИТЬ</button>
 							</div>
 						</form>
 					</div>
-					<button class="order--call-btn" popovertarget="popover">ЗАКАЗАТЬ ЗВОНОК</button>  
+					<button class="order--call-btn" popovertarget="callback-popover">ЗАКАЗАТЬ ЗВОНОК</button>  
 					<div class="service-buttons">
 						<button class="service-button button-search--btn">
 							<img src="./img/header/search.svg" alt="Иконка кнопки поиска" class="button-icon">

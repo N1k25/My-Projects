@@ -126,6 +126,10 @@
   font-size: 12px;
   font-weight: 700;
 }
+.has-submenu-level-1 > a::after {
+  content: "";
+  margin-left: 0;
+}
 
 /* ---------- ТРЕТІЙ РІВЕНЬ ---------- */
 .level-3 {
@@ -311,10 +315,42 @@
   color: #fff;
 }
 
+.error {
+  display: block;
+  color: #FF2400;
+  font-size: 12px;
+  margin-top: 4px;
+  min-height: 15px;
+  text-align: right;
+}
+
+.invalid {
+  border-color: #FF2400 !important;
+}
+
+.callback-popover__body {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.popover-succes-img {
+  width: 246px;
+  height: 214px;
+  object-fit: cover;
+}
+
+.callback-succ-popover-title {
+  width: 223px;
+  font-size: 16px;
+  color: #3CC051;
+  text-align: center;
+}
+
 /*-----------------------------*/
-
-
-
 .order--call-btn {
     padding: 12px 20px;
     border: 4px solid #D42E12;
@@ -339,9 +375,6 @@
 }
 
 .button-search--btn {
-}
-
-.button-icon {
 }
 
 .button-cart--btn {
