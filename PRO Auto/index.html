@@ -170,7 +170,17 @@
 					</div>
 					<button class="order--call-btn" popovertarget="callback-popover">ЗАКАЗАТЬ ЗВОНОК</button>  
 					<div class="service-buttons">
-						<button class="service-button button-search--btn">
+						<div class="search-popover" id="search-popover" popover>
+							<div class="search-popover-container container">
+								<input type="text" class="search-popover-input">
+								<button class="search-popover-btn">НАЙТИ</button>
+								<button class="search-popover__close" id="searchCloseBtn" popovertarget="search-popover" popovertargetaction="hide">
+									<img src="./img/header/close-gray.svg" alt="Иконка закрытия окна">
+								</button>
+								<ul id="searchResults"></ul>
+							</div>
+						</div>
+						<button class="service-button button-search--btn" popovertarget="search-popover">
 							<img src="./img/header/search.svg" alt="Иконка кнопки поиска" class="button-icon">
 						</button>
 						<button class="service-button button-cart--btn">
@@ -191,5 +201,6 @@
 			<footer class="footer"></footer>
 		</div>
 	<script src="./js/callback-popover.js"></script>
+	<script src="./js/search-popover.js"></script>
 	</body>
 </html>

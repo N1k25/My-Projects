@@ -1,4 +1,3 @@
-
 /*Обнуление*/
 *{
 	padding: 0;
@@ -39,3 +38,24 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*--------------------*/
 
+/*------------ Стилізація scrollbar ---------------*/
+/* Вся смуга прокрутки */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Доріжка */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Повзунок */
+::-webkit-scrollbar-thumb {
+    background: #C53720;
+    border-radius: 999px;
+}
+
+/* При наведенні */
+::-webkit-scrollbar-thumb:hover {
+    background: #FF2400;
+}
