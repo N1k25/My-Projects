@@ -389,6 +389,7 @@ html {
   background-color: #1D1D1D;
   width: 100%;
   height: auto;
+  margin: 0 auto;
   position: absolute;
   left: 0;
   top: 110px;
@@ -548,6 +549,38 @@ html {
 
 .pagination-red-line {
   background-color: #C53720;
+}
+
+/*--------------------------------------Advantages------------------------------*/
+.advantages {
+  background-color: #0E0E0E;
+}
+
+.advantages-container {
+  display: flex;
+  justify-content: center;
+}
+
+.advantages-card {
+  width: 282px;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 41px 28px 28px;
+  clip-path: polygon(0 25%, 25% 0, 100% 0, 100% 75%, 75% 100%, 0 100%);
+  transition: 0.3s;
+
+  &:hover {
+    background-color: #C53720;
+  }
+}
+
+.advantages-card-icon {
+  height: 90px;
+}
+
+.advantages-card-text {
+  font-size: 16px;
+  margin: 31px 0 24px;
 }
 
 /*--------------------------------------    ------------------------------*/
