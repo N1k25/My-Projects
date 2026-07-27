@@ -775,51 +775,9 @@ html {
   );
 
   /* Для центрування контенту */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 4px;
+  display: grid;
+  place-items: center;
   color: #fff;
-}
-
-.services-item-icon-top {
-  width: 72px;
-  height: 48px;
-  border: 4px solid #FFFFFF;
-  padding: 4px;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  gap: 4px;
-}
-
-.services-item-icon-top-block {
-  width: 4px;
-  background-color: #FFFFFF;
-  opacity: 0.5;
-
-  &:nth-child(1) {
-    height: 17px;
-  }
-  &:nth-child(2) {
-    height: 27px;
-  }
-  &:nth-child(3) {
-    height: 21px;
-  }
-  &:nth-child(4) {
-    height: 28px;
-  }
-  &:nth-child(5) {
-    height: 32px;
-  }
-}
-
-.services-item-icon-bottom {
-  width: 88px;
-  height: 4px;
-  background-color: #FFFFFF;
 }
 
 .services-item-desc__wrapper {
