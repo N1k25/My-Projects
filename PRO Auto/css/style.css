@@ -213,7 +213,7 @@ html {
     background: #fff;
     border-top: 4px solid #C53720;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.18);
-    position: relative;
+    position: fixed;
 }
 
 .callback-popover__close {
@@ -411,9 +411,9 @@ html {
 .search-popover {
   background-color: #1D1D1D;
   width: 100%;
-  height: auto;
+  height: calc(100vh - 110px);
   margin: 0 auto;
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 110px;
   padding: 16px 0;
