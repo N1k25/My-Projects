@@ -1199,4 +1199,106 @@ html {
   max-width: 100%;
 }
 
-/*--------------------------------------    ------------------------------*/
+/*--------------------------------------Footer------------------------------*/
+.footer {
+  padding: 54px 0 68px;
+  position: relative;
+  background: url('../img/footer/red-car.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(29, 29, 29, 0.8);
+    position: absolute;
+    inset: 0;
+  }
+}
+
+.footer-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+  color: #FFFFFF;
+}
+
+.footer-logo {
+  width: 168px;
+  height: 74px;
+  object-fit: cover;
+}
+
+.copyright {
+  margin-top: 48px;
+  font-size: 16px;
+  opacity: 0.5;
+}
+
+.footer-menu-list {
+  display: flex;
+  align-items: flex-start;
+  gap: 38px;
+}
+
+.footer-menu-item__title {
+  font-size: 16px;
+}
+
+.footer-menu-item-list {
+  margin-top: 20px;
+  max-width: 130px;
+}
+
+.footer-menu-list--item {
+
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+
+.footer-menu-list--item__link {
+  color: #FFFFFF;
+  opacity: 0.5;
+  transition: 0.3s;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.footer-contacts-list__item {
+  margin-bottom: 12px;
+
+  &:nth-child(1)::before {
+    content: url('../img/footer/call.svg');
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+  }
+  &:nth-child(2)::before {
+    content: url('../img/footer/mail.svg');
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+  }
+}
+
+.footer-contact__link {
+  font-size: 16px;
+  color: #FFFFFF;
+  transition: 0.3s;
+
+  &:hover {
+    color: #C53720;
+  }
+}
+
+.footer-callback-btn {
+  padding: 12px 20px;
+  margin: 20px 0 0 32px;
+}
