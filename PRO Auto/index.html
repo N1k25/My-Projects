@@ -183,21 +183,46 @@
 						<button class="service-button button-search--btn" popovertarget="search-popover">
 							<img src="./img/header/search.svg" alt="Иконка кнопки поиска" class="button-icon">
 						</button>
-						<button class="service-button button-cart--btn">
+						<button class="service-button button-cart--btn" id="cartBtn">
 							<!-- <img src="./img/header/cart.svg" alt="Иконка кнопки корзины" class="button-icon"> -->
-							<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<svg width="40" height="40" class="cart-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M33.3594 11L29.9844 23H14V11H33.3594Z" stroke="currentColor" stroke-width="4"/>
 								<path d="M14 4L14 24.5" stroke="currentColor" stroke-width="4"/>
 								<path d="M14 6H4" stroke="currentColor" stroke-width="4"/>
 								<circle cx="17" cy="31" r="3" stroke="currentColor" stroke-width="4"/>
 								<circle cx="28" cy="31" r="3" stroke="currentColor" stroke-width="4"/>
 							</svg>
-							<span>0</span>
+							<span class="cart-count" id="cartCount">0</span>
 						</button>
+						<div class="cart-popup" id="cartPopup">
+							<div id="cartItems"></div>								
+							<div class="total">
+								<p class="total-info">
+									ИТОГ:
+								</p>
+								<div class="total-content">
+									<span id="totalPrice">0 грн.</span>
+									<a href="#" class="total-link button-white">ПЕРЕЙТИ В КОРЗИНУ</a>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</header>
 			<main class="page">
+					<!-- <div class="products container">
+						<div class="product">
+							<h3>MAGNUM 60Ah</h3>
+							<p>2199 грн.</p>
+							<button onclick="addToCart('MAGNUM 60Ah', 2199)">Додати</button>
+						</div>
+
+						<div class="product">
+							<h3>MAGNUM 75Ah</h3>
+							<p>2799 грн.</p>
+							<button onclick="addToCart('MAGNUM 75Ah', 2799)">Додати</button>
+						</div>
+					</div> -->
 				<section class="hero">
 					<div class="hero-container container">
 						<h1 class="hero-title">НАДЕЖНЫЕ, КАЧЕСТВЕННЫЕ АККУМУЛЯТОРЫ</h1>
@@ -618,9 +643,10 @@
 	<!-- Подключаем слайдер Slick -->
 	<script src="js/slick.min.js"></script>
 	<!-- Подключаем файл скриптов -->
-	<script src="js/slider.js"></script>
+	<script src="./js/slider.js"></script>
 	<script src="./js/callback-popover.js"></script>
 	<script src="./js/search-popover.js"></script>
 	<script src="./js/scroll-buttons.js"></script>
+	<script src="./js/cart.js"></script>
 	</body>
 </html>
