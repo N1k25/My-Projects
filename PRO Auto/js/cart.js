@@ -75,7 +75,7 @@ function renderCart(){
 cartBtn.addEventListener("click",()=>{
 
     if (cart.length===0) {
-        alert('Корзина пуста');
+        alert('Корзина пустая');
         return;
     };
 

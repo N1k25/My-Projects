@@ -636,6 +636,7 @@ html {
 .hero {
   background-color: #1D1D1D;
   padding: 155px 0 189px;
+  margin-top: 110px;
   background: url('../img/hero/image.jpg');
   background-position: center;
   background-repeat: no-repeat;
@@ -1482,7 +1483,7 @@ html {
 
 
 /*==========================================*/
-.products {
+/* .products {
   display: flex;
   gap: 20px;
   margin-top: 110px;
@@ -1510,4 +1511,4 @@ button {
   border: none;
   color: #fff;
   cursor: pointer;
-}
+} */

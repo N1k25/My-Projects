@@ -1,0 +1,22 @@
+.bread-crumbs {
+    padding: 16px 0;
+}
+
+.bread-crumbs-container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.bread-crumbs__link {
+    color: #1D1D1D;
+    text-transform: uppercase;
+}
+
+.start-page {
+    color: #C53720;
+}
+
+.catalog-title-wrapper {
+    width: 200px;
+}
