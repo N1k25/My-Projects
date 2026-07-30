@@ -1,0 +1,371 @@
+/*--------------------------------------Battery catalog------------------------------*/
+.battery-catalog {
+    padding: 89px 0;
+    background-color: #EDEDED;
+}
+
+.battery-catalog-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 36px;
+    text-transform: uppercase;
+    color: #1D1D1D;
+}
+
+.battery-catalog-body {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+}
+
+/* SIDEBAR */
+.sidebar-accordion {
+  width: 264px;
+  background: #000;
+  padding: 12px 0;
+}
+
+.accordion {
+  border-bottom: 1px solid #1D1D1D;
+  
+  &:first-child {
+    border-top: 1px solid #1D1D1D;
+  }
+}
+
+.accordion summary {
+  list-style: none;
+  cursor: pointer;
+  position: relative;
+  padding: 8px;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+.accordion summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Верхній рівень */
+.sidebar-accordion > .accordion > summary {
+  background: #C53720;
+}
+
+/* Стрілка */
+.accordion summary::after {
+  content: url('../img/battery-catalog/arrow.svg');
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  transform: translateY(-50%);
+  transition: 0.25s;
+}
+
+.accordion[open] > summary::after {
+  transform: translateY(-40%) rotate(90deg);
+}
+
+/* Вкладені акордеони */
+.nested > summary {
+  background: #1D1D1D;
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Вкладені пункти */
+.nested .accordion-content a {
+  display: block;
+  padding: 8px;
+  background: #2D2D2D;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+}
+
+.nested .accordion-content a:hover {
+  background: #404040;
+  color: #fff;
+}
+
+/* Закриті категорії */
+.sidebar-accordion > .accordion:not([open]) > summary {
+  background: #000;
+}
+
+/* Для довгих назв */
+summary {
+  line-height: 1.3;
+}
+
+/*------------------------------------*/
+.filter {
+  width: 264px;
+  background: #000;
+  color: #fff;
+  margin-top: 32px;
+}
+
+.filter-title {
+    font-size: 16px;
+    font-weight: 700;
+    padding: 12px 8px;
+}
+
+.accordion-header {
+  background: #C53720;
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.arrow {
+  transition: 0.3s;
+}
+
+.accordion-header.active .arrow {
+  transform: rotate(90deg);
+}
+
+.filter-accordion-content {
+  padding: 20px 12px;
+  background-color: #2D2D2D;
+}
+
+.filter-accordion-content.hide {
+  display: none;
+}
+
+.inputs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.inputs input {
+  width: 114px;
+  height: 36px;
+  border: 4px solid #1D1D1D;
+  text-align: center;
+}
+
+.range-values {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.slider {
+  position: relative;
+  height: 28px;
+}
+
+.track {
+  position: absolute;
+  top: 6px;
+  width: 100%;
+  height: 8px;
+  display: flex;
+}
+
+.left {
+  background: #3CC051;
+}
+
+.middle {
+  background: #1D1D1D;
+}
+
+.right {
+  background: #C53720;
+}
+
+.slider input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  pointer-events: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background: none;
+}
+
+.slider input::-webkit-slider-thumb {
+  pointer-events: auto;
+  -webkit-appearance: none;
+  width: 16px;
+  height: 28px;
+  clip-path: polygon(0 0, 100% 0, 100% 78%, 50% 100%, 0 78%);
+  background: #fff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.slider input::-moz-range-thumb {
+  width: 16px;
+  height: 28px;
+  clip-path: polygon(0 0, 100% 0, 100% 78%, 50% 100%, 0 78%);
+  border: none;
+  background: #fff;
+  cursor: pointer;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  margin: 12px 0;
+  cursor: pointer;
+}
+
+.checkbox input {
+  display: none;
+}
+
+.checkbox span {
+  width: 36px;
+  height: 36px;
+  border: 4px solid #1D1D1D;
+  background-color: #fff;
+  margin-right: 12px;
+  display: block;
+  position: relative;
+}
+
+.checkbox span span{
+  width: 12px;
+  height: 12px;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.checkbox input:checked + span span{
+  background: #C53720;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 28px 12px;
+}
+
+.buttons button {
+    padding: 8px 16px;
+}
+
+.sidebar-note {
+    width: 264px;
+    padding: 12px;
+    line-height: 1.5;
+    color: #fff;
+    background: #C53720;
+}
+
+/*------------------------------------*/
+
+/* CONTENT */
+.content {
+    flex: 1;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.card {
+    background: #fff;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+.card-logo {
+    height: 184px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card-logo img {
+    max-width: 100%;
+    max-height: 144px;
+    object-fit: contain;
+}
+
+.card-body {
+    padding: 20px 12px;
+    color: #fff;
+    background-color: #1D1D1D;
+    min-height: 170px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+
+.card-text {
+    color: #fff;
+    flex: 1;
+}
+
+.more {
+    margin-top: 24px;
+    padding: 12px 20px;
+    text-transform: uppercase;
+    align-self: flex-start;
+}
+
+.content-info {
+    margin-top: 36px;
+}
+
+.content-text {
+    font-size: 16px;
+    color: #1D1D1D;
+
+    span {
+        font-weight: 700;
+    }
+}
+
+.content-list {
+    margin: 12px 0;
+}
+
+.content-list__item {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    &:not(:last-child) {
+        margin-bottom: 8px;
+    }
+}
