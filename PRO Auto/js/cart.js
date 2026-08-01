@@ -38,7 +38,7 @@ function renderCart(){
         cartItems.innerHTML+=`
             <div class="cart-item">
                 <div class="product-info">
-                    <img src="./img/catalog/battery-magnum-60ah.jpg" alt="Фото товара" class="product-photo">
+                    <img src="../img/catalog/battery-magnum-60ah.jpg" alt="Фото товара" class="product-photo">
 
                     <div class="product-desc">
                         <div class="product-name">${item.name}</div>
@@ -51,7 +51,7 @@ function renderCart(){
                 </div>
 
                 <div class="remove" onclick="removeItem(${index})">
-                    <img src="./img/catalog/remove.svg" alt="Иконка закрытия">
+                    <img src="../img/catalog/remove.svg" alt="Иконка закрытия">
                 </div>
 
             </div>

@@ -534,7 +534,7 @@ html {
 /*------------------*/
 .cart-popup {
   width: 622px;
-  max-height: 402px;
+  max-height: 412px;
   overflow-y: scroll;
   background: #fff;
   position: fixed;

@@ -1,0 +1,405 @@
+/*--------------------------------------Battery Magnum------------------------------*/
+.catalog-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f2f2f2;
+  padding: 10px 15px;
+}
+
+.sort {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.sort__label {
+  font-size: 15px;
+  color: #1D1D1D;
+}
+
+.sort-buttons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sort-btn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: rgba(29, 29, 29, 0.5);
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.sort-btn.active {
+  color: #C53720;
+}
+
+.arrow {
+  transition: 0.2s;
+}
+
+.sort-btn[data-order="asc"] .arrow {
+  transform: rotate(180deg);
+}
+
+.sort-btn[data-order="desc"] .arrow {
+  transform: rotate(0);
+}
+
+.view {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.view__label {
+  font-size: 14px;
+  color: #1D1D1D;
+}
+
+.view-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.view-btn {
+  width: 48px;
+  height: 40px;
+  border: 4px solid #C53720;
+  background: transparent;
+  cursor: pointer;
+  display: grid;
+  place-content: center;
+  padding: 7px 12px;
+}
+
+.view-btn span {
+  background: #1D1D1D;
+}
+
+.view-btn:first-of-type {
+  grid-template-columns: repeat(3, 6px);
+  grid-template-rows: repeat(3, 6px);
+  gap: 4px;
+}
+
+.view-btn:last-of-type {
+  grid-template-columns: 24px;
+  grid-template-rows: repeat(3, 6px);
+  gap: 4px;
+}
+
+.view-btn.active {
+  background: #C53720;
+
+  span {
+    background: #fff;
+  }
+}
+/*--------------------------------------------*/
+.product-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(264px, 1fr));
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.product-cards.list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  position:relative;
+  background:#fff;
+  border:4px solid #A5A5A5;
+  padding: 36px 20px 27px;
+  transition:.25s;
+}
+
+
+
+/* Товар в наявності */
+.card.available{
+  border-color:#35b84b;
+
+  h3{
+      color:#1D1D1D;
+  }
+}
+
+/* Під замовлення */
+.card.order{
+  border-color:#d63031;
+
+  h3{
+      color:#1D1D1D;
+  }
+}
+
+.card:hover {
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.product-img {
+  width: 176px;
+  height: 158px;
+  object-fit: cover;
+  display: block;
+  order: 1;
+}
+
+h3 {
+  margin: 16px 0 28px;
+  font-size: 20px;
+  color: #C53720;
+  order: 2;
+}
+
+.old-price {
+  color: #A5A5A5;
+  text-decoration: line-through;
+  font-size: 16px;
+  font-weight: 700;
+  order: 3;
+}
+
+.price {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 8px 0 12px;
+  order: 4;
+}
+
+.descr {
+  color: #A5A5A5;
+  line-height: 20px;
+  margin-bottom: 18px;
+  order: 6;
+}
+
+.characteristics{
+  display: none;
+  margin-top: 16px;
+  color: #A5A5A5;
+  order: 5;
+  
+  span {
+    font-weight: 700;
+    color: #1D1D1D;
+  }
+}
+
+.buy-row {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  order: 7;
+}
+
+.counter {
+  display: flex;
+  width: 164px;
+  height: 40px;
+}
+
+.counter button {
+  width: 40px;
+  border: 4px solid #A5A5A5;
+  background: transparent;
+  font-size: 14px;
+  font-weight: 700;
+  color: #A5A5A5;
+}
+
+.counter input {
+  width: 84px;
+  border-top: 4px solid #A5A5A5;
+  border-bottom: 4px solid #A5A5A5;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  color: #A5A5A5;
+  background: transparent;
+}
+
+.cart-btn{
+  width:40px;
+  height:40px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border:4px solid #C53720;
+  background:#fff;
+  color:#C53720;
+  transition:.25s;
+}
+
+.cart--full-icon {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.cart-btn:hover{
+  background:#C53720;
+  color:#fff;
+}
+
+.cart-btn.active{
+  background:#C53720;
+  color:#fff;
+
+  .cart--full-icon {
+    display: block;
+  }
+
+  .cart--add-icon {
+    display: none;
+  }
+}
+
+.in-cart {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 164px;
+  height: 40px;
+  border: 4px solid #C53720;
+  font-size: 14px;
+  font-weight: 700;
+  color: #C53720;
+}
+.in-cart-list {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 124px;
+  height: 40px;
+  border: 4px solid #C53720;
+  font-size: 14px;
+  font-weight: 700;
+  color: #C53720;
+}
+
+.card--more {
+  display: block;
+  padding: 12px 42px;
+  margin-top: 20px;
+  font-size: 14px;
+  text-align: center;
+  width: 100%;
+  order: 8;
+}
+
+.card.list{
+  max-width: 840px;
+  max-height: 320px;
+  flex-wrap: wrap;
+  padding: 40px;
+  columns: 3;
+
+  .product-img {
+    width: 238px;
+    height: 238px;
+    object-fit: contain;
+    order: 1;
+  }
+
+  h3 {
+    margin: 0 0 48px
+  }
+
+  .descr {
+    width: 268px;
+    margin-bottom: 16px;
+    order: 2;
+  }
+
+  .characteristics{
+    display:block;
+    order: 3;
+  }
+
+  .price {
+    margin: 0 0 8px;
+    order: 4;
+  }
+
+  .old-price {
+    order: 5;
+  }
+
+  .buy-row {
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 16px;
+    order: 6;
+  }
+
+  .in-cart-list__block {
+    display: flex;
+  }
+
+  .in-cart-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: none;
+  }
+
+  .card--more {
+    width: 164px;
+    text-align: center;
+    padding: 12px;
+    order: 7;
+  }
+}
+
+.status{
+  position:absolute;
+  top: 0;
+  right: 0;
+  padding: 12px;
+  color:#fff;
+  font-size:10px;
+  font-weight: 700;
+  text-transform:uppercase;
+}
+
+/* зелена */
+.card.available .status{
+  background:#35b84b;
+}
+
+/* червона */
+.card.order .status{
+  background:#d63031;
+}
+
+/*--------------------------------------------*/
+.content-title {
+  font-size: 24px;
+  color: #1D1D1D;
+  margin: 16px 0 28px;
+}
+
+.magnum-content-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 32px;
+}
+
+.content-list__item span {
+  width: 180px;
+}
