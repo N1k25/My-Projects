@@ -61,7 +61,7 @@ updateSlider();
 minRange.addEventListener("input", updateSlider);
 maxRange.addEventListener("input", updateSlider);
 
-minInput.addEventListener("input", () => {
+minInput.addEventListener("change", () => {
   let value = parseInt(minInput.value) || min;
 
   if (value < min) value = min;
@@ -72,7 +72,7 @@ minInput.addEventListener("input", () => {
   updateSlider();
 });
 
-maxInput.addEventListener("input", () => {
+maxInput.addEventListener("change", () => {
   let value = parseInt(maxInput.value) || max;
 
   if (value > max) value = max;
@@ -82,6 +82,8 @@ maxInput.addEventListener("input", () => {
 
   updateSlider();
 });
+
+
 
 document.querySelectorAll(".accordion-header").forEach((header) => {
   header.addEventListener("click", () => {
