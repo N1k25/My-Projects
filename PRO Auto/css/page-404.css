@@ -1,0 +1,34 @@
+.hero404 {
+    padding: 254px 0 189px;
+    background: url('../img/page-404/image.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero404-container {
+    color: #FFFFFF;
+}
+
+.hero404-img {
+    width: 260px;
+    height: 98px;
+    object-fit: cover;
+}
+
+.hero404-title {
+    width: 512px;
+    font-size: 48px;
+    font-weight: 700;
+    margin: 52px 0 44px;
+}
+
+.hero404-text {
+    width: 608px;
+    font-size: 24px;
+    margin-bottom: 52px;
+}
+
+.hero404-link {
+    font-size: 14px;
+}
