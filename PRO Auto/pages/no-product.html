@@ -12,6 +12,8 @@
 		<link rel="stylesheet" href="../css/style.css"/>
 		<link rel="stylesheet" href="../css/catalog.css"/>
 		<link rel="stylesheet" href="../css/battery-catalog.css"/>
+		<link rel="stylesheet" href="../css/battery-magnum.css"/>
+		<link rel="stylesheet" href="../css/no-product.css"/>
 		<!-- Кодировка страницы -->
 		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
 	</head>
@@ -46,7 +48,7 @@
 									<li class="has-submenu">
 										<a href="#">АККУМУЛЯТОРЫ</a>
 										<ul class="submenu level-3">
-											<li><a href="./battery-magnum.html">АКБ MAGNUM</a></li>
+											<li><a href="#">АКБ MAGNUM</a></li>
 											<li><a href="#">АКБ ЗВЕРЬ</a></li>
 											<li><a href="#">ТЮМЕНСКИЙ АККУМУЛЯТОРНЫЙ ЗАВОД</a></li>
 											<li><a href="#">АКБ AKOM</a></li>
@@ -234,7 +236,11 @@
 						<div class="bread-crumbs-arrow">
 							<img src="../img/catalog/next.svg" alt="">
 						</div>
-						<a href="#" class="bread-crumbs__link">АККУМУЛЯТОРЫ</a>
+						<a href="./battery-catalog.html" class="bread-crumbs__link">АККУМУЛЯТОРЫ</a>
+						<div class="bread-crumbs-arrow">
+							<img src="../img/catalog/next.svg" alt="">
+						</div>
+						<a href="#" class="bread-crumbs__link">MAGNUM - каталог АКБ от 60 до 230Ah</a>
 					</div>
 				</div> 
 				<section class="battery-catalog">
@@ -250,7 +256,6 @@
 										<!-- 1 рівень -->
 										<details class="accordion" open>
 											<summary>АККУМУЛЯТОРЫ</summary>
-
 											<div class="accordion-content">
 												<!-- 2 рівень -->
 												<details class="accordion nested" open>
@@ -363,18 +368,15 @@
 												</details>
 											</div>
 										</details>
-
 										<!-- інші розділи -->
 										<details class="accordion">
 											<summary>АВТОМАСЛА</summary>
 											<div class="accordion-content"></div>
 										</details>
-
 										<details class="accordion">
 											<summary>АКСЕСУАРИ</summary>
 											<div class="accordion-content"></div>
 										</details>
-
 										<details class="accordion">
 											<summary>АВТОХІМІЯ</summary>
 											<div class="accordion-content"></div>
@@ -390,18 +392,15 @@
 												<span>ЦЕНА</span>
 												<img src="../img/battery-catalog/arrow.svg" alt="" class="arrow">
 											</div>
-
 											<div class="filter-accordion-content">
 												<div class="inputs">
 													<input id="minInput" type="number" />
 													<input id="maxInput" type="number" />
 												</div>
-
 												<div class="range-values">
 													<span id="rangeMin"></span>
 													<span id="rangeMax"></span>
 												</div>
-
 												<div class="slider">
 													<div class="track">
 													<div class="left"></div>
@@ -420,7 +419,6 @@
 												<span>СТАТУС</span>
 												<img src="../img/battery-catalog/arrow.svg" alt="" class="arrow">
 											</div>
-
 											<div class="filter-accordion-content">
 												<label class="checkbox">
 													<input type="checkbox" />
@@ -440,227 +438,15 @@
 											<button class="button-black" id="filter-reset">СБРОСИТЬ</button>
 										</div>
 									</div>
-									<div class="sidebar-note">
-										Подберём аккумулятор и масло конкретно на ваш автомобиль. Цель нашего магазина - предложение широкого ассортимента товаров.
-									</div>
+									<div class="sidebar-note">Подберём аккумулятор и масло конкретно на ваш автомобиль. Цель нашего магазина - предложение широкого ассортимента товаров.</div>
 								</div>
 							</aside>
 							<!-- RIGHT CONTENT -->
-							<section class="content">
-								<div class="grid">
-									<div class="card">
-										<div class="card-logo">
-											<img src="../img/battery-catalog/magnum.jpg" alt="Magnum"/>
-										</div>
-										<div class="card-body">
-											<div class="card-title">АКБ MAGNUM</div>
-											<div class="card-text">
-												Компания «Кайнар – АКБ», Казахстан
-											</div>
-											<a href="#" class="more button-black">ПОДРОБНЕЕ</a>
-										</div>
-									</div>
-									<div class="card">
-										<div class="card-logo">
-											<img src="../img/battery-catalog/zver.jpg" alt="Зверь"/>
-										</div>
-										<div class="card-body">
-											<div class="card-title">АКБ ЗВЕРЬ</div>
-											<div class="card-text">
-												Компания «Аккумуляторные технологии» – ООО "АкТех". Иркутская область, г. Свирск
-											</div>
-											<a href="#" class="more button-black">ПОДРОБНЕЕ</a>
-										</div>
-									</div>
-									<div class="card">
-										<div class="card-logo">
-											<img src="../img/battery-catalog/taz.jpg" alt="Тюменский аккумуляторный завод"/>
-										</div>
-										<div class="card-body">
-											<div class="card-title">ТЮМЕНСКИЙ А З</div>
-											<div class="card-text">
-												АО "Тюменский аккумуляторный завод" Россия, г. Тюмень
-											</div>
-											<a href="#" class="more button-black">ПОДРОБНЕЕ</a>
-										</div>
-									</div>
-									<div class="card">
-										<div class="card-logo">
-											<img src="../img/battery-catalog/afa.jpg" alt="AFA"/>
-										</div>
-										<div class="card-body">
-											<div class="card-title">АКБ AFA</div>
-											<div class="card-text">
-												Аккумуляторы AFA выпускаются на заводах концерна "Johnson Controls". Страна: Чехия
-											</div>
-											<a href="#" class="more button-black">ПОДРОБНЕЕ</a>
-										</div>
-									</div>
-									<div class="card">
-										<div class="card-logo">
-											<img src="../img/battery-catalog/akom.jpg" alt="Akom"/>
-										</div>
-										<div class="card-body">
-											<div class="card-title">АКБ AKOM</div>
-											<div class="card-text">
-												АО "ТОРГОВЫЙ ДОМ АКОМ" Россия, Самарская область, г. Тольятти
-											</div>
-											<a href="#" class="more button-black">ПОДРОБНЕЕ</a>
-										</div>
-									</div>
-									<div class="card">
-										<div class="card-logo">
-											<img src="../img/battery-catalog/bars.jpg" alt="Bars"/>
-										</div>
-										<div class="card-body">
-											<div class="card-title">АКБ BARS</div>
-											<div class="card-text">
-												Компания «Кайнар – АКБ», Казахстан
-											</div>
-											<a href="#" class="more button-black">ПОДРОБНЕЕ</a>
-										</div>
-									</div>
-									<div class="card">
-										<div class="card-logo">
-											<img src="../img/battery-catalog/bosch.jpg" alt="Bosch"/>
-										</div>
-										<div class="card-body">
-											<div class="card-title">АКБ BOSCH</div>
-											<div class="card-text">
-												"VB Autobatterie Gmbh & Co. KgaA" ,  Германия, Гановер
-											</div>
-											<a href="#" class="more button-black">ПОДРОБНЕЕ</a>
-										</div>
-									</div>
-									<div class="card">
-										<div class="card-logo">
-											<img src="../img/battery-catalog/edcon.jpg" alt="Edcon"/>
-										</div>
-										<div class="card-body">
-											<div class="card-title">АКБ EDCON</div>
-											<div class="card-text">
-												Компания «Кайнар – АКБ», Казахстан
-											</div>
-											<a href="#" class="more button-black">ПОДРОБНЕЕ</a>
-										</div>
-									</div>
-									<div class="card">
-										<div class="card-logo">
-											<img src="../img/battery-catalog/enrun.jpg" alt="Enrun"/>
-										</div>
-										<div class="card-body">
-											<div class="card-title">АКБ ENRUN</div>
-											<div class="card-text">
-												AUTOPART S.A. Польша, г. Мелец
-											</div>
-											<a href="#" class="more button-black">ПОДРОБНЕЕ</a>
-										</div>
-									</div>
-									<div class="card">
-										<div class="card-logo">
-											<img src="../img/battery-catalog/mutlu-2.jpg" alt="Mutlu"/>
-										</div>
-										<div class="card-body">
-											<div class="card-title">АКБ MUTLU</div>
-											<div class="card-text">
-												MUTLU AKU, Турция
-											</div>
-											<a href="#" class="more button-black">ПОДРОБНЕЕ</a>
-										</div>
-									</div>
-									<div class="card">
-										<div class="card-logo">
-											<img src="../img/battery-catalog/unix.jpg" alt="Unix"/>
-										</div>
-										<div class="card-body">
-											<div class="card-title">АКБ UNIX (WESTA)</div>
-											<div class="card-text">
-												Аккумуляторы производятся на заводах международной корпорации "WESTA"
-											</div>
-											<a href="#" class="more button-black">ПОДРОБНЕЕ</a>
-										</div>
-									</div>
-									<div class="card">
-										<div class="card-logo">
-											<img src="../img/battery-catalog/tumen-bear.jpg" alt="Тюменский медведь"/>
-										</div>
-										<div class="card-body">
-											<div class="card-title">АКБ ТЮМЕНСКИЙ МЕДВЕДЬ</div>
-											<div class="card-text">
-												ЗАО МПКФ "Алькор" Россия, г. Тюмень
-											</div>
-											<a href="#" class="more button-black">ПОДРОБНЕЕ</a>
-										</div>
-									</div>
-									<div class="card">
-										<div class="card-logo">
-											<img src="../img/battery-catalog/optima-2.jpg" alt="Optima"/>
-										</div>
-										<div class="card-body">
-											<div class="card-title">Гелиевые АКБ OPTIMA</div>
-											<div class="card-text">
-												Производство: США/Мексика
-											</div>
-											<a href="#" class="more button-black">ПОДРОБНЕЕ</a>
-										</div>
-									</div>
-									<div class="card">
-										<div class="card-logo">
-											<img src="../img/battery-catalog/assembly.jpg" alt="Сборка брендов"/>
-										</div>
-										<div class="card-body">
-											<div class="card-title">Оригинальные АКБ</div>
-											<div class="card-text">
-												
-											</div>
-											<a href="#" class="more button-black">ПОДРОБНЕЕ</a>
-										</div>
-									</div>
-								</div>
-								<div class="content-info">
-									<div class="content-text">
-										На сайте PROauto59.ru вы можете купить автомобильные аккумуляторы в Перми, от иностранных и российских производителей. В каталоге продукция из 13 брендов с постоянным пополнением. Заказы принимаются по телефону и в режиме онлайн. Не нашли в каталоге? Звоните нам +7 (342) 279-36-13, подберём для вас.
-										<br><br>
-										Доставку не осуществляем.
-										<br><br>
-										Аккумулятор – запускает двигатель автотранспорта и служит источником электроэнергии в системе без генератора. Обеспечивает увеличение напряжения в сети во время работы двигателя и электрогенератора. Необходимо знать, что запуск двигателя без исправного источника электричества (аккумуляторной батареи) и рабочего стартера – невозможен.
-										<br><br>
-										Если у вас возникла необходимость в смене батареи и вы затрудняетесь, где купить аккумулятор в Перми, сначала обратите свое внимание на Пермский магазин «Pro auto». Мы работаем более 20 лет и за это время зарекомендовали себя как достойная компания розничной продажи в Пермском крае. 
-										С 1998 года фирма занимается продажей аккумуляторов для легковых автомобилей.
-										<br><br>
-										С нашей фирмой сотрудничают сервисные центры по обслуживанию, поэтому все наши батареи тщательно проверяются специалистами перед продажей и имеют гарантийное и постгарантийное обслуживание.
-										<br><br>
-										За долгие годы работы в розничных продажах мы стали профессионалами, и с уверенностью можем сказать, что способны обслужить любые легковые аккумуляторные батареи.
-										<br><br>
-										Наш сервис со специалистами и интернет-магазин с грамотными менеджерами всегда предоставляют:
-									</div>
-									<ul class="content-list">
-										<li class="content-list__item">
-											<img src="../img/battery-catalog/li.svg" alt="" class="content-list__marker">
-											<span>Надежные аккумуляторы</span>
-										</li>
-										<li class="content-list__item">
-											<img src="../img/battery-catalog/li.svg" alt="" class="content-list__marker">
-											<span>Широкий выбор источников питания</span>
-										</li>
-										<li class="content-list__item">
-											<img src="../img/battery-catalog/li.svg" alt="" class="content-list__marker">
-											<span>Выбор брендов автоаккумуляторов</span>
-										</li>
-										<li class="content-list__item">
-											<img src="../img/battery-catalog/li.svg" alt="" class="content-list__marker">
-											<span>Сервисное обслуживание</span>
-										</li>
-									</ul>
-									<div class="content-text">
-										Необходимо помнить, что <span>аккумулятор любой представленной марки и бренда может работать до 5 лет</span>, но при этом важно проверять уровень электролита, что бы не допустить его полного разряда и замерзания. Это можно сделать в нашем сервисном центре быстро и недорого. При соблюдении этих правил вы увеличите срок службы и сэкономите рубли.
-										<br><br>
-										<span>По всем вопросам продажи, обслуживания или гарантийного ремонта</span> вы всегда можете обратиться в наш сервисный центр в Перми.
-										<br><br>
-										Если вы испытываете затруднения с поиском аккумуляторной батареи для своего авто, звоните нам! Проконсультируем и дадим вам развёрнутую информацию, моможем разобраться с характеристиками и сделать правильный выбор.
-										<br><br>
-										<span>Мы рады каждому клиенту!</span>
-									</div>
+							<section class="battery-magnum content no--product">
+								<h1 class="no--product__title">В ДАННЫЙ МОМЕНТ ТОВАР ОТСУТСТВУЕТ</h1>
+								<div class="no--product-lins">
+									<a href="./battery-magnum.html" class="no--product__link return-link">ВЕРНУТЬСЯ</a>
+									<a href="#" class="no--product__link contact-link">ОБРАТИТЬСЯ К МЕНЕДЖЕРУ</a>
 								</div>
 							</section>
 						</div>
@@ -779,5 +565,7 @@
 	<script src="../js/scroll-buttons.js"></script>
 	<script src="../js/cart.js"></script>
 	<script src="../js/filter-parameters.js"></script>
+	<script src="../js/sort.js"></script>
+	<script src="../js/add-to-cart.js"></script>
 	</body>
 </html>
