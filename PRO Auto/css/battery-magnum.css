@@ -201,7 +201,6 @@ h3 {
 
 .buy-row {
   display: flex;
-  /* align-items: center; */
   justify-content: space-between;
   order: 7;
 }

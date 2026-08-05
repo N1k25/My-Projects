@@ -13,6 +13,7 @@
 		<link rel="stylesheet" href="../css/catalog.css"/>
 		<link rel="stylesheet" href="../css/battery-catalog.css"/>
 		<link rel="stylesheet" href="../css/battery-magnum.css"/>
+		<link rel="stylesheet" href="../css/battery-magnum-60Ah.css"/>
 		<!-- Кодировка страницы -->
 		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
 	</head>
@@ -239,7 +240,11 @@
 						<div class="bread-crumbs-arrow">
 							<img src="../img/catalog/next.svg" alt="">
 						</div>
-						<a href="#" class="bread-crumbs__link">MAGNUM - каталог АКБ от 60 до 230Ah</a>
+						<a href="./battery-magnum.html" class="bread-crumbs__link">MAGNUM - каталог АКБ от 60 до 230Ah</a>
+						<div class="bread-crumbs-arrow">
+							<img src="../img/catalog/next.svg" alt="">
+						</div>
+						<a href="#" class="bread-crumbs__link">MAGNUM 60Ah</a>
 					</div>
 				</div> 
 				<section class="battery-catalog">
@@ -261,12 +266,12 @@
 													<summary>АКБ MAGNUM</summary>
 
 													<div class="accordion-content">
-														<a href="#">MAGNUM 60Ah</a>
-														<a href="#">MAGNUM 75Ah</a>
-														<a href="#">MAGNUM 90Ah</a>
-														<a href="#">MAGNUM 132Ah</a>
-														<a href="#">MAGNUM 190Ah</a>
-														<a href="#">MAGNUM 230Ah</a>
+														<a href="./battery-magnum.html">MAGNUM 60Ah</a>
+														<a href="./battery-magnum-75Ah.html">MAGNUM 75Ah</a>
+														<a href="./battery-magnum-90Ah.html">MAGNUM 90Ah</a>
+														<a href="./battery-magnum-132Ah.html">MAGNUM 132Ah</a>
+														<a href="./battery-magnum-190Ah.html">MAGNUM 190Ah</a>
+														<a href="./battery-magnum-230Ah.html">MAGNUM 230Ah</a>
 													</div>
 												</details>
 												<details class="accordion nested">
@@ -442,62 +447,10 @@
 							</aside>
 							<!-- RIGHT CONTENT -->
 							<section class="battery-magnum content">
-								<div class="catalog-toolbar">
-									<div class="sort">
-										<span class="sort__label">СОРТИРОВАТЬ</span>
-										<div class="sort-buttons">
-											<button class="sort-btn active" data-sort="price" data-order="desc">
-												ПО ЦЕНЕ
-												<svg width="20" height="20" class="arrow" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M4 8L10 12L16 8" stroke="currentColor" stroke-width="4"/>
-												</svg>
-											</button>
-	
-											<button class="sort-btn" data-sort="popular" data-order="asc">
-												ПО ПОПУЛЯРНОСТИ
-												<svg width="20" height="20" class="arrow" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M4 8L10 12L16 8" stroke="currentColor" stroke-width="4"/>
-												</svg>
-											</button>
-	
-											<button class="sort-btn" data-sort="stock" data-order="asc">
-												ПО НАЛИЧИЮ
-												<svg width="20" height="20" class="arrow" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M4 8L10 12L16 8" stroke="currentColor" stroke-width="4"/>
-												</svg>
-											</button>
-										</div>
-									</div>
-									<div class="view">
-										<span class="view__label">ВИД:</span>
-										<div class="view-buttons">
-											<button class="view-btn active" data-view="grid">
-												<span></span>
-												<span></span>
-												<span></span>
-												<span></span>
-												<span></span>
-												<span></span>
-												<span></span>
-												<span></span>
-												<span></span>
-											</button>
-											<button class="view-btn" data-view="list">
-												<span></span>
-												<span></span>
-												<span></span>
-											</button>
-										</div>
-									</div>
-								</div>
-								<div class="product-cards">
-									<div class="card">
-										<div class="status"></div>
+								<div class="product-cards list">
+									<div class="card card-magnum60ah list">
 										<img src="../img/battery-magnum/battery-magnum-60ah.jpg" class="product-img"/>
-										<h3>MAGNUM 60Ah</h3>
-										<div class="old-price">2900 руб.</div>
-										<div class="price"><span class="price-value">2199</span> руб.</div>
-										<div class="descr">Цена действительна при сдаче старого аккумулятора аналогичной емкости в лом</div>
+										<div class="product-status">В НАЛИЧИИ</div>
 										<div class="characteristics">
 											<span>Емкость, Ач:</span> 60
 											<br>
@@ -513,6 +466,9 @@
 											<br>
 											<span>Bес, кг:</span> 14.5
 										</div>
+										<div class="price"><span class="price-value">2199</span> руб.</div>
+										<div class="old-price">2900 руб.</div>
+										<div class="descr">Цена действительна при сдаче старого аккумулятора аналогичной емкости в лом</div>
 										<div class="buy-row">
 											<div class="counter">
 												<button class="minus">-</button>
@@ -545,319 +501,7 @@
 												</button>
 											</div>
 										</div>
-										<a href="#" class="card--more button-white">ПОДРОБНЕЕ</a>
 									</div>
-									<div class="card available">
-										<div class="status available">В НАЛИЧИИ</div>
-										<img src="../img/battery-magnum/battery-magnum-60ah.jpg" class="product-img"/>
-										<h3>MAGNUM 60Ah</h3>
-										<div class="old-price">2900 руб.</div>
-										<div class="price"><span class="price-value">2199</span> руб.</div>
-										<div class="descr">Цена действительна при сдаче старого аккумулятора аналогичной емкости в лом</div>
-										<div class="characteristics">
-											<span>Емкость, Ач:</span> 60
-											<br>
-											<span>Пусковой ток, А:</span> 500
-											<br>
-											<span>Полярность:</span> Прямая/Обратная
-											<br>
-											<span>Клеммы:</span> Толстые
-											<br>
-											<span>Pазмеры (ДхШхВ), мм:</span> 242х175х190
-											<br>
-											<span>Производитель:</span> Magnum
-											<br>
-											<span>Bес, кг:</span> 14.5
-										</div>
-										<div class="buy-row">
-											<div class="counter">
-												<button class="minus">-</button>
-												<input type="text" value="1" />
-												<button class="plus">+</button>
-											</div>
-											<div class="in-cart">ТОВАР В КОРЗИНЕ</div>
-											<div class="in-cart-list__block">
-												<div class="in-cart-list">В КОРЗИНУ</div>
-												<button class="cart-btn product-to-cart" aria-label="Добавить в корзину">
-													<svg width="21" height="20" class="cart--add-icon" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-														<path d="M20 1L17.1035 11H4" stroke="currentColor" stroke-width="2"/>
-														<path d="M5 0L5 11.6667" stroke="currentColor" stroke-width="2"/>
-														<path d="M5 1L0 1" stroke="currentColor" stroke-width="2"/>
-														<circle cx="14.4002" cy="16.8" r="2.2" stroke="currentColor" stroke-width="2"/>
-														<circle cx="7.2" cy="16.8" r="2.2" stroke="currentColor" stroke-width="2"/>
-														<path d="M9 3L15 3" stroke="currentColor" stroke-width="2"/>
-														<path d="M12 6V-1.78814e-07" stroke="currentColor" stroke-width="2"/>
-													</svg>
-													<svg width="44" height="44" class="cart--full-icon" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-														<rect x="2" y="2" width="40" height="40" fill="#C53720"/>
-														<rect x="2" y="2" width="40" height="40" stroke="#C53720" stroke-width="4"/>
-														<path d="M32 13L29.1035 23H16" stroke="white" stroke-width="2"/>
-														<path d="M17 12L17 23.6667" stroke="white" stroke-width="2"/>
-														<path d="M17 13L12 13" stroke="white" stroke-width="2"/>
-														<circle cx="26.4002" cy="28.8" r="2.2" stroke="white" stroke-width="2"/>
-														<circle cx="19.2" cy="28.8" r="2.2" stroke="white" stroke-width="2"/>
-														<path d="M21 14L23.2286 16L27 12" stroke="white" stroke-width="2"/>
-													</svg>
-												</button>
-											</div>
-										</div>
-										<a href="./battery-magnum-60Ah.html" class="card--more button-white">ПОДРОБНЕЕ</a>
-									</div>
-									<div class="card order">
-										<div class="status order">ПОД ЗАКАЗ</div>
-										<img src="../img/battery-magnum/battery-magnum-60ah.jpg" class="product-img"/>
-										<h3>MAGNUM 60Ah</h3>
-										<div class="old-price">2900 руб.</div>
-										<div class="price"><span class="price-value">2199</span> руб.</div>
-										<div class="descr">Цена действительна при сдаче старого аккумулятора аналогичной емкости в лом</div>
-										<div class="characteristics">
-											<span>Емкость, Ач:</span> 60
-											<br>
-											<span>Пусковой ток, А:</span> 500
-											<br>
-											<span>Полярность:</span> Прямая/Обратная
-											<br>
-											<span>Клеммы:</span> Толстые
-											<br>
-											<span>Pазмеры (ДхШхВ), мм:</span> 242х175х190
-											<br>
-											<span>Производитель:</span> Magnum
-											<br>
-											<span>Bес, кг:</span> 14.5
-										</div>
-										<div class="buy-row">
-											<div class="counter">
-												<button class="minus">-</button>
-												<input type="text" value="1" />
-												<button class="plus">+</button>
-											</div>
-											<div class="in-cart">ТОВАР В КОРЗИНЕ</div>
-											<div class="in-cart-list__block">
-												<div class="in-cart-list">В КОРЗИНУ</div>
-												<button class="cart-btn product-to-cart" aria-label="Добавить в корзину">
-													<svg width="21" height="20" class="cart--add-icon" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-														<path d="M20 1L17.1035 11H4" stroke="currentColor" stroke-width="2"/>
-														<path d="M5 0L5 11.6667" stroke="currentColor" stroke-width="2"/>
-														<path d="M5 1L0 1" stroke="currentColor" stroke-width="2"/>
-														<circle cx="14.4002" cy="16.8" r="2.2" stroke="currentColor" stroke-width="2"/>
-														<circle cx="7.2" cy="16.8" r="2.2" stroke="currentColor" stroke-width="2"/>
-														<path d="M9 3L15 3" stroke="currentColor" stroke-width="2"/>
-														<path d="M12 6V-1.78814e-07" stroke="currentColor" stroke-width="2"/>
-													</svg>
-													<svg width="44" height="44" class="cart--full-icon" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-														<rect x="2" y="2" width="40" height="40" fill="#C53720"/>
-														<rect x="2" y="2" width="40" height="40" stroke="#C53720" stroke-width="4"/>
-														<path d="M32 13L29.1035 23H16" stroke="white" stroke-width="2"/>
-														<path d="M17 12L17 23.6667" stroke="white" stroke-width="2"/>
-														<path d="M17 13L12 13" stroke="white" stroke-width="2"/>
-														<circle cx="26.4002" cy="28.8" r="2.2" stroke="white" stroke-width="2"/>
-														<circle cx="19.2" cy="28.8" r="2.2" stroke="white" stroke-width="2"/>
-														<path d="M21 14L23.2286 16L27 12" stroke="white" stroke-width="2"/>
-													</svg>
-												</button>
-											</div>
-										</div>
-										<a href="#" class="card--more button-white">ПОДРОБНЕЕ</a>
-									</div>
-									<div class="card">
-										<div class="status"></div>
-										<img src="../img/battery-magnum/battery-magnum-60ah.jpg" class="product-img"/>
-										<h3>MAGNUM 60Ah</h3>
-										<div class="old-price">2900 руб.</div>
-										<div class="price"><span class="price-value">2199</span> руб.</div>
-										<div class="descr">Цена действительна при сдаче старого аккумулятора аналогичной емкости в лом</div>
-										<div class="characteristics">
-											<span>Емкость, Ач:</span> 60
-											<br>
-											<span>Пусковой ток, А:</span> 500
-											<br>
-											<span>Полярность:</span> Прямая/Обратная
-											<br>
-											<span>Клеммы:</span> Толстые
-											<br>
-											<span>Pазмеры (ДхШхВ), мм:</span> 242х175х190
-											<br>
-											<span>Производитель:</span> Magnum
-											<br>
-											<span>Bес, кг:</span> 14.5
-										</div>
-										<div class="buy-row">
-											<div class="counter">
-												<button class="minus">-</button>
-												<input type="text" value="1" />
-												<button class="plus">+</button>
-											</div>
-											<div class="in-cart">ТОВАР В КОРЗИНЕ</div>
-											<div class="in-cart-list__block">
-												<div class="in-cart-list">В КОРЗИНУ</div>
-												<button class="cart-btn product-to-cart" onclick="addToCart('MAGNUM 60Ah', 2199)" aria-label="Добавить в корзину">
-													<svg width="21" height="20" class="cart--add-icon" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-														<path d="M20 1L17.1035 11H4" stroke="currentColor" stroke-width="2"/>
-														<path d="M5 0L5 11.6667" stroke="currentColor" stroke-width="2"/>
-														<path d="M5 1L0 1" stroke="currentColor" stroke-width="2"/>
-														<circle cx="14.4002" cy="16.8" r="2.2" stroke="currentColor" stroke-width="2"/>
-														<circle cx="7.2" cy="16.8" r="2.2" stroke="currentColor" stroke-width="2"/>
-														<path d="M9 3L15 3" stroke="currentColor" stroke-width="2"/>
-														<path d="M12 6V-1.78814e-07" stroke="currentColor" stroke-width="2"/>
-													</svg>
-													<svg width="44" height="44" class="cart--full-icon" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-														<rect x="2" y="2" width="40" height="40" fill="#C53720"/>
-														<rect x="2" y="2" width="40" height="40" stroke="#C53720" stroke-width="4"/>
-														<path d="M32 13L29.1035 23H16" stroke="white" stroke-width="2"/>
-														<path d="M17 12L17 23.6667" stroke="white" stroke-width="2"/>
-														<path d="M17 13L12 13" stroke="white" stroke-width="2"/>
-														<circle cx="26.4002" cy="28.8" r="2.2" stroke="white" stroke-width="2"/>
-														<circle cx="19.2" cy="28.8" r="2.2" stroke="white" stroke-width="2"/>
-														<path d="M21 14L23.2286 16L27 12" stroke="white" stroke-width="2"/>
-													</svg>
-												</button>
-											</div>
-										</div>
-										<a href="#" class="card--more button-white">ПОДРОБНЕЕ</a>
-									</div>
-									<div class="card available">
-										<div class="status available">В НАЛИЧИИ</div>
-										<img src="../img/battery-magnum/battery-magnum-60ah.jpg" class="product-img"/>
-										<h3>MAGNUM 60Ah</h3>
-										<div class="old-price">2900 руб.</div>
-										<div class="price"><span class="price-value">2199</span> руб.</div>
-										<div class="descr">Цена действительна при сдаче старого аккумулятора аналогичной емкости в лом</div>
-										<div class="characteristics">
-											<span>Емкость, Ач:</span> 60
-											<br>
-											<span>Пусковой ток, А:</span> 500
-											<br>
-											<span>Полярность:</span> Прямая/Обратная
-											<br>
-											<span>Клеммы:</span> Толстые
-											<br>
-											<span>Pазмеры (ДхШхВ), мм:</span> 242х175х190
-											<br>
-											<span>Производитель:</span> Magnum
-											<br>
-											<span>Bес, кг:</span> 14.5
-										</div>
-										<div class="buy-row">
-											<div class="counter">
-												<button class="minus">-</button>
-												<input type="text" value="1" />
-												<button class="plus">+</button>
-											</div>
-											<div class="in-cart">ТОВАР В КОРЗИНЕ</div>
-											<div class="in-cart-list__block">
-												<div class="in-cart-list">В КОРЗИНУ</div>
-												<button class="cart-btn product-to-cart" onclick="addToCart('MAGNUM 60Ah', 2199)" aria-label="Добавить в корзину">
-													<svg width="21" height="20" class="cart--add-icon" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-														<path d="M20 1L17.1035 11H4" stroke="currentColor" stroke-width="2"/>
-														<path d="M5 0L5 11.6667" stroke="currentColor" stroke-width="2"/>
-														<path d="M5 1L0 1" stroke="currentColor" stroke-width="2"/>
-														<circle cx="14.4002" cy="16.8" r="2.2" stroke="currentColor" stroke-width="2"/>
-														<circle cx="7.2" cy="16.8" r="2.2" stroke="currentColor" stroke-width="2"/>
-														<path d="M9 3L15 3" stroke="currentColor" stroke-width="2"/>
-														<path d="M12 6V-1.78814e-07" stroke="currentColor" stroke-width="2"/>
-													</svg>
-													<svg width="44" height="44" class="cart--full-icon" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-														<rect x="2" y="2" width="40" height="40" fill="#C53720"/>
-														<rect x="2" y="2" width="40" height="40" stroke="#C53720" stroke-width="4"/>
-														<path d="M32 13L29.1035 23H16" stroke="white" stroke-width="2"/>
-														<path d="M17 12L17 23.6667" stroke="white" stroke-width="2"/>
-														<path d="M17 13L12 13" stroke="white" stroke-width="2"/>
-														<circle cx="26.4002" cy="28.8" r="2.2" stroke="white" stroke-width="2"/>
-														<circle cx="19.2" cy="28.8" r="2.2" stroke="white" stroke-width="2"/>
-														<path d="M21 14L23.2286 16L27 12" stroke="white" stroke-width="2"/>
-													</svg>
-												</button>
-											</div>
-										</div>
-										<a href="./battery-magnum-60Ah.html" class="card--more button-white">ПОДРОБНЕЕ</a>
-									</div>
-									<div class="card order">
-										<div class="status order">ПОД ЗАКАЗ</div>
-										<img src="../img/battery-magnum/battery-magnum-60ah.jpg" class="product-img"/>
-										<h3>MAGNUM 60Ah</h3>
-										<div class="old-price">2900 руб.</div>
-										<div class="price"><span class="price-value">2199</span> руб.</div>
-										<div class="descr">Цена действительна при сдаче старого аккумулятора аналогичной емкости в лом</div>
-										<div class="characteristics">
-											<span>Емкость, Ач:</span> 60
-											<br>
-											<span>Пусковой ток, А:</span> 500
-											<br>
-											<span>Полярность:</span> Прямая/Обратная
-											<br>
-											<span>Клеммы:</span> Толстые
-											<br>
-											<span>Pазмеры (ДхШхВ), мм:</span> 242х175х190
-											<br>
-											<span>Производитель:</span> Magnum
-											<br>
-											<span>Bес, кг:</span> 14.5
-										</div>
-										<div class="buy-row">
-											<div class="counter">
-												<button class="minus">-</button>
-												<input type="text" value="1" />
-												<button class="plus">+</button>
-											</div>
-											<div class="in-cart">ТОВАР В КОРЗИНЕ</div>
-											<div class="in-cart-list__block">
-												<div class="in-cart-list">В КОРЗИНУ</div>
-												<button class="cart-btn product-to-cart" onclick="addToCart('MAGNUM 60Ah', 2199)" aria-label="Добавить в корзину">
-													<svg width="21" height="20" class="cart--add-icon" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-														<path d="M20 1L17.1035 11H4" stroke="currentColor" stroke-width="2"/>
-														<path d="M5 0L5 11.6667" stroke="currentColor" stroke-width="2"/>
-														<path d="M5 1L0 1" stroke="currentColor" stroke-width="2"/>
-														<circle cx="14.4002" cy="16.8" r="2.2" stroke="currentColor" stroke-width="2"/>
-														<circle cx="7.2" cy="16.8" r="2.2" stroke="currentColor" stroke-width="2"/>
-														<path d="M9 3L15 3" stroke="currentColor" stroke-width="2"/>
-														<path d="M12 6V-1.78814e-07" stroke="currentColor" stroke-width="2"/>
-													</svg>
-													<svg width="44" height="44" class="cart--full-icon" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-														<rect x="2" y="2" width="40" height="40" fill="#C53720"/>
-														<rect x="2" y="2" width="40" height="40" stroke="#C53720" stroke-width="4"/>
-														<path d="M32 13L29.1035 23H16" stroke="white" stroke-width="2"/>
-														<path d="M17 12L17 23.6667" stroke="white" stroke-width="2"/>
-														<path d="M17 13L12 13" stroke="white" stroke-width="2"/>
-														<circle cx="26.4002" cy="28.8" r="2.2" stroke="white" stroke-width="2"/>
-														<circle cx="19.2" cy="28.8" r="2.2" stroke="white" stroke-width="2"/>
-														<path d="M21 14L23.2286 16L27 12" stroke="white" stroke-width="2"/>
-													</svg>
-												</button>
-											</div>
-										</div>
-										<a href="#" class="card--more button-white">ПОДРОБНЕЕ</a>
-									</div>
-								</div>
-								<div class="content-info">
-									<div class="content-text">Аккумуляторы Magnum сконструированы именно так, чтобы обеспечить мощность и надежность. Они производятся из импортных компонентов на современном оборудовании. Батареи Магнум изготавливаются по технологии Ca/Ca, что способствует снижению расхода воды и саморазряда.</div>
-									<h3 class="content-title">Преимущества аккумуляторной батареи Магнум</h3>
-									<ul class="magnum-content-list">
-										<li class="content-list__item">
-											<img src="../img/battery-magnum/tag.svg" alt="" class="content-list__marker">
-											<span>Отличное сочетание цены и качества</span>
-										</li>
-										<li class="content-list__item">
-											<img src="../img/battery-magnum/clock.svg" alt="" class="content-list__marker">
-											<span>Продолжительный срок службы</span>
-										</li>
-										<li class="content-list__item">
-											<img src="../img/battery-magnum/energy.svg" alt="" class="content-list__marker">
-											<span>Оптимальная емкость и пусковой ток</span>
-										</li>
-										<li class="content-list__item">
-											<img src="../img/battery-magnum/car.svg" alt="" class="content-list__marker">
-											<span>Для стандартной комплектациии авто</span>
-										</li>
-										<li class="content-list__item">
-											<img src="../img/battery-magnum/star.svg" alt="" class="content-list__marker">
-											<span>Высокое качество по невысокой цене</span>
-										</li>
-										<li class="content-list__item">
-											<img src="../img/battery-magnum/battery.svg" alt="" class="content-list__marker">
-											<span>Отличается низким самозарядом</span>
-										</li>
-									</ul>
-									<div class="content-text">На производстве аккумуляторов Магнум после каждой технологической операции обязательно проводится промежуточный контроль качества на короткое замыкание и обрыв цепи, что минимизирует процент заводского брака. Весь технологический процесс находится под контролем специалистов завода и соответствует международным нормам и стандартам. Это обеспечивает выпуск батарей, полностью отвечающих требованиям автомобилей двадцать первого века.</div>
 								</div>
 							</section>
 						</div>

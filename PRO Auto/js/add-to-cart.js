@@ -56,13 +56,3 @@ document.querySelectorAll(".card").forEach((card) => {
   });
 });
 
-
-
-
-// document.querySelectorAll('.product-to-cart').forEach(button => {
-//     button.addEventListener('click', () => {
-//       if (button.classList.contains('active')) {
-//         addToCart('MAGNUM 60Ah', 2199);
-//       }
-//     });
-// });

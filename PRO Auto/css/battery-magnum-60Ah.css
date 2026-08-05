@@ -1,0 +1,53 @@
+.card-magnum60ah.list {
+    max-height: 532px;
+    padding: 40px;
+    columns: 2;
+    column-gap: 40px;
+
+    .product-img {
+        width: 358px;
+        height: 358px;
+        object-fit: contain;
+        margin-bottom: 75px;
+        order: 1;
+        transform: translateY(-25px);
+    }
+
+    .product-status {
+        font-weight: 700;
+        color: #3CC051;
+        order: 2;
+    }
+
+    .characteristics {
+        font-size: 16px;
+        margin-top: 24px;
+        order: 3;
+    }
+
+    .price {
+        font-size: 36px;
+        margin-top: 32px;
+        order: 4;
+    }
+
+    .old-price {
+        font-size: 24px;
+        margin-top: 4px;
+        order: 5;
+    }
+
+    .descr {
+        font-size: 14px;
+        margin-top: 20px;
+        margin-bottom: 0;
+        order: 6;
+    }
+
+    .buy-row {
+        flex-direction: row;
+        gap: 16px;
+        margin-top: 64px;
+        order: 7;
+    }
+}
