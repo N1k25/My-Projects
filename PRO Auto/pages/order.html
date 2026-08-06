@@ -12,7 +12,7 @@
 		<link rel="stylesheet" href="../css/style.css"/>
 		<link rel="stylesheet" href="../css/catalog.css"/>
 		<link rel="stylesheet" href="../css/cart.css"/>
-		<link rel="stylesheet" href="../css/order-null.css"/>
+		<link rel="stylesheet" href="../css/order.css"/>
 		<!-- Кодировка страницы -->
 		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
 	</head>
@@ -243,14 +243,73 @@
 						<div class="cart--order-header">
 							<h2 class="cart--order-title section-title">ОФОРМЛЕНИЕ ЗАКАЗА</h2>
 						</div>
-						<div class="cart--order-body order--null-card">
-							<div class="order--null-card__image-wrapper"></div>
-							<div class="order--null-card-content">
-								<h3 class="order--null-card__title">Ваша корзина пуста</h3>
-								<p class="order--null-card__text">Исправить это просто: выберите в каталоге интересующий товар и нажмите кнопку «В корзину»</p>
-								<a href="./catalog.html" class="order--null-card__link button-white">В КАТАЛОГ</a>
+						<section class="checkout">
+							<div class="checkout-wrapper">
+								<div class="checkout-form">
+									<h3>Получатель</h3>
+									<form id="orderForm" novalidate>
+										<div class="form-group">
+											<label>Имя:<span>*</span></label>
+											<div class="input-wrap">
+												<input type="text" id="client-name" name="client-name" />
+												<small class="order-error"></small>
+											</div>
+										</div>
+										<div class="form-group">
+											<label>Телефон:<span>*</span></label>
+											<div class="input-wrap">
+												<input type="tel" id="client-phone" name="client-phone" />
+												<small class="order-error"></small>
+											</div>
+										</div>
+										<div class="form-group">
+											<label>E-mail:<span>*</span></label>
+											<div class="input-wrap">
+												<input type="email" id="client-email" name="client-email" />
+												<small class="order-error"></small>
+											</div>
+										</div>
+										<label class="checkbox">
+											<input type="checkbox" id="client-agree" />
+											<span
+												>Я согласен на
+												<a href="#">обработку персональных данных</a>
+											</span>
+										</label>
+										<div class="buttons">
+											<a href="#" class="submit-btn button-white" id="submitOrder">
+												ОФОРМИТЬ ЗАКАЗ
+											</a>
+											<span class="required"> * Обязательное поле </span>
+										</div>
+									</form>
+								</div>
+								<aside class="order-box">
+									<div class="order-header">
+										<span>Ваш заказ</span>
+										<a href="./catalog.html" class="edit-btn"> ИЗМЕНИТЬ </a>
+									</div>
+									<div class="product">
+										<div>
+											<h4>MAGNUM 60Ah</h4>
+											<p>1 шт. x 2199 руб.</p>
+										</div>
+										<strong>2199 руб.</strong>
+									</div>
+									<div class="product">
+										<div>
+											<h4>MAGNUM 60Ah</h4>
+											<p>1 шт. x 2199 руб.</p>
+										</div>
+										<strong>2199 руб.</strong>
+									</div>
+									<div class="order--total">
+										<span>Итого</span>
+										<strong>4398 руб.</strong>
+									</div>
+								</aside>
 							</div>
-						</div>
+						</section>
 					</div>
 				</section>
 			</main>
@@ -365,5 +424,6 @@
 	<script src="../js/search-popover.js"></script>
 	<script src="../js/scroll-buttons.js"></script>
 	<script src="../js/cart.js"></script>
+	<script src="../js/order.js"></script>
 	</body>
 </html>
