@@ -1,0 +1,36 @@
+.order--null-card {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    padding: 48px 72px;
+}
+
+.order--null-card__image-wrapper {
+    width: 242px;
+    height: 242px;
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    background: url('../img/order/image.jpg');
+    background-repeat: no-repeat;
+    background-position: 90% center;
+    background-size: 190%;
+    filter: grayscale(100%);
+}
+
+.order--null-card-content {
+    color: #1D1D1D;
+}
+
+.order--null-card__title {
+    font-size: 24px;
+}
+
+.order--null-card__text {
+    font-size: 16px;
+    margin-top: 48px;
+}
+
+.order--null-card__link {
+    display: inline-block;
+    margin-top: 60px;
+}
