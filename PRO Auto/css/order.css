@@ -76,6 +76,29 @@
   font-size: 16px;
 }
 
+.checkbox input {
+  display: none;
+}
+
+.checkbox__box {
+  width: 36px;
+  height: 36px;
+  border: 4px solid #1D1D1D;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.checkbox input:checked + .checkbox__box::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-color: #C53720;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .checkbox a {
   color: #C53720;
 }
