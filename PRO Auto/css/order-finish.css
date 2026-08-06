@@ -1,0 +1,26 @@
+.order--finish-card {
+    border-color: #3CC051;
+}
+
+.order--finish-card__image-wrapper {
+    background: url('../img/order/style-stil-girl.png'), #3CC051;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: grayscale(0);
+}
+
+.order--finish-card-links {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.order--finish-card-link-black {
+    border-color: #1D1D1D;
+    color: #1D1D1D;
+
+    &:hover {
+        background-color: #1D1D1D;
+    }
+}
