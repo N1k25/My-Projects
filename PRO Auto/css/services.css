@@ -1,0 +1,13 @@
+.services__hero {
+    background-image: linear-gradient(to right, #000000, #00000080, #00000000),
+                      url('../img/services/engine-service.jpg');
+}
+
+.services__body {
+    justify-content: space-between;
+}
+
+.services__card {
+    width: 545px;
+    height: 400px;
+}

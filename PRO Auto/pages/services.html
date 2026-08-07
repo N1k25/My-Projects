@@ -10,7 +10,8 @@
 		<link rel="icon" type="image/png" href="../img/favicon.png"/>
 		<!-- Подключаем CSS -->
 		<link rel="stylesheet" href="../css/style.css"/>
-		<link rel="stylesheet" href="../css/page-404.css"/>
+		<link rel="stylesheet" href="../css/catalog.css"/>
+		<link rel="stylesheet" href="../css/services.css"/>
 		<!-- Кодировка страницы -->
 		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
 	</head>
@@ -73,7 +74,7 @@
 								</ul>
 							</li>
 							<li class="has-submenu has-submenu-level-1">
-								<a href="./services.html">УСЛУГИ</a>
+								<a href="#">УСЛУГИ</a>
 								<ul class="submenu level-2">
 									<li>
 										<a href="#">ДИАГНОСТИКА АККУМУЛЯТОРА</a>
@@ -211,12 +212,52 @@
 				</div>
 			</header>
 			<main class="page">
-				<section class="hero404">
-					<div class="hero404-container container">
-						<img src="../img/page-404/404.png" alt="Изображение ошибки 404" class="hero404-img">
-						<h1 class="hero404-title">СТРАНИЦА НЕ НАЙДЕНА</h1>
-						<p class="hero404-text">Извините, но такой страницы нет на нашем сайте. Возможно вы ввели неправильный адрес.</p>
-						<a href="../index.html" class="hero404-link button-black">ПЕРЕЙТИ НА ГЛАВНУЮ</a>
+				<section class="hero services__hero">
+					<div class="hero-container container">
+						<h1 class="hero-title">ПРОФЕССИОНАЛЬНАЯ ПОМОЩЬ ВАШЕМУ АВТОМОБИЛЮ</h1>
+						<a href="./catalog.html" class="hero-link button-black">ПЕРЕЙТИ В КАТАЛОГ</a>
+					</div>
+					<div class="hero-pagination">
+						<div class="hero-pagination-line pagination-red-line"></div>
+						<div class="hero-pagination-line"></div>
+						<div class="hero-pagination-line"></div>
+						<div class="hero-pagination-line"></div>
+					</div>
+				</section>
+				<div class="bread-crumbs">
+					<div class="bread-crumbs-container container">
+						<a href="../index.html" class="bread-crumbs__link start-page">Главная</a>
+						<div class="bread-crumbs-arrow">
+							<img src="../img/catalog/next.svg" alt="">
+						</div>
+						<a href="#" class="bread-crumbs__link">УСЛУГИ</a>
+					</div>
+				</div> 
+				<section class="products">
+					<img src="../img/products/avtomobilnij_eksterer.jpg" alt="Фон секции" class="products-bkg">
+					<div class="products-container container">
+						<div class="products-header">
+							<div class="catalog-title-wrapper section-title-wrapper">
+								<h2 class="products-title section-title">услуги</h2>
+							</div>
+							<p class="products-header-text">Менеджеры компании с радостью ответят на ваши вопросы и помогут с выбором продукции.</p>
+						</div>
+						<div class="products-body services__body">
+							<div class="products-card services__card">
+								<img src="../img/services/battery-diagnostics.jpg" alt="Фон карточки" class="product-card-bkg">
+								<div class="product-card-content">
+									<h3 class="product-card-title">ДИАГНОСТИКА АККУМУЛЯТОРА</h3>
+									<a href="#" class="product-card-link button-black">ПОДРОБНЕЕ</a>
+								</div>
+							</div>
+							<div class="products-card services__card">
+								<img src="../img/services/acceptance-battery.jpg" alt="Фон карточки" class="product-card-bkg">
+								<div class="product-card-content">
+									<h3 class="product-card-title">ПРИЕМ АККУМУЛЯТОРОВ</h3>
+									<a href="#" class="product-card-link button-black">ПОДРОБНЕЕ</a>
+								</div>
+							</div>
+						</div>
 					</div>
 				</section>
 			</main>
