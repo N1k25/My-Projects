@@ -22,6 +22,23 @@ askPhoneInput.addEventListener("input", function () {
 });
 
 
+// Валидация email-поля
+const askEmailInput = document.querySelector('#askEmail');
+
+askEmailInput.addEventListener('blur', () => {
+  const askEmail = askForm.askEmail;
+  const email = askEmailInput.value.trim();
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  if (!emailRegex.test(email)) {
+    showError(askEmail, "Введите корректный email");
+  } else {
+    askEmail.classList.remove("invalid");
+    askEmail.parentElement.querySelector(".error").textContent = '';
+  }
+});
+
+
 // Очищать все поля формы при нажатии на кнопку "X"
 const askCloseButton = document.getElementById("askCloseBtn");
 
