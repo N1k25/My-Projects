@@ -1,0 +1,780 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+	<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Заголовок страницы в браузере -->
+		<title>PRO Auto</title>
+		<link rel="icon" type="image/png" href="../img/favicon.png"/>
+		<!-- Подключаем CSS -->
+		<link rel="stylesheet" href="../css/style.css"/>
+		<link rel="stylesheet" href="../css/catalog.css"/>
+		<!-- <link rel="stylesheet" href="../css/services.css"/> -->
+		<link rel="stylesheet" href="../css/about.css"/>
+		<!-- Кодировка страницы -->
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	</head>
+	<!-- Отображаемое тело страницы -->
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="header-container container">
+					<img src="../img/header/logo.png" alt="Логотип компании" class="logo">
+					<nav class="menu">
+						<ul class="menu-level-1">
+							<li class="has-submenu has-submenu-level-1">
+								<a href="#">КОМПАНИЯ</a>
+								<ul class="submenu level-2">
+									<li>
+										<a href="#about-section">О КОМПАНИИ</a>
+									</li>
+									<li>
+										<a href="#licenses">ЛИЦЕНЗИИ</a>
+									</li>
+									<li>
+										<a href="#partners-section">ПАРТНЕРЫ</a>
+									</li>
+									<li>
+										<a href="#reviews">ОТЗЫВЫ КЛИЕНТОВ</a>
+									</li>
+								</ul>
+							</li>
+							<li class="has-submenu has-submenu-level-1">
+								<a href="./catalog.html">КАТАЛОГ</a>
+								<ul class="submenu level-2">
+									<li class="has-submenu">
+										<a href="battery-catalog.html">АККУМУЛЯТОРЫ</a>
+										<ul class="submenu level-3">
+											<li><a href="./battery-magnum.html">АКБ MAGNUM</a></li>
+											<li><a href="#">АКБ ЗВЕРЬ</a></li>
+											<li><a href="#">ТЮМЕНСКИЙ АККУМУЛЯТОРНЫЙ ЗАВОД</a></li>
+											<li><a href="#">АКБ AKOM</a></li>
+											<li><a href="#">АКБ BARS</a></li>
+											<li><a href="#">АКБ ТЮМЕНСКИЙ МЕДВЕДЬ</a></li>
+											<li><a href="#">АКБ ENRUN</a></li>
+											<li><a href="#">АКБ UNIX (WESTA)</a></li>
+											<li><a href="#">АКБ EDCON</a></li>
+											<li><a href="#">АКБ AFA</a></li>
+											<li><a href="#">АКБ BOSCH</a></li>
+											<li><a href="#">АКБ MUTLU</a></li>
+											<li><a href="#">ОРИГИНАЛЬНЫЕ АКБ</a></li>
+											<li><a href="#">ГЕЛИЕВЫЕ АКБ OPTIMA</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">АВТОМАСЛА</a>
+									</li>
+									<li>
+										<a href="#">АКСЕССУАРЫ</a>
+									</li>
+									<li>
+										<a href="#">АВТОХИМИЯ</a>
+									</li>
+								</ul>
+							</li>
+							<li class="has-submenu has-submenu-level-1">
+								<a href="./services.html">УСЛУГИ</a>
+								<ul class="submenu level-2">
+									<li>
+										<a href="./battery-service.html#battery-diagnostic">ДИАГНОСТИКА АККУМУЛЯТОРА</a>
+									</li>
+									<li>
+										<a href="./battery-service.html#battery-reception">ПРИЕМ АККУМУЛЯТОРОВ</a>
+									</li>
+								</ul>
+							</li>
+							<li class="has-submenu has-submenu-level-1">
+								<a href="#">ИНФОРМАЦИЯ</a>
+								<ul class="submenu level-2">
+									<li>
+										<a href="#">НОВОСТИ</a>
+									</li>
+									<li>
+										<a href="#">F.A.Q.</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">КОНТАКТЫ</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="callback-popover" id="callback-success-popover" popover>
+						<button class="callback-popover__close" id="closeBtn" popovertarget="callback-success-popover" popovertargetaction="hide">
+							<img src="../img/header/close.svg" alt="Иконка закрытия окна">
+						</button>
+
+						<div class="callback-popover__header">
+							<div class="callback-popover__icon">
+								<img src="../img/header/call.svg" alt="Иконка телефонной трубки">
+							</div>
+
+							<div class="callback-popover__title">
+								<h3>ОБРАТНЫЙ ЗВОНОК</h3>
+								<p>Представьтесь, мы вам перезвоним.</p>
+							</div>
+						</div>
+
+						<div class="callback-popover__body">
+							<img src="../img/header/success.png" alt="" class="popover-succes-img">
+							<h2 class="callback-succ-popover-title">ВАШЕ ПИСЬМО УСПЕШНО ОТПРАВЛЕНО!</h2>
+						</div>
+					</div>
+					<div class="callback-popover" id="callback-popover" popover>
+						<button class="callback-popover__close" id="closeBtn" popovertarget="callback-popover" popovertargetaction="hide">
+							<img src="../img/header/close.svg" alt="Иконка закрытия окна">
+						</button>
+
+						<div class="callback-popover__header">
+							<div class="callback-popover__icon">
+								<img src="../img/header/call.svg" alt="Иконка телефонной трубки">
+							</div>
+
+							<div class="callback-popover__title">
+								<h3>ОБРАТНЫЙ ЗВОНОК</h3>
+								<p>Представьтесь, мы вам перезвоним.</p>
+							</div>
+						</div>
+
+						<form class="callback-form" id="callbackForm" novalidate>
+							<label>
+								Ваше имя:<span>*</span>
+								<input type="text" name="name" />
+								<small class="error"></small>
+							</label>
+
+							<label>
+								Телефон:<span>*</span>
+								<input type="tel" name="phone" id="phone" />
+								<small class="error"></small>
+							</label>
+
+							<label class="callback-checkbox">
+								<input type="checkbox" id="agree" />
+
+								<span class="callback-checkbox__box"></span>
+
+								<span class="callback-checkbox__text">
+									Я согласен на
+									<a href="#">обработку персональных данных</a>
+								</span>
+							</label>
+							<small class="error checkbox-error"></small>
+
+							<div class="callback-form__footer">
+								<span class="callback-form__required"> * Обязательное поле </span>
+
+								<!-- <button type="button" id="submitBtn" popovertarget="callback-popover" popovertargetaction="hide">ОТПРАВИТЬ</button> -->
+								<button type="submit" class="callback-form-submit--btn button-white" id="submitBtn">ОТПРАВИТЬ</button>
+							</div>
+						</form>
+					</div>
+					<button class="order--call-btn button-black" popovertarget="callback-popover">ЗАКАЗАТЬ ЗВОНОК</button>  
+					<div class="service-buttons">
+						<div class="search-popover" id="search-popover" popover>
+							<div class="search-popover-container container">
+								<input type="text" class="search-popover-input">
+								<button class="search-popover-btn button-black">НАЙТИ</button>
+								<button class="search-popover__close" id="searchCloseBtn" popovertarget="search-popover" popovertargetaction="hide">
+									<img src="../img/header/close-gray.svg" alt="Иконка закрытия окна">
+								</button>
+								<ul id="searchResults"></ul>
+							</div>
+						</div>
+						<button class="service-button button-search--btn" popovertarget="search-popover">
+							<img src="../img/header/search.svg" alt="Иконка кнопки поиска" class="button-icon">
+						</button>
+						<button class="service-button button-cart--btn" id="cartBtn">
+							<!-- <img src="./img/header/cart.svg" alt="Иконка кнопки корзины" class="button-icon"> -->
+							<svg width="40" height="40" class="cart-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M33.3594 11L29.9844 23H14V11H33.3594Z" stroke="currentColor" stroke-width="4"/>
+								<path d="M14 4L14 24.5" stroke="currentColor" stroke-width="4"/>
+								<path d="M14 6H4" stroke="currentColor" stroke-width="4"/>
+								<circle cx="17" cy="31" r="3" stroke="currentColor" stroke-width="4"/>
+								<circle cx="28" cy="31" r="3" stroke="currentColor" stroke-width="4"/>
+							</svg>
+							<span class="cart-count" id="cartCount">0</span>
+						</button>
+						<div class="cart-popup" id="cartPopup">
+							<div id="cartItems"></div>								
+							<div class="total">
+								<p class="total-info">
+									ИТОГ:
+								</p>
+								<div class="total-content">
+									<span id="totalPrice">0 грн.</span>
+									<a href="./cart.html" class="total-link button-white">ПЕРЕЙТИ В КОРЗИНУ</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<main class="page">
+				<section class="hero about__hero">
+					<div class="hero-container container">
+						<h1 class="hero-title">КОМАНДА ВЫСОКОКЛАССНЫХ СПЕЦИАЛИСТОВ</h1>
+						<a href="./catalog.html" class="hero-link button-black">ПЕРЕЙТИ В КАТАЛОГ</a>
+					</div>
+					<div class="hero-pagination">
+						<div class="hero-pagination-line pagination-red-line"></div>
+						<div class="hero-pagination-line"></div>
+						<div class="hero-pagination-line"></div>
+						<div class="hero-pagination-line"></div>
+					</div>
+				</section>
+				<div class="bread-crumbs">
+					<div class="bread-crumbs-container container">
+						<a href="../index.html" class="bread-crumbs__link start-page">Главная</a>
+						<div class="bread-crumbs-arrow">
+							<img src="../img/catalog/next.svg" alt="">
+						</div>
+						<a href="#" class="bread-crumbs__link">О КОМПАНИИ</a>
+					</div>
+				</div> 
+				<section class="about-section about" id="about-section">
+					<div class="about-section__container about-container container">
+						<div class="about-header">
+							<div class="about-title-wrapper section-title-wrapper">
+								<h2 class="about-title section-title">о компании</h2>
+							</div>
+						</div>
+						<div class="about-section-body">
+							<div class="about-section-text__wrapper">
+								<div class="about-section-text">
+									Мы рады приветствовать вас на нашем сайте.
+									<br><br>
+									Компания «PROавто» - это надежные, качественные аккумуляторы в широком ассортименте, разнообразные в по форме и характеристикам, а также качественные масла и автохимия именитых брендов.
+									<br><br>
+									Сеть магазинов «PROавто» более 20-и лет занимается продажей автомобильных аккумуляторов, масел, расходных материалов, химией и аксессуаров. Мы зарекомендовали себя как надежная компания, специалисты которой всегда готовы проконсультировать по любому вопросу: от подбора автощёток, до рекомендаций по подбору аккумулятора для Вашего автомобиля. Мы дорожим своей репутацией и даём гарантию на весь ассортимент продукции, представленной на нашем сайте!
+									<br><br>
+									Убедитесь в этом сами!
+								</div>
+							</div>
+							<div class="about-section-buttons">
+								<div class="callback-popover" id="ask-success-popover" popover>
+									<button class="callback-popover__close" id="askCloseBtn" popovertarget="ask-success-popover" popovertargetaction="hide">
+										<img src="../img/header/close.svg" alt="Иконка закрытия окна">
+									</button>
+									<div class="callback-popover__header">
+										<div class="callback-popover__icon">
+											<img src="../img/header/call.svg" alt="Иконка телефонной трубки">
+										</div>
+										<div class="ask-popover__title callback-popover__title">
+											<h3>ЗАдать вопрос</h3>
+											<p>Менеджеры компании с радостью ответят на ваши вопросы и помогут с выбором продукции.</p>
+										</div>
+									</div>
+									<div class="callback-popover__body ask-success-popover__body">
+										<img src="../img/header/success.png" alt="" class="ask-succes-img">
+										<h2 class="callback-succ-popover-title">ВАШЕ ПИСЬМО УСПЕШНО ОТПРАВЛЕНО!</h2>
+									</div>
+								</div>
+								<div class="ask-popover callback-popover" id="ask-popover" popover>
+									<button class="callback-popover__close" id="askCloseBtn" popovertarget="ask-popover" popovertargetaction="hide">
+										<img src="../img/header/close.svg" alt="Иконка закрытия окна">
+									</button>
+									<div class="callback-popover__header">
+										<div class="callback-popover__icon">
+											<img src="../img/header/call.svg" alt="Иконка телефонной трубки">
+										</div>
+
+										<div class="ask-popover__title callback-popover__title">
+											<h3>ЗАдать вопрос</h3>
+											<p>Менеджеры компании с радостью ответят на ваши вопросы и помогут с выбором продукции.</p>
+										</div>
+									</div>
+									<form class="callback-form ask-form" id="askForm" novalidate>
+										<label>
+											Ваше имя:<span>*</span>
+											<input type="text" name="ask-name" id="askName"/>
+											<small class="error"></small>
+										</label>
+										<label>
+											Телефон:<span>*</span>
+											<input type="tel" name="ask-phone" id="askPhone" />
+											<small class="error"></small>
+										</label>
+										<label>
+											E-mail:
+											<input type="email" name="ask-email" id="askEmail" />
+											<small class="error"></small>
+										</label>
+										<label>
+											Интересующий товар / услуга:
+											<input type="text" name="ask-product" id="askProduct" />
+											<small class="error"></small>
+										</label>
+										<label>
+											Сообщение:<span>*</span>
+											<textarea name="ask-message" id="askMessage"></textarea>
+											<small class="error"></small>
+										</label>
+										<label class="callback-checkbox">
+											<input type="checkbox" id="askAgree" />
+											<span class="callback-checkbox__box"></span>
+											<span class="callback-checkbox__text">
+												Я согласен на
+												<a href="#">обработку персональных данных</a>
+											</span>
+										</label>
+										<small class="error checkbox-error ask-checkbox-error"></small>
+										<div class="callback-form__footer">
+											<span class="callback-form__required"> * Обязательное поле </span>
+											<button type="submit" class="callback-form-submit--btn button-white" id="askSubmitBtn">ОТПРАВИТЬ</button>
+										</div>
+									</form>
+								</div>
+								<button class="about-section__button">
+									<!-- <img src="../img/about/list.svg" alt="Иконка ссылки" class="about-section__link-ico"> -->
+									<svg class="about-section__link-ico" width="84" height="112" viewBox="0 0 84 112" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M63.1719 2L82 20.8281V110H2V2H63.1719Z" stroke="currentColor" stroke-width="4"/>
+										<path d="M62 0.5V22H83.5" stroke="currentColor" stroke-width="4"/>
+										<g opacity="0.5">
+											<path d="M16 41L68 41" stroke="currentColor" stroke-width="4"/>
+											<path d="M16 53L68 53" stroke="currentColor" stroke-width="4"/>
+											<path d="M16 89L68 89" stroke="currentColor" stroke-width="4"/>
+											<path d="M16 65H36" stroke="currentColor" stroke-width="4"/>
+											<path d="M16 77H36" stroke="currentColor" stroke-width="4"/>
+											<path d="M48 65L68 65" stroke="currentColor" stroke-width="4"/>
+											<path d="M48 77L68 77" stroke="currentColor" stroke-width="4"/>
+										</g>
+									</svg>
+									<span>Реквизиты</span>
+								</button>
+								<button class="about-section__button" popovertarget="ask-popover">
+									<!-- <img src="../img/about/check.svg" alt="Иконка ссылки" class="about-section__link-ico"> -->
+									<svg class="about-section__link-ico" width="94" height="86" viewBox="0 0 94 86" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M82 12V72H53.1719L52.5859 72.5859L42.0303 83.1406L31.9443 72.6162L31.3535 72H2V12H82Z" stroke="currentColor" stroke-width="4"/>
+										<path opacity="0.5" d="M8 2H92V66" stroke="currentColor" stroke-width="4"/>
+										<circle opacity="0.5" cx="42" cy="42" r="16" stroke="currentColor" stroke-width="4"/>
+										<path d="M35 42L41 47L53 37" stroke="currentColor" stroke-width="4"/>
+									</svg>
+									<span>Задать вопрос</span>
+								</button>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="licenses" id="licenses">
+					<div class="licenses-container container">
+						<div class="licenses-header">
+							<div class="licenses-title-wrapper section-title-wrapper">
+								<h2 class="licenses-title section-title">ЛИЦЕНЗИИ</h2>
+							</div>
+						</div>
+						<div class="licenses-cards">
+							<div class="licenses__card">
+								<div class="licenses-card__content">
+									<img src="../img/about/certificate-verification.svg" alt="Иконка сертификата" class="licenses-card__img">
+									<h3 class="licenses-card__title">Официальный дистрибьютор материалов марки ELF</h3>
+								</div>
+								<div class="licenses-card-info__wrapper">
+									<div class="licenses-card__info">
+										<img src="../img/about/certificate.jpg" alt="Фото сертификата" class="licenses-card-info__img">
+										<h3 class="licenses-card-info__title">Официальный дистрибьютор материалов марки ELF</h3>
+										<button class="licenses-card-info__btn">
+											<img src="../img/about/magnifying-glass.svg" alt="">
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="licenses__card">
+								<div class="licenses-card__content">
+									<img src="../img/about/certificate-verification.svg" alt="Иконка сертификата" class="licenses-card__img">
+									<h3 class="licenses-card__title">Официальный дистрибьютор материалов марки SHELL</h3>
+								</div>
+								<div class="licenses-card-info__wrapper">
+									<div class="licenses-card__info">
+										<img src="../img/about/certificate.jpg" alt="Фото сертификата" class="licenses-card-info__img">
+										<h3 class="licenses-card-info__title">Официальный дистрибьютор материалов марки SHELL</h3>
+										<button class="licenses-card-info__btn">
+											<img src="../img/about/magnifying-glass.svg" alt="">
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="licenses__card">
+								<div class="licenses-card__content">
+									<img src="../img/about/certificate-verification.svg" alt="Иконка сертификата" class="licenses-card__img">
+									<h3 class="licenses-card__title">Официальный партнер Castrol</h3>
+								</div>
+								<div class="licenses-card-info__wrapper">
+									<div class="licenses-card__info">
+										<img src="../img/about/certificate.jpg" alt="Фото сертификата" class="licenses-card-info__img">
+										<h3 class="licenses-card-info__title">Официальный партнер Castrol</h3>
+										<button class="licenses-card-info__btn">
+											<img src="../img/about/magnifying-glass.svg" alt="">
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="licenses__card">
+								<div class="licenses-card__content">
+									<img src="../img/about/certificate-verification.svg" alt="Иконка сертификата" class="licenses-card__img">
+									<h3 class="licenses-card__title">Официальный дистрибьютор материалов марки Mobil</h3>
+								</div>
+								<div class="licenses-card-info__wrapper">
+									<div class="licenses-card__info">
+										<img src="../img/about/certificate.jpg" alt="Фото сертификата" class="licenses-card-info__img">
+										<h3 class="licenses-card-info__title">Официальный дистрибьютор материалов марки Mobil</h3>
+										<button class="licenses-card-info__btn">
+											<img src="../img/about/magnifying-glass.svg" alt="">
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="licenses__card">
+								<div class="licenses-card__content">
+									<img src="../img/about/certificate-verification.svg" alt="Иконка сертификата" class="licenses-card__img">
+									<h3 class="licenses-card__title">Официальный дистрибьютор материалов марки LIQUI MOLY</h3>
+								</div>
+								<div class="licenses-card-info__wrapper">
+									<div class="licenses-card__info">
+										<img src="../img/about/certificate.jpg" alt="Фото сертификата" class="licenses-card-info__img">
+										<h3 class="licenses-card-info__title">Официальный дистрибьютор материалов марки LIQUI MOLY</h3>
+										<button class="licenses-card-info__btn">
+											<img src="../img/about/magnifying-glass.svg" alt="">
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="licenses__card">
+								<div class="licenses-card__content">
+									<img src="../img/about/certificate-verification.svg" alt="Иконка сертификата" class="licenses-card__img">
+									<h3 class="licenses-card__title">Официальный дистрибьютор материалов марки Motul</h3>
+								</div>
+								<div class="licenses-card-info__wrapper">
+									<div class="licenses-card__info">
+										<img src="../img/about/certificate.jpg" alt="Фото сертификата" class="licenses-card-info__img">
+										<h3 class="licenses-card-info__title">Официальный дистрибьютор материалов марки Motul</h3>
+										<button class="licenses-card-info__btn">
+											<img src="../img/about/magnifying-glass.svg" alt="">
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-licenses" id="modal-licenses">
+						<div class="modal__box-licenses">
+							<button class="modal__licenses-close-btn" id="close-modal__licenses-btn">
+								<svg width="23" height="25" viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z"
+										fill="#333333" />
+									<path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z" fill="#1D1D1D" />
+								</svg>
+							</button>
+							<img src="../img/about/certificate.jpg" alt="Фото сертификата" class="licenses-img">
+						</div>
+					</div>
+				</section>
+				<section class="partners-section" id="partners-section">
+					<div class="partners-section__container container">
+						<div class="partners-header">
+							<div class="partners-title-wrapper section-title-wrapper">
+								<h2 class="partners-title section-title">ПАРТНЕРЫ</h2>
+							</div>
+						</div>
+						<div class="partners-section-body">
+							<div class="partners-section-cards">
+								<div class="partners-section__card">
+									<a href="#" class="partners-section-card__link">
+										<span class="partners-section-card-link__top">
+											<img src="../img/partners/company-6.jpg" alt="Фото компании-партнёра" class="partners-section-card-link__img">
+										</span>
+										<span class="partners-section-card-link__info">Компания «ПартКом»</span>
+									</a>
+								</div>
+								<div class="partners-section__card">
+									<a href="#" class="partners-section-card__link">
+										<span class="partners-section-card-link__top">
+											<img src="../img/partners/company-7.jpg" alt="Фото компании-партнёра" class="partners-section-card-link__img">
+										</span>
+										<span class="partners-section-card-link__info">Компания «АРМТЕК»</span>
+									</a>
+								</div>
+								<div class="partners-section__card">
+									<a href="#" class="partners-section-card__link">
+										<span class="partners-section-card-link__top">
+											<img src="../img/partners/company-5.jpg" alt="Фото компании-партнёра" class="partners-section-card-link__img">
+										</span>
+										<span class="partners-section-card-link__info">Компания «Бином»</span>
+									</a>
+								</div>
+								<div class="partners-section__card">
+									<a href="#" class="partners-section-card__link">
+										<span class="partners-section-card-link__top">
+											<img src="../img/partners/company-4.png" alt="Фото компании-партнёра" class="partners-section-card-link__img">
+										</span>
+										<span class="partners-section-card-link__info">Компания «Маслон»</span>
+									</a>
+								</div>
+								<div class="partners-section__card">
+									<a href="#" class="partners-section-card__link">
+										<span class="partners-section-card-link__top">
+											<img src="../img/partners/company-3.png" alt="Фото компании-партнёра" class="partners-section-card-link__img">
+										</span>
+										<span class="partners-section-card-link__info">ООО «Аккумуляторный Мир»</span>
+									</a>
+								</div>
+								<div class="partners-section__card">
+									<a href="#" class="partners-section-card__link">
+										<span class="partners-section-card-link__top">
+											<img src="../img/partners/company-2.png" alt="Фото компании-партнёра" class="partners-section-card-link__img">
+										</span>
+										<span class="partners-section-card-link__info">Компания «ЮНИКС» г. Киров</span>
+									</a>
+								</div>
+								<div class="partners-section__card">
+									<a href="#" class="partners-section-card__link">
+										<span class="partners-section-card-link__top">
+											<img src="../img/partners/company-1.jpg" alt="Фото компании-партнёра" class="partners-section-card-link__img">
+										</span>
+										<span class="partners-section-card-link__info">Компания «Фаворит»</span>
+									</a>
+								</div>
+							</div>
+							<a href="#" class="partners-section__link button-black">СТАТЬ ПАРТНЕРОМ</a>
+						</div>
+					</div>
+				</section>
+				<section class="reviews" id="reviews">
+					<div class="reviews-container container">
+						<div class="reviews-header">
+							<div class="reviews-title-wrapper section-title-wrapper">
+								<h2 class="reviews-title section-title">ОТЗЫВЫ</h2>
+							</div>
+							<p class="products-header-text">Для нас ценно любое Ваше мнение.</p>
+						</div>
+						<div class="reviews-body">
+							<div class="reviews-slider">
+								<div class="reviews-slider__item slider__item">
+									<div class="reviews-slider-item-photo__wrapper">
+										<div class="reviews-slider-item-photo">
+											<img src="../img/reviews/person.jpg" alt="Фото автора" class="reviews-slider-item__img">
+										</div>
+									</div>
+									<p class="reviews-slider-item__text">Обратился за новыми каркасными щётками, в итоге уехал и со щётками и с крутыми меховушками! Самый первый бокс на рынке на Нагорном, и с адекватными ценами! Обращаться к Андрею, очень толковый и отзывчивый продавец!</p>
+									<div class="reviews-slider-item__author">
+										<p class="reviews-slider-item-author__name">Сергей</p>
+										<p class="reviews-slider-item-author__status">Частный клиент</p>
+									</div>
+								</div>
+								<div class="reviews-slider__item slider__item">
+									<div class="reviews-slider-item-photo__wrapper">
+										<div class="reviews-slider-item-photo">
+											<img src="../img/reviews/person.jpg" alt="Фото автора" class="reviews-slider-item__img">
+										</div>
+									</div>
+									<p class="reviews-slider-item__text">Обратился за новыми каркасными щётками, в итоге уехал и со щётками и с крутыми меховушками! Самый первый бокс на рынке на Нагорном, и с адекватными ценами! Обращаться к Андрею, очень толковый и отзывчивый продавец!</p>
+									<div class="reviews-slider-item__author">
+										<p class="reviews-slider-item-author__name">Сергей</p>
+										<p class="reviews-slider-item-author__status">Частный клиент</p>
+									</div>
+								</div>
+								<div class="reviews-slider__item slider__item">
+									<div class="reviews-slider-item-photo__wrapper">
+										<div class="reviews-slider-item-photo">
+											<img src="../img/reviews/person.jpg" alt="Фото автора" class="reviews-slider-item__img">
+										</div>
+									</div>
+									<p class="reviews-slider-item__text">Обратился за новыми каркасными щётками, в итоге уехал и со щётками и с крутыми меховушками! Самый первый бокс на рынке на Нагорном, и с адекватными ценами! Обращаться к Андрею, очень толковый и отзывчивый продавец!</p>
+									<div class="reviews-slider-item__author">
+										<p class="reviews-slider-item-author__name">Сергей</p>
+										<p class="reviews-slider-item-author__status">Частный клиент</p>
+									</div>
+								</div>
+							</div>
+							<div class="callback-popover" id="review-success-popover" popover>
+								<button class="callback-popover__close" id="askCloseBtn" popovertarget="review-success-popover" popovertargetaction="hide">
+									<img src="../img/header/close.svg" alt="Иконка закрытия окна">
+								</button>
+								<div class="callback-popover__header">
+									<div class="callback-popover__icon">
+										<img src="../img/reviews/check.svg" alt="Иконка">
+									</div>
+									<div class="ask-popover__title callback-popover__title">
+										<h3>ОСТАВИТЬ ОТЗЫВ</h3>
+										<p>Нам важен каждый отзыв от вас.</p>
+									</div>
+								</div>
+								<div class="callback-popover__body review-success-popover__body">
+									<img src="../img/header/success.png" alt="" class="ask-succes-img">
+									<h2 class="callback-succ-popover-title">ВАШЕ ПИСЬМО УСПЕШНО ОТПРАВЛЕНО!</h2>
+								</div>
+							</div>
+							<div class="ask-popover callback-popover" id="review-popover" popover>
+								<button class="callback-popover__close" id="reviewCloseBtn" popovertarget="review-popover" popovertargetaction="hide">
+									<img src="../img/header/close.svg" alt="Иконка закрытия окна">
+								</button>
+								<div class="callback-popover__header">
+									<div class="callback-popover__icon">
+										<img src="../img/reviews/check.svg" alt="Иконка">
+									</div>
+
+									<div class="ask-popover__title callback-popover__title">
+										<h3>ОСТАВИТЬ ОТЗЫВ</h3>
+										<p>Нам важен каждый отзыв от вас.</p>
+									</div>
+								</div>
+								<form class="callback-form ask-form" id="reviewForm" novalidate>
+									<label>
+										Ваше имя:<span>*</span>
+										<input type="text" name="review-name" id="reviewName"/>
+										<small class="error"></small>
+									</label>
+									<label>
+										Телефон:<span>*</span>
+										<input type="tel" name="review-phone" id="reviewPhone" />
+										<small class="error"></small>
+									</label>
+									<label>
+										Сообщение:<span>*</span>
+										<textarea name="review-message" id="reviewMessage"></textarea>
+										<small class="error"></small>
+									</label>
+									<label class="callback-checkbox">
+										<input type="checkbox" id="reviewAgree" />
+										<span class="callback-checkbox__box"></span>
+										<span class="callback-checkbox__text">
+											Я согласен на
+											<a href="#">обработку персональных данных</a>
+										</span>
+									</label>
+									<small class="error checkbox-error review-checkbox-error"></small>
+									<div class="callback-form__footer">
+										<span class="callback-form__required"> * Обязательное поле </span>
+										<button type="submit" class="callback-form-submit--btn button-white" id="reviewSubmitBtn">ОТПРАВИТЬ</button>
+									</div>
+								</form>
+							</div>
+							<button class="reviews__btn button-white" popovertarget="review-popover">ОСТАВИТЬ СВОЙ ОТЗЫВ</button>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer class="footer">
+				<div class="footer-container container">
+					<div class="footer-logo--col">
+						<img src="../img/header/logo.png" alt="Логотип" class="footer-logo">
+						<p class="copyright">© 2019 PRO Auto. <br> Все права защищены.</p>
+					</div>
+					<div class="footer-menu--col">
+						<nav class="footer-menu">
+							<ul class="footer-menu-list">
+								<li class="footer-menu__item">
+									<h3 class="footer-menu-item__title">КОМПАНИЯ</h3>
+									<ul class="footer-menu-item-list">
+										<li class="footer-menu-list--item">
+											<a href="#about-section" class="footer-menu-list--item__link">О КОМПАНИИ</a>
+										</li>
+										<li class="footer-menu-list--item">
+											<a href="#licenses" class="footer-menu-list--item__link">ЛИЦЕНЗИИ</a>
+										</li>
+										<li class="footer-menu-list--item">
+											<a href="#partners-section" class="footer-menu-list--item__link">ПАРТНЕРЫ</a>
+										</li>
+										<li class="footer-menu-list--item">
+											<a href="#reviews" class="footer-menu-list--item__link">ОТЗЫВЫ КЛИЕНТОВ</a>
+										</li>
+										<li class="footer-menu-list--item">
+											<a href="#" class="footer-menu-list--item__link">РЕКВИЗИТЫ</a>
+										</li>
+										<li class="footer-menu-list--item">
+											<a href="#" class="footer-menu-list--item__link">ВАКАНСИИ</a>
+										</li>
+									</ul>
+								</li>
+								<li class="footer-menu__item">
+									<h3 class="footer-menu-item__title">КАТАЛОГ</h3>
+									<ul class="footer-menu-item-list">
+										<li class="footer-menu-list--item">
+											<a href="./battery-catalog.html" class="footer-menu-list--item__link">АККУМУЛЯТОРЫ</a>
+										</li>
+										<li class="footer-menu-list--item">
+											<a href="#" class="footer-menu-list--item__link">АВТОМАСЛА</a>
+										</li>
+										<li class="footer-menu-list--item">
+											<a href="#" class="footer-menu-list--item__link">АКСЕССУАРЫ</a>
+										</li>
+										<li class="footer-menu-list--item">
+											<a href="#" class="footer-menu-list--item__link">АВТОХИМИЯ</a>
+										</li>
+									</ul>
+								</li>
+								<li class="footer-menu__item">
+									<h3 class="footer-menu-item__title">УСЛУГИ</h3>
+									<ul class="footer-menu-item-list">
+										<li class="footer-menu-list--item">
+											<a href="./battery-service.html#battery-diagnostic" class="footer-menu-list--item__link">ДИАГНОСТИКА АККУМУЛЯТОРА</a>
+										</li>
+										<li class="footer-menu-list--item">
+											<a href="./battery-service.html#battery-reception" class="footer-menu-list--item__link">ПРИЕМ АККУМУЛЯТОРОВ</a>
+										</li>
+									</ul>
+								</li>
+								<li class="footer-menu__item">
+									<h3 class="footer-menu-item__title">ИНФОРМАЦИЯ</h3>
+									<ul class="footer-menu-item-list">
+										<li class="footer-menu-list--item">
+											<a href="#" class="footer-menu-list--item__link">АКЦИИ</a>
+										</li>
+										<li class="footer-menu-list--item">
+											<a href="#" class="footer-menu-list--item__link">НОВОСТИ</a>
+										</li>
+										<li class="footer-menu-list--item">
+											<a href="#" class="footer-menu-list--item__link">СТАТЬИ</a>
+										</li>
+										<li class="footer-menu-list--item">
+											<a href="#" class="footer-menu-list--item__link">ВОПРОС - ОТВЕТ</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="footer-contacts--col">
+						<ul class="footer-contacts-list">
+							<li class="footer-contacts-list__item">
+								<a href="tel:+7(342)2793613" class="footer-contact__link">+7 (342) 279-36-13</a>
+							</li>
+							<li class="footer-contacts-list__item">
+								<a href="mailto:proauto59@yandex.ru" class="footer-contact__link">proauto59@yandex.ru</a>
+							</li>
+							<button class="footer-callback-btn button-black" popovertarget="callback-popover">ЗАКАЗАТЬ ЗВОНОК</button>
+						</ul>
+					</div>
+				</div>
+			</footer>
+			<div class="scroll-buttons">
+				<button class="scroll-btn scroll-up" id="scrollUp" aria-label="Вгору">
+					<svg width="28" height="28" viewBox="0 0 24 24">
+						<polyline points="5,15 12,8 19,15"></polyline>
+					</svg>
+				</button>
+
+				<button class="scroll-btn scroll-down" id="scrollDown" aria-label="Вниз">
+					<svg width="28" height="28" viewBox="0 0 24 24">
+						<polyline points="5,9 12,16 19,9"></polyline>
+					</svg>
+				</button>
+			</div>
+		</div>
+	<!-- Подключаем jQuery -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<!-- Подключаем слайдер Slick -->
+	<script src="../js/slick.min.js"></script>
+	<!-- Подключаем файл скриптов -->
+	<script src="../js/slider.js"></script>
+	<script src="../js/callback-popover.js"></script>
+	<script src="../js/search-popover.js"></script>
+	<script src="../js/ask-popover.js"></script>
+	<script src="../js/review-popover.js"></script>
+	<script src="../js/scroll-buttons.js"></script>
+	<script src="../js/cart.js"></script>
+	<script src="../js/licenses-modal.js"></script>
+	</body>
+</html>

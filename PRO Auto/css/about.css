@@ -1,0 +1,510 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/*--------------------------------------About Hero------------------------------*/
+.about__hero {
+    background-image: linear-gradient(to right, #000000, #00000080, #00000000),
+                      url('../img/hero/battery-service.jpg');
+}
+
+/*--------------------------------------About section------------------------------*/
+.about-section {
+    scroll-margin-top: 100px;
+}
+
+.about-section-body {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-section-text__wrapper {
+    width: 936px;
+    height: 348px;
+    background-color: #C53720;
+    padding: 4px;
+    clip-path: polygon(
+        43px 0,
+        100% 0,
+        100% calc(100% - 43px),
+        calc(100% - 43px) 100%,
+        0 100%,
+        0 43px
+    );
+}
+
+.about-section-text {
+    width: 100%;
+    height: 100%;
+    padding: 32px;
+    clip-path: polygon(
+        calc(43px - 4px * 0.41) 0,
+        100% 0,
+        100% calc(100% - (43px - 4px * 0.41)),
+        calc(100% - (43px - 4px * 0.41)) 100%,
+        0 100%,
+        0 calc(43px - 4px * 0.41)
+    );
+    font-size: 16px;
+    color: #FFFFFF;
+    background-color: #1D1D1D;
+}
+
+.about-section-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 36px;
+}
+
+.about-section__button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    background: transparent;
+    border: none;
+    outline: none;
+    
+    span {
+        font-size: 16px;
+        color: #FFFFFF;
+        text-decoration: underline;
+        transition: 0.3s;
+    }
+
+    &:hover {
+        .about-section__link-ico {
+            color: #C53720;
+        }
+
+        span {
+            color: #C53720;
+        }
+    }
+}
+
+.about-section__link-ico {
+    color: #FFFFFF;
+    transition: 0.3s;
+}
+
+/*--------------------------------------Licenses------------------------------*/
+.licenses {
+    padding: 88px 0;
+    background-color: #EDEDED;
+    scroll-margin-top: 100px;
+}
+
+.licenses-title-wrapper {
+    width: 248px;
+}
+
+.licenses-cards {
+    margin-top: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.licenses__card {
+    width: 360px;
+    height: 466px;
+    
+    &:hover {
+        .licenses-card__content {
+            display: none;
+        }
+        
+        .licenses-card-info__wrapper {
+            display: block;
+        }
+    }
+}
+
+.licenses-card__content {
+    width: 100%;
+    height: 100%;
+    padding: 44px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.licenses-card__img {
+    width: 168px;
+    height: 234px;
+}
+
+.licenses-card__title {
+    width: 227px;
+    font-size: 24px;
+    color: #1D1D1D;
+    text-align: center;
+}
+
+.licenses-card-info__wrapper {
+    width: 360px;
+    height: 466px;
+    background-color: #C53720;
+    padding: 4px;
+    clip-path: polygon(
+        43px 0,
+        100% 0,
+        100% calc(100% - 43px),
+        calc(100% - 43px) 100%,
+        0 100%,
+        0 43px
+    );
+    position: relative;
+    display: none;
+}
+
+.licenses-card__info {
+    width: 100%;
+    height: 100%;
+    padding: 38px 24px;
+    clip-path: polygon(
+        calc(43px - 4px * 0.41) 0,
+        100% 0,
+        100% calc(100% - (43px - 4px * 0.41)),
+        calc(100% - (43px - 4px * 0.41)) 100%,
+        0 100%,
+        0 calc(43px - 4px * 0.41)
+    );
+    background-color: #1D1D1D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.licenses-card-info__img {
+    width: 168px;
+    height: 234px;
+    object-fit: cover;
+}
+
+.licenses-card-info__title {
+    width: 227px;
+    font-size: 24px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.licenses-card-info__btn {
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    border: 4px solid #FFFFFF;
+    background: transparent;
+    outline: none;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+}
+
+/*----------------------*/
+.modal-licenses {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 99998;
+    background-color: rgba(0, 0, 0, .3);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .4s, visibility .4s;
+}
+
+.modal__box-licenses {
+    position: relative;
+    max-width: 1280px;
+    border-top: 4px solid #C53720;
+    overflow: hidden;
+    padding-top: 40px;
+    z-index: 1;
+    margin: 30px 15px;
+    background-color: white;
+    color: #000000;
+    text-align: center;
+    box-shadow: 0px 0px 17px -7px rgba(34, 60, 80, 0.2);
+    transform: scale(0);
+    transition: transform .8s;
+}
+
+.licenses-img {
+    width: 100%;
+    height: 93vh;
+    object-fit: cover;
+    transform: translateY(5px);
+}
+
+.modal__licenses-close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    height: 35px;
+    border: none;
+    background-color: transparent;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.modal__licenses-close-btn svg path {
+    transition: fill .4s;
+}
+
+.modal__licenses-close-btn:hover svg path {
+    fill: #C53720;
+}
+
+.modal__licenses-close-btn:active svg path {
+    fill: rgb(186, 53, 0);
+}
+
+.modal-licenses.open {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal-licenses.open .modal__box-licenses {
+    transform: scale(1);
+}  
+
+/*--------------------------------------Partners section------------------------------*/
+.partners-section {
+    padding: 88px 0;
+    background: linear-gradient(to right, #000000, #00000080, #00000000),
+                url('../img/partners/porsche.jpg');;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    scroll-margin-top: 100px;
+}
+
+.partners-title-wrapper {
+    width: 248px;
+}
+
+.partners-title {
+    color: #FFFFFF;
+}
+
+.partners-section-body {
+    margin-top: 32px;
+    text-align: center;
+}
+
+.partners-section-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.partners-section__card {
+    width: 264px;
+}
+
+.partners-section-card__link {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.partners-section-card-link__top {
+    display: block;
+    background-color: #FFFFFF;
+}
+
+.partners-section-card-link__img {
+    display: block;
+    width: 184px;
+    height: 184px;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+.partners-section-card-link__info {
+    display: block;
+    min-height: 74px;
+    padding: 20px 12px 16px;
+    background-color: #1D1D1D;
+    font-size: 16px;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+.partners-section__link {
+    display: inline-block;
+    padding: 20px;
+    margin-top: 68px;
+}
+
+/*--------------------------------------Reviews------------------------------*/
+.reviews {
+    padding: 88px 0;
+    background-color: #EDEDED;
+    scroll-margin-top: 100px;
+}
+
+.reviews-header {
+    text-align: center;
+}
+
+.reviews-title-wrapper {
+    width: 190px;
+}
+
+.reviews-body {
+    margin-top: 74px;
+    text-align: center;
+}
+
+/*-----------------------------------*/
+.reviews-slider__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #1D1D1D;
+}
+
+.reviews-slider-item-photo__wrapper {
+  width: 174px;
+  height: 168px;
+  background-color: #C53720;
+  padding: 4px;
+
+  /* Форма зрізаних кутів (верхній лівий і правий нижній) */
+  clip-path: polygon(
+    44px 0,
+    100% 0,
+    100% calc(100% - 44px),
+    calc(100% - 44px) 100%,
+    0 100%,
+    0 44px
+  );
+}
+
+.reviews-slider-item-photo {
+  width: 100%;
+  height: 100%;
+  background-color: #1D1D1D;
+
+  /* Точно така сама форма, але для внутрішнього елемента */
+  clip-path: polygon(
+    calc(44px - 4px * 0.41) 0,
+    100% 0,
+    100% calc(100% - (44px - 4px * 0.41)),
+    calc(100% - (44px - 4px * 0.41)) 100%,
+    0 100%,
+    0 calc(44px - 4px * 0.41)
+  );
+
+  /* Для центрування контенту */
+  display: grid;
+  place-items: center;
+  color: #fff;
+}
+
+.reviews-slider-item__text {
+    font-size: 16px;
+    margin: 44px 0 20px;
+}
+
+.reviews-slider-item__author {
+    width: 190px;
+    border-top: 4px solid #C53720;
+    padding-top: 20px;
+    font-size: 16px;
+}
+
+.reviews-slider-item-author__name {
+    font-weight: 700;
+}
+
+.reviews-slider-item-author__status {
+    margin-top: 8px;
+}
+
+/* Основные стили */
+
+/* Слайдер */
+.slick-slider {
+  min-width: 0;
+}
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track {
+  display: flex;
+  align-items: flex-start;
+}
+
+/* Конкретный слайдер */
+.reviews-slider {
+    width: 936px;
+    position: relative;
+    padding: 0px 55px;
+    margin: 0 auto;
+}
+
+.reviews-slider .slick-arrow {
+  position: absolute;
+  top: 58px;
+  z-index: 10;
+  font-size: 0;
+  width: 52px;
+  height: 52px;
+}
+.reviews-slider .slick-arrow.slick-prev {
+  left: 0;
+  background: url("../img/reviews/arrow-next.svg") 0 0 / 100% no-repeat;
+  transform-origin: center;
+  transform: rotate(180deg);
+  transition: 0.3s;
+
+  &:hover {
+    background: url("../img/reviews/arrow-next-active.svg") 0 0 / 100% no-repeat;
+  }
+}
+.reviews-slider .slick-arrow.slick-next {
+  right: 0;
+  background: url("../img/reviews/arrow-next.svg") 0 0 / 100% no-repeat;
+  transition: 0.3s;
+
+  &:hover {
+    background: url("../img/reviews/arrow-next-active.svg") 0 0 / 100% no-repeat;
+  }
+}
+
+.slider__item {
+  padding: 0;
+}
+/*-----------------------------------*/
+
+.review-success-popover__body {
+  padding: 74px 78px 124px;
+}
+
+.reviews__btn {
+    margin-top: 44px;
+    border-color: #1D1D1D;
+    color: #1D1D1D;
+
+    &:hover {
+        background-color: #1D1D1D;
+    }
+}
