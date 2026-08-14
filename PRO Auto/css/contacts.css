@@ -1,0 +1,10 @@
+/*--------------------------------------Contacts Hero------------------------------*/
+.contacts__hero {
+    background-image: linear-gradient(to left, #000000, #00000080, #00000000),
+                      url('../img/contacts/banner.jpg');
+    transform: scaleX(-1);
+}
+
+.contacts__hero-container {
+    transform: scaleX(-1);
+}

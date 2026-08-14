@@ -1,0 +1,557 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+	<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Заголовок страницы в браузере -->
+		<title>PRO Auto</title>
+		<link rel="icon" type="image/png" href="../img/favicon.png"/>
+		<!-- Подключаем CSS -->
+		<link rel="stylesheet" href="../css/style.css"/>
+		<link rel="stylesheet" href="../css/catalog.css"/>
+		<link rel="stylesheet" href="../css/information.css"/>
+		<link rel="stylesheet" href="../css/articles.css"/>
+		<link rel="stylesheet" href="../css/battery-service.css"/>
+		<!-- Кодировка страницы -->
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	</head>
+	<!-- Отображаемое тело страницы -->
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="header-container container">
+					<img src="../img/header/logo.png" alt="Логотип компании" class="logo">
+					<nav class="menu">
+						<ul class="menu-level-1">
+							<li class="has-submenu has-submenu-level-1">
+								<a href="./about.html">КОМПАНИЯ</a>
+								<ul class="submenu level-2">
+									<li>
+										<a href="./about.html#about-section">О КОМПАНИИ</a>
+									</li>
+									<li>
+										<a href="./about.html#licenses">ЛИЦЕНЗИИ</a>
+									</li>
+									<li>
+										<a href="./about.html#partners-section">ПАРТНЕРЫ</a>
+									</li>
+									<li>
+										<a href="./about.html#reviews">ОТЗЫВЫ КЛИЕНТОВ</a>
+									</li>
+								</ul>
+							</li>
+							<li class="has-submenu has-submenu-level-1">
+								<a href="./catalog.html">КАТАЛОГ</a>
+								<ul class="submenu level-2">
+									<li class="has-submenu">
+										<a href="battery-catalog.html">АККУМУЛЯТОРЫ</a>
+										<ul class="submenu level-3">
+											<li><a href="./battery-magnum.html">АКБ MAGNUM</a></li>
+											<li><a href="#">АКБ ЗВЕРЬ</a></li>
+											<li><a href="#">ТЮМЕНСКИЙ АККУМУЛЯТОРНЫЙ ЗАВОД</a></li>
+											<li><a href="#">АКБ AKOM</a></li>
+											<li><a href="#">АКБ BARS</a></li>
+											<li><a href="#">АКБ ТЮМЕНСКИЙ МЕДВЕДЬ</a></li>
+											<li><a href="#">АКБ ENRUN</a></li>
+											<li><a href="#">АКБ UNIX (WESTA)</a></li>
+											<li><a href="#">АКБ EDCON</a></li>
+											<li><a href="#">АКБ AFA</a></li>
+											<li><a href="#">АКБ BOSCH</a></li>
+											<li><a href="#">АКБ MUTLU</a></li>
+											<li><a href="#">ОРИГИНАЛЬНЫЕ АКБ</a></li>
+											<li><a href="#">ГЕЛИЕВЫЕ АКБ OPTIMA</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">АВТОМАСЛА</a>
+									</li>
+									<li>
+										<a href="#">АКСЕССУАРЫ</a>
+									</li>
+									<li>
+										<a href="#">АВТОХИМИЯ</a>
+									</li>
+								</ul>
+							</li>
+							<li class="has-submenu has-submenu-level-1">
+								<a href="./services.html">УСЛУГИ</a>
+								<ul class="submenu level-2">
+									<li>
+										<a href="./battery-service.html#battery-diagnostic">ДИАГНОСТИКА АККУМУЛЯТОРА</a>
+									</li>
+									<li>
+										<a href="./battery-service.html#battery-reception">ПРИЕМ АККУМУЛЯТОРОВ</a>
+									</li>
+								</ul>
+							</li>
+							<li class="has-submenu has-submenu-level-1">
+								<a href="./information.html">ИНФОРМАЦИЯ</a>
+								<ul class="submenu level-2">
+									<li>
+										<a href="./information.html#news-section">НОВОСТИ</a>
+									</li>
+									<li>
+										<a href="./information.html#faq-section">F.A.Q.</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="./contacts.html">КОНТАКТЫ</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="callback-popover" id="callback-success-popover" popover>
+						<button class="callback-popover__close" id="closeBtn" popovertarget="callback-success-popover" popovertargetaction="hide">
+							<img src="../img/header/close.svg" alt="Иконка закрытия окна">
+						</button>
+
+						<div class="callback-popover__header">
+							<div class="callback-popover__icon">
+								<img src="../img/header/call.svg" alt="Иконка телефонной трубки">
+							</div>
+
+							<div class="callback-popover__title">
+								<h3>ОБРАТНЫЙ ЗВОНОК</h3>
+								<p>Представьтесь, мы вам перезвоним.</p>
+							</div>
+						</div>
+
+						<div class="callback-popover__body">
+							<img src="../img/header/success.png" alt="" class="popover-succes-img">
+							<h2 class="callback-succ-popover-title">ВАШЕ ПИСЬМО УСПЕШНО ОТПРАВЛЕНО!</h2>
+						</div>
+					</div>
+					<div class="callback-popover" id="callback-popover" popover>
+						<button class="callback-popover__close" id="closeBtn" popovertarget="callback-popover" popovertargetaction="hide">
+							<img src="../img/header/close.svg" alt="Иконка закрытия окна">
+						</button>
+
+						<div class="callback-popover__header">
+							<div class="callback-popover__icon">
+								<img src="../img/header/call.svg" alt="Иконка телефонной трубки">
+							</div>
+
+							<div class="callback-popover__title">
+								<h3>ОБРАТНЫЙ ЗВОНОК</h3>
+								<p>Представьтесь, мы вам перезвоним.</p>
+							</div>
+						</div>
+
+						<form class="callback-form" id="callbackForm" novalidate>
+							<label>
+								Ваше имя:<span>*</span>
+								<input type="text" name="name" />
+								<small class="error"></small>
+							</label>
+
+							<label>
+								Телефон:<span>*</span>
+								<input type="tel" name="phone" id="phone" />
+								<small class="error"></small>
+							</label>
+
+							<label class="callback-checkbox">
+								<input type="checkbox" id="agree" />
+
+								<span class="callback-checkbox__box"></span>
+
+								<span class="callback-checkbox__text">
+									Я согласен на
+									<a href="#">обработку персональных данных</a>
+								</span>
+							</label>
+							<small class="error checkbox-error"></small>
+
+							<div class="callback-form__footer">
+								<span class="callback-form__required"> * Обязательное поле </span>
+
+								<!-- <button type="button" id="submitBtn" popovertarget="callback-popover" popovertargetaction="hide">ОТПРАВИТЬ</button> -->
+								<button type="submit" class="callback-form-submit--btn button-white" id="submitBtn">ОТПРАВИТЬ</button>
+							</div>
+						</form>
+					</div>
+					<button class="order--call-btn button-black" popovertarget="callback-popover">ЗАКАЗАТЬ ЗВОНОК</button>  
+					<div class="service-buttons">
+						<div class="search-popover" id="search-popover" popover>
+							<div class="search-popover-container container">
+								<input type="text" class="search-popover-input">
+								<button class="search-popover-btn button-black">НАЙТИ</button>
+								<button class="search-popover__close" id="searchCloseBtn" popovertarget="search-popover" popovertargetaction="hide">
+									<img src="../img/header/close-gray.svg" alt="Иконка закрытия окна">
+								</button>
+								<ul id="searchResults"></ul>
+							</div>
+						</div>
+						<button class="service-button button-search--btn" popovertarget="search-popover">
+							<img src="../img/header/search.svg" alt="Иконка кнопки поиска" class="button-icon">
+						</button>
+						<button class="service-button button-cart--btn" id="cartBtn">
+							<!-- <img src="./img/header/cart.svg" alt="Иконка кнопки корзины" class="button-icon"> -->
+							<svg width="40" height="40" class="cart-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M33.3594 11L29.9844 23H14V11H33.3594Z" stroke="currentColor" stroke-width="4"/>
+								<path d="M14 4L14 24.5" stroke="currentColor" stroke-width="4"/>
+								<path d="M14 6H4" stroke="currentColor" stroke-width="4"/>
+								<circle cx="17" cy="31" r="3" stroke="currentColor" stroke-width="4"/>
+								<circle cx="28" cy="31" r="3" stroke="currentColor" stroke-width="4"/>
+							</svg>
+							<span class="cart-count" id="cartCount">0</span>
+						</button>
+						<div class="cart-popup" id="cartPopup">
+							<div id="cartItems"></div>								
+							<div class="total">
+								<p class="total-info">
+									ИТОГ:
+								</p>
+								<div class="total-content">
+									<span id="totalPrice">0 грн.</span>
+									<a href="./cart.html" class="total-link button-white">ПЕРЕЙТИ В КОРЗИНУ</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<main class="page">
+				<section class="hero information__hero">
+					<div class="hero-container container">
+						<h1 class="hero-title">ЗАБОТЛИВЫЙ СЕРВИС И СВОЕВРЕВЕННАЯ ИНФОРМАЦИЯ</h1>
+						<a href="./catalog.html" class="hero-link button-black">ПЕРЕЙТИ В КАТАЛОГ</a>
+					</div>
+					<div class="hero-pagination">
+						<div class="hero-pagination-line pagination-red-line"></div>
+						<div class="hero-pagination-line"></div>
+						<div class="hero-pagination-line"></div>
+						<div class="hero-pagination-line"></div>
+					</div>
+				</section>
+				<div class="bread-crumbs">
+					<div class="bread-crumbs-container container">
+						<a href="../index.html" class="bread-crumbs__link start-page">Главная</a>
+						<div class="bread-crumbs-arrow">
+							<img src="../img/catalog/next.svg" alt="">
+						</div>
+						<a href="#" class="bread-crumbs__link">ИНФОРМАЦИЯ</a>
+					</div>
+				</div> 
+				<section class="news-section" id="news-section">
+					<div class="news-section__container container">
+						<div class="news-header">
+							<div class="news-title-wrapper section-title-wrapper">
+								<h2 class="news-title section-title">новости</h2>
+							</div>
+							<p class="products-header-text">Следите за новостями Pro auto</p>
+						</div>
+						<div class="news-section-body">
+							<!-- News slider -->
+						</div>
+					</div>
+				</section>
+				<section class="faq-section" id="faq-section">
+					<div class="faq-section__container container">
+						<div class="news-header">
+							<div class="news-title-wrapper section-title-wrapper">
+								<h2 class="news-title section-title">F. A. Q</h2>
+							</div>
+							<p class="products-header-text">В данном разделе приведены ответа на часто задаваемые вопросы наших клиентов.</p>
+						</div>
+						<div class="faq-section-body">
+							<div class="tabs">
+								<div class="tabs__navigation">
+									<button type="button" class="tabs__title active" data-tab="1">
+										Общие вопросы
+									</button>
+									<button type="button" class="tabs__title" data-tab="2">
+										Эксплуатация и уход
+									</button>
+								</div>
+								<div class="tabs__body">
+									<div class="tabs__content active" id="tab-1">
+										<div class="accordion-wrapper">
+											<details name="general-questions">
+												<summary>Как часто нужно менять щётки стеклоочистителя?</summary>
+												<p>Мы привыкли эксплуатировать автомобиль, пока что-либо не сломается. Так и со щётками - не заменим, пока совсем не потеряем возможность видеть перед собой из-за грязного лобового стекла. Следите за своими щётками и меняйте их каждый сезон, ведь безопасность на дороге превыше всего!</p>
+											</details>
+											<details name="general-questions">
+												<summary>Как часто нужно менять щётки стеклоочистителя?</summary>
+												<p>Мы привыкли эксплуатировать автомобиль, пока что-либо не сломается. Так и со щётками - не заменим, пока совсем не потеряем возможность видеть перед собой из-за грязного лобового стекла. Следите за своими щётками и меняйте их каждый сезон, ведь безопасность на дороге превыше всего!</p>
+											</details>
+											<details name="general-questions">
+												<summary>Как часто нужно менять щётки стеклоочистителя?</summary>
+												<p>Мы привыкли эксплуатировать автомобиль, пока что-либо не сломается. Так и со щётками - не заменим, пока совсем не потеряем возможность видеть перед собой из-за грязного лобового стекла. Следите за своими щётками и меняйте их каждый сезон, ведь безопасность на дороге превыше всего!</p>
+											</details>
+											<details name="general-questions">
+												<summary>Как часто нужно менять щётки стеклоочистителя?</summary>
+												<p>Мы привыкли эксплуатировать автомобиль, пока что-либо не сломается. Так и со щётками - не заменим, пока совсем не потеряем возможность видеть перед собой из-за грязного лобового стекла. Следите за своими щётками и меняйте их каждый сезон, ведь безопасность на дороге превыше всего!</p>
+											</details>
+											<details name="general-questions">
+												<summary>Как часто нужно менять щётки стеклоочистителя?</summary>
+												<p>Мы привыкли эксплуатировать автомобиль, пока что-либо не сломается. Так и со щётками - не заменим, пока совсем не потеряем возможность видеть перед собой из-за грязного лобового стекла. Следите за своими щётками и меняйте их каждый сезон, ведь безопасность на дороге превыше всего!</p>
+											</details>
+										</div>
+									</div>
+									<div class="tabs__content" id="tab-2">
+										<div class="accordion-wrapper">
+											<details name="operation-maintenance">
+												<summary>Как продлить срок службы аккумулятора?</summary>
+												<p>Вам достаточно придерживаться нескольких основных правил: <br>
+													Заглушив мотор, нужно проверить, выключены ли все электроприборы. <br>
+													При отключении АКБ от блока питания надо сразу выключать провод со знаком минус. <br>
+													Избегайте саморазряда батареи. <br>
+													Постоянно контролируйте места соединения клемм с аккумулятором. <br>
+													Если вы не пользуетесь батареей, не слив при этом с нее электролит, надо постоянно заряжать ее и проверять плотность и уровень жидкости. <br>
+													Необходимо периодически измерять плотность и уровень электролита каждые 3000 км пробега. <br>
+													Если все показатели в норме, батарею все равно надо заряжать: зимой — каждый месяц, летом — каждые 6 месяцев. Для зарядки использовать ток, равный 1/10 емкости АКБ. <br>
+													Помните, что зимой при морозе возможно повреждение корпуса, которое происходит из-за замерзания жидкости в разряженном аккумуляторе, поэтому проверяйте аккумулятор на целостность.
+												</p>
+											</details>
+											<details name="operation-maintenance">
+												<summary>Как продлить срок службы аккумулятора?</summary>
+												<p>Вам достаточно придерживаться нескольких основных правил: <br>
+													Заглушив мотор, нужно проверить, выключены ли все электроприборы. <br>
+													При отключении АКБ от блока питания надо сразу выключать провод со знаком минус. <br>
+													Избегайте саморазряда батареи. <br>
+													Постоянно контролируйте места соединения клемм с аккумулятором. <br>
+													Если вы не пользуетесь батареей, не слив при этом с нее электролит, надо постоянно заряжать ее и проверять плотность и уровень жидкости. <br>
+													Необходимо периодически измерять плотность и уровень электролита каждые 3000 км пробега. <br>
+													Если все показатели в норме, батарею все равно надо заряжать: зимой — каждый месяц, летом — каждые 6 месяцев. Для зарядки использовать ток, равный 1/10 емкости АКБ. <br>
+													Помните, что зимой при морозе возможно повреждение корпуса, которое происходит из-за замерзания жидкости в разряженном аккумуляторе, поэтому проверяйте аккумулятор на целостность.
+												</p>
+											</details>
+											<details name="operation-maintenance">
+												<summary>Как продлить срок службы аккумулятора?</summary>
+												<p>Вам достаточно придерживаться нескольких основных правил: <br>
+													Заглушив мотор, нужно проверить, выключены ли все электроприборы. <br>
+													При отключении АКБ от блока питания надо сразу выключать провод со знаком минус. <br>
+													Избегайте саморазряда батареи. <br>
+													Постоянно контролируйте места соединения клемм с аккумулятором. <br>
+													Если вы не пользуетесь батареей, не слив при этом с нее электролит, надо постоянно заряжать ее и проверять плотность и уровень жидкости. <br>
+													Необходимо периодически измерять плотность и уровень электролита каждые 3000 км пробега. <br>
+													Если все показатели в норме, батарею все равно надо заряжать: зимой — каждый месяц, летом — каждые 6 месяцев. Для зарядки использовать ток, равный 1/10 емкости АКБ. <br>
+													Помните, что зимой при морозе возможно повреждение корпуса, которое происходит из-за замерзания жидкости в разряженном аккумуляторе, поэтому проверяйте аккумулятор на целостность.
+												</p>
+											</details>
+											<details name="operation-maintenance">
+												<summary>Как продлить срок службы аккумулятора?</summary>
+												<p>Вам достаточно придерживаться нескольких основных правил: <br>
+													Заглушив мотор, нужно проверить, выключены ли все электроприборы. <br>
+													При отключении АКБ от блока питания надо сразу выключать провод со знаком минус. <br>
+													Избегайте саморазряда батареи. <br>
+													Постоянно контролируйте места соединения клемм с аккумулятором. <br>
+													Если вы не пользуетесь батареей, не слив при этом с нее электролит, надо постоянно заряжать ее и проверять плотность и уровень жидкости. <br>
+													Необходимо периодически измерять плотность и уровень электролита каждые 3000 км пробега. <br>
+													Если все показатели в норме, батарею все равно надо заряжать: зимой — каждый месяц, летом — каждые 6 месяцев. Для зарядки использовать ток, равный 1/10 емкости АКБ. <br>
+													Помните, что зимой при морозе возможно повреждение корпуса, которое происходит из-за замерзания жидкости в разряженном аккумуляторе, поэтому проверяйте аккумулятор на целостность.
+												</p>
+											</details>
+											<details name="operation-maintenance">
+												<summary>Как продлить срок службы аккумулятора?</summary>
+												<p>Вам достаточно придерживаться нескольких основных правил: <br>
+													Заглушив мотор, нужно проверить, выключены ли все электроприборы. <br>
+													При отключении АКБ от блока питания надо сразу выключать провод со знаком минус. <br>
+													Избегайте саморазряда батареи. <br>
+													Постоянно контролируйте места соединения клемм с аккумулятором. <br>
+													Если вы не пользуетесь батареей, не слив при этом с нее электролит, надо постоянно заряжать ее и проверять плотность и уровень жидкости. <br>
+													Необходимо периодически измерять плотность и уровень электролита каждые 3000 км пробега. <br>
+													Если все показатели в норме, батарею все равно надо заряжать: зимой — каждый месяц, летом — каждые 6 месяцев. Для зарядки использовать ток, равный 1/10 емкости АКБ. <br>
+													Помните, что зимой при морозе возможно повреждение корпуса, которое происходит из-за замерзания жидкости в разряженном аккумуляторе, поэтому проверяйте аккумулятор на целостность.
+												</p>
+											</details>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="callback-popover" id="ask-success-popover" popover>
+							<button class="callback-popover__close" id="askCloseBtn" popovertarget="ask-success-popover" popovertargetaction="hide">
+								<img src="../img/header/close.svg" alt="Иконка закрытия окна">
+							</button>
+							<div class="callback-popover__header">
+								<div class="callback-popover__icon">
+									<img src="../img/header/call.svg" alt="Иконка телефонной трубки">
+								</div>
+								<div class="ask-popover__title callback-popover__title">
+									<h3>ЗАдать вопрос</h3>
+									<p>Менеджеры компании с радостью ответят на ваши вопросы и помогут с выбором продукции.</p>
+								</div>
+							</div>
+							<div class="callback-popover__body ask-success-popover__body">
+								<img src="../img/header/success.png" alt="" class="ask-succes-img">
+								<h2 class="callback-succ-popover-title">ВАШЕ ПИСЬМО УСПЕШНО ОТПРАВЛЕНО!</h2>
+							</div>
+						</div>
+						<div class="ask-popover callback-popover" id="ask-popover" popover>
+							<button class="callback-popover__close" id="askCloseBtn" popovertarget="ask-popover" popovertargetaction="hide">
+								<img src="../img/header/close.svg" alt="Иконка закрытия окна">
+							</button>
+							<div class="callback-popover__header">
+								<div class="callback-popover__icon">
+									<img src="../img/header/call.svg" alt="Иконка телефонной трубки">
+								</div>
+
+								<div class="ask-popover__title callback-popover__title">
+									<h3>ЗАдать вопрос</h3>
+									<p>Менеджеры компании с радостью ответят на ваши вопросы и помогут с выбором продукции.</p>
+								</div>
+							</div>
+							<form class="callback-form ask-form" id="askForm" novalidate>
+								<label>
+									Ваше имя:<span>*</span>
+									<input type="text" name="ask-name" id="askName"/>
+									<small class="error"></small>
+								</label>
+								<label>
+									Телефон:<span>*</span>
+									<input type="tel" name="ask-phone" id="askPhone" />
+									<small class="error"></small>
+								</label>
+								<label>
+									E-mail:
+									<input type="email" name="ask-email" id="askEmail" />
+									<small class="error"></small>
+								</label>
+								<label>
+									Интересующий товар / услуга:
+									<input type="text" name="ask-product" id="askProduct" />
+									<small class="error"></small>
+								</label>
+								<label>
+									Сообщение:<span>*</span>
+									<textarea name="ask-message" id="askMessage"></textarea>
+									<small class="error"></small>
+								</label>
+								<label class="callback-checkbox">
+									<input type="checkbox" id="askAgree" />
+									<span class="callback-checkbox__box"></span>
+									<span class="callback-checkbox__text">
+										Я согласен на
+										<a href="#">обработку персональных данных</a>
+									</span>
+								</label>
+								<small class="error checkbox-error ask-checkbox-error"></small>
+								<div class="callback-form__footer">
+									<span class="callback-form__required"> * Обязательное поле </span>
+									<button type="submit" class="callback-form-submit--btn button-white" id="askSubmitBtn">ОТПРАВИТЬ</button>
+								</div>
+							</form>
+						</div>
+						<button class="services-link order--call-btn button-black" popovertarget="ask-popover">ЗАДАТЬ ВОПРОС</button>  
+					</div>
+				</section>
+			</main>
+			<footer class="footer">
+				<div class="footer-container container">
+					<div class="footer-logo--col">
+						<img src="../img/header/logo.png" alt="Логотип" class="footer-logo">
+						<p class="copyright">© 2019 PRO Auto. <br> Все права защищены.</p>
+					</div>
+					<div class="footer-menu--col">
+						<nav class="footer-menu">
+							<ul class="footer-menu-list">
+								<li class="footer-menu__item">
+									<h3 class="footer-menu-item__title">КОМПАНИЯ</h3>
+									<ul class="footer-menu-item-list">
+										<li class="footer-menu-list--item">
+											<a href="./about.html#about-section" class="footer-menu-list--item__link">О КОМПАНИИ</a>
+										</li>
+										<li class="footer-menu-list--item">
+											<a href="./about.html#licenses" class="footer-menu-list--item__link">ЛИЦЕНЗИИ</a>
+										</li>
+										<li class="footer-menu-list--item">
+											<a href="./about.html#partners-section" class="footer-menu-list--item__link">ПАРТНЕРЫ</a>
+										</li>
+										<li class="footer-menu-list--item">
+											<a href="./about.html#reviews" class="footer-menu-list--item__link">ОТЗЫВЫ КЛИЕНТОВ</a>
+										</li>
+										<li class="footer-menu-list--item">
+											<a href="#" class="footer-menu-list--item__link">РЕКВИЗИТЫ</a>
+										</li>
+										<li class="footer-menu-list--item">
+											<a href="#" class="footer-menu-list--item__link">ВАКАНСИИ</a>
+										</li>
+									</ul>
+								</li>
+								<li class="footer-menu__item">
+									<h3 class="footer-menu-item__title">КАТАЛОГ</h3>
+									<ul class="footer-menu-item-list">
+										<li class="footer-menu-list--item">
+											<a href="./battery-catalog.html" class="footer-menu-list--item__link">АККУМУЛЯТОРЫ</a>
+										</li>
+										<li class="footer-menu-list--item">
+											<a href="#" class="footer-menu-list--item__link">АВТОМАСЛА</a>
+										</li>
+										<li class="footer-menu-list--item">
+											<a href="#" class="footer-menu-list--item__link">АКСЕССУАРЫ</a>
+										</li>
+										<li class="footer-menu-list--item">
+											<a href="#" class="footer-menu-list--item__link">АВТОХИМИЯ</a>
+										</li>
+									</ul>
+								</li>
+								<li class="footer-menu__item">
+									<h3 class="footer-menu-item__title">УСЛУГИ</h3>
+									<ul class="footer-menu-item-list">
+										<li class="footer-menu-list--item">
+											<a href="./battery-service.html#battery-diagnostic" class="footer-menu-list--item__link">ДИАГНОСТИКА АККУМУЛЯТОРА</a>
+										</li>
+										<li class="footer-menu-list--item">
+											<a href="./battery-service.html#battery-reception" class="footer-menu-list--item__link">ПРИЕМ АККУМУЛЯТОРОВ</a>
+										</li>
+									</ul>
+								</li>
+								<li class="footer-menu__item">
+									<h3 class="footer-menu-item__title">ИНФОРМАЦИЯ</h3>
+									<ul class="footer-menu-item-list">
+										<li class="footer-menu-list--item">
+											<a href="#" class="footer-menu-list--item__link">АКЦИИ</a>
+										</li>
+										<li class="footer-menu-list--item">
+											<a href="#news-section" class="footer-menu-list--item__link">НОВОСТИ</a>
+										</li>
+										<li class="footer-menu-list--item">
+											<a href="#" class="footer-menu-list--item__link">СТАТЬИ</a>
+										</li>
+										<li class="footer-menu-list--item">
+											<a href="#faq-section" class="footer-menu-list--item__link">ВОПРОС - ОТВЕТ</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="footer-contacts--col">
+						<ul class="footer-contacts-list">
+							<li class="footer-contacts-list__item">
+								<a href="tel:+7(342)2793613" class="footer-contact__link">+7 (342) 279-36-13</a>
+							</li>
+							<li class="footer-contacts-list__item">
+								<a href="mailto:proauto59@yandex.ru" class="footer-contact__link">proauto59@yandex.ru</a>
+							</li>
+							<button class="footer-callback-btn button-black" popovertarget="callback-popover">ЗАКАЗАТЬ ЗВОНОК</button>
+						</ul>
+					</div>
+				</div>
+			</footer>
+			<div class="scroll-buttons">
+				<button class="scroll-btn scroll-up" id="scrollUp" aria-label="Вгору">
+					<svg width="28" height="28" viewBox="0 0 24 24">
+						<polyline points="5,15 12,8 19,15"></polyline>
+					</svg>
+				</button>
+
+				<button class="scroll-btn scroll-down" id="scrollDown" aria-label="Вниз">
+					<svg width="28" height="28" viewBox="0 0 24 24">
+						<polyline points="5,9 12,16 19,9"></polyline>
+					</svg>
+				</button>
+			</div>
+		</div>
+	<script src="../js/callback-popover.js"></script>
+	<script src="../js/search-popover.js"></script>
+	<script src="../js/ask-popover.js"></script>
+	<script src="../js/scroll-buttons.js"></script>
+	<script src="../js/cart.js"></script>
+	<script src="../js/tabs.js"></script>
+	</body>
+</html>

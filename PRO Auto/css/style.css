@@ -80,13 +80,15 @@ html {
 
 /*--------------------------------------Header------------------------------*/
 .header {
-    background-color: #0E0E0E;
-    padding: 24px 0 18px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 100;
+  max-width: 1640px;
+  margin: 0 auto;
+  background-color: #0E0E0E;
+  padding: 24px 0 18px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
 }
 
 .header-container {
@@ -418,7 +420,8 @@ html {
 /*-----------------------------*/
 .search-popover {
   background-color: #1D1D1D;
-  width: 100%;
+  width: 100vw;
+  max-width: 1640px;
   height: calc(100vh - 110px);
   margin: 0 auto;
   position: fixed;
