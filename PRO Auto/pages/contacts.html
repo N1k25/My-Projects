@@ -242,7 +242,39 @@
 							<p class="products-header-text">Аккумуляторы и автомасла в Перми</p>
 						</div>
 						<div class="contacts-body">
-							<!-- Contacts + Map -->
+							<!-- Левая часть -->
+							<div class="contacts-info">
+								<h2 class="contacts-title">Как с нами связаться</h2>
+								<div class="contact-item">
+									<span class="contact-icon phone-icon"></span>
+									<a href="tel:+73422793613">+7 (342) 279-36-13</a>
+								</div>
+								<div class="contact-item">
+									<span class="contact-icon mail-icon"></span>
+									<a href="mailto:proauto59@yandex.ru">proauto59@yandex.ru</a>
+								</div>
+								<div class="contact-item">
+									<span class="contact-icon address-icon"></span>
+									<a href="#" class="address-link" data-address="г. Пермь, Леонова 82 Б">г. Пермь, Леонова 82 Б</a>
+								</div>
+
+								<h2 class="work-title">Режим работы</h2>
+								<div class="contact-item">
+									<span class="contact-icon clock-icon"></span>
+									<span> Пн. – Вс.: с 9:00 до 18:00 </span>
+								</div>
+							</div>
+							<!-- Правая часть -->
+							<div class="contacts-map">
+								<iframe
+									id="googleMap"
+									src="https://www.google.com/maps?q=Пермь,+Леонова+82Б&output=embed"
+									loading="lazy"
+									allowfullscreen
+									referrerpolicy="no-referrer-when-downgrade"
+								>
+								</iframe>
+							</div>
 						</div>
 					</div>
 				</section>
@@ -274,7 +306,7 @@
 								</div>
 							</div>
 							<!-- Question Form -->
-							<form class="callback-form ask-form" id="questionForm" novalidate>
+							<form class="callback-form ask-form question-form" id="questionForm" novalidate>
 								<label>
 									Ваше имя:<span>*</span>
 									<input type="text" name="question-name" id="questionName"/>
@@ -311,7 +343,7 @@
 								<small class="error checkbox-error question-checkbox-error"></small>
 								<div class="callback-form__footer">
 									<span class="callback-form__required"> * Обязательное поле </span>
-									<button type="submit" class="callback-form-submit--btn button-black" id="questionSubmitBtn">ОТПРАВИТЬ</button>
+									<button type="submit" class="callback-form-submit--btn question-form-submit--btn button-black" id="questionSubmitBtn">ОТПРАВИТЬ</button>
 								</div>
 							</form>
 						</div>

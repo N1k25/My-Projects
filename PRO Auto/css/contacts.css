@@ -8,3 +8,160 @@
 .contacts__hero-container {
     transform: scaleX(-1);
 }
+
+.hero-pagination {
+    flex-direction: row-reverse;
+}
+
+/*--------------------------------------Contacts------------------------------*/
+.contacts {
+    padding: 88px 0;
+
+    .news-title-wrapper {
+        width: 246px;
+    }
+
+    .products-header-text {
+        text-align: center;
+    }
+}
+
+.contacts-body {
+    margin-top: 36px;
+    display: flex;
+    width: 100%;
+    max-width: 1128px;
+    min-height: 442px;
+}
+
+/* Левая часть */
+.contacts-info {
+    width: 50%;
+    background: #1D1D1D;
+    color: #fff;
+    padding: 82px 62px;
+}
+
+.contacts-title,
+.work-title {
+    margin: 0 0 30px;
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    font-size: 16px;
+}
+
+.contact-icon {
+    width: 20px;
+    min-width: 20px;
+    margin-right: 16px;
+    color: #C53720;
+    font-size: 20px;
+    text-align: center;
+}
+
+.contact-item a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.contact-item a:hover {
+    color: #C53720;
+}
+
+/* Кликабельный адрес */
+.address-link {
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.address-link:hover {
+    color: #C53720;
+}
+
+.work-title {
+    margin: 30px 0 38px;
+}
+
+/* Правая часть */
+.contacts-map {
+    width: 50%;
+    min-height: 442px;
+}
+
+.contacts-map iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 442px;
+    border: 0;
+}
+
+/* Иконки сделаны через символы, чтобы не подключать библиотеки */
+.phone-icon::before {
+    content: url('../img/footer/call.svg');
+}
+
+.mail-icon::before {
+    content: url('../img/footer/mail.svg');
+}
+
+.address-icon::before {
+    content: url('../img/footer/locale.svg');
+}
+
+.clock-icon::before {
+    content: url('../img/footer/clock.svg');
+}
+
+/*--------------------------------------Question------------------------------*/
+.question {
+    padding: 88px 0;
+    background-image: linear-gradient(to left, rgb(0, 0, 0), rgba(0, 0, 0, 0.698)),
+            url('../img/contacts/ford-gt.jpg');
+    color: #FFFFFF;
+
+    .news-title-wrapper {
+        width: 346px;
+    }
+
+    .products-header-text {
+        text-align: center;
+    }
+}
+
+.question-body {
+    margin-top: 44px;
+}
+
+.question-form {
+    width: 648px;
+    margin:  0 auto;
+
+    label {
+        color: #FFFFFF;
+    }
+
+    .callback-checkbox {
+        align-items: center;
+
+        .callback-checkbox__box {
+            background-color: #FFFFFF;
+        }
+
+        .callback-checkbox__text {
+            color: #FFFFFF!important;
+        }
+    }
+}
+
+.question-form-submit--btn {
+    padding: 12px 20px;
+}
