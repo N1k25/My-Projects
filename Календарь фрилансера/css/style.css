@@ -1,0 +1,18 @@
+@import url("reset.css");
+@import url("header.css");
+@import url(https://fonts.googleapis.com/css?family=Roboto:regular,500,700,900&display=swap);
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.button-blue {
+    padding: 16px 57.5px;
+    background-color: #38A3F1;
+    border-radius: 35px;
+    font-size: 22px;
+    line-height: 33px;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+}

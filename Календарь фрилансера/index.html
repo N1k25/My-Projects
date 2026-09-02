@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Календарь фрилансера</title>
+		<link rel="icon" type="image/png" href="img/favicon.ico"/>
+		<link rel="stylesheet" href="./css/style.css"/>
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<section class="header-top">
+				    <div class="header-logo">
+						<img src="./img/header/logo-light.png" alt="" class="logo-img">
+					</div>
+					<img class="menu-icon" src="assets/burger-menu.svg" title='Burger Menu' alt='Burger Menu'
+                        onclick="toggleMenu(this)">
+					<div class="header-content navigation">
+					    <nav class="header-menu">
+							<ul class="menu-list">
+							    <li class="menu-list__item">
+									<a href="#" class="menu-link">Home</a>
+								</li>
+							    <li class="menu-list__item">
+									<a href="#" class="menu-link">Product</a>
+								</li>
+							    <li class="menu-list__item">
+									<a href="#" class="menu-link">Pricing</a>
+								</li>
+							    <li class="menu-list__item">
+									<a href="#" class="menu-link">About</a>
+								</li>
+							    <li class="menu-list__item">
+									<a href="#" class="menu-link">Contact</a>
+								</li>
+							</ul>
+						</nav>
+						<form class="header-form">
+						    <input type="email" id="header-form-input" placeholder="Your Email" required>
+							<button id="header-form-button">Subsribe</button>
+						</form>
+					</div>
+				</section>
+				<section class="hero">
+				    <div class="hero-container">
+						<div class="mobile-content">
+							<h2 class="mobile-title">Lightning fast prototyping</h2>
+							<p class="mobile-text">Most calendars are designed for teams. Slate is designed for freelancers</p>
+						</div>
+    					<div class="hero-images-block">
+        				    <img src="./img/hero/navigation.png" alt="Navigation" class="hero-img search-img">
+        				    <img src="./img/hero/boards.png" alt="Boards" class="hero-img boards-img">
+    					</div>
+    					<div class="hero-content">
+    					    <h1 class="hero-title">We focus on ergonomics</h1>
+    						<p class="hero-text">Most calendars are designed for teams. Slate is designed for freelancers</p>
+    						<a href="#" class="hero-link">Try For Free</a>
+    					</div>
+					</div>
+				</section>
+			</header>
+			<main class="page">
+				<section class="features"></section>
+				<section class="prototyping"></section>
+				<section class="subsribe"></section>
+				<section class="partners"></section>
+				<section class="testimonials"></section>
+				<section class="pricing"></section>
+				<section class="contact"></section>
+				<section class="pages"></section>
+			</main>
+		</div>
+	<script src="./js/script.js"></script>
+	</body>
+</html>
