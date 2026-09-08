@@ -1,0 +1,71 @@
+@import url("./reset.css");
+
+.features {
+    gap: 80px;
+}
+
+.features-header {
+    max-width: 318px;
+}
+
+.features-cards {
+    max-width: 869px;
+    display: flex;
+    justify-content: space-between;
+    gap: 52px;
+}
+
+.feature-card {
+    max-width: 255px;
+}
+
+.feature-card__header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.feature-card__title {
+    font-size: 22px;
+    line-height: 33px;
+    letter-spacing: 0.1px;
+    color: #252B42;
+    padding: 10px 0;
+    font-weight: 700;
+}
+
+.feature-card__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.2px;
+    color: #374754;
+}
+
+/* Small tablets */
+@media (max-width: 991px) {
+    .features-cards {
+        gap: 32px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 418px) {
+    .features {
+        padding: 80px 50px!important;
+        gap: 50px;
+    }
+
+    .features-cards {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 75px;
+    }
+
+    .feature-card {
+        width: 100%;
+    }
+}
