@@ -1,6 +1,7 @@
 @import url("./reset.css");
 @import url("./header.css");
 @import url("./features.css");
+@import url("./prototyping.css");
 @import url(https://fonts.googleapis.com/css?family=Roboto:regular,500,700,900&display=swap);
 
 .wrapper {
@@ -54,4 +55,9 @@
     line-height: 33px;
     letter-spacing: 0.1px;
     color: #FFFFFF;
+    transition: 0.3s;
+
+    &:hover {
+        background-color: #1C7ED6;
+    }
 }

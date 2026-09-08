@@ -45,6 +45,10 @@
 
 /* Small tablets */
 @media (max-width: 991px) {
+    .features {
+        padding: 80px 10px!important;
+    }
+
     .features-cards {
         gap: 32px;
     }

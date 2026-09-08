@@ -1,0 +1,117 @@
+.prototyping-header {
+    width: 318px;
+}
+
+.prototyping__link {
+    margin: 90px 0 114px;
+}
+
+.prototyping-screen {
+    width: 1033px;
+}
+
+.prototyping-screen-top {
+    max-width: 843px;
+    height: 567px;
+    background-color: #000000;
+    border: 9px solid #9FA2A5;
+    border-bottom: 0;
+    border-top-left-radius: 27px;
+    border-top-right-radius: 27px;
+    margin: 0 auto;
+    padding: 23px;
+}
+
+.prototyping-screen__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.prototyping-screen-bottom {
+    width: 100%;
+}
+
+.prototyping-screen-bottom__block {
+    height: 21px;
+    background-color: #D8D8D8;
+}
+
+.prototyping-screen-bottom-block__tachpad {
+    width: 138px;
+    height: 13px;
+    background-color: #9FA2A5;
+    border-bottom-left-radius: 26px;
+    border-bottom-right-radius: 26px;
+    margin: 0 auto;
+}
+
+.prototyping-screen-bottom__footer {
+    height: 12px;
+    background-color: #9FA2A5;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+/* Small tablets */
+@media (max-width: 991px) {
+    .prototyping {
+        padding: 80px 10px!important;
+    }
+
+    .prototyping-screen {
+        width: 100%;
+    }
+
+    .prototyping-screen-top {
+        width: 81.6%;
+        height: 98%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 418px) {
+    .prototyping {
+        padding: 30px 20px!important;
+    }
+
+    .prototyping__link {
+        margin: 69px 0 66px;
+    }
+
+    .prototyping-screen {
+        width: 100%;
+    }
+
+    .prototyping-screen-top {
+        max-width: 309px;
+        height: 208px;
+        border: 3px solid #9FA2A5;
+        border-bottom: 0;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        padding: 9px;
+    }
+
+    .prototyping-screen__img {
+        border-radius: 4px;
+    }
+
+    .prototyping-screen-bottom__block {
+        height: 8px;
+    }
+
+    .prototyping-screen-bottom-block__tachpad {
+        width: 51px;
+        height: 5px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .prototyping-screen-bottom__footer {
+        height: 5px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+}
