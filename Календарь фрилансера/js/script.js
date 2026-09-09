@@ -36,3 +36,28 @@ const toggleMenu = () => {
     navigationMenu.classList.toggle("menu--mobile");
   }
 };
+
+
+// Newsletter form
+const form = document.getElementById("newsletterForm");
+const emailInput = document.getElementById("email");
+const message = document.getElementById("formMessage");
+
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  const email = emailInput.value.trim();
+
+  if (!email) {
+    message.textContent = "Please enter your email.";
+    return;
+  }
+
+  if (!emailInput.checkValidity()) {
+    message.textContent = "Please enter a valid email.";
+    return;
+  }
+
+  message.textContent = "Thank you for subscribing!";
+  emailInput.value = "";
+});

@@ -1,0 +1,156 @@
+@import url("./reset.css");
+
+/* =========================
+   DESKTOP
+========================= */
+
+.newsletter {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(45deg, #EF2779, #7834BE);
+}
+
+.newsletter__content {
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.newsletter-subtitle,
+.newsletter-title,
+.newsletter-mobile__title {
+  color: #fff!important;
+}
+
+.newsletter-mobile__title {
+  display: none;
+}
+
+/* Форма */
+.newsletter__form-wrapper {
+  width: 100%;
+  max-width: 373px;
+  margin-top: 59px;
+  color: #fff;
+}
+
+.newsletter__heading {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 33px;
+  letter-spacing: 0.1px;
+}
+
+.newsletter__description {
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.2px;
+}
+
+/* Input */
+.newsletter__form {
+  width: 100%;
+  margin-top: 10px;
+  padding-top: 24px;
+}
+
+.newsletter__input,
+.newsletter__button {
+  width: 100%;
+  border: 0;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.newsletter__input {
+  height: 54px;
+  border-radius: 39px;
+  padding: 0 35px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.1px;
+  color: #18171D;
+  background: #f4f4f4;
+  outline: none;
+}
+
+.newsletter__input::placeholder {
+  color: #18171D;
+  opacity: 1;
+}
+
+.newsletter__input:focus {
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.7);
+}
+
+/* Button */
+.newsletter__button {
+  height: 50px;
+  border-radius: 35px;
+  margin-top: 12px;
+  color: #fff;
+  background: #EF2779;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0.2px;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.newsletter__button:hover {
+  background: #e7196b;
+}
+
+.newsletter__button:active {
+  transform: scale(0.98);
+}
+
+/* Message */
+.newsletter__message {
+  min-height: 20px;
+  margin-top: 12px;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* =========================
+   TABLET — 991px
+========================= */
+
+@media (max-width: 991px) {
+  .newsletter__form-wrapper {
+    max-width: 353px;
+  }
+}
+
+/* =========================
+   MOBILE — 418px
+========================= */
+
+@media (max-width: 418px) {
+  .newsletter__content {
+    padding: 0 20px;
+  }
+
+  .newsletter-title {
+    display: none;
+  }
+
+  .newsletter-mobile__title {
+    display: block;
+    max-width: 340px;
+  }
+
+  .newsletter__form-wrapper {
+    max-width: 100%;
+  }
+}
