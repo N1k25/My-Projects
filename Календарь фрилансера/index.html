@@ -235,7 +235,163 @@
 						</div>
 					</div>
 				</section>
-				<section class="contact"></section>
+				<section class="contact __section">
+					<div class="contact-container">
+						<!-- Заголовок -->
+						<div class="contact-header section-header">
+							<h2 class="contact-title section-title">Contact Us</h2>
+							<p class="contact-text section-text">Most calendars are designed for teams. Slate is designed for freelancers</p>
+						</div>
+						<!-- Контент -->
+						<div class="contact-content">
+							<!-- Форма -->
+							<div class="contact-form-wrapper">
+								<form id="contactForm" novalidate>
+									<div class="form-group">
+										<label for="name" class="sr-only"> Your Name </label>
+
+										<input
+										type="text"
+										id="name"
+										name="name"
+										placeholder="Your Name"
+										autocomplete="name"
+										/>
+
+										<span class="error-message" id="nameError"></span>
+									</div>
+									<div class="form-group">
+										<label for="email" class="sr-only"> Your Email </label>
+
+										<input
+										type="email"
+										id="contactEmail"
+										name="email"
+										placeholder="Your Email"
+										autocomplete="email"
+										/>
+
+										<span class="error-message" id="emailError"></span>
+									</div>
+									<div class="form-group message-group">
+										<label for="message" class="sr-only"> Your Message </label>
+
+										<textarea
+										id="message"
+										name="message"
+										placeholder="Your Message"
+										rows="6"
+										></textarea>
+
+										<span class="error-message" id="messageError"></span>
+									</div>
+									<button type="submit" class="send-button">Send</button>
+									<div class="form-status" id="formStatus"></div>
+								</form>
+							</div>
+							<!-- Контактна інформація -->
+							<div class="contact-info">
+								<div>
+									<!-- Location -->
+									<a class="contact-item location-link"
+										href="https://www.google.com/maps/search/?api=1&query=6386+Spring+St+Anchorage+Georgia+12473+United+States"
+										target="_blank"
+										rel="noopener noreferrer"
+										>
+										<span class="contact-icon">
+											<!-- Location icon -->
+											<svg width="26" height="32" viewBox="0 0 26 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<g clip-path="url(#clip0_67_8030)">
+												<path d="M13.0013 19.1667C16.4941 19.1667 19.3346 16.3262 19.3346 12.8333C19.3346 9.3405 16.4941 6.5 13.0013 6.5C9.50847 6.5 6.66797 9.3405 6.66797 12.8333C6.66797 16.3262 9.50847 19.1667 13.0013 19.1667ZM13.0013 9.66667C14.7477 9.66667 16.168 11.0869 16.168 12.8333C16.168 14.5798 14.7477 16 13.0013 16C11.2549 16 9.83464 14.5798 9.83464 12.8333C9.83464 11.0869 11.2549 9.66667 13.0013 9.66667Z" fill="#EF2779"/>
+												<path d="M11.7485 31.5387C12.0164 31.73 12.3375 31.8329 12.6668 31.8329C12.9961 31.8329 13.3172 31.73 13.5851 31.5387C14.0665 31.1983 25.3794 23.0298 25.3335 12.8332C25.3335 5.84909 19.6509 0.166504 12.6668 0.166504C5.68272 0.166504 0.000139393 5.84909 0.000139393 12.8253C-0.0457773 23.0298 11.2671 31.1983 11.7485 31.5387ZM12.6668 3.33317C17.9061 3.33317 22.1668 7.59392 22.1668 12.8411C22.2001 19.8679 15.2191 26.1775 12.6668 28.2469C10.1161 26.1759 3.13356 19.8648 3.16681 12.8332C3.16681 7.59392 7.42756 3.33317 12.6668 3.33317Z" fill="#EF2779"/>
+												</g>
+												<defs>
+													<clipPath id="clip0_67_8030">
+														<rect width="26" height="32" fill="white"/>
+													</clipPath>
+												</defs>
+											</svg>
+										</span>
+										<span class="contact-text">
+											6386 Spring St undefined Anchorage,<br />
+											Georgia 12473 United States
+										</span>
+									</a>
+									<!-- Phone -->
+									<a class="contact-item" href="tel:+18435550130">
+										<span class="contact-icon">
+											<!-- Phone icon -->
+											<svg width="21" height="34" viewBox="0 0 21 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<g clip-path="url(#clip0_67_8036)">
+												<path d="M16.0417 0.958496H4.375C1.95417 0.958496 0 2.91266 0 5.3335V28.6668C0 31.0877 1.95417 33.0418 4.375 33.0418H16.0417C18.4625 33.0418 20.4167 31.0877 20.4167 28.6668V5.3335C20.4167 2.91266 18.4625 0.958496 16.0417 0.958496ZM13.125 30.1252H7.29167V28.6668H13.125V30.1252ZM17.8646 25.7502H2.55208V5.3335H17.8646V25.7502Z" fill="#EF2779"/>
+												</g>
+												<defs>
+													<clipPath id="clip0_67_8036">
+														<rect width="21" height="34" fill="white"/>
+													</clipPath>
+												</defs>
+											</svg> 
+										</span>
+										<span class="contact-text"> (843) 555-0130 </span>
+									</a>
+									<!-- Email -->
+									<a class="contact-item" href="mailto:willie.jennings@example.com">
+										<span class="contact-icon">
+											<!-- Email icon -->
+											<svg width="27" height="22" viewBox="0 0 27 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<g clip-path="url(#clip0_67_8042)">
+												<path d="M25.3125 0.6875H0.9375C0.418945 0.6875 0 1.10645 0 1.625V20.375C0 20.8936 0.418945 21.3125 0.9375 21.3125H25.3125C25.8311 21.3125 26.25 20.8936 26.25 20.375V1.625C26.25 1.10645 25.8311 0.6875 25.3125 0.6875ZM24.1406 3.93359V19.2031H2.10938V3.93359L1.30078 3.30371L2.45215 1.82422L3.70605 2.7998H22.5469L23.8008 1.82422L24.9521 3.30371L24.1406 3.93359ZM22.5469 2.79688L13.125 10.1211L3.70312 2.79688L2.44922 1.82129L1.29785 3.30078L2.10645 3.93066L12.1143 11.7119C12.4021 11.9355 12.7561 12.0569 13.1206 12.0569C13.4851 12.0569 13.8391 11.9355 14.127 11.7119L24.1406 3.93359L24.9492 3.30371L23.7979 1.82422L22.5469 2.79688Z" fill="#EF2779"/>
+												</g>
+												<defs>
+													<clipPath id="clip0_67_8042">
+														<rect width="27" height="22" fill="white"/>
+													</clipPath>
+												</defs>
+											</svg>  
+										</span>
+										<span class="contact-text"> willie.jennings@example.com </span>
+									</a>
+								</div>
+								<!-- Social links -->
+								<div class="social-links">
+									<!-- Twitter / X -->
+									<a
+										href="https://twitter.com/"
+										target="_blank"
+										rel="noopener noreferrer"
+										aria-label="Twitter"
+									>
+										<svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M37.1455 10.1785C35.9207 10.7068 34.5878 11.087 33.2149 11.2351C34.6403 10.3883 35.7077 9.05052 36.2168 7.4727C34.8793 8.26837 33.414 8.82631 31.886 9.12177C31.2474 8.43903 30.475 7.89514 29.617 7.52396C28.7589 7.15279 27.8337 6.96231 26.8988 6.96437C23.1163 6.96437 20.0744 10.0304 20.0744 13.7928C20.0744 14.3211 20.1384 14.8495 20.2425 15.3578C14.5788 15.0616 9.52753 12.3559 6.16936 8.21318C5.55746 9.25832 5.2368 10.4483 5.24075 11.6594C5.24075 14.029 6.44553 16.1183 8.28273 17.3471C7.20004 17.3045 6.14271 17.0069 5.19672 16.4785V16.5626C5.19672 19.8808 7.54225 22.6305 10.6683 23.2629C10.0813 23.4154 9.47753 23.4934 8.87111 23.4951C8.42682 23.4951 8.00655 23.4511 7.58227 23.391C8.44683 26.0968 10.9645 28.0621 13.9624 28.1261C11.6169 29.9633 8.67898 31.044 5.48891 31.044C4.91654 31.044 4.3882 31.024 3.83984 30.9599C6.86581 32.9012 10.4561 34.0219 14.3226 34.0219C26.8748 34.0219 33.7432 23.6232 33.7432 14.5973C33.7432 14.3011 33.7432 14.0049 33.7232 13.7087C35.0521 12.7361 36.2168 11.5313 37.1455 10.1785Z" fill="#EF2779"/>
+										</svg>
+									</a>
+									<!-- Facebook -->
+									<a
+										href="https://www.facebook.com/"
+										target="_blank"
+										rel="noopener noreferrer"
+										aria-label="Facebook"
+									>
+										<svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M35.2243 4.48291H5.76521C5.05675 4.48291 4.48438 5.05528 4.48438 5.76374V35.2229C4.48438 35.9313 5.05675 36.5037 5.76521 36.5037H35.2243C35.9328 36.5037 36.5052 35.9313 36.5052 35.2229V5.76374C36.5052 5.05528 35.9328 4.48291 35.2243 4.48291ZM31.5259 13.829H28.9683C26.963 13.829 26.5747 14.7816 26.5747 16.1825V19.2685H31.3618L30.7374 24.0996H26.5747V36.5037H21.5835V24.1036H17.4088V19.2685H21.5835V15.7062C21.5835 11.5715 24.1091 9.31805 27.7995 9.31805C29.5687 9.31805 31.0856 9.45013 31.5299 9.51017V13.829H31.5259Z" fill="#EF2779"/>
+										</svg>
+									</a>
+									<!-- LinkedIn -->
+									<a
+										href="https://www.linkedin.com/"
+										target="_blank"
+										rel="noopener noreferrer"
+										aria-label="LinkedIn"
+									>
+										<svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M35.2243 4.48291H5.76521C5.05675 4.48291 4.48438 5.05528 4.48438 5.76374V35.2229C4.48438 35.9313 5.05675 36.5037 5.76521 36.5037H35.2243C35.9328 36.5037 36.5052 35.9313 36.5052 35.2229V5.76374C36.5052 5.05528 35.9328 4.48291 35.2243 4.48291ZM13.9825 31.7686H9.23146V16.4867H13.9825V31.7686ZM11.609 14.3973C11.0644 14.3973 10.5319 14.2358 10.0791 13.9332C9.62622 13.6307 9.27326 13.2006 9.06483 12.6974C8.8564 12.1942 8.80187 11.6405 8.90812 11.1063C9.01438 10.5721 9.27665 10.0815 9.66178 9.69634C10.0469 9.31121 10.5376 9.04894 11.0718 8.94268C11.6059 8.83643 12.1596 8.89096 12.6628 9.09939C13.166 9.30782 13.5961 9.66078 13.8987 10.1136C14.2013 10.5665 14.3628 11.0989 14.3628 11.6436C14.3588 13.1645 13.126 14.3973 11.609 14.3973ZM31.7701 31.7686H27.023V24.3358C27.023 22.5626 26.991 20.2852 24.5534 20.2852C22.0838 20.2852 21.7035 22.2144 21.7035 24.2077V31.7686H16.9605V16.4867H21.5154V18.5761H21.5795C22.2119 17.3753 23.7609 16.1065 26.0744 16.1065C30.8855 16.1065 31.7701 19.2725 31.7701 23.3872V31.7686Z" fill="#EF2779"/>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
 				<section class="pages"></section>
 			</main>
 		</div>
