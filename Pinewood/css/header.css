@@ -1,0 +1,347 @@
+:root {
+    --green: #048410;
+    --text: #1D1D1B;
+    --border: #d7d7d7;
+    --shadow: 0 14px 16px rgba(0, 0, 0, 0.38);
+}
+
+.site-header {
+    padding: 20px 0;
+    position: relative;
+    z-index: 20;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-link {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 10px;
+    border: 0;
+    background: transparent;
+    color: var(--text);
+    font: inherit;
+    font-size: 18px;
+    line-height: 1.2;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+
+    &:hover {
+        color: var(--green);
+    }
+}
+
+.nav-link.active {
+    color: var(--green);
+}
+
+.nav-link.active::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--green);
+}
+
+.chevron {
+    width: 8px;
+    height: 8px;
+    margin-top: -4px;
+    border-right: 1.5px solid currentColor;
+    border-bottom: 1.5px solid currentColor;
+    transform: rotate(45deg);
+    transition: transform 0.18s ease;
+}
+
+.nav-dropdown {
+    position: relative;
+}
+
+.nav-dropdown.open .chevron {
+    transform: rotate(225deg);
+    margin-top: 4px;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: calc(100% + 5px);
+    left: -14px;
+    min-width: 153px;
+    padding: 8px 0;
+    background: #fff;
+    border: 1px solid #202020;
+    border-radius: 19px;
+    box-shadow: var(--shadow);
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    transform: translateY(-5px);
+    transition:
+        opacity 0.16s ease,
+        transform 0.16s ease,
+        visibility 0.16s ease;
+}
+
+.nav-dropdown.open .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 8px 14px;
+    color: var(--text);
+    font-size: 14px;
+    line-height: 1.25;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.dropdown-menu a:hover {
+    background: #f4f4f4;
+    color: var(--green);
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+}
+
+.phone {
+    color: var(--green);
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+    
+    &::after {
+        content: '';
+        width: 0;
+        height: 1px;
+        background-color: var(--green);
+        position: absolute;
+        left: 50%;
+        bottom: -5px;
+        transition: 0.3s;
+    }
+
+    &:hover {
+        &.phone::after {
+            width: 100%;
+            left: 0;
+        }
+    }
+}
+
+.action-divider {
+    font-size: 18px;
+    color: #1D1D1B;
+    opacity: 0.2;
+}
+
+.callback {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding: 10px 20px;
+    border: 1px solid var(--green);
+    border-radius: 50px;
+    background: transparent;
+    outline: none;
+    color: var(--green);
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.callback:hover {
+    background: var(--green);
+    color: #fff;
+    box-shadow: 2px 2px 5px #000;
+}
+
+.callback:active {
+    scale: 0.98;
+}
+
+.burger {
+    display: none;
+    width: 40px;
+    height: 40px;
+    padding: 4px;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+
+    border: 1px solid pink;
+}
+
+.burger span {
+    display: block;
+    width: 36px;
+    height: 2px;
+    border-radius: 10px;
+    background: var(--text);
+    transition:
+    transform 0.18s ease,
+    opacity 0.18s ease;
+    
+    &:nth-child(2) {
+        margin: 10px auto;
+    }
+    
+    &:last-child {
+        width: 20px;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 1440px) {
+    .header-inner {
+        padding: 0 27px;
+        flex-wrap: wrap;
+    }
+
+    .main-nav {
+        gap: 5px;
+    }
+
+    .nav-link {
+        font-size: 16px;
+    }
+
+    .phone {
+        font-size: 17px;
+    }
+
+    .callback {
+        padding: 0 18px;
+        font-size: 16px;
+    }
+
+    .header-actions {
+        gap: 9px;
+    }
+}
+
+@media (max-width: 834px) {
+    .header-inner {
+        flex-direction: row-reverse;
+        min-height: 84px;
+        position: relative;
+    }
+
+    .burger {
+        display: block;
+        order: 3;
+    }
+
+    .main-nav {
+        display: none;
+        position: absolute;
+        top: 76px;
+        left: 0;
+        right: 0;
+        padding: 14px 18px 20px;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 2px;
+        background: #fff;
+        border: 1px solid var(--border);
+        border-radius: 0 0 18px 18px;
+        box-shadow: 0 12px 20px rgba(0, 0, 0, 0.12);
+    }
+
+    .main-nav.open {
+        display: flex;
+    }
+
+    .nav-link {
+        justify-content: space-between;
+        width: 100%;
+        padding: 13px 0;
+        font-size: 17px;
+    }
+
+    .nav-link.active::after {
+        right: auto;
+        width: 82px;
+    }
+
+    .nav-dropdown .dropdown-menu {
+        position: static;
+        min-width: 0;
+        margin: 0 0 5px;
+        padding: 3px 0;
+        border: 0;
+        border-radius: 10px;
+        box-shadow: none;
+        background: #f7f7f7;
+    }
+
+    .dropdown-menu a {
+        padding: 10px 15px;
+    }
+
+    .header-actions {
+        margin-left: 0;
+        margin-right: 8px;
+    }
+
+    .phone {
+        font-size: 16px;
+    }
+
+    .callback {
+        min-height: 40px;
+        padding: 0 15px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 360px) {
+    .header-inner {
+        min-height: 80px;
+        padding: 0 20px;
+    }
+
+    .main-nav {
+        top: 68px;
+    }
+
+    .header-actions {
+        gap: 0;
+    }
+
+    .phone {
+        display: none;
+    }
+
+    .action-divider {
+        display: none;
+    }
+
+    .callback {
+        min-height: 39px;
+        padding: 0 13px;
+        font-size: 16px;
+    }
+}

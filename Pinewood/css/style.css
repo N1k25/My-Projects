@@ -1,0 +1,22 @@
+@import url("reset.css");
+@import url(https://fonts.googleapis.com/css?family=Inter:regular,600&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,regular,500&display=swap);
+@import url('header.css');
+
+html {
+    scroll-behavior: smooth;
+}
+
+.wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+
+    border: 1px solid red;
+}
+
+.container {
+    max-width: 1660px;
+    margin: 0 auto;
+
+    border: 1px solid green;
+}
