@@ -2,6 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Inter:regular,600&display=swap);
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,regular,500&display=swap);
 @import url('header.css');
+@import url('hero.css');
 
 html {
     scroll-behavior: smooth;

@@ -1,93 +1,182 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Pinewood</title>
-		<link rel="icon" type="image/png" href="img/favicon.png"/>
-		<link rel="stylesheet" href="./css/style.css"/>
-		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
-	</head>
-	<body>
-		<div class="wrapper">
-			<header class="site-header">
-				<div class="header-inner container">
-					<button
-						class="burger"
-						type="button"
-						aria-label="Відкрити меню"
-						aria-expanded="false"
-						aria-controls="main-nav"
-					>
-						<span></span>
-						<span></span>
-						<span></span>
-					</button>
-					<nav class="main-nav" id="main-nav" aria-label="Головна навігація">
-						<a class="nav-link active" href="#">Главная</a>
-						<div class="nav-dropdown">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pinewood</title>
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="site-header">
+        <div class="header-inner container">
+          <button
+            class="burger"
+            type="button"
+            aria-label="Відкрити меню"
+            aria-expanded="false"
+            aria-controls="main-nav"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <nav class="main-nav" id="main-nav" aria-label="Головна навігація">
+            <a class="nav-link active" href="#">Главная</a>
+            <div class="nav-dropdown">
+              <button
+                class="nav-link dropdown-trigger"
+                type="button"
+                aria-expanded="false"
+              >
+                Дома Технониколь <span class="chevron"></span>
+              </button>
+              <div class="dropdown-menu">
+                <a href="#">Проекты домов</a>
+                <a href="#">Реализованные проекты</a>
+              </div>
+            </div>
+            <a class="nav-link" href="#">Ипотека</a>
+            <a class="nav-link" href="#">Технологии</a>
+            <div class="nav-dropdown">
+              <button
+                class="nav-link dropdown-trigger"
+                type="button"
+                aria-expanded="false"
+              >
+                Наши проекты <span class="chevron"></span>
+              </button>
+              <div class="dropdown-menu">
+                <a href="#">Готовые дома</a>
+                <a href="#">Участки</a>
+              </div>
+            </div>
+            <div class="nav-dropdown">
+              <button
+                class="nav-link dropdown-trigger"
+                type="button"
+                aria-expanded="false"
+              >
+                О компании <span class="chevron"></span>
+              </button>
+              <div class="dropdown-menu">
+                <a href="#">О нас</a>
+                <a href="#">Контакты</a>
+              </div>
+            </div>
+          </nav>
+          <div class="header-actions">
+            <a class="phone" href="tel:+74951563702">+7 (495) 156-37-02</a>
+            <span class="action-divider">или</span>
+            <a class="callback" href="#">Заказать звонок</a>
+          </div>
+        </div>
+      </header>
+      <main class="page">
+        <section class="hero">
+			<div class="hero-container container">
+				<div class="hero-header">
+					<h1 class="hero__title">Внутренняя отделка деревянных домов</h1>
+					<p class="hero__text">С оптимизацией сметы до <span>30%</span> и гарантией до <span>15 лет</span></p>
+					<a href="#" class="hero__link">Получить рассчёт</a>
+				</div>
+				<div class="hero-slider">
+					<div class="hero-slider__container">
+						<!-- Slider -->
+						<div class="hero-slider__media swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<img src="./img/hero/image-1920.png" alt="Затишний дерев'яний будинок" class="image-1920"/>
+									<img src="./img/hero/image-1440.png" alt="Затишний дерев'яний будинок" class="image-1440"/>
+									<img src="./img/hero/image-834.png" alt="Затишний дерев'яний будинок" class="image-834"/>
+									<img src="./img/hero/image-360.png" alt="Затишний дерев'яний будинок" class="image-360"/>
+								</div>
+								<div class="swiper-slide">
+									<img src="./img/hero/image-1920.png" alt="Затишний дерев'яний будинок" class="image-1920"/>
+									<img src="./img/hero/image-1440.png" alt="Затишний дерев'яний будинок" class="image-1440"/>
+									<img src="./img/hero/image-834.png" alt="Затишний дерев'яний будинок" class="image-834"/>
+									<img src="./img/hero/image-360.png" alt="Затишний дерев'яний будинок" class="image-360"/>
+								</div>
+								<div class="swiper-slide">
+									<img src="./img/hero/image-1920.png" alt="Затишний дерев'яний будинок" class="image-1920"/>
+									<img src="./img/hero/image-1440.png" alt="Затишний дерев'яний будинок" class="image-1440"/>
+									<img src="./img/hero/image-834.png" alt="Затишний дерев'яний будинок" class="image-834"/>
+									<img src="./img/hero/image-360.png" alt="Затишний дерев'яний будинок" class="image-360"/>
+								</div>
+							</div>
+							<!-- Arrows -->
 							<button
-								class="nav-link dropdown-trigger"
+								class="hero-slider__arrow hero-slider__arrow--prev"
 								type="button"
-								aria-expanded="false"
 							>
-								Дома Технониколь <span class="chevron"></span>
+								<svg viewBox="0 0 24 24" aria-hidden="true">
+									<path
+										d="M14.5 5.5 8 12l6.5 6.5"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+								</svg>
 							</button>
-							<div class="dropdown-menu">
-								<a href="#">Проекты домов</a>
-								<a href="#">Реализованные проекты</a>
+							<button
+								class="hero-slider__arrow hero-slider__arrow--next"
+								type="button"
+							>
+								<svg viewBox="0 0 24 24" aria-hidden="true">
+									<path
+										d="m9.5 5.5 6.5 6.5-6.5 6.5"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+								</svg>
+							</button>
+							<div class="hero-slider__pagination swiper-pagination"></div>
+						</div>
+						<!-- Features -->
+						<div class="hero-slider__features">
+							<div class="hero-slider__feature">
+								<span>Работа профессиональным инструментом</span>
+							</div>
+							<div class="hero-slider__feature">
+								<span>Использование специализированной техники</span>
+							</div>
+							<div class="hero-slider__feature">
+								<span>Использование современных материалов и технологий</span>
 							</div>
 						</div>
-						<a class="nav-link" href="#">Ипотека</a>
-						<a class="nav-link" href="#">Технологии</a>
-						<div class="nav-dropdown">
-							<button
-								class="nav-link dropdown-trigger"
-								type="button"
-								aria-expanded="false"
-							>
-								Наши проекты <span class="chevron"></span>
-							</button>
-							<div class="dropdown-menu">
-								<a href="#">Готовые дома</a>
-								<a href="#">Участки</a>
-							</div>
-						</div>
-						<div class="nav-dropdown">
-							<button
-								class="nav-link dropdown-trigger"
-								type="button"
-								aria-expanded="false"
-							>
-								О компании <span class="chevron"></span>
-							</button>
-							<div class="dropdown-menu">
-								<a href="#">О нас</a>
-								<a href="#">Контакты</a>
-							</div>
-						</div>
-					</nav>
-					<div class="header-actions">
-						<a class="phone" href="tel:+74951563702">+7 (495) 156-37-02</a>
-						<span class="action-divider">или</span>
-						<a class="callback" href="#">Заказать звонок</a>
 					</div>
 				</div>
-			</header>
-			<main class="page">
-				<div class="hero"></div>
-				<div class="calculation"></div>
-				<div class="interior"></div>
-				<div class="projects"></div>
-				<div class="advantages"></div>
-				<div class="services"></div>
-				<div class="price"></div>
-				<div class="video"></div>
-				<div class="workflow"></div>
-				<div class="sign-up--tour"></div>
-				<div class="question--submission" id="question-submission"></div>
-			</main>
-			<footer class="footer"></footer>
-		</div>
-	<script src="./js/script.js"></script>
-	</body>
+			</div>
+		</section>
+        <section class="calculation"></section>
+        <section class="interior"></section>
+        <section class="projects"></section>
+        <section class="advantages"></section>
+        <section class="services"></section>
+        <section class="price"></section>
+        <section class="video"></section>
+        <section class="workflow"></section>
+        <section class="sign-up--tour"></section>
+        <section
+          class="question--submission"
+          id="question-submission"
+        ></section>
+      </main>
+      <footer class="footer"></footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Подключаем файл скриптов -->
+    <script src="./js/slider.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
 </html>
