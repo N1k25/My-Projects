@@ -158,7 +158,84 @@
 				</div>
 			</div>
 		</section>
-        <section class="calculation"></section>
+        <section class="calculation">
+          <div class="calculation-container">
+            <div class="calculation-header">
+              <h2 class="calculation__title">Точный расчёт стоимости и сроков внутренней отделке вашего дома</h2>
+              <p class="calculation__text">Ответьте на 5 простых вопросов и получите расчеты по вашему объекту</p>
+            </div>
+            <div class="calculation-body">
+              <div class="calculation-tabs">
+                <div class="tabs__nav">
+                  <button class="tabs__nav-btn" type="button" data-tab="#tab_1">1</button>
+                  <button class="tabs__nav-btn" type="button" data-tab="#tab_2">2</button>
+                  <button class="tabs__nav-btn" type="button" data-tab="#tab_3">3</button>
+                  <button class="tabs__nav-btn" type="button" data-tab="#tab_4">4</button>
+                  <button class="tabs__nav-btn" type="button" data-tab="#tab_5">5</button>
+                </div>
+                <div class="tabs__content">
+                  <div class="tabs__item" id="tab_1">
+                      <h3>Укажите площадь дома:</h3>
+                      <div class="range-slider">
+                        <input
+                          class="range-slider__range"
+                          type="range"
+                          value="50"
+                          min="0"
+                          max="250"
+                        />
+                        <div class="range-slider__value-container">
+                          <span class="range-slider__value">0</span>
+                          <span class="range-slider__value">м<sup>2</sup></span>
+                        </div>
+                      </div>
+                      <button class="tabs__item-btn" type="button">Далее</button>
+                  </div>
+                  <div class="tabs__item" id="tab_2">
+                      <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+                  </div>
+                  <div class="tabs__item" id="tab_3">
+                      <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                  </div>
+                  <div class="tabs__item" id="tab_4">
+                      <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+                  </div>
+                  <div class="tabs__item" id="tab_5">
+                      <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                  </div>
+                </div>
+              </div>
+              <div class="calculation-blog">
+                <div class="calculation-blog-top">
+                  <div class="blog-personal">
+                    <div class="blog-personal__image">
+                      <img src="./img/calculation/photo.jpg" alt="Персональный менеджер" />
+                    </div>
+                    <div class="blog-personal__content">
+                      <h4 class="blog-personal__name">Третьяков Валерий</h4>
+                      <p class="blog-personal__position">Инженер проектов</p>
+                    </div>
+                  </div>
+                  <div class="blog-appeal">
+                    <p class="blog-appeal__text">
+                      Здравствуйте!
+                      <br>
+                      Меня зовут Валерий, и я помогу вам понять, какой бюджет нужен для отделки вашего дома под ключ
+                    </p>
+                  </div>
+                </div>
+                <div class="calculation-blog-content">
+                  <h3 class="blog-content__title">Ответив на вопросы вы получите:</h3>
+                  <ul class="blog-content__list">
+                    <li>Ориентировочную стоимость отделки</li>
+                    <li>Точную подборку проектов, исходя из ваших ответов, либо предложим новый вариант</li>
+                    <li>Подарок от компании при заказе отделки у нас</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
         <section class="interior"></section>
         <section class="projects"></section>
         <section class="advantages"></section>
@@ -175,8 +252,9 @@
       <footer class="footer"></footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <!-- Подключаем файл скриптов -->
     <script src="./js/slider.js"></script>
     <script src="./js/script.js"></script>
+    <script src="./js/tabs.js"></script>
+    <script src="./js/range-slider.js"></script>
   </body>
 </html>
