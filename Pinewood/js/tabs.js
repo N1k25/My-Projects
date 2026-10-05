@@ -27,12 +27,28 @@ function onTabClick(item) {
 document.querySelector('.tabs__nav-btn').click();
 
 
-// Next button functionality
-const nextButton = document.querySelector('.tabs__item-btn');
+// Next buttons functionality
 
-nextButton.addEventListener('click', function() {
-    const currentTabId = document.querySelector('.tabs__item.active').id;
-    const nextTabId = currentTabId === 'tab_1' ? '#tab_2' : '#tab_1';
-    const nextTabButton = document.querySelector(`.tabs__nav-btn[data-tab="${nextTabId}"]`);
-    nextTabButton.click();
+const nextButtons = document.querySelectorAll('.tabs__item-btn');
+const tabs = document.querySelectorAll('.tabs__item');
+
+nextButtons.forEach(function (button) {
+    button.addEventListener('click', function () {
+        const currentTab = document.querySelector('.tabs__item.active');
+        const currentIndex = Array.from(tabs).indexOf(currentTab);
+
+        // Якщо це не остання вкладка — переходимо на наступну
+        if (currentIndex < tabs.length - 1) {
+            const nextTab = tabs[currentIndex + 1];
+            const nextTabId = `#${nextTab.id}`;
+
+            const nextTabButton = document.querySelector(
+                `.tabs__nav-btn[data-tab="${nextTabId}"]`
+            );
+
+            if (nextTabButton) {
+                nextTabButton.click();
+            }
+        }
+    });
 });

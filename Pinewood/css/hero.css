@@ -225,6 +225,10 @@
         padding: 84px 0 50px;
     }
 
+    .hero-container {
+        padding: 0 27px;
+    }
+
     .hero__text {
         margin: 20px 0 40px;
     }
