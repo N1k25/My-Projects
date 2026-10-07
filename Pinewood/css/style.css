@@ -5,6 +5,7 @@
 @import url('hero.css');
 @import url('calculation.css');
 @import url('interior.css');
+@import url('projects.css');
 
 html {
     scroll-behavior: smooth;

@@ -23,7 +23,7 @@ const heroSlider = new Swiper(".hero-slider__media", {
   },
 });
 
-
+/*----------------------------------------------------------------*/
 
 document.addEventListener('DOMContentLoaded', () => {
   const slider = new Swiper('.interior-slider', {
@@ -77,4 +77,23 @@ document.addEventListener('DOMContentLoaded', () => {
   // На touch-устройствах autoplay ставится на паузу во время жеста
   slider.on('touchStart', () => slider.autoplay.stop());
   slider.on('touchEnd', () => slider.autoplay.start());
+});
+
+/*----------------------------------------------------------------*/
+
+const cardSlider = new Swiper(".card-slider", {
+  slidesPerView: 1,
+  spaceBetween: 0,
+  loop: true,
+  speed: 600,
+  pagination: {
+    el: ".card-slider__pagination",
+    clickable: true,
+  },
+  keyboard: {
+    enabled: true,
+  },
+  a11y: {
+    enabled: true,
+  },
 });
