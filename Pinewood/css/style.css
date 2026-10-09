@@ -6,6 +6,7 @@
 @import url('calculation.css');
 @import url('interior.css');
 @import url('projects.css');
+@import url('advantages.css');
 
 html {
     scroll-behavior: smooth;
@@ -22,5 +23,5 @@ html {
     max-width: 1660px;
     margin: 0 auto;
 
-    border: 1px solid green;
+    border: 1px solid orange;
 }
