@@ -213,6 +213,10 @@
         background-size: 436px 252px;
     }
 
+    .advantages-container {
+        padding: 0 20px;
+    }
+
     .advantages__title--mobile {
         font-size: 28px;
     }

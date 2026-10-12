@@ -190,6 +190,10 @@
 ========================= */
 
 @media (max-width: 360px) {
+    .services-container {
+        padding: 0 20px;
+    }
+
     .services__title {
         width: 100%;
         font-size: 28px;
