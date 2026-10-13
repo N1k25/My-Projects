@@ -1,0 +1,159 @@
+.workflow {
+    padding: 70px 0 80px;
+}
+
+.workflow-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 70px;
+    color: #1D1D1B;
+}
+
+.workflow__title {
+    max-width: 450px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.workflow__text {
+    max-width: 420px;
+    font-size: 18px;
+    text-align: right;
+    opacity: 0.4;
+}
+
+.workflow-steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.workflow-step {
+    display: flex;
+    border: 1px solid #048410;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.workflow-step-counter {
+    padding: 45px;
+    border-right: 1px solid #048410;
+    background-color: #F5F6FA;
+    font-size: 40px;
+    color: #048410;
+}
+
+.workflow-step__content {
+    padding: 20px;
+    color: #1D1D1B;
+}
+
+.workflow-step__title {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.workflow-step__desc {
+    font-size: 18px;
+}
+
+/* =========================
+   Desktops
+========================= */
+
+@media (max-width: 1440px) {
+    .workflow-container {
+        padding: 0 27px;
+    }
+
+    .workflow__text {
+        display: none;
+    }
+
+    .workflow-steps {
+        row-gap: 24px;
+    }
+
+    .workflow-step-counter {
+        padding: 37px 21px;
+        font-size: 35px;
+    }
+
+    .workflow-step__title {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .workflow-step__desc {
+        font-size: 16px;
+    }
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 834px) {
+    .workflow {
+        padding: 50px 0 60px;
+    }
+
+    .workflow-header {
+        margin-bottom: 40px;
+    }
+
+    .workflow__title {
+        max-width: 380px;
+        font-size: 32px;
+    }
+
+    .workflow-steps {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .workflow-step__content {
+        padding: 24px 20px;
+    }
+
+    .workflow-step__title {
+        font-size: 20px;
+    }
+
+    .workflow-step__desc {
+        font-size: 14px;
+    }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 360px) {
+    .workflow-container {
+        padding: 0 20px;
+    }
+
+    .workflow__title {
+        width: 100%;
+        font-size: 28px;
+    }
+
+    .workflow-steps {
+        grid-template-columns: 1fr;
+    }
+
+    .workflow-step-counter {
+        padding: 31px 21px;
+    }
+
+    .workflow-step__content {
+        padding: 10px 20px;
+    }
+
+    .workflow-step__title {
+        font-size: 18px;
+    }
+}
