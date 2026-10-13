@@ -1,0 +1,228 @@
+.video {
+    padding: 70px 0 184px;
+}
+
+.video-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 70px;
+    color: #1D1D1B;
+}
+
+.video__title {
+    max-width: 586px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.video__text {
+    max-width: 420px;
+    font-size: 18px;
+    text-align: right;
+    opacity: 0.4;
+}
+
+.video-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.house-card {
+    width: 100%;
+    overflow: hidden;
+}
+
+.house-card__media {
+    position: relative;
+    width: 100%;
+    border-radius: 30px;
+    aspect-ratio: 540 / 350;
+    overflow: hidden;
+}
+
+.house-card__image,
+.house-card__video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.house-card__video {
+    position: absolute;
+    inset: 0;
+}
+
+.house-card__play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease;
+}
+
+.house-card__play:hover {
+    background: #f0f0f0;
+    transform: translate(-50%, -50%) scale(1.07);
+}
+
+.house-card__play:focus-visible {
+    outline: 3px solid #048410;
+    outline-offset: 4px;
+}
+
+.house-card__play-icon {
+    width: 0;
+    height: 0;
+    margin-left: 5px;
+    border-top: 14px solid transparent;
+    border-bottom: 14px solid transparent;
+    border-left: 22px solid #048410;
+}
+
+.house-card__content {
+    padding: 15px 30px 0;
+    color: #1D1D1B;
+}
+
+.house-card__title {
+    margin-bottom: 10px;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.house-card__subtitle {
+    font-size: 18px;
+}
+
+/* =========================
+   Desktops
+========================= */
+
+@media (max-width: 1440px) {
+    .video {
+        padding: 70px 0 80px;
+    }
+
+    .video-container {
+        padding: 0 27px;
+    }
+
+    .video-header {
+        margin-bottom: 45px;
+    }
+
+    .video__text {
+        font-size: 16px;
+    }
+
+    .house-card__media {
+        aspect-ratio: 420 / 272;
+    }
+
+    .house-card__content {
+        padding: 10px 20px 0;
+    }
+
+    .house-card__title {
+        margin-bottom: 5px;
+    }
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 834px) {
+    .video {
+        padding: 50px 0 60px;
+    }
+
+    .video-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        margin-bottom: 68px;
+    }
+
+    .video__title {
+        font-size: 32px;
+    }
+
+    .video__text {
+        max-width: 380px;
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .video-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .house-card__media {
+        aspect-ratio: 380 / 250;
+    }
+
+    .house-card__title {
+        font-size: 20px;
+    }
+    
+    .house-card__subtitle {
+        font-size: 14px;
+    }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 360px) {
+    .video {
+        padding: 50px 0 129px;
+    }
+
+    .video-container {
+        padding: 0 20px;
+    }
+
+    .video-header {
+        margin-bottom: 40px;
+    }
+
+    .video__title {
+        width: 100%;
+        font-size: 28px;
+    }
+
+    .video__text {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .video-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .house-card__media {
+        aspect-ratio: 320 / 250;
+    }
+
+    .house-card__title {
+        font-size: 18px;
+    }
+}

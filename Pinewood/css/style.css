@@ -9,6 +9,7 @@
 @import url('advantages.css');
 @import url('services.css');
 @import url('price.css');
+@import url('video.css');
 
 html {
     scroll-behavior: smooth;
