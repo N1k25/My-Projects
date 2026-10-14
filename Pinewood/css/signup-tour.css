@@ -51,7 +51,6 @@
 .tour-form {
     width: min(100%, 400px);
     color: #1D1D1B;
-    overflow: hidden;
     margin-top: 40px;
 }
 
