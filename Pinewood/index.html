@@ -1266,7 +1266,64 @@
                 </div>
             </div>
         </section>
-        <section class="sign-up--tour"></section>
+        <section class="sign-up--tour">
+            <div class="sign-up--tour-container container">
+              <div class="sign-up--tour-header">
+                  <h2 class="sign-up--tour__title">Строит и отделывает дома <span>с 2011 года</span></h2>
+              </div>
+              <div class="sign-up--tour-body">
+                <div class="sign-up--tour-info">
+                  <p class="sign-up--tour__text">
+                    Мы понимаем, что нашим заказчикам очень важно быть уверенными в компании, которая занимается созданием уюта и эффективности в их домах.
+                    <br><br>
+                    <span>Поэтому мы работаем открыто и прозрачно.</span>
+                    <br><br>
+                    Вы можете приехать на полностью готовый объект или на тот объект, который находится на стадии внутренней отделки и посмотреть результаты наших работ на реальном примере
+                  </p>
+                  <!--Form-->
+                  <div class="tour-form" aria-labelledby="tour-form-title">
+                    <form class="tour-form__fields" id="tourForm" novalidate>
+                      <input
+                        class="tour-form__input"
+                        id="tour-form-name"
+                        name="name"
+                        type="text"
+                        placeholder="имя"
+                        autocomplete="name"
+                        aria-label="Ваше имя"
+                        required
+                      />
+                      <input
+                        class="tour-form__input"
+                        id="tour-form-phone"
+                        name="phone"
+                        type="tel"
+                        placeholder="+380"
+                        value="+380"
+                        autocomplete="tel"
+                        inputmode="tel"
+                        aria-label="Номер телефону"
+                        required
+                      />
+                      <button class="tour-form__button" type="submit">Записаться на экскурсию</button>
+                      <p class="tour-form__status" id="tourFormStatus" role="status" aria-live="polite"></p>
+                    </form>
+                    <p class="tour-form__consent">Нажимая на кнопку отправить вы даете свое согласие на обработку Ваших персональных данных, в соответствии с №152-ФЗ «О персональных данных» от 27.07.2006 года.</p>
+                  </div>
+                </div>
+                <div class="supervisor-content">
+                  <div class="supervisor-photo-wrapper">
+                    <img src="./img/tour/photo.png" alt="Фото руководителя компании" class="supervisor-photo">
+                  </div>
+                  <div class="supervisor-info">
+                    <h4 class="supervisor-name">Данченко александр анатольевич</h4>
+                    <p class="supervisor-position">Руководитель компании «Pinewood Homes»Опыт отделки и строительства более 10 лет</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <img src="./img/tour/bkg-logo.png" class="sign-up--tour-bkg">
+        </section>
         <section
           class="question--submission"
           id="question-submission"
@@ -1281,5 +1338,6 @@
     <script src="./js/range-slider.js"></script>
     <script src="./js/price-form.js"></script>
     <script src="./js/video-card.js"></script>
+    <script src="./js/tour-form.js"></script>
   </body>
 </html>

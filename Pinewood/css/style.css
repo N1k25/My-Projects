@@ -11,6 +11,7 @@
 @import url('price.css');
 @import url('video.css');
 @import url('workflow.css');
+@import url('signup-tour.css');
 
 html {
     scroll-behavior: smooth;

@@ -135,8 +135,6 @@ details[open] summary::after {
 .price-form__fields {
     width: min(100%, 400px);
     margin: 0 auto;
-
-    /* border: 1px solid pink; */
 }
 
 .price-form__input {
