@@ -13,6 +13,7 @@
 @import url('workflow.css');
 @import url('signup-tour.css');
 @import url('submission.css');
+@import url('footer.css');
 
 html {
     scroll-behavior: smooth;
@@ -21,13 +22,9 @@ html {
 .wrapper {
     max-width: 1920px;
     margin: 0 auto;
-
-    border: 1px solid red;
 }
 
 .container {
     max-width: 1660px;
     margin: 0 auto;
-
-    border: 1px solid orange;
 }
