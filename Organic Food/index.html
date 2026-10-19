@@ -1,0 +1,64 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="en">
+	<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Заголовок страницы в браузере -->
+		<title>Organic Food</title>
+		<link rel="icon" type="image/png" href="img/favicon.png"/>
+		<!-- Подключаем CSS -->
+		<link rel="stylesheet" href="./css/style.css"/>
+		<!-- Кодировка страницы -->
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	</head>
+	<!-- Отображаемое тело страницы -->
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="header-container container">
+					<nav class="menu">
+						<ul class="menu-list">
+							<li class="menu__item">
+								<a href="#" class="menu__link">About Us</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link">Service</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link">Menu</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link">Contact</a>
+							</li>
+						</ul>
+					</nav>
+					<img src="./img/header/planet-earth.svg" alt="Logo" class="logo">
+					<div class="header-service">
+						<div class="search">
+							<input type="search" id="search-input" placeholder="Type to search">
+							<button id="search-button">
+								<img src="./img/header/search.svg" alt="Search icon" class="search-icon">
+							</button>
+						</div>
+						<button class="cart__btn">
+							<img src="./img/header/buy.svg" alt="Cart icon" class="cart__icon">
+							<span class="cart--full active"></span>
+						</button>
+						<button class="register__btn">Regestar Now</button>
+					</div>
+				</div>
+			</header>
+			<main class="page">
+				<section class="hero"></section>
+				<section class="best"></section>
+				<section class="special"></section>
+				<section class="reviews"></section>
+				<section class="order"></section>
+			</main>
+			<footer class="footer"></footer>
+		</div>
+	<script src="./js/script.js"></script>
+	</body>
+</html>

@@ -1,0 +1,129 @@
+@import url("reset.css");
+@import url(https://fonts.googleapis.com/css?family=Rosario:700&display=swap);
+@import url(https://fonts.googleapis.com/css?family=DM+Sans:regular,500,700&display=swap);
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+
+    border: 1px solid red;
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+
+    border: 1px solid green;
+}
+
+/*--------------------------Header--------------------------*/
+.header {
+    padding: 50px 0 43px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.menu__link {
+    color: #222222;
+    transition: 0.3s;
+
+    &:hover {
+        color: #09A66D;
+    }
+}
+
+.header-service {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.search {
+  display: flex;
+  background-color: #F3FBF8;
+  height: 50px;
+  border-radius: 50px;
+  padding: 5px;
+}
+
+.search:hover input {
+  width: 250px;
+  padding: 0 10px;
+}
+
+.search:hover button {
+  background-color: #E6E6E6;
+}
+
+.search input {
+  border: none;
+  background: none;
+  outline: none;
+  padding: 0;
+  font-size: 18px;
+  color: #222222;
+  width: 0;
+  transition: .4s;
+}
+
+.search button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background-color: #F3FBF8;
+  cursor: pointer;
+  transition: .4s;
+}
+
+.cart__btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background-color: #F3FBF8;
+    position: relative;
+}
+
+.cart--full {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    position: absolute;
+    top: 8px;
+    right: 13px;
+    
+    &.active {
+        background-color: #09A66D;
+    }
+}
+
+.register__btn {
+    padding: 10px 23px;
+    border-radius: 8px;
+    background-color: #09A66D;
+    line-height: 20px;
+    color: #fff;
+    transition: 0.3s;
+
+    &:hover {
+        background-color: #068355;
+    }
+
+    &:active {
+        scale: 0.98;
+    }
+}
+
+/*--------------------------    --------------------------*/
