@@ -14,3 +14,10 @@ const cartFullMarker = document.querySelector('.cart--full');
 cartButton.addEventListener('click', () => {
     cartFullMarker.classList.remove('active');
 });
+
+
+const heroButton = document.querySelector('.hero__btn');
+
+heroButton.addEventListener('click', () => {
+    cartFullMarker.classList.add('active');
+});

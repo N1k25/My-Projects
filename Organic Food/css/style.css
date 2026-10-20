@@ -5,6 +5,7 @@
 .wrapper {
     max-width: 1440px;
     margin: 0 auto;
+    overflow: hidden;
 
     border: 1px solid red;
 }
@@ -14,6 +15,14 @@
     margin: 0 auto;
 
     border: 1px solid green;
+}
+
+.__title {
+    font-family: Rosario;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 90px;
+    color: #222222;
 }
 
 /*--------------------------Header--------------------------*/
@@ -126,4 +135,115 @@
     }
 }
 
-/*--------------------------    --------------------------*/
+/*--------------------------Hero--------------------------*/
+.hero {
+    padding: 93px 0 33px;
+    background-color: #F3FBF8;
+    position: relative;
+}
+
+.hero__layer {
+    position: absolute;
+    left: -61px;
+    top: -37px;
+}
+
+.hero-header {
+    text-align: center;
+    margin-bottom: 59px;
+    position: relative;
+    z-index: 20;
+}
+
+.hero__title {
+    margin-bottom: 20px;
+}
+
+.hero__text {
+    width: 637px;
+    line-height: 30px;
+    color: #555555;
+    margin: 0 auto;
+}
+
+.hero__btn {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: center;
+    color: #222222;
+    background: transparent;
+    outline: none;
+    position: absolute;
+    left: 50%;
+    bottom: -100px;
+    transform: translateX(-50%);
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+    transition: 0.3s;
+
+    span {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        background-color: #09A66D;
+        display: grid;
+        place-items: center;
+    }
+
+    &:hover {
+        gap: 25px;
+    }
+}
+
+.hero-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero__img {
+    width: 862px;
+    height: 466px;
+    object-fit: cover;
+    background: transparent;
+}
+
+.hero__item {
+    padding: 17px 33px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    &:not(:last-child) {
+        margin-bottom: 30px;
+    }
+}
+
+.hero-item-icon__wrapper {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: #F3FBF8;
+    display: grid;
+    place-items: center;
+}
+
+.hero-item__content {
+    color: #000000;
+    text-align: center;
+}
+
+.tero-item__value {
+    font-size: 48px;
+    line-height: 48px;
+    margin-bottom: 4px;
+}
+
+.hero-item__name {
+    line-height: 30px;
+}
+
+/*--------------------------     --------------------------*/
