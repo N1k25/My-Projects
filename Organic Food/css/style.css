@@ -393,6 +393,17 @@
 .special {
     padding: 89px 0 143px;
     background-color: rgba(9, 166, 109, 0.051);
+    position: relative;
+}
+
+.special__layer {
+    width: 414px;
+    height: 397px;
+    object-fit: cover;
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+    z-index: -1;
 }
 
 .special-container {
