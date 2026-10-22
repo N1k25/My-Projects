@@ -236,7 +236,7 @@
     text-align: center;
 }
 
-.tero-item__value {
+.hero-item__value {
     font-size: 48px;
     line-height: 48px;
     margin-bottom: 4px;
@@ -244,6 +244,149 @@
 
 .hero-item__name {
     line-height: 30px;
+}
+
+/*--------------------------Best--------------------------*/
+.best {
+    padding: 141px 0 146px;
+    position: relative;
+}
+
+.best__layer {
+    width: 944px;
+    height: 532px;
+    object-fit: cover;
+    position: absolute;
+    right: 35px;
+    top: -33px;
+    z-index: -1;
+}
+
+.best-container {
+    display: flex;
+    position: relative;
+}
+
+.best-header {
+    width: 675px;
+}
+
+.best__title {
+    margin-bottom: 20px;
+}
+
+.best__text {
+    width: 637px;
+    line-height: 30px;
+    color: #555555;
+}
+
+.best-list {
+    margin-top: 16px;
+}
+
+.best-list__item {
+    max-width: 500px;
+    padding: 40px 59px;
+    display: flex;
+    gap: 24px;
+    transition: 0.3s;
+
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    &:hover {
+        background-color: #F3FBF8;
+
+        .best-item-icon__wrapper {
+            background-color: #fff;
+        }
+    }
+}
+
+.best-item-icon__wrapper {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #F3FBF8;
+    display: grid;
+    place-items: center;
+    transition: 0.3s;
+}
+
+.best-item__content {
+    width: 277px;
+}
+
+.best-item__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #222222;
+    margin-bottom: 8px;
+}
+
+.best-item__text {
+    font-size: 14px;
+    color: #555555;
+}
+
+.best__link {
+    display: inline-block;
+    margin-top: 50px;
+    margin-left: 241px;
+    transition: 0.3s;
+
+    &:hover {
+        transform: translateY(-2px);
+    }
+}
+
+.best-body {
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: grid;
+    place-items: center;
+    background: url('../img/best/ellipse.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}
+
+.best-image__wrapper {
+    width: 420px;
+    height: 420px;
+    border-radius: 50%;
+    background-color: #09A66D;
+}
+
+.best__img {
+    display: block;
+    width: 382px;
+    height: 411px;
+    object-fit: cover;
+    position: absolute;
+    top: 22px;
+    left: 50%;
+    transform: translateX(-45%);
+}
+
+.best-image-wrapper__rectangle {
+    width: 425px;
+    height: 38px;
+    background-color: #fff;
+}
+
+.rectangle-1 {
+    transform: rotate(45deg) translate(31%, 340%);
+}
+
+.rectangle-2 {
+    transform: rotate(-45deg) translate(-26%, 295%);
 }
 
 /*--------------------------     --------------------------*/
