@@ -642,3 +642,76 @@
 .avatar-add:hover {
   background: #f0f0f0;
 }
+
+/*--------------------------Order--------------------------*/
+.order {
+    padding: 50px 0 140px;
+}
+
+.order-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.order-images {
+    width: 265px;
+    height: 496px;
+    position: relative;
+}
+
+.order__image--rear {
+    width: 209px;
+    position: absolute;
+    left: 0;
+    top: 32px;
+}
+
+.order__image--front {
+    width: 240px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.order-header {
+    width: 663px;
+}
+
+.order-header__marker {
+    display: inline-block;
+    padding: 11px 24px;
+    border-radius: 50px;
+    background-color: #F3FBF8;
+    line-height: 18px;
+    color: #333333;
+    margin-bottom: 16px;
+}
+
+.order__title {
+    margin-bottom: 20px;
+}
+
+.order__text {
+    line-height: 30px;
+    color: #555555;
+}
+
+.order__links {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.order__link {
+    width: 104px;
+    height: 30px;
+    transition: 0.3s;
+
+    &:hover {
+        transform: translateY(-2px);
+    }
+}
+
+/*--------------------------       --------------------------*/
