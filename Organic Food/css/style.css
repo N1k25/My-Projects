@@ -473,4 +473,172 @@
     }
 }
 
-/*--------------------------     --------------------------*/
+/*--------------------------Reviews--------------------------*/
+.reviews {
+    padding: 96px 0 100px;
+}
+
+.reviews-container {
+    position: relative;
+}
+
+.reviews__title {
+    width: 640px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+/* Основные стили */
+
+/* Слайдер */
+.slick-slider{
+	min-width: 0;
+}
+/* Ограничивающая оболочка */
+.slick-list {
+	overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track{
+	display: flex;
+	align-items: flex-start;
+}
+
+/* Конкретный слайдер */
+.reviews-slider {
+	position: relative;
+}
+
+.reviews-slider .slick-arrow{
+	position: absolute;
+	bottom: 0;
+	margin: -30px 0px 0px 0px;
+	z-index: 10;
+	font-size: 0;
+	width: 56px;
+	height: 56px;
+	border: 1px solid #ccc;
+	border-radius: 50%;
+	transition: 0.3s;
+}
+
+.reviews-slider .slick-arrow.slick-prev{
+	left: 327px;
+	background: url('../img/reviews/arrow-prev.svg') 0 0 / 100% no-repeat;
+
+	&:hover {
+        border-color: #09A66D;
+	    background-color: #09A66D;
+	}
+}
+
+.reviews-slider .slick-arrow.slick-next{
+	left: 410px;
+	background: url('../img/reviews/arrow-prev.svg') 0 0 / 100% no-repeat;
+	transform: rotate(180deg);
+
+	&:hover {
+        border-color: #09A66D;
+	    background-color: #09A66D;
+	}
+}
+
+.slider-item__wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.slide-info {
+    width: 586px;
+    padding-top: 210px;
+}
+
+.slide__text {
+    line-height: 30px;
+    color: #555555;
+    margin-bottom: 40px;
+}
+
+.slide-author {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+    color: #222222;
+    margin-bottom: 20px;
+}
+
+.slide-photo__block {
+    width: 500px;
+    height: 500px;
+    background-color: #F3FBF8;
+    border-radius: 50%;
+    border: 2px solid #F3FBF8;
+    position: relative;
+}
+
+.slide__photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    background: transparent;
+}
+
+.slide-photo-album {
+    padding: 11px 21px;
+    border-radius: 12px;
+    background-color: #FFFFFF;
+    box-shadow: -15px 15px 25px #00603C0A;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.avatar-group {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* Аватарки */
+.avatar-group img {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-sizing: border-box;
+  margin-left: -10px;
+  flex-shrink: 0;
+}
+
+/* Перша аватарка без відступу */
+.avatar-group img:first-child {
+  margin-left: 0;
+}
+
+/* Кнопка додавання */
+.avatar-add {
+  width: 32px;
+  height: 32px;
+  margin-left: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #F3FBF8;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background 0.2s ease;
+
+  img {
+      width: 16px;
+      height: 16px;
+  }
+}
+
+.avatar-add:hover {
+  background: #f0f0f0;
+}

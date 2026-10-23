@@ -1,174 +1,564 @@
-<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
-<!DOCTYPE html>
-<!-- Оболочка документа, указываем язык содержимого -->
+<!doctype html>
 <html lang="en">
-	<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<!-- Заголовок страницы в браузере -->
-		<title>Organic Food</title>
-		<link rel="icon" type="image/png" href="img/favicon.png"/>
-		<!-- Подключаем CSS -->
-		<link rel="stylesheet" href="./css/style.css"/>
-		<!-- Кодировка страницы -->
-		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
-	</head>
-	<!-- Отображаемое тело страницы -->
-	<body>
-		<div class="wrapper">
-			<header class="header">
-				<div class="header-container container">
-					<nav class="menu">
-						<ul class="menu-list">
-							<li class="menu__item">
-								<a href="#" class="menu__link">About Us</a>
-							</li>
-							<li class="menu__item">
-								<a href="#" class="menu__link">Service</a>
-							</li>
-							<li class="menu__item">
-								<a href="#" class="menu__link">Menu</a>
-							</li>
-							<li class="menu__item">
-								<a href="#" class="menu__link">Contact</a>
-							</li>
-						</ul>
-					</nav>
-					<img src="./img/header/planet-earth.svg" alt="Logo" class="logo">
-					<div class="header-service">
-						<div class="search">
-							<input type="search" id="search-input" placeholder="Type to search">
-							<button id="search-button">
-								<img src="./img/header/search.svg" alt="Search icon" class="search-icon">
-							</button>
-						</div>
-						<button class="cart__btn">
-							<img src="./img/header/buy.svg" alt="Cart icon" class="cart__icon">
-							<span class="cart--full active"></span>
-						</button>
-						<button class="register__btn">Regestar Now</button>
-					</div>
-				</div>
-			</header>
-			<main class="page">
-				<section class="hero">
-					<div class="hero-container container">
-						<div class="hero-header">
-							<h1 class="hero__title __title">Organic Fruit & Vegetables</h1>
-							<p class="hero__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley...</p>
-							<button class="hero__btn">
-								Order Now
-								<span>
-									<img src="./img/hero/arrow.svg" alt="">
-								</span>
-							</button>
-						</div>
-						<div class="hero-body">
-							<img src="./img/hero/vegetables-fruits.jpg" alt="Vegetables fruits" class="hero__img">
-							<ul class="hero-list">
-								<li class="hero__item">
-									<div class="hero-item-icon__wrapper">
-										<img src="./img/hero/user.svg" alt="User icon" class="hero-item__icon">
-									</div>
-									<div class="hero-item__content">
-										<h3 class="hero-item__value">30K</h3>
-										<p class="hero-item__name">User Order</p>
-									</div>
-								</li>
-								<li class="hero__item">
-									<div class="hero-item-icon__wrapper">
-										<img src="./img/hero/star.svg" alt="Star icon" class="hero-item__icon">
-									</div>
-									<div class="hero-item__content">
-										<h3 class="hero-item__value">20K</h3>
-										<p class="hero-item__name">Reviews(4.8)</p>
-									</div>
-								</li>
-								<li class="hero__item">
-									<div class="hero-item-icon__wrapper">
-										<img src="./img/hero/harvest.svg" alt="Harvest icon" class="hero-item__icon">
-									</div>
-									<div class="hero-item__content">
-										<h3 class="hero-item__value">300</h3>
-										<p class="hero-item__name">Items</p>
-									</div>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<img src="./img/hero/fresh-melientha.png" alt="Fresh melientha" class="hero__layer">
-				</section>
-				<section class="best">
-					<div class="best-container container">
-						<div class="best-header">
-							<h2 class="best__title __title">Why We Aer The Best?</h2>
-							<p class="best__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley...</p>
-							<ul class="best-list">
-								<li class="best-list__item">
-									<div class="best-item-icon__wrapper">
-										<img src="./img/best/delivery-man.svg" alt="Delivery man icon" class="best-item__icon">
-									</div>
-									<div class="best-item__content">
-										<h3 class="best-item__title">Fasted delivery Service</h3>
-										<p class="best-item__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-									</div>
-								</li>
-								<li class="best-list__item">
-									<div class="best-item-icon__wrapper">
-										<img src="./img/best/shopping.svg" alt="Shopping icon" class="best-item__icon">
-									</div>
-									<div class="best-item__content">
-										<h3 class="best-item__title">Online order Service</h3>
-										<p class="best-item__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-									</div>
-								</li>
-								<li class="best-list__item">
-									<div class="best-item-icon__wrapper">
-										<img src="./img/best/clock.svg" alt="Clock icon" class="best-item__icon">
-									</div>
-									<div class="best-item__content">
-										<h3 class="best-item__title">24/8 Service</h3>
-										<p class="best-item__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-									</div>
-								</li>
-							</ul>
-							<a href="#" class="best__link">
-								<img src="./img/best/arrow.svg" alt="Arrow icon" class="best-link__icon">
-							</a>
-						</div>
-						<div class="best-body">
-							<div class="best-image__wrapper">
-								<div class="best-image-wrapper__rectangle rectangle-1"></div>
-								<div class="best-image-wrapper__rectangle rectangle-2"></div>
-							</div>
-							<img src="./img/best/groceries-packages-delivery.png" alt="Groceries packages delivery" class="best__img">
-						</div>
-					</div>
-					<img src="./img/best/line.png" alt="Line" class="best__layer">
-				</section>
-				<section class="special">
-					<div class="special-container container">
-						<div class="special-items-image__block">
-							<img src="./img/special/items.png" alt="Special items" class="special-item__img">
-						</div>
-						<div class="special-header">
-							<h2 class="special__title __title">Explor Our Special Items</h2>
-							<p class="special__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer...</p>
-							<button class="special__btn">
-								Explor Now
-								<span>
-									<img src="./img/hero/arrow.svg" alt="">
-								</span>
-							</button>
-						</div>
-					</div>
-					<img src="./img/special/fresh-melientha.jpg" alt="Fresh melientha" class="special__layer">
-				</section>
-				<section class="reviews"></section>
-				<section class="order"></section>
-			</main>
-			<footer class="footer"></footer>
-		</div>
-	<script src="./js/script.js"></script>
-	</body>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Organic Food</title>
+        <link rel="icon" type="image/png" href="img/favicon.png" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <div class="header-container container">
+                    <nav class="menu">
+                        <ul class="menu-list">
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">About Us</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">Service</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">Menu</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <img
+                        src="./img/header/planet-earth.svg"
+                        alt="Logo"
+                        class="logo"
+                    />
+                    <div class="header-service">
+                        <div class="search">
+                            <input
+                                type="search"
+                                id="search-input"
+                                placeholder="Type to search"
+                            />
+                            <button id="search-button">
+                                <img
+                                    src="./img/header/search.svg"
+                                    alt="Search icon"
+                                    class="search-icon"
+                                />
+                            </button>
+                        </div>
+                        <button class="cart__btn">
+                            <img
+                                src="./img/header/buy.svg"
+                                alt="Cart icon"
+                                class="cart__icon"
+                            />
+                            <span class="cart--full active"></span>
+                        </button>
+                        <button class="register__btn">Regestar Now</button>
+                    </div>
+                </div>
+            </header>
+            <main class="page">
+                <section class="hero">
+                    <div class="hero-container container">
+                        <div class="hero-header">
+                            <h1 class="hero__title __title">
+                                Organic Fruit & Vegetables
+                            </h1>
+                            <p class="hero__text">
+                                Lorem Ipsum is simply dummy text of the printing
+                                and typesetting industry. Lorem Ipsum has been
+                                the industry's standard dummy text ever since
+                                the 1500s, when an unknown printer took a
+                                galley...
+                            </p>
+                            <button class="hero__btn">
+                                Order Now
+                                <span>
+                                    <img src="./img/hero/arrow.svg" alt="" />
+                                </span>
+                            </button>
+                        </div>
+                        <div class="hero-body">
+                            <img
+                                src="./img/hero/vegetables-fruits.jpg"
+                                alt="Vegetables fruits"
+                                class="hero__img"
+                            />
+                            <ul class="hero-list">
+                                <li class="hero__item">
+                                    <div class="hero-item-icon__wrapper">
+                                        <img
+                                            src="./img/hero/user.svg"
+                                            alt="User icon"
+                                            class="hero-item__icon"
+                                        />
+                                    </div>
+                                    <div class="hero-item__content">
+                                        <h3 class="hero-item__value">30K</h3>
+                                        <p class="hero-item__name">
+                                            User Order
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="hero__item">
+                                    <div class="hero-item-icon__wrapper">
+                                        <img
+                                            src="./img/hero/star.svg"
+                                            alt="Star icon"
+                                            class="hero-item__icon"
+                                        />
+                                    </div>
+                                    <div class="hero-item__content">
+                                        <h3 class="hero-item__value">20K</h3>
+                                        <p class="hero-item__name">
+                                            Reviews(4.8)
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="hero__item">
+                                    <div class="hero-item-icon__wrapper">
+                                        <img
+                                            src="./img/hero/harvest.svg"
+                                            alt="Harvest icon"
+                                            class="hero-item__icon"
+                                        />
+                                    </div>
+                                    <div class="hero-item__content">
+                                        <h3 class="hero-item__value">300</h3>
+                                        <p class="hero-item__name">Items</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <img
+                        src="./img/hero/fresh-melientha.png"
+                        alt="Fresh melientha"
+                        class="hero__layer"
+                    />
+                </section>
+                <section class="best">
+                    <div class="best-container container">
+                        <div class="best-header">
+                            <h2 class="best__title __title">
+                                Why We Aer The Best?
+                            </h2>
+                            <p class="best__text">
+                                Lorem Ipsum is simply dummy text of the printing
+                                and typesetting industry. Lorem Ipsum has been
+                                the industry's standard dummy text ever since
+                                the 1500s, when an unknown printer took a
+                                galley...
+                            </p>
+                            <ul class="best-list">
+                                <li class="best-list__item">
+                                    <div class="best-item-icon__wrapper">
+                                        <img
+                                            src="./img/best/delivery-man.svg"
+                                            alt="Delivery man icon"
+                                            class="best-item__icon"
+                                        />
+                                    </div>
+                                    <div class="best-item__content">
+                                        <h3 class="best-item__title">
+                                            Fasted delivery Service
+                                        </h3>
+                                        <p class="best-item__text">
+                                            Lorem Ipsum is simply dummy text of
+                                            the printing and typesetting
+                                            industry.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="best-list__item">
+                                    <div class="best-item-icon__wrapper">
+                                        <img
+                                            src="./img/best/shopping.svg"
+                                            alt="Shopping icon"
+                                            class="best-item__icon"
+                                        />
+                                    </div>
+                                    <div class="best-item__content">
+                                        <h3 class="best-item__title">
+                                            Online order Service
+                                        </h3>
+                                        <p class="best-item__text">
+                                            Lorem Ipsum is simply dummy text of
+                                            the printing and typesetting
+                                            industry.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="best-list__item">
+                                    <div class="best-item-icon__wrapper">
+                                        <img
+                                            src="./img/best/clock.svg"
+                                            alt="Clock icon"
+                                            class="best-item__icon"
+                                        />
+                                    </div>
+                                    <div class="best-item__content">
+                                        <h3 class="best-item__title">
+                                            24/8 Service
+                                        </h3>
+                                        <p class="best-item__text">
+                                            Lorem Ipsum is simply dummy text of
+                                            the printing and typesetting
+                                            industry.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <a href="#" class="best__link">
+                                <img
+                                    src="./img/best/arrow.svg"
+                                    alt="Arrow icon"
+                                    class="best-link__icon"
+                                />
+                            </a>
+                        </div>
+                        <div class="best-body">
+                            <div class="best-image__wrapper">
+                                <div
+                                    class="best-image-wrapper__rectangle rectangle-1"
+                                ></div>
+                                <div
+                                    class="best-image-wrapper__rectangle rectangle-2"
+                                ></div>
+                            </div>
+                            <img
+                                src="./img/best/groceries-packages-delivery.png"
+                                alt="Groceries packages delivery"
+                                class="best__img"
+                            />
+                        </div>
+                    </div>
+                    <img
+                        src="./img/best/line.png"
+                        alt="Line"
+                        class="best__layer"
+                    />
+                </section>
+                <section class="special">
+                    <div class="special-container container">
+                        <div class="special-items-image__block">
+                            <img
+                                src="./img/special/items.png"
+                                alt="Special items"
+                                class="special-item__img"
+                            />
+                        </div>
+                        <div class="special-header">
+                            <h2 class="special__title __title">
+                                Explor Our Special Items
+                            </h2>
+                            <p class="special__text">
+                                Lorem Ipsum is simply dummy text of the printing
+                                and typesetting industry. Lorem Ipsum has been
+                                the industry's standard dummy text ever since
+                                the 1500s, when an unknown printer...
+                            </p>
+                            <button class="special__btn">
+                                Explor Now
+                                <span>
+                                    <img src="./img/hero/arrow.svg" alt="" />
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <img
+                        src="./img/special/fresh-melientha.jpg"
+                        alt="Fresh melientha"
+                        class="special__layer"
+                    />
+                </section>
+                <section class="reviews">
+                    <div class="reviews-container container">
+                        <h2 class="reviews__title __title">
+                            What Our Customers About Us saying
+                        </h2>
+                        <div class="reviews-body">
+                            <div class="reviews-slider">
+                                <!--Slider-->
+                                <div class="slider__item">
+                                    <div class="slider-item__wrapper">
+                                        <div class="slide-info">
+                                            <p class="slide__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularis</p>
+                                            <h3 class="slide-author">Ahmed Hridoy</h3>
+                                            <div class="slide-rating">
+                                                <img src="./img/reviews/star-full.svg" alt="Star full icon" class="rating-star star-full">
+                                                <img src="./img/reviews/star-full.svg" alt="Star full icon" class="rating-star star-full">
+                                                <img src="./img/reviews/star-full.svg" alt="Star full icon" class="rating-star star-full">
+                                                <img src="./img/reviews/star-full.svg" alt="Star full icon" class="rating-star star-full">
+                                                <img src="./img/reviews/incomplete-star.svg" alt="Incomplete star icon" class="rating-star incomplete-star">
+                                            </div>
+                                        </div>
+                                        <div class="slide-photo__block">
+                                            <img src="./img/reviews/photo-1.jpg" alt="Photo-1" class="slide__photo">
+                                            <div class="slide-photo-album">
+                                                <div class="slide-rating">
+                                                    <img src="./img/reviews/star-full.svg" alt="Star full icon" class="rating-star star-full">
+                                                    <img src="./img/reviews/star-full.svg" alt="Star full icon" class="rating-star star-full">
+                                                    <img src="./img/reviews/star-full.svg" alt="Star full icon" class="rating-star star-full">
+                                                    <img src="./img/reviews/star-full.svg" alt="Star full icon" class="rating-star star-full">
+                                                    <img src="./img/reviews/incomplete-star.svg" alt="Incomplete star icon" class="rating-star incomplete-star">
+                                                </div>
+                                                <div class="avatar-group">
+                                                    <img src="./img/reviews/photo-2.png" alt="Photo-2">
+                                                    <img src="./img/reviews/photo-3.png" alt="Photo-3">
+                                                    <img src="./img/reviews/photo-4.png" alt="Photo-4">
+                                                    <img src="./img/reviews/photo-5.png" alt="Photo-5">
+                                                    <img src="./img/reviews/photo-6.png" alt="Photo-6">
+                                                    <img src="./img/reviews/photo-7.png" alt="Photo-7">
+                                                    <button class="avatar-add" type="button" aria-label="Додати учасника">
+                                                        <img src="./img/reviews/plus.svg" alt="Add icon">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider__item">
+                                    <div class="slider-item__wrapper">
+                                        <div class="slide-info">
+                                            <p class="slide__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularis</p>
+                                            <h3 class="slide-author">Olivia Bennett</h3>
+                                            <div class="slide-rating">
+                                                <img src="./img/reviews/star-full.svg" alt="Star full icon" class="rating-star star-full">
+                                                <img src="./img/reviews/star-full.svg" alt="Star full icon" class="rating-star star-full">
+                                                <img src="./img/reviews/star-full.svg" alt="Star full icon" class="rating-star star-full">
+                                                <img src="./img/reviews/star-full.svg" alt="Star full icon" class="rating-star star-full">
+                                                <img src="./img/reviews/incomplete-star.svg" alt="Incomplete star icon" class="rating-star incomplete-star">
+                                            </div>
+                                        </div>
+                                        <div class="slide-photo__block">
+                                            <img src="./img/reviews/photo-2.png" alt="Photo-2" class="slide__photo">
+                                            <div class="slide-photo-album">
+                                                <div class="slide-rating">
+                                                    <img src="./img/reviews/star-full.svg" alt="Star full icon" class="rating-star star-full">
+                                                    <img src="./img/reviews/star-full.svg" alt="Star full icon" class="rating-star star-full">
+                                                    <img src="./img/reviews/star-full.svg" alt="Star full icon" class="rating-star star-full">
+                                                    <img src="./img/reviews/star-full.svg" alt="Star full icon" class="rating-star star-full">
+                                                    <img src="./img/reviews/incomplete-star.svg" alt="Incomplete star icon" class="rating-star incomplete-star">
+                                                </div>
+                                                <div class="avatar-group">
+                                                    <img src="./img/reviews/photo-1.jpg" alt="Photo-1">
+                                                    <img src="./img/reviews/photo-3.png" alt="Photo-3">
+                                                    <img src="./img/reviews/photo-4.png" alt="Photo-4">
+                                                    <img src="./img/reviews/photo-5.png" alt="Photo-5">
+                                                    <img src="./img/reviews/photo-6.png" alt="Photo-6">
+                                                    <img src="./img/reviews/photo-7.png" alt="Photo-7">
+                                                    <button class="avatar-add" type="button" aria-label="Додати учасника">
+                                                        <img src="./img/reviews/plus.svg" alt="Add icon">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider__item">
+                                    <div class="slider-item__wrapper">
+                                        <div class="slide-info">
+                                            <p class="slide__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularis</p>
+                                            <h3 class="slide-author">Ethan Parker</h3>
+                                            <div class="slide-rating">
+                                                <img src="./img/reviews/star-full.svg" alt="Star full icon" class="rating-star star-full">
+                                                <img src="./img/reviews/star-full.svg" alt="Star full icon" class="rating-star star-full">
+                                                <img src="./img/reviews/star-full.svg" alt="Star full icon" class="rating-star star-full">
+                                                <img src="./img/reviews/star-full.svg" alt="Star full icon" class="rating-star star-full">
+                                                <img src="./img/reviews/incomplete-star.svg" alt="Incomplete star icon" class="rating-star incomplete-star">
+                                            </div>
+                                        </div>
+                                        <div class="slide-photo__block">
+                                            <img src="./img/reviews/photo-3.png" alt="Photo-3" class="slide__photo">
+                                            <div class="slide-photo-album">
+                                                <div class="slide-rating">
+                                                    <img src="./img/reviews/star-full.svg" alt="Star full icon" class="rating-star star-full">
+                                                    <img src="./img/reviews/star-full.svg" alt="Star full icon" class="rating-star star-full">
+                                                    <img src="./img/reviews/star-full.svg" alt="Star full icon" class="rating-star star-full">
+                                                    <img src="./img/reviews/star-full.svg" alt="Star full icon" class="rating-star star-full">
+                                                    <img src="./img/reviews/incomplete-star.svg" alt="Incomplete star icon" class="rating-star incomplete-star">
+                                                </div>
+                                                <div class="avatar-group">
+                                                    <img src="./img/reviews/photo-1.jpg" alt="Photo-1">
+                                                    <img src="./img/reviews/photo-2.png" alt="Photo-2">
+                                                    <img src="./img/reviews/photo-4.png" alt="Photo-4">
+                                                    <img src="./img/reviews/photo-5.png" alt="Photo-5">
+                                                    <img src="./img/reviews/photo-6.png" alt="Photo-6">
+                                                    <img src="./img/reviews/photo-7.png" alt="Photo-7">
+                                                    <button class="avatar-add" type="button" aria-label="Додати учасника">
+                                                        <img src="./img/reviews/plus.svg" alt="Add icon">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider__item">
+                                    <div class="slider-item__wrapper">
+                                        <div class="slide-info">
+                                            <p class="slide__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularis</p>
+                                            <h3 class="slide-author">Noah Williams</h3>
+                                            <div class="slide-rating">
+                                                <img src="./img/reviews/star-full.svg" alt="Star full icon" class="rating-star star-full">
+                                                <img src="./img/reviews/star-full.svg" alt="Star full icon" class="rating-star star-full">
+                                                <img src="./img/reviews/star-full.svg" alt="Star full icon" class="rating-star star-full">
+                                                <img src="./img/reviews/star-full.svg" alt="Star full icon" class="rating-star star-full">
+                                                <img src="./img/reviews/incomplete-star.svg" alt="Incomplete star icon" class="rating-star incomplete-star">
+                                            </div>
+                                        </div>
+                                        <div class="slide-photo__block">
+                                            <img src="./img/reviews/photo-4.png" alt="Photo-4" class="slide__photo">
+                                            <div class="slide-photo-album">
+                                                <div class="slide-rating">
+                                                    <img src="./img/reviews/star-full.svg" alt="Star full icon" class="rating-star star-full">
+                                                    <img src="./img/reviews/star-full.svg" alt="Star full icon" class="rating-star star-full">
+                                                    <img src="./img/reviews/star-full.svg" alt="Star full icon" class="rating-star star-full">
+                                                    <img src="./img/reviews/star-full.svg" alt="Star full icon" class="rating-star star-full">
+                                                    <img src="./img/reviews/incomplete-star.svg" alt="Incomplete star icon" class="rating-star incomplete-star">
+                                                </div>
+                                                <div class="avatar-group">
+                                                    <img src="./img/reviews/photo-1.jpg" alt="Photo-1">
+                                                    <img src="./img/reviews/photo-2.png" alt="Photo-2">
+                                                    <img src="./img/reviews/photo-3.png" alt="Photo-3">
+                                                    <img src="./img/reviews/photo-5.png" alt="Photo-5">
+                                                    <img src="./img/reviews/photo-6.png" alt="Photo-6">
+                                                    <img src="./img/reviews/photo-7.png" alt="Photo-7">
+                                                    <button class="avatar-add" type="button" aria-label="Додати учасника">
+                                                        <img src="./img/reviews/plus.svg" alt="Add icon">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider__item">
+                                    <div class="slider-item__wrapper">
+                                        <div class="slide-info">
+                                            <p class="slide__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularis</p>
+                                            <h3 class="slide-author">Isabella Carter</h3>
+                                            <div class="slide-rating">
+                                                <img src="./img/reviews/star-full.svg" alt="Star full icon" class="rating-star star-full">
+                                                <img src="./img/reviews/star-full.svg" alt="Star full icon" class="rating-star star-full">
+                                                <img src="./img/reviews/star-full.svg" alt="Star full icon" class="rating-star star-full">
+                                                <img src="./img/reviews/star-full.svg" alt="Star full icon" class="rating-star star-full">
+                                                <img src="./img/reviews/incomplete-star.svg" alt="Incomplete star icon" class="rating-star incomplete-star">
+                                            </div>
+                                        </div>
+                                        <div class="slide-photo__block">
+                                            <img src="./img/reviews/photo-5.png" alt="Photo-5" class="slide__photo">
+                                            <div class="slide-photo-album">
+                                                <div class="slide-rating">
+                                                    <img src="./img/reviews/star-full.svg" alt="Star full icon" class="rating-star star-full">
+                                                    <img src="./img/reviews/star-full.svg" alt="Star full icon" class="rating-star star-full">
+                                                    <img src="./img/reviews/star-full.svg" alt="Star full icon" class="rating-star star-full">
+                                                    <img src="./img/reviews/star-full.svg" alt="Star full icon" class="rating-star star-full">
+                                                    <img src="./img/reviews/incomplete-star.svg" alt="Incomplete star icon" class="rating-star incomplete-star">
+                                                </div>
+                                                <div class="avatar-group">
+                                                    <img src="./img/reviews/photo-1.jpg" alt="Photo-1">
+                                                    <img src="./img/reviews/photo-2.png" alt="Photo-2">
+                                                    <img src="./img/reviews/photo-3.png" alt="Photo-3">
+                                                    <img src="./img/reviews/photo-4.png" alt="Photo-4">
+                                                    <img src="./img/reviews/photo-6.png" alt="Photo-6">
+                                                    <img src="./img/reviews/photo-7.png" alt="Photo-7">
+                                                    <button class="avatar-add" type="button" aria-label="Додати учасника">
+                                                        <img src="./img/reviews/plus.svg" alt="Add icon">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider__item">
+                                    <div class="slider-item__wrapper">
+                                        <div class="slide-info">
+                                            <p class="slide__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularis</p>
+                                            <h3 class="slide-author">James Harrison</h3>
+                                            <div class="slide-rating">
+                                                <img src="./img/reviews/star-full.svg" alt="Star full icon" class="rating-star star-full">
+                                                <img src="./img/reviews/star-full.svg" alt="Star full icon" class="rating-star star-full">
+                                                <img src="./img/reviews/star-full.svg" alt="Star full icon" class="rating-star star-full">
+                                                <img src="./img/reviews/star-full.svg" alt="Star full icon" class="rating-star star-full">
+                                                <img src="./img/reviews/incomplete-star.svg" alt="Incomplete star icon" class="rating-star incomplete-star">
+                                            </div>
+                                        </div>
+                                        <div class="slide-photo__block">
+                                            <img src="./img/reviews/photo-6.png" alt="Photo-6" class="slide__photo">
+                                            <div class="slide-photo-album">
+                                                <div class="slide-rating">
+                                                    <img src="./img/reviews/star-full.svg" alt="Star full icon" class="rating-star star-full">
+                                                    <img src="./img/reviews/star-full.svg" alt="Star full icon" class="rating-star star-full">
+                                                    <img src="./img/reviews/star-full.svg" alt="Star full icon" class="rating-star star-full">
+                                                    <img src="./img/reviews/star-full.svg" alt="Star full icon" class="rating-star star-full">
+                                                    <img src="./img/reviews/incomplete-star.svg" alt="Incomplete star icon" class="rating-star incomplete-star">
+                                                </div>
+                                                <div class="avatar-group">
+                                                    <img src="./img/reviews/photo-1.jpg" alt="Photo-1">
+                                                    <img src="./img/reviews/photo-2.png" alt="Photo-2">
+                                                    <img src="./img/reviews/photo-3.png" alt="Photo-3">
+                                                    <img src="./img/reviews/photo-4.png" alt="Photo-4">
+                                                    <img src="./img/reviews/photo-5.png" alt="Photo-5">
+                                                    <img src="./img/reviews/photo-7.png" alt="Photo-7">
+                                                    <button class="avatar-add" type="button" aria-label="Додати учасника">
+                                                        <img src="./img/reviews/plus.svg" alt="Add icon">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider__item">
+                                    <div class="slider-item__wrapper">
+                                        <div class="slide-info">
+                                            <p class="slide__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularis</p>
+                                            <h3 class="slide-author">Alexander Cooper</h3>
+                                            <div class="slide-rating">
+                                                <img src="./img/reviews/star-full.svg" alt="Star full icon" class="rating-star star-full">
+                                                <img src="./img/reviews/star-full.svg" alt="Star full icon" class="rating-star star-full">
+                                                <img src="./img/reviews/star-full.svg" alt="Star full icon" class="rating-star star-full">
+                                                <img src="./img/reviews/star-full.svg" alt="Star full icon" class="rating-star star-full">
+                                                <img src="./img/reviews/incomplete-star.svg" alt="Incomplete star icon" class="rating-star incomplete-star">
+                                            </div>
+                                        </div>
+                                        <div class="slide-photo__block">
+                                            <img src="./img/reviews/photo-7.png" alt="Photo-7" class="slide__photo">
+                                            <div class="slide-photo-album">
+                                                <div class="slide-rating">
+                                                    <img src="./img/reviews/star-full.svg" alt="Star full icon" class="rating-star star-full">
+                                                    <img src="./img/reviews/star-full.svg" alt="Star full icon" class="rating-star star-full">
+                                                    <img src="./img/reviews/star-full.svg" alt="Star full icon" class="rating-star star-full">
+                                                    <img src="./img/reviews/star-full.svg" alt="Star full icon" class="rating-star star-full">
+                                                    <img src="./img/reviews/incomplete-star.svg" alt="Incomplete star icon" class="rating-star incomplete-star">
+                                                </div>
+                                                <div class="avatar-group">
+                                                    <img src="./img/reviews/photo-1.jpg" alt="Photo-1">
+                                                    <img src="./img/reviews/photo-2.png" alt="Photo-2">
+                                                    <img src="./img/reviews/photo-3.png" alt="Photo-3">
+                                                    <img src="./img/reviews/photo-4.png" alt="Photo-4">
+                                                    <img src="./img/reviews/photo-5.png" alt="Photo-5">
+                                                    <img src="./img/reviews/photo-6.png" alt="Photo-6">
+                                                    <button class="avatar-add" type="button" aria-label="Додати учасника">
+                                                        <img src="./img/reviews/plus.svg" alt="Add icon">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="order"></section>
+            </main>
+            <footer class="footer"></footer>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="./js/slick.min.js"></script>
+        <script src="./js/script.js"></script>
+        <script src="./js/slider.js"></script>
+    </body>
 </html>
