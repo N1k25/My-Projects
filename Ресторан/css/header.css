@@ -120,6 +120,11 @@
     cursor: pointer; 
     padding: 0 0 18px; 
     color: #111;
+    transition: color 0.3s;
+
+    &:hover { 
+        color: #F4512D; 
+    }
 }
 
 .menu-nav { 
@@ -286,7 +291,7 @@
     padding: 14px 20px;
     border: 2px solid #000000; 
     border-radius: 2px;
-    background: #FFFFFF;
+    background: transparent;
     font-family: Lora;
     font-weight: 700;
     font-size: 14px;
@@ -313,14 +318,97 @@
     display: block; 
 }
 
+@media (max-width: 1024px) {
+    .logo { 
+        width: 163px;
+        height: 43px;
+    }
+}
 
+@media (max-width: 600px) {
+    .site-header { 
+        padding: 25px 0; 
+    }
 
-/* @media (max-width: 600px) {
-    .site-header { height: 82px; padding: 0 16px; }
-    .logo { font-size: 38px; letter-spacing: 4px; }
-    .phone { width: 52px; height: 52px; }
-    .menu-panel { padding: 24px 32px 36px; }
-    .menu-nav { gap: 25px; }
-    .menu-nav a { font-size: 27px; }
-    .modal { padding: 36px 24px 26px; }
-} */
+    .phone { 
+        width: 52px; 
+        height: 52px; 
+    }
+
+    .menu-panel { 
+        padding: 24px 32px 36px; 
+    }
+
+    .menu-nav { 
+        gap: 25px; 
+    }
+
+    .menu-nav a { 
+        font-size: 27px; 
+    }
+
+    .modal-backdrop {
+        padding: 15px;
+    }
+
+    .modal { 
+        padding: 36px 30px; 
+    }
+}
+
+@media (max-width: 375px) {
+    .site-header { 
+        padding: 25px 30px; 
+    }
+
+    .burger {
+        width: 37px; 
+        gap: 5px;
+    }
+
+    .burger span {
+        height: 3px; 
+        width: 23px; 
+    }
+
+    .burger span:nth-child(2) { 
+        width: 15px; 
+    }
+
+    .burger[aria-expanded="true"] span:nth-child(2) { 
+        width: 23px; 
+    }
+
+    .logo { 
+        width: 120px;
+        height: 31px;
+    }
+
+    .phone { 
+        width: 30px; 
+        height: 30px;
+        background: white; 
+        color: #000000;
+        box-shadow: none;
+    }
+
+    .menu-close {
+        align-self: flex-start; 
+        color: #F4512D;
+    }
+
+    .modal-backdrop {
+        padding: 0;
+    }
+
+    .modal { 
+        min-height: 100%;
+        padding: 36px 30px; 
+        background: #F9F9F9;
+    }
+
+    .modal-close {
+        right: 5px; 
+        top: 5px;
+    }
+}
